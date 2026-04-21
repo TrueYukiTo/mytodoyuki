@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My To-Do</title>
+  <meta name="description" content="Personal to-do list that saves tasks in your browser.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">&#10003;</div>
+      <span>My To-Do</span>
+    </div>
+
+    <div class="topbar-actions">
+      <label class="theme-toggle" for="theme-toggle">
+        <span class="theme-icon">&#9681;</span>
+        <span>Dark Mode</span>
+        <input id="theme-toggle" type="checkbox" checked>
+        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+      </label>
+
+      <div class="stats">
+        <span>Tasks: <strong id="tasks-count">0</strong></span>
+        <span class="done">Done: <strong id="done-count">0</strong></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="card">
+      <div class="hero">
+        <h1>My Tasks</h1>
+        <p>Organize your day and get things done</p>
+      </div>
+
+      <form class="task-form" id="task-form">
+        <input id="task-input" type="text" placeholder="What needs to be done?" maxlength="120">
+        <button type="submit">+ Add Task</button>
+      </form>
+
+      <p class="storage-note">
+        Tasks are saved only in your browser on this device, so each visitor sees only their own list.
+      </p>
+
+      <div class="toolbar">
+        <div class="filters" role="tablist" aria-label="Task filters">
+          <button class="filter is-active" data-filter="all" type="button">All</button>
+          <button class="filter" data-filter="active" type="button">Active</button>
+          <button class="filter" data-filter="completed" type="button">Completed</button>
+        </div>
+
+        <button class="clear-btn" id="clear-completed" type="button">Clear completed</button>
+      </div>
+
+      <ul class="task-list" id="task-list" aria-live="polite"></ul>
+
+      <footer class="card-footer">
+        <span>&#9734;</span>
+        <p>Small steps every day!</p>
+      </footer>
+
+      <div class="credit">made by YukiTo</div>
+    </section>
+  </main>
+
+  <template id="task-template">
+    <li class="task-item">
+      <label class="task-main">
+        <input class="task-check" type="checkbox">
+        <span class="custom-check"></span>
+        <span class="task-text"></span>
+      </label>
+      <div class="task-actions">
+        <button class="icon-btn edit-btn" type="button" aria-label="Edit task">Edit</button>
+        <button class="icon-btn delete-btn" type="button" aria-label="Delete task">Del</button>
+      </div>
+    </li>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
