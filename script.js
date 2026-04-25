@@ -142,9 +142,9 @@ function initTheme() {
 }
 
 function splitTasks(value) {
-  if (value.includes(", ")) {
+  if (value.includes(",")) {
     return value
-      .split(", ")
+      .split(",")
       .map((item) => item.trim())
       .filter(Boolean);
   }
