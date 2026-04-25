@@ -23,14 +23,18 @@ render();
 taskForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const text = taskInput.value.trim();
-  if (!text) return;
+  const rawValue = taskInput.value.trim();
+  if (!rawValue) return;
 
-  state.tasks.unshift({
+  const newTasks = splitTasks(rawValue).map((text) => ({
     id: crypto.randomUUID(),
     text,
     completed: false
-  });
+  }));
+
+  if (!newTasks.length) return;
+
+  state.tasks.unshift(...newTasks);
 
   taskInput.value = "";
   persist();
@@ -135,4 +139,15 @@ function initTheme() {
   const savedTheme = localStorage.getItem(THEME_STORAGE_KEY) || "dark";
   body.classList.add(savedTheme);
   themeToggle.checked = savedTheme === "dark";
+}
+
+function splitTasks(value) {
+  if (value.includes(", ")) {
+    return value
+      .split(", ")
+      .map((item) => item.trim())
+      .filter(Boolean);
+  }
+
+  return [value];
 }

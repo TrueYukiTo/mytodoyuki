@@ -37,13 +37,15 @@
       </div>
 
       <form class="task-form" id="task-form">
-        <input id="task-input" type="text" placeholder="What needs to be done?" maxlength="120">
+        <input id="task-input" type="text" placeholder="What needs to be done? Use comma + space for many tasks" maxlength="240">
         <button type="submit">+ Add Task</button>
       </form>
 
       <p class="storage-note">
         Tasks are saved only in your browser on this device, so each visitor sees only their own list.
       </p>
+
+      <p class="input-hint">Example: tomate, apple, lemon</p>
 
       <div class="toolbar">
         <div class="filters" role="tablist" aria-label="Task filters">
