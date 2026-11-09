@@ -34,6 +34,19 @@ while IFS= read -r line; do
   fi
 done < "$PACK_DIR/mods.txt"
 
+# CurseForge-моды могут притянуть зависимость, которая уже взята с Modrinth (например AE2) —
+# оставляем копию с Modrinth, чтобы в сборке не было двух одинаковых jar.
+for cf in mods/*.pw.toml; do
+  grep -q 'mode = "metadata:curseforge"' "$cf" || continue
+  fname="$(grep '^filename' "$cf")"
+  for mr in mods/*.pw.toml; do
+    [[ "$mr" == "$cf" ]] && continue
+    if [[ "$(grep '^filename' "$mr")" == "$fname" ]] && ! grep -q 'metadata:curseforge' "$mr"; then
+      echo "🧹 дубликат: $(basename "$cf") (уже есть $(basename "$mr"))"; rm "$cf"; break
+    fi
+  done
+done
+
 if [[ -n "$JAR" && -f "$JAR" ]]; then
   cp "$JAR" mods/ && echo "✅ YukiCore: $(basename "$JAR")"
 else
