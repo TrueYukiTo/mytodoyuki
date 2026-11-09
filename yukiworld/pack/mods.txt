@@ -1,0 +1,86 @@
+# YukiWorld — список модов (Modrinth slug'и), Minecraft 1.21.1 / NeoForge.
+# Зависимости (Balm, Architectury, GeckoLib, Curios, Patchouli...) подтягиваются автоматически.
+# Строки с # — комментарии. Если мод не найден под 1.21.1, скрипт его пропустит и запишет в отчёт.
+
+## ⚡ Оптимизация
+sodium
+lithium
+ferrite-core
+modernfix
+immediatelyfast
+entityculling
+memoryleakfix
+ksyxis
+fast-ip-ping
+spark
+iris
+sodium-extra
+reeses-sodium-options
+
+## ⚙️ Технологии
+mekanism
+mekanism-generators
+mekanism-tools
+create
+applied-energistics-2
+ae2wtlib
+extendedae
+refined-storage
+powah
+pipez
+oritech
+justdirethings
+functional-storage
+modular-routers
+
+## ✨ Магия
+ars-nouveau
+irons-spells-n-spellbooks
+botania
+occultism
+apotheosis
+
+## 📦 Хранение
+sophisticated-backpacks
+sophisticated-storage
+storage-drawers
+toms-storage
+
+## 🌍 Мир и приключения
+biomes-o-plenty
+terralith
+aether
+yungs-better-dungeons
+yungs-better-mineshafts
+yungs-better-strongholds
+yungs-better-ocean-monuments
+when-dungeons-arise
+artifacts
+waystones
+
+## 🌾 Еда и фермы
+farmers-delight
+productive-bees
+mystical-agriculture
+
+## 🏠 Строительство и декор
+supplementaries
+handcrafted
+chipped
+macaws-furniture
+macaws-windows
+macaws-doors
+
+## 🧭 Интерфейс и удобство
+jei
+jade
+xaeros-minimap
+xaeros-world-map
+appleskin
+mouse-tweaks
+controlling
+searchables
+better-advancements
+enchantment-descriptions
+toast-control
+open-parties-and-claims

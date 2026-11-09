@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CIC",
+    "IDI",
+    "CIC"
+  ],
+  "key": {
+    "C": {
+      "item": "yukicore:yuki_crystal"
+    },
+    "I": {
+      "item": "yukicore:frost_ingot"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "id": "yukicore:yuki_star",
+    "count": 1
+  }
+}

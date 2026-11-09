@@ -1,0 +1,6 @@
+yukicore/build/
+yukicore/.gradle/
+yukicore/run/
+yukicore/runs/
+yukicore/.idea/
+pack/build/

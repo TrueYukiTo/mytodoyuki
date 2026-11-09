@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "yukicore:frost_block"
+    }
+  ],
+  "result": {
+    "id": "yukicore:frost_ingot",
+    "count": 9
+  }
+}

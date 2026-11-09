@@ -1,0 +1,16 @@
+[gui]
+	#Use the YukiWorld main menu instead of the vanilla one
+	customTitleScreen = true
+	#Animated snowfall in the YukiWorld main menu
+	snowfall = true
+	#Show the compact YukiWorld HUD (FPS / coordinates / biome)
+	showHud = true
+	#Show the current biome in the HUD
+	hudShowBiome = true
+
+[performance]
+	#Limit FPS while the game window is not focused (saves CPU/GPU, keeps laptops cool)
+	smartFps = true
+	#FPS limit used while the window is not focused
+	#Range: 1 ~ 60
+	unfocusedFps = 10

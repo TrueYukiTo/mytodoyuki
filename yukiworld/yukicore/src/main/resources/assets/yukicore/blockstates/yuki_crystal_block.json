@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "yukicore:block/yuki_crystal_block"
+    }
+  }
+}

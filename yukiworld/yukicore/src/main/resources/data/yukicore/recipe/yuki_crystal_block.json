@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "CCC",
+    "CCC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "yukicore:yuki_crystal"
+    }
+  },
+  "result": {
+    "id": "yukicore:yuki_crystal_block",
+    "count": 1
+  }
+}

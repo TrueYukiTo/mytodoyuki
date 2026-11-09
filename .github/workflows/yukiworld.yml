@@ -1,0 +1,45 @@
+name: YukiWorld Build
+
+on:
+  push:
+    paths:
+      - 'yukiworld/**'
+      - '.github/workflows/yukiworld.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Build YukiCore mod
+        working-directory: yukiworld/yukicore
+        run: |
+          chmod +x gradlew
+          ./gradlew build --stacktrace
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+
+      - name: Build YukiWorld modpack
+        run: bash yukiworld/pack/scripts/build-pack.sh
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: YukiWorld
+          path: |
+            yukiworld/yukicore/build/libs/*.jar
+            yukiworld/pack/build/*.mrpack
+            yukiworld/pack/build/mods-report.txt

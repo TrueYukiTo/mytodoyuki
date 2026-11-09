@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "yukicore:ore_yuki_crystal",
+  "step": "underground_ores"
+}
