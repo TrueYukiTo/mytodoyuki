@@ -2,6 +2,10 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
       "modid": "mekanism"
     },
     {
@@ -10,11 +14,11 @@
     },
     {
       "type": "neoforge:mod_loaded",
-      "modid": "create"
+      "modid": "powah"
     },
     {
       "type": "neoforge:mod_loaded",
-      "modid": "powah"
+      "modid": "justdirethings"
     },
     {
       "type": "neoforge:mod_loaded",
@@ -31,46 +35,74 @@
     {
       "type": "neoforge:mod_loaded",
       "modid": "industrialforegoing"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "extendedae"
     }
   ],
-  "type": "minecraft:crafting_shaped",
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
   "category": "misc",
-  "pattern": [
-    "MAP",
-    "EFI",
-    "RON"
-  ],
   "key": {
-    "M": {
+    "U": {
+      "item": "yukicore:aurorium_block"
+    },
+    "C": {
       "item": "mekanism:ultimate_control_circuit"
     },
-    "A": {
+    "S": {
       "item": "ae2:singularity"
     },
     "P": {
       "item": "create:precision_mechanism"
     },
-    "E": {
+    "M": {
+      "item": "yukicore:frost_mechanism"
+    },
+    "Q": {
+      "item": "yukicore:cryo_circuit"
+    },
+    "A": {
+      "item": "mekanism:alloy_atomic"
+    },
+    "N": {
       "item": "powah:capacitor_nitro"
     },
-    "F": {
-      "item": "yukicore:frost_core"
+    "J": {
+      "item": "justdirethings:eclipsealloy_ingot"
     },
-    "I": {
+    "E": {
       "item": "immersiveengineering:component_electronic_adv"
     },
     "R": {
       "item": "refinedstorage:construction_core"
     },
+    "K": {
+      "item": "yukicore:frost_core"
+    },
     "O": {
       "item": "oritech:overcharged_crystal"
     },
-    "N": {
+    "F": {
       "item": "industrialforegoing:machine_frame_supreme"
+    },
+    "X": {
+      "item": "extendedae:concurrent_processor"
     }
   },
+  "pattern": [
+    "UCSPSCU",
+    "CMQAQMC",
+    "NQJEJQN",
+    "RAEKEAR",
+    "OQJFJQO",
+    "CMQXQMC",
+    "UCSPSCU"
+  ],
   "result": {
-    "id": "yukicore:tech_core",
-    "count": 1
-  }
+    "count": 1,
+    "id": "yukicore:tech_core"
+  },
+  "show_notification": true
 }

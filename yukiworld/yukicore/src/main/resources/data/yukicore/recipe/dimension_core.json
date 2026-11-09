@@ -2,51 +2,73 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "aether"
+      "modid": "create"
     },
     {
       "type": "neoforge:mod_loaded",
       "modid": "twilightforest"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aether"
     }
   ],
-  "type": "minecraft:crafting_shaped",
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
   "category": "misc",
-  "pattern": [
-    "NGK",
-    "TFC",
-    "EHW"
-  ],
   "key": {
+    "U": {
+      "item": "yukicore:aurorium_block"
+    },
     "N": {
       "item": "minecraft:nether_star"
-    },
-    "G": {
-      "item": "aether:enchanted_gravitite"
-    },
-    "K": {
-      "item": "twilightforest:knightmetal_ingot"
-    },
-    "T": {
-      "item": "twilightforest:fiery_ingot"
-    },
-    "F": {
-      "item": "yukicore:frost_core"
     },
     "C": {
       "item": "twilightforest:carminite"
     },
-    "E": {
-      "item": "minecraft:echo_shard"
+    "L": {
+      "item": "yukicore:starlight_block"
+    },
+    "S": {
+      "item": "minecraft:shulker_shell"
+    },
+    "Z": {
+      "item": "yukicore:yuki_essence"
+    },
+    "G": {
+      "item": "aether:enchanted_gravitite"
     },
     "H": {
       "item": "minecraft:heavy_core"
     },
-    "W": {
+    "F": {
+      "item": "twilightforest:fiery_ingot"
+    },
+    "M": {
+      "item": "twilightforest:knightmetal_block"
+    },
+    "K": {
+      "item": "yukicore:frost_core"
+    },
+    "D": {
       "item": "minecraft:dragon_breath"
+    },
+    "E": {
+      "item": "minecraft:echo_shard"
     }
   },
+  "pattern": [
+    "UNCLCNU",
+    "SZGHGZS",
+    "CGFMFGC",
+    "LHMKMHL",
+    "CGFDFGC",
+    "SZGEGZS",
+    "UNCLCNU"
+  ],
   "result": {
-    "id": "yukicore:dimension_core",
-    "count": 1
-  }
+    "count": 1,
+    "id": "yukicore:dimension_core"
+  },
+  "show_notification": true
 }

@@ -1,0 +1,11 @@
+{
+  "name": "Летопись Юки",
+  "landing_text": "$(o)Когда зима ушла из мира, осталась только эта книга.$()$(br2)Здесь записана легенда о Юки, духе зимы, и путь Хранителя, который должен вернуть ей Сердце.",
+  "version": 1,
+  "creative_tab": "yukicore:yukiworld",
+  "use_resource_pack": true,
+  "show_progress": false,
+  "book_texture": "patchouli:textures/gui/book_cyan.png",
+  "filler_texture": "patchouli:textures/gui/page_filler.png",
+  "model": "patchouli:book_cyan"
+}

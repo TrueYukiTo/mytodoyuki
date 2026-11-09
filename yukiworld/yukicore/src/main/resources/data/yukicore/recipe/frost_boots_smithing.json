@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "yukicore:frost_upgrade_template"
+  },
+  "base": {
+    "item": "minecraft:diamond_boots"
+  },
+  "addition": {
+    "item": "yukicore:frost_ingot"
+  },
+  "result": {
+    "id": "yukicore:frost_boots",
+    "count": 1
+  }
+}

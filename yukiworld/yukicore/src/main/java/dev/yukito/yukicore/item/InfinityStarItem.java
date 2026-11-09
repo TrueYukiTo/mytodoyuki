@@ -17,9 +17,21 @@ public class InfinityStarItem extends CoreItem {
         super(properties, true);
     }
 
+    /** Звезда не расходуется в креативных рецептах — остаётся в сетке крафта (как ATM Star). */
+    @Override
+    public boolean hasCraftingRemainingItem(ItemStack stack) {
+        return true;
+    }
+
+    @Override
+    public ItemStack getCraftingRemainingItem(ItemStack stack) {
+        return stack.copyWithCount(1);
+    }
+
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
         tooltip.add(Component.translatable("item.yukicore.yuki_infinity_star.desc").withStyle(ChatFormatting.LIGHT_PURPLE));
         tooltip.add(Component.translatable("item.yukicore.yuki_infinity_star.desc2").withStyle(ChatFormatting.AQUA));
+        tooltip.add(Component.translatable("item.yukicore.yuki_infinity_star.desc3").withStyle(ChatFormatting.GOLD));
     }
 }

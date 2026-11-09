@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "yukicore:frost_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "yukicore:frost_plate"
+    }
+  ]
+}

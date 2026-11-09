@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "yukicore:celestium_block"
+    }
+  ],
+  "result": {
+    "id": "yukicore:celestium_ingot",
+    "count": 9
+  }
+}

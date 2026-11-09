@@ -1,24 +1,48 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "equipment",
-  "pattern": [
-    " H ",
-    "HSH",
-    " N "
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
   ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
   "key": {
-    "H": {
-      "item": "yukicore:yuki_heart"
+    "X": {
+      "item": "minecraft:nether_star"
     },
     "S": {
-      "item": "yukicore:frost_sword"
+      "item": "yukicore:star_shard"
     },
-    "N": {
-      "item": "minecraft:netherite_sword"
+    "C": {
+      "item": "yukicore:celestium_block"
+    },
+    "W": {
+      "item": "yukicore:celestium_sword"
+    },
+    "Z": {
+      "item": "yukicore:yuki_essence"
+    },
+    "K": {
+      "item": "yukicore:starlight_block"
+    },
+    "H": {
+      "item": "minecraft:netherite_ingot"
     }
   },
+  "pattern": [
+    "   X   ",
+    "  SCS  ",
+    "  CWC  ",
+    "  SCS  ",
+    "  ZKZ  ",
+    "  ZHZ  ",
+    "   H   "
+  ],
   "result": {
-    "id": "yukicore:yuki_blade",
-    "count": 1
-  }
+    "count": 1,
+    "id": "yukicore:yuki_blade"
+  },
+  "show_notification": true
 }

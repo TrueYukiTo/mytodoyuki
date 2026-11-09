@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "yukicore:celestium_upgrade_template"
+  },
+  "base": {
+    "item": "yukicore:aurorium_helmet"
+  },
+  "addition": {
+    "item": "yukicore:celestium_ingot"
+  },
+  "result": {
+    "id": "yukicore:celestium_helmet",
+    "count": 1
+  }
+}

@@ -1,6 +1,7 @@
 {
   "values": [
     "yukicore:frost_block",
-    "yukicore:yuki_crystal_block"
+    "yukicore:aurorium_block",
+    "yukicore:celestium_block"
   ]
 }

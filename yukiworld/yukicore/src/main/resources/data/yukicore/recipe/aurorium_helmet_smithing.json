@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "yukicore:aurorium_upgrade_template"
+  },
+  "base": {
+    "item": "yukicore:frost_helmet"
+  },
+  "addition": {
+    "item": "yukicore:aurorium_ingot"
+  },
+  "result": {
+    "id": "yukicore:aurorium_helmet",
+    "count": 1
+  }
+}

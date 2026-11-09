@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "yukicore:block/deepslate_yuki_crystal_ore"
-  }
-}

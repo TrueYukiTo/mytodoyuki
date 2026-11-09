@@ -1,0 +1,27 @@
+{
+  "name": "Руды Энда",
+  "category": "yukicore:end",
+  "icon": "yukicore:frost_ore",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Осколки Сердца упали на $(l)внешние острова$() Энда — за главным островом дракона. Найди их через шлюз, который открывается после победы над драконом."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:frost_ore",
+      "text": "$(l)Морозная руда$() — частая. Нужна алмазная кирка. Даёт необработанный мороз → морозный слиток."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:yuki_crystal_ore",
+      "text": "$(l)Руда кристалла Юки$() — светится. Кристаллы — основа Эссенции и Криосхем."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:starlight_ore",
+      "text": "$(l)Руда звёздного света$() — очень редкая. Плавится только в доменной печи. Нужна для Целестия."
+    }
+  ]
+}

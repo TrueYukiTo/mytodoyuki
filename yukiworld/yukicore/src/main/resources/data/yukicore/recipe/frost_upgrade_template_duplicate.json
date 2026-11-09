@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CTC",
+    "CEC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "yukicore:yuki_crystal"
+    },
+    "T": {
+      "item": "yukicore:frost_upgrade_template"
+    },
+    "E": {
+      "item": "minecraft:end_stone"
+    }
+  },
+  "result": {
+    "id": "yukicore:frost_upgrade_template",
+    "count": 2
+  }
+}

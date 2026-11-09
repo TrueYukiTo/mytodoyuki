@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "STS",
+    "SCS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "yukicore:starlight_shard"
+    },
+    "T": {
+      "item": "yukicore:celestium_upgrade_template"
+    },
+    "C": {
+      "item": "yukicore:celestium_ingot"
+    }
+  },
+  "result": {
+    "id": "yukicore:celestium_upgrade_template",
+    "count": 2
+  }
+}

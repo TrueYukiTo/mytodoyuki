@@ -2,12 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "pattern": [
-    "III",
-    "III",
-    "III"
+    "XXX",
+    "XXX",
+    "XXX"
   ],
   "key": {
-    "I": {
+    "X": {
       "item": "yukicore:frost_ingot"
     }
   },

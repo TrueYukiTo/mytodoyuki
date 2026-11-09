@@ -1,0 +1,622 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "end"
+	group: ""
+	icon: {
+		count: 1
+		id: "minecraft:dragon_egg"
+	}
+	id: "21450E439F1E525F"
+	images: [ ]
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"1E480D99B08F73B4"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:ender_eye"
+			}
+			id: "7CA32FCEA9980343"
+			rewards: [
+				{
+					id: "4F0EA5F655105215"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "47DC0D15B097A36D"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7CA32FCEA9980343"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:ender_pearl"
+			}
+			id: "3F329A0FC5E1A077"
+			rewards: [
+				{
+					id: "1A373CCFC49AD130"
+					type: "xp"
+					xp: 505
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "6D5991E22F6C33E7"
+					item: {
+						count: 1
+						id: "minecraft:ender_pearl"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3F329A0FC5E1A077"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:ender_eye"
+			}
+			id: "1F5A309A83B4B5E9"
+			rewards: [
+				{
+					id: "5174DD64589790E3"
+					type: "xp"
+					xp: 510
+				}
+			]
+			tasks: [
+				{
+					count: 12L
+					id: "2A4CF98EAB99498A"
+					item: {
+						count: 1
+						id: "minecraft:ender_eye"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1F5A309A83B4B5E9"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:ender_eye"
+			}
+			id: "68BB3D51DCD29A6F"
+			rewards: [
+				{
+					id: "228D5A8F8161785C"
+					type: "xp"
+					xp: 515
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "234B7E334CFE7234"
+					type: "dimension"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"68BB3D51DCD29A6F"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "37CC5C42DECF8B33"
+			rewards: [
+				{
+					id: "791EC7755687F769"
+					type: "xp"
+					xp: 520
+				}
+				{
+					count: 1
+					id: "326DA7F12A3E4E10"
+					item: {
+						count: 1
+						id: "minecraft:elytra"
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "minecraft:ender_dragon"
+					id: "501231511295CF9D"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"37CC5C42DECF8B33"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:dragon_breath"
+			}
+			id: "7AE372A93522CC3D"
+			rewards: [
+				{
+					id: "1144E4F0CCE21319"
+					type: "xp"
+					xp: 525
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "5AA4218DEFD3DBA7"
+					item: {
+						count: 1
+						id: "minecraft:dragon_breath"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7AE372A93522CC3D"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:end_crystal"
+			}
+			id: "62C9F6A082D12078"
+			rewards: [
+				{
+					id: "747C013C486398C0"
+					type: "xp"
+					xp: 530
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "2F6D97FA04DFF0DC"
+					item: {
+						count: 1
+						id: "minecraft:end_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"62C9F6A082D12078"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:shulker_shell"
+			}
+			id: "6EB34EEA5BF6A04B"
+			rewards: [
+				{
+					id: "34CA9464F301C331"
+					type: "xp"
+					xp: 535
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "27E07C943E49EEDC"
+					item: {
+						count: 1
+						id: "minecraft:shulker_shell"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6EB34EEA5BF6A04B"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:raw_frost"
+			}
+			id: "2D3781A4137D644B"
+			rewards: [
+				{
+					id: "6F273D27C497F984"
+					type: "xp"
+					xp: 540
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "4607932BC962464D"
+					item: {
+						count: 1
+						id: "yukicore:raw_frost"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2D3781A4137D644B"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_ingot"
+			}
+			id: "3E86E35F0EAD68B9"
+			rewards: [
+				{
+					id: "3D00A4C7779CEBF5"
+					type: "xp"
+					xp: 545
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "40813BB28FB9152E"
+					item: {
+						count: 1
+						id: "yukicore:frost_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3E86E35F0EAD68B9"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_crystal"
+			}
+			id: "669DAD52966A5D33"
+			rewards: [
+				{
+					id: "36681F97687D4B5B"
+					type: "xp"
+					xp: 550
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "2631F6392EB6C543"
+					item: {
+						count: 1
+						id: "yukicore:yuki_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"669DAD52966A5D33"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:starlight_shard"
+			}
+			id: "53B5F6E01F63A376"
+			rewards: [
+				{
+					id: "658C0DD951F37FDB"
+					type: "xp"
+					xp: 555
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "1C60D23F3CDA728F"
+					item: {
+						count: 1
+						id: "yukicore:starlight_shard"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"53B5F6E01F63A376"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_block"
+			}
+			id: "1DC8A733A864D34A"
+			rewards: [
+				{
+					id: "6B380A24FDB3D9EB"
+					type: "xp"
+					xp: 560
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "13A0DFCF248E0880"
+					item: {
+						count: 1
+						id: "yukicore:frost_block"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1DC8A733A864D34A"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_crystal_block"
+			}
+			id: "7586ECA3E68AF649"
+			rewards: [
+				{
+					id: "13DE4CB2CB594824"
+					type: "xp"
+					xp: 565
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "4B80205B0E746FF1"
+					item: {
+						count: 1
+						id: "yukicore:yuki_crystal_block"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7586ECA3E68AF649"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_lamp"
+			}
+			id: "32A4E02CAFD4FC1B"
+			rewards: [
+				{
+					id: "6D8AF5A1B6187A5A"
+					type: "xp"
+					xp: 570
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "4C0F40B3D72D54CF"
+					item: {
+						count: 1
+						id: "yukicore:yuki_lamp"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"32A4E02CAFD4FC1B"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "70DF7976EDB97CD2"
+			rewards: [
+				{
+					id: "177C811E68A6D583"
+					type: "xp"
+					xp: 575
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "minecraft:wither"
+					id: "4091D22977A80A71"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"70DF7976EDB97CD2"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "5C23435689011345"
+			rewards: [
+				{
+					id: "4A82EC749D3F6E73"
+					type: "xp"
+					xp: 580
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "minecraft:warden"
+					id: "4ADBE9F684C3DEB4"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5C23435689011345"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "580624432B58D13E"
+			rewards: [
+				{
+					id: "63484A8C789E1FD5"
+					type: "xp"
+					xp: 585
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "minecraft:elder_guardian"
+					id: "3F788421ABE7B79D"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"580624432B58D13E"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:star_shard"
+			}
+			id: "40CFC196AB943EB7"
+			rewards: [
+				{
+					id: "1D143E4BCBAD8C4A"
+					type: "xp"
+					xp: 590
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "411C915FAD596B9B"
+					item: {
+						count: 1
+						id: "yukicore:star_shard"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"40CFC196AB943EB7"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:star_shard"
+			}
+			id: "26B9123E2F78A229"
+			rewards: [
+				{
+					id: "3CC55D161B48C8FE"
+					type: "xp"
+					xp: 595
+				}
+				{
+					count: 1
+					id: "7DB708FC3E866FB3"
+					item: {
+						count: 1
+						id: "minecraft:nether_star"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 14L
+					id: "54E5AD38D3C5FA11"
+					item: {
+						count: 1
+						id: "yukicore:star_shard"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 3.0d
+		}
+	]
+}

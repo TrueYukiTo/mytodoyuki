@@ -1,0 +1,624 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steel"
+	group: ""
+	icon: {
+		count: 1
+		id: "mekanism:steel_casing"
+	}
+	id: "53661D2334E6DE83"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"56524DE68E642D5F"
+			]
+			icon: {
+				count: 1
+				id: "immersiveengineering:ingot_steel"
+			}
+			id: "646A874E4DB7DBC9"
+			rewards: [
+				{
+					id: "210FE24612E875DB"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "78B95D53565ADF71"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"646A874E4DB7DBC9"
+			]
+			icon: {
+				count: 1
+				id: "immersiveengineering:cokebrick"
+			}
+			id: "2E61F11423772DFD"
+			rewards: [
+				{
+					id: "6BB6627773483FFD"
+					type: "xp"
+					xp: 155
+				}
+			]
+			tasks: [
+				{
+					count: 27L
+					id: "3F158D6572FB68ED"
+					item: {
+						count: 1
+						id: "immersiveengineering:cokebrick"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2E61F11423772DFD"
+			]
+			icon: {
+				count: 1
+				id: "immersiveengineering:coal_coke"
+			}
+			id: "260DE24120F5F86F"
+			rewards: [
+				{
+					id: "163151D8F9D44C80"
+					type: "xp"
+					xp: 160
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "36A31459B0736076"
+					item: {
+						count: 1
+						id: "immersiveengineering:coal_coke"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"260DE24120F5F86F"
+			]
+			icon: {
+				count: 1
+				id: "immersiveengineering:blastbrick"
+			}
+			id: "23F6EC8169B39510"
+			rewards: [
+				{
+					id: "558E5B259BE5CF45"
+					type: "xp"
+					xp: 165
+				}
+			]
+			tasks: [
+				{
+					count: 27L
+					id: "293D91D47A401FF6"
+					item: {
+						count: 1
+						id: "immersiveengineering:blastbrick"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"23F6EC8169B39510"
+			]
+			icon: {
+				count: 1
+				id: "immersiveengineering:ingot_steel"
+			}
+			id: "20E48F6AE25D7616"
+			rewards: [
+				{
+					id: "3B0D27B079FC6CA3"
+					type: "xp"
+					xp: 170
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "44C9DC79C0DF821B"
+					item: {
+						count: 1
+						id: "immersiveengineering:ingot_steel"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"20E48F6AE25D7616"
+			]
+			icon: {
+				count: 1
+				id: "immersiveengineering:hammer"
+			}
+			id: "44569CB3C5573BB9"
+			rewards: [
+				{
+					id: "40E43ED93A18FE5F"
+					type: "xp"
+					xp: 175
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "62F39C4827E5B16D"
+					item: {
+						count: 1
+						id: "immersiveengineering:hammer"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"44569CB3C5573BB9"
+			]
+			icon: {
+				count: 1
+				id: "immersiveengineering:wirecoil_copper"
+			}
+			id: "5EDFC0B1DBCEC9E3"
+			rewards: [
+				{
+					id: "4DC4A274D1B4DBDF"
+					type: "xp"
+					xp: 180
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "36DDB96FF37D959A"
+					item: {
+						count: 1
+						id: "immersiveengineering:wirecoil_copper"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5EDFC0B1DBCEC9E3"
+			]
+			icon: {
+				count: 1
+				id: "immersiveengineering:capacitor_lv"
+			}
+			id: "3810445A5E9CED6A"
+			rewards: [
+				{
+					id: "60A10095B8FFBE99"
+					type: "xp"
+					xp: 185
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1F629715B789EF6A"
+					item: {
+						count: 1
+						id: "immersiveengineering:capacitor_lv"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3810445A5E9CED6A"
+			]
+			icon: {
+				count: 1
+				id: "immersiveengineering:component_steel"
+			}
+			id: "2B56F053249599F3"
+			rewards: [
+				{
+					id: "728CCB7D14D8C7B2"
+					type: "xp"
+					xp: 190
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "35DB624DC0C118CA"
+					item: {
+						count: 1
+						id: "immersiveengineering:component_steel"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2B56F053249599F3"
+			]
+			icon: {
+				count: 1
+				id: "immersiveengineering:capacitor_hv"
+			}
+			id: "734C4CB35F8F1EF0"
+			rewards: [
+				{
+					id: "1D5B6CEDB2375696"
+					type: "xp"
+					xp: 195
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4E0629D3C6E2C94D"
+					item: {
+						count: 1
+						id: "immersiveengineering:capacitor_hv"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"734C4CB35F8F1EF0"
+			]
+			icon: {
+				count: 1
+				id: "immersiveengineering:component_electronic_adv"
+			}
+			id: "15C10E764F08E536"
+			rewards: [
+				{
+					id: "5E7DACAE532029EF"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "277DA48ADF870BF3"
+					item: {
+						count: 1
+						id: "immersiveengineering:component_electronic_adv"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"15C10E764F08E536"
+			]
+			icon: {
+				count: 1
+				id: "mekanism:ingot_osmium"
+			}
+			id: "23F23145F5D6D221"
+			rewards: [
+				{
+					id: "59BD37CA8FB7EE1B"
+					type: "xp"
+					xp: 205
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "4E542860A12496A1"
+					item: {
+						count: 1
+						id: "mekanism:ingot_osmium"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"23F23145F5D6D221"
+			]
+			icon: {
+				count: 1
+				id: "mekanism:metallurgic_infuser"
+			}
+			id: "7B1C8EF9782C3473"
+			rewards: [
+				{
+					id: "1984D6D24F6DE695"
+					type: "xp"
+					xp: 210
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "25C09032CFC7DAC6"
+					item: {
+						count: 1
+						id: "mekanism:metallurgic_infuser"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7B1C8EF9782C3473"
+			]
+			icon: {
+				count: 1
+				id: "mekanism:steel_casing"
+			}
+			id: "21419546DB149638"
+			rewards: [
+				{
+					id: "448A0B497649184C"
+					type: "xp"
+					xp: 215
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "2862B6ECDC627BC0"
+					item: {
+						count: 1
+						id: "mekanism:steel_casing"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"21419546DB149638"
+			]
+			icon: {
+				count: 1
+				id: "mekanism:enrichment_chamber"
+			}
+			id: "38F448B9922C2B95"
+			rewards: [
+				{
+					id: "24C93485D9B49150"
+					type: "xp"
+					xp: 220
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6A152F97D6977D92"
+					item: {
+						count: 1
+						id: "mekanism:enrichment_chamber"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"38F448B9922C2B95"
+			]
+			icon: {
+				count: 1
+				id: "mekanism:basic_control_circuit"
+			}
+			id: "1F5E3EDA241CD2E5"
+			rewards: [
+				{
+					id: "5507FF69105E4E83"
+					type: "xp"
+					xp: 225
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "47593A6F350C38BB"
+					item: {
+						count: 1
+						id: "mekanism:basic_control_circuit"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"1F5E3EDA241CD2E5"
+			]
+			icon: {
+				count: 1
+				id: "mekanism:advanced_control_circuit"
+			}
+			id: "6ECAEFBE44358310"
+			rewards: [
+				{
+					id: "60AA54A68974D1A4"
+					type: "xp"
+					xp: 230
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "468619C6EAB8F2B4"
+					item: {
+						count: 1
+						id: "mekanism:advanced_control_circuit"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6ECAEFBE44358310"
+			]
+			icon: {
+				count: 1
+				id: "mekanism:elite_control_circuit"
+			}
+			id: "700ACC5353176D54"
+			rewards: [
+				{
+					id: "2F5F771334F14E21"
+					type: "xp"
+					xp: 235
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "3F4115052259C607"
+					item: {
+						count: 1
+						id: "mekanism:elite_control_circuit"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"700ACC5353176D54"
+			]
+			icon: {
+				count: 1
+				id: "mekanism:ultimate_control_circuit"
+			}
+			id: "33DA92F7DFC5D6F2"
+			rewards: [
+				{
+					id: "1463F2D46BE3E0B5"
+					type: "xp"
+					xp: 240
+				}
+				{
+					count: 2
+					id: "5BDEDA053008FB1C"
+					item: {
+						count: 1
+						id: "mekanism:ultimate_control_circuit"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "2A2984C284DC7DC0"
+					item: {
+						count: 1
+						id: "mekanism:ultimate_control_circuit"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"33DA92F7DFC5D6F2"
+			]
+			icon: {
+				count: 1
+				id: "mekanism:ingot_refined_obsidian"
+			}
+			id: "6EFDC129A5E655C8"
+			rewards: [
+				{
+					id: "6E1E29F6A5D4DCD1"
+					type: "xp"
+					xp: 245
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 16L
+					id: "783E8166555096E8"
+					item: {
+						count: 1
+						id: "mekanism:ingot_refined_obsidian"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 3.0d
+		}
+	]
+}

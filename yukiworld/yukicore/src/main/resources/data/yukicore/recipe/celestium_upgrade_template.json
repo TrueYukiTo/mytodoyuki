@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CSC",
+    "STS",
+    "CSC"
+  ],
+  "key": {
+    "C": {
+      "item": "yukicore:celestium_ingot"
+    },
+    "S": {
+      "item": "yukicore:starlight_block"
+    },
+    "T": {
+      "item": "yukicore:aurorium_upgrade_template"
+    }
+  },
+  "result": {
+    "id": "yukicore:celestium_upgrade_template",
+    "count": 1
+  }
+}

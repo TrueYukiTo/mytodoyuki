@@ -1,241 +1,846 @@
 {
+	"chapter.16900BDA3608F337.chapter_subtitle": [
+		"Мороз → Ауроний → Целестий"
+	]
+	"chapter.16900BDA3608F337.title": "🔨 Глава X: Ледяная кузня"
 	"chapter.17798F391A1F346C.chapter_subtitle": [
-		"Farms, bees and food"
+		"Фермы, пчёлы и еда"
 	]
-	"chapter.17798F391A1F346C.title": "🌾 Nature"
-	"chapter.7A0EEA3B367DAB96.chapter_subtitle": [
-		"Ars Nouveau, Iron's Spells, Occultism"
+	"chapter.17798F391A1F346C.title": "🌾 Глава V: Сад и улей"
+	"chapter.199E276CC8E51C76.chapter_subtitle": [
+		"Сила, собранная из всех модов"
 	]
-	"chapter.7A0EEA3B367DAB96.title": "✨ Magic"
-	"chapter.880E11ADCF945185.chapter_subtitle": [
-		"The Heart and the Infinity Star"
+	"chapter.199E276CC8E51C76.title": "🔮 Глава XI: Четыре Ядра"
+	"chapter.1A0EEA3B367DAB96.chapter_subtitle": [
+		"Ars Nouveau и Iron's Spells"
 	]
-	"chapter.880E11ADCF945185.title": "⭐ YukiWorld Finale"
-	"chapter.B3BE6BF3DBE1FF78.chapter_subtitle": [
-		"First steps in YukiWorld"
+	"chapter.1A0EEA3B367DAB96.title": "✨ Глава III: Магия пробуждается"
+	"chapter.1C75E771BFA593D2.chapter_subtitle": [
+		"Applied Energistics 2 и Refined Storage"
 	]
-	"chapter.B3BE6BF3DBE1FF78.title": "❄ Welcome"
-	"chapter.E13CEC48CB1D8A2A.chapter_subtitle": [
-		"Nether, End, Aether and the Twilight Forest"
+	"chapter.1C75E771BFA593D2.title": "💾 Глава VI: Цифровой мир"
+	"chapter.21450E439F1E525F.chapter_subtitle": [
+		"Энд и осколки Сердца"
 	]
-	"chapter.E13CEC48CB1D8A2A.title": "🌌 Dimensions"
-	"chapter.F63F79E0D822EE86.chapter_subtitle": [
-		"Mekanism, Create, AE2 and more"
+	"chapter.21450E439F1E525F.title": "🐉 Глава IX: Край света"
+	"chapter.242B50F741432981.chapter_subtitle": [
+		"Create — механическое сердце мира"
 	]
-	"chapter.F63F79E0D822EE86.title": "⚙ Technology"
-	"quest.1013F6162A95713C.title": "Afrit Essence"
-	"quest.10DFC7FC690D1884.quest_desc": [
-		"Aether portal: glowstone frame + water."
+	"chapter.242B50F741432981.title": "⚙ Глава I: Шестерни"
+	"chapter.280E11ADCF945185.chapter_subtitle": [
+		"Сердце, Звезда и возвращение зимы"
 	]
-	"quest.10DFC7FC690D1884.title": "Ambrosium"
-	"quest.14071D3AFEFC66E3.quest_desc": [
-		"Early Mekanism core machine."
+	"chapter.280E11ADCF945185.title": "⭐ Финал: Бесконечная звезда"
+	"chapter.2A90CE73702A4DEE.chapter_subtitle": [
+		"Occultism, EvilCraft, Apotheosis"
 	]
-	"quest.14071D3AFEFC66E3.title": "Metallurgic Infuser"
-	"quest.142E3962FD8CFB36.quest_desc": [
-		"EvilCraft."
+	"chapter.2A90CE73702A4DEE.title": "🕯 Глава IV: Тайное знание"
+	"chapter.2DA230897F52CD1A.chapter_subtitle": [
+		"Голос в снегу зовёт тебя"
 	]
-	"quest.142E3962FD8CFB36.title": "Dark Gem"
-	"quest.15110C10E1F53DA5.quest_desc": [
-		"Combine the best of every tech mod around a Frost Core."
+	"chapter.2DA230897F52CD1A.title": "❄ Пролог: Пробуждение"
+	"chapter.4A8BED6069737AD9.chapter_subtitle": [
+		"Powah, реакторы и машины"
 	]
-	"quest.15110C10E1F53DA5.title": "Tech Core"
-	"quest.1547E2EBC08F27C6.quest_desc": [
-		"Coke oven and blast furnace."
+	"chapter.4A8BED6069737AD9.title": "⚡ Глава VII: Энергия"
+	"chapter.53661D2334E6DE83.chapter_subtitle": [
+		"Immersive Engineering и Mekanism"
 	]
-	"quest.1547E2EBC08F27C6.title": "IE Steel"
-	"quest.15AF8FCD2227FDC9.quest_desc": [
-		"Apotheosis: дыхание дракона на столе зачарования."
+	"chapter.53661D2334E6DE83.title": "🔩 Глава II: Сталь и пар"
+	"chapter.6332B8E2B6469A71.chapter_subtitle": [
+		"Незер, Сумеречный лес, Aether, Бамблзона"
 	]
-	"quest.15AF8FCD2227FDC9.title": "Infused Breath"
-	"quest.17ACE9C6FDC32388.title": "Blaze Rods"
-	"quest.180F64B6F9A2D752.quest_desc": [
-		"An artifact from chests and mimics."
+	"chapter.6332B8E2B6469A71.title": "🌌 Глава VIII: Пороги миров"
+	"quest.107783C125D514BB.quest_desc": [
+		"Последовательная сборка: развёртыватели и пресс."
 	]
-	"quest.180F64B6F9A2D752.title": "Everlasting Beef"
-	"quest.1AE3BD22D03916D9.title": "Cooking Pot"
-	"quest.1B843B45B105BA40.title": "Fiery Ingot"
-	"quest.1C330E75DFB2604B.quest_desc": [
-		"The base of all four cores. Unlocks the Tech, Magic, Nature and Dimensions chapters."
+	"quest.107783C125D514BB.title": "Точный механизм"
+	"quest.10863BEE9386B9C2.quest_desc": [
+		"Для мела и ритуалов."
 	]
-	"quest.1C330E75DFB2604B.title": "Frost Core"
-	"quest.24BE03B9E8F937C5.title": "Legendary Ink"
-	"quest.318F273B135F7CA0.quest_desc": [
-		"More space and upgrades."
+	"quest.10863BEE9386B9C2.title": "Серебро"
+	"quest.10EBC3BC7ADB1285.quest_desc": [
+		"Креативный куб Mekanism."
 	]
-	"quest.318F273B135F7CA0.title": "Backpack"
-	"quest.31EE92F9D5B8E682.title": "Totem of Undying"
-	"quest.33E3BFFC3D7BB3B1.quest_desc": [
-		"Faster than diamond and great to enchant."
+	"quest.10EBC3BC7ADB1285.title": "Бесконечная энергия"
+	"quest.10F573C4B6EAA546.title": "Истинный кварц"
+	"quest.1154A1292B9F18E9.title": "Алтарь наполнения"
+	"quest.117EEEFF3F28B443.quest_desc": [
+		"ExtendedAE."
 	]
-	"quest.33E3BFFC3D7BB3B1.title": "Frost Pickaxe"
-	"quest.3451446F84B393AC.title": "Knightmetal"
-	"quest.37186742D46CA4A9.title": "Certus Quartz"
-	"quest.38506544437BCC99.title": "Inferium Essence"
-	"quest.3B26518139AF5D54.quest_desc": [
-		"Twilight portal: flowers around water + diamond."
+	"quest.117EEEFF3F28B443.title": "Расширенный поставщик"
+	"quest.1190DAD668B869BB.quest_desc": [
+		"Механический крафтер 5×5. Требует звезду Незера."
 	]
-	"quest.3B26518139AF5D54.title": "Naga Scale"
-	"quest.3D37F121E5E34B71.quest_desc": [
-		"Yuki Lamps give light 15."
+	"quest.1190DAD668B869BB.title": "Звезда Юки"
+	"quest.12006C5A0D1B8153.quest_desc": [
+		"Нужны для Магического ядра."
 	]
-	"quest.3D37F121E5E34B71.title": "Let there be light"
-	"quest.3EA21090C65846EE.title": "Energizing Orb"
-	"quest.44B7D3CCDBF53374.quest_desc": [
-		"Teleport between waystones."
+	"quest.12006C5A0D1B8153.title": "Блоки источника"
+	"quest.1267940FEDD2F2D3.quest_desc": [
+		"Камень крепче дерева — и это только начало."
 	]
-	"quest.44B7D3CCDBF53374.title": "Waystone"
-	"quest.4C29543292018F34.title": "Ultimate Control Circuit"
-	"quest.50341C7A334F7A8A.title": "Nitro Capacitor"
-	"quest.572555DC01AC09F5.quest_desc": [
-		"Mekanism SPS."
+	"quest.1267940FEDD2F2D3.title": "Каменная кирка"
+	"quest.133C3B37861B7C20.quest_desc": [
+		"Refined Storage."
 	]
-	"quest.572555DC01AC09F5.title": "Antimatter"
-	"quest.57F7053B2FC0C7F7.title": "Arcane Essence"
-	"quest.5C3A8B5068225455.quest_desc": [
-		"Frost ore spawns in any Overworld cave."
+	"quest.133C3B37861B7C20.title": "Контроллер RS"
+	"quest.13E2760997CBC6D5.quest_desc": [
+		"Призови и победи африта."
 	]
-	"quest.5C3A8B5068225455.title": "Cold underfoot"
-	"quest.660B873DDC27F71F.title": "Advanced Component"
-	"quest.68667BEF3D30577E.title": "Enchanted Gravitite"
-	"quest.6976907ED2085062.quest_desc": [
-		"Ancient Cities."
+	"quest.13E2760997CBC6D5.title": "Эссенция африта"
+	"quest.13FA9C71440A9595.quest_desc": [
+		"Брось жемчуг Края в улей."
 	]
-	"quest.6976907ED2085062.title": "Echo Shards"
-	"quest.7221613814AB1F9A.title": "Royal Jelly Block"
-	"quest.729CBD45D27AE071.quest_desc": [
-		"The awakening ritual."
+	"quest.13FA9C71440A9595.title": "Бамблзона"
+	"quest.14571F94BA5E8C0E.quest_desc": [
+		"Storage Drawers: порядок на базе — порядок в голове."
 	]
-	"quest.729CBD45D27AE071.title": "Awakened Supremium"
-	"quest.7395392074B3587D.quest_desc": [
-		"Oritech."
+	"quest.14571F94BA5E8C0E.title": "Ящики"
+	"quest.14D2998A08EBFCB9.quest_desc": [
+		"Рамка из светокамня + ведро воды."
 	]
-	"quest.7395392074B3587D.title": "Overcharged Crystal"
-	"quest.7D383E9760C0F944.quest_desc": [
-		"Complete the Bumblezone trials."
+	"quest.14D2998A08EBFCB9.title": "Aether"
+	"quest.150A7E82207DB949.quest_desc": [
+		"Create: хроматическое соединение в бездне."
 	]
-	"quest.7D383E9760C0F944.title": "Essence of the Bees"
-	"quest.7E48474899A84A72.title": "Eye of Ender"
-	"quest.832E61D3959486B9.quest_desc": [
-		"Your own digital storage network."
+	"quest.150A7E82207DB949.title": "Теневая сталь"
+	"quest.15312755AE0EB421.quest_desc": [
+		"Iron's Spells 'n Spellbooks."
 	]
-	"quest.832E61D3959486B9.title": "ME Controller"
-	"quest.8578D4112D653372.title": "Steel Casing"
-	"quest.875CE369FA74E887.title": "Dragon's Breath"
-	"quest.87BC50E03326FB6B.quest_desc": [
-		"Five schools of magic in one core."
+	"quest.15312755AE0EB421.title": "Тайная эссенция"
+	"quest.15343A311DDF7656.quest_desc": [
+		"Смешивание — путь к латуни и Ауронию."
 	]
-	"quest.87BC50E03326FB6B.title": "Magic Core"
-	"quest.87CC521524B1D938.quest_desc": [
-		"Reveal the Otherworld."
+	"quest.15343A311DDF7656.title": "Механический миксер"
+	"quest.15C10E764F08E536.quest_desc": [
+		"Нужны для Технологического ядра."
 	]
-	"quest.87CC521524B1D938.title": "Otherstone"
-	"quest.89897EEF063073D5.quest_desc": [
+	"quest.15C10E764F08E536.title": "Продвинутые компоненты"
+	"quest.15E2AE14E00B3F8F.title": "Осколки процветания"
+	"quest.15FA4D84A8760347.quest_desc": [
+		"Твои первые заклинания."
+	]
+	"quest.15FA4D84A8760347.title": "Книга новичка"
+	"quest.165E405A3716AD5E.quest_desc": [
+		"&3«Границы миров снова крепки.»&r"
+	]
+	"quest.165E405A3716AD5E.title": "🌌 Ядро измерений"
+	"quest.16B84D8498F2B6CB.quest_desc": [
+		"Из него строят врата в другие миры."
+	]
+	"quest.16B84D8498F2B6CB.title": "Обсидиан"
+	"quest.16CBB4265B835C19.title": "Нитро-конденсаторы"
+	"quest.16D1AF8867CD8ED3.quest_desc": [
+		"Комплект: спешка II, сила, огнестойкость."
+	]
+	"quest.16D1AF8867CD8ED3.title": "Ауриевый нагрудник"
+	"quest.16D2E6F6A7B80E53.quest_desc": [
+		"Powah: заряжай кристаллы."
+	]
+	"quest.16D2E6F6A7B80E53.title": "Заряжающая сфера"
+	"quest.183DEACAA2A479AF.quest_desc": [
+		"Нужны для каждого целестиевого слитка."
+	]
+	"quest.183DEACAA2A479AF.title": "Нитро-кристаллы"
+	"quest.187E942CF64CD15E.title": "Рыцарский металл"
+	"quest.188C2F322C1F3B18.quest_desc": [
+		"Четыре Иссушителя для Ядра измерений."
+	]
+	"quest.188C2F322C1F3B18.title": "Звёзды Незера"
+	"quest.189549891E2C068F.quest_desc": [
+		"Create: хроматическое соединение под светом."
+	]
+	"quest.189549891E2C068F.title": "Очищенное сияние"
+	"quest.18980301AADBB198.quest_desc": [
+		"Нужен для Технологического ядра."
+	]
+	"quest.18980301AADBB198.title": "Сплав затмения"
+	"quest.18B8EB11860A4254.title": "Шаблон целестия"
+	"quest.18C74DA26909A7B5.quest_desc": [
+		"&bСамое редкое яблоко мира.&r Ищи в сундуках — нужно 4 для Ядра природы."
+	]
+	"quest.18C74DA26909A7B5.title": "Зачарованные золотые яблоки"
+	"quest.18ED6EA4693EAE11.title": "Зачарованный гравитит"
+	"quest.19880E4068756090.title": "Полоний"
+	"quest.19E10E8763C69D17.quest_desc": [
+		"Кровь гидры и слезы ур-гаста."
+	]
+	"quest.19E10E8763C69D17.title": "Огненные слитки"
+	"quest.1A7F6CF8718E1654.quest_desc": [
+		"Основа зачаровывающего аппарата."
+	]
+	"quest.1A7F6CF8718E1654.title": "Тайное ядро"
+	"quest.1AA0801D966B505E.title": "Зачарованная книга"
+	"quest.1B3714B3A787833C.title": "Легендарные чернила"
+	"quest.1B972A952E5039B5.quest_desc": [
+		"Ты овладел Ars Nouveau."
+	]
+	"quest.1B972A952E5039B5.title": "Книга архимага"
+	"quest.1CAC4E87196E0AC4.quest_desc": [
+		"49 механических крафтеров."
+	]
+	"quest.1CAC4E87196E0AC4.title": "Поле 7×7"
+	"quest.1CF287061495A705.title": "Шаблон аурония"
+	"quest.1D4C356A3DB0DA94.quest_desc": [
+		"Поезда помогут возить ресурсы с далёких шахт."
+	]
+	"quest.1D4C356A3DB0DA94.title": "Рельсы"
+	"quest.1D88BA940F4F2A5C.title": "Термоядерный реактор"
+	"quest.1DC8A733A864D34A.title": "Морозные блоки"
+	"quest.1E18C025108CC184.quest_desc": [
+		"Полный целестиевый комплект — ночное зрение, сила, скорость, регенерация и многое другое."
+	]
+	"quest.1E18C025108CC184.title": "Целестиевый нагрудник"
+	"quest.1E480D99B08F73B4.quest_desc": [
+		"Артефакт из сундуков и мимиков."
+	]
+	"quest.1E480D99B08F73B4.title": "Вечная говядина"
+	"quest.1E53077DA18C8185.quest_desc": [
+		"Победи Нагу."
+	]
+	"quest.1E53077DA18C8185.title": "Чешуя наги"
+	"quest.1E9D26C8AFE4ADDF.title": "Империум"
+	"quest.1F0C47574B0D520E.quest_desc": [
+		"Выпадает из драконов Iron's Spells и Энд-дракона."
+	]
+	"quest.1F0C47574B0D520E.title": "Драконья кожа"
+	"quest.1F5A309A83B4B5E9.quest_desc": [
+		"Найди крепость."
+	]
+	"quest.1F5A309A83B4B5E9.title": "Глаза Края"
+	"quest.1F5E3EDA241CD2E5.quest_desc": [
+		"Схемы растут вместе с тобой."
+	]
+	"quest.1F5E3EDA241CD2E5.title": "Базовая схема"
+	"quest.1F7632EC66669F36.quest_desc": [
+		"Нужен для Магического ядра."
+	]
+	"quest.1F7632EC66669F36.title": "Настроенный камень духа"
+	"quest.1F8FE072E2283D2C.quest_desc": [
+		"Нужно минимум &e8&r: 4 для Технологического ядра и 4 для Нестабильной звезды."
+	]
+	"quest.1F8FE072E2283D2C.title": "Сингулярности"
+	"quest.1F9CCAB9993478F7.title": "Яблоки бессмертия"
+	"quest.204A7DDA0AB97FF6.title": "Пылающие кристаллы"
+	"quest.2059D3D6A2879FC9.title": "Томаты"
+	"quest.20633CF00D7AAE14.title": "Занит"
+	"quest.20E48F6AE25D7616.quest_desc": [
+		"Прочный металл для машин и брони."
+	]
+	"quest.20E48F6AE25D7616.title": "Сталь"
+	"quest.21419546DB149638.quest_desc": [
+		"Основа машин Mekanism."
+	]
+	"quest.21419546DB149638.title": "Стальной корпус"
+	"quest.21DA2134DAD7D57D.quest_desc": [
+		"&6«Разум машин вернулся ко мне.»&r"
+	]
+	"quest.21DA2134DAD7D57D.title": "⚙ Технологическое ядро"
+	"quest.21DF1AF08036042C.quest_desc": [
+		"&b«Спасибо, Хранитель. Пока горит Бесконечная звезда, зима будет приходить в этот мир каждый год. А я буду рядом — в каждом падающем снеге.»&r"
+		""
+		"&7— конец Легенды о Юки —"
+	]
+	"quest.21DF1AF08036042C.title": "Эпилог"
+	"quest.2322D2DF19F2B1E0.quest_desc": [
+		"Знание — тоже сила."
+	]
+	"quest.2322D2DF19F2B1E0.title": "Чародейский стол"
+	"quest.23F23145F5D6D221.quest_desc": [
+		"Металл Mekanism."
+	]
+	"quest.23F23145F5D6D221.title": "Осмий"
+	"quest.23F6EC8169B39510.quest_desc": [
+		"Собери доменную печь."
+	]
+	"quest.23F6EC8169B39510.title": "Доменные кирпичи"
+	"quest.247F61D735667A98.quest_desc": [
+		"Магический кристалл Ars Nouveau."
+	]
+	"quest.247F61D735667A98.title": "Самоцветы источника"
+	"quest.24EC9D02D8518E23.quest_desc": [
+		"Farmer's Delight: настоящая еда даёт сытость надолго."
+	]
+	"quest.24EC9D02D8518E23.title": "Кастрюля"
+	"quest.24F1100D636554FD.quest_desc": [
+		"Виден только под действием дурмана."
+	]
+	"quest.24F1100D636554FD.title": "Иной камень"
+	"quest.2521F99D9EC2CCB1.quest_desc": [
+		"&b«Когда моё Сердце разбилось, границы между мирами истончились. Пройди их все — и собери память каждого мира в Ядро измерений.»"
+	]
+	"quest.2521F99D9EC2CCB1.title": "Письмо Юки: границы"
+	"quest.260DE24120F5F86F.quest_desc": [
+		"Топливо для доменной печи."
+	]
+	"quest.260DE24120F5F86F.title": "Кокс"
+	"quest.2621EEB84D72A07E.quest_desc": [
+		"&b«Огонь и лёд — две стороны одного мира», — шепчет Юки."
+	]
+	"quest.2621EEB84D72A07E.title": "Очаг"
+	"quest.263F41A9B07455B0.quest_desc": [
+		"81 механический крафтер."
+	]
+	"quest.263F41A9B07455B0.title": "Поле 9×9"
+	"quest.2688B7A49B07B5A5.title": "Пьедесталы"
+	"quest.26A774012DC6641E.quest_desc": [
+		"Waystones: телепортация между камнями на поверхности."
+	]
+	"quest.26A774012DC6641E.title": "Путевой камень"
+	"quest.26B9123E2F78A229.quest_desc": [
+		"&b«Я чувствую их все... Хранитель, ты собрал мой свет.»"
+	]
+	"quest.26B9123E2F78A229.title": "Все осколки"
+	"quest.26BA44942AB38EAE.quest_desc": [
+		"Теперь можно идти дальше."
+	]
+	"quest.26BA44942AB38EAE.title": "Алмазная броня"
+	"quest.27AB9E1237039030.quest_desc": [
+		"Испытательные камеры."
+	]
+	"quest.27AB9E1237039030.title": "Тяжёлые ядра"
+	"quest.2832735F0A40D5E9.title": "Блоки рыцарского металла"
+	"quest.287406EA5418E003.quest_desc": [
+		"Ночи стали опаснее с тех пор, как ушла зима."
+	]
+	"quest.287406EA5418E003.title": "Щит"
+	"quest.28AA007C32F378FF.quest_desc": [
+		"Камера наполнения Ars Nouveau, 3000 источника."
+	]
+	"quest.28AA007C32F378FF.title": "Эссенция Юки"
+	"quest.2937A9A0040F821F.title": "Древние обломки"
+	"quest.29B90DC5DF55589E.quest_desc": [
+		"Mekanism SPS производит антиматерию."
+	]
+	"quest.29B90DC5DF55589E.title": "Сверхкритический сепаратор"
+	"quest.2A74012BBD800C15.quest_desc": [
 		"Industrial Foregoing."
 	]
-	"quest.89897EEF063073D5.title": "Supreme Machine Frame"
-	"quest.8F4D6716FB1084D9.quest_desc": [
+	"quest.2A74012BBD800C15.title": "Простая рама"
+	"quest.2B0FECC60501473F.title": "Морозный меч"
+	"quest.2B4ADFB975CE37CD.title": "Морозные яблоки"
+	"quest.2B56F053249599F3.quest_desc": [
+		"Детали для тяжёлых машин."
+	]
+	"quest.2B56F053249599F3.title": "Стальные компоненты"
+	"quest.2C284FDCB2E5CB0E.title": "Вычислительные процессоры"
+	"quest.2D3781A4137D644B.quest_desc": [
+		"&bЯ чувствую холод...&r Морозная руда — частая на внешних островах."
+	]
+	"quest.2D3781A4137D644B.title": "Морозная руда"
+	"quest.2D6F14B0D01584AF.title": "Незерит"
+	"quest.2DD8348AC8D47167.quest_desc": [
+		"&b«Не вся магия светла. Демоны Occultism и тёмные камни EvilCraft тоже хранят частицы моей силы. Будь осторожен, Хранитель.»"
+	]
+	"quest.2DD8348AC8D47167.title": "Письмо Юки: тени"
+	"quest.2DE37EC08A379E9B.title": "Эссенция манипуляции"
+	"quest.2E61F11423772DFD.quest_desc": [
+		"IE: собери коксовую печь 3×3×3."
+	]
+	"quest.2E61F11423772DFD.title": "Коксовые кирпичи"
+	"quest.2EB77BFC96CEA371.quest_desc": [
+		"Железо понадобится для всего: инструментов, машин, брони."
+	]
+	"quest.2EB77BFC96CEA371.title": "Железо"
+	"quest.2F966F3261AD9D7A.title": "Божественная жемчужина"
+	"quest.30610AA52098BBE2.title": "Терциум"
+	"quest.30B70EA4AB2B4379.quest_desc": [
+		"Шагни в огненный мир."
+	]
+	"quest.30B70EA4AB2B4379.title": "Незер"
+	"quest.31564F1840A02A02.title": "Верховная рама"
+	"quest.31DE97CCF56CFC0E.quest_desc": [
+		"Малые шестерни передают вращение."
+	]
+	"quest.31DE97CCF56CFC0E.title": "Шестерни"
+	"quest.32630379247D6530.quest_desc": [
+		"&a«Сады снова цветут.»&r"
+	]
+	"quest.32630379247D6530.title": "🌾 Ядро природы"
+	"quest.32A4E02CAFD4FC1B.quest_desc": [
+		"Пусть база светится как зимний вечер."
+	]
+	"quest.32A4E02CAFD4FC1B.title": "Лампы Юки"
+	"quest.32A4EFFC4CBB2F71.title": "Стальной лист"
+	"quest.32BBBDF18106242E.quest_desc": [
+		"&bЗдесь рождается Эссенция Юки&r: кристалл Юки + голубой лёд, снег и эссенция воды."
+	]
+	"quest.32BBBDF18106242E.title": "Камера наполнения"
+	"quest.33108CD2A383ADBB.quest_desc": [
+		"Нужны для сложных механизмов."
+	]
+	"quest.33108CD2A383ADBB.title": "Электронные лампы"
+	"quest.33B53E8D31B304E2.title": "Точные механизмы"
+	"quest.33DA92F7DFC5D6F2.quest_desc": [
+		"Понадобятся 8 штук для Технологического ядра."
+	]
+	"quest.33DA92F7DFC5D6F2.title": "Абсолютная схема"
+	"quest.341B2C4D0BACCD57.quest_desc": [
+		"Меняют скорость вращения."
+	]
+	"quest.341B2C4D0BACCD57.title": "Большие шестерни"
+	"quest.356FB03215E87E20.quest_desc": [
+		"Им ты однажды выкуешь Морозные пластины."
+	]
+	"quest.356FB03215E87E20.title": "Механический пресс"
+	"quest.3684060946D88D64.quest_desc": [
+		"1000 мБ антиматерии стабилизируют звезду."
+	]
+	"quest.3684060946D88D64.title": "Антипротонный нуклеосинтезатор"
+	"quest.37CC5C42DECF8B33.quest_desc": [
+		"&b«Он больше не причинит вреда. Шлюз открыт — лети к дальним островам.»"
+	]
+	"quest.37CC5C42DECF8B33.title": "Падение дракона"
+	"quest.3810445A5E9CED6A.quest_desc": [
+		"Хранение энергии."
+	]
+	"quest.3810445A5E9CED6A.title": "Конденсатор LV"
+	"quest.387DFDDF46445F66.quest_desc": [
 		"Productive Bees."
 	]
-	"quest.8F4D6716FB1084D9.title": "Wax"
-	"quest.8F6D597094D030A5.quest_desc": [
-		"Four cores + antimatter + time crystals."
+	"quest.387DFDDF46445F66.title": "Продвинутый улей"
+	"quest.38A4A619285CDAE8.quest_desc": [
+		"Дыхание дракона на столе зачарования."
 	]
-	"quest.8F6D597094D030A5.title": "Heart of YukiWorld"
-	"quest.9C15809EA1985596.title": "RS Construction Core"
-	"quest.9FAB6BB1B903FF31.quest_desc": [
-		"The power of life in every form."
+	"quest.38A4A619285CDAE8.title": "Наполненное дыхание"
+	"quest.38AFD27E0221BFA4.quest_desc": [
+		"Разбирай самоцветы Apotheosis."
 	]
-	"quest.9FAB6BB1B903FF31.title": "Nature Core"
-	"quest.A1B18931E415E99F.quest_desc": [
-		"Create: chromatic compound in light."
+	"quest.38AFD27E0221BFA4.title": "Пыль самоцветов"
+	"quest.38F448B9922C2B95.quest_desc": [
+		"Удвоение руды."
 	]
-	"quest.A1B18931E415E99F.title": "Refined Radiance"
-	"quest.A9DC3E54C8EFD7D3.quest_desc": [
+	"quest.38F448B9922C2B95.title": "Обогатитель"
+	"quest.392290870566DA2F.title": "Одухотворённые кристаллы"
+	"quest.3976C00C0B4CB53E.quest_desc": [
+		"Промывка, плавка и копчение потоком воздуха."
+	]
+	"quest.3976C00C0B4CB53E.title": "Вентилятор"
+	"quest.39A9DDDF8425D9AE.quest_desc": [
+		"Первый источник энергии вращения."
+	]
+	"quest.39A9DDDF8425D9AE.title": "Водяное колесо"
+	"quest.3A66A8A6C8205F5C.quest_desc": [
+		"Пресс + чаша = уплотнение."
+	]
+	"quest.3A66A8A6C8205F5C.title": "Чаша"
+	"quest.3AA80CBE43CEE67E.title": "Зарядник"
+	"quest.3B2B748C9F357A5F.title": "Ниотические кристаллы"
+	"quest.3B611515F015220B.quest_desc": [
+		"Часть рецепта Эссенции Юки."
+	]
+	"quest.3B611515F015220B.title": "Эссенция воды"
+	"quest.3B9FCD145B603184.quest_desc": [
+		"&b«Целестий — металл звёзд. Чтобы его создать, нужно двадцать пять миллионов единиц энергии в одном кристалле. Построй электростанцию, достойную бога.»"
+	]
+	"quest.3B9FCD145B603184.title": "Письмо Юки: энергия"
+	"quest.3C745394B12DE41D.title": "Книга ученика"
+	"quest.3E86E35F0EAD68B9.title": "Морозный слиток"
+	"quest.3EA584E950942931.title": "ME-привод"
+	"quest.3F329A0FC5E1A077.title": "Жемчуг Края"
+	"quest.3F930E26E9DE5C2F.quest_desc": [
+		"Последовательная сборка Create, 3 круга."
+	]
+	"quest.3F930E26E9DE5C2F.title": "Морозные механизмы"
+	"quest.401A5FCF5DE6195A.quest_desc": [
+		"Нужен для Технологического ядра."
+	]
+	"quest.401A5FCF5DE6195A.title": "Параллельный процессор"
+	"quest.40CFC196AB943EB7.quest_desc": [
+		"Всего понадобится &e14&r. Это только начало."
+	]
+	"quest.40CFC196AB943EB7.title": "Осколки звезды"
+	"quest.41035FED7FA9E41C.quest_desc": [
+		"Миксер Create с &cперегревом&r: горелка + пламенный торт."
+	]
+	"quest.41035FED7FA9E41C.title": "Ауроний"
+	"quest.4208FA9CE5DD2FA1.quest_desc": [
+		"Портал: бассейн воды, окружённый цветами, и брось алмаз."
+	]
+	"quest.4208FA9CE5DD2FA1.title": "Сумеречный лес"
+	"quest.420B19397E49B335.quest_desc": [
 		"Just Dire Things."
 	]
-	"quest.A9DC3E54C8EFD7D3.title": "Time Crystals"
-	"quest.AD316DB9CDD48CCC.title": "Spirit Attuned Gem"
-	"quest.B01C0159F99C7446.quest_desc": [
-		"Shards of every world you visited."
+	"quest.420B19397E49B335.title": "Феррикор"
+	"quest.430188CA423F5698.title": "Алтарь пробуждения"
+	"quest.43C22EB7D1CB6EB0.quest_desc": [
+		"Без огня и инструментов не выжить. Начни с дерева."
 	]
-	"quest.B01C0159F99C7446.title": "Dimension Core"
-	"quest.B1DC7565B3693621.quest_desc": [
-		"Right-click: night vision, speed, jump boost & regeneration."
+	"quest.43C22EB7D1CB6EB0.title": "Первое тепло"
+	"quest.441FE4937393DD9C.quest_desc": [
+		"Медь + цинк в нагретой чаше."
 	]
-	"quest.B1DC7565B3693621.title": "Yuki Star"
-	"quest.B81E914610890817.quest_desc": [
-		"Create: chromatic compound in the void."
+	"quest.441FE4937393DD9C.title": "Латунь"
+	"quest.44569CB3C5573BB9.quest_desc": [
+		"Им собираются мультиблоки IE."
 	]
-	"quest.B81E914610890817.title": "Shadow Steel"
-	"quest.BA934E5A59C2D990.title": "Carminite"
-	"quest.C57244C47B265137.quest_desc": [
-		"Made by sequenced assembly."
+	"quest.44569CB3C5573BB9.title": "Молот инженера"
+	"quest.4555799497BEE96D.quest_desc": [
+		"Нагрев и перегрев для миксера."
 	]
-	"quest.C57244C47B265137.title": "Precision Mechanism"
-	"quest.C7EDCEF629A2410B.quest_desc": [
-		"Craft the Tech, Magic, Nature and Dimension cores."
+	"quest.4555799497BEE96D.title": "Горелка ифрита"
+	"quest.45F20B4AED75E180.title": "Инженерные процессоры"
+	"quest.4698DD6015FCBC77.quest_desc": [
+		"Mystical Agriculture: ресурсы растут сами."
 	]
-	"quest.C7EDCEF629A2410B.title": "Four Cores"
-	"quest.C96A14F05D523DAA.quest_desc": [
-		"Trial Chambers."
+	"quest.4698DD6015FCBC77.title": "Семена инфериума"
+	"quest.46D1F98C871CC4EB.quest_desc": [
+		"Нужен для Ядра природы."
 	]
-	"quest.C96A14F05D523DAA.title": "Heavy Core"
-	"quest.CA1778C229D4571F.title": "Source Gem Block"
-	"quest.CDB0C70243922472.quest_desc": [
-		"The start of Create."
+	"quest.46D1F98C871CC4EB.title": "Пробуждённый супремиум"
+	"quest.46D444BB6B964CE4.quest_desc": [
+		"Неразрушимый меч с уроном 43."
 	]
-	"quest.CDB0C70243922472.title": "Andesite Alloy"
-	"quest.CE5941AB6D74B867.quest_desc": [
-		"Defeat the Wither."
+	"quest.46D444BB6B964CE4.title": "Клинок Юки"
+	"quest.46DA5AE6FCEDD692.title": "Логические процессоры"
+	"quest.471DCD6AF29D04A1.quest_desc": [
+		"Огромный источник энергии."
 	]
-	"quest.CE5941AB6D74B867.title": "Nether Star"
-	"quest.D2BD60A872263281.quest_desc": [
-		"Сумеречный лес."
+	"quest.471DCD6AF29D04A1.title": "Нитро-реактор"
+	"quest.479ABE5CDDAF95F5.quest_desc": [
+		"Нужно для Технологического ядра."
 	]
-	"quest.D2BD60A872263281.title": "Steeleaf"
-	"quest.D38DCF12718E17ED.quest_desc": [
-		"An unbreakable sword with 30 damage."
+	"quest.479ABE5CDDAF95F5.title": "Ядро конструкции"
+	"quest.47A8ACDB3473636C.title": "Селестигем"
+	"quest.49A4403A193C5C3D.quest_desc": [
+		"Понадобятся для Нестабильной звезды. Это долго — начинай сейчас."
 	]
-	"quest.D38DCF12718E17ED.title": "Yuki Blade"
-	"quest.D3E559C0BF154461.title": "Supremium Ingot"
-	"quest.D6C097C916716BE7.quest_desc": [
-		"Mix copper and zinc in a basin."
+	"quest.49A4403A193C5C3D.title": "Блоки пробуждённого супремиума"
+	"quest.49F1E9209F283F21.quest_desc": [
+		"&b«Иссушитель проглотил частицу моего света. Когда будешь готов — забери её. Но сначала тебе нужны силы природы.»"
 	]
-	"quest.D6C097C916716BE7.title": "Brass"
-	"quest.DAE3D1A305FE50DF.quest_desc": [
-		"Craft on a Create Mechanical Crafter (5x5)."
-		"In inventory: flight, night vision, resistance."
-		"&dYou beat YukiWorld!&r"
+	"quest.49F1E9209F283F21.title": "Тёмная запись Летописи"
+	"quest.4AE6BAFF4A6C1C80.title": "Маточное молочко"
+	"quest.4B0013364029B76F.quest_desc": [
+		"Самый быстрый инструмент YukiWorld."
 	]
-	"quest.DAE3D1A305FE50DF.title": "Yuki Infinity Star"
-	"quest.DE0514220448702C.title": "Rich Soil"
-	"quest.E5C755ED63E3A3C4.quest_desc": [
-		"Smelt raw frost."
+	"quest.4B0013364029B76F.title": "Целестиевая кирка"
+	"quest.4C89938DECC66BFF.title": "Пузырьки опыта"
+	"quest.4CA19838F7E722CF.quest_desc": [
+		"Sophisticated Backpacks: места станет намного больше."
 	]
-	"quest.E5C755ED63E3A3C4.title": "Frost Ingot"
-	"quest.E61BAF5781EF8930.quest_desc": [
-		"A huge pack: tech, magic, farming and new dimensions."
-		"Your goal is the &dYuki Infinity Star&r, crafted from items of every mod."
-		"Click the checkmark to begin."
+	"quest.4CA19838F7E722CF.title": "Рюкзак"
+	"quest.4CDA5C7772B9B9BD.quest_desc": [
+		"Автоматическая добыча."
 	]
-	"quest.E61BAF5781EF8930.title": "Welcome to YukiWorld!"
-	"quest.E7B0A4584A2B9C32.title": "Novice Spell Book"
-	"quest.EA4A1FF2A43F4E04.quest_desc": [
-		"Glowing ore deep underground (below Y 32). Needs an iron pickaxe."
+	"quest.4CDA5C7772B9B9BD.title": "Механический бур"
+	"quest.4E7C67390A0001F5.quest_desc": [
+		"Высекатель AE2."
 	]
-	"quest.EA4A1FF2A43F4E04.title": "Yuki Crystal"
-	"quest.EB587BCD93370717.title": "Divine Pearl"
-	"quest.EE33B18C02DF7DA4.quest_desc": [
-		"Defeat the Wilden Chimera."
+	"quest.4E7C67390A0001F5.title": "Криосхемы"
+	"quest.4FA483E740BFF250.quest_desc": [
+		"&b«Мои металлы рождаются только в машинах разных миров. Пресс Create, высекатель AE2, камера Ars Nouveau, миксер с перегревом и стержни Powah — пусть все они поработают на меня.»"
 	]
-	"quest.EE33B18C02DF7DA4.title": "Wilden Tribute"
-	"quest.F56DC71D7BF9856D.quest_desc": [
-		"Matter condenser. You will need more for the finale!"
+	"quest.4FA483E740BFF250.title": "Письмо Юки: кузня"
+	"quest.502E7700D41E7EBD.quest_desc": [
+		"Вписывай заклинания в книги."
 	]
-	"quest.F56DC71D7BF9856D.title": "Singularity"
-	"quest.FE3449E41995073C.quest_desc": [
-		"The chestplate gives 8 armor and 2.5 toughness."
+	"quest.502E7700D41E7EBD.title": "Стол начертания"
+	"quest.5032AC8E09C3563E.quest_desc": [
+		"Крафтер 9×9. Звезда дрожит — её нужно стабилизировать."
 	]
-	"quest.FE3449E41995073C.title": "Frost Armor"
+	"quest.5032AC8E09C3563E.title": "Нестабильная звезда"
+	"quest.50F2C0DBF35ED8D5.title": "Эссенция инфериума"
+	"quest.521F54239380DFDD.quest_desc": [
+		"Пройди испытания королевы."
+	]
+	"quest.521F54239380DFDD.title": "Эссенция пчёл"
+	"quest.527DE0FC2954985E.quest_desc": [
+		"Он станет основой Клинка Юки."
+	]
+	"quest.527DE0FC2954985E.title": "Целестиевый меч"
+	"quest.532E15C9E404F13E.title": "Целестиевые блоки"
+	"quest.53B5F6E01F63A376.quest_desc": [
+		"Самая редкая руда. Плавится только в доменной печи."
+	]
+	"quest.53B5F6E01F63A376.title": "Звёздный свет"
+	"quest.55AD376EA5B78E28.quest_desc": [
+		"Нужна для Магического ядра."
+	]
+	"quest.55AD376EA5B78E28.title": "Эссенция пепла"
+	"quest.55DE91A3A8A85987.quest_desc": [
+		"Осторожно с радиацией!"
+	]
+	"quest.55DE91A3A8A85987.title": "Реактор деления"
+	"quest.56524DE68E642D5F.quest_desc": [
+		"&bВот оно — устройство, которое однажды соберёт моё Сердце.&r"
+		"Собери поле 5×5. Позже понадобится 9×9."
+	]
+	"quest.56524DE68E642D5F.title": "Механический крафтер"
+	"quest.579515FF21A103B6.quest_desc": [
+		"Основа последовательной сборки."
+	]
+	"quest.579515FF21A103B6.title": "Развёртыватель"
+	"quest.57C8294C7D337365.title": "Кристаллы времени"
+	"quest.580624432B58D13E.quest_desc": [
+		"И ещё один — в океанских монументах."
+	]
+	"quest.580624432B58D13E.title": "Древний страж"
+	"quest.581EDDADF5EC7168.quest_desc": [
+		"Механический крафтер 5×5. Нужно 4 — по одному на Ядро."
+	]
+	"quest.581EDDADF5EC7168.title": "Морозные ядра"
+	"quest.582DAA7E600C7630.quest_desc": [
+		"Apotheosis: зачарование сильнее ванильного."
+	]
+	"quest.582DAA7E600C7630.title": "Адские полки"
+	"quest.585866DA183FAE14.title": "Морозный шлем"
+	"quest.593F69577F89AAC7.title": "Атомные сплавы"
+	"quest.597844408810A3BF.quest_desc": [
+		"Древние города глубин."
+	]
+	"quest.597844408810A3BF.title": "Осколки эха"
+	"quest.5A9E3C9BD056878F.quest_desc": [
+		"Основа всех ранних машин Create."
+	]
+	"quest.5A9E3C9BD056878F.title": "Андезитовый сплав"
+	"quest.5AA0925D512ABC14.title": "Ауриевая кирка"
+	"quest.5B4E05B3C716193D.quest_desc": [
+		"Голодный Хранитель далеко не уйдёт."
+	]
+	"quest.5B4E05B3C716193D.title": "Сытный ужин"
+	"quest.5B6B3BB569FC11C9.quest_desc": [
+		"Она понадобится, чтобы добыть руды Энда."
+	]
+	"quest.5B6B3BB569FC11C9.title": "Алмазная кирка"
+	"quest.5BCFDCDA963745B7.title": "Супремиум"
+	"quest.5BE94FA97EE7D521.quest_desc": [
+		"&b«Мой свет хранит память обо всём. Машины AE2 умеют запоминать материю — а их высекатель напечатает Криосхемы, которые выдержат холод Энда.»"
+	]
+	"quest.5BE94FA97EE7D521.title": "Письмо Юки: память"
+	"quest.5C23435689011345.quest_desc": [
+		"Warden тоже хранит осколок."
+	]
+	"quest.5C23435689011345.title": "Хранитель глубин"
+	"quest.5CC9B6CBD1B48A8F.quest_desc": [
+		"Башня тьмы."
+	]
+	"quest.5CC9B6CBD1B48A8F.title": "Карминит"
+	"quest.5CFAA74AD68B8DFE.title": "Сферы улучшения"
+	"quest.5D771BC1799315FC.quest_desc": [
+		"Настоящая мощь Create."
+	]
+	"quest.5D771BC1799315FC.title": "Паровой двигатель"
+	"quest.5D7C94E9272844CF.title": "Ячейки 64k"
+	"quest.5DD7EE14F63BB31B.quest_desc": [
+		"&b«В старые времена гномы-механики строили машины из шестерёнок и вала. Только их механический крафтер может собрать вещи размером больше верстака. Научись этому.»"
+	]
+	"quest.5DD7EE14F63BB31B.title": "Письмо Юки: механизмы"
+	"quest.5E98BFBD6C83C698.quest_desc": [
+		"&b«Теперь — главное. Четыре Ядра: разум машин, шёпот магии, дыхание жизни и память миров. Каждое собирается на механическом крафтере 7×7 вокруг Морозного ядра.»"
+	]
+	"quest.5E98BFBD6C83C698.title": "Письмо Юки: ядра"
+	"quest.5EDFC0B1DBCEC9E3.quest_desc": [
+		"Сети IE передают энергию."
+	]
+	"quest.5EDFC0B1DBCEC9E3.title": "Медный провод"
+	"quest.5F11191CD5211F13.quest_desc": [
+		"Oritech."
+	]
+	"quest.5F11191CD5211F13.title": "Перезаряженные кристаллы"
+	"quest.5F5287AC76B838E8.quest_desc": [
+		"Нужно 4 на каждое Ядро — 16 всего!"
+	]
+	"quest.5F5287AC76B838E8.title": "Ауриевые блоки"
+	"quest.5FEEBBE7CD91F387.title": "Пламязолото"
+	"quest.6057A4A26F053470.quest_desc": [
+		"Нужны для Сердца YukiWorld."
+	]
+	"quest.6057A4A26F053470.title": "Кристаллы времени"
+	"quest.6170EAC330F84970.quest_desc": [
+		"Управляй вращением точно."
+	]
+	"quest.6170EAC330F84970.title": "Регулятор скорости"
+	"quest.61820C5AB0D57A62.quest_desc": [
+		"&5«Я снова слышу шёпот заклинаний.»&r"
+	]
+	"quest.61820C5AB0D57A62.title": "✨ Магическое ядро"
+	"quest.62446C63F2D25F42.title": "Центрифуга"
+	"quest.6251FCD4B1BD8122.title": "Блоки маточного молочка"
+	"quest.62C9F6A082D12078.quest_desc": [
+		"Нужны для целестия."
+	]
+	"quest.62C9F6A082D12078.title": "Кристаллы Края"
+	"quest.640E6DB3DB2AF490.title": "Пруденциум"
+	"quest.645596F0E484522F.title": "Морозная кирка"
+	"quest.646A874E4DB7DBC9.quest_desc": [
+		"&b«Шестерни — лишь начало. Чтобы выдержать холод Энда, нужна сталь, а чтобы понять материю — Mekanism. Не бойся больших машин.»"
+	]
+	"quest.646A874E4DB7DBC9.title": "Письмо Юки: сталь"
+	"quest.6516B3FBF1469BD3.quest_desc": [
+		"Автокрафт!"
+	]
+	"quest.6516B3FBF1469BD3.title": "Молекулярный сборщик"
+	"quest.6560D2430BC25D72.quest_desc": [
+		"Заряжающий стержень Powah, 25 млн FE."
+	]
+	"quest.6560D2430BC25D72.title": "Целестий"
+	"quest.65BAA6269A349C4D.quest_desc": [
+		"Плод демонического сна откроет Иной мир."
+	]
+	"quest.65BAA6269A349C4D.title": "Семена дурмана"
+	"quest.6667B2BBB2A54799.quest_desc": [
+		"&oТы просыпаешься на холодной траве. Снега нет — но ты слышишь его тихий шорох.&r"
+		""
+		"&b«Хранитель... ты меня слышишь? Я — Юки, дух зимы. Мой мир умирает. Эндер-дракон расколол моё Сердце, и его осколки упали на дальние острова Энда.»&r"
+		""
+		"«Я дам тебе Летопись — в ней вся история. Иди по моим следам, и мы вернём зиму вместе.»"
+	]
+	"quest.6667B2BBB2A54799.title": "Голос в снегу"
+	"quest.669DAD52966A5D33.quest_desc": [
+		"&b«Это мои слёзы. Береги их.»"
+	]
+	"quest.669DAD52966A5D33.title": "Кристаллы Юки"
+	"quest.672428E1F501481B.title": "Стержни ифрита"
+	"quest.68029CF7D1880D84.title": "Продвинутая рама"
+	"quest.6824B25707E49685.title": "Морские полки"
+	"quest.689279AEE4455B31.quest_desc": [
+		"Пятнадцать полок — и чары станут сильнее."
+	]
+	"quest.689279AEE4455B31.title": "Библиотека"
+	"quest.68BB3D51DCD29A6F.title": "Энд"
+	"quest.6968A9E45ABC0ED7.title": "Газовые генераторы"
+	"quest.6A33332C4D632F71.title": "Зачаровывающий аппарат"
+	"quest.6AD0AB309DA675A2.quest_desc": [
+		"&d«Оно бьётся... Хранитель, ты вернул мне Сердце.»&r"
+	]
+	"quest.6AD0AB309DA675A2.title": "❤ Сердце YukiWorld"
+	"quest.6B74CBCC1A93549E.quest_desc": [
+		"Победи вызывателей в особняках и рейдах."
+	]
+	"quest.6B74CBCC1A93549E.title": "Тотем бессмертия"
+	"quest.6C7A0F65AB76E55E.quest_desc": [
+		"&bИменно в нём рождаются Криосхемы."
+	]
+	"quest.6C7A0F65AB76E55E.title": "Высекатель"
+	"quest.6CBF93A2E50AB8A4.quest_desc": [
+		"Победи Вилдена-химеру. Нужно 4 дани для ядра!"
+	]
+	"quest.6CBF93A2E50AB8A4.title": "Дань Вилдена"
+	"quest.6CC0838C3D3C1521.quest_desc": [
+		"EvilCraft: тёмная руда глубин."
+	]
+	"quest.6CC0838C3D3C1521.title": "Тёмные камни"
+	"quest.6D0C43B5829C58D3.quest_desc": [
+		"Хранилище магической энергии."
+	]
+	"quest.6D0C43B5829C58D3.title": "Сосуды источника"
+	"quest.6D4E4D30D24AF92F.quest_desc": [
+		"Полный комплект: скорость и иммунитет к холоду."
+	]
+	"quest.6D4E4D30D24AF92F.title": "Морозные ботинки"
+	"quest.6D58F526B8535594.quest_desc": [
+		"&b«Снег... Ты слышишь? Снова идёт снег.»&r"
+		""
+		"&dЗима вернулась. Ты прошёл YukiWorld.&r"
+		"Звезда даёт полёт, а в креативных рецептах не тратится."
+	]
+	"quest.6D58F526B8535594.title": "⭐ Бесконечная звезда Юки"
+	"quest.6DCCD6DBFDACD90D.title": "Блоки мёда"
+	"quest.6E59797B34CAB80C.quest_desc": [
+		"Редкий металл глубин."
+	]
+	"quest.6E59797B34CAB80C.title": "Мифрил"
+	"quest.6E8D8D87E3D8F23D.quest_desc": [
+		"Кузнечный стол: алмаз → мороз."
+	]
+	"quest.6E8D8D87E3D8F23D.title": "Шаблон мороза"
+	"quest.6EA6BC3900B1C24F.quest_desc": [
+		"Топливо для печи и факелов."
+	]
+	"quest.6EA6BC3900B1C24F.title": "Уголь"
+	"quest.6EB34EEA5BF6A04B.title": "Панцири шалкеров"
+	"quest.6ECAEFBE44358310.title": "Продвинутая схема"
+	"quest.6EE69BCB5F806924.quest_desc": [
+		"Они понадобятся, чтобы призвать Иссушителя."
+	]
+	"quest.6EE69BCB5F806924.title": "Черепа скелетов-иссушителей"
+	"quest.6EFDC129A5E655C8.quest_desc": [
+		"Компонент Аурония."
+	]
+	"quest.6EFDC129A5E655C8.title": "Очищенный обсидиан"
+	"quest.700ACC5353176D54.title": "Элитная схема"
+	"quest.706DE86F278B1CB1.quest_desc": [
+		"&b«Зима — это не смерть, а сон природы. Пока меня нет, сады увядают. Вырасти их заново — и природа вернёт мне свою силу.»"
+	]
+	"quest.706DE86F278B1CB1.title": "Письмо Юки: жизнь"
+	"quest.70B1940EDDBA0D57.quest_desc": [
+		"4 гранулы для Сердца."
+	]
+	"quest.70B1940EDDBA0D57.title": "Антиматерия"
+	"quest.70DF7976EDB97CD2.quest_desc": [
+		"Из него выпадают 1–2 &dОсколка звезды&r."
+	]
+	"quest.70DF7976EDB97CD2.title": "Иссушитель"
+	"quest.70E347B80E252513.title": "Заряжающие стержни"
+	"quest.722A08E8FB00CE36.quest_desc": [
+		"Защити себя — путь будет долгим."
+	]
+	"quest.722A08E8FB00CE36.title": "Железная броня"
+	"quest.7255B6F809A55E24.quest_desc": [
+		"&b«Моя сила — это магия. Машины умеют её хранить, но не умеют чувствовать. Научись слушать Источник — и ты сможешь создать мою Эссенцию.»"
+	]
+	"quest.7255B6F809A55E24.title": "Письмо Юки: магия"
+	"quest.72A2F8B39E8EF57F.title": "Морозный нагрудник"
+	"quest.734C4CB35F8F1EF0.quest_desc": [
+		"Высокое напряжение."
+	]
+	"quest.734C4CB35F8F1EF0.title": "Конденсатор HV"
+	"quest.738780E3FFD63833.title": "Звёздный свет"
+	"quest.739DFD3E1E115858.title": "Драконья кожа"
+	"quest.754676B0785CD949.title": "Поставщик шаблонов"
+	"quest.75780AE2F5FBEDBF.quest_desc": [
+		"Цифровая сеть хранения."
+	]
+	"quest.75780AE2F5FBEDBF.title": "ME-контроллер"
+	"quest.7586ECA3E68AF649.title": "Блоки кристаллов"
+	"quest.7609EDD99B4BFC3D.title": "Амброзий"
+	"quest.7684305439AF2525.title": "Плита"
+	"quest.76AC66B0296A2734.quest_desc": [
+		"&b«Ты справился, Хранитель. Но чтобы дойти до Энда, тебе понадобятся машины, магия и знания всех миров. Начни с шестерёнок — у Create есть то, что однажды соберёт моё Сердце.»"
+	]
+	"quest.76AC66B0296A2734.title": "Первая запись Летописи"
+	"quest.770593FD2E294B2D.title": "Медовые лакомства"
+	"quest.79B7919BBDF76867.quest_desc": [
+		"Сожми материю до сингулярности."
+	]
+	"quest.79B7919BBDF76867.title": "Конденсатор материи"
+	"quest.7ADC0C715B406F23.quest_desc": [
+		"Всё великое начинается с простого верстака."
+	]
+	"quest.7ADC0C715B406F23.title": "Верстак"
+	"quest.7AE372A93522CC3D.quest_desc": [
+		"Нужно для Ядра измерений и Apotheosis."
+	]
+	"quest.7AE372A93522CC3D.title": "Дыхание дракона"
+	"quest.7B1C8EF9782C3473.quest_desc": [
+		"Сердце раннего Mekanism."
+	]
+	"quest.7B1C8EF9782C3473.title": "Металлургический инфузор"
+	"quest.7B333CA06817DB65.quest_desc": [
+		"Механический пресс Create."
+	]
+	"quest.7B333CA06817DB65.title": "Морозные пластины"
+	"quest.7C41033B0D1D721F.quest_desc": [
+		"&b«Все четыре Ядра со мной. Осталось соединить их в Сердце — на крафтере девять на девять. Добавь антиматерию Mekanism и кристаллы времени, чтобы оно снова забилось.»"
+	]
+	"quest.7C41033B0D1D721F.title": "Письмо Юки: сердце"
+	"quest.7CA32FCEA9980343.quest_desc": [
+		"&b«Вот мы и здесь, Хранитель. За порталом — дракон, который разбил моё Сердце. А за ним, на дальних островах, лежат мои осколки.»&r"
+		""
+		"&eРуды YukiCore встречаются ТОЛЬКО на внешних островах Энда!"
+	]
+	"quest.7CA32FCEA9980343.title": "Письмо Юки: Энд"
+	"quest.7D4C10F2CED1100C.title": "Кровяной инфузор"
+	"quest.7E568C4491C92D08.title": "Плодородная почва"
+	"quest.7E8D09236BF1E471.quest_desc": [
+		"Удваивают руду."
+	]
+	"quest.7E8D09236BF1E471.title": "Дробильные колёса"
+	"quest.7E924C80D00E2341.title": "Морозные поножи"
+	"quest.7F2931F88AC572C2.quest_desc": [
+		"&b«Алмаз — это лёд, который научился не таять»&r."
+	]
+	"quest.7F2931F88AC572C2.title": "Алмазы"
 }

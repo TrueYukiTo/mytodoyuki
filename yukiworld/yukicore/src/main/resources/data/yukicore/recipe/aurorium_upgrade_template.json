@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AQA",
+    "QTQ",
+    "AQA"
+  ],
+  "key": {
+    "A": {
+      "item": "yukicore:aurorium_ingot"
+    },
+    "Q": {
+      "item": "yukicore:cryo_circuit"
+    },
+    "T": {
+      "item": "yukicore:frost_upgrade_template"
+    }
+  },
+  "result": {
+    "id": "yukicore:aurorium_upgrade_template",
+    "count": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CBC",
+    "BSB",
+    "CBC"
+  ],
+  "key": {
+    "C": {
+      "item": "yukicore:celestium_block"
+    },
+    "B": {
+      "item": "ae2:dense_energy_cell"
+    },
+    "S": {
+      "item": "yukicore:yuki_infinity_star"
+    }
+  },
+  "result": {
+    "id": "ae2:creative_energy_cell",
+    "count": 1
+  }
+}

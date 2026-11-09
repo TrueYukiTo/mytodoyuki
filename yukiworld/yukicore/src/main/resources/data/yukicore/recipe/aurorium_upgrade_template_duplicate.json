@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ETE",
+    "EAE",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "item": "yukicore:yuki_essence"
+    },
+    "T": {
+      "item": "yukicore:aurorium_upgrade_template"
+    },
+    "A": {
+      "item": "yukicore:aurorium_ingot"
+    }
+  },
+  "result": {
+    "id": "yukicore:aurorium_upgrade_template",
+    "count": 2
+  }
+}

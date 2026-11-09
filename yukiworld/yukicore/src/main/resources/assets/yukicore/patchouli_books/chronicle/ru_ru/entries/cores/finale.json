@@ -1,0 +1,27 @@
+{
+  "name": "Сердце и Звезда",
+  "category": "yukicore:cores",
+  "icon": "yukicore:yuki_infinity_star",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:yuki_heart",
+      "text": "$(l)Сердце YukiWorld$() — крафтер 9×9: четыре Ядра, 4 антиматерии, 8 осколков звезды, кристаллы времени, звёздный свет и целестий."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:unstable_infinity_star",
+      "text": "$(l)Нестабильная звезда$() — крафтер 9×9: Сердце, сияние и теневая сталь Create, сингулярности AE2, полоний, пробуждённый супремиум."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:yuki_infinity_star",
+      "text": "$(l)Бесконечная звезда Юки$() — антипротонный нуклеосинтезатор Mekanism стабилизирует её 1000 мБ антиматерии."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "В инвентаре звезда даёт полёт и защиту. А ещё она — ключ к $(l)креативным$() батареям Mekanism, AE2, Powah, IE и мотору Create, и при этом не тратится."
+    }
+  ]
+}

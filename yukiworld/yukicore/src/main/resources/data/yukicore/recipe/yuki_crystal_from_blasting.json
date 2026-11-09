@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": {
+    "item": "yukicore:yuki_crystal_ore"
+  },
+  "result": {
+    "id": "yukicore:yuki_crystal"
+  },
+  "experience": 1.5,
+  "cookingtime": 200
+}

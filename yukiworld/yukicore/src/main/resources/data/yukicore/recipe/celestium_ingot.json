@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "powah"
+    }
+  ],
+  "type": "powah:energizing",
+  "energy": 25000000,
+  "ingredients": [
+    {
+      "item": "yukicore:aurorium_ingot"
+    },
+    {
+      "item": "yukicore:starlight_shard"
+    },
+    {
+      "item": "powah:crystal_nitro"
+    },
+    {
+      "item": "minecraft:end_crystal"
+    },
+    {
+      "item": "yukicore:yuki_essence"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "yukicore:celestium_ingot"
+  }
+}

@@ -1,0 +1,564 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "digital"
+	group: ""
+	icon: {
+		count: 1
+		id: "ae2:controller"
+	}
+	id: "1C75E771BFA593D2"
+	images: [ ]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"18C74DA26909A7B5"
+			]
+			icon: {
+				count: 1
+				id: "ae2:certus_quartz_crystal"
+			}
+			id: "5BE94FA97EE7D521"
+			rewards: [
+				{
+					id: "59A9BDDAE8A20EF9"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "5CBA8358C1C9637F"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5BE94FA97EE7D521"
+			]
+			icon: {
+				count: 1
+				id: "ae2:certus_quartz_crystal"
+			}
+			id: "10F573C4B6EAA546"
+			rewards: [
+				{
+					id: "1F2BCB1AA1F2E21C"
+					type: "xp"
+					xp: 355
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "1D6D8EEB37F4E3F5"
+					item: {
+						count: 1
+						id: "ae2:certus_quartz_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"10F573C4B6EAA546"
+			]
+			icon: {
+				count: 1
+				id: "ae2:charger"
+			}
+			id: "3AA80CBE43CEE67E"
+			rewards: [
+				{
+					id: "1E86D3C5D3F887D2"
+					type: "xp"
+					xp: 360
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "58F12CFA4A28278C"
+					item: {
+						count: 1
+						id: "ae2:charger"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3AA80CBE43CEE67E"
+			]
+			icon: {
+				count: 1
+				id: "ae2:inscriber"
+			}
+			id: "6C7A0F65AB76E55E"
+			rewards: [
+				{
+					id: "298B5D94CADAFC7E"
+					type: "xp"
+					xp: 365
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "384D4DE7BB6AAA77"
+					item: {
+						count: 1
+						id: "ae2:inscriber"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6C7A0F65AB76E55E"
+			]
+			icon: {
+				count: 1
+				id: "ae2:logic_processor"
+			}
+			id: "46DA5AE6FCEDD692"
+			rewards: [
+				{
+					id: "48B2BEC4DDDD2995"
+					type: "xp"
+					xp: 370
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "1AF630DBB683FF8D"
+					item: {
+						count: 1
+						id: "ae2:logic_processor"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"46DA5AE6FCEDD692"
+			]
+			icon: {
+				count: 1
+				id: "ae2:calculation_processor"
+			}
+			id: "2C284FDCB2E5CB0E"
+			rewards: [
+				{
+					id: "3BF82ADB885E47EB"
+					type: "xp"
+					xp: 375
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "32BDA993D3868308"
+					item: {
+						count: 1
+						id: "ae2:calculation_processor"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2C284FDCB2E5CB0E"
+			]
+			icon: {
+				count: 1
+				id: "ae2:engineering_processor"
+			}
+			id: "45F20B4AED75E180"
+			rewards: [
+				{
+					id: "139CF7A7EF4A8245"
+					type: "xp"
+					xp: 380
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "4DFC1093266F1B0A"
+					item: {
+						count: 1
+						id: "ae2:engineering_processor"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"45F20B4AED75E180"
+			]
+			icon: {
+				count: 1
+				id: "ae2:controller"
+			}
+			id: "75780AE2F5FBEDBF"
+			rewards: [
+				{
+					id: "2713E8E851F34163"
+					type: "xp"
+					xp: 385
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "791B621868FD39DE"
+					item: {
+						count: 1
+						id: "ae2:controller"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"75780AE2F5FBEDBF"
+			]
+			icon: {
+				count: 1
+				id: "ae2:drive"
+			}
+			id: "3EA584E950942931"
+			rewards: [
+				{
+					id: "3F55236CD6FDE158"
+					type: "xp"
+					xp: 390
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "66DC552C918ABD0B"
+					item: {
+						count: 1
+						id: "ae2:drive"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3EA584E950942931"
+			]
+			icon: {
+				count: 1
+				id: "ae2:item_storage_cell_64k"
+			}
+			id: "5D7C94E9272844CF"
+			rewards: [
+				{
+					id: "44407A7F5F640A1E"
+					type: "xp"
+					xp: 395
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "70E13436F2BDE574"
+					item: {
+						count: 1
+						id: "ae2:item_storage_cell_64k"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5D7C94E9272844CF"
+			]
+			icon: {
+				count: 1
+				id: "ae2:molecular_assembler"
+			}
+			id: "6516B3FBF1469BD3"
+			rewards: [
+				{
+					id: "13E3E149C3089430"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "1016F3AE08ED2E3E"
+					item: {
+						count: 1
+						id: "ae2:molecular_assembler"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6516B3FBF1469BD3"
+			]
+			icon: {
+				count: 1
+				id: "ae2:pattern_provider"
+			}
+			id: "754676B0785CD949"
+			rewards: [
+				{
+					id: "67853D9AFAA5C142"
+					type: "xp"
+					xp: 405
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "59500C3D7FF29A4C"
+					item: {
+						count: 1
+						id: "ae2:pattern_provider"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"754676B0785CD949"
+			]
+			icon: {
+				count: 1
+				id: "extendedae:ex_pattern_provider"
+			}
+			id: "117EEEFF3F28B443"
+			rewards: [
+				{
+					id: "607D9FF68140F423"
+					type: "xp"
+					xp: 410
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "54EECE06500FE0DF"
+					item: {
+						count: 1
+						id: "extendedae:ex_pattern_provider"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"117EEEFF3F28B443"
+			]
+			icon: {
+				count: 1
+				id: "extendedae:concurrent_processor"
+			}
+			id: "401A5FCF5DE6195A"
+			rewards: [
+				{
+					id: "726ED80602EE95E6"
+					type: "xp"
+					xp: 415
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "33B1EF85D406F10A"
+					item: {
+						count: 1
+						id: "extendedae:concurrent_processor"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"401A5FCF5DE6195A"
+			]
+			icon: {
+				count: 1
+				id: "ae2:condenser"
+			}
+			id: "79B7919BBDF76867"
+			rewards: [
+				{
+					id: "5CF9420843D285DF"
+					type: "xp"
+					xp: 420
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "67E0BC9281FC6740"
+					item: {
+						count: 1
+						id: "ae2:condenser"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"79B7919BBDF76867"
+			]
+			icon: {
+				count: 1
+				id: "ae2:singularity"
+			}
+			id: "1F8FE072E2283D2C"
+			rewards: [
+				{
+					id: "75CA15AE6E0FA2C4"
+					type: "xp"
+					xp: 425
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "4B785DDFC78D8A48"
+					item: {
+						count: 1
+						id: "ae2:singularity"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"1F8FE072E2283D2C"
+			]
+			icon: {
+				count: 1
+				id: "refinedstorage:controller"
+			}
+			id: "133C3B37861B7C20"
+			rewards: [
+				{
+					id: "37D67C478D2FA37C"
+					type: "xp"
+					xp: 430
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "44A1E6E2072EABD7"
+					item: {
+						count: 1
+						id: "refinedstorage:controller"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"133C3B37861B7C20"
+			]
+			icon: {
+				count: 1
+				id: "refinedstorage:construction_core"
+			}
+			id: "479ABE5CDDAF95F5"
+			rewards: [
+				{
+					id: "1E8710C9F80E64A4"
+					type: "xp"
+					xp: 435
+				}
+				{
+					count: 1
+					id: "1565849EA9805AE8"
+					item: {
+						count: 1
+						id: "ae2:singularity"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 2L
+					id: "760D0A827C84D447"
+					item: {
+						count: 1
+						id: "refinedstorage:construction_core"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 3.0d
+		}
+	]
+}

@@ -1,0 +1,499 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "occult"
+	group: ""
+	icon: {
+		count: 1
+		id: "occultism:otherstone"
+	}
+	id: "2A90CE73702A4DEE"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"1F0C47574B0D520E"
+			]
+			icon: {
+				count: 1
+				id: "occultism:datura_seeds"
+			}
+			id: "2DD8348AC8D47167"
+			rewards: [
+				{
+					id: "4FEAE7005D7045E5"
+					type: "xp"
+					xp: 250
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2CC9B71E92FDDD6D"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2DD8348AC8D47167"
+			]
+			icon: {
+				count: 1
+				id: "occultism:datura_seeds"
+			}
+			id: "65BAA6269A349C4D"
+			rewards: [
+				{
+					id: "6FA7685F203184C8"
+					type: "xp"
+					xp: 255
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "435149D15584C553"
+					item: {
+						count: 1
+						id: "occultism:datura_seeds"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"65BAA6269A349C4D"
+			]
+			icon: {
+				count: 1
+				id: "occultism:otherstone"
+			}
+			id: "24F1100D636554FD"
+			rewards: [
+				{
+					id: "4B79D6994D4CA4C8"
+					type: "xp"
+					xp: 260
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "5BD8D76E13010FDF"
+					item: {
+						count: 1
+						id: "occultism:otherstone"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"24F1100D636554FD"
+			]
+			icon: {
+				count: 1
+				id: "occultism:silver_ingot"
+			}
+			id: "10863BEE9386B9C2"
+			rewards: [
+				{
+					id: "22EA21008C1D1A71"
+					type: "xp"
+					xp: 265
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "4257C095C03F4CDE"
+					item: {
+						count: 1
+						id: "occultism:silver_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"10863BEE9386B9C2"
+			]
+			icon: {
+				count: 1
+				id: "occultism:spirit_attuned_gem"
+			}
+			id: "1F7632EC66669F36"
+			rewards: [
+				{
+					id: "29996D0127D60F51"
+					type: "xp"
+					xp: 270
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "2B06DF8DB5CE3C87"
+					item: {
+						count: 1
+						id: "occultism:spirit_attuned_gem"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1F7632EC66669F36"
+			]
+			icon: {
+				count: 1
+				id: "occultism:afrit_essence"
+			}
+			id: "13E2760997CBC6D5"
+			rewards: [
+				{
+					id: "4981F23D3841FDA5"
+					type: "xp"
+					xp: 275
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "206D162E438D6027"
+					item: {
+						count: 1
+						id: "occultism:afrit_essence"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"13E2760997CBC6D5"
+			]
+			icon: {
+				count: 1
+				id: "evilcraft:dark_gem"
+			}
+			id: "6CC0838C3D3C1521"
+			rewards: [
+				{
+					id: "54B6DA5EDD0D9E02"
+					type: "xp"
+					xp: 280
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "31C17DBB1168D3D8"
+					item: {
+						count: 1
+						id: "evilcraft:dark_gem"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6CC0838C3D3C1521"
+			]
+			icon: {
+				count: 1
+				id: "evilcraft:blood_infuser"
+			}
+			id: "7D4C10F2CED1100C"
+			rewards: [
+				{
+					id: "387533CED77CA820"
+					type: "xp"
+					xp: 285
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2025AFF23DFF4203"
+					item: {
+						count: 1
+						id: "evilcraft:blood_infuser"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7D4C10F2CED1100C"
+			]
+			icon: {
+				count: 1
+				id: "apothic_enchanting:hellshelf"
+			}
+			id: "582DAA7E600C7630"
+			rewards: [
+				{
+					id: "288E8A5CDD7CAD5C"
+					type: "xp"
+					xp: 290
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "24EA708A0AD705E7"
+					item: {
+						count: 1
+						id: "apothic_enchanting:hellshelf"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"582DAA7E600C7630"
+			]
+			icon: {
+				count: 1
+				id: "apothic_enchanting:seashelf"
+			}
+			id: "6824B25707E49685"
+			rewards: [
+				{
+					id: "45220910A1337B5F"
+					type: "xp"
+					xp: 295
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "6C623B9AC811358F"
+					item: {
+						count: 1
+						id: "apothic_enchanting:seashelf"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6824B25707E49685"
+			]
+			icon: {
+				count: 1
+				id: "apothic_enchanting:infused_breath"
+			}
+			id: "38A4A619285CDAE8"
+			rewards: [
+				{
+					id: "7FA2B42730F221BE"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "305A7B5AD063A513"
+					item: {
+						count: 1
+						id: "apothic_enchanting:infused_breath"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"38A4A619285CDAE8"
+			]
+			icon: {
+				count: 1
+				id: "apotheosis:gem_dust"
+			}
+			id: "38AFD27E0221BFA4"
+			rewards: [
+				{
+					id: "1B46126A0214C1B5"
+					type: "xp"
+					xp: 305
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "32B7D423665B74B3"
+					item: {
+						count: 1
+						id: "apotheosis:gem_dust"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"38AFD27E0221BFA4"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:enchanted_book"
+			}
+			id: "1AA0801D966B505E"
+			rewards: [
+				{
+					id: "3C1733F44F3C747E"
+					type: "xp"
+					xp: 310
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "13974540414DE127"
+					item: {
+						count: 1
+						id: "minecraft:enchanted_book"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1AA0801D966B505E"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:experience_bottle"
+			}
+			id: "4C89938DECC66BFF"
+			rewards: [
+				{
+					id: "6BEDD3589AE318D3"
+					type: "xp"
+					xp: 315
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "13EE3C73DEFDBBA4"
+					item: {
+						count: 1
+						id: "minecraft:experience_bottle"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4C89938DECC66BFF"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:wither_skeleton_skull"
+			}
+			id: "6EE69BCB5F806924"
+			rewards: [
+				{
+					id: "20A7145100E51D8D"
+					type: "xp"
+					xp: 320
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "25EA8D6FCBDAD3A8"
+					item: {
+						count: 1
+						id: "minecraft:wither_skeleton_skull"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6EE69BCB5F806924"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:wither_rose"
+			}
+			id: "49F1E9209F283F21"
+			rewards: [
+				{
+					id: "38B5F5F77967373F"
+					type: "xp"
+					xp: 325
+				}
+				{
+					count: 4
+					id: "7BD82CDDFC98E30A"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "253CB491CF8FD01D"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: 3.0d
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "yukicore:starlight_shard"
+    }
+  },
+  "result": {
+    "id": "yukicore:starlight_block",
+    "count": 1
+  }
+}

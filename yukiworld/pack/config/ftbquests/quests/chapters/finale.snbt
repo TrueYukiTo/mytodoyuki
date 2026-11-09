@@ -7,35 +7,32 @@
 		count: 1
 		id: "yukicore:yuki_infinity_star"
 	}
-	id: "880E11ADCF945185"
+	id: "280E11ADCF945185"
 	images: [ ]
-	order_index: 5
+	order_index: 12
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: [
-				"15110C10E1F53DA5"
-				"87BC50E03326FB6B"
-				"9FAB6BB1B903FF31"
-				"B01C0159F99C7446"
+				"165E405A3716AD5E"
 			]
 			icon: {
 				count: 1
-				id: "yukicore:frost_core"
+				id: "yukicore:yuki_heart"
 			}
-			id: "C7EDCEF629A2410B"
+			id: "7C41033B0D1D721F"
 			rewards: [
 				{
-					id: "2D8E699EFF34149A"
+					id: "7EE05A4C5EB33FB7"
 					type: "xp"
-					xp: 100
+					xp: 1000
 				}
 			]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
-					id: "2EB7F02BDD9AF054"
+					id: "17A1C83E52A604E9"
 					type: "checkmark"
 				}
 			]
@@ -44,54 +41,84 @@
 		}
 		{
 			dependencies: [
-				"C7EDCEF629A2410B"
+				"7C41033B0D1D721F"
 			]
 			icon: {
 				count: 1
-				id: "justdirethings:time_crystal"
+				id: "create:mechanical_crafter"
 			}
-			id: "A9DC3E54C8EFD7D3"
+			id: "263F41A9B07455B0"
 			rewards: [
 				{
-					id: "BFADD4D5008E83C0"
+					id: "77EBDE6A690A0C51"
 					type: "xp"
-					xp: 100
+					xp: 1005
 				}
 			]
 			tasks: [
 				{
-					count: 4L
-					id: "2B2EBBD1A3E38371"
+					count: 81L
+					id: "300674310D7754A4"
 					item: {
 						count: 1
-						id: "justdirethings:time_crystal"
+						id: "create:mechanical_crafter"
 					}
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: -2.0d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
-				"C7EDCEF629A2410B"
+				"263F41A9B07455B0"
+			]
+			icon: {
+				count: 1
+				id: "mekanism:sps_casing"
+			}
+			id: "29B90DC5DF55589E"
+			rewards: [
+				{
+					id: "4D0B1E5CACDA0FA1"
+					type: "xp"
+					xp: 1010
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "48F72C3ABBD96239"
+					item: {
+						count: 1
+						id: "mekanism:sps_casing"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"29B90DC5DF55589E"
 			]
 			icon: {
 				count: 1
 				id: "mekanism:pellet_antimatter"
 			}
-			id: "572555DC01AC09F5"
+			id: "70B1940EDDBA0D57"
 			rewards: [
 				{
-					id: "7B186044412E05C5"
+					id: "64BCCEAF0F7DBA11"
 					type: "xp"
-					xp: 1000
+					xp: 1015
 				}
 			]
 			tasks: [
 				{
-					count: 1L
-					id: "491F11DEF1539B5F"
+					count: 4L
+					id: "18C9658A03EB2A34"
 					item: {
 						count: 1
 						id: "mekanism:pellet_antimatter"
@@ -99,32 +126,89 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: 2.0d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
-				"A9DC3E54C8EFD7D3"
-				"572555DC01AC09F5"
+				"70B1940EDDBA0D57"
+			]
+			icon: {
+				count: 1
+				id: "justdirethings:time_crystal"
+			}
+			id: "57C8294C7D337365"
+			rewards: [
+				{
+					id: "37CD4150D8821E31"
+					type: "xp"
+					xp: 1020
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "6B3BFD62FCB342A6"
+					item: {
+						count: 1
+						id: "justdirethings:time_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"57C8294C7D337365"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:starlight_block"
+			}
+			id: "738780E3FFD63833"
+			rewards: [
+				{
+					id: "6F46C5B71F3EE73F"
+					type: "xp"
+					xp: 1025
+				}
+			]
+			tasks: [
+				{
+					count: 12L
+					id: "1AD04C03EAFA88C4"
+					item: {
+						count: 1
+						id: "yukicore:starlight_block"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"738780E3FFD63833"
 			]
 			icon: {
 				count: 1
 				id: "yukicore:yuki_heart"
 			}
-			id: "8F6D597094D030A5"
+			id: "6AD0AB309DA675A2"
 			rewards: [
 				{
-					id: "4361E1B7B46845D6"
+					id: "634243BA45D4D517"
 					type: "xp"
-					xp: 2000
+					xp: 1030
 				}
 			]
-			shape: "gear"
-			size: 2.0d
 			tasks: [
 				{
 					count: 1L
-					id: "8B7A23CFAAB6945C"
+					id: "242EBE7AFBEDB6D1"
 					item: {
 						count: 1
 						id: "yukicore:yuki_heart"
@@ -132,29 +216,29 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
+			x: 9.0d
 			y: 0.0d
 		}
 		{
 			dependencies: [
-				"8F6D597094D030A5"
+				"6AD0AB309DA675A2"
 			]
 			icon: {
 				count: 1
 				id: "create:refined_radiance"
 			}
-			id: "A1B18931E415E99F"
+			id: "189549891E2C068F"
 			rewards: [
 				{
-					id: "9396A88ABEE5E7B0"
+					id: "1EBD409218471CA9"
 					type: "xp"
-					xp: 100
+					xp: 1035
 				}
 			]
 			tasks: [
 				{
 					count: 4L
-					id: "41BF07294F10EBD7"
+					id: "631AFC90F2DD4441"
 					item: {
 						count: 1
 						id: "create:refined_radiance"
@@ -162,29 +246,29 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: -2.0d
+			x: 9.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
-				"8F6D597094D030A5"
+				"189549891E2C068F"
 			]
 			icon: {
 				count: 1
 				id: "create:shadow_steel"
 			}
-			id: "B81E914610890817"
+			id: "150A7E82207DB949"
 			rewards: [
 				{
-					id: "2718ED90DAB81BBE"
+					id: "109CE07E1DB3FA61"
 					type: "xp"
-					xp: 100
+					xp: 1040
 				}
 			]
 			tasks: [
 				{
-					count: 4L
-					id: "147C7EDC3CE4733A"
+					count: 2L
+					id: "24EB563DC9D1ED66"
 					item: {
 						count: 1
 						id: "create:shadow_steel"
@@ -192,32 +276,119 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 2.0d
+			x: 7.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
-				"A1B18931E415E99F"
-				"B81E914610890817"
+				"150A7E82207DB949"
+			]
+			icon: {
+				count: 1
+				id: "mekanism:pellet_polonium"
+			}
+			id: "19880E4068756090"
+			rewards: [
+				{
+					id: "24CCC91D410D4F66"
+					type: "xp"
+					xp: 1045
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "1721E72F16F444F8"
+					item: {
+						count: 1
+						id: "mekanism:pellet_polonium"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"19880E4068756090"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:unstable_infinity_star"
+			}
+			id: "5032AC8E09C3563E"
+			rewards: [
+				{
+					id: "4EB5A731F8A3F93B"
+					type: "xp"
+					xp: 1050
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "16B071DF65557049"
+					item: {
+						count: 1
+						id: "yukicore:unstable_infinity_star"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5032AC8E09C3563E"
+			]
+			icon: {
+				count: 1
+				id: "mekanism:antiprotonic_nucleosynthesizer"
+			}
+			id: "3684060946D88D64"
+			rewards: [
+				{
+					id: "7A62C6794FB3E895"
+					type: "xp"
+					xp: 1055
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6333F1805FD1859E"
+					item: {
+						count: 1
+						id: "mekanism:antiprotonic_nucleosynthesizer"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3684060946D88D64"
 			]
 			icon: {
 				count: 1
 				id: "yukicore:yuki_infinity_star"
 			}
-			id: "DAE3D1A305FE50DF"
+			id: "6D58F526B8535594"
 			rewards: [
 				{
-					id: "F31B48B642D94FE5"
+					id: "26405521736F7787"
 					type: "xp"
-					xp: 5000
+					xp: 1060
 				}
 			]
-			shape: "gear"
-			size: 3.0d
 			tasks: [
 				{
 					count: 1L
-					id: "1B0E464E13529DBA"
+					id: "1BF2EBFC5CDEE702"
 					item: {
 						count: 1
 						id: "yukicore:yuki_infinity_star"
@@ -225,29 +396,29 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
-			y: 0.0d
+			x: 1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
-				"8F6D597094D030A5"
+				"6D58F526B8535594"
 			]
 			icon: {
 				count: 1
 				id: "yukicore:yuki_blade"
 			}
-			id: "D38DCF12718E17ED"
+			id: "46D444BB6B964CE4"
 			rewards: [
 				{
-					id: "18FE081EA829FC2F"
+					id: "779BD913014BE232"
 					type: "xp"
-					xp: 1000
+					xp: 1065
 				}
 			]
 			tasks: [
 				{
 					count: 1L
-					id: "7D92198B009A3EB9"
+					id: "2C65140975B5183C"
 					item: {
 						count: 1
 						id: "yukicore:yuki_blade"
@@ -255,7 +426,73 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"46D444BB6B964CE4"
+			]
+			icon: {
+				count: 1
+				id: "mekanism:creative_energy_cube"
+			}
+			id: "10EBC3BC7ADB1285"
+			rewards: [
+				{
+					id: "69B19B3DDFED8447"
+					type: "xp"
+					xp: 1070
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2F392F02F636DBB1"
+					item: {
+						count: 1
+						id: "mekanism:creative_energy_cube"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"10EBC3BC7ADB1285"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:snow_block"
+			}
+			id: "21DF1AF08036042C"
+			rewards: [
+				{
+					id: "239A1F40128D427A"
+					type: "xp"
+					xp: 1075
+				}
+				{
+					count: 64
+					id: "360FD40C1656C242"
+					item: {
+						count: 1
+						id: "yukicore:yuki_lamp"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1CD8ADFD828AEC0D"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
 			y: 3.0d
 		}
 	]

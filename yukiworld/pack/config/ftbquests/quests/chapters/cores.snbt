@@ -1,0 +1,411 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "cores"
+	group: ""
+	icon: {
+		count: 1
+		id: "yukicore:frost_core"
+	}
+	id: "199E276CC8E51C76"
+	images: [ ]
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"1E18C025108CC184"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_core"
+			}
+			id: "5E98BFBD6C83C698"
+			rewards: [
+				{
+					id: "375F2491032F9F44"
+					type: "xp"
+					xp: 800
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1707519EF87BF770"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5E98BFBD6C83C698"
+			]
+			icon: {
+				count: 1
+				id: "create:mechanical_crafter"
+			}
+			id: "1CAC4E87196E0AC4"
+			rewards: [
+				{
+					id: "18889E72224E179F"
+					type: "xp"
+					xp: 805
+				}
+			]
+			tasks: [
+				{
+					count: 49L
+					id: "5A763EAE4C6B6EE0"
+					item: {
+						count: 1
+						id: "create:mechanical_crafter"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1CAC4E87196E0AC4"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_core"
+			}
+			id: "581EDDADF5EC7168"
+			rewards: [
+				{
+					id: "2800008E9577CBAD"
+					type: "xp"
+					xp: 810
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "3F077FF85192130C"
+					item: {
+						count: 1
+						id: "yukicore:frost_core"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"581EDDADF5EC7168"
+			]
+			icon: {
+				count: 1
+				id: "mekanism:alloy_atomic"
+			}
+			id: "593F69577F89AAC7"
+			rewards: [
+				{
+					id: "4C499F831F6152FE"
+					type: "xp"
+					xp: 815
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "58AB946EB79278A0"
+					item: {
+						count: 1
+						id: "mekanism:alloy_atomic"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"593F69577F89AAC7"
+			]
+			icon: {
+				count: 1
+				id: "create:precision_mechanism"
+			}
+			id: "33B53E8D31B304E2"
+			rewards: [
+				{
+					id: "5E93B1644FF5BFAB"
+					type: "xp"
+					xp: 820
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "12234F14E47B269B"
+					item: {
+						count: 1
+						id: "create:precision_mechanism"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"33B53E8D31B304E2"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:tech_core"
+			}
+			id: "21DA2134DAD7D57D"
+			rewards: [
+				{
+					id: "7B830183628104FD"
+					type: "xp"
+					xp: 825
+				}
+				{
+					count: 2
+					id: "7C12BB7271798F18"
+					item: {
+						count: 1
+						id: "yukicore:celestium_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3975092CA4DCB35B"
+					item: {
+						count: 1
+						id: "yukicore:tech_core"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"21DA2134DAD7D57D"
+			]
+			icon: {
+				count: 1
+				id: "irons_spellbooks:dragonskin"
+			}
+			id: "739DFD3E1E115858"
+			rewards: [
+				{
+					id: "6D694FB1947C446F"
+					type: "xp"
+					xp: 830
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "7F3879F1AE310221"
+					item: {
+						count: 1
+						id: "irons_spellbooks:dragonskin"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"739DFD3E1E115858"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:magic_core"
+			}
+			id: "61820C5AB0D57A62"
+			rewards: [
+				{
+					id: "4256F87D53EB398E"
+					type: "xp"
+					xp: 835
+				}
+				{
+					count: 2
+					id: "221A2051D591F710"
+					item: {
+						count: 1
+						id: "yukicore:celestium_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "69B7A49653ED1208"
+					item: {
+						count: 1
+						id: "yukicore:magic_core"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"61820C5AB0D57A62"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:enchanted_golden_apple"
+			}
+			id: "1F9CCAB9993478F7"
+			rewards: [
+				{
+					id: "625DA920BFE1EAE6"
+					type: "xp"
+					xp: 840
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "30812E3EC3506DFD"
+					item: {
+						count: 1
+						id: "minecraft:enchanted_golden_apple"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1F9CCAB9993478F7"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:nature_core"
+			}
+			id: "32630379247D6530"
+			rewards: [
+				{
+					id: "56C6DC9644E59004"
+					type: "xp"
+					xp: 845
+				}
+				{
+					count: 2
+					id: "294FCBBE4210B8A7"
+					item: {
+						count: 1
+						id: "yukicore:celestium_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3FB78563319AE139"
+					item: {
+						count: 1
+						id: "yukicore:nature_core"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"32630379247D6530"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:nether_star"
+			}
+			id: "188C2F322C1F3B18"
+			rewards: [
+				{
+					id: "35AFD41A578F89A9"
+					type: "xp"
+					xp: 850
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "306986ADDF702187"
+					item: {
+						count: 1
+						id: "minecraft:nether_star"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"188C2F322C1F3B18"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:dimension_core"
+			}
+			id: "165E405A3716AD5E"
+			rewards: [
+				{
+					id: "423F52D543AF1FF9"
+					type: "xp"
+					xp: 855
+				}
+				{
+					count: 1
+					id: "3D937B36730263E9"
+					item: {
+						count: 1
+						id: "yukicore:celestium_block"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 1L
+					id: "377C773F2C3C9FCA"
+					item: {
+						count: 1
+						id: "yukicore:dimension_core"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+	]
+}

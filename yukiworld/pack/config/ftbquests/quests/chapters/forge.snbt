@@ -1,0 +1,774 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "forge"
+	group: ""
+	icon: {
+		count: 1
+		id: "yukicore:aurorium_ingot"
+	}
+	id: "16900BDA3608F337"
+	images: [ ]
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"26B9123E2F78A229"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_plate"
+			}
+			id: "4FA483E740BFF250"
+			rewards: [
+				{
+					id: "49A7FB02478E142A"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "4A88CA249598FBB1"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4FA483E740BFF250"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_plate"
+			}
+			id: "7B333CA06817DB65"
+			rewards: [
+				{
+					id: "1BCDCB577EB49226"
+					type: "xp"
+					xp: 605
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "60F380C20FCD2174"
+					item: {
+						count: 1
+						id: "yukicore:frost_plate"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7B333CA06817DB65"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_essence"
+			}
+			id: "28AA007C32F378FF"
+			rewards: [
+				{
+					id: "4E4E8107F6E912B0"
+					type: "xp"
+					xp: 610
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "4177E325AA04738B"
+					item: {
+						count: 1
+						id: "yukicore:yuki_essence"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"28AA007C32F378FF"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:cryo_circuit"
+			}
+			id: "4E7C67390A0001F5"
+			rewards: [
+				{
+					id: "4B9AA783EB40D63A"
+					type: "xp"
+					xp: 615
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "299329B1227F12EB"
+					item: {
+						count: 1
+						id: "yukicore:cryo_circuit"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4E7C67390A0001F5"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_mechanism"
+			}
+			id: "3F930E26E9DE5C2F"
+			rewards: [
+				{
+					id: "46B79C66A540EBEC"
+					type: "xp"
+					xp: 620
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "5A31FA411B8D0C90"
+					item: {
+						count: 1
+						id: "yukicore:frost_mechanism"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3F930E26E9DE5C2F"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_upgrade_template"
+			}
+			id: "6E8D8D87E3D8F23D"
+			rewards: [
+				{
+					id: "6256E264C1551B94"
+					type: "xp"
+					xp: 625
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "22AC61DE3F6FA2B2"
+					item: {
+						count: 1
+						id: "yukicore:frost_upgrade_template"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6E8D8D87E3D8F23D"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_pickaxe"
+			}
+			id: "645596F0E484522F"
+			rewards: [
+				{
+					id: "2B333ACB59DBA9DD"
+					type: "xp"
+					xp: 630
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "22F003F3FE0E7F32"
+					item: {
+						count: 1
+						id: "yukicore:frost_pickaxe"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"645596F0E484522F"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_sword"
+			}
+			id: "2B0FECC60501473F"
+			rewards: [
+				{
+					id: "4A7C660E42019F44"
+					type: "xp"
+					xp: 635
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5F67BBE61D9DF84D"
+					item: {
+						count: 1
+						id: "yukicore:frost_sword"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2B0FECC60501473F"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_helmet"
+			}
+			id: "585866DA183FAE14"
+			rewards: [
+				{
+					id: "4325945231DE7E33"
+					type: "xp"
+					xp: 640
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1AFACA4D5FC327F7"
+					item: {
+						count: 1
+						id: "yukicore:frost_helmet"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"585866DA183FAE14"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_chestplate"
+			}
+			id: "72A2F8B39E8EF57F"
+			rewards: [
+				{
+					id: "6217D0CB9881EC3C"
+					type: "xp"
+					xp: 645
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "18BE16634559AAF4"
+					item: {
+						count: 1
+						id: "yukicore:frost_chestplate"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"72A2F8B39E8EF57F"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_leggings"
+			}
+			id: "7E924C80D00E2341"
+			rewards: [
+				{
+					id: "2AB8FFF297A84520"
+					type: "xp"
+					xp: 650
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "31B0A6CCF2BB081F"
+					item: {
+						count: 1
+						id: "yukicore:frost_leggings"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7E924C80D00E2341"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_boots"
+			}
+			id: "6D4E4D30D24AF92F"
+			rewards: [
+				{
+					id: "1424617ABC451EC0"
+					type: "xp"
+					xp: 655
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "55316B5CB31D7E1B"
+					item: {
+						count: 1
+						id: "yukicore:frost_boots"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6D4E4D30D24AF92F"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_star"
+			}
+			id: "1190DAD668B869BB"
+			rewards: [
+				{
+					id: "404CD62E9F797C33"
+					type: "xp"
+					xp: 660
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2E7A7B3F94261293"
+					item: {
+						count: 1
+						id: "yukicore:yuki_star"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1190DAD668B869BB"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_apple"
+			}
+			id: "2B4ADFB975CE37CD"
+			rewards: [
+				{
+					id: "7EFBE6FF991CC62A"
+					type: "xp"
+					xp: 665
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "14141412AACBBE6A"
+					item: {
+						count: 1
+						id: "yukicore:frost_apple"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2B4ADFB975CE37CD"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:aurorium_ingot"
+			}
+			id: "41035FED7FA9E41C"
+			rewards: [
+				{
+					id: "47DFA1703A78953C"
+					type: "xp"
+					xp: 670
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "63BFDCD2041C765F"
+					item: {
+						count: 1
+						id: "yukicore:aurorium_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"41035FED7FA9E41C"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:aurorium_block"
+			}
+			id: "5F5287AC76B838E8"
+			rewards: [
+				{
+					id: "761B1AB9D5B5690B"
+					type: "xp"
+					xp: 675
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "63A0B5FA3A976014"
+					item: {
+						count: 1
+						id: "yukicore:aurorium_block"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5F5287AC76B838E8"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:aurorium_upgrade_template"
+			}
+			id: "1CF287061495A705"
+			rewards: [
+				{
+					id: "2A2281B6577A9CB0"
+					type: "xp"
+					xp: 680
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4CD2248FE9043631"
+					item: {
+						count: 1
+						id: "yukicore:aurorium_upgrade_template"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"1CF287061495A705"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:aurorium_pickaxe"
+			}
+			id: "5AA0925D512ABC14"
+			rewards: [
+				{
+					id: "56BC2A7F7C380CF3"
+					type: "xp"
+					xp: 685
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2C630A7DF2AAA4BD"
+					item: {
+						count: 1
+						id: "yukicore:aurorium_pickaxe"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5AA0925D512ABC14"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:aurorium_chestplate"
+			}
+			id: "16D1AF8867CD8ED3"
+			rewards: [
+				{
+					id: "67D2157DB45B4B36"
+					type: "xp"
+					xp: 690
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7FF5E914CBB9492C"
+					item: {
+						count: 1
+						id: "yukicore:aurorium_chestplate"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"16D1AF8867CD8ED3"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:celestium_ingot"
+			}
+			id: "6560D2430BC25D72"
+			rewards: [
+				{
+					id: "72CD13D7561D14A5"
+					type: "xp"
+					xp: 695
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "304947128B5E94D6"
+					item: {
+						count: 1
+						id: "yukicore:celestium_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6560D2430BC25D72"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:celestium_block"
+			}
+			id: "532E15C9E404F13E"
+			rewards: [
+				{
+					id: "6A4ADE6B1D069189"
+					type: "xp"
+					xp: 700
+				}
+			]
+			tasks: [
+				{
+					count: 6L
+					id: "6BAE4F956B745850"
+					item: {
+						count: 1
+						id: "yukicore:celestium_block"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"532E15C9E404F13E"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:celestium_upgrade_template"
+			}
+			id: "18B8EB11860A4254"
+			rewards: [
+				{
+					id: "19C20491E30D1269"
+					type: "xp"
+					xp: 705
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1DA694D777D4A6B4"
+					item: {
+						count: 1
+						id: "yukicore:celestium_upgrade_template"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"18B8EB11860A4254"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:celestium_pickaxe"
+			}
+			id: "4B0013364029B76F"
+			rewards: [
+				{
+					id: "579AEB6FAE9F2C68"
+					type: "xp"
+					xp: 710
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1380BDF016245365"
+					item: {
+						count: 1
+						id: "yukicore:celestium_pickaxe"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"4B0013364029B76F"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:celestium_sword"
+			}
+			id: "527DE0FC2954985E"
+			rewards: [
+				{
+					id: "767C94FDBCD06FE4"
+					type: "xp"
+					xp: 715
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4D88164BC0A9FA24"
+					item: {
+						count: 1
+						id: "yukicore:celestium_sword"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"527DE0FC2954985E"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:celestium_chestplate"
+			}
+			id: "1E18C025108CC184"
+			rewards: [
+				{
+					id: "3E39DAF846FE1134"
+					type: "xp"
+					xp: 720
+				}
+				{
+					count: 4
+					id: "414371002E748419"
+					item: {
+						count: 1
+						id: "yukicore:starlight_shard"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 1L
+					id: "450FCC41DB10EB51"
+					item: {
+						count: 1
+						id: "yukicore:celestium_chestplate"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 4.5d
+		}
+	]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Компоненты",
+  "category": "yukicore:forge",
+  "icon": "yukicore:frost_mechanism",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Магия Юки капризна: её материалы рождаются только в машинах разных модов."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:frost_plate",
+      "text": "$(l)Морозная пластина$() — механический пресс Create."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:yuki_essence",
+      "text": "$(l)Эссенция Юки$() — камера наполнения Ars Nouveau: кристалл Юки, голубой лёд, снег, эссенция воды, 3000 источника."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:cryo_circuit",
+      "text": "$(l)Криосхема$() — высекатель AE2: инженерная плата + кристалл Юки + морозная пластина."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:frost_mechanism",
+      "text": "$(l)Морозный механизм$() — последовательная сборка Create из точного механизма: пластина → криосхема → кристалл → пресс, 3 круга."
+    }
+  ]
+}

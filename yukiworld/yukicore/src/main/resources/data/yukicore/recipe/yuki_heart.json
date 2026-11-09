@@ -2,6 +2,10 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
       "modid": "mekanism"
     },
     {
@@ -9,14 +13,25 @@
       "modid": "justdirethings"
     }
   ],
-  "type": "minecraft:crafting_shaped",
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
   "category": "misc",
-  "pattern": [
-    "UTU",
-    "MAN",
-    "UDU"
-  ],
   "key": {
+    "X": {
+      "item": "yukicore:celestium_block"
+    },
+    "S": {
+      "item": "yukicore:star_shard"
+    },
+    "A": {
+      "item": "mekanism:pellet_antimatter"
+    },
+    "Z": {
+      "item": "yukicore:yuki_essence"
+    },
+    "L": {
+      "item": "yukicore:starlight_block"
+    },
     "U": {
       "item": "justdirethings:time_crystal"
     },
@@ -32,12 +47,27 @@
     "D": {
       "item": "yukicore:dimension_core"
     },
-    "A": {
-      "item": "mekanism:pellet_antimatter"
+    "C": {
+      "item": "yukicore:celestium_ingot"
+    },
+    "Y": {
+      "item": "yukicore:yuki_star"
     }
   },
+  "pattern": [
+    "    X    ",
+    "   SAS   ",
+    "  ZLULZ  ",
+    " SLTCMLS ",
+    "XAUCYCUAX",
+    " SLNCDLS ",
+    "  ZLULZ  ",
+    "   SAS   ",
+    "    X    "
+  ],
   "result": {
-    "id": "yukicore:yuki_heart",
-    "count": 1
-  }
+    "count": 1,
+    "id": "yukicore:yuki_heart"
+  },
+  "show_notification": true
 }

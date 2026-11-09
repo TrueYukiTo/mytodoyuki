@@ -49,10 +49,19 @@ public final class YukiHud implements LayeredDraw.Layer {
 
         int w = 0;
         for (Component c : lines) w = Math.max(w, font.width(c));
-        int x = 4, y = 4, pad = 4, lh = 10;
+        // Правый верхний угол (слева сидит миникарта Xaero), ниже иконок эффектов
+        boolean good = false, bad = false;
+        for (var e : mc.player.getActiveEffects()) {
+            if (!e.showIcon()) continue;
+            if (e.getEffect().value().isBeneficial()) good = true; else bad = true;
+        }
+        int pad = 4, lh = 10;
+        int panelW = w + pad * 2 + 3;
+        int x = g.guiWidth() - panelW - 4;
+        int y = 4 + (good ? 26 : 0) + (bad ? 26 : 0);
         int h = lines.size() * lh + pad * 2 - 2;
 
-        YukiTheme.roundedRect(g, x, y, w + pad * 2 + 3, h, 0x90101828);
+        YukiTheme.roundedRect(g, x, y, panelW, h, 0x90101828);
         g.fillGradient(x + 2, y + 3, x + 3, y + h - 3, YukiTheme.ICE, YukiTheme.SAKURA);
         for (int i = 0; i < lines.size(); i++) {
             g.drawString(font, lines.get(i), x + pad + 3, y + pad + i * lh, 0xFFFFFFFF, true);

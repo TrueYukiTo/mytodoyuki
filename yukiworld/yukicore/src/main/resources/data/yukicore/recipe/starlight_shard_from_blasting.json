@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": {
+    "item": "yukicore:starlight_ore"
+  },
+  "result": {
+    "id": "yukicore:starlight_shard"
+  },
+  "experience": 3.0,
+  "cookingtime": 400
+}

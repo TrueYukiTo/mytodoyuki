@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "powah"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CBC",
+    "BSB",
+    "CBC"
+  ],
+  "key": {
+    "C": {
+      "item": "yukicore:celestium_block"
+    },
+    "B": {
+      "item": "powah:energy_cell_nitro"
+    },
+    "S": {
+      "item": "yukicore:yuki_infinity_star"
+    }
+  },
+  "result": {
+    "id": "powah:energy_cell_creative",
+    "count": 1
+  }
+}

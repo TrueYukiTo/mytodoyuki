@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "yukicore:aurorium_upgrade_template"
+  },
+  "base": {
+    "item": "yukicore:frost_leggings"
+  },
+  "addition": {
+    "item": "yukicore:aurorium_ingot"
+  },
+  "result": {
+    "id": "yukicore:aurorium_leggings",
+    "count": 1
+  }
+}

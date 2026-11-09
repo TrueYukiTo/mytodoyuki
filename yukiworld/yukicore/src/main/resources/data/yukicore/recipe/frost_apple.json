@@ -2,20 +2,23 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " C ",
+    "ECE",
     "CAC",
-    " C "
+    "ECE"
   ],
   "key": {
+    "E": {
+      "item": "yukicore:yuki_essence"
+    },
     "C": {
       "item": "yukicore:yuki_crystal"
     },
     "A": {
-      "item": "minecraft:apple"
+      "item": "minecraft:golden_apple"
     }
   },
   "result": {
     "id": "yukicore:frost_apple",
-    "count": 1
+    "count": 2
   }
 }

@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CBC",
+    "BSB",
+    "CBC"
+  ],
+  "key": {
+    "C": {
+      "item": "yukicore:celestium_block"
+    },
+    "B": {
+      "item": "mekanism:ultimate_energy_cube"
+    },
+    "S": {
+      "item": "yukicore:yuki_infinity_star"
+    }
+  },
+  "result": {
+    "id": "mekanism:creative_energy_cube",
+    "count": 1
+  }
+}

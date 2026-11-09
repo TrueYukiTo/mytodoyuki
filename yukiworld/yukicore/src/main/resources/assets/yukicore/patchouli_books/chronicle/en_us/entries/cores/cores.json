@@ -1,0 +1,32 @@
+{
+  "name": "Четыре Ядра",
+  "category": "yukicore:cores",
+  "icon": "yukicore:tech_core",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Ядра собираются на $(l)механическом крафтере Create 7×7$(). Каждое требует лучшие предметы своих модов вокруг Морозного ядра. Точные схемы смотри в JEI."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:tech_core",
+      "text": "Mekanism, AE2, Create, Powah, IE, Refined Storage, Oritech, Industrial Foregoing, ExtendedAE, Just Dire Things."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:magic_core",
+      "text": "Ars Nouveau, Iron's Spells, Occultism, Apotheosis, EvilCraft."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:nature_core",
+      "text": "Mystical Agriculture, Bumblezone, Productive Bees, Farmer's Delight, Сумеречный лес, Artifacts."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:dimension_core",
+      "text": "Звёзды Незера, Энд, Древний город, Испытания, Aether, Сумеречный лес."
+    }
+  ]
+}

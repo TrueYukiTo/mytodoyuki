@@ -1,119 +1,133 @@
-# ❄ YukiWorld
+# ❄ YukiWorld 2.0 — Легенда о Юки
 
-Большая «kitchen-sink» сборка в духе **All The Mods** для **Minecraft 1.21.1 / NeoForge**,
-со своим модом **YukiCore**, упором на производительность и собственным интерфейсом.
-**111 модов**, **73 квеста FTB Quests** и финал, который объединяет все моды сборки.
+Большая «kitchen-sink» сборка в духе **All The Mods** для **Minecraft 1.21.1 / NeoForge 21.1.265**:
+**111 модов**, сюжетная книга квестов на **255 квестов**, собственный мод **YukiCore** с тяжёлым
+финалом, который объединяет все моды сборки, и свой интерфейс.
 
-![Главное меню YukiWorld](docs/main-menu.png)
+![Главное меню](docs/main-menu.png)
 
-## Что внутри
+## 📖 Сюжет
 
-| Категория | Моды |
+> Когда-то над всеми мирами шёл тихий снег. Его хранила **Юки** — дух зимы, чьё Сердце держало в
+> равновесии машины, магию, природу и границы измерений. Эндер-дракон расколол Сердце, и осколки упали
+> на дальние острова Энда. Зима ушла — и мир начал разрушаться.
+>
+> Ты — **Хранитель**. Освой машины, магию и чужие миры, найди осколки Юки в Энде, выкуй четыре Ядра,
+> восстанови Сердце и зажги **Бесконечную звезду**.
+
+Сюжет рассказывают **квесты** (письма Юки в начале каждой главы) и книга **«Летопись Юки»** (Patchouli),
+которую игрок получает за первый квест.
+
+| Квесты | Летопись Юки |
 |---|---|
-| ⚡ Оптимизация | Sodium, Lithium, FerriteCore, ModernFix, ImmediatelyFast, Entity Culling, Ksyxis, Fast IP Ping, spark, Iris (шейдеры), Sodium Extra |
-| ⚙️ Технологии | Mekanism (+Generators, Tools), Create, Applied Energistics 2 (+AE2WTLib, ExtendedAE), Just Dire Things, Refined Storage, Immersive Engineering, Industrial Foregoing, Actually Additions, Create Crafts & Additions, Create: New Age, Powah, Pipez, Oritech, Silent Gear, Functional Storage, Modular Routers |
-| ✨ Магия | Ars Nouveau, Iron's Spells 'n Spellbooks, Occultism, Apotheosis, EvilCraft |
-| 📜 Квесты | FTB Quests, FTB XMod Compat, FTB Ultimine |
-| 📦 Хранение | Sophisticated Backpacks / Storage, Storage Drawers, Tom's Storage |
-| 🌍 Мир | Biomes O' Plenty, Terralith, The Aether, Twilight Forest, YUNG's Better *, When Dungeons Arise, Artifacts, Waystones, The Bumblezone |
-| 🌾 Фермы | Farmer's Delight, Productive Bees, Mystical Agriculture |
-| 🏠 Декор | Supplementaries, Handcrafted, Chipped, Macaw's |
-| 🧭 Удобство | JEI, Jade, Xaero's Minimap + World Map, AppleSkin, Mouse Tweaks, Controlling, Better Advancements и др. |
-| ❄ **YukiCore** | свой мод — см. ниже |
+| ![Квесты](docs/quests.png) | ![Летопись](docs/chronicle.png) |
 
-Полный список — [`pack/mods.txt`](pack/mods.txt). Зависимости подтягиваются автоматически.
-Строки `cf:` берутся с CurseForge (FTB Quests, Twilight Forest, ExtendedAE, Just Dire Things), остальное — с Modrinth.
-Botania и MemoryLeakFix под 1.21.1 NeoForge не выходили.
+## 📜 Квесты: 13 глав, 255 квестов, строго по очереди
 
-## ⭐ Финал: YukiCore объединяет все моды
+Каждый квест открывается только после предыдущего, каждая глава — после прошлой.
 
-YukiCore — последняя ступень сборки. Каждое ядро собирается из топовых предметов своей группы модов
-вокруг **Морозного ядра**:
+| # | Глава | Квестов |
+|---|---|---|
+| 0 | ❄ Пролог: Пробуждение | 21 |
+| I | ⚙ Шестерни (Create) | 20 |
+| II | 🔩 Сталь и пар (Immersive Engineering, Mekanism) | 20 |
+| III | ✨ Магия пробуждается (Ars Nouveau, Iron's Spells) | 21 |
+| IV | 🕯 Тайное знание (Occultism, EvilCraft, Apotheosis) | 16 |
+| V | 🌾 Сад и улей (Mystical Agriculture, Productive Bees, Farmer's Delight) | 22 |
+| VI | 💾 Цифровой мир (AE2, ExtendedAE, Refined Storage) | 18 |
+| VII | ⚡ Энергия (Powah, реакторы Mekanism, Industrial Foregoing, Oritech, JDT) | 21 |
+| VIII | 🌌 Пороги миров (Незер, Сумеречный лес, Aether, Бамблзона) | 23 |
+| IX | 🐉 Край света (дракон, руды Юки, боссы) | 20 |
+| X | 🔨 Ледяная кузня (Мороз → Ауроний → Целестий) | 25 |
+| XI | 🔮 Четыре Ядра | 12 |
+| XII | ⭐ Финал: Бесконечная звезда + эпилог | 16 |
 
+Задачи — не только «принеси предмет», но и «победи босса» (дракон, Иссушитель, Хранитель, Древний страж)
+и «посети измерение».
+
+## ❄ YukiCore 2.0
+
+### Руды — только в Энде
+Все руды YukiCore генерируются **только на внешних островах Энда** (после победы над драконом):
+
+| Руда | Встречается | Даёт |
+|---|---|---|
+| Морозная руда Энда | часто | необработанный мороз → морозный слиток |
+| Руда кристалла Юки | средне, светится | кристалл Юки |
+| Руда звёздного света | редко, только доменная печь | осколок звёздного света |
+
+**Осколки звезды Юки** (как в ATM) выпадают из боссов: Иссушитель (1–2), Хранитель (1), Древний страж (1).
+
+### Три металла и кузня
+Снаряжение улучшается на кузнечном столе шаблонами, как незерит:
+**алмаз → ❄ Мороз → 🌈 Ауроний → ✨ Целестий** (9 предметов каждого уровня).
+Полный комплект брони даёт бонусы (у Целестия — ночное зрение, огнестойкость, дыхание, регенерация,
+сила II, спешка III, скорость II).
+
+![Предметы YukiCore](docs/items.png)
+
+### Каждый шаг — машина другого мода
+| Компонент | Где делается |
+|---|---|
+| Морозная пластина | механический пресс **Create** |
+| Эссенция Юки | камера наполнения **Ars Nouveau** (3000 источника) |
+| Криосхема | высекатель **AE2** |
+| Морозный механизм | последовательная сборка **Create** (3 круга) |
+| Ауроний | миксер **Create** с перегревом + очищенный обсидиан **Mekanism** + лава |
+| Целестий | заряжающий стержень **Powah**, 25 000 000 FE |
+| Звезда Юки, Морозное ядро | механический крафтер **Create** 5×5 |
+| Четыре Ядра | механический крафтер **Create** 7×7 |
+| Сердце YukiWorld, Нестабильная звезда | механический крафтер **Create** 9×9 |
+| Бесконечная звезда Юки | антипротонный нуклеосинтезатор **Mekanism**, 1000 мБ антиматерии |
+
+![Сердце YukiWorld в JEI](docs/jei-heart.png)
+
+### Финальная цепочка
 ```
-Морозное ядро ─┬─ ⚙ Технологическое ядро  ← Mekanism (абсолютная схема), AE2 (сингулярность), Create (точный механизм),
-               │                            Powah (нитро-конденсатор), IE, Refined Storage, Oritech, Industrial Foregoing
-               ├─ ✨ Магическое ядро        ← Ars Nouveau (дань Вилдена), Iron's Spells, Occultism, Apotheosis, EvilCraft
-               ├─ 🌾 Ядро природы           ← Mystical Agriculture (пробуждённый супремиум), Bumblezone, Farmer's Delight,
-               │                            Productive Bees, Twilight Forest, Artifacts
-               └─ 🌌 Ядро измерений         ← звезда Незера, дыхание дракона, эхо, тяжёлое ядро, Aether, Twilight Forest
-                        │
-   4 ядра + антиматерия Mekanism + кристаллы времени JDT ──► ❤ Сердце YukiWorld
-                        │
-   Механический крафтер Create 5×5: сердце + 2 звезды Юки + очищенное сияние + теневая сталь + сингулярности AE2
-                        ▼
-              ⭐ Бесконечная звезда Юки  — в инвентаре: полёт, ночное зрение, сопротивление, насыщение
-              🗡 Клинок Юки               — неразрушимый, урон 30
+Морозное ядро (5×5) ─┬─ ⚙ Технологическое ← Mekanism, AE2, Create, Powah, IE, RS, Oritech, IF, ExtendedAE, JDT
+                     ├─ ✨ Магическое      ← Ars Nouveau, Iron's Spells, Occultism, Apotheosis, EvilCraft
+                     ├─ 🌾 Природы         ← Mystical Agriculture, Bumblezone, Productive Bees, FD, TF, Artifacts
+                     └─ 🌌 Измерений       ← звёзды Незера, Энд, Древний город, Испытания, Aether, TF
+ 4 Ядра + 4 антиматерии + 8 осколков звезды + кристаллы времени (9×9) ──► ❤ Сердце YukiWorld
+ Сердце + сияние/теневая сталь Create + сингулярности AE2 + полоний (9×9) ──► Нестабильная звезда
+ Нуклеосинтез антиматерией (Mekanism) ──► ⭐ Бесконечная звезда Юки
 ```
+* **Бесконечная звезда** в инвентаре: полёт, ночное зрение, сопротивление, насыщение.
+* Как ATM Star, она — ключ к **креативным** предметам (куб Mekanism, ячейка AE2, батарея Powah,
+  конденсатор IE, мотор Create) и **не тратится** в этих рецептах.
+* **Клинок Юки** — неразрушимый, урон 43.
 
-Если какого-то мода нет (например, собираешь свою версию), у каждого ядра есть запасной ванильный рецепт —
-игра не сломается (условия `neoforge:mod_loaded`).
-
-## 📜 Квесты (FTB Quests)
-
-6 глав, 73 квеста, на русском и английском (`pack/config/ftbquests/quests`):
-**❄ Добро пожаловать → ⚙ Технологии / ✨ Магия / 🌾 Природа / 🌌 Измерения → ⭐ Финал YukiWorld**.
-Квесты ведут по каждому моду до компонентов ядер; награды — опыт и предметы.
-Квесты генерируются скриптом `tools/gen_quests.py`: правишь список, запускаешь, ID стабильны (прогресс не сбрасывается).
-
-## YukiCore — свой мод
-
-**Контент**
-- **Руда кристалла Юки** (обычная и глубинная, слабо светится) → *Кристалл Юки*
-- **Морозная руда** → *Необработанный мороз* → *Морозный слиток*
-- **Морозные инструменты** (между алмазом и незеритом, энчант 20) — меч замедляет врагов
-- **Морозная броня** (3/8/6/3, прочность 2.5)
-- **Звезда Юки** — ПКМ: ночное зрение, скорость II, прыгучесть II, регенерация (КД 2 мин)
-- **Морозное яблоко** — скорость и огнестойкость
-- Блоки: морозный блок, блок кристалла Юки, **Лампа Юки** (свет 15)
-- Эндгейм: 5 ядер, Сердце YukiWorld, Бесконечная звезда Юки, Клинок Юки (см. выше)
-- Своя вкладка творческого режима, рецепты видны в JEI, теги `c:` для совместимости с техно-модами
-
-**Интерфейс**
-- Своё **главное меню**: панорама + ночной градиент, снегопад, переливающийся логотип, «ледяные» кнопки с анимацией
-- **Все кнопки, слайдеры и поля ввода в игре** перекрашены в стиль YukiWorld
-- Компактный **HUD**: FPS (цветной), координаты, биом, игровой день — прячется при F3/F1
-- Экран настроек прямо из списка модов (Моды → YukiCore → Настройки)
-
-**Оптимизация**
-- **Smart FPS** — когда окно свёрнуто/не в фокусе, FPS ограничивается до 10: видеокарта и процессор отдыхают
-- Сам мод лёгкий: без тиков блоков, без сущностей, HUD без текстур
+### Интерфейс и оптимизация
+* Своё главное меню (снег, переливающийся логотип), все кнопки/слайдеры/поля игры в стиле YukiWorld.
+* Компактный HUD (FPS, координаты, биом, день) в правом верхнем углу — не мешает миникарте.
+* **Smart FPS**: в фоне FPS ограничивается до 10.
+* Меню Cumulus (The Aether) отключено конфигом, чтобы не перекрывать меню YukiWorld.
 
 ## Установка (игроку)
+1. Скачай `YukiWorld-2.0.0.mrpack` (GitHub Actions → артефакт **YukiWorld**).
+2. Открой в **Prism Launcher** / **Modrinth App** / **ATLauncher**.
+3. Выдели **8–10 ГБ ОЗУ**, **Java 21**.
 
-1. Скачай `YukiWorld-1.1.1.mrpack` (из GitHub Actions → артефакт **YukiWorld**).
-2. Открой в **Prism Launcher** / **Modrinth App** / **ATLauncher**: «Добавить сборку» → выбрать файл.
-3. Выдели **8–10 ГБ ОЗУ** и используй **Java 21**. Рекомендуемые JVM-флаги:
-   ```
-   -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20
-   -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M -XX:+AlwaysPreTouch
-   ```
+> ⚠️ 2.0 — новая версия: руды переехали в Энд, у квестов новые ID. Начинай **новый мир**.
 
 ## Сборка (разработчику)
-
 ```bash
-# 1. Мод YukiCore
-cd yukiworld/yukicore && ./gradlew build        # → build/libs/yukicore-1.1.1.jar
-./gradlew runClient                              # запустить игру с модом
-
-# 2. Сборка .mrpack (нужен packwiz: go install github.com/packwiz/packwiz@latest)
-bash yukiworld/pack/scripts/build-pack.sh        # → yukiworld/pack/build/YukiWorld-1.1.1.mrpack
+python3 yukiworld/tools/gen_assets.py      # текстуры, рецепты, руды, лут, книга → yukicore/src/main/resources
+python3 yukiworld/tools/gen_quests.py      # 255 квестов → pack/config/ftbquests
+cd yukiworld/yukicore && ./gradlew build   # мод
+bash yukiworld/pack/scripts/build-pack.sh  # .mrpack (нужен packwiz)
 ```
-
-GitHub Actions (`.github/workflows/yukiworld.yml`) делает оба шага сам при каждом пуше
-и выкладывает `.jar`, `.mrpack` и отчёт `mods-report.txt` в артефакты.
-
-Текстуры, модели, рецепты, генерация руд и локализация создаются скриптом
-`tools/gen_assets.py` (пиксель-арт задан прямо в коде), квесты — `tools/gen_quests.py`.
-
-## Структура
+GitHub Actions собирает мод и `.mrpack` сам при каждом пуше.
 
 ```
 yukiworld/
-├── yukicore/            # исходники мода (NeoForge 1.21.1, Java 21)
-├── pack/                # packwiz-сборка: pack.toml, mods.txt, config/, scripts/
-├── tools/gen_assets.py  # генератор ресурсов мода (текстуры, рецепты, переводы)
-└── tools/gen_quests.py  # генератор квестов FTB Quests
+├── yukicore/                 # мод (NeoForge 1.21.1, Java 21)
+├── pack/                     # packwiz: pack.toml, mods.txt (cf: — CurseForge), config/
+└── tools/
+    ├── gen_assets.py         # генератор ресурсов
+    ├── gen_quests.py         # генератор квестов
+    └── yukigen/              # pixel.py/art.py — текстуры, recipes.py — рецепты, lang.py — названия,
+                              # book.py — Летопись Юки, questbook.py — сюжет и все 255 квестов
 ```
 
 made by YukiTo ❄

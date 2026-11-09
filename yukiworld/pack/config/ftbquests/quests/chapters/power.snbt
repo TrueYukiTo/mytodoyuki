@@ -1,0 +1,654 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "power"
+	group: ""
+	icon: {
+		count: 1
+		id: "powah:capacitor_nitro"
+	}
+	id: "4A8BED6069737AD9"
+	images: [ ]
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"479ABE5CDDAF95F5"
+			]
+			icon: {
+				count: 1
+				id: "powah:energizing_orb"
+			}
+			id: "3B9FCD145B603184"
+			rewards: [
+				{
+					id: "671632DCB1D936CA"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "68AEAB59B04AB9BB"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3B9FCD145B603184"
+			]
+			icon: {
+				count: 1
+				id: "powah:energizing_orb"
+			}
+			id: "16D2E6F6A7B80E53"
+			rewards: [
+				{
+					id: "3BA6741FB4404E47"
+					type: "xp"
+					xp: 405
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2C348D6C8BF36433"
+					item: {
+						count: 1
+						id: "powah:energizing_orb"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"16D2E6F6A7B80E53"
+			]
+			icon: {
+				count: 1
+				id: "powah:energizing_rod_starter"
+			}
+			id: "70E347B80E252513"
+			rewards: [
+				{
+					id: "5460F3628FDC9F4E"
+					type: "xp"
+					xp: 410
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "5DFA790B033F695E"
+					item: {
+						count: 1
+						id: "powah:energizing_rod_starter"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"70E347B80E252513"
+			]
+			icon: {
+				count: 1
+				id: "powah:crystal_blazing"
+			}
+			id: "204A7DDA0AB97FF6"
+			rewards: [
+				{
+					id: "2000329E77DF05D8"
+					type: "xp"
+					xp: 415
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "6ECF6A65CCD2810A"
+					item: {
+						count: 1
+						id: "powah:crystal_blazing"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"204A7DDA0AB97FF6"
+			]
+			icon: {
+				count: 1
+				id: "powah:crystal_niotic"
+			}
+			id: "3B2B748C9F357A5F"
+			rewards: [
+				{
+					id: "47A1CD5660D3E8AB"
+					type: "xp"
+					xp: 420
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "4699380119B72D2F"
+					item: {
+						count: 1
+						id: "powah:crystal_niotic"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3B2B748C9F357A5F"
+			]
+			icon: {
+				count: 1
+				id: "powah:crystal_spirited"
+			}
+			id: "392290870566DA2F"
+			rewards: [
+				{
+					id: "675B87FD90248381"
+					type: "xp"
+					xp: 425
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "61B2E7A86781420E"
+					item: {
+						count: 1
+						id: "powah:crystal_spirited"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"392290870566DA2F"
+			]
+			icon: {
+				count: 1
+				id: "powah:crystal_nitro"
+			}
+			id: "183DEACAA2A479AF"
+			rewards: [
+				{
+					id: "3BF324854BBB3EF7"
+					type: "xp"
+					xp: 430
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "2361A08C6A2D537F"
+					item: {
+						count: 1
+						id: "powah:crystal_nitro"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"183DEACAA2A479AF"
+			]
+			icon: {
+				count: 1
+				id: "powah:capacitor_nitro"
+			}
+			id: "16CBB4265B835C19"
+			rewards: [
+				{
+					id: "5FC08E12D01B2102"
+					type: "xp"
+					xp: 435
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "5D99D99DE1739CFB"
+					item: {
+						count: 1
+						id: "powah:capacitor_nitro"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"16CBB4265B835C19"
+			]
+			icon: {
+				count: 1
+				id: "powah:reactor_nitro"
+			}
+			id: "471DCD6AF29D04A1"
+			rewards: [
+				{
+					id: "512694BB8AB0CF34"
+					type: "xp"
+					xp: 440
+				}
+			]
+			tasks: [
+				{
+					count: 36L
+					id: "5982253AD69A64CE"
+					item: {
+						count: 1
+						id: "powah:reactor_nitro"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"471DCD6AF29D04A1"
+			]
+			icon: {
+				count: 1
+				id: "mekanismgenerators:gas_burning_generator"
+			}
+			id: "6968A9E45ABC0ED7"
+			rewards: [
+				{
+					id: "31EE78DC0B43BAA4"
+					type: "xp"
+					xp: 445
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "2D5FAF84D8248A61"
+					item: {
+						count: 1
+						id: "mekanismgenerators:gas_burning_generator"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6968A9E45ABC0ED7"
+			]
+			icon: {
+				count: 1
+				id: "mekanismgenerators:fission_reactor_casing"
+			}
+			id: "55DE91A3A8A85987"
+			rewards: [
+				{
+					id: "761B6B7D6974D6C2"
+					type: "xp"
+					xp: 450
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "15E08ABB344C4176"
+					item: {
+						count: 1
+						id: "mekanismgenerators:fission_reactor_casing"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"55DE91A3A8A85987"
+			]
+			icon: {
+				count: 1
+				id: "mekanismgenerators:fusion_reactor_controller"
+			}
+			id: "1D88BA940F4F2A5C"
+			rewards: [
+				{
+					id: "5CD8C7458E281B65"
+					type: "xp"
+					xp: 455
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "29A749BFC841F46F"
+					item: {
+						count: 1
+						id: "mekanismgenerators:fusion_reactor_controller"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1D88BA940F4F2A5C"
+			]
+			icon: {
+				count: 1
+				id: "industrialforegoing:machine_frame_simple"
+			}
+			id: "2A74012BBD800C15"
+			rewards: [
+				{
+					id: "2F36BE747CDA3058"
+					type: "xp"
+					xp: 460
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "243889FA60D7E4C3"
+					item: {
+						count: 1
+						id: "industrialforegoing:machine_frame_simple"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2A74012BBD800C15"
+			]
+			icon: {
+				count: 1
+				id: "industrialforegoing:machine_frame_advanced"
+			}
+			id: "68029CF7D1880D84"
+			rewards: [
+				{
+					id: "25DFE66AEFE8A9E1"
+					type: "xp"
+					xp: 465
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "2F47311CDA0D306B"
+					item: {
+						count: 1
+						id: "industrialforegoing:machine_frame_advanced"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"68029CF7D1880D84"
+			]
+			icon: {
+				count: 1
+				id: "industrialforegoing:machine_frame_supreme"
+			}
+			id: "31564F1840A02A02"
+			rewards: [
+				{
+					id: "771EFDB6AA3FA771"
+					type: "xp"
+					xp: 470
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "7B5C7DA731D32044"
+					item: {
+						count: 1
+						id: "industrialforegoing:machine_frame_supreme"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"31564F1840A02A02"
+			]
+			icon: {
+				count: 1
+				id: "oritech:overcharged_crystal"
+			}
+			id: "5F11191CD5211F13"
+			rewards: [
+				{
+					id: "131C1704D85CA2CA"
+					type: "xp"
+					xp: 475
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "4A5E45BD11B1330C"
+					item: {
+						count: 1
+						id: "oritech:overcharged_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5F11191CD5211F13"
+			]
+			icon: {
+				count: 1
+				id: "justdirethings:ferricore_ingot"
+			}
+			id: "420B19397E49B335"
+			rewards: [
+				{
+					id: "7033A6ACBB45388E"
+					type: "xp"
+					xp: 480
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "6256A913EECC8962"
+					item: {
+						count: 1
+						id: "justdirethings:ferricore_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"420B19397E49B335"
+			]
+			icon: {
+				count: 1
+				id: "justdirethings:blazegold_ingot"
+			}
+			id: "5FEEBBE7CD91F387"
+			rewards: [
+				{
+					id: "24D75AF4CB4499CB"
+					type: "xp"
+					xp: 485
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "1742179A4B63118A"
+					item: {
+						count: 1
+						id: "justdirethings:blazegold_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5FEEBBE7CD91F387"
+			]
+			icon: {
+				count: 1
+				id: "justdirethings:celestigem"
+			}
+			id: "47A8ACDB3473636C"
+			rewards: [
+				{
+					id: "23924578D88C461D"
+					type: "xp"
+					xp: 490
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "483412FA933D40B2"
+					item: {
+						count: 1
+						id: "justdirethings:celestigem"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"47A8ACDB3473636C"
+			]
+			icon: {
+				count: 1
+				id: "justdirethings:eclipsealloy_ingot"
+			}
+			id: "18980301AADBB198"
+			rewards: [
+				{
+					id: "11CAFB5D43292823"
+					type: "xp"
+					xp: 495
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "72B2845CF4A6E155"
+					item: {
+						count: 1
+						id: "justdirethings:eclipsealloy_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"18980301AADBB198"
+			]
+			icon: {
+				count: 1
+				id: "justdirethings:time_crystal"
+			}
+			id: "6057A4A26F053470"
+			rewards: [
+				{
+					id: "358D7E440F521074"
+					type: "xp"
+					xp: 500
+				}
+				{
+					count: 8
+					id: "2E3ABF17565266CD"
+					item: {
+						count: 1
+						id: "powah:crystal_nitro"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 8L
+					id: "2105E6774FAEE1A2"
+					item: {
+						count: 1
+						id: "justdirethings:time_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 3.0d
+		}
+	]
+}

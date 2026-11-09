@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FCF",
+    "CDC",
+    "FCF"
+  ],
+  "key": {
+    "F": {
+      "item": "yukicore:frost_ingot"
+    },
+    "C": {
+      "item": "yukicore:yuki_crystal"
+    },
+    "D": {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "result": {
+    "id": "yukicore:frost_upgrade_template",
+    "count": 1
+  }
+}

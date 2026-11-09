@@ -2,19 +2,7 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "mysticalagriculture"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "the_bumblezone"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "farmersdelight"
-    },
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "productivebees"
+      "modid": "create"
     },
     {
       "type": "neoforge:mod_loaded",
@@ -22,47 +10,81 @@
     },
     {
       "type": "neoforge:mod_loaded",
+      "modid": "mysticalagriculture"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "the_bumblezone"
+    },
+    {
+      "type": "neoforge:mod_loaded",
       "modid": "artifacts"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "productivebees"
     }
   ],
-  "type": "minecraft:crafting_shaped",
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
   "category": "misc",
-  "pattern": [
-    "SBR",
-    "HFJ",
-    "TEW"
-  ],
   "key": {
-    "S": {
-      "item": "mysticalagriculture:awakened_supremium_ingot"
-    },
-    "B": {
-      "item": "the_bumblezone:essence_of_the_bees"
-    },
-    "R": {
-      "item": "farmersdelight:rich_soil"
-    },
-    "H": {
-      "item": "productivebees:wax"
-    },
-    "F": {
-      "item": "yukicore:frost_core"
-    },
-    "J": {
-      "item": "the_bumblezone:royal_jelly_block"
+    "U": {
+      "item": "yukicore:aurorium_block"
     },
     "T": {
       "item": "twilightforest:steeleaf_ingot"
     },
+    "S": {
+      "item": "mysticalagriculture:awakened_supremium_ingot"
+    },
+    "R": {
+      "item": "farmersdelight:rich_soil"
+    },
+    "Z": {
+      "item": "yukicore:yuki_essence"
+    },
+    "B": {
+      "item": "the_bumblezone:essence_of_the_bees"
+    },
+    "J": {
+      "item": "the_bumblezone:royal_jelly_block"
+    },
+    "P": {
+      "item": "minecraft:honey_block"
+    },
+    "G": {
+      "item": "minecraft:enchanted_golden_apple"
+    },
     "E": {
       "item": "artifacts:everlasting_beef"
     },
+    "K": {
+      "item": "yukicore:frost_core"
+    },
     "W": {
       "item": "minecraft:totem_of_undying"
+    },
+    "H": {
+      "item": "productivebees:honey_treat"
     }
   },
+  "pattern": [
+    "UTSRSTU",
+    "TZBJBZT",
+    "SPGEGPS",
+    "RJEKEJR",
+    "SPGWGPS",
+    "TZBHBZT",
+    "UTSRSTU"
+  ],
   "result": {
-    "id": "yukicore:nature_core",
-    "count": 1
-  }
+    "count": 1,
+    "id": "yukicore:nature_core"
+  },
+  "show_notification": true
 }

@@ -1,0 +1,68 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mysticalagriculture"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "create:refined_radiance"
+    },
+    "H": {
+      "item": "create:shadow_steel"
+    },
+    "X": {
+      "item": "yukicore:celestium_block"
+    },
+    "Q": {
+      "item": "ae2:singularity"
+    },
+    "W": {
+      "item": "mekanism:pellet_polonium"
+    },
+    "S": {
+      "item": "yukicore:star_shard"
+    },
+    "P": {
+      "item": "mysticalagriculture:awakened_supremium_block"
+    },
+    "E": {
+      "item": "yukicore:starlight_block"
+    },
+    "Y": {
+      "item": "yukicore:yuki_heart"
+    }
+  },
+  "pattern": [
+    "R   X   R",
+    " H  Q  H ",
+    "  WSPSW  ",
+    "   PEP   ",
+    "XQSEYESQX",
+    "   PEP   ",
+    "  WSPSW  ",
+    " H  Q  H ",
+    "R   X   R"
+  ],
+  "result": {
+    "count": 1,
+    "id": "yukicore:unstable_infinity_star"
+  },
+  "show_notification": true
+}

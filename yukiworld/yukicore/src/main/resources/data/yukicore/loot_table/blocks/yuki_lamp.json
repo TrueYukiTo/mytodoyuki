@@ -1,5 +1,6 @@
 {
   "type": "minecraft:block",
+  "random_sequence": "yukicore:blocks/yuki_lamp",
   "pools": [
     {
       "rolls": 1,
@@ -16,6 +17,5 @@
         }
       ]
     }
-  ],
-  "random_sequence": "yukicore:blocks/yuki_lamp"
+  ]
 }

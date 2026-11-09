@@ -24,6 +24,9 @@ public class CoreItem extends Item {
 
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
-        tooltip.add(Component.translatable(getDescriptionId() + ".desc").withStyle(ChatFormatting.GRAY));
+        String key = getDescriptionId() + ".desc";
+        if (net.minecraft.locale.Language.getInstance().has(key)) {
+            tooltip.add(Component.translatable(key).withStyle(ChatFormatting.GRAY));
+        }
     }
 }

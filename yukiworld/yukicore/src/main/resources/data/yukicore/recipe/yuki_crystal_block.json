@@ -2,12 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "pattern": [
-    "CCC",
-    "CCC",
-    "CCC"
+    "XXX",
+    "XXX",
+    "XXX"
   ],
   "key": {
-    "C": {
+    "X": {
       "item": "yukicore:yuki_crystal"
     }
   },

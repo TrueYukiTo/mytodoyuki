@@ -1,0 +1,85 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:precision_mechanism"
+  },
+  "loops": 3,
+  "results": [
+    {
+      "chance": 100.0,
+      "id": "yukicore:frost_mechanism"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "yukicore:incomplete_frost_mechanism"
+        },
+        {
+          "item": "yukicore:frost_plate"
+        }
+      ],
+      "results": [
+        {
+          "id": "yukicore:incomplete_frost_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "yukicore:incomplete_frost_mechanism"
+        },
+        {
+          "item": "yukicore:cryo_circuit"
+        }
+      ],
+      "results": [
+        {
+          "id": "yukicore:incomplete_frost_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "yukicore:incomplete_frost_mechanism"
+        },
+        {
+          "item": "yukicore:yuki_crystal"
+        }
+      ],
+      "results": [
+        {
+          "id": "yukicore:incomplete_frost_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "yukicore:incomplete_frost_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "yukicore:incomplete_frost_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "yukicore:incomplete_frost_mechanism"
+  }
+}

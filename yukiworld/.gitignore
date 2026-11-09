@@ -4,3 +4,4 @@ yukicore/run/
 yukicore/runs/
 yukicore/.idea/
 pack/build/
+tools/**/__pycache__/

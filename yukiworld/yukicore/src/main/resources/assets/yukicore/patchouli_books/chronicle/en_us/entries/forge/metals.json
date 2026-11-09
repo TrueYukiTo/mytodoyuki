@@ -1,0 +1,23 @@
+{
+  "name": "Три металла",
+  "category": "yukicore:forge",
+  "icon": "yukicore:celestium_ingot",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:frost_ingot",
+      "text": "$(l)Морозный слиток$() — переплавка руды Энда."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:aurorium_ingot",
+      "text": "$(l)Ауроний$() — смешивание Create с $(l)перегревом$(): 2 морозных слитка, эссенция Юки, очищенный обсидиан Mekanism, незеритовый лом и 500 мБ лавы."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:celestium_ingot",
+      "text": "$(l)Целестий$() — заряжающий стержень Powah, 25 млн FE: ауроний, осколок звёздного света, нитро-кристалл, кристалл Энда, эссенция."
+    }
+  ]
+}

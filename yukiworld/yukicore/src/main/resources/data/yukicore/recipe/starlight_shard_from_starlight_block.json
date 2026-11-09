@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "yukicore:starlight_block"
+    }
+  ],
+  "result": {
+    "id": "yukicore:starlight_shard",
+    "count": 9
+  }
+}

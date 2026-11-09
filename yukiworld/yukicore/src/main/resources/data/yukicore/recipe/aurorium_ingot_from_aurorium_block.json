@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "yukicore:aurorium_block"
+    }
+  ],
+  "result": {
+    "id": "yukicore:aurorium_ingot",
+    "count": 9
+  }
+}

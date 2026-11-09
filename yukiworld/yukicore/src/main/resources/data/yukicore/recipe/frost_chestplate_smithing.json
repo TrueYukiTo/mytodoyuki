@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "yukicore:frost_upgrade_template"
+  },
+  "base": {
+    "item": "minecraft:diamond_chestplate"
+  },
+  "addition": {
+    "item": "yukicore:frost_ingot"
+  },
+  "result": {
+    "id": "yukicore:frost_chestplate",
+    "count": 1
+  }
+}

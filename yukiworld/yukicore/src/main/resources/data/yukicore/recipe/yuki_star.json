@@ -1,24 +1,40 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "CIC",
-    "IDI",
-    "CIC"
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
   ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
   "key": {
     "C": {
       "item": "yukicore:yuki_crystal"
     },
-    "I": {
-      "item": "yukicore:frost_ingot"
+    "P": {
+      "item": "yukicore:frost_plate"
     },
-    "D": {
-      "item": "minecraft:diamond"
+    "E": {
+      "item": "yukicore:yuki_essence"
+    },
+    "B": {
+      "item": "yukicore:yuki_crystal_block"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
     }
   },
+  "pattern": [
+    " CPC ",
+    "CEBEC",
+    "PBNBP",
+    "CEBEC",
+    " CPC "
+  ],
   "result": {
-    "id": "yukicore:yuki_star",
-    "count": 1
-  }
+    "count": 1,
+    "id": "yukicore:yuki_star"
+  },
+  "show_notification": true
 }

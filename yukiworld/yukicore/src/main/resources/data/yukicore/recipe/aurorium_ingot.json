@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "yukicore:frost_ingot"
+    },
+    {
+      "item": "yukicore:frost_ingot"
+    },
+    {
+      "item": "yukicore:yuki_essence"
+    },
+    {
+      "item": "mekanism:ingot_refined_obsidian"
+    },
+    {
+      "item": "minecraft:netherite_scrap"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 500,
+      "tag": "minecraft:lava"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "yukicore:aurorium_ingot"
+    }
+  ]
+}

@@ -1,0 +1,702 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "worlds"
+	group: ""
+	icon: {
+		count: 1
+		id: "minecraft:crying_obsidian"
+	}
+	id: "6332B8E2B6469A71"
+	images: [ ]
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"6057A4A26F053470"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:obsidian"
+			}
+			id: "2521F99D9EC2CCB1"
+			rewards: [
+				{
+					id: "2425DC10766C2727"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2108D1D58C56B376"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2521F99D9EC2CCB1"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:ender_eye"
+			}
+			id: "30B70EA4AB2B4379"
+			rewards: [
+				{
+					id: "6B5087F95ED9C73B"
+					type: "xp"
+					xp: 455
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "72332180B36050DC"
+					type: "dimension"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"30B70EA4AB2B4379"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:blaze_rod"
+			}
+			id: "672428E1F501481B"
+			rewards: [
+				{
+					id: "532E3D17D5289E12"
+					type: "xp"
+					xp: 460
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "6A0C708F681697A3"
+					item: {
+						count: 1
+						id: "minecraft:blaze_rod"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"672428E1F501481B"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:ancient_debris"
+			}
+			id: "2937A9A0040F821F"
+			rewards: [
+				{
+					id: "20057292465848BF"
+					type: "xp"
+					xp: 465
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "76385716EB932CEE"
+					item: {
+						count: 1
+						id: "minecraft:ancient_debris"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2937A9A0040F821F"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_ingot"
+			}
+			id: "2D6F14B0D01584AF"
+			rewards: [
+				{
+					id: "6525256505CC8191"
+					type: "xp"
+					xp: 470
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "6420D9FF9E1C8DD3"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2D6F14B0D01584AF"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:ender_eye"
+			}
+			id: "4208FA9CE5DD2FA1"
+			rewards: [
+				{
+					id: "1C1776C5DEA19097"
+					type: "xp"
+					xp: 475
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					dimension: "twilightforest:twilight_forest"
+					id: "6CB080795EE89116"
+					type: "dimension"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4208FA9CE5DD2FA1"
+			]
+			icon: {
+				count: 1
+				id: "twilightforest:naga_scale"
+			}
+			id: "1E53077DA18C8185"
+			rewards: [
+				{
+					id: "20A933DABF94D663"
+					type: "xp"
+					xp: 480
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "248ED8463CB27B42"
+					item: {
+						count: 1
+						id: "twilightforest:naga_scale"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1E53077DA18C8185"
+			]
+			icon: {
+				count: 1
+				id: "twilightforest:steeleaf_ingot"
+			}
+			id: "32A4EFFC4CBB2F71"
+			rewards: [
+				{
+					id: "476A58BB3EBDAD38"
+					type: "xp"
+					xp: 485
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "48847AF2F23487E2"
+					item: {
+						count: 1
+						id: "twilightforest:steeleaf_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"32A4EFFC4CBB2F71"
+			]
+			icon: {
+				count: 1
+				id: "twilightforest:carminite"
+			}
+			id: "5CC9B6CBD1B48A8F"
+			rewards: [
+				{
+					id: "22F954B746C21395"
+					type: "xp"
+					xp: 490
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "77CCC2BC55470A84"
+					item: {
+						count: 1
+						id: "twilightforest:carminite"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5CC9B6CBD1B48A8F"
+			]
+			icon: {
+				count: 1
+				id: "twilightforest:knightmetal_ingot"
+			}
+			id: "187E942CF64CD15E"
+			rewards: [
+				{
+					id: "2A59618E9157608D"
+					type: "xp"
+					xp: 495
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "493738770C40275A"
+					item: {
+						count: 1
+						id: "twilightforest:knightmetal_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"187E942CF64CD15E"
+			]
+			icon: {
+				count: 1
+				id: "twilightforest:knightmetal_block"
+			}
+			id: "2832735F0A40D5E9"
+			rewards: [
+				{
+					id: "10AAD0FAE0598E3F"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "3286909A64CA4E86"
+					item: {
+						count: 1
+						id: "twilightforest:knightmetal_block"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2832735F0A40D5E9"
+			]
+			icon: {
+				count: 1
+				id: "twilightforest:fiery_ingot"
+			}
+			id: "19E10E8763C69D17"
+			rewards: [
+				{
+					id: "38143FD33511AC27"
+					type: "xp"
+					xp: 505
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "3A5A20759EFC0383"
+					item: {
+						count: 1
+						id: "twilightforest:fiery_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"19E10E8763C69D17"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:ender_eye"
+			}
+			id: "14D2998A08EBFCB9"
+			rewards: [
+				{
+					id: "48E2388F492A2023"
+					type: "xp"
+					xp: 510
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					dimension: "aether:the_aether"
+					id: "62FB499671B4AE02"
+					type: "dimension"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"14D2998A08EBFCB9"
+			]
+			icon: {
+				count: 1
+				id: "aether:ambrosium_shard"
+			}
+			id: "7609EDD99B4BFC3D"
+			rewards: [
+				{
+					id: "5EA3D4E11FDBFC0D"
+					type: "xp"
+					xp: 515
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "31457B2DB1369134"
+					item: {
+						count: 1
+						id: "aether:ambrosium_shard"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7609EDD99B4BFC3D"
+			]
+			icon: {
+				count: 1
+				id: "aether:zanite_gemstone"
+			}
+			id: "20633CF00D7AAE14"
+			rewards: [
+				{
+					id: "56C71B6041C5CA20"
+					type: "xp"
+					xp: 520
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "626ECBC17FED2C7D"
+					item: {
+						count: 1
+						id: "aether:zanite_gemstone"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"20633CF00D7AAE14"
+			]
+			icon: {
+				count: 1
+				id: "aether:enchanted_gravitite"
+			}
+			id: "18ED6EA4693EAE11"
+			rewards: [
+				{
+					id: "16A39B821A7CC2A6"
+					type: "xp"
+					xp: 525
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "247EE697574A8B5E"
+					item: {
+						count: 1
+						id: "aether:enchanted_gravitite"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"18ED6EA4693EAE11"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:ender_eye"
+			}
+			id: "13FA9C71440A9595"
+			rewards: [
+				{
+					id: "321BC4F677EFA983"
+					type: "xp"
+					xp: 530
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					dimension: "the_bumblezone:the_bumblezone"
+					id: "5BDA34769D08C59F"
+					type: "dimension"
+				}
+			]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"13FA9C71440A9595"
+			]
+			icon: {
+				count: 1
+				id: "the_bumblezone:royal_jelly_bottle"
+			}
+			id: "4AE6BAFF4A6C1C80"
+			rewards: [
+				{
+					id: "46A2B18FFDF1951C"
+					type: "xp"
+					xp: 535
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "10FB49805B3C760F"
+					item: {
+						count: 1
+						id: "the_bumblezone:royal_jelly_bottle"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"4AE6BAFF4A6C1C80"
+			]
+			icon: {
+				count: 1
+				id: "the_bumblezone:royal_jelly_block"
+			}
+			id: "6251FCD4B1BD8122"
+			rewards: [
+				{
+					id: "1901027B51128E38"
+					type: "xp"
+					xp: 540
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "6E7CB53C2547E89F"
+					item: {
+						count: 1
+						id: "the_bumblezone:royal_jelly_block"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6251FCD4B1BD8122"
+			]
+			icon: {
+				count: 1
+				id: "the_bumblezone:essence_of_the_bees"
+			}
+			id: "521F54239380DFDD"
+			rewards: [
+				{
+					id: "70D6591B7CEF2476"
+					type: "xp"
+					xp: 545
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "2589F02B18D85BC4"
+					item: {
+						count: 1
+						id: "the_bumblezone:essence_of_the_bees"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"521F54239380DFDD"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:echo_shard"
+			}
+			id: "597844408810A3BF"
+			rewards: [
+				{
+					id: "11FB73645E6F168D"
+					type: "xp"
+					xp: 550
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "6F7D15721A287478"
+					item: {
+						count: 1
+						id: "minecraft:echo_shard"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"597844408810A3BF"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:heavy_core"
+			}
+			id: "27AB9E1237039030"
+			rewards: [
+				{
+					id: "639AA99F2EE19BF2"
+					type: "xp"
+					xp: 555
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "472E6D0440A6853F"
+					item: {
+						count: 1
+						id: "minecraft:heavy_core"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"27AB9E1237039030"
+			]
+			icon: {
+				count: 1
+				id: "artifacts:everlasting_beef"
+			}
+			id: "1E480D99B08F73B4"
+			rewards: [
+				{
+					id: "73F0465A4BF27C56"
+					type: "xp"
+					xp: 560
+				}
+				{
+					count: 2
+					id: "1ACD633D2039BAE3"
+					item: {
+						count: 1
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 3L
+					id: "1206998DCB7FA213"
+					item: {
+						count: 1
+						id: "artifacts:everlasting_beef"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 4.5d
+		}
+	]
+}
