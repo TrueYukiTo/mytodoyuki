@@ -1,0 +1,262 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "finale"
+	group: ""
+	icon: {
+		count: 1
+		id: "yukicore:yuki_infinity_star"
+	}
+	id: "880E11ADCF945185"
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"15110C10E1F53DA5"
+				"87BC50E03326FB6B"
+				"9FAB6BB1B903FF31"
+				"B01C0159F99C7446"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_core"
+			}
+			id: "C7EDCEF629A2410B"
+			rewards: [
+				{
+					id: "2D8E699EFF34149A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2EB7F02BDD9AF054"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"C7EDCEF629A2410B"
+			]
+			icon: {
+				count: 1
+				id: "justdirethings:time_crystal"
+			}
+			id: "A9DC3E54C8EFD7D3"
+			rewards: [
+				{
+					id: "BFADD4D5008E83C0"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "2B2EBBD1A3E38371"
+					item: {
+						count: 1
+						id: "justdirethings:time_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"C7EDCEF629A2410B"
+			]
+			icon: {
+				count: 1
+				id: "mekanism:pellet_antimatter"
+			}
+			id: "572555DC01AC09F5"
+			rewards: [
+				{
+					id: "7B186044412E05C5"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "491F11DEF1539B5F"
+					item: {
+						count: 1
+						id: "mekanism:pellet_antimatter"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"A9DC3E54C8EFD7D3"
+				"572555DC01AC09F5"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_heart"
+			}
+			id: "8F6D597094D030A5"
+			rewards: [
+				{
+					id: "4361E1B7B46845D6"
+					type: "xp"
+					xp: 2000
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					count: 1L
+					id: "8B7A23CFAAB6945C"
+					item: {
+						count: 1
+						id: "yukicore:yuki_heart"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"8F6D597094D030A5"
+			]
+			icon: {
+				count: 1
+				id: "create:refined_radiance"
+			}
+			id: "A1B18931E415E99F"
+			rewards: [
+				{
+					id: "9396A88ABEE5E7B0"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "41BF07294F10EBD7"
+					item: {
+						count: 1
+						id: "create:refined_radiance"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"8F6D597094D030A5"
+			]
+			icon: {
+				count: 1
+				id: "create:shadow_steel"
+			}
+			id: "B81E914610890817"
+			rewards: [
+				{
+					id: "2718ED90DAB81BBE"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "147C7EDC3CE4733A"
+					item: {
+						count: 1
+						id: "create:shadow_steel"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"A1B18931E415E99F"
+				"B81E914610890817"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_infinity_star"
+			}
+			id: "DAE3D1A305FE50DF"
+			rewards: [
+				{
+					id: "F31B48B642D94FE5"
+					type: "xp"
+					xp: 5000
+				}
+			]
+			shape: "gear"
+			size: 3.0d
+			tasks: [
+				{
+					count: 1L
+					id: "1B0E464E13529DBA"
+					item: {
+						count: 1
+						id: "yukicore:yuki_infinity_star"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"8F6D597094D030A5"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_blade"
+			}
+			id: "D38DCF12718E17ED"
+			rewards: [
+				{
+					id: "18FE081EA829FC2F"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7D92198B009A3EB9"
+					item: {
+						count: 1
+						id: "yukicore:yuki_blade"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 3.0d
+		}
+	]
+}

@@ -1,0 +1,76 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "powah"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "refinedstorage"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "industrialforegoing"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MAP",
+    "EFI",
+    "RON"
+  ],
+  "key": {
+    "M": {
+      "item": "mekanism:ultimate_control_circuit"
+    },
+    "A": {
+      "item": "ae2:singularity"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "E": {
+      "item": "powah:capacitor_nitro"
+    },
+    "F": {
+      "item": "yukicore:frost_core"
+    },
+    "I": {
+      "item": "immersiveengineering:component_electronic_adv"
+    },
+    "R": {
+      "item": "refinedstorage:construction_core"
+    },
+    "O": {
+      "item": "oritech:overcharged_crystal"
+    },
+    "N": {
+      "item": "industrialforegoing:machine_frame_supreme"
+    }
+  },
+  "result": {
+    "id": "yukicore:tech_core",
+    "count": 1
+  }
+}

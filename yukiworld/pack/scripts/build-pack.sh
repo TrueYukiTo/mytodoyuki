@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Собирает YukiWorld: подтягивает моды из mods.txt через packwiz (Modrinth),
+# Собирает YukiWorld: подтягивает моды из mods.txt через packwiz (Modrinth; строки cf: — CurseForge),
 # добавляет свой мод YukiCore и экспортирует .mrpack (Prism / Modrinth App / ATLauncher).
 #
 #   bash yukiworld/pack/scripts/build-pack.sh [путь/к/yukicore.jar]
@@ -11,7 +11,7 @@ PACK_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 REPO_DIR="$(cd "$PACK_DIR/../.." && pwd)"
 OUT="$PACK_DIR/build"
 WORK="$OUT/YukiWorld"
-JAR="${1:-$(ls "$REPO_DIR"/yukiworld/yukicore/build/libs/yukicore-*.jar 2>/dev/null | grep -v sources | head -n1)}"
+JAR="${1:-$(ls -t "$REPO_DIR"/yukiworld/yukicore/build/libs/yukicore-*.jar 2>/dev/null | grep -v sources | head -n1)}"
 
 command -v packwiz >/dev/null || { echo "❌ packwiz не найден (go install github.com/packwiz/packwiz@latest)"; exit 1; }
 
@@ -25,7 +25,9 @@ ok=0; failed=()
 while IFS= read -r line; do
   slug="${line%%#*}"; slug="$(echo "$slug" | xargs)"
   [[ -z "$slug" ]] && continue
-  if packwiz -y modrinth add "$slug" >"$OUT/add-$slug.log" 2>&1; then
+  src=modrinth
+  if [[ "$slug" == cf:* ]]; then src=curseforge; slug="${slug#cf:}"; fi
+  if packwiz -y "$src" add "$slug" >"$OUT/add-$slug.log" 2>&1; then
     echo "✅ $slug"; ok=$((ok+1))
   else
     echo "⚠️  $slug — не найден для 1.21.1/NeoForge, пропущен"; failed+=("$slug")

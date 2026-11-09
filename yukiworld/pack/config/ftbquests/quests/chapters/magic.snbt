@@ -1,0 +1,384 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "magic"
+	group: ""
+	icon: {
+		count: 1
+		id: "yukicore:magic_core"
+	}
+	id: "7A0EEA3B367DAB96"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"1C330E75DFB2604B"
+			]
+			icon: {
+				count: 1
+				id: "ars_nouveau:novice_spell_book"
+			}
+			id: "E7B0A4584A2B9C32"
+			rewards: [
+				{
+					id: "2EA352D5736B0706"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "80F28DC996D9EB17"
+					item: {
+						count: 1
+						id: "ars_nouveau:novice_spell_book"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"E7B0A4584A2B9C32"
+			]
+			icon: {
+				count: 1
+				id: "ars_nouveau:source_gem_block"
+			}
+			id: "CA1778C229D4571F"
+			rewards: [
+				{
+					id: "BA4F5D08E1B1CEEA"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6058D6FA8D06E3BE"
+					item: {
+						count: 1
+						id: "ars_nouveau:source_gem_block"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"CA1778C229D4571F"
+			]
+			icon: {
+				count: 1
+				id: "ars_nouveau:wilden_tribute"
+			}
+			id: "EE33B18C02DF7DA4"
+			rewards: [
+				{
+					id: "3B92E2FF22A64A43"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "DB2CDDD0EC4B58EC"
+					item: {
+						count: 1
+						id: "ars_nouveau:wilden_tribute"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"1C330E75DFB2604B"
+			]
+			icon: {
+				count: 1
+				id: "irons_spellbooks:arcane_essence"
+			}
+			id: "57F7053B2FC0C7F7"
+			rewards: [
+				{
+					id: "3676CA0E20F96E9A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "77DF6C38F9977FBE"
+					item: {
+						count: 1
+						id: "irons_spellbooks:arcane_essence"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"57F7053B2FC0C7F7"
+			]
+			icon: {
+				count: 1
+				id: "irons_spellbooks:legendary_ink"
+			}
+			id: "24BE03B9E8F937C5"
+			rewards: [
+				{
+					id: "C822CC371D7D4406"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "BC0E962A205508B9"
+					item: {
+						count: 1
+						id: "irons_spellbooks:legendary_ink"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"57F7053B2FC0C7F7"
+			]
+			icon: {
+				count: 1
+				id: "irons_spellbooks:divine_pearl"
+			}
+			id: "EB587BCD93370717"
+			rewards: [
+				{
+					id: "103F588D5D728E0D"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "A30B30EFF593C950"
+					item: {
+						count: 1
+						id: "irons_spellbooks:divine_pearl"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1C330E75DFB2604B"
+			]
+			icon: {
+				count: 1
+				id: "occultism:otherstone"
+			}
+			id: "87CC521524B1D938"
+			rewards: [
+				{
+					id: "15FA3258052078FC"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "D57099C28B8C2D0C"
+					item: {
+						count: 1
+						id: "occultism:otherstone"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"87CC521524B1D938"
+			]
+			icon: {
+				count: 1
+				id: "occultism:afrit_essence"
+			}
+			id: "1013F6162A95713C"
+			rewards: [
+				{
+					id: "8434450C696916E7"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "C2DD1938A9D77DC8"
+					item: {
+						count: 1
+						id: "occultism:afrit_essence"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"87CC521524B1D938"
+			]
+			icon: {
+				count: 1
+				id: "occultism:spirit_attuned_gem"
+			}
+			id: "AD316DB9CDD48CCC"
+			rewards: [
+				{
+					id: "1CD7D2175B59D42E"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2073B0C5DF7A6EE8"
+					item: {
+						count: 1
+						id: "occultism:spirit_attuned_gem"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1C330E75DFB2604B"
+			]
+			icon: {
+				count: 1
+				id: "apothic_enchanting:infused_breath"
+			}
+			id: "15AF8FCD2227FDC9"
+			rewards: [
+				{
+					id: "273E7A61B21EC952"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "90CC0D1DD9BAB361"
+					item: {
+						count: 1
+						id: "apothic_enchanting:infused_breath"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1C330E75DFB2604B"
+			]
+			icon: {
+				count: 1
+				id: "evilcraft:dark_gem"
+			}
+			id: "142E3962FD8CFB36"
+			rewards: [
+				{
+					id: "390DB1CB26C0DCB6"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "8B4B16546AB33EBF"
+					item: {
+						count: 1
+						id: "evilcraft:dark_gem"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"EE33B18C02DF7DA4"
+				"24BE03B9E8F937C5"
+				"EB587BCD93370717"
+				"1013F6162A95713C"
+				"AD316DB9CDD48CCC"
+				"15AF8FCD2227FDC9"
+				"142E3962FD8CFB36"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:magic_core"
+			}
+			id: "87BC50E03326FB6B"
+			rewards: [
+				{
+					id: "FC674B914F3ECD08"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					count: 1L
+					id: "8155954A83BFEF6C"
+					item: {
+						count: 1
+						id: "yukicore:magic_core"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 1.0d
+		}
+	]
+}

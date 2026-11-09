@@ -270,7 +270,92 @@ ART = {
 """, ICE),
 }
 
-HANDHELD = {"frost_sword", "frost_pickaxe", "frost_axe", "frost_shovel", "frost_hoe"}
+# Эндгейм-предметы рисуются процедурно (см. orb/heart/star ниже)
+CORE_PALETTES = {
+    "frost_core": ICE,
+    "tech_core": {"o": 0x2A1A05, "d": 0xA0601A, "m": 0xF0A030, "l": 0xFFD27A, "w": 0xFFF6DA},
+    "magic_core": {"o": 0x24093A, "d": 0x6A2BA8, "m": 0xA65CF0, "l": 0xD9B0FF, "w": 0xFBF0FF},
+    "nature_core": {"o": 0x0E2A10, "d": 0x2E7D32, "m": 0x5CC060, "l": 0xA8F0A0, "w": 0xF0FFE8},
+    "dimension_core": {"o": 0x061A22, "d": 0x0F6E7A, "m": 0x22C2C8, "l": 0x9AF4F0, "w": 0xF0FFFE},
+}
+
+HANDHELD = {"yuki_blade", "frost_sword", "frost_pickaxe", "frost_axe", "frost_shovel", "frost_hoe"}
+
+
+# ---------------------------------------------------------------- эндгейм-спрайты
+def orb(pal):
+    img = Image.new("RGBA", (16, 16), (0, 0, 0, 0))
+    for y in range(16):
+        for x in range(16):
+            dx, dy = x - 7.5, y - 7.5
+            r = (dx * dx + dy * dy) ** 0.5
+            if r <= 6.6:
+                light = -(dx + dy) / 9.0 + (1 - r / 6.6) * 0.9
+                k = "w" if light > 0.95 else "l" if light > 0.55 else "m" if light > 0.05 else "d"
+                img.putpixel((x, y), hexrgb(pal[k]))
+            elif r <= 7.6:
+                img.putpixel((x, y), hexrgb(pal["o"]))
+    # снежинка в центре
+    for p in [(7, 5), (7, 6), (7, 9), (7, 10), (5, 7), (6, 7), (9, 7), (10, 7), (7, 7), (8, 8), (7, 8), (8, 7)]:
+        img.putpixel(p, hexrgb(0xFFFFFF))
+    return img
+
+
+def heart():
+    art = """
+................
+................
+..oooo....oooo..
+.owwllo..olmmdo.
+owwlllmoolmmmddo
+owlllmmmmmmmmddo
+olllmmmmmmmmmddo
+olllmmmmmmmmdddo
+.ollmmmmmmmmddo.
+..olmmmmmmmddo..
+...olmmmmmddo...
+....olmmmddo....
+.....olmddo.....
+......oddo......
+.......oo.......
+"""
+    return sprite(art, SAKURA)
+
+
+def rainbow_star():
+    base = sprite(ART["yuki_star"][0], SAKURA)
+    out = Image.new("RGBA", (16, 16), (0, 0, 0, 0))
+    import colorsys
+    for y in range(16):
+        for x in range(16):
+            r, g, b, a = base.getpixel((x, y))
+            if a == 0:
+                continue
+            lum = (r + g + b) / 765
+            h = ((x + y) / 30.0) % 1.0
+            rr, gg, bb = colorsys.hsv_to_rgb(h, 0.55 if lum < 0.95 else 0.1, min(1.0, 0.35 + lum * 0.75))
+            out.putpixel((x, y), (int(rr * 255), int(gg * 255), int(bb * 255), 255))
+    return out
+
+
+BLADE_ART = """
+..............oo
+.............owo
+............owlo
+...........owlmo
+..........owlmo.
+.........owlmo..
+........owlmo...
+.......owlmo....
+..oo..owlmo.....
+..owooolmo......
+...owwlmo.......
+...oowmo........
+..ohooowo.......
+.ohHo..oo.......
+oHHo............
+oo..............
+"""
 
 
 # ---------------------------------------------------------------- блоки
@@ -489,7 +574,110 @@ RECIPES = {
     "frost_boots": shaped(["I I", "I I"], {"I": I("frost_ingot")}, "frost_boots", category="equipment"),
 }
 
+def mods_loaded(mods):
+    return [{"type": "neoforge:mod_loaded", "modid": m} for m in mods]
+
+
+def when(recipe, mods):
+    """Рецепт работает, только если все моды загружены."""
+    return {"neoforge:conditions": mods_loaded(mods), **recipe}
+
+
+def unless(recipe, mods):
+    """Запасной рецепт, если хотя бы одного мода нет."""
+    return {"neoforge:conditions": [{"type": "neoforge:not", "value": {"type": "neoforge:and",
+                                                                       "values": mods_loaded(mods)}}],
+            **recipe}
+
+
+TECH_MODS = ["mekanism", "ae2", "create", "powah", "immersiveengineering", "refinedstorage", "oritech",
+             "industrialforegoing"]
+MAGIC_MODS = ["ars_nouveau", "irons_spellbooks", "occultism", "apothic_enchanting", "evilcraft"]
+NATURE_MODS = ["mysticalagriculture", "the_bumblezone", "farmersdelight", "productivebees", "twilightforest",
+               "artifacts"]
+DIMENSION_MODS = ["aether", "twilightforest"]
+HEART_MODS = ["mekanism", "justdirethings"]
+STAR_MODS = ["create", "ae2"]
+
+ENDGAME_RECIPES = {
+    "frost_core": shaped(["BCB", "CSC", "BCB"], {"B": I("frost_block"), "C": I("yuki_crystal_block"),
+                                                 "S": I("yuki_star")}, "frost_core"),
+    # --- Технологическое ядро
+    "tech_core": when(shaped(["MAP", "EFI", "RON"], {
+        "M": "mekanism:ultimate_control_circuit", "A": "ae2:singularity", "P": "create:precision_mechanism",
+        "E": "powah:capacitor_nitro", "F": I("frost_core"), "I": "immersiveengineering:component_electronic_adv",
+        "R": "refinedstorage:construction_core", "O": "oritech:overcharged_crystal",
+        "N": "industrialforegoing:machine_frame_supreme"}, "tech_core"), TECH_MODS),
+    "tech_core_fallback": unless(shaped(["RCR", "PFP", "RCR"], {
+        "R": "minecraft:redstone_block", "C": "minecraft:comparator", "P": "minecraft:sticky_piston",
+        "F": I("frost_core")}, "tech_core"), TECH_MODS),
+    # --- Магическое ядро
+    "magic_core": when(shaped(["WAD", "OFS", "GEB"], {
+        "W": "ars_nouveau:wilden_tribute", "A": "irons_spellbooks:legendary_ink",
+        "D": "irons_spellbooks:divine_pearl", "O": "occultism:afrit_essence", "F": I("frost_core"),
+        "S": "occultism:spirit_attuned_gem", "G": "apothic_enchanting:infused_breath",
+        "E": "evilcraft:dark_gem", "B": "ars_nouveau:source_gem_block"}, "magic_core"), MAGIC_MODS),
+    "magic_core_fallback": unless(shaped(["EAE", "LFL", "EAE"], {
+        "E": "minecraft:ender_eye", "A": "minecraft:amethyst_block", "L": "minecraft:lapis_block",
+        "F": I("frost_core")}, "magic_core"), MAGIC_MODS),
+    # --- Ядро природы
+    "nature_core": when(shaped(["SBR", "HFJ", "TEW"], {
+        "S": "mysticalagriculture:awakened_supremium_ingot", "B": "the_bumblezone:essence_of_the_bees",
+        "R": "farmersdelight:rich_soil", "H": "productivebees:wax", "F": I("frost_core"),
+        "J": "the_bumblezone:royal_jelly_block", "T": "twilightforest:steeleaf_ingot",
+        "E": "artifacts:everlasting_beef", "W": "minecraft:totem_of_undying"}, "nature_core"), NATURE_MODS),
+    "nature_core_fallback": unless(shaped(["HGH", "AFA", "HGH"], {
+        "H": "minecraft:honey_block", "G": "minecraft:golden_carrot", "A": "minecraft:golden_apple",
+        "F": I("frost_core")}, "nature_core"), NATURE_MODS),
+    # --- Ядро измерений
+    "dimension_core": when(shaped(["NGK", "TFC", "EHW"], {
+        "N": "minecraft:nether_star", "G": "aether:enchanted_gravitite", "K": "twilightforest:knightmetal_ingot",
+        "T": "twilightforest:fiery_ingot", "F": I("frost_core"), "C": "twilightforest:carminite",
+        "E": "minecraft:echo_shard", "H": "minecraft:heavy_core", "W": "minecraft:dragon_breath"},
+        "dimension_core"), DIMENSION_MODS),
+    "dimension_core_fallback": unless(shaped(["NOE", "HFH", "EON"], {
+        "N": "minecraft:nether_star", "O": "minecraft:crying_obsidian", "E": "minecraft:echo_shard",
+        "H": "minecraft:heavy_core", "F": I("frost_core")}, "dimension_core"), DIMENSION_MODS),
+    # --- Сердце YukiWorld
+    "yuki_heart": when(shaped(["UTU", "MAN", "UDU"], {
+        "U": "justdirethings:time_crystal", "T": I("tech_core"), "M": I("magic_core"), "N": I("nature_core"),
+        "D": I("dimension_core"), "A": "mekanism:pellet_antimatter"}, "yuki_heart"), HEART_MODS),
+    "yuki_heart_fallback": unless(shaped(["UTU", "MAN", "UDU"], {
+        "U": "minecraft:netherite_ingot", "T": I("tech_core"), "M": I("magic_core"), "N": I("nature_core"),
+        "D": I("dimension_core"), "A": "minecraft:nether_star"}, "yuki_heart"), HEART_MODS),
+    # --- Бесконечная звезда Юки (механический крафтер Create 5x5)
+    "yuki_infinity_star": when({
+        "type": "create:mechanical_crafting", "accept_mirrored": False, "category": "misc",
+        "key": {"R": {"item": "create:refined_radiance"}, "S": {"item": "create:shadow_steel"},
+                "X": {"item": I("yuki_star")}, "Q": {"item": "ae2:singularity"}, "H": {"item": I("yuki_heart")}},
+        "pattern": ["  R  ", " SXS ", "RQHQR", " SXS ", "  R  "],
+        "result": {"count": 1, "id": I("yuki_infinity_star")}, "show_notification": True}, STAR_MODS),
+    "yuki_infinity_star_fallback": unless(shaped(["SNS", "NHN", "SNS"], {
+        "S": I("yuki_star"), "N": "minecraft:nether_star", "H": I("yuki_heart")}, "yuki_infinity_star"),
+        STAR_MODS),
+    "yuki_blade": shaped([" H ", "HSH", " N "], {"H": I("yuki_heart"), "S": I("frost_sword"),
+                                                 "N": "minecraft:netherite_sword"}, "yuki_blade",
+                         category="equipment"),
+}
+RECIPES.update(ENDGAME_RECIPES)
+
 LANG_EN = {
+    "item.yukicore.frost_core": "Frost Core",
+    "item.yukicore.frost_core.desc": "The heart of every YukiWorld core",
+    "item.yukicore.tech_core": "Tech Core",
+    "item.yukicore.tech_core.desc": "Mekanism, AE2, Create, Powah, IE, RS, Oritech, Industrial Foregoing",
+    "item.yukicore.magic_core": "Magic Core",
+    "item.yukicore.magic_core.desc": "Ars Nouveau, Iron's Spells, Occultism, Apotheosis, EvilCraft",
+    "item.yukicore.nature_core": "Nature Core",
+    "item.yukicore.nature_core.desc": "Mystical Agriculture, Bumblezone, Farmer's Delight, Productive Bees, Twilight Forest",
+    "item.yukicore.dimension_core": "Dimension Core",
+    "item.yukicore.dimension_core.desc": "Nether, End, Ancient City, Trial Chambers, Aether, Twilight Forest",
+    "item.yukicore.yuki_heart": "Heart of YukiWorld",
+    "item.yukicore.yuki_heart.desc": "All four cores fused with antimatter and time",
+    "item.yukicore.yuki_infinity_star": "Yuki Infinity Star",
+    "item.yukicore.yuki_infinity_star.desc": "The final item of YukiWorld",
+    "item.yukicore.yuki_infinity_star.desc2": "In inventory: flight, night vision, resistance, saturation",
+    "item.yukicore.yuki_blade": "Yuki Blade",
     "itemGroup.yukicore": "YukiWorld",
     "item.yukicore.yuki_crystal": "Yuki Crystal",
     "item.yukicore.raw_frost": "Raw Frost",
@@ -530,6 +718,22 @@ LANG_EN = {
 }
 
 LANG_RU = {
+    "item.yukicore.frost_core": "Морозное ядро",
+    "item.yukicore.frost_core.desc": "Основа всех ядер YukiWorld",
+    "item.yukicore.tech_core": "Технологическое ядро",
+    "item.yukicore.tech_core.desc": "Mekanism, AE2, Create, Powah, IE, RS, Oritech, Industrial Foregoing",
+    "item.yukicore.magic_core": "Магическое ядро",
+    "item.yukicore.magic_core.desc": "Ars Nouveau, Iron's Spells, Occultism, Apotheosis, EvilCraft",
+    "item.yukicore.nature_core": "Ядро природы",
+    "item.yukicore.nature_core.desc": "Mystical Agriculture, Bumblezone, Farmer's Delight, Productive Bees, Twilight Forest",
+    "item.yukicore.dimension_core": "Ядро измерений",
+    "item.yukicore.dimension_core.desc": "Незер, Энд, Древний город, Испытания, Aether, Сумеречный лес",
+    "item.yukicore.yuki_heart": "Сердце YukiWorld",
+    "item.yukicore.yuki_heart.desc": "Четыре ядра, сплавленные антиматерией и временем",
+    "item.yukicore.yuki_infinity_star": "Бесконечная звезда Юки",
+    "item.yukicore.yuki_infinity_star.desc": "Финальный предмет YukiWorld",
+    "item.yukicore.yuki_infinity_star.desc2": "В инвентаре: полёт, ночное зрение, сопротивление, насыщение",
+    "item.yukicore.yuki_blade": "Клинок Юки",
     "itemGroup.yukicore": "YukiWorld",
     "item.yukicore.yuki_crystal": "Кристалл Юки",
     "item.yukicore.raw_frost": "Необработанный мороз",
@@ -598,6 +802,17 @@ def main():
         write(ASSETS / "models" / "item" / f"{name}.json",
               {"parent": parent, "textures": {"layer0": f"{MOD}:item/{name}"}})
 
+    # Эндгейм
+    endgame = {name: orb(pal) for name, pal in CORE_PALETTES.items()}
+    endgame["yuki_heart"] = heart()
+    endgame["yuki_infinity_star"] = rainbow_star()
+    endgame["yuki_blade"] = sprite(BLADE_ART, SAKURA)
+    for name, img in endgame.items():
+        write(ASSETS / "textures" / "item" / f"{name}.png", img)
+        parent = "minecraft:item/handheld" if name in HANDHELD else "minecraft:item/generated"
+        write(ASSETS / "models" / "item" / f"{name}.json",
+              {"parent": parent, "textures": {"layer0": f"{MOD}:item/{name}"}})
+
     # Блоки
     stone, deepslate = (125, 125, 125), (72, 72, 80)
     tex = {
@@ -662,7 +877,7 @@ def main():
     write(tags / "block" / "beacon_base_blocks.json", {"values": [I("frost_block"), I("yuki_crystal_block")]})
 
     # Теги предметов (зачарования, совместимость)
-    for tag, items in {"swords": ["frost_sword"], "pickaxes": ["frost_pickaxe"], "axes": ["frost_axe"],
+    for tag, items in {"swords": ["frost_sword", "yuki_blade"], "pickaxes": ["frost_pickaxe"], "axes": ["frost_axe"],
                        "shovels": ["frost_shovel"], "hoes": ["frost_hoe"], "head_armor": ["frost_helmet"],
                        "chest_armor": ["frost_chestplate"], "leg_armor": ["frost_leggings"],
                        "foot_armor": ["frost_boots"], "beacon_payment_items": ["frost_ingot"]}.items():

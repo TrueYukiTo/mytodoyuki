@@ -1,0 +1,69 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:and",
+        "values": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "ae2"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "create"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "powah"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "immersiveengineering"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "refinedstorage"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "oritech"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "industrialforegoing"
+          }
+        ]
+      }
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RCR",
+    "PFP",
+    "RCR"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:redstone_block"
+    },
+    "C": {
+      "item": "minecraft:comparator"
+    },
+    "P": {
+      "item": "minecraft:sticky_piston"
+    },
+    "F": {
+      "item": "yukicore:frost_core"
+    }
+  },
+  "result": {
+    "id": "yukicore:tech_core",
+    "count": 1
+  }
+}

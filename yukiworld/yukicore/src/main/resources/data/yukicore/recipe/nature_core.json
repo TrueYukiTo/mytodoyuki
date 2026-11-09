@@ -1,0 +1,68 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mysticalagriculture"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "the_bumblezone"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "productivebees"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "twilightforest"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "artifacts"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SBR",
+    "HFJ",
+    "TEW"
+  ],
+  "key": {
+    "S": {
+      "item": "mysticalagriculture:awakened_supremium_ingot"
+    },
+    "B": {
+      "item": "the_bumblezone:essence_of_the_bees"
+    },
+    "R": {
+      "item": "farmersdelight:rich_soil"
+    },
+    "H": {
+      "item": "productivebees:wax"
+    },
+    "F": {
+      "item": "yukicore:frost_core"
+    },
+    "J": {
+      "item": "the_bumblezone:royal_jelly_block"
+    },
+    "T": {
+      "item": "twilightforest:steeleaf_ingot"
+    },
+    "E": {
+      "item": "artifacts:everlasting_beef"
+    },
+    "W": {
+      "item": "minecraft:totem_of_undying"
+    }
+  },
+  "result": {
+    "id": "yukicore:nature_core",
+    "count": 1
+  }
+}

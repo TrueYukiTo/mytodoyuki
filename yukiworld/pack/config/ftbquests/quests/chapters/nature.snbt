@@ -1,0 +1,384 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "nature"
+	group: ""
+	icon: {
+		count: 1
+		id: "yukicore:nature_core"
+	}
+	id: "17798F391A1F346C"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"1C330E75DFB2604B"
+			]
+			icon: {
+				count: 1
+				id: "farmersdelight:cooking_pot"
+			}
+			id: "1AE3BD22D03916D9"
+			rewards: [
+				{
+					id: "9B496125D454AF19"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3921FAE0EF36A549"
+					item: {
+						count: 1
+						id: "farmersdelight:cooking_pot"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"1AE3BD22D03916D9"
+			]
+			icon: {
+				count: 1
+				id: "farmersdelight:rich_soil"
+			}
+			id: "DE0514220448702C"
+			rewards: [
+				{
+					id: "7864606D12D81B18"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "A68BABAE52479E39"
+					item: {
+						count: 1
+						id: "farmersdelight:rich_soil"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"1C330E75DFB2604B"
+			]
+			icon: {
+				count: 1
+				id: "mysticalagriculture:inferium_essence"
+			}
+			id: "38506544437BCC99"
+			rewards: [
+				{
+					id: "6321370647DB4745"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "E772A0DBD093F49E"
+					item: {
+						count: 1
+						id: "mysticalagriculture:inferium_essence"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"38506544437BCC99"
+			]
+			icon: {
+				count: 1
+				id: "mysticalagriculture:supremium_ingot"
+			}
+			id: "D3E559C0BF154461"
+			rewards: [
+				{
+					id: "134BA1E770BCD506"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "95B7B0EB11EAEFF6"
+					item: {
+						count: 1
+						id: "mysticalagriculture:supremium_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"D3E559C0BF154461"
+			]
+			icon: {
+				count: 1
+				id: "mysticalagriculture:awakened_supremium_ingot"
+			}
+			id: "729CBD45D27AE071"
+			rewards: [
+				{
+					id: "8DEF0ABAE22EEEA9"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1035E15196B6486F"
+					item: {
+						count: 1
+						id: "mysticalagriculture:awakened_supremium_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1C330E75DFB2604B"
+			]
+			icon: {
+				count: 1
+				id: "productivebees:wax"
+			}
+			id: "8F4D6716FB1084D9"
+			rewards: [
+				{
+					id: "107A560B689E4415"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "74606FD85F2227DF"
+					item: {
+						count: 1
+						id: "productivebees:wax"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"8F4D6716FB1084D9"
+			]
+			icon: {
+				count: 1
+				id: "the_bumblezone:essence_of_the_bees"
+			}
+			id: "7D383E9760C0F944"
+			rewards: [
+				{
+					id: "3B473631C392FFE3"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "78A6C53B3229FF8B"
+					item: {
+						count: 1
+						id: "the_bumblezone:essence_of_the_bees"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"8F4D6716FB1084D9"
+			]
+			icon: {
+				count: 1
+				id: "the_bumblezone:royal_jelly_block"
+			}
+			id: "7221613814AB1F9A"
+			rewards: [
+				{
+					id: "D459E6D0B460E03F"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "8E0BEF7FECE79161"
+					item: {
+						count: 1
+						id: "the_bumblezone:royal_jelly_block"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1C330E75DFB2604B"
+			]
+			icon: {
+				count: 1
+				id: "twilightforest:steeleaf_ingot"
+			}
+			id: "D2BD60A872263281"
+			rewards: [
+				{
+					id: "74B0085664753ECA"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "330ACE3B66F125D4"
+					item: {
+						count: 1
+						id: "twilightforest:steeleaf_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1C330E75DFB2604B"
+			]
+			icon: {
+				count: 1
+				id: "artifacts:everlasting_beef"
+			}
+			id: "180F64B6F9A2D752"
+			rewards: [
+				{
+					id: "1399FB695A1AE7FE"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5B56B4DBDA024D7A"
+					item: {
+						count: 1
+						id: "artifacts:everlasting_beef"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1C330E75DFB2604B"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:totem_of_undying"
+			}
+			id: "31EE92F9D5B8E682"
+			rewards: [
+				{
+					id: "A149457F48412AA9"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "B83759A0F2DB06DF"
+					item: {
+						count: 1
+						id: "minecraft:totem_of_undying"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"DE0514220448702C"
+				"729CBD45D27AE071"
+				"7D383E9760C0F944"
+				"7221613814AB1F9A"
+				"D2BD60A872263281"
+				"180F64B6F9A2D752"
+				"31EE92F9D5B8E682"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:nature_core"
+			}
+			id: "9FAB6BB1B903FF31"
+			rewards: [
+				{
+					id: "317CB14EF20DC11B"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					count: 1L
+					id: "CA50A553E6C3269D"
+					item: {
+						count: 1
+						id: "yukicore:nature_core"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 1.0d
+		}
+	]
+}

@@ -1,0 +1,535 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tech"
+	group: ""
+	icon: {
+		count: 1
+		id: "yukicore:tech_core"
+	}
+	id: "F63F79E0D822EE86"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"1C330E75DFB2604B"
+			]
+			icon: {
+				count: 1
+				id: "create:andesite_alloy"
+			}
+			id: "CDB0C70243922472"
+			rewards: [
+				{
+					id: "72A7FB759A03F761"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "75FA6BF8193A4743"
+					item: {
+						count: 1
+						id: "create:andesite_alloy"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"CDB0C70243922472"
+			]
+			icon: {
+				count: 1
+				id: "create:brass_ingot"
+			}
+			id: "D6C097C916716BE7"
+			rewards: [
+				{
+					id: "860278562AC0285D"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "FE92E7609015399A"
+					item: {
+						count: 1
+						id: "create:brass_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"D6C097C916716BE7"
+			]
+			icon: {
+				count: 1
+				id: "create:precision_mechanism"
+			}
+			id: "C57244C47B265137"
+			rewards: [
+				{
+					id: "5F4FA7AB118B7EBC"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "FDD1C8E13A7CE239"
+					item: {
+						count: 1
+						id: "create:precision_mechanism"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1C330E75DFB2604B"
+			]
+			icon: {
+				count: 1
+				id: "mekanism:metallurgic_infuser"
+			}
+			id: "14071D3AFEFC66E3"
+			rewards: [
+				{
+					id: "6CC460E21C0D31F3"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "A04E662246F38FA1"
+					item: {
+						count: 1
+						id: "mekanism:metallurgic_infuser"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"14071D3AFEFC66E3"
+			]
+			icon: {
+				count: 1
+				id: "mekanism:steel_casing"
+			}
+			id: "8578D4112D653372"
+			rewards: [
+				{
+					id: "BBECB3AF21EC1A9B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "10352C0D15D672A7"
+					item: {
+						count: 1
+						id: "mekanism:steel_casing"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"8578D4112D653372"
+			]
+			icon: {
+				count: 1
+				id: "mekanism:ultimate_control_circuit"
+			}
+			id: "4C29543292018F34"
+			rewards: [
+				{
+					id: "F6D39083BF1866EC"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6D54C7260BFE6014"
+					item: {
+						count: 1
+						id: "mekanism:ultimate_control_circuit"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1C330E75DFB2604B"
+			]
+			icon: {
+				count: 1
+				id: "ae2:certus_quartz_crystal"
+			}
+			id: "37186742D46CA4A9"
+			rewards: [
+				{
+					id: "F6ABD925836DBA52"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "111C536D4A108CBF"
+					item: {
+						count: 1
+						id: "ae2:certus_quartz_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"37186742D46CA4A9"
+			]
+			icon: {
+				count: 1
+				id: "ae2:controller"
+			}
+			id: "832E61D3959486B9"
+			rewards: [
+				{
+					id: "D01049AB7C846D96"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "369A96C3C2207E76"
+					item: {
+						count: 1
+						id: "ae2:controller"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"832E61D3959486B9"
+			]
+			icon: {
+				count: 1
+				id: "ae2:singularity"
+			}
+			id: "F56DC71D7BF9856D"
+			rewards: [
+				{
+					id: "6F12F921EC3F0FFE"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7AE685851F7F8808"
+					item: {
+						count: 1
+						id: "ae2:singularity"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"1C330E75DFB2604B"
+			]
+			icon: {
+				count: 1
+				id: "powah:energizing_orb"
+			}
+			id: "3EA21090C65846EE"
+			rewards: [
+				{
+					id: "456C9D8C1D15FD20"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "820106164C3D2106"
+					item: {
+						count: 1
+						id: "powah:energizing_orb"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3EA21090C65846EE"
+			]
+			icon: {
+				count: 1
+				id: "powah:capacitor_nitro"
+			}
+			id: "50341C7A334F7A8A"
+			rewards: [
+				{
+					id: "65CF3EBE6563D028"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "9114C86A2ECD742A"
+					item: {
+						count: 1
+						id: "powah:capacitor_nitro"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"1C330E75DFB2604B"
+			]
+			icon: {
+				count: 1
+				id: "immersiveengineering:ingot_steel"
+			}
+			id: "1547E2EBC08F27C6"
+			rewards: [
+				{
+					id: "A8094ADED7D2B4D0"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "20F1CBBF7861D5E0"
+					item: {
+						count: 1
+						id: "immersiveengineering:ingot_steel"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"1547E2EBC08F27C6"
+			]
+			icon: {
+				count: 1
+				id: "immersiveengineering:component_electronic_adv"
+			}
+			id: "660B873DDC27F71F"
+			rewards: [
+				{
+					id: "4AFEF4FDFA2FB01D"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "B79C3248FDA1914F"
+					item: {
+						count: 1
+						id: "immersiveengineering:component_electronic_adv"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"1C330E75DFB2604B"
+			]
+			icon: {
+				count: 1
+				id: "refinedstorage:construction_core"
+			}
+			id: "9C15809EA1985596"
+			rewards: [
+				{
+					id: "8A5C17F87240ADA6"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4CE73826347D225D"
+					item: {
+						count: 1
+						id: "refinedstorage:construction_core"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"1C330E75DFB2604B"
+			]
+			icon: {
+				count: 1
+				id: "industrialforegoing:machine_frame_supreme"
+			}
+			id: "89897EEF063073D5"
+			rewards: [
+				{
+					id: "EDA1CB193347A17E"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "DD9B1A115FD08B9E"
+					item: {
+						count: 1
+						id: "industrialforegoing:machine_frame_supreme"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"1C330E75DFB2604B"
+			]
+			icon: {
+				count: 1
+				id: "oritech:overcharged_crystal"
+			}
+			id: "7395392074B3587D"
+			rewards: [
+				{
+					id: "6F17A65180C6F0BF"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "C9CAA45471DD4ACE"
+					item: {
+						count: 1
+						id: "oritech:overcharged_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"C57244C47B265137"
+				"4C29543292018F34"
+				"F56DC71D7BF9856D"
+				"50341C7A334F7A8A"
+				"660B873DDC27F71F"
+				"9C15809EA1985596"
+				"89897EEF063073D5"
+				"7395392074B3587D"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:tech_core"
+			}
+			id: "15110C10E1F53DA5"
+			rewards: [
+				{
+					id: "70E487AE59F07EC3"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					count: 1L
+					id: "1E58697E68F5711B"
+					item: {
+						count: 1
+						id: "yukicore:tech_core"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 2.0d
+		}
+	]
+}

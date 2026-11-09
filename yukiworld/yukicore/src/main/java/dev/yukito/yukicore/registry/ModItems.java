@@ -1,10 +1,13 @@
 package dev.yukito.yukicore.registry;
 
 import dev.yukito.yukicore.YukiCore;
+import dev.yukito.yukicore.item.CoreItem;
 import dev.yukito.yukicore.item.FrostSwordItem;
+import dev.yukito.yukicore.item.InfinityStarItem;
 import dev.yukito.yukicore.item.YukiStarItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
@@ -48,6 +51,20 @@ public final class ModItems {
             () -> new HoeItem(ModTiers.FROST, new Item.Properties()
                     .attributes(DiggerItem.createAttributes(ModTiers.FROST, -3.0f, 0.0f))));
 
+    // --- Эндгейм: ядра, объединяющие все моды сборки ---
+    public static final DeferredItem<Item> FROST_CORE = core("frost_core", Rarity.UNCOMMON, false);
+    public static final DeferredItem<Item> TECH_CORE = core("tech_core", Rarity.RARE, false);
+    public static final DeferredItem<Item> MAGIC_CORE = core("magic_core", Rarity.RARE, false);
+    public static final DeferredItem<Item> NATURE_CORE = core("nature_core", Rarity.RARE, false);
+    public static final DeferredItem<Item> DIMENSION_CORE = core("dimension_core", Rarity.RARE, false);
+    public static final DeferredItem<Item> YUKI_HEART = core("yuki_heart", Rarity.EPIC, true);
+    public static final DeferredItem<Item> YUKI_INFINITY_STAR = ITEMS.register("yuki_infinity_star",
+            () -> new InfinityStarItem(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC).fireResistant()));
+    public static final DeferredItem<Item> YUKI_BLADE = ITEMS.register("yuki_blade",
+            () -> new FrostSwordItem(ModTiers.YUKI, new Item.Properties().rarity(Rarity.EPIC).fireResistant()
+                    .component(DataComponents.UNBREAKABLE, new net.minecraft.world.item.component.Unbreakable(true))
+                    .attributes(SwordItem.createAttributes(ModTiers.YUKI, 24, -2.0f))));
+
     // --- Броня ---
     public static final DeferredItem<Item> FROST_HELMET = armor("frost_helmet", ArmorItem.Type.HELMET);
     public static final DeferredItem<Item> FROST_CHESTPLATE = armor("frost_chestplate", ArmorItem.Type.CHESTPLATE);
@@ -62,6 +79,10 @@ public final class ModItems {
         blockItem(ModBlocks.FROST_BLOCK);
         blockItem(ModBlocks.YUKI_CRYSTAL_BLOCK);
         blockItem(ModBlocks.YUKI_LAMP);
+    }
+
+    private static DeferredItem<Item> core(String name, Rarity rarity, boolean foil) {
+        return ITEMS.register(name, () -> new CoreItem(new Item.Properties().rarity(rarity).fireResistant(), foil));
     }
 
     private static DeferredItem<Item> armor(String name, ArmorItem.Type type) {

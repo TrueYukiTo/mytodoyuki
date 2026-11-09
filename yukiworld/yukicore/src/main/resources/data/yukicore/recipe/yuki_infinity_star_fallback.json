@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:and",
+        "values": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "create"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "ae2"
+          }
+        ]
+      }
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SNS",
+    "NHN",
+    "SNS"
+  ],
+  "key": {
+    "S": {
+      "item": "yukicore:yuki_star"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "H": {
+      "item": "yukicore:yuki_heart"
+    }
+  },
+  "result": {
+    "id": "yukicore:yuki_infinity_star",
+    "count": 1
+  }
+}

@@ -39,6 +39,8 @@ silent-gear
 ## ✨ Магия
 ars-nouveau
 irons-spells-n-spellbooks
+irons-lib
+playeranimator
 occultism
 apotheosis
 evilcraft
@@ -89,5 +91,12 @@ enchantment-descriptions
 toast-control
 open-parties-and-claims
 
-# Нет на Modrinth под 1.21.1 NeoForge (только CurseForge) — можно добавить вручную:
-#   packwiz curseforge add <имя>   → ExtendedAE, Just Dire Things, Botania, Twilight Forest, MemoryLeakFix
+
+## 📜 Квесты и CurseForge-only моды (префикс cf:)
+# Botania и MemoryLeakFix под 1.21.1 NeoForge не выпускались.
+cf:ftb-quests-forge
+cf:ftb-xmod-compat
+cf:ftb-ultimine-forge
+cf:the-twilight-forest
+cf:ex-pattern-provider
+cf:just-dire-things

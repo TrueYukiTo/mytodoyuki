@@ -1,6 +1,6 @@
 name = "YukiWorld"
 author = "YukiTo"
-version = "1.0.0"
+version = "1.1.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
@@ -10,4 +10,4 @@ hash = "9f219973ac98f8d24784e5475cb9bcbce7cd803a30415fb630e0f9b509f09efa"
 
 [versions]
 minecraft = "1.21.1"
-neoforge = "21.1.77"
+neoforge = "21.1.265"

@@ -1,0 +1,48 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:and",
+        "values": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "aether"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "twilightforest"
+          }
+        ]
+      }
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NOE",
+    "HFH",
+    "EON"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "O": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "E": {
+      "item": "minecraft:echo_shard"
+    },
+    "H": {
+      "item": "minecraft:heavy_core"
+    },
+    "F": {
+      "item": "yukicore:frost_core"
+    }
+  },
+  "result": {
+    "id": "yukicore:dimension_core",
+    "count": 1
+  }
+}

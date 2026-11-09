@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "create:refined_radiance"
+    },
+    "S": {
+      "item": "create:shadow_steel"
+    },
+    "X": {
+      "item": "yukicore:yuki_star"
+    },
+    "Q": {
+      "item": "ae2:singularity"
+    },
+    "H": {
+      "item": "yukicore:yuki_heart"
+    }
+  },
+  "pattern": [
+    "  R  ",
+    " SXS ",
+    "RQHQR",
+    " SXS ",
+    "  R  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "yukicore:yuki_infinity_star"
+  },
+  "show_notification": true
+}

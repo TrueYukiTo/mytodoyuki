@@ -1,0 +1,374 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	icon: {
+		count: 1
+		id: "yukicore:yuki_star"
+	}
+	id: "B3BE6BF3DBE1FF78"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [ ]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_star"
+			}
+			id: "E61BAF5781EF8930"
+			rewards: [
+				{
+					id: "A742E125DE897864"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 2
+					id: "413A2817847D8768"
+					item: {
+						count: 1
+						id: "yukicore:frost_apple"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "11094D5A67314316"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"E61BAF5781EF8930"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:raw_frost"
+			}
+			id: "5C3A8B5068225455"
+			rewards: [
+				{
+					id: "EADF0DDDDC444FFE"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "4E37377FBF40DB67"
+					item: {
+						count: 1
+						id: "yukicore:raw_frost"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"5C3A8B5068225455"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_ingot"
+			}
+			id: "E5C755ED63E3A3C4"
+			rewards: [
+				{
+					id: "FA0F03AC94200E03"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 4
+					id: "A1C38A3B5177401D"
+					item: {
+						count: 1
+						id: "yukicore:frost_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "9FE9EE7F0AC75C03"
+					item: {
+						count: 1
+						id: "yukicore:frost_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"E61BAF5781EF8930"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_crystal"
+			}
+			id: "EA4A1FF2A43F4E04"
+			rewards: [
+				{
+					id: "7924EFF0F76A93DC"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "FAC50FDA08A7FF4C"
+					item: {
+						count: 1
+						id: "yukicore:yuki_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"E5C755ED63E3A3C4"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_pickaxe"
+			}
+			id: "33E3BFFC3D7BB3B1"
+			rewards: [
+				{
+					id: "16E3F6F5CDBBBBFA"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7C4EFE97FD1E8268"
+					item: {
+						count: 1
+						id: "yukicore:frost_pickaxe"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"E5C755ED63E3A3C4"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_chestplate"
+			}
+			id: "FE3449E41995073C"
+			rewards: [
+				{
+					id: "867425454ED6A3FA"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 1
+					id: "B13E62E840C9416B"
+					item: {
+						count: 1
+						id: "yukicore:frost_helmet"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "328B17CB7EF572E1"
+					item: {
+						count: 1
+						id: "yukicore:frost_chestplate"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"EA4A1FF2A43F4E04"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_lamp"
+			}
+			id: "3D37F121E5E34B71"
+			rewards: [
+				{
+					id: "C18EDCF7FA7E65DF"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "1C8A7EED48DDDB31"
+					item: {
+						count: 1
+						id: "yukicore:yuki_lamp"
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"E61BAF5781EF8930"
+			]
+			icon: {
+				count: 1
+				id: "sophisticatedbackpacks:backpack"
+			}
+			id: "318F273B135F7CA0"
+			rewards: [
+				{
+					id: "7101D029376CD16E"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "DB5802CFD24E3B1A"
+					item: {
+						count: 1
+						id: "sophisticatedbackpacks:backpack"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"318F273B135F7CA0"
+			]
+			icon: {
+				count: 1
+				id: "waystones:waystone"
+			}
+			id: "44B7D3CCDBF53374"
+			rewards: [
+				{
+					id: "5287EF9BE0D52ACF"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3B1758C7CFDE6892"
+					item: {
+						count: 1
+						id: "waystones:waystone"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"E5C755ED63E3A3C4"
+				"EA4A1FF2A43F4E04"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_star"
+			}
+			id: "B1DC7565B3693621"
+			rewards: [
+				{
+					id: "85C2E822523B2212"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					count: 1L
+					id: "DDF073750FE4A240"
+					item: {
+						count: 1
+						id: "yukicore:yuki_star"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"B1DC7565B3693621"
+				"33E3BFFC3D7BB3B1"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_core"
+			}
+			id: "1C330E75DFB2604B"
+			rewards: [
+				{
+					id: "237A41034A0BB8AE"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "gear"
+			size: 1.75d
+			tasks: [
+				{
+					count: 1L
+					id: "A4E456F5B60F0CFC"
+					item: {
+						count: 1
+						id: "yukicore:frost_core"
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+}
