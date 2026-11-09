@@ -9,7 +9,6 @@ ferrite-core
 modernfix
 immediatelyfast
 entityculling
-memoryleakfix
 ksyxis
 fast-ip-ping
 spark
@@ -24,21 +23,25 @@ mekanism-tools
 create
 applied-energistics-2
 ae2wtlib
-extendedae
 refined-storage
 powah
 pipez
 oritech
-justdirethings
 functional-storage
 modular-routers
+industrial-foregoing
+immersiveengineering
+actually-additions
+createaddition
+create-new-age
+silent-gear
 
 ## ✨ Магия
 ars-nouveau
 irons-spells-n-spellbooks
-botania
 occultism
 apotheosis
+evilcraft
 
 ## 📦 Хранение
 sophisticated-backpacks
@@ -57,6 +60,7 @@ yungs-better-ocean-monuments
 when-dungeons-arise
 artifacts
 waystones
+the-bumblezone
 
 ## 🌾 Еда и фермы
 farmers-delight
@@ -84,3 +88,6 @@ better-advancements
 enchantment-descriptions
 toast-control
 open-parties-and-claims
+
+# Нет на Modrinth под 1.21.1 NeoForge (только CurseForge) — можно добавить вручную:
+#   packwiz curseforge add <имя>   → ExtendedAE, Just Dire Things, Botania, Twilight Forest, MemoryLeakFix
