@@ -1,0 +1,10 @@
+# YukiWorld: главное меню рисует YukiCore, поэтому меню Cumulus (The Aether) отключено.
+[Menu]
+	enable_menu_api = false
+	active_menu = "cumulus_menus:minecraft"
+	enable_menu_list_button = false
+
+["World Preview"]
+	enable_world_preview = false
+	enable_world_preview_button = false
+	enable_quick_load_button = false

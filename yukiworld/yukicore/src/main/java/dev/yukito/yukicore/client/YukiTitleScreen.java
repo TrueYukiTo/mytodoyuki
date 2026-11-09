@@ -16,7 +16,7 @@ import net.neoforged.neoforge.client.gui.ModListScreen;
 /** Главное меню YukiWorld: панорама, градиент, снег, переливающийся логотип. */
 public class YukiTitleScreen extends Screen {
     private static final String LOGO = "YukiWorld";
-    private static final String PACK_VERSION = "1.1.0";
+    private static final String PACK_VERSION = "1.1.1";
 
     private final Snowfall snow = new Snowfall();
     private long openedAt;

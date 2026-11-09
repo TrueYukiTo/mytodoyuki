@@ -81,7 +81,7 @@ YukiCore — последняя ступень сборки. Каждое ядр
 
 ## Установка (игроку)
 
-1. Скачай `YukiWorld-1.1.0.mrpack` (из GitHub Actions → артефакт **YukiWorld**).
+1. Скачай `YukiWorld-1.1.1.mrpack` (из GitHub Actions → артефакт **YukiWorld**).
 2. Открой в **Prism Launcher** / **Modrinth App** / **ATLauncher**: «Добавить сборку» → выбрать файл.
 3. Выдели **8–10 ГБ ОЗУ** и используй **Java 21**. Рекомендуемые JVM-флаги:
    ```
@@ -93,11 +93,11 @@ YukiCore — последняя ступень сборки. Каждое ядр
 
 ```bash
 # 1. Мод YukiCore
-cd yukiworld/yukicore && ./gradlew build        # → build/libs/yukicore-1.1.0.jar
+cd yukiworld/yukicore && ./gradlew build        # → build/libs/yukicore-1.1.1.jar
 ./gradlew runClient                              # запустить игру с модом
 
 # 2. Сборка .mrpack (нужен packwiz: go install github.com/packwiz/packwiz@latest)
-bash yukiworld/pack/scripts/build-pack.sh        # → yukiworld/pack/build/YukiWorld-1.1.0.mrpack
+bash yukiworld/pack/scripts/build-pack.sh        # → yukiworld/pack/build/YukiWorld-1.1.1.mrpack
 ```
 
 GitHub Actions (`.github/workflows/yukiworld.yml`) делает оба шага сам при каждом пуше
