@@ -39,7 +39,11 @@ public final class YukiCoreClient {
         modBus.addListener(YukiCoreClient::registerRenderers);
         modBus.addListener(YukiCoreClient::registerLayers);
         modBus.addListener(ClientMagic::keys);
+        modBus.addListener(dev.yukito.yukicore.client.armor.Armor3D::layers);
+        modBus.addListener(dev.yukito.yukicore.client.armor.Armor3D::extensions);
+        modBus.addListener(dev.yukito.yukicore.client.armor.Armor3D::addLayers);
         NeoForge.EVENT_BUS.addListener(ClientMagic::tick);
+        NeoForge.EVENT_BUS.addListener(ClientMagic::camera);
         NeoForge.EVENT_BUS.register(ClientEvents.class);
         if (ModList.get().isLoaded("ad_astra")) {
             modBus.addListener(dev.yukito.yukicore.compat.adastra.AdAstraClient::setup);

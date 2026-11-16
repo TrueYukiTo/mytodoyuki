@@ -2,7 +2,7 @@
   "name": "Скафандры",
   "category": "yukicore:space",
   "icon": "yukicore:frost_space_suit",
-  "sortnum": 31,
+  "sortnum": 28,
   "pages": [
     {
       "type": "patchouli:spotlight",
@@ -12,7 +12,7 @@
     {
       "type": "patchouli:spotlight",
       "item": "yukicore:sintara_space_suit",
-      "text": "$(l)Скафандр Синтары$(): 4 000 мБ, жар и холод. Из незеритового скафандра + ауриевый шаблон + блок пиролита."
+      "text": "$(l)Скафандр Синтары$(): 4 000 мБ, жар и холод. Из незеритового скафандра + ауриевый шаблон + блок авроры."
     },
     {
       "type": "patchouli:spotlight",

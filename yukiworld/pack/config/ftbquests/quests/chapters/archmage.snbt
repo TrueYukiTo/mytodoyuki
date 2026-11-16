@@ -1,0 +1,341 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "archmage"
+	group: "74BF87A649295B10"
+	icon: {
+		count: 1
+		id: "yukicore:yuki_regalia_robe"
+	}
+	id: "127846BAD97D5BA7"
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/finale.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 1.08d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: 1.3d
+			width: 1.08d
+			x: -1.31d
+			y: -0.3d
+		}
+		{
+			height: 0.88d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -5.0d
+			width: 0.88d
+			x: 11.97d
+			y: -0.54d
+		}
+		{
+			height: 1.01d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 21.9d
+			width: 1.01d
+			x: 11.98d
+			y: 2.46d
+		}
+		{
+			height: 1.16d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: 4.5d
+			width: 1.16d
+			x: 12.11d
+			y: 2.59d
+		}
+	]
+	order_index: 41
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"5BEA60D41E5E99DD"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_regalia_robe"
+			}
+			id: "11623AFBE9F534D2"
+			rewards: [
+				{
+					id: "72893608B3F337DC"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			shape: "hexagon"
+			size: 1.35d
+			tasks: [
+				{
+					id: "28553CA29D8CD063"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"11623AFBE9F534D2"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:greater_frost_essence"
+			}
+			id: "3733FF28BE4A0B88"
+			rewards: [
+				{
+					id: "188025358AD21903"
+					type: "xp"
+					xp: 1205
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "640EEA3217038056"
+					item: {
+						count: 1
+						id: "yukicore:greater_frost_essence"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 0.352d
+		}
+		{
+			dependencies: [
+				"3733FF28BE4A0B88"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:greater_flame_essence"
+			}
+			id: "2D3012C48C99D74C"
+			rewards: [
+				{
+					id: "75058C8C17F07F31"
+					type: "xp"
+					xp: 1210
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "3CE333D44335C46D"
+					item: {
+						count: 1
+						id: "yukicore:greater_flame_essence"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 0.438d
+		}
+		{
+			dependencies: [
+				"2D3012C48C99D74C"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:tome_of_winter"
+			}
+			id: "2EF1F282344D76D2"
+			rewards: [
+				{
+					id: "165B2641F81C0A05"
+					type: "xp"
+					xp: 1215
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1BABF7FCF50065E0"
+					item: {
+						count: 1
+						id: "yukicore:tome_of_winter"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 0.192d
+		}
+		{
+			dependencies: [
+				"2EF1F282344D76D2"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:tome_of_flame"
+			}
+			id: "4E39FD3595DC9CBC"
+			rewards: [
+				{
+					id: "2B735F254BF71D14"
+					type: "xp"
+					xp: 1220
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "317CA7683DD0F88E"
+					item: {
+						count: 1
+						id: "yukicore:tome_of_flame"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -0.199d
+		}
+		{
+			dependencies: [
+				"4E39FD3595DC9CBC"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_regalia_robe"
+			}
+			id: "3F9C36D3DEAA10E2"
+			rewards: [
+				{
+					id: "17DEC2D3F40AF146"
+					type: "xp"
+					xp: 1225
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6AEF3FAECF69A027"
+					item: {
+						count: 1
+						id: "yukicore:yuki_regalia_robe"
+					}
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: -0.44d
+		}
+		{
+			dependencies: [
+				"3F9C36D3DEAA10E2"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sintara_regalia_robe"
+			}
+			id: "59E3787A05F88329"
+			rewards: [
+				{
+					id: "48B2B1A7BDF0A46E"
+					type: "xp"
+					xp: 1230
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "15391F3929B10766"
+					item: {
+						count: 1
+						id: "yukicore:sintara_regalia_robe"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: -0.348d
+		}
+		{
+			dependencies: [
+				"59E3787A05F88329"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_staff"
+			}
+			id: "1FDD4036335E136B"
+			rewards: [
+				{
+					id: "7DF78AEC883B30AA"
+					type: "xp"
+					xp: 1235
+				}
+			]
+			shape: "hexagon"
+			size: 1.35d
+			tasks: [
+				{
+					id: "3DA0FF9F3D36464E"
+					type: "checkmark"
+				}
+			]
+			x: 10.5d
+			y: 2.282d
+		}
+		{
+			dependencies: [
+				"1FDD4036335E136B"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sintara_staff"
+			}
+			id: "7243E74B5CC69B1F"
+			rewards: [
+				{
+					id: "14C87FAB47145DBB"
+					type: "xp"
+					xp: 1240
+				}
+				{
+					count: 3
+					id: "503C09213FB881B6"
+					item: {
+						count: 1
+						id: "yukicore:gift"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "189DA991A1537FA2"
+					item: {
+						count: 1
+						id: "yukicore:mana_crystal"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "507A81583437B7F4"
+					type: "checkmark"
+				}
+			]
+			x: 8.75d
+			y: 1.891d
+		}
+	]
+}

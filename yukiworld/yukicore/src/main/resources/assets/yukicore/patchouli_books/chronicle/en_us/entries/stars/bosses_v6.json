@@ -2,7 +2,7 @@
   "name": "Боссы стали сильнее",
   "category": "yukicore:stars",
   "icon": "yukicore:sigil_shadow",
-  "sortnum": 29,
+  "sortnum": 26,
   "pages": [
     {
       "type": "patchouli:text",

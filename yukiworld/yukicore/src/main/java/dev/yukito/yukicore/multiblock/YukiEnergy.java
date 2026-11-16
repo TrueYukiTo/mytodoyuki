@@ -12,7 +12,7 @@ public class YukiEnergy extends EnergyStorage {
     }
 
     public void add(int amount) {
-        energy = Math.min(capacity, energy + amount);
+        energy = (int) Math.min(capacity, (long) energy + amount);
     }
 
     public boolean use(int amount) {

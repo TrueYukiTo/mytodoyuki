@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 3,
+  "center": {
+    "item": "yukicore:cryomancer_boots"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:archon_heart"
+    },
+    {
+      "item": "yukicore:greater_frost_essence"
+    },
+    {
+      "item": "yukicore:greater_frost_essence"
+    },
+    {
+      "item": "yukicore:mana_crystal"
+    },
+    {
+      "item": "yukicore:celestium_ingot"
+    },
+    {
+      "item": "yukicore:celestium_ingot"
+    },
+    {
+      "item": "yukicore:aurorium_ingot"
+    },
+    {
+      "item": "yukicore:aurorium_ingot"
+    }
+  ],
+  "result": {
+    "id": "yukicore:yuki_regalia_boots",
+    "count": 1
+  },
+  "duration": 500
+}

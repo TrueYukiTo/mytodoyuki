@@ -1,0 +1,697 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "me_network"
+	group: "27C6257DE576252F"
+	icon: {
+		count: 1
+		id: "ae2:controller"
+	}
+	id: "7E1FA38FFCFFA0A4"
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 0.9d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: 12.5d
+			width: 0.9d
+			x: 12.14d
+			y: 0.46d
+		}
+		{
+			height: 0.91d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: -24.6d
+			width: 0.91d
+			x: 12.01d
+			y: 0.33d
+		}
+		{
+			height: 0.96d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -17.9d
+			width: 0.96d
+			x: 12.02d
+			y: 2.62d
+		}
+		{
+			height: 0.73d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -22.4d
+			width: 0.73d
+			x: -1.45d
+			y: 2.02d
+		}
+		{
+			height: 1.02d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: 9.8d
+			width: 1.02d
+			x: 12.24d
+			y: 3.64d
+		}
+		{
+			height: 1.15d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: 18.1d
+			width: 1.15d
+			x: 12.2d
+			y: 4.41d
+		}
+	]
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"479ABE5CDDAF95F5"
+			]
+			icon: {
+				count: 1
+				id: "ae2:controller"
+			}
+			id: "670A1C9CEE28F910"
+			rewards: [
+				{
+					id: "46FC43ECFB0057CB"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			shape: "hexagon"
+			size: 1.35d
+			tasks: [
+				{
+					id: "32C9F72799BC4E6E"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"670A1C9CEE28F910"
+			]
+			icon: {
+				count: 1
+				id: "ae2:certus_quartz_crystal"
+			}
+			id: "468071F0DD74327F"
+			rewards: [
+				{
+					id: "37C21063A688BA9E"
+					type: "xp"
+					xp: 1205
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "38A66A3E9CB6A2CA"
+					item: {
+						count: 1
+						id: "ae2:certus_quartz_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 0.352d
+		}
+		{
+			dependencies: [
+				"468071F0DD74327F"
+			]
+			icon: {
+				count: 1
+				id: "ae2:inscriber"
+			}
+			id: "7A4545C09D15AB3E"
+			rewards: [
+				{
+					id: "23F18F63D6924B24"
+					type: "xp"
+					xp: 1210
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1A71D7A0924B5370"
+					item: {
+						count: 1
+						id: "ae2:inscriber"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 0.438d
+		}
+		{
+			dependencies: [
+				"7A4545C09D15AB3E"
+			]
+			icon: {
+				count: 1
+				id: "ae2:fluix_crystal"
+			}
+			id: "5ADB05F14AD7850D"
+			rewards: [
+				{
+					id: "2636D4A37818A5EE"
+					type: "xp"
+					xp: 1215
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "1D649CD00D73EAA4"
+					item: {
+						count: 1
+						id: "ae2:fluix_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 0.192d
+		}
+		{
+			dependencies: [
+				"5ADB05F14AD7850D"
+			]
+			icon: {
+				count: 1
+				id: "ae2:logic_processor"
+			}
+			id: "1E310E96FC11B590"
+			rewards: [
+				{
+					id: "5BF2E7A883D1DB64"
+					type: "xp"
+					xp: 1220
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "1BBDD034B15E0126"
+					item: {
+						count: 1
+						id: "ae2:logic_processor"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -0.199d
+		}
+		{
+			dependencies: [
+				"1E310E96FC11B590"
+			]
+			icon: {
+				count: 1
+				id: "ae2:engineering_processor"
+			}
+			id: "297AE3D37652D2D3"
+			rewards: [
+				{
+					id: "6ABC9BA79A2F6D00"
+					type: "xp"
+					xp: 1225
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "1B61F172D2CD7B07"
+					item: {
+						count: 1
+						id: "ae2:engineering_processor"
+					}
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: -0.44d
+		}
+		{
+			dependencies: [
+				"297AE3D37652D2D3"
+			]
+			icon: {
+				count: 1
+				id: "ae2:calculation_processor"
+			}
+			id: "4DF6D6DE43BE4663"
+			rewards: [
+				{
+					id: "227C4A81B4C32ECE"
+					type: "xp"
+					xp: 1230
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "1BB39B56E6D034C1"
+					item: {
+						count: 1
+						id: "ae2:calculation_processor"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: -0.348d
+		}
+		{
+			dependencies: [
+				"4DF6D6DE43BE4663"
+			]
+			icon: {
+				count: 1
+				id: "ae2:controller"
+			}
+			id: "31CE031735ACAEA0"
+			rewards: [
+				{
+					id: "27039F66CBE42FE0"
+					type: "xp"
+					xp: 1235
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "54C1CD2CEC007055"
+					item: {
+						count: 1
+						id: "ae2:controller"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 2.282d
+		}
+		{
+			dependencies: [
+				"31CE031735ACAEA0"
+			]
+			icon: {
+				count: 1
+				id: "ae2:drive"
+			}
+			id: "2C8ED33F4DCAAD26"
+			rewards: [
+				{
+					id: "2A23355F7500051B"
+					type: "xp"
+					xp: 1240
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "520630CF2DE5E7BB"
+					item: {
+						count: 1
+						id: "ae2:drive"
+					}
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: 1.891d
+		}
+		{
+			dependencies: [
+				"2C8ED33F4DCAAD26"
+			]
+			icon: {
+				count: 1
+				id: "ae2:item_storage_cell_64k"
+			}
+			id: "127B00D5A2108FEF"
+			rewards: [
+				{
+					id: "62ACCE3A22FEEF2F"
+					type: "xp"
+					xp: 1245
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "4A09101BFDEA7EAB"
+					item: {
+						count: 1
+						id: "ae2:item_storage_cell_64k"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 1.658d
+		}
+		{
+			dependencies: [
+				"127B00D5A2108FEF"
+			]
+			icon: {
+				count: 1
+				id: "ae2:molecular_assembler"
+			}
+			id: "164947D442172306"
+			rewards: [
+				{
+					id: "1EB1D1695180DF4B"
+					type: "xp"
+					xp: 1250
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "7B7ABE450B577EFB"
+					item: {
+						count: 1
+						id: "ae2:molecular_assembler"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 1.759d
+		}
+		{
+			dependencies: [
+				"164947D442172306"
+			]
+			icon: {
+				count: 1
+				id: "ae2:pattern_provider"
+			}
+			id: "5FFDEA26E1218203"
+			rewards: [
+				{
+					id: "1FEC4EE67CB2AA61"
+					type: "xp"
+					xp: 1255
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "6555543DF0C15AF2"
+					item: {
+						count: 1
+						id: "ae2:pattern_provider"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 2.119d
+		}
+		{
+			dependencies: [
+				"5FFDEA26E1218203"
+			]
+			icon: {
+				count: 1
+				id: "extendedae:ex_pattern_provider"
+			}
+			id: "165060CAE99655E9"
+			rewards: [
+				{
+					id: "28167C401974B6F1"
+					type: "xp"
+					xp: 1260
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "59BE79F88BEEBD04"
+					item: {
+						count: 1
+						id: "extendedae:ex_pattern_provider"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 2.464d
+		}
+		{
+			dependencies: [
+				"165060CAE99655E9"
+			]
+			icon: {
+				count: 1
+				id: "megacells:item_storage_cell_1m"
+			}
+			id: "78F261AB6BFA5027"
+			rewards: [
+				{
+					id: "33376AD5C8BE235A"
+					type: "xp"
+					xp: 1265
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3F9D7DD4B8B5F951"
+					item: {
+						count: 1
+						id: "megacells:item_storage_cell_1m"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.534d
+		}
+		{
+			dependencies: [
+				"78F261AB6BFA5027"
+			]
+			icon: {
+				count: 1
+				id: "appflux:flux_accessor"
+			}
+			id: "6757B09C962FE7AF"
+			rewards: [
+				{
+					id: "50D5A72483B9DC91"
+					type: "xp"
+					xp: 1270
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6CFDF2BA525D0606"
+					item: {
+						count: 1
+						id: "appflux:flux_accessor"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.432d
+		}
+		{
+			dependencies: [
+				"6757B09C962FE7AF"
+			]
+			icon: {
+				count: 1
+				id: "appmek:chemical_storage_cell_4k"
+			}
+			id: "5280426EACE628E9"
+			rewards: [
+				{
+					id: "2F03A7285AD08C89"
+					type: "xp"
+					xp: 1275
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2429142DF8E2F660"
+					item: {
+						count: 1
+						id: "appmek:chemical_storage_cell_4k"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 4.042d
+		}
+		{
+			dependencies: [
+				"5280426EACE628E9"
+			]
+			icon: {
+				count: 1
+				id: "merequester:requester"
+			}
+			id: "677265CA7DC21F14"
+			rewards: [
+				{
+					id: "4BACB6474FD769B7"
+					type: "xp"
+					xp: 1280
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "774CB5F5093531FF"
+					item: {
+						count: 1
+						id: "merequester:requester"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 3.772d
+		}
+		{
+			dependencies: [
+				"677265CA7DC21F14"
+			]
+			icon: {
+				count: 1
+				id: "ae2:wireless_access_point"
+			}
+			id: "3F23F4063D1B298B"
+			rewards: [
+				{
+					id: "6E95F0D2928C3509"
+					type: "xp"
+					xp: 1285
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "35CEDC69413EF69D"
+					item: {
+						count: 1
+						id: "ae2:wireless_access_point"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 3.825d
+		}
+		{
+			dependencies: [
+				"3F23F4063D1B298B"
+			]
+			icon: {
+				count: 1
+				id: "ae2:singularity"
+			}
+			id: "1B2146638C4CA77F"
+			rewards: [
+				{
+					id: "69A3FED6C7147453"
+					type: "xp"
+					xp: 1290
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "1EF80B480D9FEE9B"
+					item: {
+						count: 1
+						id: "ae2:singularity"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 4.163d
+		}
+		{
+			dependencies: [
+				"1B2146638C4CA77F"
+			]
+			icon: {
+				count: 1
+				id: "ae2:quantum_link"
+			}
+			id: "31E8DBA76AF96064"
+			rewards: [
+				{
+					id: "63B451441574F447"
+					type: "xp"
+					xp: 1295
+				}
+				{
+					count: 3
+					id: "77A27F349149F2EB"
+					item: {
+						count: 1
+						id: "yukicore:gift"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "2588E4342A703CFE"
+					item: {
+						count: 1
+						id: "yukicore:stellar_alloy"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					count: 2L
+					id: "5C11DD14959C6FFA"
+					item: {
+						count: 1
+						id: "ae2:quantum_link"
+					}
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: 4.528d
+		}
+	]
+}

@@ -173,7 +173,7 @@ public class MagicProjectile extends ThrowableItemProjectile {
         if (owner == null) return true;
         if (e == owner || e instanceof MagicProjectile) return false;
         if (owner instanceof Player p) {
-            if (e instanceof Player) return false;
+            if (e instanceof Player || Fx.isAlly(e)) return false;
             if (e instanceof TamableAnimal t && t.isOwnedBy(p)) return false;
             return true;
         }
@@ -186,7 +186,11 @@ public class MagicProjectile extends ThrowableItemProjectile {
         super.onHitEntity(r);
         if (level().isClientSide || aoe > 0) return;
         if (r.getEntity() instanceof LivingEntity le) {
-            Element.hurt(le, source(), damage, element());
+            if (getOwner() instanceof net.minecraft.server.level.ServerPlayer sp) {
+                Fx.hit(sp, le, damage, element());
+            } else {
+                Element.hurt(le, source(), damage, element());
+            }
             element().apply(le, power);
         }
     }
@@ -195,7 +199,14 @@ public class MagicProjectile extends ThrowableItemProjectile {
     protected void onHit(HitResult r) {
         super.onHit(r);
         if (level().isClientSide || isRemoved()) return;
-        if (aoe > 0) explode(level(), getOwner(), position(), aoe, damage, element(), power, source());
+        if (aoe > 0) {
+            if (getOwner() instanceof net.minecraft.server.level.ServerPlayer sp) {
+                Fx.area(sp, position(), aoe, damage, element(), e -> element().apply(e, power));
+                if (aoe >= 3.5) Fx.shake((net.minecraft.server.level.ServerLevel) level(), position(), aoe * 4, Math.min(2f, aoe * 0.3f), 10);
+            } else {
+                explode(level(), getOwner(), position(), aoe, damage, element(), power, source());
+            }
+        }
         if (level() instanceof ServerLevel s) {
             Element el = element();
             s.sendParticles(el.burst(), getX(), getY(), getZ(), 12 + (int) (aoe * 8), aoe * 0.4 + 0.2, 0.3, aoe * 0.4 + 0.2, 0.05);

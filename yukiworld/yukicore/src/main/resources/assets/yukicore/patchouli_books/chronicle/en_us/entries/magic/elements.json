@@ -2,7 +2,7 @@
   "name": "Слабости стихий",
   "category": "yukicore:magic",
   "icon": "yukicore:frost_essence",
-  "sortnum": 27,
+  "sortnum": 24,
   "pages": [
     {
       "type": "patchouli:text",

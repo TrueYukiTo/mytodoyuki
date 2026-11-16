@@ -348,7 +348,9 @@ public abstract class YukiBoss extends Monster {
         if (hit != Element.NONE && hit == weakness()) amount *= 1.5f;
         else if (hit != Element.NONE && hit == element()) amount *= 0.5f;
         // лимит урона за удар: ни одно оружие не убьёт босса с пары ударов
-        amount = Math.min(amount, getMaxHealth() * 0.025f);
+        // магия Юки и Синтары пробивает вдвое лучше (5% за удар против 2,5%)
+        boolean spell = src.getEntity() instanceof Player && (hit == Element.ICE || hit == Element.FIRE);
+        amount = Math.min(amount, getMaxHealth() * (spell ? 0.05f : 0.025f));
         return super.hurt(src, amount);
     }
 

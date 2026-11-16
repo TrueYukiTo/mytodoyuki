@@ -2,7 +2,7 @@
   "name": "Снаряжение мага",
   "category": "yukicore:magic",
   "icon": "yukicore:cryomancer_robe",
-  "sortnum": 26,
+  "sortnum": 23,
   "pages": [
     {
       "type": "patchouli:spotlight",

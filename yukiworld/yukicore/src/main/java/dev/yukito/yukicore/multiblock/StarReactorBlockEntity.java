@@ -32,11 +32,13 @@ public class StarReactorBlockEntity extends BlockEntity {
     /** Топливо: тиков горения и FE за тик. */
     public static int[] fuel(ItemStack s) {
         Item i = s.getItem();
-        if (i == ModItems.YUKI_CRYSTAL.get()) return new int[]{400, 400};
-        if (i == ModItems.STARLIGHT_SHARD.get()) return new int[]{2400, 2500};
-        if (i == ModItems.PYROLITE_INGOT.get()) return new int[]{3000, 3000};
-        if (i == ModItems.VOID_SHARD.get()) return new int[]{4000, 5000};
-        if (i == ModItems.STELLAR_SHARD.get()) return new int[]{8000, 10000};
+        // 7.0: реактор уровня эндгейма — от 50 тыс. до 10 млн FE/т (нитро-реактор Powah — ~2 млн)
+        if (i == ModItems.YUKI_CRYSTAL.get()) return new int[]{600, 50_000};
+        if (i == ModItems.STARLIGHT_SHARD.get()) return new int[]{2400, 400_000};
+        if (i == ModItems.PYROLITE_INGOT.get()) return new int[]{3000, 600_000};
+        if (i == ModItems.VOID_SHARD.get()) return new int[]{4000, 1_500_000};
+        if (i == ModItems.STELLAR_SHARD.get()) return new int[]{6000, 4_000_000};
+        if (i == ModItems.STAR_SHARD.get()) return new int[]{12000, 10_000_000};
         return null;
     }
 
@@ -51,7 +53,7 @@ public class StarReactorBlockEntity extends BlockEntity {
             setChanged();
         }
     };
-    public final YukiEnergy energy = new YukiEnergy(20_000_000, 0, 200_000, this::setChanged);
+    public final YukiEnergy energy = new YukiEnergy(Integer.MAX_VALUE, 0, Integer.MAX_VALUE, this::setChanged);
 
     private int burn, burnRate;
     private boolean formed;
@@ -84,7 +86,7 @@ public class StarReactorBlockEntity extends BlockEntity {
             if (be.energy.getEnergyStored() <= 0) break;
             IEnergyStorage t = level.getCapability(Capabilities.EnergyStorage.BLOCK, pos.relative(d), d.getOpposite());
             if (t == null || !t.canReceive()) continue;
-            int sent = t.receiveEnergy(Math.min(200_000, be.energy.getEnergyStored()), false);
+            int sent = t.receiveEnergy(Math.min(50_000_000, be.energy.getEnergyStored()), false);
             be.energy.use(sent);
         }
         if (level.getGameTime() % 40 == 0) be.setChanged();

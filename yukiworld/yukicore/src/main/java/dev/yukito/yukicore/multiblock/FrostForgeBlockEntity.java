@@ -41,7 +41,7 @@ public class FrostForgeBlockEntity extends BlockEntity {
             setChanged();
         }
     };
-    public final YukiEnergy energy = new YukiEnergy(2_000_000, 100_000, 0, this::setChanged);
+    public final YukiEnergy energy = new YukiEnergy(1_000_000_000, 20_000_000, 0, this::setChanged);
     /** Для автоматизации: входы только принимают, выход только отдаёт. */
     public final IItemHandler automation = new IItemHandler() {
         public int getSlots() { return INPUTS + 1; }

@@ -1,0 +1,22 @@
+{
+  "name": "Сильнейшая броня",
+  "category": "yukicore:forge",
+  "icon": "yukicore:eternal_chestplate",
+  "sortnum": 30,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Броня YukiCore снижает $(l)любой урон$() на процент — сверх обычной защиты, поэтому она сильнее брони других модов:$(li)Мороз — 15%$(li)Аврорий — 25%$(li)Целестий — 42%$(li)Регалии магов — 50%$(li)$(l)Вечная зима — 75%$()"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:eternal_chestplate",
+      "text": "$(l)Вечная зима$(): Алтарь III из целестиевой брони, Слезы Юки, трофеев боссов и звёздного сплава. Полёт, иммунитет к огню, холоду и иссушению."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:yuki_regalia_robe",
+      "text": "$(l)Регалии Юки и Синтары$() — 3D-броня архимагов: +15% силы за часть, −8% маны, +60 маны."
+    }
+  ]
+}

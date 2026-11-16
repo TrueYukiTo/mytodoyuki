@@ -43,6 +43,14 @@ public final class ModArmorMaterials {
     public static final DeferredHolder<ArmorMaterial, ArmorMaterial> STAR_SUIT = register("star_suit",
             5, 11, 9, 5, 30, 5.0f, 0.2f, SoundEvents.ARMOR_EQUIP_NETHERITE, () -> ModItems.STELLAR_ALLOY.get());
 
+    // 7.0: лучшая броня сборки
+    public static final DeferredHolder<ArmorMaterial, ArmorMaterial> ETERNAL = register("eternal",
+            7, 14, 11, 7, 45, 12.0f, 0.6f, SoundEvents.ARMOR_EQUIP_NETHERITE, () -> ModItems.YUKI_TEAR.get());
+    public static final DeferredHolder<ArmorMaterial, ArmorMaterial> YUKI_REGALIA = register("yuki_regalia",
+            4, 10, 8, 4, 50, 5.0f, 0.2f, SoundEvents.ARMOR_EQUIP_DIAMOND, () -> ModItems.ARCHON_HEART.get());
+    public static final DeferredHolder<ArmorMaterial, ArmorMaterial> SINTARA_REGALIA = register("sintara_regalia",
+            4, 10, 8, 4, 50, 5.0f, 0.2f, SoundEvents.ARMOR_EQUIP_GOLD, () -> ModItems.PHOENIX_FEATHER.get());
+
     private static DeferredHolder<ArmorMaterial, ArmorMaterial> register(String name, int boots, int chest, int legs,
             int helmet, int enchant, float toughness, float knockback, Holder<SoundEvent> sound, Supplier<Item> repair) {
         return ARMOR_MATERIALS.register(name, () -> new ArmorMaterial(

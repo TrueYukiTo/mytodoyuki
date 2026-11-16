@@ -41,6 +41,13 @@ public final class ModMagic {
             () -> new Effect(MobEffectCategory.BENEFICIAL, 0xFF8A2A));
     public static final DeferredHolder<MobEffect, MobEffect> REBIRTH = EFFECTS.register("rebirth",
             () -> new Effect(MobEffectCategory.BENEFICIAL, 0xFFD060));
+    /** Обморожение: каждая ступень — +6% получаемого урона. */
+    public static final DeferredHolder<MobEffect, MobEffect> FROSTBITE = EFFECTS.register("frostbite",
+            () -> new Effect(MobEffectCategory.HARMFUL, 0x6EC6FF));
+    public static final DeferredHolder<MobEffect, MobEffect> AVATAR_ICE = EFFECTS.register("avatar_ice",
+            () -> new Effect(MobEffectCategory.BENEFICIAL, 0xBFEFFF));
+    public static final DeferredHolder<MobEffect, MobEffect> AVATAR_FIRE = EFFECTS.register("avatar_fire",
+            () -> new Effect(MobEffectCategory.BENEFICIAL, 0xFF7A1C));
 
     public static final DeferredHolder<EntityType<?>, EntityType<MagicProjectile>> PROJECTILE = ENTITIES.register(
             "magic_projectile", () -> EntityType.Builder.<MagicProjectile>of(MagicProjectile::new, MobCategory.MISC)

@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 3,
+  "center": {
+    "item": "yukicore:pyromancer_robe"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:phoenix_feather"
+    },
+    {
+      "item": "yukicore:greater_flame_essence"
+    },
+    {
+      "item": "yukicore:greater_flame_essence"
+    },
+    {
+      "item": "yukicore:mana_crystal"
+    },
+    {
+      "item": "yukicore:celestium_ingot"
+    },
+    {
+      "item": "yukicore:celestium_ingot"
+    },
+    {
+      "item": "yukicore:aurorium_ingot"
+    },
+    {
+      "item": "yukicore:aurorium_ingot"
+    }
+  ],
+  "result": {
+    "id": "yukicore:sintara_regalia_robe",
+    "count": 1
+  },
+  "duration": 500
+}

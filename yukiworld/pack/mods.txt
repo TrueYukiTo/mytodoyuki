@@ -36,6 +36,12 @@ mekanism-tools
 create
 applied-energistics-2
 ae2wtlib
+# 7.0: больше AE2
+applied-mekanistics
+merequester
+ae-additions
+applied-generators
+ars-energistique
 refined-storage
 powah
 pipez
@@ -154,3 +160,5 @@ cf:the-twilight-forest
 cf:ex-pattern-provider
 cf:just-dire-things
 cf:ars-elemental
+cf:mega-cells
+cf:ae2-network-analyser

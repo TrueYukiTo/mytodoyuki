@@ -13,7 +13,7 @@ M = "yukicore"
 COND = [{"type": "neoforge:mod_loaded", "modid": "ad_astra"}]
 
 # 6.0: дальние планеты требуют ракет YukiCore (5–7 уровень)
-TIERS = {"yukia": 4, "aurora": 5, "pyrolith": 5, "nyx": 6, "celestia": 7}
+TIERS = {"yukia": 5, "aurora": 5, "pyrolith": 6, "nyx": 7, "celestia": 7}
 
 PLANETS = {
     # id: русское имя, английское, блок по умолчанию, верх, под верхом, жидкость, эффекты, небо, туман,

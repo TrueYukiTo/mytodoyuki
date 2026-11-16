@@ -17,16 +17,16 @@
       "item": "ad_astra:rocket_nose_cone"
     },
     "A": {
-      "item": "yukicore:stellar_alloy"
+      "item": "yukicore:pyrolite_block"
     },
     "S": {
-      "item": "yukicore:void_scale"
+      "item": "yukicore:ash_core"
     },
     "T": {
       "item": "yukicore:sintara_rocket"
     },
     "X": {
-      "item": "yukicore:stellar_block"
+      "item": "yukicore:celestium_block"
     },
     "F": {
       "item": "ad_astra:rocket_fin"

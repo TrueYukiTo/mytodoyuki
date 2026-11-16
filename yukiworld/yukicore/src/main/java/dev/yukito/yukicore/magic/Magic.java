@@ -20,20 +20,30 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.network.PacketDistributor;
 
-/** Формулы и операции магии: мана, сила, опыт, улучшения. Общие для сервера и клиента. */
+/** Формулы и операции магии: мана, сила, перезарядка, опыт, дерево навыков. Общие для сервера и клиента. */
 public final class Magic {
     private Magic() {}
+
+    private static final EquipmentSlot[] ARMOR = {EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET};
 
     public static MagicData get(Player p) {
         return p.getData(ModMagic.DATA);
     }
 
     // ---------------------------------------------------------------- снаряжение
-    public static boolean robeSet(Player p, School s) {
-        for (EquipmentSlot slot : new EquipmentSlot[]{EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET}) {
-            if (!(p.getItemBySlot(slot).getItem() instanceof RobeItem r) || r.school != s) return false;
+    /** Сумма бонусов надетых мантий школы: [сила, снижение цены, мана, кол-во частей]. */
+    public static float[] robes(Player p, School s) {
+        float power = 0, cheap = 0, mana = 0, n = 0;
+        for (EquipmentSlot slot : ARMOR) {
+            if (p.getItemBySlot(slot).getItem() instanceof RobeItem r && (r.school == null || r.school == s)) {
+                power += r.power;
+                cheap += r.cheap;
+                mana += r.mana;
+                n++;
+            }
         }
-        return true;
+        if (n == 4) power += 0.15f;
+        return new float[]{power, cheap, mana, n};
     }
 
     public static boolean hasFocus(Player p, School s) {
@@ -58,39 +68,54 @@ public final class Magic {
             if (st.getItem() instanceof MagicGearItem g && g.school == s) ring = Math.max(ring, g.power);
             if (s == School.FIRE && st.is(ModItems.SINTARA_AMULET.get())) amulet = true;
         }
-        float bonus = ring + (amulet ? 0.15f : 0);
+        float bonus = ring + (amulet ? 0.15f : 0) + robes(p, s)[0];
         if (s == School.ICE && p.getItemBySlot(EquipmentSlot.HEAD).is(ModItems.CROWN_OF_YUKI.get())) bonus += 0.15f;
-        if (robeSet(p, s)) bonus += 0.25f;
         if (s == School.FIRE && p.hasEffect(ModMagic.PHOENIX)) bonus += 0.3f;
+        if (s == School.ICE && p.hasEffect(ModMagic.AVATAR_ICE)) bonus += 0.5f;
+        if (s == School.FIRE && p.hasEffect(ModMagic.AVATAR_FIRE)) bonus += 0.5f;
         return bonus;
     }
 
     public static float maxMana(Player p) {
         MagicData d = get(p);
-        float m = 100 + 20 * d.passive(Passive.ICE_HEART) + 4 * (d.level[0] + d.level[1] - 2) + 10 * d.crystals;
-        if (robeSet(p, School.ICE) || robeSet(p, School.FIRE)) m += 40;
+        float m = 100 + 5 * (d.level[0] + d.level[1] - 2) + 30 * d.rank(Skill.COLD_MIND)
+                + 20 * d.rank(Skill.INNER_FIRE) + 10 * d.crystals;
+        m += robes(p, School.ICE)[2] + robes(p, School.FIRE)[2];
         return m;
     }
 
     public static float regenPerTick(Player p) {
         MagicData d = get(p);
-        float perSec = 2f + 0.6f * d.passive(Passive.FIRE_WILL) + 0.05f * (d.level[0] + d.level[1]);
-        if (robeSet(p, School.ICE) || robeSet(p, School.FIRE)) perSec += 1f;
+        float perSec = 3f + 1.0f * d.rank(Skill.BURNING_WILL) + 1.0f * d.rank(Skill.WINTER_HEART)
+                + 0.08f * (d.level[0] + d.level[1]);
+        perSec += 0.5f * (robes(p, School.ICE)[3] + robes(p, School.FIRE)[3]);
         return perSec / 20f;
     }
 
-    /** Множитель урона/силы заклинания. */
-    public static float power(Player p, Spell s) {
+    /** Множитель силы заклинания. */
+    public static float power(Player p, Skill s) {
         MagicData d = get(p);
         int rank = Math.max(1, d.rank(s));
-        Passive pw = s.school == School.ICE ? Passive.PERMAFROST : Passive.SINTARA_HEAT;
-        float base = 1f + 0.25f * (rank - 1);
-        return base * (1f + 0.08f * d.passive(pw) + 0.015f * d.level(s.school) + heldFocus(p, s.school) + gear(p, s.school));
+        Skill pw = s.school == School.ICE ? Skill.PERMAFROST : Skill.SINTARA_HEAT;
+        float base = 1f + 0.3f * (rank - 1);
+        return base * (1f + 0.1f * d.rank(pw) + 0.02f * d.level(s.school) + heldFocus(p, s.school) + gear(p, s.school));
     }
 
-    public static int cost(Player p, Spell s) {
-        int c = s.cost(Math.max(1, get(p).rank(s)));
-        return robeSet(p, s.school) ? Math.round(c * 0.8f) : c;
+    public static int cost(Player p, Skill s) {
+        float c = s.cost(get(p).rank(s)) * Math.max(0.3f, 1f - robes(p, s.school)[1]);
+        if ((s.school == School.ICE && p.hasEffect(ModMagic.AVATAR_ICE)) || (s.school == School.FIRE && p.hasEffect(ModMagic.AVATAR_FIRE))) {
+            c *= 0.25f;
+        }
+        return Math.round(c);
+    }
+
+    public static int cooldown(Player p, Skill s) {
+        MagicData d = get(p);
+        float k = 1f - 0.06f * d.rank(s.school == School.ICE ? Skill.ETERNAL_COLD : Skill.PHOENIX_SOUL);
+        if ((s.school == School.ICE && p.hasEffect(ModMagic.AVATAR_ICE)) || (s.school == School.FIRE && p.hasEffect(ModMagic.AVATAR_FIRE))) {
+            k *= 0.5f;
+        }
+        return Math.max(4, Math.round(s.cooldown(d.rank(s)) * k));
     }
 
     // ---------------------------------------------------------------- операции (сервер)
@@ -100,78 +125,69 @@ public final class Magic {
         int i = s.ordinal();
         if (d.level[i] >= MagicData.MAX_LEVEL) return;
         d.xp[i] += amount;
-        boolean up = false;
+        int before = d.level[i];
         while (d.level[i] < MagicData.MAX_LEVEL && d.xp[i] >= MagicData.xpToNext(d.level[i])) {
             d.xp[i] -= MagicData.xpToNext(d.level[i]);
             d.level[i]++;
-            d.points[i] += d.level[i] % 5 == 0 ? 2 : 1;
-            up = true;
         }
         if (d.level[i] >= MagicData.MAX_LEVEL) d.xp[i] = 0;
         d.dirty = true;
-        if (up) {
+        if (d.level[i] > before) {
             ChatFormatting c = s == School.ICE ? ChatFormatting.AQUA : ChatFormatting.GOLD;
             p.connection.send(new ClientboundSetTitlesAnimationPacket(5, 40, 10));
             p.connection.send(new ClientboundSetTitleTextPacket(Component.translatable("magic.yukicore.levelup." + s.id,
                     d.level[i]).withStyle(c, ChatFormatting.BOLD)));
             p.connection.send(new ClientboundSetSubtitleTextPacket(Component.translatable("magic.yukicore.levelup.points",
-                    d.points[i]).withStyle(ChatFormatting.WHITE)));
+                    d.points(s)).withStyle(ChatFormatting.WHITE)));
             p.serverLevel().playSound(null, p.blockPosition(), SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 1f, 1.4f);
             p.serverLevel().sendParticles(s == School.ICE ? ParticleTypes.SNOWFLAKE : ParticleTypes.FLAME,
                     p.getX(), p.getY() + 1, p.getZ(), 80, 0.6, 1, 0.6, 0.1);
         }
     }
 
-    public static void select(ServerPlayer p, int spell) {
+    /** Положить заклинание в ячейку быстрого доступа. */
+    public static void assign(ServerPlayer p, int slot, int skill) {
         MagicData d = get(p);
-        Spell s = Spell.byId(spell);
-        if (s != null && d.rank(s) > 0) {
-            d.selected = spell;
+        Skill s = Skill.byId(skill);
+        if (slot < 0 || slot >= MagicData.SLOTS || s == null || s.passive() || d.rank(s) <= 0) return;
+        for (int i = 0; i < MagicData.SLOTS; i++) if (d.slots[i] == skill) d.slots[i] = -1;
+        d.slots[slot] = skill;
+        d.activeSlot = slot;
+        d.dirty = true;
+    }
+
+    public static void setActiveSlot(ServerPlayer p, int slot) {
+        MagicData d = get(p);
+        if (slot >= 0 && slot < MagicData.SLOTS) {
+            d.activeSlot = slot;
             d.dirty = true;
         }
     }
 
-    public static void upgrade(ServerPlayer p, int kind, int index) {
+    public static void upgrade(ServerPlayer p, int index) {
         MagicData d = get(p);
-        if (kind == 0) {
-            Spell s = Spell.byId(index);
-            if (s == null) return;
-            int i = s.school.ordinal();
-            int r = d.rank(s);
-            int cost = s.upgradeCost(r);
-            if (r >= Spell.MAX_RANK || d.points[i] < cost) return;
-            if (d.level[i] < s.requiredLevel + r * 2) return;
-            if (s.ultimate() && !d.trial[i]) return;
-            d.points[i] -= cost;
-            d.ranks[s.ordinal()]++;
-            if (d.selected < 0) d.selected = s.ordinal();
-        } else if (kind == 1) {
-            if (index < 0 || index >= Passive.values().length) return;
-            Passive ps = Passive.values()[index];
-            int i = ps.school.ordinal();
-            if (d.passives[index] >= Passive.MAX_RANK || d.points[i] < 1) return;
-            d.points[i]--;
-            d.passives[index]++;
-        } else {
-            return;
+        Skill s = Skill.byId(index);
+        if (s == null || !d.canUpgrade(s)) return;
+        d.ranks[s.ordinal()]++;
+        if (!s.passive() && d.ranks[s.ordinal()] == 1) {
+            for (int i = 0; i < MagicData.SLOTS; i++) {
+                if (d.slots[i] < 0) {
+                    d.slots[i] = s.ordinal();
+                    break;
+                }
+            }
         }
         d.dirty = true;
         p.serverLevel().playSound(null, p.blockPosition(), SoundEvents.ENCHANTMENT_TABLE_USE, SoundSource.PLAYERS, 1f, 1.3f);
+        p.serverLevel().sendParticles(s.school == School.ICE ? ParticleTypes.SNOWFLAKE : ParticleTypes.FLAME,
+                p.getX(), p.getY() + 1, p.getZ(), 30, 0.5, 0.8, 0.5, 0.05);
     }
 
-    /** Свиток забвения: вернуть все очки. */
+    /** Свиток забвения: снять все навыки — очки вернутся сами. */
     public static void respec(ServerPlayer p) {
         MagicData d = get(p);
-        for (Spell s : Spell.values()) {
-            int i = s.school.ordinal();
-            for (int r = d.ranks[s.ordinal()]; r > 0; r--) d.points[i] += s.upgradeCost(r - 1);
-            d.ranks[s.ordinal()] = 0;
-        }
-        for (Passive ps : Passive.values()) {
-            d.points[ps.school.ordinal()] += d.passives[ps.ordinal()];
-            d.passives[ps.ordinal()] = 0;
-        }
-        d.selected = -1;
+        java.util.Arrays.fill(d.ranks, 0);
+        java.util.Arrays.fill(d.slots, -1);
         d.dirty = true;
     }
 

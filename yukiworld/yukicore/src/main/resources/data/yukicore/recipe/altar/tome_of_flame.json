@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 2,
+  "center": {
+    "item": "minecraft:book"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:greater_flame_essence"
+    },
+    {
+      "item": "yukicore:greater_flame_essence"
+    },
+    {
+      "item": "yukicore:greater_flame_essence"
+    },
+    {
+      "item": "yukicore:greater_flame_essence"
+    },
+    {
+      "item": "yukicore:mana_crystal"
+    },
+    {
+      "item": "yukicore:yuki_crystal"
+    },
+    {
+      "item": "yukicore:yuki_crystal"
+    },
+    {
+      "item": "minecraft:blaze_rod"
+    }
+  ],
+  "result": {
+    "id": "yukicore:tome_of_flame",
+    "count": 1
+  },
+  "duration": 300
+}

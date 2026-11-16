@@ -387,12 +387,12 @@ def recipes():
         "T": "ad_astra:tier_4_rocket", "X": I("frost_core"), "F": "ad_astra:rocket_fin",
         "E": "ad_astra:calorite_engine"}, I("frost_rocket")), "ad_astra")
     r["rocket/sintara_rocket"] = when(mech(["   N   ", "  PSP  ", "  PTP  ", " FPXPF ", " F E F "], {
-        "N": "ad_astra:rocket_nose_cone", "P": I("pyrolite_block"), "S": I("phoenix_feather"),
-        "T": I("frost_rocket"), "X": I("ash_core"), "F": "ad_astra:rocket_fin",
+        "N": "ad_astra:rocket_nose_cone", "P": I("aurora_block"), "S": I("phoenix_feather"),
+        "T": I("frost_rocket"), "X": I("blizzard_crown"), "F": "ad_astra:rocket_fin",
         "E": "ad_astra:calorite_engine"}, I("sintara_rocket")), "ad_astra")
     r["rocket/star_rocket"] = when(mech(["   N   ", "  ASA  ", "  ATA  ", " FAXAF ", " FEEEF "], {
-        "N": "ad_astra:rocket_nose_cone", "A": I("stellar_alloy"), "S": I("void_scale"),
-        "T": I("sintara_rocket"), "X": I("stellar_block"), "F": "ad_astra:rocket_fin",
+        "N": "ad_astra:rocket_nose_cone", "A": I("pyrolite_block"), "S": I("ash_core"),
+        "T": I("sintara_rocket"), "X": I("celestium_block"), "F": "ad_astra:rocket_fin",
         "E": "ad_astra:calorite_engine"}, I("star_rocket")), "ad_astra")
     # скафандры (кузнечный стол)
     aa = {"helmet": "space_helmet", "suit": "space_suit", "pants": "space_pants", "boots": "space_boots"}
@@ -400,9 +400,9 @@ def recipes():
         r[f"suit/frost_space_{piece}"] = when(smithing(I("frost_upgrade_template"), f"ad_astra:{base}",
                                                        I("cryosteel_block"), I(f"frost_space_{piece}")), "ad_astra")
         r[f"suit/sintara_space_{piece}"] = when(smithing(I("aurorium_upgrade_template"), f"ad_astra:netherite_{base}",
-                                                         I("pyrolite_block"), I(f"sintara_space_{piece}")), "ad_astra")
+                                                         I("aurora_block"), I(f"sintara_space_{piece}")), "ad_astra")
         r[f"suit/star_space_{piece}"] = when(smithing(I("celestium_upgrade_template"), I(f"sintara_space_{piece}"),
-                                                      I("stellar_alloy"), I(f"star_space_{piece}")), "ad_astra")
+                                                      I("pyrolite_block"), I(f"star_space_{piece}")), "ad_astra")
     return r
 
 
@@ -436,8 +436,8 @@ ENTRIES = [
         "они спрятали свою магию в двух книгах.$()",
         "$(l)Лёд Юки$() — контроль: замедление, заморозка, щиты, метель.$(br)$(l)Пламя Синтары$() — разрушение: "
         "огненные шары, рывки, метеоры и возрождение из пепла.",
-        "Каждая школа качается отдельно: творишь заклинания и побеждаешь врагов — растёт $(l)уровень$() (до 30) "
-        "и копятся $(l)очки навыков$(). Каждый 5-й уровень даёт 2 очка.",
+        "Каждая школа качается отдельно: творишь заклинания и побеждаешь врагов — растёт $(l)уровень$() (до 60) "
+        "и копятся $(l)очки навыков$(). В каждой ветке — дерево из 22 навыков.",
         ("spot", "yukicore:yuki_grimoire", "$(l)Гримуар Юки$() — открывает ледяную школу. Держи в инвентаре."),
         ("spot", "yukicore:sintara_tome", "$(l)Фолиант Синтары$() — открывает огненную школу."),
     ]),
@@ -467,8 +467,8 @@ ENTRIES = [
     ("magic", "gear", "Снаряжение мага", "yukicore:cryomancer_robe", [
         ("spot", "yukicore:yuki_staff", "$(l)Посохи$() в руке усиливают свою школу на 25%. $(l)Посох Двух Стихий$() — "
                                         "обе школы, +40%."),
-        ("spot", "yukicore:cryomancer_robe", "$(l)Мантии криоманта и пироманта$(): полный комплект — +25% силы, "
-                                             "−20% маны, +40 к запасу и +1 маны/с."),
+        ("spot", "yukicore:cryomancer_robe", "$(l)Мантии криоманта и пироманта$(): каждая часть +6% силы, "
+                                             "−5% маны, +15 к запасу; комплект ещё +15% силы."),
         ("spot", "yukicore:frost_ring", "$(l)Кольца$() работают из инвентаря: +10%, легендарные — +20%."),
         ("spot", "yukicore:mana_crystal", "$(l)Кристалл маны$(): навсегда +10 к запасу (до 10 раз). Зелья маны "
                                           "восполняют 60 и 220."),
@@ -498,16 +498,17 @@ ENTRIES = [
         "Один удар снимает не больше 2,5% здоровья босса.",
     ]),
     ("space", "rockets", "Ракеты Юки", "yukicore:frost_rocket", [
-        "Ракеты Ad Astra долетают только до 4-го уровня. Дальше нужны ракеты YukiCore (механический крафтер Create).",
-        ("spot", "yukicore:frost_rocket", "$(l)Морозная ракета$() — 5 уровень: Аврора и Пиролит."),
-        ("spot", "yukicore:sintara_rocket", "$(l)Ракета Синтары$() — 6 уровень: Никта."),
-        ("spot", "yukicore:star_rocket", "$(l)Звёздная ракета$() — 7 уровень: Целестия."),
+        "Планеты Системы Юки требуют ракет YukiCore (механический крафтер Create): каждая следующая ракета строится "
+        "из трофеев предыдущей планеты.",
+        ("spot", "yukicore:frost_rocket", "$(l)Морозная ракета$() — 5 уровень: Юкия и Аврора."),
+        ("spot", "yukicore:sintara_rocket", "$(l)Ракета Синтары$() — 6 уровень: Пиролит. Нужны блоки авроры и Корона Метели."),
+        ("spot", "yukicore:star_rocket", "$(l)Звёздная ракета$() — 7 уровень: Никта и Целестия. Нужны блоки пиролита и Пепельное ядро."),
     ]),
     ("space", "suits", "Скафандры", "yukicore:frost_space_suit", [
         ("spot", "yukicore:frost_space_suit", "$(l)Морозный скафандр$(): бак кислорода 2 000 мБ, защита от холода. "
                                               "Кузнечный стол: скафандр Ad Astra + морозный шаблон + блок криостали."),
         ("spot", "yukicore:sintara_space_suit", "$(l)Скафандр Синтары$(): 4 000 мБ, жар и холод. Из незеритового "
-                                                "скафандра + ауриевый шаблон + блок пиролита."),
+                                                "скафандра + ауриевый шаблон + блок авроры."),
         ("spot", "yukicore:star_space_suit", "$(l)Звёздный скафандр$(): 8 000 мБ, всё сразу. Полный комплект: ночное "
                                              "зрение, скорость, нет урона от падения."),
     ]),

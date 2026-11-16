@@ -30,21 +30,22 @@ public final class MagicNet {
         }
     }
 
-    public record Select(int spell) implements CustomPacketPayload {
-        public static final Type<Select> TYPE = new Type<>(YukiCore.id("select"));
-        public static final StreamCodec<ByteBuf, Select> CODEC = ByteBufCodecs.VAR_INT.map(Select::new, Select::spell);
+    /** Положить заклинание в ячейку быстрого доступа (slot) — или только сменить активную (skill = -1). */
+    public record Assign(int slot, int skill) implements CustomPacketPayload {
+        public static final Type<Assign> TYPE = new Type<>(YukiCore.id("assign"));
+        public static final StreamCodec<ByteBuf, Assign> CODEC = StreamCodec.composite(
+                ByteBufCodecs.VAR_INT, Assign::slot, ByteBufCodecs.VAR_INT, Assign::skill, Assign::new);
 
         @Override
-        public Type<Select> type() {
+        public Type<Assign> type() {
             return TYPE;
         }
     }
 
-    /** Улучшить: kind 0 — заклинание, 1 — талант, 2 — сброс (свиток забвения не нужен, только из экрана). */
-    public record Upgrade(int kind, int index) implements CustomPacketPayload {
+    /** Изучить или улучшить навык дерева. */
+    public record Upgrade(int index) implements CustomPacketPayload {
         public static final Type<Upgrade> TYPE = new Type<>(YukiCore.id("upgrade"));
-        public static final StreamCodec<ByteBuf, Upgrade> CODEC = StreamCodec.composite(
-                ByteBufCodecs.VAR_INT, Upgrade::kind, ByteBufCodecs.VAR_INT, Upgrade::index, Upgrade::new);
+        public static final StreamCodec<ByteBuf, Upgrade> CODEC = ByteBufCodecs.VAR_INT.map(Upgrade::new, Upgrade::index);
 
         @Override
         public Type<Upgrade> type() {
@@ -72,17 +73,36 @@ public final class MagicNet {
         }
     }
 
+    /** Тряска камеры. */
+    public record Shake(float strength, int ticks) implements CustomPacketPayload {
+        public static final Type<Shake> TYPE = new Type<>(YukiCore.id("shake"));
+        public static final StreamCodec<ByteBuf, Shake> CODEC = StreamCodec.composite(
+                ByteBufCodecs.FLOAT, Shake::strength, ByteBufCodecs.VAR_INT, Shake::ticks, Shake::new);
+
+        @Override
+        public Type<Shake> type() {
+            return TYPE;
+        }
+    }
+
+    /** Клиентский приёмник тряски (ставится клиентом, на сервере пустой). */
+    public static java.util.function.BiConsumer<Float, Integer> shakeHandler = (a, b) -> {
+    };
+
     public static void register(RegisterPayloadHandlersEvent e) {
         PayloadRegistrar r = e.registrar("1");
         r.playToServer(Cast.TYPE, Cast.CODEC, (p, ctx) -> {
             if (ctx.player() instanceof ServerPlayer sp) SpellCaster.castFromKey(sp, p.spell());
         });
-        r.playToServer(Select.TYPE, Select.CODEC, (p, ctx) -> {
-            if (ctx.player() instanceof ServerPlayer sp) Magic.select(sp, p.spell());
+        r.playToServer(Assign.TYPE, Assign.CODEC, (p, ctx) -> {
+            if (!(ctx.player() instanceof ServerPlayer sp)) return;
+            if (p.skill() < 0) Magic.setActiveSlot(sp, p.slot());
+            else Magic.assign(sp, p.slot(), p.skill());
         });
         r.playToServer(Upgrade.TYPE, Upgrade.CODEC, (p, ctx) -> {
-            if (ctx.player() instanceof ServerPlayer sp) Magic.upgrade(sp, p.kind(), p.index());
+            if (ctx.player() instanceof ServerPlayer sp) Magic.upgrade(sp, p.index());
         });
+        r.playToClient(Shake.TYPE, Shake.CODEC, (p, ctx) -> shakeHandler.accept(p.strength(), p.ticks()));
         r.playToClient(Sync.TYPE, Sync.CODEC, MagicNet::onSync);
         r.playToClient(Mana.TYPE, Mana.CODEC, (p, ctx) -> {
             Player pl = ctx.player();

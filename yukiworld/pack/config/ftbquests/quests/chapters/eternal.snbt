@@ -1,0 +1,409 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "eternal"
+	group: "74BF87A649295B10"
+	icon: {
+		count: 1
+		id: "yukicore:eternal_chestplate"
+	}
+	id: "4109704A2CD2D0FF"
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/finale.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 0.71d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -21.5d
+			width: 0.71d
+			x: -1.55d
+			y: 0.49d
+		}
+		{
+			height: 1.14d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 7.2d
+			width: 1.14d
+			x: -1.86d
+			y: -0.01d
+		}
+		{
+			height: 0.73d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -10.1d
+			width: 0.73d
+			x: 12.32d
+			y: 1.52d
+		}
+		{
+			height: 1.01d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: 23.3d
+			width: 1.01d
+			x: -1.49d
+			y: 1.86d
+		}
+	]
+	order_index: 39
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"165E405A3716AD5E"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:eternal_chestplate"
+			}
+			id: "105027BD9D8D61E7"
+			rewards: [
+				{
+					id: "53737727FDEF3394"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			shape: "hexagon"
+			size: 1.35d
+			tasks: [
+				{
+					id: "203469E578C35E3C"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"105027BD9D8D61E7"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:celestium_helmet"
+			}
+			id: "122FE4A867E0DB5F"
+			rewards: [
+				{
+					id: "797604A3D15AF7E9"
+					type: "xp"
+					xp: 1205
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "23B21DED6FF2301D"
+					item: {
+						count: 1
+						id: "yukicore:celestium_helmet"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 0.352d
+		}
+		{
+			dependencies: [
+				"122FE4A867E0DB5F"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:celestium_chestplate"
+			}
+			id: "2D4C8872CF77474A"
+			rewards: [
+				{
+					id: "39EA3BB947AE68CD"
+					type: "xp"
+					xp: 1210
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "50CEC10BCD86E970"
+					item: {
+						count: 1
+						id: "yukicore:celestium_chestplate"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 0.438d
+		}
+		{
+			dependencies: [
+				"2D4C8872CF77474A"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:celestium_leggings"
+			}
+			id: "23FD9641F66C13E2"
+			rewards: [
+				{
+					id: "7110D4136FA164F2"
+					type: "xp"
+					xp: 1215
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "21BF1023A0EA400A"
+					item: {
+						count: 1
+						id: "yukicore:celestium_leggings"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 0.192d
+		}
+		{
+			dependencies: [
+				"23FD9641F66C13E2"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:celestium_boots"
+			}
+			id: "3773874ACA113E12"
+			rewards: [
+				{
+					id: "477A3B9DBB6DC809"
+					type: "xp"
+					xp: 1220
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "389930896B14FE76"
+					item: {
+						count: 1
+						id: "yukicore:celestium_boots"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -0.199d
+		}
+		{
+			dependencies: [
+				"3773874ACA113E12"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_tear"
+			}
+			id: "51BDEBB6F64305F4"
+			rewards: [
+				{
+					id: "224AEC4ADE0BAA36"
+					type: "xp"
+					xp: 1225
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "531311A45580E49A"
+					item: {
+						count: 1
+						id: "yukicore:yuki_tear"
+					}
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: -0.44d
+		}
+		{
+			dependencies: [
+				"51BDEBB6F64305F4"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:stellar_alloy"
+			}
+			id: "264595E9DAAD4910"
+			rewards: [
+				{
+					id: "5DCB6DC08855C025"
+					type: "xp"
+					xp: 1230
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "3DD15C2F97FBBA9D"
+					item: {
+						count: 1
+						id: "yukicore:stellar_alloy"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: -0.348d
+		}
+		{
+			dependencies: [
+				"264595E9DAAD4910"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:eternal_helmet"
+			}
+			id: "4544A39795813086"
+			rewards: [
+				{
+					id: "21EE0CEC20323C77"
+					type: "xp"
+					xp: 1235
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "562B3476968F3E32"
+					item: {
+						count: 1
+						id: "yukicore:eternal_helmet"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 2.282d
+		}
+		{
+			dependencies: [
+				"4544A39795813086"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:eternal_chestplate"
+			}
+			id: "7A8C1734EF1F6179"
+			rewards: [
+				{
+					id: "5861047ABD373656"
+					type: "xp"
+					xp: 1240
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1D1202475C8F46F0"
+					item: {
+						count: 1
+						id: "yukicore:eternal_chestplate"
+					}
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: 1.891d
+		}
+		{
+			dependencies: [
+				"7A8C1734EF1F6179"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:eternal_leggings"
+			}
+			id: "43D930B9062A4EC5"
+			rewards: [
+				{
+					id: "4EF0FD4F84A2F7BE"
+					type: "xp"
+					xp: 1245
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "440871202185D44D"
+					item: {
+						count: 1
+						id: "yukicore:eternal_leggings"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 1.658d
+		}
+		{
+			dependencies: [
+				"43D930B9062A4EC5"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:eternal_boots"
+			}
+			id: "7B9F8A73C751D1DA"
+			rewards: [
+				{
+					id: "2263F39B91749735"
+					type: "xp"
+					xp: 1250
+				}
+				{
+					count: 3
+					id: "281657B5F1D84B9E"
+					item: {
+						count: 1
+						id: "yukicore:gift"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "79152A624EC5BA6C"
+					item: {
+						count: 1
+						id: "yukicore:grand_gift"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					count: 1L
+					id: "54BB8DBEDF9651D6"
+					item: {
+						count: 1
+						id: "yukicore:eternal_boots"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 1.759d
+		}
+	]
+}

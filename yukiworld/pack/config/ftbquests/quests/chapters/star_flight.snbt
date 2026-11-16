@@ -36,13 +36,31 @@
 			x: -1.9d
 			y: -0.04d
 		}
+		{
+			height: 0.99d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -11.0d
+			width: 0.99d
+			x: -1.82d
+			y: 2.11d
+		}
+		{
+			height: 1.12d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -2.9d
+			width: 1.12d
+			x: 12.25d
+			y: 2.62d
+		}
 	]
 	order_index: 36
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: [
-				"270A674E6AF9A13C"
+				"1FBF8B7802F558C7"
 			]
 			icon: {
 				count: 1
@@ -73,7 +91,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:stellar_alloy"
+				id: "yukicore:pyrolite_block"
 			}
 			id: "6438C37DAA134A9B"
 			rewards: [
@@ -85,11 +103,11 @@
 			]
 			tasks: [
 				{
-					count: 8L
+					count: 16L
 					id: "772B77D4BBD97139"
 					item: {
 						count: 1
-						id: "yukicore:stellar_alloy"
+						id: "yukicore:pyrolite_block"
 					}
 					type: "item"
 				}
@@ -103,7 +121,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:star_space_helmet"
+				id: "yukicore:ash_core"
 			}
 			id: "1D86409604377F9A"
 			rewards: [
@@ -119,7 +137,7 @@
 					id: "21740BFAECED36A9"
 					item: {
 						count: 1
-						id: "yukicore:star_space_helmet"
+						id: "yukicore:ash_core"
 					}
 					type: "item"
 				}
@@ -133,7 +151,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:star_space_suit"
+				id: "yukicore:star_space_helmet"
 			}
 			id: "46FAE6023D361B23"
 			rewards: [
@@ -149,7 +167,7 @@
 					id: "793D10589EC46B10"
 					item: {
 						count: 1
-						id: "yukicore:star_space_suit"
+						id: "yukicore:star_space_helmet"
 					}
 					type: "item"
 				}
@@ -163,7 +181,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:star_space_pants"
+				id: "yukicore:star_space_suit"
 			}
 			id: "2BCE4410B884F97E"
 			rewards: [
@@ -179,7 +197,7 @@
 					id: "2E0622177FB8B382"
 					item: {
 						count: 1
-						id: "yukicore:star_space_pants"
+						id: "yukicore:star_space_suit"
 					}
 					type: "item"
 				}
@@ -193,7 +211,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:star_space_boots"
+				id: "yukicore:star_space_pants"
 			}
 			id: "21AE33D54777900F"
 			rewards: [
@@ -209,7 +227,7 @@
 					id: "129DF1DAA029E090"
 					item: {
 						count: 1
-						id: "yukicore:star_space_boots"
+						id: "yukicore:star_space_pants"
 					}
 					type: "item"
 				}
@@ -223,7 +241,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:star_rocket"
+				id: "yukicore:star_space_boots"
 			}
 			id: "1B79B80272A91F29"
 			rewards: [
@@ -232,9 +250,39 @@
 					type: "xp"
 					xp: 1130
 				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "112EAFB4A0DEE3B9"
+					item: {
+						count: 1
+						id: "yukicore:star_space_boots"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: -0.348d
+		}
+		{
+			dependencies: [
+				"1B79B80272A91F29"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:star_rocket"
+			}
+			id: "1CA4B581E6F174F2"
+			rewards: [
+				{
+					id: "7FB045B50E15AE24"
+					type: "xp"
+					xp: 1135
+				}
 				{
 					count: 3
-					id: "416CF3809661EAAB"
+					id: "606B1EA379BE9AEE"
 					item: {
 						count: 1
 						id: "yukicore:gift"
@@ -243,7 +291,7 @@
 				}
 				{
 					count: 1
-					id: "17A53818691121CC"
+					id: "1B9AD5952DC076A4"
 					item: {
 						count: 1
 						id: "yukicore:grand_gift"
@@ -256,7 +304,7 @@
 			tasks: [
 				{
 					count: 1L
-					id: "112EAFB4A0DEE3B9"
+					id: "2B9B8C29C73ECA89"
 					item: {
 						count: 1
 						id: "yukicore:star_rocket"
@@ -265,7 +313,7 @@
 				}
 			]
 			x: 10.5d
-			y: -0.348d
+			y: 2.282d
 		}
 	]
 }

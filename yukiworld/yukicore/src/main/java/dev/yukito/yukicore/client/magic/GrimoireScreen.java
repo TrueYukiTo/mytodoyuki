@@ -1,7 +1,10 @@
 package dev.yukito.yukicore.client.magic;
 
 import dev.yukito.yukicore.client.YukiTheme;
-import dev.yukito.yukicore.magic.*;
+import dev.yukito.yukicore.magic.Magic;
+import dev.yukito.yukicore.magic.MagicData;
+import dev.yukito.yukicore.magic.School;
+import dev.yukito.yukicore.magic.Skill;
 import dev.yukito.yukicore.magic.net.MagicNet;
 import net.minecraft.ChatFormatting;
 import net.minecraft.Util;
@@ -18,11 +21,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Гримуар стихий: дерево навыков двух школ. Слева — лёд Юки, справа — пламя Синтары.
- * ЛКМ по узлу — изучить/улучшить, ПКМ — выбрать заклинание для клавиши «Сотворить».
+ * Гримуар стихий: дерево навыков школы (вкладки Юки / Синтара), 9 ступеней.
+ * Навык открывается только после предков. ЛКМ — изучить/улучшить, ПКМ — в активную ячейку, клик по ячейке — выбрать её.
  */
 public class GrimoireScreen extends Screen {
-    private static final int W = 400, H = 262, NODE = 28;
+    private static final int W = 444, H = 286, NODE = 26;
+    private static School tab = School.ICE;
     private int x0, y0;
 
     public GrimoireScreen() {
@@ -40,19 +44,17 @@ public class GrimoireScreen extends Screen {
         return false;
     }
 
-    private int colX(School s) {
-        return x0 + (s == School.ICE ? W / 4 : W * 3 / 4);
+    private int[] pos(Skill s) {
+        return new int[]{x0 + 18 + s.column * 47, y0 + 74 + s.row * 50};
     }
 
-    private int[] spellPos(Spell s) {
-        int i = s.ordinal() % 6;
-        int cx = colX(s.school);
-        return new int[]{cx + (i % 2 == 0 ? -36 : 36) - NODE / 2, y0 + 66 + (i / 2) * 40};
+    private int[] slotPos(int i) {
+        int total = MagicData.SLOTS * 26;
+        return new int[]{x0 + (W - total) / 2 + i * 26, y0 + H - 58};
     }
 
-    private int[] passivePos(Passive p) {
-        int i = p.ordinal() % 2;
-        return new int[]{colX(p.school) + (i == 0 ? -36 : 36) - 11, y0 + 190};
+    private int[] tabPos(School s) {
+        return new int[]{x0 + W / 2 + (s == School.ICE ? -112 : 8), y0 + 22, 104, 16};
     }
 
     @Override
@@ -62,53 +64,72 @@ public class GrimoireScreen extends Screen {
         if (pl == null) return;
         MagicData d = Magic.get(pl);
         float time = (Util.getMillis() % 1_000_000L) / 1000f;
+        boolean ice = tab == School.ICE;
 
-        // фон: лёд слева, пламя справа
         YukiTheme.roundedRect(g, x0 - 2, y0 - 2, W + 4, H + 4, 0xF0060912);
-        g.fillGradient(x0, y0, x0 + W / 2, y0 + H, 0xF00C1A36, 0xF0081022);
-        g.fillGradient(x0 + W / 2, y0, x0 + W, y0 + H, 0xF0301008, 0xF0180806);
-        particles(g, time);
-        g.fillGradient(x0 + W / 2, y0 + 20, x0 + W / 2 + 1, y0 + H - 20, 0xFF8FD8FF, 0xFFFFA040);
-        YukiTheme.roundedOutline(g, x0 - 2, y0 - 2, W + 4, H + 4, 0x90C8A0FF);
-
+        if (ice) g.fillGradient(x0, y0, x0 + W, y0 + H, 0xF00C1A36, 0xF0050A18);
+        else g.fillGradient(x0, y0, x0 + W, y0 + H, 0xF0341008, 0xF0140604);
+        particles(g, time, ice);
+        YukiTheme.roundedOutline(g, x0 - 2, y0 - 2, W + 4, H + 4, ice ? 0x908FD8FF : 0x90FFA040);
         g.drawCenteredString(font, Component.translatable("screen.yukicore.grimoire").withStyle(ChatFormatting.BOLD),
-                x0 + W / 2, y0 + 6, 0xFFFFE6A0);
+                x0 + W / 2, y0 + 7, 0xFFFFE6A0);
 
-        for (School s : School.values()) header(g, d, s);
-
-        // связи между узлами
         for (School s : School.values()) {
-            for (int i = 0; i < 5; i++) {
-                Spell a = Spell.values()[s.ordinal() * 6 + i], b = Spell.values()[s.ordinal() * 6 + i + 1];
-                int[] pa = spellPos(a), pb = spellPos(b);
-                boolean lit = d.rank(a) > 0 && d.rank(b) > 0;
-                line(g, pa[0] + NODE / 2, pa[1] + NODE / 2, pb[0] + NODE / 2, pb[1] + NODE / 2,
-                        lit ? (0xFF000000 | s.color) : 0x60FFFFFF);
+            int[] t = tabPos(s);
+            boolean on = s == tab, hov = in(mx, my, t[0], t[1], t[2], t[3]);
+            g.fill(t[0], t[1], t[0] + t[2], t[1] + t[3], on ? (0xC0000000 | s.dark) : hov ? 0x60FFFFFF : 0x40000000);
+            g.fill(t[0], t[1] + t[3] - 2, t[0] + t[2], t[1] + t[3], on ? (0xFF000000 | s.color) : 0x40FFFFFF);
+            g.drawCenteredString(font, Component.translatable("magic.yukicore.school." + s.id), t[0] + t[2] / 2, t[1] + 4,
+                    on ? 0xFFFFFFFF : 0xFFAFC4DA);
+        }
+
+        int lvl = d.level(tab);
+        g.drawCenteredString(font, Component.translatable("screen.yukicore.grimoire.level", lvl, d.points(tab)),
+                x0 + W / 2, y0 + 44, 0xFFE8EEF8);
+        int bw = 220, bx = x0 + (W - bw) / 2, by = y0 + 56;
+        float k = lvl >= MagicData.MAX_LEVEL ? 1 : d.xp[tab.ordinal()] / (float) MagicData.xpToNext(lvl);
+        g.fill(bx - 1, by - 1, bx + bw + 1, by + 5, 0xFF05080F);
+        g.fillGradient(bx, by, bx + (int) (bw * k), by + 4, 0xFF000000 | tab.color, 0xFF000000 | tab.dark);
+
+        // связи
+        for (Skill s : Skill.values()) {
+            if (s.school != tab) continue;
+            int[] c = pos(s);
+            for (Skill par : s.parents()) {
+                int[] a = pos(par);
+                boolean lit = d.rank(par) > 0;
+                line(g, a[0] + NODE / 2, a[1] + NODE / 2, c[0] + NODE / 2, c[1] + NODE / 2,
+                        lit ? (0xFF000000 | tab.color) : 0x50FFFFFF, lit);
             }
         }
-
         List<FormattedCharSequence> tip = null;
-        for (Spell s : Spell.values()) {
-            int[] p = spellPos(s);
-            boolean hover = mx >= p[0] && mx < p[0] + NODE && my >= p[1] && my < p[1] + NODE;
-            node(g, d, s, p[0], p[1], hover, time);
-            if (hover) tip = spellTip(d, s);
-        }
-        for (Passive ps : Passive.values()) {
-            int[] p = passivePos(ps);
-            boolean hover = mx >= p[0] && mx < p[0] + 22 && my >= p[1] && my < p[1] + 22;
-            passive(g, d, ps, p[0], p[1], hover);
-            if (hover) tip = passiveTip(d, ps);
+        for (Skill s : Skill.values()) {
+            if (s.school != tab) continue;
+            int[] c = pos(s);
+            boolean hover = in(mx, my, c[0], c[1], NODE, NODE);
+            node(g, d, s, c[0], c[1], hover, time);
+            if (hover) tip = tip(d, s);
         }
 
-        // нижняя строка
+        // ячейки
+        g.drawCenteredString(font, Component.translatable("screen.yukicore.grimoire.slots"), x0 + W / 2, y0 + H - 70, 0xFF8FA0B8);
+        for (int i = 0; i < MagicData.SLOTS; i++) {
+            int[] c = slotPos(i);
+            Skill s = d.slotSkill(i);
+            boolean active = i == d.activeSlot;
+            g.fill(c[0] - 1, c[1] - 1, c[0] + 23, c[1] + 23, active ? 0xFFFFE6A0 : 0xFF3A4458);
+            g.fill(c[0], c[1], c[0] + 22, c[1] + 22, 0xFF0A0E18);
+            if (s != null) g.blit(MagicHud.icon(s.id()), c[0] + 3, c[1] + 3, 0, 0, 16, 16, 16, 16);
+            g.drawString(font, String.valueOf(i + 1), c[0] + 1, c[1] + 1, 0x80FFFFFF, false);
+            if (s != null && in(mx, my, c[0], c[1], 22, 22)) tip = tip(d, s);
+        }
+
         Component foot = Component.translatable("screen.yukicore.grimoire.footer", (int) d.mana, (int) Magic.maxMana(pl),
                 d.crystals, Component.literal(d.trial[0] ? "✔" : "✘").withStyle(d.trial[0] ? ChatFormatting.GREEN : ChatFormatting.RED),
                 Component.literal(d.trial[1] ? "✔" : "✘").withStyle(d.trial[1] ? ChatFormatting.GREEN : ChatFormatting.RED));
-        g.fill(x0 + 8, y0 + H - 30, x0 + W - 8, y0 + H - 29, 0x40FFFFFF);
-        g.drawCenteredString(font, foot, x0 + W / 2, y0 + H - 25, 0xFFDDE6F4);
+        g.drawCenteredString(font, foot, x0 + W / 2, y0 + H - 26, 0xFFDDE6F4);
         g.pose().pushPose();
-        g.pose().translate(x0 + W / 2f, y0 + H - 12, 0);
+        g.pose().translate(x0 + W / 2f, y0 + H - 13, 0);
         g.pose().scale(0.8f, 0.8f, 1);
         g.drawCenteredString(font, Component.translatable("screen.yukicore.grimoire.hint"), 0, 0, 0xFF8A98B0);
         g.pose().popPose();
@@ -116,67 +137,55 @@ public class GrimoireScreen extends Screen {
         if (tip != null) g.renderTooltip(font, tip, mx, my);
     }
 
-    private void header(GuiGraphics g, MagicData d, School s) {
-        int cx = colX(s);
-        boolean ice = s == School.ICE;
-        g.drawCenteredString(font, Component.translatable("magic.yukicore.school." + s.id).withStyle(ChatFormatting.BOLD),
-                cx, y0 + 22, ice ? 0xFFBFEFFF : 0xFFFFC080);
-        int lvl = d.level(s);
-        g.drawCenteredString(font, Component.translatable("screen.yukicore.grimoire.level", lvl, d.points[s.ordinal()]),
-                cx, y0 + 34, 0xFFE8EEF8);
-        int bw = 140, bx = cx - bw / 2, by = y0 + 46;
-        float k = lvl >= MagicData.MAX_LEVEL ? 1 : d.xp[s.ordinal()] / (float) MagicData.xpToNext(lvl);
-        g.fill(bx - 1, by - 1, bx + bw + 1, by + 5, 0xFF05080F);
-        g.fillGradient(bx, by, bx + (int) (bw * k), by + 4, 0xFF000000 | s.color, 0xFF000000 | s.dark);
-    }
-
-    private void node(GuiGraphics g, MagicData d, Spell s, int x, int y, boolean hover, float time) {
+    private void node(GuiGraphics g, MagicData d, Skill s, int x, int y, boolean hover, float time) {
         int rank = d.rank(s);
-        boolean can = canUpgrade(d, s);
-        int border = rank > 0 ? 0xFFFFD060 : can ? (0xFF000000 | s.school.color) : 0xFF3A4458;
-        if (can) {
-            float pulse = 0.5f + 0.5f * Mth.sin(time * 4);
-            border = YukiTheme.lerpColor(pulse, border, 0xFFFFFFFF);
+        boolean can = d.canUpgrade(s);
+        boolean open = d.unlocked(s);
+        int col = 0xFF000000 | s.school.color;
+        int border = rank > 0 ? 0xFFFFD060 : can ? col : open ? 0xFF5A6478 : 0xFF2A3040;
+        if (can) border = YukiTheme.lerpColor(0.5f + 0.5f * Mth.sin(time * 4), border, 0xFFFFFFFF);
+        boolean inSlot = false;
+        for (int i : d.slots) if (i == s.ordinal()) inSlot = true;
+        if (inSlot) g.fill(x - 3, y - 3, x + NODE + 3, y + NODE + 3, 0x50FFFFFF);
+        if (s.passive()) {
+            // пассивки — «ромбики» поменьше
+            g.fill(x + 1, y + 1, x + NODE - 1, y + NODE - 1, border);
+            g.fill(x + 2, y + 2, x + NODE - 2, y + NODE - 2, hover ? 0xFF1A2438 : 0xFF0A0E18);
+        } else {
+            g.fill(x - 1, y - 1, x + NODE + 1, y + NODE + 1, border);
+            g.fill(x, y, x + NODE, y + NODE, hover ? 0xFF1A2438 : 0xFF0A0E18);
         }
-        if (d.selected == s.ordinal()) g.fill(x - 3, y - 3, x + NODE + 3, y + NODE + 3, 0x70FFFFFF);
-        g.fill(x - 1, y - 1, x + NODE + 1, y + NODE + 1, border);
-        g.fill(x, y, x + NODE, y + NODE, hover ? 0xFF1A2438 : 0xFF0A0E18);
-        g.blit(MagicHud.icon(s.id()), x + 4, y + 4, 0, 0, 20, 20, 20, 20);
-        if (rank == 0) g.fill(x, y, x + NODE, y + NODE, 0xA0000000);
-        if (s.ultimate()) g.drawString(font, "★", x + NODE - 6, y - 4, 0xFFFFD060, true);
-        for (int i = 0; i < Spell.MAX_RANK; i++) {
-            int px = x + 2 + i * 5;
-            g.fill(px, y + NODE + 3, px + 4, y + NODE + 6, i < rank ? 0xFFFFD060 : 0xFF2A3040);
+        g.blit(MagicHud.icon(s.id()), x + 3, y + 3, 0, 0, 20, 20, 20, 20);
+        if (rank == 0) g.fill(x, y, x + NODE, y + NODE, open ? 0x90000000 : 0xC8000000);
+        if (s.ultimate()) g.drawString(font, "★", x + NODE - 5, y - 4, 0xFFFFD060, true);
+        for (int i = 0; i < Skill.MAX_RANK; i++) {
+            int px = x + 1 + i * 5;
+            g.fill(px, y + NODE + 3, px + 4, y + NODE + 5, i < rank ? 0xFFFFD060 : 0xFF2A3040);
         }
     }
 
-    private void passive(GuiGraphics g, MagicData d, Passive p, int x, int y, boolean hover) {
-        int rank = d.passive(p);
-        int border = rank > 0 ? 0xFFFFD060 : d.points[p.school.ordinal()] > 0 ? (0xFF000000 | p.school.color) : 0xFF3A4458;
-        g.fill(x - 1, y - 1, x + 23, y + 23, border);
-        g.fill(x, y, x + 22, y + 22, hover ? 0xFF1A2438 : 0xFF0A0E18);
-        g.blit(MagicHud.icon(p.id()), x + 3, y + 3, 0, 0, 16, 16, 16, 16);
-        g.drawCenteredString(font, rank + "/" + Passive.MAX_RANK, x + 11, y + 25, 0xFFAFC4DA);
-    }
-
-    private boolean canUpgrade(MagicData d, Spell s) {
-        int r = d.rank(s), i = s.school.ordinal();
-        return r < Spell.MAX_RANK && d.points[i] >= s.upgradeCost(r) && d.level[i] >= s.requiredLevel + r * 2
-                && (!s.ultimate() || d.trial[i]);
-    }
-
-    private List<FormattedCharSequence> spellTip(MagicData d, Spell s) {
+    private List<FormattedCharSequence> tip(MagicData d, Skill s) {
         List<FormattedCharSequence> out = new ArrayList<>();
         int r = d.rank(s), i = s.school.ordinal();
         ChatFormatting c = s.school == School.ICE ? ChatFormatting.AQUA : ChatFormatting.GOLD;
         out.add(Component.translatable("spell.yukicore." + s.id()).withStyle(c, ChatFormatting.BOLD).getVisualOrderText());
-        out.addAll(font.split(Component.translatable("spell.yukicore." + s.id() + ".desc").withStyle(ChatFormatting.GRAY), 220));
-        out.add(Component.translatable("screen.yukicore.grimoire.rank", r, Spell.MAX_RANK).withStyle(ChatFormatting.YELLOW).getVisualOrderText());
-        int shown = Math.max(1, r);
-        out.add(Component.translatable("screen.yukicore.grimoire.cost", s.cost(shown), String.format("%.1f", s.cooldown(shown) / 20f))
-                .withStyle(ChatFormatting.BLUE).getVisualOrderText());
-        if (r < Spell.MAX_RANK) {
-            int need = s.requiredLevel + r * 2;
+        out.add(Component.translatable("screen.yukicore.grimoire.kind." + s.kind.name().toLowerCase(java.util.Locale.ROOT))
+                .withStyle(ChatFormatting.DARK_PURPLE).getVisualOrderText());
+        out.addAll(font.split(Component.translatable("spell.yukicore." + s.id() + ".desc").withStyle(ChatFormatting.GRAY), 230));
+        out.add(Component.translatable("screen.yukicore.grimoire.rank", r, Skill.MAX_RANK).withStyle(ChatFormatting.YELLOW).getVisualOrderText());
+        Player pl = Minecraft.getInstance().player;
+        if (!s.passive() && pl != null) {
+            out.add(Component.translatable("screen.yukicore.grimoire.cost", Magic.cost(pl, s),
+                    String.format("%.1f", Magic.cooldown(pl, s) / 20f)).withStyle(ChatFormatting.BLUE).getVisualOrderText());
+        }
+        if (r < Skill.MAX_RANK) {
+            for (Skill p : s.parents()) {
+                if (d.rank(p) <= 0) {
+                    out.add(Component.translatable("screen.yukicore.grimoire.need_parent",
+                            Component.translatable("spell.yukicore." + p.id())).withStyle(ChatFormatting.RED).getVisualOrderText());
+                }
+            }
+            int need = s.requiredLevel(r);
             out.add(Component.translatable("screen.yukicore.grimoire.need_level", need)
                     .withStyle(d.level[i] >= need ? ChatFormatting.GREEN : ChatFormatting.RED).getVisualOrderText());
             if (s.ultimate() && !d.trial[i]) {
@@ -186,40 +195,41 @@ public class GrimoireScreen extends Screen {
             out.add(Component.translatable("screen.yukicore.grimoire.click_upgrade", s.upgradeCost(r))
                     .withStyle(ChatFormatting.DARK_GRAY).getVisualOrderText());
         }
-        if (r > 0) out.add(Component.translatable("screen.yukicore.grimoire.click_select").withStyle(ChatFormatting.DARK_GRAY).getVisualOrderText());
-        return out;
-    }
-
-    private List<FormattedCharSequence> passiveTip(MagicData d, Passive p) {
-        List<FormattedCharSequence> out = new ArrayList<>();
-        out.add(Component.translatable("passive.yukicore." + p.id()).withStyle(
-                p.school == School.ICE ? ChatFormatting.AQUA : ChatFormatting.GOLD, ChatFormatting.BOLD).getVisualOrderText());
-        out.addAll(font.split(Component.translatable("passive.yukicore." + p.id() + ".desc").withStyle(ChatFormatting.GRAY), 220));
-        out.add(Component.translatable("screen.yukicore.grimoire.rank", d.passive(p), Passive.MAX_RANK)
-                .withStyle(ChatFormatting.YELLOW).getVisualOrderText());
-        out.add(Component.translatable("screen.yukicore.grimoire.click_upgrade", 1).withStyle(ChatFormatting.DARK_GRAY).getVisualOrderText());
+        if (r > 0 && !s.passive()) {
+            out.add(Component.translatable("screen.yukicore.grimoire.click_select").withStyle(ChatFormatting.DARK_GRAY).getVisualOrderText());
+        }
         return out;
     }
 
     @Override
     public boolean mouseClicked(double mx, double my, int button) {
-        for (Spell s : Spell.values()) {
-            int[] p = spellPos(s);
-            if (mx >= p[0] && mx < p[0] + NODE && my >= p[1] && my < p[1] + NODE) {
-                if (button == 1) {
-                    PacketDistributor.sendToServer(new MagicNet.Select(s.ordinal()));
-                    Player pl = Minecraft.getInstance().player;
-                    if (pl != null && Magic.get(pl).rank(s) > 0) Magic.get(pl).selected = s.ordinal();
-                } else {
-                    PacketDistributor.sendToServer(new MagicNet.Upgrade(0, s.ordinal()));
-                }
+        for (School s : School.values()) {
+            int[] t = tabPos(s);
+            if (in(mx, my, t[0], t[1], t[2], t[3])) {
+                tab = s;
                 return true;
             }
         }
-        for (Passive ps : Passive.values()) {
-            int[] p = passivePos(ps);
-            if (mx >= p[0] && mx < p[0] + 22 && my >= p[1] && my < p[1] + 22) {
-                PacketDistributor.sendToServer(new MagicNet.Upgrade(1, ps.ordinal()));
+        Player pl = Minecraft.getInstance().player;
+        for (Skill s : Skill.values()) {
+            if (s.school != tab) continue;
+            int[] c = pos(s);
+            if (!in(mx, my, c[0], c[1], NODE, NODE)) continue;
+            if (button == 1 && !s.passive()) {
+                if (pl != null) {
+                    MagicData d = Magic.get(pl);
+                    if (d.rank(s) > 0) PacketDistributor.sendToServer(new MagicNet.Assign(d.activeSlot, s.ordinal()));
+                }
+            } else if (button == 0) {
+                PacketDistributor.sendToServer(new MagicNet.Upgrade(s.ordinal()));
+            }
+            return true;
+        }
+        for (int i = 0; i < MagicData.SLOTS; i++) {
+            int[] c = slotPos(i);
+            if (in(mx, my, c[0], c[1], 22, 22)) {
+                if (pl != null) Magic.get(pl).activeSlot = i;
+                PacketDistributor.sendToServer(new MagicNet.Assign(i, -1));
                 return true;
             }
         }
@@ -235,13 +245,15 @@ public class GrimoireScreen extends Screen {
         return super.keyPressed(key, scan, mods);
     }
 
-    private void particles(GuiGraphics g, float time) {
-        for (int i = 0; i < 46; i++) {
+    private static boolean in(double mx, double my, int x, int y, int w, int h) {
+        return mx >= x && mx < x + w && my >= y && my < y + h;
+    }
+
+    private void particles(GuiGraphics g, float time, boolean ice) {
+        for (int i = 0; i < 60; i++) {
             float h1 = hash(i * 7 + 1), h2 = hash(i * 13 + 5), h3 = hash(i * 3 + 11);
-            boolean ice = i % 2 == 0;
-            int px = x0 + (ice ? 0 : W / 2) + (int) (h1 * (W / 2 - 4)) + 2;
-            float speed = 8 + h3 * 14;
-            float off = (time * speed + h2 * H) % H;
+            int px = x0 + 2 + (int) (h1 * (W - 4));
+            float off = (time * (8 + h3 * 14) + h2 * H) % H;
             int py = ice ? y0 + (int) off : y0 + H - (int) off;
             int size = h3 > 0.7f ? 2 : 1;
             int col = ice ? 0x90E8F6FF : (h3 > 0.5f ? 0xA0FFB040 : 0x90FF6A20);
@@ -254,11 +266,11 @@ public class GrimoireScreen extends Screen {
         return ((n * (n * n * 15731 + 789221) + 1376312589) & 0x7fffffff) / (float) 0x7fffffff;
     }
 
-    private static void line(GuiGraphics g, int x1, int y1, int x2, int y2, int color) {
+    private static void line(GuiGraphics g, int x1, int y1, int x2, int y2, int color, boolean thick) {
         int steps = Math.max(Math.abs(x2 - x1), Math.abs(y2 - y1));
-        for (int i = 0; i <= steps; i += 2) {
+        for (int i = 0; i <= steps; i += thick ? 1 : 2) {
             int x = x1 + (x2 - x1) * i / Math.max(1, steps), y = y1 + (y2 - y1) * i / Math.max(1, steps);
-            g.fill(x, y, x + 1, y + 1, color);
+            g.fill(x, y, x + 1, y + (thick ? 2 : 1), color);
         }
     }
 }

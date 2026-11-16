@@ -472,3 +472,192 @@ def build():
         models[name] = (root, size)
         textures[name] = texture(root, size, 900 + i)
     return java(models), textures
+
+
+# =========================================================================== 3D-броня
+MATS.update({
+    "cloth_ice": (0x8FC8F0, 0x3A6AB0, 0xE0F4FF, "cloth", False),
+    "cloth_ice_dark": (0x2C5A96, 0x14284A, 0x6EA8D8, "cloth", False),
+    "fur": (0xF4F8FF, 0xB8C8DC, 0xFFFFFF, "hair", False),
+    "cloth_fire": (0xC8301A, 0x6A1008, 0xFF8A4A, "cloth", False),
+    "cloth_fire_dark": (0x5A120A, 0x2A0604, 0xA0301A, "cloth", False),
+    "plate_ice": (0xBFDDF4, 0x5A86B4, 0xFFFFFF, "metal", False),
+    "plate_gold": (0xF2C030, 0x9A6A10, 0xFFF0A0, "metal", False),
+    "plate_star": (0xE8E0FF, 0x7A70C0, 0xFFFFFF, "metal", False),
+})
+
+HUMAN = {"head": (0, 0, 0), "hat": (0, 0, 0), "body": (0, 0, 0), "right_arm": (-5, 2, 0), "left_arm": (5, 2, 0),
+         "right_leg": (-1.9, 12, 0), "left_leg": (1.9, 12, 0)}
+
+
+def _armor(parts):
+    """parts: {базовая часть: [дочерние части]}; дочерние имена начинаются с h_/c_/l_/b_ (шлем/нагрудник/поножи/ботинки)."""
+    return P("root", (0, 0, 0), children=[P(n, HUMAN[n], children=parts.get(n, [])) for n in HUMAN])
+
+
+def _limbs(prefix, mat_arm, mat_leg, extra_arm=None, extra_leg=None, boot=None, boot_trim=None):
+    """Рукава (c_), штанины (l_) и сапоги (b_) для обеих сторон."""
+    out = {}
+    for side, sx in (("r", -1), ("l", 1)):
+        arm = [C(-3 if sx < 0 else -1, -2, -2, 4, 12, 4, mat_arm, 0.6)]
+        if extra_arm:
+            arm += extra_arm(sx)
+        out["right_arm" if sx < 0 else "left_arm"] = [P(f"c_{prefix}arm_{side}", (0, 0, 0), cubes=arm)]
+        leg = [C(-2, 0, -2, 4, 12, 4, mat_leg, 0.45)]
+        if extra_leg:
+            leg += extra_leg(sx)
+        legs = [P(f"l_{prefix}leg_{side}", (0, 0, 0), cubes=leg)]
+        if boot:
+            bc = [C(-2, 7, -2, 4, 5, 4, boot, 0.75)]
+            if boot_trim:
+                bc.append(C(-2.5, 6, -2.5, 5, 2, 5, boot_trim, 0.3))
+            legs.append(P(f"b_{prefix}boot_{side}", (0, 0, 0), cubes=bc))
+        out["right_leg" if sx < 0 else "left_leg"] = legs
+    return out
+
+
+def armor_cryomancer():
+    parts = _limbs("", "cloth_ice", "cloth_ice_dark",
+                   extra_arm=lambda sx: [C(-3.5 if sx < 0 else -1.5, 6, -2.5, 5, 5, 5, "fur", 0.1),
+                                         C(-3.5 if sx < 0 else -1.5, -3, -2.5, 5, 3, 5, "plate_ice", 0.2)],
+                   boot="cloth_ice_dark", boot_trim="fur")
+    parts["head"] = [P("h_hood", (0, 0, 0), cubes=[C(-4, -8, -4, 8, 8, 8, "cloth_ice", 1.0),
+                                                   C(-2, -10, 2, 4, 3, 4, "cloth_ice", 0.2)],
+                       children=[P("h_gem", (0, -8, -4.6), (0.3, 0, 0), [C(-1, -3, -0.5, 2, 3, 1, "ice_glow")])])]
+    parts["body"] = [P("c_robe", (0, 0, 0), cubes=[C(-4, 0, -2, 8, 12, 4, "cloth_ice", 0.9),
+                                                    C(-5, -0.5, -3, 10, 3, 6, "fur", 0.2),
+                                                    C(-1, 3, -3.2, 2, 6, 1, "ice_glow")]),
+                     P("c_cape", (0, 0, 2.8), (0.12, 0, 0), [C(-4.5, 0, 0, 9, 20, 1, "cloth_ice_dark")]),
+                     P("l_skirt", (0, 0, 0), cubes=[C(-4, 9, -2, 8, 5, 4, "cloth_ice_dark", 1.0)])]
+    return _armor(parts)
+
+
+def armor_pyromancer():
+    parts = _limbs("", "cloth_fire", "cloth_fire_dark",
+                   extra_arm=lambda sx: [C(-3.5 if sx < 0 else -1.5, -3, -2.5, 5, 3, 5, "plate_gold", 0.2),
+                                         C(-3.5 if sx < 0 else -1.5, 7, -2.5, 5, 3, 5, "plate_gold", 0.1)],
+                   boot="cloth_fire_dark", boot_trim="plate_gold")
+    parts["head"] = [P("h_hood", (0, 0, 0), cubes=[C(-4, -8, -4, 8, 8, 8, "cloth_fire", 1.0),
+                                                   C(-4.5, -1, -4.6, 9, 1, 1, "plate_gold")],
+                       children=[P("h_flame", (0, -9, 0), (-0.25, 0, 0), [C(-1, -4, -1, 2, 4, 2, "fire"),
+                                                                          C(-2, -2, -2, 4, 2, 4, "fire")])])]
+    parts["body"] = [P("c_robe", (0, 0, 0), cubes=[C(-4, 0, -2, 8, 12, 4, "cloth_fire", 0.9),
+                                                    C(-4.5, 8, -3, 9, 2, 6, "plate_gold", 0.2),
+                                                    C(-1, 2, -3.2, 2, 5, 1, "lava")]),
+                     P("c_cape", (0, 0, 2.8), (0.12, 0, 0), [C(-4.5, 0, 0, 9, 20, 1, "cloth_fire_dark")]),
+                     P("l_skirt", (0, 0, 0), cubes=[C(-4, 9, -2, 8, 5, 4, "cloth_fire_dark", 1.0)])]
+    return _armor(parts)
+
+
+def _wings(prefix, mat, tip, glow):
+    out = []
+    for side, sx in (("r", -1), ("l", 1)):
+        out.append(P(f"c_{prefix}wing_{side}", (sx * 2, 2, 3), (0.2, sx * 0.55, sx * 0.35),
+                     [C(-12 if sx < 0 else 0, -6, 0, 12, 14, 1, mat)],
+                     [P(f"c_{prefix}wing2_{side}", (sx * 12, -4, 0), (0, sx * 0.25, sx * 0.3),
+                        [C(-10 if sx < 0 else 0, -4, 0, 10, 12, 1, tip)])]))
+    return out
+
+
+def armor_yuki_regalia():
+    def crystals(sx):
+        x = -3.5 if sx < 0 else -1.5
+        return [C(x, -3.5, -2.5, 5, 4, 5, "plate_ice", 0.3)]
+    parts = _limbs("", "cloth_ice", "cloth_ice_dark", extra_arm=crystals, boot="plate_ice", boot_trim="ice_glow")
+    for side, sx in (("r", -1), ("l", 1)):
+        parts["right_arm" if sx < 0 else "left_arm"].append(
+            P(f"c_spike_{side}", (sx * 1.5, -3, 0), (0, 0, sx * 0.5), [C(-1, -6, -1, 2, 6, 2, "ice_glow")]))
+    parts["head"] = [P("h_circlet", (0, 0, 0), cubes=[C(-4, -8, -4, 8, 8, 8, "fur", 0.6),
+                                                      C(-4.5, -8.6, -4.5, 9, 2, 9, "plate_ice", 0.3)],
+                       children=[P("h_c1", (0, -9, -3.5), (-0.15, 0, 0), [C(-1, -7, -1, 2, 7, 2, "ice_glow")]),
+                                 P("h_c2", (-3, -9, -3), (-0.1, 0, -0.35), [C(-1, -5, -1, 2, 5, 2, "ice_glow")]),
+                                 P("h_c3", (3, -9, -3), (-0.1, 0, 0.35), [C(-1, -5, -1, 2, 5, 2, "ice_glow")]),
+                                 P("h_c4", (-4, -9, 1), (0, 0, -0.6), [C(-1, -4, -1, 2, 4, 2, "ice_glow")]),
+                                 P("h_c5", (4, -9, 1), (0, 0, 0.6), [C(-1, -4, -1, 2, 4, 2, "ice_glow")])])]
+    parts["body"] = [P("c_robe", (0, 0, 0), cubes=[C(-4, 0, -2, 8, 12, 4, "cloth_ice", 0.9),
+                                                    C(-4.5, 0, -3, 9, 7, 6, "plate_ice", 0.4),
+                                                    C(-1.5, 2, -3.6, 3, 3, 1, "ice_glow")])] \
+        + _wings("", "ice_glow", "star_glow", True) + [
+        P("l_skirt", (0, 0, 0), cubes=[C(-4, 9, -2, 8, 5, 4, "cloth_ice_dark", 1.0)])]
+    return _armor(parts)
+
+
+def armor_sintara_regalia():
+    def plates(sx):
+        x = -3.5 if sx < 0 else -1.5
+        return [C(x, -3.5, -2.5, 5, 4, 5, "plate_gold", 0.3), C(x, 7, -2.5, 5, 3, 5, "cloth_fire_dark", 0.2)]
+    parts = _limbs("", "cloth_fire", "cloth_fire_dark", extra_arm=plates, boot="plate_gold", boot_trim="lava")
+    for side, sx in (("r", -1), ("l", 1)):
+        parts["right_arm" if sx < 0 else "left_arm"].append(
+            P(f"c_flame_{side}", (sx * 1.5, -3.5, 0), (0, 0, sx * 0.35), [C(-1.5, -5, -1.5, 3, 5, 3, "fire")]))
+    feathers = [P(f"h_f{i}", (0, -8.5, 1), (-0.5 - i * 0.12, (i - 2) * 0.35, 0), [C(-0.5, -8, 0, 1, 8, 2, "fire")])
+                for i in range(5)]
+    parts["head"] = [P("h_crown", (0, 0, 0), cubes=[C(-4, -8, -4, 8, 8, 8, "cloth_fire", 0.6),
+                                                    C(-4.5, -9, -4.5, 9, 2, 9, "plate_gold", 0.3),
+                                                    C(-1, -10.5, -4.8, 2, 2, 1, "lava")], children=feathers)]
+    parts["body"] = [P("c_robe", (0, 0, 0), cubes=[C(-4, 0, -2, 8, 12, 4, "cloth_fire", 0.9),
+                                                    C(-4.5, 0, -3, 9, 7, 6, "plate_gold", 0.4),
+                                                    C(-1.5, 2, -3.6, 3, 3, 1, "lava")])] \
+        + _wings("", "feather", "fire", True) + [
+        P("l_skirt", (0, 0, 0), cubes=[C(-4, 9, -2, 8, 5, 4, "cloth_fire_dark", 1.0)])]
+    return _armor(parts)
+
+
+def armor_eternal():
+    def pauldron(sx):
+        x = -4 if sx < 0 else -2
+        return [C(x, -4, -3, 6, 5, 6, "plate_ice", 0.3), C(x, 6, -2.5, 6, 4, 5, "plate_gold", 0.1)]
+    parts = _limbs("", "plate_ice", "plate_star", extra_arm=pauldron, boot="plate_ice", boot_trim="plate_gold")
+    for side, sx in (("r", -1), ("l", 1)):
+        parts["right_arm" if sx < 0 else "left_arm"].append(
+            P(f"c_horn_{side}", (sx * 2, -4, 0), (0, 0, sx * 0.7), [C(-1, -7, -1, 2, 7, 2, "ice_glow")]))
+        parts["right_leg" if sx < 0 else "left_leg"].append(
+            P(f"l_knee_{side}", (0, 4, -2.5), cubes=[C(-2, -1, -1, 4, 3, 1, "plate_gold", 0.2)]))
+    parts["head"] = [P("h_helm", (0, 0, 0), cubes=[C(-4, -8, -4, 8, 8, 8, "plate_ice", 1.0),
+                                                   C(-3, -5, -5.2, 6, 1, 1, "eye_ice"),
+                                                   C(-0.5, -10, -4.5, 1, 3, 8, "plate_gold")],
+                       children=[P("h_horn_r", (-4.5, -7, 0), (0, 0, -0.9), [C(-1, -7, -1, 2, 7, 2, "ice_glow")],
+                                   [P("h_horn_r2", (0, -7, 0), (0, 0, 0.6), [C(-0.5, -4, -0.5, 1, 4, 1, "star_glow")])]),
+                                 P("h_horn_l", (4.5, -7, 0), (0, 0, 0.9), [C(-1, -7, -1, 2, 7, 2, "ice_glow")],
+                                   [P("h_horn_l2", (0, -7, 0), (0, 0, -0.6), [C(-0.5, -4, -0.5, 1, 4, 1, "star_glow")])])])]
+    parts["body"] = [P("c_plate", (0, 0, 0), cubes=[C(-4, 0, -2, 8, 12, 4, "plate_ice", 1.0),
+                                                     C(-3, 1, -3.4, 6, 6, 1, "plate_gold"),
+                                                     C(-1.5, 2.5, -3.8, 3, 3, 1, "ice_glow")]),
+                     P("c_crystals", (0, 2, 3), children=[
+                         P("c_cr1", (-2.5, 0, 0), (-0.4, 0, -0.35), [C(-1, -9, -1, 2, 9, 2, "ice_glow")]),
+                         P("c_cr2", (2.5, 0, 0), (-0.4, 0, 0.35), [C(-1, -9, -1, 2, 9, 2, "ice_glow")]),
+                         P("c_cr3", (0, 1, 0), (-0.5, 0, 0), [C(-1.5, -12, -1.5, 3, 12, 3, "star_glow")])]),
+                     P("c_cape", (0, 0, 2.8), (0.12, 0, 0), [C(-4.5, 0, 0, 9, 19, 1, "cloth_ice_dark")]),
+                     P("l_belt", (0, 0, 0), cubes=[C(-4, 9, -2, 8, 4, 4, "plate_gold", 1.1)])]
+    return _armor(parts)
+
+
+ARMORS = {
+    "cryomancer": armor_cryomancer,
+    "pyromancer": armor_pyromancer,
+    "yuki_regalia": armor_yuki_regalia,
+    "sintara_regalia": armor_sintara_regalia,
+    "eternal": armor_eternal,
+}
+
+
+def build_armor():
+    """→ (java_source, {set: (texture, glow)})"""
+    global ATLAS_W
+    models, textures = {}, {}
+    saved = ATLAS_W
+    ATLAS_W = 128
+    try:
+        for i, (name, fn) in enumerate(ARMORS.items()):
+            root = fn()
+            names = [p["name"] for p, _ in _walk(root)]
+            assert len(names) == len(set(names)), f"{name}: duplicate part names"
+            size = pack(root)
+            models[name] = (root, size)
+            textures[name] = texture(root, size, 1700 + i)
+    finally:
+        ATLAS_W = saved
+    src = java(models).replace("public final class BossLayers", "public final class ArmorLayers") \
+        .replace("private BossLayers()", "private ArmorLayers()") \
+        .replace("package dev.yukito.yukicore.client.boss;", "package dev.yukito.yukicore.client.armor;")
+    return src, textures

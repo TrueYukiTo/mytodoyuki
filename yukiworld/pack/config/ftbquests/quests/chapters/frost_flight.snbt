@@ -42,7 +42,7 @@
 	quests: [
 		{
 			dependencies: [
-				"173948641B55379B"
+				"51481FD673C806CF"
 			]
 			icon: {
 				count: 1

@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    }
+  ],
+  "type": "yukicore:frost_forging",
+  "ingredients": [
+    {
+      "item": "ae2:matter_ball",
+      "count": 16
+    },
+    {
+      "item": "yukicore:stellar_shard",
+      "count": 1
+    }
+  ],
+  "result": {
+    "id": "ae2:singularity",
+    "count": 2
+  },
+  "energy": 20000000,
+  "time": 200
+}

@@ -181,18 +181,40 @@ public final class ModItems {
     public static final DeferredItem<Item> FLAME_RING = ring("flame_ring", School.FIRE, 0.1f, Rarity.RARE);
     public static final DeferredItem<Item> RING_OF_ETERNAL_WINTER = ring("ring_of_eternal_winter", School.ICE, 0.2f, Rarity.EPIC);
     public static final DeferredItem<Item> RING_OF_SINTARA = ring("ring_of_sintara", School.FIRE, 0.2f, Rarity.EPIC);
-    public static final DeferredItem<Item> CRYOMANCER_HOOD = robe("cryomancer_hood", ModArmorMaterials.CRYOMANCER, ArmorItem.Type.HELMET, School.ICE);
-    public static final DeferredItem<Item> CRYOMANCER_ROBE = robe("cryomancer_robe", ModArmorMaterials.CRYOMANCER, ArmorItem.Type.CHESTPLATE, School.ICE);
-    public static final DeferredItem<Item> CRYOMANCER_LEGGINGS = robe("cryomancer_leggings", ModArmorMaterials.CRYOMANCER, ArmorItem.Type.LEGGINGS, School.ICE);
-    public static final DeferredItem<Item> CRYOMANCER_BOOTS = robe("cryomancer_boots", ModArmorMaterials.CRYOMANCER, ArmorItem.Type.BOOTS, School.ICE);
-    public static final DeferredItem<Item> PYROMANCER_HOOD = robe("pyromancer_hood", ModArmorMaterials.PYROMANCER, ArmorItem.Type.HELMET, School.FIRE);
-    public static final DeferredItem<Item> PYROMANCER_ROBE = robe("pyromancer_robe", ModArmorMaterials.PYROMANCER, ArmorItem.Type.CHESTPLATE, School.FIRE);
-    public static final DeferredItem<Item> PYROMANCER_LEGGINGS = robe("pyromancer_leggings", ModArmorMaterials.PYROMANCER, ArmorItem.Type.LEGGINGS, School.FIRE);
-    public static final DeferredItem<Item> PYROMANCER_BOOTS = robe("pyromancer_boots", ModArmorMaterials.PYROMANCER, ArmorItem.Type.BOOTS, School.FIRE);
+    public static final DeferredItem<Item> CRYOMANCER_HOOD = robe("cryomancer_hood", ModArmorMaterials.CRYOMANCER, ArmorItem.Type.HELMET, School.ICE, 0.06f, 0.05f, 15, YukiArmorItem.CRYOMANCER);
+    public static final DeferredItem<Item> CRYOMANCER_ROBE = robe("cryomancer_robe", ModArmorMaterials.CRYOMANCER, ArmorItem.Type.CHESTPLATE, School.ICE, 0.06f, 0.05f, 15, YukiArmorItem.CRYOMANCER);
+    public static final DeferredItem<Item> CRYOMANCER_LEGGINGS = robe("cryomancer_leggings", ModArmorMaterials.CRYOMANCER, ArmorItem.Type.LEGGINGS, School.ICE, 0.06f, 0.05f, 15, YukiArmorItem.CRYOMANCER);
+    public static final DeferredItem<Item> CRYOMANCER_BOOTS = robe("cryomancer_boots", ModArmorMaterials.CRYOMANCER, ArmorItem.Type.BOOTS, School.ICE, 0.06f, 0.05f, 15, YukiArmorItem.CRYOMANCER);
+    public static final DeferredItem<Item> PYROMANCER_HOOD = robe("pyromancer_hood", ModArmorMaterials.PYROMANCER, ArmorItem.Type.HELMET, School.FIRE, 0.06f, 0.05f, 15, YukiArmorItem.PYROMANCER);
+    public static final DeferredItem<Item> PYROMANCER_ROBE = robe("pyromancer_robe", ModArmorMaterials.PYROMANCER, ArmorItem.Type.CHESTPLATE, School.FIRE, 0.06f, 0.05f, 15, YukiArmorItem.PYROMANCER);
+    public static final DeferredItem<Item> PYROMANCER_LEGGINGS = robe("pyromancer_leggings", ModArmorMaterials.PYROMANCER, ArmorItem.Type.LEGGINGS, School.FIRE, 0.06f, 0.05f, 15, YukiArmorItem.PYROMANCER);
+    public static final DeferredItem<Item> PYROMANCER_BOOTS = robe("pyromancer_boots", ModArmorMaterials.PYROMANCER, ArmorItem.Type.BOOTS, School.FIRE, 0.06f, 0.05f, 15, YukiArmorItem.PYROMANCER);
     public static final DeferredItem<Item> ARCHON_HEART = core("archon_heart", Rarity.EPIC, true);
     public static final DeferredItem<Item> PHOENIX_FEATHER = core("phoenix_feather", Rarity.EPIC, true);
     public static final DeferredItem<Item> SIGIL_ARCHON = sigil("sigil_archon", ModEntities.GLACIAL_ARCHON, null);
     public static final DeferredItem<Item> SIGIL_PHOENIX = sigil("sigil_phoenix", ModEntities.INFERNAL_PHOENIX, null);
+
+    // --- 7.0: регалии магов, Вечная зима, знания ---
+    public static final DeferredItem<Item> YUKI_REGALIA_HOOD = robe("yuki_regalia_hood", ModArmorMaterials.YUKI_REGALIA, ArmorItem.Type.HELMET, School.ICE, 0.15f, 0.08f, 60, YukiArmorItem.YUKI_REGALIA);
+    public static final DeferredItem<Item> YUKI_REGALIA_ROBE = robe("yuki_regalia_robe", ModArmorMaterials.YUKI_REGALIA, ArmorItem.Type.CHESTPLATE, School.ICE, 0.15f, 0.08f, 60, YukiArmorItem.YUKI_REGALIA);
+    public static final DeferredItem<Item> YUKI_REGALIA_LEGGINGS = robe("yuki_regalia_leggings", ModArmorMaterials.YUKI_REGALIA, ArmorItem.Type.LEGGINGS, School.ICE, 0.15f, 0.08f, 60, YukiArmorItem.YUKI_REGALIA);
+    public static final DeferredItem<Item> YUKI_REGALIA_BOOTS = robe("yuki_regalia_boots", ModArmorMaterials.YUKI_REGALIA, ArmorItem.Type.BOOTS, School.ICE, 0.15f, 0.08f, 60, YukiArmorItem.YUKI_REGALIA);
+    public static final DeferredItem<Item> SINTARA_REGALIA_HOOD = robe("sintara_regalia_hood", ModArmorMaterials.SINTARA_REGALIA, ArmorItem.Type.HELMET, School.FIRE, 0.15f, 0.08f, 60, YukiArmorItem.SINTARA_REGALIA);
+    public static final DeferredItem<Item> SINTARA_REGALIA_ROBE = robe("sintara_regalia_robe", ModArmorMaterials.SINTARA_REGALIA, ArmorItem.Type.CHESTPLATE, School.FIRE, 0.15f, 0.08f, 60, YukiArmorItem.SINTARA_REGALIA);
+    public static final DeferredItem<Item> SINTARA_REGALIA_LEGGINGS = robe("sintara_regalia_leggings", ModArmorMaterials.SINTARA_REGALIA, ArmorItem.Type.LEGGINGS, School.FIRE, 0.15f, 0.08f, 60, YukiArmorItem.SINTARA_REGALIA);
+    public static final DeferredItem<Item> SINTARA_REGALIA_BOOTS = robe("sintara_regalia_boots", ModArmorMaterials.SINTARA_REGALIA, ArmorItem.Type.BOOTS, School.FIRE, 0.15f, 0.08f, 60, YukiArmorItem.SINTARA_REGALIA);
+    public static final DeferredItem<Item> ETERNAL_HELMET = ITEMS.register("eternal_helmet", () -> new YukiArmorItem(ModArmorMaterials.ETERNAL, ArmorItem.Type.HELMET,
+            toolProps(Rarity.EPIC).component(DataComponents.UNBREAKABLE, new Unbreakable(true)).durability(ArmorItem.Type.HELMET.getDurability(120)), YukiArmorItem.ETERNAL));
+    public static final DeferredItem<Item> ETERNAL_CHESTPLATE = ITEMS.register("eternal_chestplate", () -> new YukiArmorItem(ModArmorMaterials.ETERNAL, ArmorItem.Type.CHESTPLATE,
+            toolProps(Rarity.EPIC).component(DataComponents.UNBREAKABLE, new Unbreakable(true)).durability(ArmorItem.Type.CHESTPLATE.getDurability(120)), YukiArmorItem.ETERNAL));
+    public static final DeferredItem<Item> ETERNAL_LEGGINGS = ITEMS.register("eternal_leggings", () -> new YukiArmorItem(ModArmorMaterials.ETERNAL, ArmorItem.Type.LEGGINGS,
+            toolProps(Rarity.EPIC).component(DataComponents.UNBREAKABLE, new Unbreakable(true)).durability(ArmorItem.Type.LEGGINGS.getDurability(120)), YukiArmorItem.ETERNAL));
+    public static final DeferredItem<Item> ETERNAL_BOOTS = ITEMS.register("eternal_boots", () -> new YukiArmorItem(ModArmorMaterials.ETERNAL, ArmorItem.Type.BOOTS,
+            toolProps(Rarity.EPIC).component(DataComponents.UNBREAKABLE, new Unbreakable(true)).durability(ArmorItem.Type.BOOTS.getDurability(120)), YukiArmorItem.ETERNAL));
+    public static final DeferredItem<Item> GREATER_FROST_ESSENCE = consumable("greater_frost_essence", MagicConsumableItem.Kind.GREATER_FROST_ESSENCE, Rarity.RARE, 64);
+    public static final DeferredItem<Item> GREATER_FLAME_ESSENCE = consumable("greater_flame_essence", MagicConsumableItem.Kind.GREATER_FLAME_ESSENCE, Rarity.RARE, 64);
+    public static final DeferredItem<Item> TOME_OF_WINTER = consumable("tome_of_winter", MagicConsumableItem.Kind.KNOWLEDGE_ICE, Rarity.EPIC, 16);
+    public static final DeferredItem<Item> TOME_OF_FLAME = consumable("tome_of_flame", MagicConsumableItem.Kind.KNOWLEDGE_FIRE, Rarity.EPIC, 16);
 
     // --- снаряды (только внешний вид, в творческой вкладке скрыты) ---
     public static final DeferredItem<Item> ORB_FROST = ITEMS.registerSimpleItem("orb_frost");
@@ -305,9 +327,11 @@ public final class ModItems {
         return ITEMS.register(name, () -> new MagicGearItem(new Item.Properties().stacksTo(1).rarity(rarity), school, power));
     }
 
-    private static DeferredItem<Item> robe(String name, Holder<ArmorMaterial> material, ArmorItem.Type type, School school) {
-        return ITEMS.register(name, () -> new RobeItem(material, type, new Item.Properties().rarity(Rarity.RARE)
-                .durability(type.getDurability(30)), school));
+    private static DeferredItem<Item> robe(String name, Holder<ArmorMaterial> material, ArmorItem.Type type, School school,
+                                           float power, float cheap, float mana, YukiArmorItem.Tier tier) {
+        boolean top = tier.protection() >= 0.1f;
+        return ITEMS.register(name, () -> new RobeItem(material, type, new Item.Properties().rarity(top ? Rarity.EPIC : Rarity.RARE)
+                .fireResistant().durability(type.getDurability(top ? 80 : 30)), school, power, cheap, mana, tier));
     }
 
     private static Item.Properties toolProps(Rarity rarity) {

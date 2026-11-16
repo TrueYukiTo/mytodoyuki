@@ -2,7 +2,7 @@
   "name": "Испытания стихий",
   "category": "yukicore:magic",
   "icon": "yukicore:sigil_archon",
-  "sortnum": 28,
+  "sortnum": 25,
   "pages": [
     {
       "type": "patchouli:text",

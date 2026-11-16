@@ -531,9 +531,9 @@ def build_v5():
     r = {}
     # Морозная кузня
     r["forge/cryosteel_ingot"] = forge([(I("frost_ingot"), 2), ("minecraft:iron_ingot", 2),
-                                        ("minecraft:packed_ice", 1)], I("cryosteel_ingot"), 2, 40_000, 200)
+                                        ("minecraft:packed_ice", 1)], I("cryosteel_ingot"), 2, 2_000_000, 200)
     r["forge/stellar_alloy"] = forge([(I("celestium_ingot"), 1), (I("stellar_shard"), 2), (I("void_shard"), 1),
-                                      (I("starlight_shard"), 2)], I("stellar_alloy"), 1, 4_000_000, 600)
+                                      (I("starlight_shard"), 2)], I("stellar_alloy"), 1, 400_000_000, 600)
     r["forge/frost_plate"] = forge([(I("frost_ingot"), 1)], I("frost_plate"), 2, 5_000, 60)
     for src, out, n in [("raw_frost", "frost_ingot", 2), ("yuki_crystal_ore", "yuki_crystal", 3),
                         ("starlight_ore", "starlight_shard", 2), ("permafrost_ore", "permafrost_crystal", 3),

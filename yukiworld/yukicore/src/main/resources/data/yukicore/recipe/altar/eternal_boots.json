@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 3,
+  "center": {
+    "item": "yukicore:celestium_boots"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:yuki_tear"
+    },
+    {
+      "item": "yukicore:void_scale"
+    },
+    {
+      "item": "yukicore:stellar_alloy"
+    },
+    {
+      "item": "yukicore:stellar_alloy"
+    },
+    {
+      "item": "yukicore:starlight_block"
+    },
+    {
+      "item": "yukicore:cryosteel_block"
+    },
+    {
+      "item": "yukicore:star_shard"
+    },
+    {
+      "item": "yukicore:star_shard"
+    }
+  ],
+  "result": {
+    "id": "yukicore:eternal_boots",
+    "count": 1
+  },
+  "duration": 600
+}

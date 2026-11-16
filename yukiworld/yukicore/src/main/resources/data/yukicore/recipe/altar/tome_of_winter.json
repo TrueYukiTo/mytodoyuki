@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 2,
+  "center": {
+    "item": "minecraft:book"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:greater_frost_essence"
+    },
+    {
+      "item": "yukicore:greater_frost_essence"
+    },
+    {
+      "item": "yukicore:greater_frost_essence"
+    },
+    {
+      "item": "yukicore:greater_frost_essence"
+    },
+    {
+      "item": "yukicore:mana_crystal"
+    },
+    {
+      "item": "yukicore:yuki_crystal"
+    },
+    {
+      "item": "yukicore:yuki_crystal"
+    },
+    {
+      "item": "minecraft:blue_ice"
+    }
+  ],
+  "result": {
+    "id": "yukicore:tome_of_winter",
+    "count": 1
+  },
+  "duration": 300
+}

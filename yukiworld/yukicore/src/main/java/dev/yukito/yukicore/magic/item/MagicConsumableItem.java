@@ -25,7 +25,8 @@ import java.util.List;
 
 /** Расходники магии: зелья маны, эссенции стихий, кристалл маны, свиток забвения. */
 public class MagicConsumableItem extends CoreItem {
-    public enum Kind { MANA_POTION, GREATER_MANA_POTION, FROST_ESSENCE, FLAME_ESSENCE, MANA_CRYSTAL, RESPEC }
+    public enum Kind { MANA_POTION, GREATER_MANA_POTION, FROST_ESSENCE, FLAME_ESSENCE, MANA_CRYSTAL, RESPEC,
+        GREATER_FROST_ESSENCE, GREATER_FLAME_ESSENCE, KNOWLEDGE_ICE, KNOWLEDGE_FIRE }
 
     private final Kind kind;
 
@@ -71,6 +72,16 @@ public class MagicConsumableItem extends CoreItem {
                 d.crystals++;
             }
             case RESPEC -> Magic.respec(p);
+            case GREATER_FROST_ESSENCE -> Magic.addXp(p, School.ICE, 3000);
+            case GREATER_FLAME_ESSENCE -> Magic.addXp(p, School.FIRE, 3000);
+            case KNOWLEDGE_ICE, KNOWLEDGE_FIRE -> {
+                int i = kind == Kind.KNOWLEDGE_ICE ? 0 : 1;
+                if (d.bonusPoints[i] >= 10) {
+                    p.displayClientMessage(Component.translatable("message.yukicore.knowledge_max").withStyle(ChatFormatting.RED), true);
+                    return stack;
+                }
+                d.bonusPoints[i]++;
+            }
         }
         d.dirty = true;
         ServerLevel s = p.serverLevel();

@@ -2,26 +2,26 @@
   "name": "Ракеты Юки",
   "category": "yukicore:space",
   "icon": "yukicore:frost_rocket",
-  "sortnum": 30,
+  "sortnum": 27,
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Ракеты Ad Astra долетают только до 4-го уровня. Дальше нужны ракеты YukiCore (механический крафтер Create)."
+      "text": "Планеты Системы Юки требуют ракет YukiCore (механический крафтер Create): каждая следующая ракета строится из трофеев предыдущей планеты."
     },
     {
       "type": "patchouli:spotlight",
       "item": "yukicore:frost_rocket",
-      "text": "$(l)Морозная ракета$() — 5 уровень: Аврора и Пиролит."
+      "text": "$(l)Морозная ракета$() — 5 уровень: Юкия и Аврора."
     },
     {
       "type": "patchouli:spotlight",
       "item": "yukicore:sintara_rocket",
-      "text": "$(l)Ракета Синтары$() — 6 уровень: Никта."
+      "text": "$(l)Ракета Синтары$() — 6 уровень: Пиролит. Нужны блоки авроры и Корона Метели."
     },
     {
       "type": "patchouli:spotlight",
       "item": "yukicore:star_rocket",
-      "text": "$(l)Звёздная ракета$() — 7 уровень: Целестия."
+      "text": "$(l)Звёздная ракета$() — 7 уровень: Никта и Целестия. Нужны блоки пиролита и Пепельное ядро."
     }
   ]
 }

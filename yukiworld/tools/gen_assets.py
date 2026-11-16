@@ -14,7 +14,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from yukigen import art, book, hd, lang, models, planets, recipes, v6  # noqa: E402
+from yukigen import art, book, hd, lang, models, planets, recipes, v6, v7  # noqa: E402
 from yukigen.art import CRYSTAL, SAKURA, TIERS  # noqa: E402
 from yukigen.pixel import gui_button, gui_handle, logo, nine_slice  # noqa: E402
 
@@ -121,6 +121,7 @@ def main():
     items.update(art.hd_textures_v4())
     items.update(art.hd_textures_v5())
     items.update(v6.item_textures())
+    items.update(v7.item_textures())
     for name, (img, handheld) in items.items():
         write(ASSETS / "textures" / "item" / f"{name}.png", img)
         write(ASSETS / "models" / "item" / f"{name}.json",
@@ -135,7 +136,7 @@ def main():
               {"parent": "minecraft:block/cube_all", "textures": {"all": f"{MOD}:block/{name}"}})
         write(ASSETS / "models" / "item" / f"{name}.json", {"parent": f"{MOD}:block/{name}"})
 
-    for i, (tier, pal) in enumerate(list(TIERS.items()) + [("yuki", art.GOLDPINK)] + list(v6.ARMOR_LAYERS.items())):
+    for i, (tier, pal) in enumerate(list(TIERS.items()) + [("yuki", art.GOLDPINK)] + list(v6.ARMOR_LAYERS.items()) + list(v7.ARMOR_LAYERS.items())):
         for layer in (1, 2):
             write(ASSETS / "textures" / "models" / "armor" / f"{tier}_layer_{layer}.png",
                   hd.armor_layer_hd(layer, pal, i * 10))
@@ -216,6 +217,11 @@ def main():
     # 6.0: 3D-модели боссов — Java-слои + HD-текстуры со светящимся слоем
     java_src, boss_tex = models.build()
     JAVA_BOSS.write_text(java_src, encoding="utf-8")
+    armor_src, armor_tex = models.build_armor()
+    (JAVA_BOSS.parent.parent / "armor" / "ArmorLayers.java").write_text(armor_src, encoding="utf-8")
+    for name, (tex, glow) in armor_tex.items():
+        write(ASSETS / "textures" / "models" / "armor3d" / f"{name}.png", tex)
+        write(ASSETS / "textures" / "models" / "armor3d" / f"{name}_glow.png", glow)
     for boss, (tex, glow) in boss_tex.items():
         write(ASSETS / "textures" / "entity" / "boss" / f"{boss}.png", tex)
         write(ASSETS / "textures" / "entity" / "boss" / f"{boss}_glow.png", glow)
@@ -230,10 +236,10 @@ def main():
     for name, stops in v6.ROCKET_STOPS.items():
         write(ASSETS / "textures" / "entity" / "rocket" / f"{name}.png", v6.rocket_texture(rocket_src, stops))
         write(ASSETS / "models" / "item" / f"{name}.json", rocket_model)
-    icons = v6.spell_icons()
+    icons = v7.skill_icons()
     for name, img in icons.items():
         write(ASSETS / "textures" / "gui" / "spells" / f"{name}.png", img)
-    for name, img in v6.effect_icons(icons).items():
+    for name, img in v7.effect_icons(icons).items():
         write(ASSETS / "textures" / "mob_effect" / f"{name}.png", img)
 
     # ---------------- GUI всей игры
@@ -260,6 +266,9 @@ def main():
     vru, ven = v6.lang()
     lang.RU.update(vru)
     lang.EN.update(ven)
+    vru, ven = v7.lang()
+    lang.RU.update(vru)
+    lang.EN.update(ven)
     write(ASSETS / "lang" / "ru_ru.json", lang.RU)
     write(ASSETS / "lang" / "en_us.json", lang.EN)
     missing_names = [n for n in list(items) + BLOCKS + SPECIAL_BLOCKS
@@ -271,7 +280,7 @@ def main():
     for b in BLOCKS + SPECIAL_BLOCKS:
         write(lt / f"{b}.json", ore_loot(b, *ORES[b]) if b in ORES else self_loot(b))
     for boss, drops in {**BOSS_LOOT, **v6.BOSS_LOOT}.items():
-        drops = drops + v6.BOSS_EXTRA.get(boss, [])
+        drops = drops + v6.BOSS_EXTRA.get(boss, []) + v7.BOSS_EXTRA.get(boss, [])
         write(DATA / MOD / "loot_table" / "entities" / f"{boss}.json", {"type": "minecraft:entity", "pools": [
             {"rolls": 1, "bonus_rolls": 0, "entries": [{"type": "minecraft:item", "name": I(item), "functions": [
                 {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": lo, "max": hi}}]}]}
@@ -280,6 +289,7 @@ def main():
     # ---------------- рецепты
     rec = recipes.build()
     rec.update(v6.recipes())
+    rec.update(v7.recipes())
     for name, r in rec.items():
         write(DATA / MOD / "recipe" / f"{name}.json", r)
     for rel, r in recipes.overrides().items():
@@ -311,7 +321,7 @@ def main():
         idx = ["helmet", "chestplate", "leggings", "boots"].index(piece) if piece in ("helmet", "chestplate", "leggings", "boots") else -1
         if idx >= 0:
             vals += [I(v6.ROBES[idx]), I(v6.ROBES[4 + idx]), I(v6.SUIT_ITEMS[idx]), I(v6.SUIT_ITEMS[4 + idx]),
-                     I(v6.SUIT_ITEMS[8 + idx])]
+                     I(v6.SUIT_ITEMS[8 + idx]), I(v7.NEW_ARMOR[idx]), I(v7.NEW_ARMOR[4 + idx]), I(v7.NEW_ARMOR[8 + idx])]
         write(tags / "item" / f"{tag}.json", {"values": vals})
     aa_tags = DATA / "ad_astra" / "tags" / "item"
     write(aa_tags / "space_suit_items.json", {"replace": False, "values": [I(n) for n in v6.SUIT_ITEMS]})

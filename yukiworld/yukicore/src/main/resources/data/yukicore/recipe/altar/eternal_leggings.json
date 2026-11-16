@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 3,
+  "center": {
+    "item": "yukicore:celestium_leggings"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:yuki_tear"
+    },
+    {
+      "item": "yukicore:ash_core"
+    },
+    {
+      "item": "yukicore:stellar_alloy"
+    },
+    {
+      "item": "yukicore:stellar_alloy"
+    },
+    {
+      "item": "yukicore:starlight_block"
+    },
+    {
+      "item": "yukicore:cryosteel_block"
+    },
+    {
+      "item": "yukicore:star_shard"
+    },
+    {
+      "item": "yukicore:star_shard"
+    }
+  ],
+  "result": {
+    "id": "yukicore:eternal_leggings",
+    "count": 1
+  },
+  "duration": 600
+}

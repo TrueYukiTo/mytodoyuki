@@ -24,13 +24,14 @@ from yukigen.questbook4 import CHAPTERS4, GROUP as GROUP4, INSERT_AFTER  # noqa:
 
 from yukigen.questbook5 import CHAPTERS5, GROUP5, INSERT_AFTER5  # noqa: E402
 from yukigen.questbook6 import CHAPTERS6, GROUP6, INSERT_AFTER6  # noqa: E402
+from yukigen.questbook7 import CHAPTERS7, GROUP7, INSERT_AFTER7  # noqa: E402
 
-INSERT_AFTER = {**INSERT_AFTER, **INSERT_AFTER5, **INSERT_AFTER6}
-GROUP4 = {**GROUP4, **GROUP5, **GROUP6}
+INSERT_AFTER = {**INSERT_AFTER, **INSERT_AFTER5, **INSERT_AFTER6, **INSERT_AFTER7}
+GROUP4 = {**GROUP4, **GROUP5, **GROUP6, **GROUP7}
 for _k, _after in INSERT_AFTER.items():
     _i = [k for k, _ in ORDER].index(_after)
     ORDER.insert(_i + 1, (_k, GROUP4[_k]))
-_BY_KEY = {c[0]: c for c in CH2 + CHAPTERS3 + CHAPTERS4 + CHAPTERS5 + CHAPTERS6}
+_BY_KEY = {c[0]: c for c in CH2 + CHAPTERS3 + CHAPTERS4 + CHAPTERS5 + CHAPTERS6 + CHAPTERS7}
 CHAPTERS = [_BY_KEY[k] for k, _ in ORDER]
 GROUP_OF = dict(ORDER)
 assert len(CHAPTERS) == len(_BY_KEY), set(_BY_KEY) - {k for k, _ in ORDER}
@@ -90,7 +91,7 @@ STYLE = {
 }
 CHAPTER_ART = {  # глава -> баннер (по акту / особые)
     "sintara": "sintara", "newyear": "newyear", "celestia": "finale", "finale": "finale",
-    "elements": "sintara", "trials": "sintara", "mastery": "finale",
+    "elements": "sintara", "trials": "sintara", "mastery": "finale", "eternal": "finale", "archmage": "finale",
 }
 
 

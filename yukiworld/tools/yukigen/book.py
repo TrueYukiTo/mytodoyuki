@@ -224,8 +224,9 @@ ENTRIES += [
     ("industry", "star_reactor", "Звёздный реактор", "yukicore:star_reactor", [
         ("multiblock_cube", "yukicore:star_reactor", "yukicore:reactor_casing", "yukicore:starlight_block",
          "yukicore:celestium_block", "Ядро — блок звёздного света, углы — целестий, остальное — обшивка реактора."),
-        "Топливо (ПКМ или трубы): кристалл Юки — 400 FE/т, звёздный свет — 2 500, пиролит — 3 000, "
-        "пустота — 5 000, звёздный осколок — $(l)10 000 FE/т$(). Энергию отдаёт во все стороны.",
+        "Топливо (ПКМ или трубы): кристалл Юки — 50 тыс. FE/т, звёздный свет — 400 тыс., пиролит — 600 тыс., "
+        "пустота — 1,5 млн, звёздный осколок — 4 млн, $(l)осколок звезды — 10 млн FE/т$(). Буфер 2 млрд FE, "
+        "отдаёт до 50 млн FE/т в каждую сторону.",
     ]),
     ("sintara", "sintara", "Синтара", "yukicore:sintara_staff", [
         "$(o)Когда Юки была маленькой, к ней прилетала подруга — $(l)Синтара$(), огненная волшебница. Лёд и "
@@ -243,7 +244,9 @@ ENTRIES += [
 from . import v6 as _v6  # noqa: E402
 
 CATEGORIES.update(_v6.CATEGORY)
-ENTRIES.extend(_v6.ENTRIES)
+ENTRIES.extend(e for e in _v6.ENTRIES if e[1] not in ("controls", "yuki_spells", "sintara_spells"))
+from . import v7 as _v7  # noqa: E402
+ENTRIES.extend(_v7.ENTRIES)
 
 
 def files():
