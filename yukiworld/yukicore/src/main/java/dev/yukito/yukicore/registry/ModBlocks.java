@@ -95,6 +95,9 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> YUKI_TREE = BLOCKS.register("yuki_tree",
             () -> new DecorBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_LEAVES).lightLevel(s -> 10)
                     .noOcclusion().noCollission(), Block.box(2, 0, 2, 14, 16, 14)));
+    public static final DeferredBlock<Block> SLOT_MACHINE = BLOCKS.register("slot_machine",
+            () -> new dev.yukito.yukicore.casino.SlotMachineBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
+                    .lightLevel(st -> 10).noOcclusion()));
     public static final DeferredBlock<Block> SNOW_GLOBE = BLOCKS.register("snow_globe",
             () -> new DecorBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).lightLevel(s -> 6)
                     .noOcclusion(), Block.box(3, 0, 3, 13, 11, 13)));

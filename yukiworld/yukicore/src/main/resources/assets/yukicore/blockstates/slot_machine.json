@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "yukicore:block/slot_machine",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "yukicore:block/slot_machine",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "yukicore:block/slot_machine",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "yukicore:block/slot_machine",
+      "y": 270
+    }
+  }
+}

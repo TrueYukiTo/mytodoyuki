@@ -216,6 +216,16 @@ public final class ModItems {
     public static final DeferredItem<Item> TOME_OF_WINTER = consumable("tome_of_winter", MagicConsumableItem.Kind.KNOWLEDGE_ICE, Rarity.EPIC, 16);
     public static final DeferredItem<Item> TOME_OF_FLAME = consumable("tome_of_flame", MagicConsumableItem.Kind.KNOWLEDGE_FIRE, Rarity.EPIC, 16);
 
+    // --- 7.2: Казино Синтары (только игровые фишки) ---
+    public static final DeferredItem<Item> SINTARA_CHIP = ITEMS.register("sintara_chip",
+            () -> new CoreItem(new Item.Properties().rarity(Rarity.UNCOMMON), false));
+    public static final DeferredItem<Item> LUCKY_DICE = ITEMS.register("lucky_dice",
+            () -> new dev.yukito.yukicore.casino.CasinoItem(new Item.Properties().stacksTo(1).rarity(Rarity.RARE), true, false));
+    public static final DeferredItem<Item> FORTUNE_BOX = ITEMS.register("fortune_box",
+            () -> new dev.yukito.yukicore.casino.CasinoItem(new Item.Properties().stacksTo(16).rarity(Rarity.EPIC), false, true));
+    public static final DeferredItem<Item> LUCKY_SEVEN = ITEMS.register("lucky_seven",
+            () -> new MagicGearItem(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC).fireResistant(), School.FIRE, 0.15f));
+
     // --- снаряды (только внешний вид, в творческой вкладке скрыты) ---
     public static final DeferredItem<Item> ORB_FROST = ITEMS.registerSimpleItem("orb_frost");
     public static final DeferredItem<Item> ORB_FLAME = ITEMS.registerSimpleItem("orb_flame");
@@ -293,6 +303,7 @@ public final class ModItems {
         blockItem(ModBlocks.CHRISTMAS_ORNAMENT, Rarity.COMMON);
         blockItem(ModBlocks.YUKI_TREE, Rarity.UNCOMMON);
         blockItem(ModBlocks.SNOW_GLOBE, Rarity.UNCOMMON);
+        blockItem(ModBlocks.SLOT_MACHINE, Rarity.EPIC);
     }
 
     private static DeferredItem<Item> food(String name, int nutrition, float sat, Rarity rarity, MobEffectInstance... effects) {

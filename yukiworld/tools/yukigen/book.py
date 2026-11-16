@@ -247,6 +247,8 @@ CATEGORIES.update(_v6.CATEGORY)
 ENTRIES.extend(e for e in _v6.ENTRIES if e[1] not in ("controls", "yuki_spells", "sintara_spells"))
 from . import v7 as _v7  # noqa: E402
 ENTRIES.extend(_v7.ENTRIES)
+from . import v72 as _v72  # noqa: E402
+ENTRIES.extend(_v72.ENTRIES)
 
 
 def files():

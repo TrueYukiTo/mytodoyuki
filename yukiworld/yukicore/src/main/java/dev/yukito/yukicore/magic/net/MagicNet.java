@@ -11,6 +11,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;
+import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
@@ -85,6 +86,34 @@ public final class MagicNet {
         }
     }
 
+    /** Казино: прокрутить автомат на позиции pos со ставкой bet. */
+    public record Spin(net.minecraft.core.BlockPos pos, int bet) implements CustomPacketPayload {
+        public static final Type<Spin> TYPE = new Type<>(YukiCore.id("spin"));
+        public static final StreamCodec<ByteBuf, Spin> CODEC = StreamCodec.composite(
+                net.minecraft.core.BlockPos.STREAM_CODEC, Spin::pos, ByteBufCodecs.VAR_INT, Spin::bet, Spin::new);
+
+        @Override
+        public Type<Spin> type() {
+            return TYPE;
+        }
+    }
+
+    public record SpinResult(int a, int b, int c, int win) implements CustomPacketPayload {
+        public static final Type<SpinResult> TYPE = new Type<>(YukiCore.id("spin_result"));
+        public static final StreamCodec<ByteBuf, SpinResult> CODEC = StreamCodec.composite(
+                ByteBufCodecs.VAR_INT, SpinResult::a, ByteBufCodecs.VAR_INT, SpinResult::b, ByteBufCodecs.VAR_INT, SpinResult::c,
+                ByteBufCodecs.VAR_INT, SpinResult::win, SpinResult::new);
+
+        @Override
+        public Type<SpinResult> type() {
+            return TYPE;
+        }
+    }
+
+    /** Клиентский приёмник результата прокрутки. */
+    public static java.util.function.Consumer<SpinResult> spinHandler = r -> {
+    };
+
     /** Клиентский приёмник тряски (ставится клиентом, на сервере пустой). */
     public static java.util.function.BiConsumer<Float, Integer> shakeHandler = (a, b) -> {
     };
@@ -102,6 +131,12 @@ public final class MagicNet {
         r.playToServer(Upgrade.TYPE, Upgrade.CODEC, (p, ctx) -> {
             if (ctx.player() instanceof ServerPlayer sp) Magic.upgrade(sp, p.index());
         });
+        r.playToServer(Spin.TYPE, Spin.CODEC, (p, ctx) -> {
+            if (!(ctx.player() instanceof ServerPlayer sp)) return;
+            int[] res = dev.yukito.yukicore.casino.Casino.spin(sp, p.pos(), p.bet());
+            if (res != null) PacketDistributor.sendToPlayer(sp, new SpinResult(res[0], res[1], res[2], res[3]));
+        });
+        r.playToClient(SpinResult.TYPE, SpinResult.CODEC, (p, ctx) -> spinHandler.accept(p));
         r.playToClient(Shake.TYPE, Shake.CODEC, (p, ctx) -> shakeHandler.accept(p.strength(), p.ticks()));
         r.playToClient(Sync.TYPE, Sync.CODEC, MagicNet::onSync);
         r.playToClient(Mana.TYPE, Mana.CODEC, (p, ctx) -> {

@@ -1,0 +1,286 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "casino"
+	group: "3C966D8069B10DF8"
+	icon: {
+		count: 1
+		id: "yukicore:slot_machine"
+	}
+	id: "716D831B1765B4AD"
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/sintara.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 0.8d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: -8.2d
+			width: 0.8d
+			x: -1.64d
+			y: 0.4d
+		}
+		{
+			height: 0.81d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -24.7d
+			width: 0.81d
+			x: -1.86d
+			y: -0.13d
+		}
+	]
+	order_index: 34
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"6A6EBD85F2733E9E"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sintara_chip"
+			}
+			id: "64721AF3800B9725"
+			rewards: [
+				{
+					id: "1280A331285A6BC9"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 16
+					id: "70AE449DD109A911"
+					item: {
+						count: 1
+						id: "yukicore:sintara_chip"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.35d
+			tasks: [
+				{
+					id: "69509A1656177C23"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"64721AF3800B9725"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sintara_chip"
+			}
+			id: "58DAFCDD9613BE01"
+			rewards: [
+				{
+					id: "1C7BE3BD15EE805E"
+					type: "xp"
+					xp: 1005
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "21B9FA3EC91BF979"
+					item: {
+						count: 1
+						id: "yukicore:sintara_chip"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 0.352d
+		}
+		{
+			dependencies: [
+				"58DAFCDD9613BE01"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:lucky_dice"
+			}
+			id: "27260C2728F99292"
+			rewards: [
+				{
+					id: "3B94E91D7F40C8E4"
+					type: "xp"
+					xp: 1010
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2045FCCF5F91C70C"
+					item: {
+						count: 1
+						id: "yukicore:lucky_dice"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 0.438d
+		}
+		{
+			dependencies: [
+				"27260C2728F99292"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:slot_machine"
+			}
+			id: "5C7F15801720C47D"
+			rewards: [
+				{
+					id: "7C9C793C7DAB501A"
+					type: "xp"
+					xp: 1015
+				}
+				{
+					count: 32
+					id: "604C8A9B66E33701"
+					item: {
+						count: 1
+						id: "yukicore:sintara_chip"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "417E8A9A9782F0D2"
+					item: {
+						count: 1
+						id: "yukicore:slot_machine"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 0.192d
+		}
+		{
+			dependencies: [
+				"5C7F15801720C47D"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:slot_machine"
+			}
+			id: "2883118AE3DBDFE3"
+			rewards: [
+				{
+					id: "7DA8A7D490029749"
+					type: "xp"
+					xp: 1020
+				}
+			]
+			shape: "hexagon"
+			size: 1.35d
+			tasks: [
+				{
+					id: "17170CB33E5AAA0D"
+					type: "checkmark"
+				}
+			]
+			x: 7.0d
+			y: -0.199d
+		}
+		{
+			dependencies: [
+				"2883118AE3DBDFE3"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:fortune_box"
+			}
+			id: "4FFFE66E3670C0C5"
+			rewards: [
+				{
+					id: "254392646A667DC1"
+					type: "xp"
+					xp: 1025
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5424C94694BD0F25"
+					item: {
+						count: 1
+						id: "yukicore:fortune_box"
+					}
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: -0.44d
+		}
+		{
+			dependencies: [
+				"4FFFE66E3670C0C5"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:lucky_seven"
+			}
+			id: "1FB8C3DC6345E60B"
+			rewards: [
+				{
+					id: "3E53E8B0507211CD"
+					type: "xp"
+					xp: 1030
+				}
+				{
+					count: 3
+					id: "399AE648CB0B5B92"
+					item: {
+						count: 1
+						id: "yukicore:gift"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "16B71DFC9F4C3537"
+					item: {
+						count: 1
+						id: "yukicore:grand_gift"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					count: 1L
+					id: "36353DF4AC59387D"
+					item: {
+						count: 1
+						id: "yukicore:lucky_seven"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: -0.348d
+		}
+	]
+}
