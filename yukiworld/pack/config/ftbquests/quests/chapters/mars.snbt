@@ -1,0 +1,413 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mars"
+	group: "3C966D8069B10DF8"
+	icon: {
+		count: 1
+		id: "ad_astra:ostrum_ingot"
+	}
+	id: "732EC8FC793CF10A"
+	images: [ ]
+	order_index: 20
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"519CD6D3707C431C"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:ender_eye"
+			}
+			id: "763A306128A38671"
+			rewards: [
+				{
+					id: "662B3B6268395E3B"
+					type: "xp"
+					xp: 700
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					dimension: "ad_astra:mars"
+					id: "276DB7B7D9BD7211"
+					type: "dimension"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"763A306128A38671"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:mars_stone"
+			}
+			id: "4C19983E08C875A1"
+			rewards: [
+				{
+					id: "35B24DE295D9C013"
+					type: "xp"
+					xp: 705
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "4223630CB055F8B1"
+					item: {
+						count: 1
+						id: "ad_astra:mars_stone"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4C19983E08C875A1"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "2D5FE29459E2D061"
+			rewards: [
+				{
+					id: "25986EFABB4EB38B"
+					type: "xp"
+					xp: 710
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "ad_astra:martian_raptor"
+					id: "608047B98DD6FD47"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2D5FE29459E2D061"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:raw_ostrum"
+			}
+			id: "11B19F6F6E51C236"
+			rewards: [
+				{
+					id: "51495A22C4C402A5"
+					type: "xp"
+					xp: 715
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "1153D74F612C88A9"
+					item: {
+						count: 1
+						id: "ad_astra:raw_ostrum"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"11B19F6F6E51C236"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:ostrum_ingot"
+			}
+			id: "6328051303C87F7D"
+			rewards: [
+				{
+					id: "4280019561EA8A62"
+					type: "xp"
+					xp: 720
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "509E182386C0D9C3"
+					item: {
+						count: 1
+						id: "ad_astra:ostrum_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6328051303C87F7D"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:ostrum_plate"
+			}
+			id: "662C02C5E226E70D"
+			rewards: [
+				{
+					id: "4530E0F7935C1C2F"
+					type: "xp"
+					xp: 725
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "562D3C6B57A13822"
+					item: {
+						count: 1
+						id: "ad_astra:ostrum_plate"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"662C02C5E226E70D"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:mars_diamond_ore"
+			}
+			id: "1352492E3AEBCAD7"
+			rewards: [
+				{
+					id: "5A1A670801E42828"
+					type: "xp"
+					xp: 730
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "130DDD43A18D5546"
+					item: {
+						count: 1
+						id: "ad_astra:mars_diamond_ore"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1352492E3AEBCAD7"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:gravity_normalizer"
+			}
+			id: "2B47A4A93EEBEB01"
+			rewards: [
+				{
+					id: "4CAFA8ED63972707"
+					type: "xp"
+					xp: 735
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "447129930E28C9C5"
+					item: {
+						count: 1
+						id: "ad_astra:gravity_normalizer"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2B47A4A93EEBEB01"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:cryo_freezer"
+			}
+			id: "495CD387AB305BA5"
+			rewards: [
+				{
+					id: "53D69E7B0637973D"
+					type: "xp"
+					xp: 740
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2CEE2605AAF3DD55"
+					item: {
+						count: 1
+						id: "ad_astra:cryo_freezer"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"495CD387AB305BA5"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:ostrum_engine"
+			}
+			id: "5D43846CD072EDFD"
+			rewards: [
+				{
+					id: "2ECC88856F0E59D0"
+					type: "xp"
+					xp: 745
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6879265146D199F2"
+					item: {
+						count: 1
+						id: "ad_astra:ostrum_engine"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5D43846CD072EDFD"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:ostrum_tank"
+			}
+			id: "3B7CE89DC7D5ECD5"
+			rewards: [
+				{
+					id: "741B1EB11DAD0673"
+					type: "xp"
+					xp: 750
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "340A79154F5B606B"
+					item: {
+						count: 1
+						id: "ad_astra:ostrum_tank"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3B7CE89DC7D5ECD5"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:tier_3_rocket"
+			}
+			id: "2746AED6484836E4"
+			rewards: [
+				{
+					id: "19B45618A289F7C6"
+					type: "xp"
+					xp: 755
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "60D386A4627CF6CA"
+					item: {
+						count: 1
+						id: "ad_astra:tier_3_rocket"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2746AED6484836E4"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:tier_1_rover"
+			}
+			id: "57130CB96C61DBFB"
+			rewards: [
+				{
+					id: "28EC50D0A1713BFF"
+					type: "xp"
+					xp: 760
+				}
+				{
+					count: 8
+					id: "528C617D9A273DDD"
+					item: {
+						count: 1
+						id: "ad_astra:ostrum_ingot"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 1L
+					id: "7C1A24CFD1C40C0C"
+					item: {
+						count: 1
+						id: "ad_astra:tier_1_rover"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+	]
+}

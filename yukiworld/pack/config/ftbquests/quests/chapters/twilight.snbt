@@ -1,0 +1,543 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "twilight"
+	group: "42873FD1AA616C22"
+	icon: {
+		count: 1
+		id: "twilightforest:naga_scale"
+	}
+	id: "1C8B7A7274AA7089"
+	images: [ ]
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"2B1E46FE6DA5B55D"
+			]
+			icon: {
+				count: 1
+				id: "twilightforest:magic_map"
+			}
+			id: "1B63420261608365"
+			rewards: [
+				{
+					id: "58B0FFB23046A3B8"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1EDE15436078B725"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1B63420261608365"
+			]
+			icon: {
+				count: 1
+				id: "twilightforest:magic_map"
+			}
+			id: "284CEE77D954CB4B"
+			rewards: [
+				{
+					id: "6D8073752DEFE156"
+					type: "xp"
+					xp: 505
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4E61E603FE36F06B"
+					item: {
+						count: 1
+						id: "twilightforest:magic_map"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"284CEE77D954CB4B"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "5C0F39BBA4C92698"
+			rewards: [
+				{
+					id: "7C75967A16BCFE69"
+					type: "xp"
+					xp: 510
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "twilightforest:naga"
+					id: "184482E64209FE49"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5C0F39BBA4C92698"
+			]
+			icon: {
+				count: 1
+				id: "twilightforest:naga_trophy"
+			}
+			id: "30D6E295E923E37C"
+			rewards: [
+				{
+					id: "159EC04D1BD991C6"
+					type: "xp"
+					xp: 515
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2FA2B89008D176AD"
+					item: {
+						count: 1
+						id: "twilightforest:naga_trophy"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"30D6E295E923E37C"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "3E48E67C37262292"
+			rewards: [
+				{
+					id: "13327868F6EE6596"
+					type: "xp"
+					xp: 520
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "twilightforest:lich"
+					id: "2E80DDB331FC59B5"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3E48E67C37262292"
+			]
+			icon: {
+				count: 1
+				id: "twilightforest:lifedrain_scepter"
+			}
+			id: "6A0A431958C2F00E"
+			rewards: [
+				{
+					id: "2AA5D252189C8731"
+					type: "xp"
+					xp: 525
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "32CC6ACA5CB886A5"
+					item: {
+						count: 1
+						id: "twilightforest:lifedrain_scepter"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6A0A431958C2F00E"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "3473A46804B9BB58"
+			rewards: [
+				{
+					id: "799E0A80C651AEB0"
+					type: "xp"
+					xp: 530
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "twilightforest:minoshroom"
+					id: "2E920B4A9D3F004B"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3473A46804B9BB58"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "1093257125EB4D33"
+			rewards: [
+				{
+					id: "6F4267C7C483EDF1"
+					type: "xp"
+					xp: 535
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "twilightforest:hydra"
+					id: "2C39B4CD4F7F63AD"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1093257125EB4D33"
+			]
+			icon: {
+				count: 1
+				id: "twilightforest:hydra_trophy"
+			}
+			id: "4C26A92706278E70"
+			rewards: [
+				{
+					id: "30AAF6E960AD7CA0"
+					type: "xp"
+					xp: 540
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "19861E50CF7142BD"
+					item: {
+						count: 1
+						id: "twilightforest:hydra_trophy"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4C26A92706278E70"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "3DFCDA2A565CF001"
+			rewards: [
+				{
+					id: "1D51383022943561"
+					type: "xp"
+					xp: 545
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "twilightforest:knight_phantom"
+					id: "125E68FD0720D4BE"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3DFCDA2A565CF001"
+			]
+			icon: {
+				count: 1
+				id: "twilightforest:phantom_helmet"
+			}
+			id: "3C17F6AC26A23ED3"
+			rewards: [
+				{
+					id: "696D136A3349ED47"
+					type: "xp"
+					xp: 550
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5C0F99E271C30712"
+					item: {
+						count: 1
+						id: "twilightforest:phantom_helmet"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3C17F6AC26A23ED3"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "25CD5EE3FC9BAFF7"
+			rewards: [
+				{
+					id: "1268652533536317"
+					type: "xp"
+					xp: 555
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "twilightforest:ur_ghast"
+					id: "7AC73183B16A4C36"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"25CD5EE3FC9BAFF7"
+			]
+			icon: {
+				count: 1
+				id: "twilightforest:ur_ghast_trophy"
+			}
+			id: "1BE905E12B75FE88"
+			rewards: [
+				{
+					id: "3D06CF96F0C28E4F"
+					type: "xp"
+					xp: 560
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "485A5B70BD44FF26"
+					item: {
+						count: 1
+						id: "twilightforest:ur_ghast_trophy"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1BE905E12B75FE88"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "27411D26D3F75FBE"
+			rewards: [
+				{
+					id: "4791791468D9A48B"
+					type: "xp"
+					xp: 565
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "twilightforest:alpha_yeti"
+					id: "6DA202BA354445E5"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"27411D26D3F75FBE"
+			]
+			icon: {
+				count: 1
+				id: "twilightforest:alpha_yeti_fur"
+			}
+			id: "3CD354715FA97B48"
+			rewards: [
+				{
+					id: "2475FD03BADD604A"
+					type: "xp"
+					xp: 570
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "21312F2AC6B699AC"
+					item: {
+						count: 1
+						id: "twilightforest:alpha_yeti_fur"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3CD354715FA97B48"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "55B20846BB7241AF"
+			rewards: [
+				{
+					id: "34F3E4BA76E1FC91"
+					type: "xp"
+					xp: 575
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "twilightforest:snow_queen"
+					id: "62A9BCE1F9F053E8"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"55B20846BB7241AF"
+			]
+			icon: {
+				count: 1
+				id: "twilightforest:snow_queen_trophy"
+			}
+			id: "3257AAB7293F3400"
+			rewards: [
+				{
+					id: "68D389B8255B50B3"
+					type: "xp"
+					xp: 580
+				}
+				{
+					count: 4
+					id: "65129BBA2BBAECA8"
+					item: {
+						count: 1
+						id: "twilightforest:fiery_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2D2EE764BB2E484A"
+					item: {
+						count: 1
+						id: "twilightforest:snow_queen_trophy"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3257AAB7293F3400"
+			]
+			icon: {
+				count: 1
+				id: "twilightforest:snow_queen_trophy"
+			}
+			id: "66FB55AC62505D09"
+			rewards: [
+				{
+					id: "536BE95879AA4404"
+					type: "xp"
+					xp: 585
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2FD737793BF13252"
+					type: "checkmark"
+				}
+			]
+			x: 4.5d
+			y: 3.0d
+		}
+	]
+}

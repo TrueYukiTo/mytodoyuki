@@ -236,16 +236,17 @@ def build():
         ["    X    ",
          "   SAS   ",
          "  ZLULZ  ",
-         " SLTCMLS ",
-         "XAUCYCUAX",
-         " SLNCDLS ",
+         " SLTHMLS ",
+         "XAUQYPUAX",
+         " SLNVDLS ",
          "  ZLULZ  ",
          "   SAS   ",
          "    X    "], {
             "X": I("celestium_block"), "S": I("star_shard"), "A": "mekanism:pellet_antimatter",
             "Z": I("yuki_essence"), "L": I("starlight_block"), "U": "justdirethings:time_crystal",
             "T": I("tech_core"), "M": I("magic_core"), "N": I("nature_core"), "D": I("dimension_core"),
-            "C": I("celestium_ingot"), "Y": I("yuki_star")}, I("yuki_heart")),
+            "H": I("colossus_heart"), "Q": I("blizzard_crown"), "P": I("ash_core"), "V": I("void_scale"),
+            "Y": I("yuki_star")}, I("yuki_heart")),
         "mekanism", "justdirethings")
 
     r["unstable_infinity_star"] = when(mech(
@@ -293,6 +294,9 @@ def build():
         r["creative/" + out.split(":")[1]] = when(shaped(["CBC", "BSB", "CBC"], {
             "C": I("celestium_block"), "B": base, "S": I("yuki_infinity_star")}, out), mod)
 
+    # ---------------------------------------------------------------- 3.0: планеты, алтарь, ритуалы
+    r.update(build_v3())
+
     # ---------------------------------------------------------------- книга-летопись
     r["chronicle"] = when(shapeless(["minecraft:book", "minecraft:snowball"], "patchouli:guide_book",
                                     components={"patchouli:book": "yukicore:chronicle"}), "patchouli")
@@ -318,3 +322,86 @@ def ingredient_ids(recipes):
         if isinstance(res, dict) and "id" in res:
             out.add(res["id"])
     return out
+
+
+def altar(tier, center, pedestals, result, count=1, duration=100, components=None):
+    res = {"id": result, "count": count}
+    if components:
+        res["components"] = components
+    return {"type": "yukicore:altar", "tier": tier, "center": ing(center),
+            "pedestals": [ing(p) for p in pedestals], "result": res, "duration": duration}
+
+
+def book(enchant, level):
+    return {"minecraft:stored_enchantments": {"levels": {enchant: level}}}
+
+
+def build_v3():
+    r = {}
+    # планетарные руды
+    for ore, out, xp in [("permafrost_ore", "permafrost_crystal", 2.0), ("aurora_ore", "aurora_shard", 2.5),
+                         ("pyrolite_ore", "raw_pyrolite", 2.0), ("void_ore", "void_shard", 3.0),
+                         ("stellar_ore", "stellar_shard", 4.0)]:
+        r[f"{out}_from_{ore}"] = cooking("blasting", I(ore), I(out), xp, 200)
+    r["pyrolite_ingot_from_blasting"] = cooking("blasting", I("raw_pyrolite"), I("pyrolite_ingot"), 2.0, 200)
+    for block, item in [("permafrost_block", "permafrost_crystal"), ("aurora_block", "aurora_shard"),
+                        ("pyrolite_block", "pyrolite_ingot"), ("void_block", "void_shard"),
+                        ("stellar_block", "stellar_shard")]:
+        r[block] = shaped(["XXX", "XXX", "XXX"], {"X": I(item)}, I(block), category="building")
+        r[f"{item}_from_{block}"] = shapeless([I(block)], I(item), 9)
+
+    # мультиструктура
+    r["yuki_altar"] = shaped(["EYE", "QBQ", "PPP"], {
+        "E": I("yuki_essence"), "Y": I("yuki_star"), "Q": I("cryo_circuit"), "B": I("frost_block"),
+        "P": I("frost_plate")}, I("yuki_altar"))
+    r["yuki_pedestal"] = shaped(["CEC", " B ", "PPP"], {
+        "C": I("yuki_crystal"), "E": I("yuki_essence"), "B": I("frost_block"), "P": I("frost_plate")},
+        I("yuki_pedestal"), 2)
+    r["frost_wand"] = shaped(["  C", " I ", "I  "], {"C": I("yuki_crystal_block"), "I": I("frost_ingot")},
+                             I("frost_wand"))
+
+    a = {}
+    # --- уровень I (4 пьедестала)
+    a["essence"] = altar(1, I("yuki_crystal"), ["minecraft:blue_ice", "minecraft:snow_block",
+                                                "minecraft:blue_ice", "minecraft:snow_block"], I("yuki_essence"), 2)
+    a["frost_apple"] = altar(1, "minecraft:golden_apple", [I("yuki_crystal")] * 4, I("frost_apple"), 3)
+    a["starlight"] = altar(1, I("yuki_crystal_block"), ["minecraft:ender_pearl"] * 4, I("starlight_shard"), 2, 160)
+    a["permafrost_crystals"] = altar(1, I("permafrost_crystal"), ["minecraft:snow_block"] * 4, I("yuki_crystal"), 4)
+    a["sigil_colossus"] = altar(1, I("yuki_star"), [I("permafrost_crystal")] * 4, I("sigil_colossus"), 1, 200)
+    # --- уровень II (8 пьедесталов)
+    a["sigil_queen"] = altar(2, I("colossus_heart"), [I("aurora_shard")] * 4 + [I("yuki_essence")] * 2
+                             + [I("celestium_ingot")] * 2, I("sigil_queen"), 1, 300)
+    a["sigil_ash_lord"] = altar(2, I("blizzard_crown"), [I("pyrolite_ingot")] * 4 + ["ad_astra:calorite_ingot"] * 2
+                                + ["minecraft:magma_cream"] * 2, I("sigil_ash_lord"), 1, 300)
+    a["sigil_wyrm"] = altar(2, I("ash_core"), [I("void_shard")] * 4 + ["minecraft:echo_shard"] * 2
+                            + ["minecraft:dragon_breath"] * 2, I("sigil_wyrm"), 1, 300)
+    a["aurorium_multiply"] = altar(2, I("aurorium_block"), [I("aurora_shard")] * 8, I("aurorium_block"), 2, 240)
+    a["calorite"] = altar(2, I("pyrolite_ingot"), ["ad_astra:ostrum_ingot"] * 4, "ad_astra:calorite_ingot", 2, 160)
+    a["nether_star"] = altar(2, "minecraft:wither_skeleton_skull", [I("void_shard")] * 4 + ["minecraft:soul_sand"] * 4,
+                             "minecraft:nether_star", 1, 400)
+    books = [("sharpness", "minecraft:sharpness", 7, "minecraft:netherite_sword"),
+             ("efficiency", "minecraft:efficiency", 7, "minecraft:netherite_pickaxe"),
+             ("protection", "minecraft:protection", 6, "minecraft:netherite_chestplate"),
+             ("fortune", "minecraft:fortune", 5, "minecraft:emerald_block"),
+             ("looting", "minecraft:looting", 5, "minecraft:wither_skeleton_skull"),
+             ("unbreaking", "minecraft:unbreaking", 5, "minecraft:obsidian"),
+             ("feather_falling", "minecraft:feather_falling", 6, "minecraft:phantom_membrane"),
+             ("power", "minecraft:power", 7, "minecraft:bow")]
+    for name, ench, lvl, cat in books:
+        a[f"book_{name}"] = altar(2, "minecraft:book", [cat, cat, I("aurorium_ingot"), I("aurorium_ingot"),
+                                                        I("yuki_essence"), I("yuki_essence"),
+                                                        "minecraft:experience_bottle", "minecraft:experience_bottle"],
+                                  "minecraft:enchanted_book", 1, 200, book(ench, lvl))
+    # --- уровень III (Алтарь Бесконечности)
+    a["sigil_shadow"] = altar(3, I("stellar_block"), [I("colossus_heart"), I("blizzard_crown"), I("ash_core"),
+                                                      I("void_scale")] + [I("stellar_shard")] * 4,
+                              I("sigil_shadow"), 1, 600)
+    a["crown_of_yuki"] = altar(3, I("yuki_tear"), [I("celestium_block")] * 4 + [
+        I("stellar_block"), I("aurora_block"), I("permafrost_block"), I("void_block")], I("crown_of_yuki"), 1, 800)
+    a["eternal_winter_blade"] = altar(3, I("yuki_blade"), [I("yuki_tear"), I("stellar_block"), I("void_block"),
+                                                           I("pyrolite_block"), I("permafrost_block"),
+                                                           I("aurora_block"), I("celestium_block"),
+                                                           I("celestium_block")], I("eternal_winter_blade"), 1, 800)
+    for k, v in a.items():
+        r["altar/" + k] = v
+    return r

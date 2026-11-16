@@ -1,0 +1,563 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "undergarden"
+	group: "42873FD1AA616C22"
+	icon: {
+		count: 1
+		id: "undergarden:catalyst"
+	}
+	id: "435224063D08F45B"
+	images: [ ]
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"1E480D99B08F73B4"
+			]
+			icon: {
+				count: 1
+				id: "undergarden:catalyst"
+			}
+			id: "2E80C8483DDFB80B"
+			rewards: [
+				{
+					id: "6FC49FA377C8E9D2"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "7E5A155A610B4A17"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2E80C8483DDFB80B"
+			]
+			icon: {
+				count: 1
+				id: "undergarden:catalyst"
+			}
+			id: "299998FD53C20DE9"
+			rewards: [
+				{
+					id: "3ECBB601A314E3C1"
+					type: "xp"
+					xp: 455
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7814A1C43377385E"
+					item: {
+						count: 1
+						id: "undergarden:catalyst"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"299998FD53C20DE9"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:ender_eye"
+			}
+			id: "5391B6706A39263C"
+			rewards: [
+				{
+					id: "7C8DD6EC4438B065"
+					type: "xp"
+					xp: 460
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					dimension: "undergarden:undergarden"
+					id: "1B3394592E71236E"
+					type: "dimension"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5391B6706A39263C"
+			]
+			icon: {
+				count: 1
+				id: "undergarden:depthrock"
+			}
+			id: "6FF955A1C63FD341"
+			rewards: [
+				{
+					id: "3EC8B948A69C11A1"
+					type: "xp"
+					xp: 465
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "3E8F9FD5BDD174A5"
+					item: {
+						count: 1
+						id: "undergarden:depthrock"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6FF955A1C63FD341"
+			]
+			icon: {
+				count: 1
+				id: "undergarden:raw_cloggrum"
+			}
+			id: "408C12E70DF3A88D"
+			rewards: [
+				{
+					id: "70F8B8B506B5561F"
+					type: "xp"
+					xp: 470
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "438100080012BB40"
+					item: {
+						count: 1
+						id: "undergarden:raw_cloggrum"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"408C12E70DF3A88D"
+			]
+			icon: {
+				count: 1
+				id: "undergarden:cloggrum_ingot"
+			}
+			id: "55CAA81395B7A832"
+			rewards: [
+				{
+					id: "766CF77FFC8BF222"
+					type: "xp"
+					xp: 475
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "5F7A51E11E5D33B2"
+					item: {
+						count: 1
+						id: "undergarden:cloggrum_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"55CAA81395B7A832"
+			]
+			icon: {
+				count: 1
+				id: "undergarden:cloggrum_pickaxe"
+			}
+			id: "54DF1F6858121221"
+			rewards: [
+				{
+					id: "4CE10B8B2CB880D9"
+					type: "xp"
+					xp: 480
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1D0A1F285FD16F6E"
+					item: {
+						count: 1
+						id: "undergarden:cloggrum_pickaxe"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"54DF1F6858121221"
+			]
+			icon: {
+				count: 1
+				id: "undergarden:raw_froststeel"
+			}
+			id: "59C2B4CDED85D60C"
+			rewards: [
+				{
+					id: "6D60DDE7230EECF5"
+					type: "xp"
+					xp: 485
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "5B084D0D0FA6F77D"
+					item: {
+						count: 1
+						id: "undergarden:raw_froststeel"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"59C2B4CDED85D60C"
+			]
+			icon: {
+				count: 1
+				id: "undergarden:froststeel_ingot"
+			}
+			id: "2944FF07103E7887"
+			rewards: [
+				{
+					id: "735FC5E41C3F4E7A"
+					type: "xp"
+					xp: 490
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "3C647BC4EB5BBCDE"
+					item: {
+						count: 1
+						id: "undergarden:froststeel_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2944FF07103E7887"
+			]
+			icon: {
+				count: 1
+				id: "undergarden:froststeel_sword"
+			}
+			id: "545392FCA255A17C"
+			rewards: [
+				{
+					id: "2CA07738C78AE8EA"
+					type: "xp"
+					xp: 495
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1083DE2C6759FC30"
+					item: {
+						count: 1
+						id: "undergarden:froststeel_sword"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"545392FCA255A17C"
+			]
+			icon: {
+				count: 1
+				id: "undergarden:utherium_crystal"
+			}
+			id: "44141CE008F85370"
+			rewards: [
+				{
+					id: "29818D50C2F9AD0F"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "120917E7AE0BD0BE"
+					item: {
+						count: 1
+						id: "undergarden:utherium_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"44141CE008F85370"
+			]
+			icon: {
+				count: 1
+				id: "undergarden:regalium_crystal"
+			}
+			id: "64375BB4F173CCB1"
+			rewards: [
+				{
+					id: "6D3D0C53DB0E768A"
+					type: "xp"
+					xp: 505
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "464B9B58F31A82EB"
+					item: {
+						count: 1
+						id: "undergarden:regalium_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"64375BB4F173CCB1"
+			]
+			icon: {
+				count: 1
+				id: "undergarden:utherium_chestplate"
+			}
+			id: "654AA7FC239B398B"
+			rewards: [
+				{
+					id: "45D810E0F0B1C42A"
+					type: "xp"
+					xp: 510
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1FB9691319A9E246"
+					item: {
+						count: 1
+						id: "undergarden:utherium_chestplate"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"654AA7FC239B398B"
+			]
+			icon: {
+				count: 1
+				id: "undergarden:forgotten_upgrade_smithing_template"
+			}
+			id: "40FC3CFB2F7D64F0"
+			rewards: [
+				{
+					id: "2819A39DFB07A7BC"
+					type: "xp"
+					xp: 515
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4F6B152280D6379D"
+					item: {
+						count: 1
+						id: "undergarden:forgotten_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"40FC3CFB2F7D64F0"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "64A877D4E6AFFA4D"
+			rewards: [
+				{
+					id: "79A0F2E5D1D24A09"
+					type: "xp"
+					xp: 520
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "undergarden:forgotten_guardian"
+					id: "17531681646E75A4"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"64A877D4E6AFFA4D"
+			]
+			icon: {
+				count: 1
+				id: "undergarden:forgotten_ingot"
+			}
+			id: "26FA2E75C7CD473E"
+			rewards: [
+				{
+					id: "201000BE9600DB7D"
+					type: "xp"
+					xp: 525
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "525024EEF3B78E43"
+					item: {
+						count: 1
+						id: "undergarden:forgotten_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"26FA2E75C7CD473E"
+			]
+			icon: {
+				count: 1
+				id: "undergarden:forgotten_sword"
+			}
+			id: "14063BCCA093EA3B"
+			rewards: [
+				{
+					id: "42BB3B0B73820414"
+					type: "xp"
+					xp: 530
+				}
+				{
+					count: 2
+					id: "7565E10AC5C1C685"
+					item: {
+						count: 1
+						id: "undergarden:forgotten_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "671BF55BA677B428"
+					item: {
+						count: 1
+						id: "undergarden:forgotten_sword"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"14063BCCA093EA3B"
+			]
+			icon: {
+				count: 1
+				id: "undergarden:froststeel_block"
+			}
+			id: "2B1E46FE6DA5B55D"
+			rewards: [
+				{
+					id: "55239691CB501CE2"
+					type: "xp"
+					xp: 535
+				}
+				{
+					count: 2
+					id: "3FB1014AD391965A"
+					item: {
+						count: 1
+						id: "undergarden:froststeel_block"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "49D13B5B7EEAFB94"
+					type: "checkmark"
+				}
+			]
+			x: 4.5d
+			y: 3.0d
+		}
+	]
+}

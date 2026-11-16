@@ -1,6 +1,7 @@
 package dev.yukito.yukicore.registry;
 
 import dev.yukito.yukicore.YukiCore;
+import dev.yukito.yukicore.altar.ItemHolderBlock;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -38,6 +39,39 @@ public final class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERITE_BLOCK).lightLevel(s -> 10)));
     public static final DeferredBlock<Block> YUKI_LAMP = BLOCKS.register("yuki_lamp",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SEA_LANTERN).lightLevel(s -> 15)));
+
+    // --- Мультиструктура «Алтарь Юки» ---
+    public static final DeferredBlock<Block> YUKI_ALTAR = BLOCKS.register("yuki_altar",
+            () -> ItemHolderBlock.altar(BlockBehaviour.Properties.ofFullCopy(Blocks.CALCITE).strength(5f, 1200f)
+                    .lightLevel(s -> 10).noOcclusion()));
+    public static final DeferredBlock<Block> YUKI_PEDESTAL = BLOCKS.register("yuki_pedestal",
+            () -> ItemHolderBlock.pedestal(BlockBehaviour.Properties.ofFullCopy(Blocks.CALCITE).strength(4f, 1200f)
+                    .lightLevel(s -> 6).noOcclusion()));
+
+    // --- Руды планет Системы Юки ---
+    public static final DeferredBlock<Block> PERMAFROST_ORE = planetOre("permafrost_ore", Blocks.PACKED_ICE, 4);
+    public static final DeferredBlock<Block> AURORA_ORE = planetOre("aurora_ore", Blocks.AMETHYST_BLOCK, 8);
+    public static final DeferredBlock<Block> PYROLITE_ORE = planetOre("pyrolite_ore", Blocks.BLACKSTONE, 6);
+    public static final DeferredBlock<Block> VOID_ORE = planetOre("void_ore", Blocks.DEEPSLATE, 3);
+    public static final DeferredBlock<Block> STELLAR_ORE = planetOre("stellar_ore", Blocks.CALCITE, 12);
+
+    // --- Блоки планетарных материалов ---
+    public static final DeferredBlock<Block> PERMAFROST_BLOCK = storage("permafrost_block", 6);
+    public static final DeferredBlock<Block> AURORA_BLOCK = storage("aurora_block", 10);
+    public static final DeferredBlock<Block> PYROLITE_BLOCK = storage("pyrolite_block", 8);
+    public static final DeferredBlock<Block> VOID_BLOCK = storage("void_block", 2);
+    public static final DeferredBlock<Block> STELLAR_BLOCK = storage("stellar_block", 15);
+
+    private static DeferredBlock<Block> planetOre(String name, Block base, int light) {
+        return BLOCKS.register(name, () -> new DropExperienceBlock(UniformInt.of(6, 12),
+                BlockBehaviour.Properties.ofFullCopy(base).strength(6f, 1200f).requiresCorrectToolForDrops()
+                        .lightLevel(s -> light)));
+    }
+
+    private static DeferredBlock<Block> storage(String name, int light) {
+        return BLOCKS.register(name, () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERITE_BLOCK)
+                .lightLevel(s -> light)));
+    }
 
     private ModBlocks() {}
 }

@@ -22,6 +22,19 @@ public final class ArmorSetHandler {
         Player p = event.getEntity();
         if (p.level().isClientSide || p.tickCount % 20 != 0) return;
 
+        if (p.getItemBySlot(EquipmentSlot.HEAD).is(ModItems.CROWN_OF_YUKI.get())) {
+            give(p, MobEffects.NIGHT_VISION, 0, 260);
+            give(p, MobEffects.FIRE_RESISTANCE, 0, 40);
+            give(p, MobEffects.WATER_BREATHING, 0, 40);
+            give(p, MobEffects.REGENERATION, 1, 40);
+            give(p, MobEffects.DAMAGE_BOOST, 2, 40);
+            give(p, MobEffects.DIG_SPEED, 2, 40);
+            give(p, MobEffects.MOVEMENT_SPEED, 2, 40);
+            give(p, MobEffects.DAMAGE_RESISTANCE, 2, 40);
+            give(p, MobEffects.SATURATION, 0, 40);
+            p.setTicksFrozen(0);
+            return;
+        }
         if (fullSet(p, ModItems.CELESTIUM_HELMET.get(), ModItems.CELESTIUM_CHESTPLATE.get(),
                 ModItems.CELESTIUM_LEGGINGS.get(), ModItems.CELESTIUM_BOOTS.get())) {
             give(p, MobEffects.NIGHT_VISION, 0, 260);

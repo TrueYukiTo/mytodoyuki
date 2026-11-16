@@ -16,7 +16,13 @@ from dataclasses import dataclass
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from yukigen.questbook import CHAPTERS  # noqa: E402
+from yukigen.questbook import CHAPTERS as CH2  # noqa: E402
+from yukigen.questbook3 import CHAPTERS3, GROUPS, ORDER  # noqa: E402
+
+_BY_KEY = {c[0]: c for c in CH2 + CHAPTERS3}
+CHAPTERS = [_BY_KEY[k] for k, _ in ORDER]
+GROUP_OF = dict(ORDER)
+assert len(CHAPTERS) == len(_BY_KEY), set(_BY_KEY) - {k for k, _ in ORDER}
 
 OUT = Path(__file__).resolve().parent.parent / "pack" / "config" / "ftbquests" / "quests"
 YUKI_MODELS = Path(__file__).resolve().parent.parent / "yukicore" / "src" / "main" / "resources" / "assets" \
@@ -72,6 +78,15 @@ def item(stack_id, count=1, components=None):
 
 def main():
     known = set(Path(sys.argv[1]).read_text().split()) if len(sys.argv) > 1 else None
+    entities = None
+    if len(sys.argv) > 2:
+        entities = {line.split("\t")[0] for line in Path(sys.argv[2]).read_text().splitlines()}
+        entities |= {"yukicore:" + b for b in ("frost_colossus", "blizzard_queen", "ash_lord", "void_wyrm",
+                                               "shadow_of_yuki")}
+    dims = {"minecraft:the_nether", "minecraft:the_end", "twilightforest:twilight_forest", "aether:the_aether",
+            "the_bumblezone:the_bumblezone", "undergarden:undergarden", "eternal_starlight:starlight",
+            "ad_astra:moon", "ad_astra:mars", "ad_astra:venus", "ad_astra:mercury", "ad_astra:glacio",
+            "yukicore:yukia", "yukicore:aurora", "yukicore:pyrolith", "yukicore:nyx", "yukicore:celestia"}
     yuki = {p.stem for p in YUKI_MODELS.glob("*.json")}
     missing = []
 
@@ -107,10 +122,14 @@ def main():
                 q_icon = task[1]
                 shape = "hexagon"
             elif isinstance(task, tuple) and task[0] == "kill":
+                if entities is not None and task[1] not in entities and not task[1].startswith("minecraft:"):
+                    missing.append("entity " + task[1])
                 t = {"id": tid, "type": "kill", "entity": task[1], "value": Long(count)}
                 q_icon = "minecraft:netherite_sword"
                 shape = "diamond"
             elif isinstance(task, tuple) and task[0] == "dim":
+                if task[1] not in dims:
+                    missing.append("dimension " + task[1])
                 t = {"id": tid, "type": "dimension", "dimension": task[1]}
                 q_icon = "minecraft:ender_eye"
                 shape = "rsquare"
@@ -143,7 +162,7 @@ def main():
             prev = id_
             total += 1
 
-        chapter = {"id": cid, "filename": key, "group": "", "order_index": order, "icon": item(icon),
+        chapter = {"id": cid, "filename": key, "group": qid("group/" + GROUP_OF[key]), "order_index": order, "icon": item(icon),
                    "default_quest_shape": "", "default_hide_dependency_lines": False,
                    "quest_links": [], "images": [], "quests": quests}
         (OUT / "chapters" / f"{key}.snbt").write_text(snbt(chapter) + "\n", encoding="utf-8")
@@ -155,7 +174,12 @@ def main():
             "progression_mode": "linear", "detection_delay": 20, "fallback_locale": "ru_ru",
             "icon": item("yukicore:yuki_infinity_star")}
     (OUT / "data.snbt").write_text(snbt(data) + "\n", encoding="utf-8")
-    (OUT / "chapter_groups.snbt").write_text(snbt({"chapter_groups": []}) + "\n", encoding="utf-8")
+    groups = []
+    for gk, title in GROUPS.items():
+        gid = qid("group/" + gk)
+        groups.append({"id": gid})
+        lang[f"chapter_group.{gid}.title"] = title
+    (OUT / "chapter_groups.snbt").write_text(snbt({"chapter_groups": groups}) + "\n", encoding="utf-8")
     (OUT / "lang").mkdir(exist_ok=True)
     for old in (OUT / "lang").glob("*.snbt"):
         old.unlink()

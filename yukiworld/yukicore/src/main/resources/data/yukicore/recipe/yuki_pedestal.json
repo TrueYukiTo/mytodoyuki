@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CEC",
+    " B ",
+    "PPP"
+  ],
+  "key": {
+    "C": {
+      "item": "yukicore:yuki_crystal"
+    },
+    "E": {
+      "item": "yukicore:yuki_essence"
+    },
+    "B": {
+      "item": "yukicore:frost_block"
+    },
+    "P": {
+      "item": "yukicore:frost_plate"
+    }
+  },
+  "result": {
+    "id": "yukicore:yuki_pedestal",
+    "count": 2
+  }
+}

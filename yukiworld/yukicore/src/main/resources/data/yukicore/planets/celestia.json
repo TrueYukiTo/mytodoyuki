@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ad_astra"
+    }
+  ],
+  "dimension": "yukicore:celestia",
+  "gravity": 9.81,
+  "orbit": "yukicore:celestia_orbit",
+  "oxygen": true,
+  "solar_power": 40,
+  "solar_system": "yukicore:yuki_system",
+  "temperature": 24,
+  "tier": 4
+}

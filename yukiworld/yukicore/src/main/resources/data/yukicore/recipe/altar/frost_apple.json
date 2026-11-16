@@ -1,0 +1,26 @@
+{
+  "type": "yukicore:altar",
+  "tier": 1,
+  "center": {
+    "item": "minecraft:golden_apple"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:yuki_crystal"
+    },
+    {
+      "item": "yukicore:yuki_crystal"
+    },
+    {
+      "item": "yukicore:yuki_crystal"
+    },
+    {
+      "item": "yukicore:yuki_crystal"
+    }
+  ],
+  "result": {
+    "id": "yukicore:frost_apple",
+    "count": 3
+  },
+  "duration": 100
+}

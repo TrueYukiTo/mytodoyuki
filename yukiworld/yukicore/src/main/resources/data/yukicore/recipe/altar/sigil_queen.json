@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 2,
+  "center": {
+    "item": "yukicore:colossus_heart"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:aurora_shard"
+    },
+    {
+      "item": "yukicore:aurora_shard"
+    },
+    {
+      "item": "yukicore:aurora_shard"
+    },
+    {
+      "item": "yukicore:aurora_shard"
+    },
+    {
+      "item": "yukicore:yuki_essence"
+    },
+    {
+      "item": "yukicore:yuki_essence"
+    },
+    {
+      "item": "yukicore:celestium_ingot"
+    },
+    {
+      "item": "yukicore:celestium_ingot"
+    }
+  ],
+  "result": {
+    "id": "yukicore:sigil_queen",
+    "count": 1
+  },
+  "duration": 300
+}

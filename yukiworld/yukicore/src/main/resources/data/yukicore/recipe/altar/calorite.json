@@ -1,0 +1,26 @@
+{
+  "type": "yukicore:altar",
+  "tier": 2,
+  "center": {
+    "item": "yukicore:pyrolite_ingot"
+  },
+  "pedestals": [
+    {
+      "item": "ad_astra:ostrum_ingot"
+    },
+    {
+      "item": "ad_astra:ostrum_ingot"
+    },
+    {
+      "item": "ad_astra:ostrum_ingot"
+    },
+    {
+      "item": "ad_astra:ostrum_ingot"
+    }
+  ],
+  "result": {
+    "id": "ad_astra:calorite_ingot",
+    "count": 2
+  },
+  "duration": 160
+}

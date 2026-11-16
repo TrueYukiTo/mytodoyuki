@@ -92,6 +92,25 @@ toast-control
 open-parties-and-claims
 
 
+## 🚀 Космос
+ad-astra
+ad-astra-giselle-addon
+mekanism-ad-astra-ores
+
+## 🐲 Миры и боссы
+l_enders-cataclysm
+eternal-starlight
+the-undergarden
+aquamirae
+bosses-of-mass-destruction-forge
+bossesrise
+mowzies-mobs
+deep-aether
+yungs-better-end-island
+friends-and-foes-forge
+naturalist
+lootr
+
 ## 📜 Квесты и CurseForge-only моды (префикс cf:)
 # Botania и MemoryLeakFix под 1.21.1 NeoForge не выпускались.
 cf:ftb-quests-forge

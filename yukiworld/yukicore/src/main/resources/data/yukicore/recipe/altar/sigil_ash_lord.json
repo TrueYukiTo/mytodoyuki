@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 2,
+  "center": {
+    "item": "yukicore:blizzard_crown"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:pyrolite_ingot"
+    },
+    {
+      "item": "yukicore:pyrolite_ingot"
+    },
+    {
+      "item": "yukicore:pyrolite_ingot"
+    },
+    {
+      "item": "yukicore:pyrolite_ingot"
+    },
+    {
+      "item": "ad_astra:calorite_ingot"
+    },
+    {
+      "item": "ad_astra:calorite_ingot"
+    },
+    {
+      "item": "minecraft:magma_cream"
+    },
+    {
+      "item": "minecraft:magma_cream"
+    }
+  ],
+  "result": {
+    "id": "yukicore:sigil_ash_lord",
+    "count": 1
+  },
+  "duration": 300
+}

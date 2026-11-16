@@ -1,0 +1,259 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "aurora"
+	group: "3C966D8069B10DF8"
+	icon: {
+		count: 1
+		id: "yukicore:aurora_shard"
+	}
+	id: "605148D1FD72951A"
+	images: [ ]
+	order_index: 24
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"173948641B55379B"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:aurora_shard"
+			}
+			id: "3E17D59119D72538"
+			rewards: [
+				{
+					id: "19718E5DDF99BF27"
+					type: "xp"
+					xp: 950
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "32DF2F3A72A5A403"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3E17D59119D72538"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:ender_eye"
+			}
+			id: "406E502F2F552028"
+			rewards: [
+				{
+					id: "2DB243185D646FA5"
+					type: "xp"
+					xp: 955
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					dimension: "yukicore:aurora"
+					id: "64E119DF31559BEF"
+					type: "dimension"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"406E502F2F552028"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:amethyst_block"
+			}
+			id: "34A43C3AF7CBDDC8"
+			rewards: [
+				{
+					id: "213A199CB8328A44"
+					type: "xp"
+					xp: 960
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "1F00C68AEBB66F47"
+					item: {
+						count: 1
+						id: "minecraft:amethyst_block"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"34A43C3AF7CBDDC8"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:aurora_shard"
+			}
+			id: "5199126F71FE49E8"
+			rewards: [
+				{
+					id: "10BF3007B37C74EC"
+					type: "xp"
+					xp: 965
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "7E10AD17E107F2C1"
+					item: {
+						count: 1
+						id: "yukicore:aurora_shard"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5199126F71FE49E8"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:aurora_block"
+			}
+			id: "3BEA1604D8EC10EE"
+			rewards: [
+				{
+					id: "29E8BC2F25249999"
+					type: "xp"
+					xp: 970
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "1BF6C4FA2D6034ED"
+					item: {
+						count: 1
+						id: "yukicore:aurora_block"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3BEA1604D8EC10EE"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sigil_queen"
+			}
+			id: "3FCBE48F9525402B"
+			rewards: [
+				{
+					id: "5A16E9A1CA628970"
+					type: "xp"
+					xp: 975
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4F9BE008D1DBC1F9"
+					item: {
+						count: 1
+						id: "yukicore:sigil_queen"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3FCBE48F9525402B"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "1EA8D177F5BD6FCB"
+			rewards: [
+				{
+					id: "6DA6D32B527EAA3F"
+					type: "xp"
+					xp: 980
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "yukicore:blizzard_queen"
+					id: "745130F166B5FD6D"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1EA8D177F5BD6FCB"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:blizzard_crown"
+			}
+			id: "6B418C61852CA884"
+			rewards: [
+				{
+					id: "3F0E249ACFAB750E"
+					type: "xp"
+					xp: 985
+				}
+				{
+					count: 2
+					id: "619930FFFF47FC3D"
+					item: {
+						count: 1
+						id: "yukicore:star_shard"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 1L
+					id: "57B359FEC52082B4"
+					item: {
+						count: 1
+						id: "yukicore:blizzard_crown"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+	]
+}

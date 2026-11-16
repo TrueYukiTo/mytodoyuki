@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 2,
+  "center": {
+    "item": "yukicore:aurorium_block"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:aurora_shard"
+    },
+    {
+      "item": "yukicore:aurora_shard"
+    },
+    {
+      "item": "yukicore:aurora_shard"
+    },
+    {
+      "item": "yukicore:aurora_shard"
+    },
+    {
+      "item": "yukicore:aurora_shard"
+    },
+    {
+      "item": "yukicore:aurora_shard"
+    },
+    {
+      "item": "yukicore:aurora_shard"
+    },
+    {
+      "item": "yukicore:aurora_shard"
+    }
+  ],
+  "result": {
+    "id": "yukicore:aurorium_block",
+    "count": 2
+  },
+  "duration": 240
+}

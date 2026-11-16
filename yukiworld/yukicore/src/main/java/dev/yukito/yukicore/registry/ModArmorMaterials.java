@@ -28,6 +28,9 @@ public final class ModArmorMaterials {
     public static final DeferredHolder<ArmorMaterial, ArmorMaterial> CELESTIUM = register("celestium",
             6, 12, 9, 6, 30, 6.0f, 0.25f, SoundEvents.ARMOR_EQUIP_NETHERITE, () -> ModItems.CELESTIUM_INGOT.get());
 
+    public static final DeferredHolder<ArmorMaterial, ArmorMaterial> YUKI = register("yuki",
+            8, 14, 11, 8, 40, 8.0f, 0.4f, SoundEvents.ARMOR_EQUIP_NETHERITE, () -> ModItems.YUKI_TEAR.get());
+
     private static DeferredHolder<ArmorMaterial, ArmorMaterial> register(String name, int boots, int chest, int legs,
             int helmet, int enchant, float toughness, float knockback, Holder<SoundEvent> sound, Supplier<Item> repair) {
         return ARMOR_MATERIALS.register(name, () -> new ArmorMaterial(

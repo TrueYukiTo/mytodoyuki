@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": {
+    "item": "yukicore:stellar_ore"
+  },
+  "result": {
+    "id": "yukicore:stellar_shard"
+  },
+  "experience": 4.0,
+  "cookingtime": 200
+}

@@ -14,7 +14,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from yukigen import art, book, lang, recipes  # noqa: E402
+from yukigen import art, book, hd, lang, planets, recipes  # noqa: E402
+from yukigen.art import CRYSTAL, SAKURA, TIERS  # noqa: E402
 from yukigen.pixel import gui_button, gui_handle, logo, nine_slice  # noqa: E402
 
 MOD = "yukicore"
@@ -36,9 +37,32 @@ def write(path: Path, data):
 
 
 BLOCKS = ["frost_ore", "yuki_crystal_ore", "starlight_ore", "frost_block", "yuki_crystal_block",
-          "starlight_block", "aurorium_block", "celestium_block", "yuki_lamp"]
+          "starlight_block", "aurorium_block", "celestium_block", "yuki_lamp",
+          "permafrost_ore", "aurora_ore", "pyrolite_ore", "void_ore", "stellar_ore",
+          "permafrost_block", "aurora_block", "pyrolite_block", "void_block", "stellar_block"]
+SPECIAL_BLOCKS = ["yuki_altar", "yuki_pedestal"]
 ORES = {"frost_ore": ("raw_frost", 1, 2), "yuki_crystal_ore": ("yuki_crystal", 1, 3),
-        "starlight_ore": ("starlight_shard", 1, 1)}
+        "starlight_ore": ("starlight_shard", 1, 1), "permafrost_ore": ("permafrost_crystal", 1, 3),
+        "aurora_ore": ("aurora_shard", 1, 2), "pyrolite_ore": ("raw_pyrolite", 1, 2),
+        "void_ore": ("void_shard", 1, 1), "stellar_ore": ("stellar_shard", 1, 1)}
+
+BOSS_LOOT = {  # босс: [(предмет, min, max)]
+    "frost_colossus": [("colossus_heart", 1, 1), ("star_shard", 1, 2), ("permafrost_crystal", 4, 8)],
+    "blizzard_queen": [("blizzard_crown", 1, 1), ("star_shard", 1, 2), ("aurora_shard", 4, 8)],
+    "ash_lord": [("ash_core", 1, 1), ("star_shard", 2, 2), ("pyrolite_ingot", 4, 8)],
+    "void_wyrm": [("void_scale", 1, 1), ("star_shard", 2, 3), ("void_shard", 4, 8)],
+    "shadow_of_yuki": [("yuki_tear", 1, 1), ("star_shard", 4, 4), ("stellar_shard", 6, 10)],
+}
+# босс: (ванильная текстура, градиент перекраски по яркости)
+BOSS_SKINS = {
+    "frost_colossus": ("textures/entity/iron_golem/iron_golem.png", [0x0A1E3A, 0x2C6CB0, 0x8FD8FF, 0xF2FBFF]),
+    "blizzard_queen": ("textures/entity/skeleton/stray.png", [0x1A1A3A, 0x6A7AC0, 0xD8E4FF, 0xFFFFFF]),
+    "ash_lord": ("textures/entity/blaze.png", [0x120404, 0x6A1404, 0xF07A1C, 0xFFE070]),
+    "void_wyrm": ("textures/entity/phantom.png", [0x05010C, 0x2A0E4A, 0x8A50E0, 0xE8D8FF]),
+    "shadow_of_yuki": ("textures/entity/illager/illusioner.png", [0x0A0510, 0x3A1440, 0xC04A9A, 0xFFE6F4]),
+}
+VANILLA_CLIENT = Path("/root/.gradle/caches/neoformruntime/artifacts/minecraft_1.21.1_client.jar")
+ADASTRA_DATA = Path("/tmp/claude-0/-home-user-mytodoyuki/7717ab37-fa34-58cc-9896-ef064fd55632/scratchpad/aadata/data/ad_astra")
 
 
 def ore_loot(block, drop, lo, hi):
@@ -97,7 +121,7 @@ def main():
         shutil.rmtree(p, ignore_errors=True)
 
     # ---------------- предметы
-    items = art.item_textures()
+    items = art.hd_textures()
     for name, (img, handheld) in items.items():
         write(ASSETS / "textures" / "item" / f"{name}.png", img)
         write(ASSETS / "models" / "item" / f"{name}.json",
@@ -105,17 +129,48 @@ def main():
                "textures": {"layer0": f"{MOD}:item/{name}"}})
 
     # ---------------- блоки
-    for name, img in art.block_textures(rng).items():
+    for name, img in art.hd_blocks().items():
         write(ASSETS / "textures" / "block" / f"{name}.png", img)
         write(ASSETS / "blockstates" / f"{name}.json", {"variants": {"": {"model": f"{MOD}:block/{name}"}}})
         write(ASSETS / "models" / "block" / f"{name}.json",
               {"parent": "minecraft:block/cube_all", "textures": {"all": f"{MOD}:block/{name}"}})
         write(ASSETS / "models" / "item" / f"{name}.json", {"parent": f"{MOD}:block/{name}"})
 
-    for i, (tier, pal) in enumerate(art.TIERS.items()):
+    for i, (tier, pal) in enumerate(list(TIERS.items()) + [("yuki", art.GOLDPINK)]):
         for layer in (1, 2):
             write(ASSETS / "textures" / "models" / "armor" / f"{tier}_layer_{layer}.png",
-                  art.armor_layer(layer, pal, i * 10))
+                  hd.armor_layer_hd(layer, pal, i * 10))
+
+    # алтарь и пьедестал: модель из трёх кубоидов
+    top, side, bottom = hd.altar_textures(CRYSTAL, CRYSTAL)
+    ptop, pside, _ = hd.altar_textures(CRYSTAL, SAKURA)
+    for name, (t, sd, b) in {"yuki_altar": (top, side, bottom), "yuki_pedestal": (ptop, pside, bottom)}.items():
+        for part, img in (("top", t), ("side", sd), ("bottom", b)):
+            write(ASSETS / "textures" / "block" / f"{name}_{part}.png", img)
+        tex = {"top": f"{MOD}:block/{name}_top", "side": f"{MOD}:block/{name}_side",
+               "bottom": f"{MOD}:block/{name}_bottom", "particle": f"{MOD}:block/{name}_side"}
+
+        def cube(f, t_):
+            faces = {d: {"texture": "#side", "uv": [f[0], 16 - t_[1], t_[0], 16 - f[1]]}
+                     for d in ("north", "south", "east", "west")}
+            faces["up"] = {"texture": "#top", "uv": [f[0], f[2], t_[0], t_[2]]}
+            faces["down"] = {"texture": "#bottom", "uv": [f[0], f[2], t_[0], t_[2]]}
+            return {"from": f, "to": t_, "faces": faces}
+        write(ASSETS / "models" / "block" / f"{name}.json", {"parent": "minecraft:block/block", "textures": tex,
+              "elements": [cube([1, 0, 1], [15, 3, 15]), cube([4, 3, 4], [12, 11, 12]),
+                           cube([2, 11, 2], [14, 14, 14])]})
+        write(ASSETS / "blockstates" / f"{name}.json", {"variants": {"": {"model": f"{MOD}:block/{name}"}}})
+        write(ASSETS / "models" / "item" / f"{name}.json", {"parent": f"{MOD}:block/{name}"})
+
+    # скины боссов: перекраска ванильных моделей в HD (×4)
+    import zipfile
+    from PIL import Image
+    with zipfile.ZipFile(VANILLA_CLIENT) as z:
+        for boss, (path, stops) in BOSS_SKINS.items():
+            with z.open("assets/minecraft/" + path) as f:
+                src = Image.open(f).copy()
+            scale = 2 if src.width >= 128 else 4
+            write(ASSETS / "textures" / "entity" / f"{boss}.png", hd.recolor_entity(src, stops, scale, 0.8))
 
     # ---------------- GUI всей игры
     gui = ROOT / "assets" / "minecraft" / "textures" / "gui" / "sprites" / "widget"
@@ -135,42 +190,53 @@ def main():
     write(ROOT / "yukicore_logo.png", logo())
 
     # ---------------- локализация
+    pru, pen = planets.lang()
+    lang.RU.update(pru)
+    lang.EN.update(pen)
     write(ASSETS / "lang" / "ru_ru.json", lang.RU)
     write(ASSETS / "lang" / "en_us.json", lang.EN)
-    missing_names = [n for n in list(items) + BLOCKS
+    missing_names = [n for n in list(items) + BLOCKS + SPECIAL_BLOCKS
                      if f"item.{MOD}.{n}" not in lang.RU and f"block.{MOD}.{n}" not in lang.RU]
     assert not missing_names, missing_names
 
     # ---------------- лут блоков
     lt = DATA / MOD / "loot_table" / "blocks"
-    for b in BLOCKS:
+    for b in BLOCKS + SPECIAL_BLOCKS:
         write(lt / f"{b}.json", ore_loot(b, *ORES[b]) if b in ORES else self_loot(b))
+    for boss, drops in BOSS_LOOT.items():
+        write(DATA / MOD / "loot_table" / "entities" / f"{boss}.json", {"type": "minecraft:entity", "pools": [
+            {"rolls": 1, "bonus_rolls": 0, "entries": [{"type": "minecraft:item", "name": I(item), "functions": [
+                {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": lo, "max": hi}}]}]}
+            for item, lo, hi in drops]})
 
     # ---------------- рецепты
     rec = recipes.build()
     for name, r in rec.items():
         write(DATA / MOD / "recipe" / f"{name}.json", r)
     if known is not None:
-        ours = {I(n) for n in list(items) + BLOCKS}
+        ours = {I(n) for n in list(items) + BLOCKS + SPECIAL_BLOCKS}
         bad = sorted(i for i in recipes.ingredient_ids(rec)
                      if not i.startswith("minecraft:") and i not in known and i not in ours)
         assert not bad, f"unknown items in recipes: {bad}"
 
     # ---------------- теги
     tags = DATA / "minecraft" / "tags"
-    write(tags / "block" / "mineable" / "pickaxe.json", {"values": [I(b) for b in BLOCKS]})
+    write(tags / "block" / "mineable" / "pickaxe.json", {"values": [I(b) for b in BLOCKS + SPECIAL_BLOCKS]})
     write(tags / "block" / "needs_diamond_tool.json",
           {"values": [I(b) for b in ("frost_ore", "yuki_crystal_ore", "starlight_ore", "aurorium_block",
-                                     "celestium_block", "starlight_block")]})
+                                     "celestium_block", "starlight_block", "permafrost_ore", "aurora_ore",
+                                     "pyrolite_ore", "void_ore", "stellar_ore")]})
     write(tags / "block" / "needs_iron_tool.json", {"values": [I("frost_block"), I("yuki_crystal_block")]})
     write(tags / "block" / "beacon_base_blocks.json",
           {"values": [I(b) for b in ("frost_block", "aurorium_block", "celestium_block")]})
     tool_tags = {"sword": "swords", "pickaxe": "pickaxes", "axe": "axes", "shovel": "shovels", "hoe": "hoes",
                  "helmet": "head_armor", "chestplate": "chest_armor", "leggings": "leg_armor", "boots": "foot_armor"}
     for piece, tag in tool_tags.items():
-        vals = [I(f"{t}_{piece}") for t in art.TIERS]
+        vals = [I(f"{t}_{piece}") for t in TIERS]
         if piece == "sword":
-            vals.append(I("yuki_blade"))
+            vals += [I("yuki_blade"), I("eternal_winter_blade")]
+        if piece == "helmet":
+            vals.append(I("crown_of_yuki"))
         write(tags / "item" / f"{tag}.json", {"values": vals})
     write(tags / "item" / "beacon_payment_items.json",
           {"values": [I("frost_ingot"), I("aurorium_ingot"), I("celestium_ingot")]})
@@ -217,6 +283,10 @@ def main():
             "table": f"{MOD}:bonus/star_shard_{boss}"})
         entries.append(f"{MOD}:star_shard_{boss}")
     write(DATA / "neoforge" / "loot_modifiers" / "global_loot_modifiers.json", {"replace": False, "entries": entries})
+
+    # ---------------- планеты Системы Юки (Ad Astra)
+    for rel, content in planets.files(ADASTRA_DATA).items():
+        write(ROOT / rel, content)
 
     # ---------------- книга Patchouli
     for rel, content in book.files().items():

@@ -1,0 +1,442 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "venus"
+	group: "3C966D8069B10DF8"
+	icon: {
+		count: 1
+		id: "ad_astra:calorite_ingot"
+	}
+	id: "1A7402B58BAC031B"
+	images: [ ]
+	order_index: 21
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"57130CB96C61DBFB"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:ender_eye"
+			}
+			id: "2728714A8E9D8703"
+			rewards: [
+				{
+					id: "17D81EF28551FDCE"
+					type: "xp"
+					xp: 750
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					dimension: "ad_astra:venus"
+					id: "1E145F2354B997E0"
+					type: "dimension"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2728714A8E9D8703"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:netherite_space_helmet"
+			}
+			id: "40D1AE4C1F3A887D"
+			rewards: [
+				{
+					id: "1DBE4CD6E889F6A0"
+					type: "xp"
+					xp: 755
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6CE8DB5057DAA066"
+					item: {
+						count: 1
+						id: "ad_astra:netherite_space_helmet"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"40D1AE4C1F3A887D"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:netherite_space_suit"
+			}
+			id: "16C96DA0267CDF30"
+			rewards: [
+				{
+					id: "7F708B4EB40A689E"
+					type: "xp"
+					xp: 760
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "394D009BAF237A6B"
+					item: {
+						count: 1
+						id: "ad_astra:netherite_space_suit"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"16C96DA0267CDF30"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:netherite_space_pants"
+			}
+			id: "259C6EF138E5F1E4"
+			rewards: [
+				{
+					id: "25A9545D0B629C0C"
+					type: "xp"
+					xp: 765
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "18A007D872387B32"
+					item: {
+						count: 1
+						id: "ad_astra:netherite_space_pants"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"259C6EF138E5F1E4"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:netherite_space_boots"
+			}
+			id: "5315F0B11A4764F9"
+			rewards: [
+				{
+					id: "18EC679CAF77B7ED"
+					type: "xp"
+					xp: 770
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2A1FCF12E865E662"
+					item: {
+						count: 1
+						id: "ad_astra:netherite_space_boots"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5315F0B11A4764F9"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:raw_calorite"
+			}
+			id: "459B1A9A6AA2BA29"
+			rewards: [
+				{
+					id: "13F29799E04C69C5"
+					type: "xp"
+					xp: 775
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "11B34440389A1014"
+					item: {
+						count: 1
+						id: "ad_astra:raw_calorite"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"459B1A9A6AA2BA29"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:calorite_ingot"
+			}
+			id: "3194FB931D7FDA74"
+			rewards: [
+				{
+					id: "2B0F44DBC1C7A37C"
+					type: "xp"
+					xp: 780
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "6FA04187CC5F8EE4"
+					item: {
+						count: 1
+						id: "ad_astra:calorite_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3194FB931D7FDA74"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:calorite_plate"
+			}
+			id: "4681E58DCBCC1619"
+			rewards: [
+				{
+					id: "271E473E45C51AC5"
+					type: "xp"
+					xp: 785
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "68A1780E53F028E2"
+					item: {
+						count: 1
+						id: "ad_astra:calorite_plate"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4681E58DCBCC1619"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:ender_eye"
+			}
+			id: "73A2C5D8C3620017"
+			rewards: [
+				{
+					id: "3D012F6E821D42C8"
+					type: "xp"
+					xp: 790
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					dimension: "ad_astra:mercury"
+					id: "75E14B3D9CE5E1A3"
+					type: "dimension"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"73A2C5D8C3620017"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:mercury_stone"
+			}
+			id: "25657F439C9CDB13"
+			rewards: [
+				{
+					id: "4BFF85C588BBA05C"
+					type: "xp"
+					xp: 795
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "77D9E087CD4277DA"
+					item: {
+						count: 1
+						id: "ad_astra:mercury_stone"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"25657F439C9CDB13"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:calorite_engine"
+			}
+			id: "4434B88C7E8ABB5E"
+			rewards: [
+				{
+					id: "2968BEEE79C9AD0C"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "495DA9C5D4DCE6F5"
+					item: {
+						count: 1
+						id: "ad_astra:calorite_engine"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4434B88C7E8ABB5E"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:calorite_tank"
+			}
+			id: "71785E3E5C43DCEB"
+			rewards: [
+				{
+					id: "2D3310E3B2A7729A"
+					type: "xp"
+					xp: 805
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "56D0E145DCE31F10"
+					item: {
+						count: 1
+						id: "ad_astra:calorite_tank"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"71785E3E5C43DCEB"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:tier_4_rocket"
+			}
+			id: "7C137E047996F4A4"
+			rewards: [
+				{
+					id: "4BA44F3CC30E93BD"
+					type: "xp"
+					xp: 810
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "78FE1EF74EE670FC"
+					item: {
+						count: 1
+						id: "ad_astra:tier_4_rocket"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7C137E047996F4A4"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:jet_suit"
+			}
+			id: "21E0B5B4E5F134F2"
+			rewards: [
+				{
+					id: "55273E1056B2E4C7"
+					type: "xp"
+					xp: 815
+				}
+				{
+					count: 8
+					id: "5422F9CCB1C15069"
+					item: {
+						count: 1
+						id: "ad_astra:calorite_ingot"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 1L
+					id: "20A01ED052565F9A"
+					item: {
+						count: 1
+						id: "ad_astra:jet_suit"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+	]
+}

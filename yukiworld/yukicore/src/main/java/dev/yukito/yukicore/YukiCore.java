@@ -27,6 +27,10 @@ public final class YukiCore {
         ModBlocks.BLOCKS.register(modBus);
         ModItems.ITEMS.register(modBus);
         ModCreativeTabs.TABS.register(modBus);
+        dev.yukito.yukicore.registry.ModBlockEntities.BLOCK_ENTITIES.register(modBus);
+        dev.yukito.yukicore.registry.ModRecipes.TYPES.register(modBus);
+        dev.yukito.yukicore.registry.ModRecipes.SERIALIZERS.register(modBus);
+        dev.yukito.yukicore.registry.ModEntities.register(modBus);
 
         container.registerConfig(ModConfig.Type.CLIENT, Config.CLIENT_SPEC);
         LOGGER.info("YukiCore loaded — welcome to YukiWorld ❄");

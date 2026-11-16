@@ -5,6 +5,11 @@
     "yukicore:starlight_ore",
     "yukicore:aurorium_block",
     "yukicore:celestium_block",
-    "yukicore:starlight_block"
+    "yukicore:starlight_block",
+    "yukicore:permafrost_ore",
+    "yukicore:aurora_ore",
+    "yukicore:pyrolite_ore",
+    "yukicore:void_ore",
+    "yukicore:stellar_ore"
   ]
 }

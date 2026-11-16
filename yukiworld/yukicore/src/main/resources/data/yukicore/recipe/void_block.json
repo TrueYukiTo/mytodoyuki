@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "yukicore:void_shard"
+    }
+  },
+  "result": {
+    "id": "yukicore:void_block",
+    "count": 1
+  }
+}

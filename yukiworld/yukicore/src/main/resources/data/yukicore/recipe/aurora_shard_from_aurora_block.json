@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "yukicore:aurora_block"
+    }
+  ],
+  "result": {
+    "id": "yukicore:aurora_shard",
+    "count": 9
+  }
+}

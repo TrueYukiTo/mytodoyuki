@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 3,
+  "center": {
+    "item": "yukicore:yuki_tear"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:celestium_block"
+    },
+    {
+      "item": "yukicore:celestium_block"
+    },
+    {
+      "item": "yukicore:celestium_block"
+    },
+    {
+      "item": "yukicore:celestium_block"
+    },
+    {
+      "item": "yukicore:stellar_block"
+    },
+    {
+      "item": "yukicore:aurora_block"
+    },
+    {
+      "item": "yukicore:permafrost_block"
+    },
+    {
+      "item": "yukicore:void_block"
+    }
+  ],
+  "result": {
+    "id": "yukicore:crown_of_yuki",
+    "count": 1
+  },
+  "duration": 800
+}

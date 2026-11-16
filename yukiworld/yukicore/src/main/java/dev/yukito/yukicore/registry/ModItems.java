@@ -4,6 +4,7 @@ import dev.yukito.yukicore.YukiCore;
 import dev.yukito.yukicore.item.CoreItem;
 import dev.yukito.yukicore.item.FrostSwordItem;
 import dev.yukito.yukicore.item.InfinityStarItem;
+import dev.yukito.yukicore.item.SigilItem;
 import dev.yukito.yukicore.item.YukiArmorItem;
 import dev.yukito.yukicore.item.YukiStarItem;
 import net.minecraft.core.Holder;
@@ -69,6 +70,43 @@ public final class ModItems {
                     .component(DataComponents.UNBREAKABLE, new Unbreakable(true))
                     .attributes(SwordItem.createAttributes(ModTiers.YUKI, 30, -2.0f))));
 
+    // --- Алтарь ---
+    public static final DeferredItem<Item> FROST_WAND = ITEMS.register("frost_wand",
+            () -> new CoreItem(new Item.Properties().stacksTo(1).rarity(Rarity.RARE), true));
+
+    // --- Материалы планет Системы Юки ---
+    public static final DeferredItem<Item> PERMAFROST_CRYSTAL = material("permafrost_crystal", Rarity.RARE, false);
+    public static final DeferredItem<Item> AURORA_SHARD = material("aurora_shard", Rarity.RARE, true);
+    public static final DeferredItem<Item> RAW_PYROLITE = material("raw_pyrolite", Rarity.RARE, false);
+    public static final DeferredItem<Item> PYROLITE_INGOT = material("pyrolite_ingot", Rarity.RARE, false);
+    public static final DeferredItem<Item> VOID_SHARD = material("void_shard", Rarity.EPIC, false);
+    public static final DeferredItem<Item> STELLAR_SHARD = material("stellar_shard", Rarity.EPIC, true);
+
+    // --- Трофеи боссов ---
+    public static final DeferredItem<Item> COLOSSUS_HEART = core("colossus_heart", Rarity.EPIC, true);
+    public static final DeferredItem<Item> BLIZZARD_CROWN = core("blizzard_crown", Rarity.EPIC, true);
+    public static final DeferredItem<Item> ASH_CORE = core("ash_core", Rarity.EPIC, true);
+    public static final DeferredItem<Item> VOID_SCALE = core("void_scale", Rarity.EPIC, true);
+    public static final DeferredItem<Item> YUKI_TEAR = core("yuki_tear", Rarity.EPIC, true);
+
+    // --- Печати призыва ---
+    public static final DeferredItem<Item> SIGIL_COLOSSUS = sigil("sigil_colossus", ModEntities.FROST_COLOSSUS, "yukia");
+    public static final DeferredItem<Item> SIGIL_QUEEN = sigil("sigil_queen", ModEntities.BLIZZARD_QUEEN, "aurora");
+    public static final DeferredItem<Item> SIGIL_ASH_LORD = sigil("sigil_ash_lord", ModEntities.ASH_LORD, "pyrolith");
+    public static final DeferredItem<Item> SIGIL_WYRM = sigil("sigil_wyrm", ModEntities.VOID_WYRM, "nyx");
+    public static final DeferredItem<Item> SIGIL_SHADOW = sigil("sigil_shadow", ModEntities.SHADOW_OF_YUKI, "celestia");
+
+    // --- Награды финала ---
+    public static final DeferredItem<Item> CROWN_OF_YUKI = ITEMS.register("crown_of_yuki",
+            () -> new dev.yukito.yukicore.item.YukiArmorItem(ModArmorMaterials.YUKI, ArmorItem.Type.HELMET,
+                    new Item.Properties().rarity(Rarity.EPIC).fireResistant()
+                            .component(DataComponents.UNBREAKABLE, new Unbreakable(true))
+                            .durability(ArmorItem.Type.HELMET.getDurability(99)), "yuki"));
+    public static final DeferredItem<Item> ETERNAL_WINTER_BLADE = ITEMS.register("eternal_winter_blade",
+            () -> new FrostSwordItem(ModTiers.YUKI, new Item.Properties().rarity(Rarity.EPIC).fireResistant()
+                    .component(DataComponents.UNBREAKABLE, new Unbreakable(true))
+                    .attributes(SwordItem.createAttributes(ModTiers.YUKI, 50, -1.8f))));
+
     // --- Инструменты и броня трёх уровней ---
     public static final DeferredItem<Item> FROST_SWORD = sword("frost", ModTiers.FROST, Rarity.UNCOMMON);
     public static final DeferredItem<Item> FROST_PICKAXE = pickaxe("frost", ModTiers.FROST, Rarity.UNCOMMON);
@@ -111,6 +149,18 @@ public final class ModItems {
         blockItem(ModBlocks.AURORIUM_BLOCK, Rarity.RARE);
         blockItem(ModBlocks.CELESTIUM_BLOCK, Rarity.EPIC);
         blockItem(ModBlocks.YUKI_LAMP, Rarity.COMMON);
+        blockItem(ModBlocks.YUKI_ALTAR, Rarity.EPIC);
+        blockItem(ModBlocks.YUKI_PEDESTAL, Rarity.RARE);
+        blockItem(ModBlocks.PERMAFROST_ORE, Rarity.RARE);
+        blockItem(ModBlocks.AURORA_ORE, Rarity.RARE);
+        blockItem(ModBlocks.PYROLITE_ORE, Rarity.RARE);
+        blockItem(ModBlocks.VOID_ORE, Rarity.EPIC);
+        blockItem(ModBlocks.STELLAR_ORE, Rarity.EPIC);
+        blockItem(ModBlocks.PERMAFROST_BLOCK, Rarity.RARE);
+        blockItem(ModBlocks.AURORA_BLOCK, Rarity.RARE);
+        blockItem(ModBlocks.PYROLITE_BLOCK, Rarity.RARE);
+        blockItem(ModBlocks.VOID_BLOCK, Rarity.EPIC);
+        blockItem(ModBlocks.STELLAR_BLOCK, Rarity.EPIC);
     }
 
     private static DeferredItem<Item> material(String name, Rarity rarity, boolean foil) {
@@ -119,6 +169,13 @@ public final class ModItems {
 
     private static DeferredItem<Item> core(String name, Rarity rarity, boolean foil) {
         return ITEMS.register(name, () -> new CoreItem(new Item.Properties().rarity(rarity).fireResistant(), foil));
+    }
+
+    private static DeferredItem<Item> sigil(String name,
+            java.util.function.Supplier<? extends net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.Mob>> boss,
+            String planet) {
+        return ITEMS.register(name, () -> new SigilItem(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)
+                .fireResistant(), boss, YukiCore.id(planet)));
     }
 
     private static Item.Properties toolProps(Rarity rarity) {

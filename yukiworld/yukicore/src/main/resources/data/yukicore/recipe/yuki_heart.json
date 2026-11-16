@@ -47,8 +47,17 @@
     "D": {
       "item": "yukicore:dimension_core"
     },
-    "C": {
-      "item": "yukicore:celestium_ingot"
+    "H": {
+      "item": "yukicore:colossus_heart"
+    },
+    "Q": {
+      "item": "yukicore:blizzard_crown"
+    },
+    "P": {
+      "item": "yukicore:ash_core"
+    },
+    "V": {
+      "item": "yukicore:void_scale"
     },
     "Y": {
       "item": "yukicore:yuki_star"
@@ -58,9 +67,9 @@
     "    X    ",
     "   SAS   ",
     "  ZLULZ  ",
-    " SLTCMLS ",
-    "XAUCYCUAX",
-    " SLNCDLS ",
+    " SLTHMLS ",
+    "XAUQYPUAX",
+    " SLNVDLS ",
     "  ZLULZ  ",
     "   SAS   ",
     "    X    "

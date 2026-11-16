@@ -1,0 +1,573 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "cataclysm"
+	group: "42873FD1AA616C22"
+	icon: {
+		count: 1
+		id: "cataclysm:ignitium_ingot"
+	}
+	id: "612DF78D4B3DB549"
+	images: [ ]
+	order_index: 14
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"19FD717275BE0B34"
+			]
+			icon: {
+				count: 1
+				id: "cataclysm:abyss_eye"
+			}
+			id: "5DC5EFD09E742A75"
+			rewards: [
+				{
+					id: "58057A23C3041CF7"
+					type: "xp"
+					xp: 700
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "5ECF31466569E51E"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5DC5EFD09E742A75"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "65648CC8514B5C20"
+			rewards: [
+				{
+					id: "557B33798CF57038"
+					type: "xp"
+					xp: 705
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "cataclysm:ender_guardian"
+					id: "11B453E88D6C6FB7"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"65648CC8514B5C20"
+			]
+			icon: {
+				count: 1
+				id: "cataclysm:void_core"
+			}
+			id: "661547B5CC141D0C"
+			rewards: [
+				{
+					id: "476D5249DACD30B2"
+					type: "xp"
+					xp: 710
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "418C725ABE3F46E3"
+					item: {
+						count: 1
+						id: "cataclysm:void_core"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"661547B5CC141D0C"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "26F2FEF4540B5AFA"
+			rewards: [
+				{
+					id: "24903210AAD81011"
+					type: "xp"
+					xp: 715
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "cataclysm:netherite_monstrosity"
+					id: "5AA214DD6951E889"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"26F2FEF4540B5AFA"
+			]
+			icon: {
+				count: 1
+				id: "cataclysm:monstrous_horn"
+			}
+			id: "14ACCB1F4C8EFD6F"
+			rewards: [
+				{
+					id: "5AFF5005BF2B8636"
+					type: "xp"
+					xp: 720
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "76AE224DE07A9657"
+					item: {
+						count: 1
+						id: "cataclysm:monstrous_horn"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"14ACCB1F4C8EFD6F"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "3C145613E38AD8BB"
+			rewards: [
+				{
+					id: "1A92EF647A435DE8"
+					type: "xp"
+					xp: 725
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "cataclysm:ignis"
+					id: "58859C94B6857A6D"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3C145613E38AD8BB"
+			]
+			icon: {
+				count: 1
+				id: "cataclysm:ignitium_ingot"
+			}
+			id: "40D7FE7D9F55EF38"
+			rewards: [
+				{
+					id: "5D086D05B3CA42AD"
+					type: "xp"
+					xp: 730
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "44C2447D541788AE"
+					item: {
+						count: 1
+						id: "cataclysm:ignitium_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"40D7FE7D9F55EF38"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "206BEDB1FBC40C51"
+			rewards: [
+				{
+					id: "7529A8E8CF5E13A5"
+					type: "xp"
+					xp: 735
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "cataclysm:the_harbinger"
+					id: "2CB6EA5392F7C494"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"206BEDB1FBC40C51"
+			]
+			icon: {
+				count: 1
+				id: "cataclysm:witherite_ingot"
+			}
+			id: "399F3CD717C93213"
+			rewards: [
+				{
+					id: "5972B780859DBCFB"
+					type: "xp"
+					xp: 740
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "56541EC0EF44067B"
+					item: {
+						count: 1
+						id: "cataclysm:witherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"399F3CD717C93213"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "5FDB32FF3C25FC4B"
+			rewards: [
+				{
+					id: "1B2B238F1E714375"
+					type: "xp"
+					xp: 745
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "cataclysm:the_leviathan"
+					id: "7A4966F67C979C07"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5FDB32FF3C25FC4B"
+			]
+			icon: {
+				count: 1
+				id: "cataclysm:abyssal_egg"
+			}
+			id: "53DC1B3811F9A011"
+			rewards: [
+				{
+					id: "2981BE35458D1DCA"
+					type: "xp"
+					xp: 750
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2086FBA01CB4FC2F"
+					item: {
+						count: 1
+						id: "cataclysm:abyssal_egg"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"53DC1B3811F9A011"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "16376C856DC14888"
+			rewards: [
+				{
+					id: "408EB3D9B9894AA8"
+					type: "xp"
+					xp: 755
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "cataclysm:ancient_remnant"
+					id: "2B5C0E630DB25C27"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"16376C856DC14888"
+			]
+			icon: {
+				count: 1
+				id: "cataclysm:ancient_metal_ingot"
+			}
+			id: "4769DC9E95D80996"
+			rewards: [
+				{
+					id: "5688D1F5D23E67BA"
+					type: "xp"
+					xp: 760
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "3E97A71DC3A243AE"
+					item: {
+						count: 1
+						id: "cataclysm:ancient_metal_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4769DC9E95D80996"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "577BA09A768779D1"
+			rewards: [
+				{
+					id: "657342013157D1E7"
+					type: "xp"
+					xp: 765
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "cataclysm:maledictus"
+					id: "57A6E70C7562E643"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"577BA09A768779D1"
+			]
+			icon: {
+				count: 1
+				id: "cataclysm:cursium_ingot"
+			}
+			id: "5BA68FBA608AB523"
+			rewards: [
+				{
+					id: "7A853E278A382AA7"
+					type: "xp"
+					xp: 770
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "1EF1CBB04FE64E43"
+					item: {
+						count: 1
+						id: "cataclysm:cursium_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5BA68FBA608AB523"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "279A0255EC54DFE6"
+			rewards: [
+				{
+					id: "3BD7739B9AD4DCE1"
+					type: "xp"
+					xp: 775
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "cataclysm:scylla"
+					id: "3E32C162BF66F474"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"279A0255EC54DFE6"
+			]
+			icon: {
+				count: 1
+				id: "cataclysm:infernal_forge"
+			}
+			id: "2CC3913543E55344"
+			rewards: [
+				{
+					id: "6476B4BAC3223302"
+					type: "xp"
+					xp: 780
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1A94479E22AED09D"
+					item: {
+						count: 1
+						id: "cataclysm:infernal_forge"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2CC3913543E55344"
+			]
+			icon: {
+				count: 1
+				id: "cataclysm:gauntlet_of_guard"
+			}
+			id: "5D7100F19C67B7D4"
+			rewards: [
+				{
+					id: "76E422EE78DB10FB"
+					type: "xp"
+					xp: 785
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5B642E8A33AAD311"
+					item: {
+						count: 1
+						id: "cataclysm:gauntlet_of_guard"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5D7100F19C67B7D4"
+			]
+			icon: {
+				count: 1
+				id: "cataclysm:abyss_eye"
+			}
+			id: "42C40AB7397AB716"
+			rewards: [
+				{
+					id: "5FC4998E275FE88A"
+					type: "xp"
+					xp: 790
+				}
+				{
+					count: 4
+					id: "457E1B78267A9575"
+					item: {
+						count: 1
+						id: "yukicore:star_shard"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6969E8C49896A8D5"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 3.0d
+		}
+	]
+}

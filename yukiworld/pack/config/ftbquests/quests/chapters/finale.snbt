@@ -2,14 +2,14 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "finale"
-	group: ""
+	group: "74BF87A649295B10"
 	icon: {
 		count: 1
 		id: "yukicore:yuki_infinity_star"
 	}
 	id: "280E11ADCF945185"
 	images: [ ]
-	order_index: 12
+	order_index: 28
 	quest_links: [ ]
 	quests: [
 		{
@@ -465,7 +465,7 @@
 			]
 			icon: {
 				count: 1
-				id: "minecraft:snow_block"
+				id: "yukicore:yuki_infinity_star"
 			}
 			id: "21DF1AF08036042C"
 			rewards: [
@@ -475,11 +475,11 @@
 					xp: 1075
 				}
 				{
-					count: 64
+					count: 4
 					id: "360FD40C1656C242"
 					item: {
 						count: 1
-						id: "yukicore:yuki_lamp"
+						id: "yukicore:star_shard"
 					}
 					type: "item"
 				}

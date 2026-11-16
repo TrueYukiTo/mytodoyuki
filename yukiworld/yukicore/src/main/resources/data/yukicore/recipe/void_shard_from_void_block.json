@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "yukicore:void_block"
+    }
+  ],
+  "result": {
+    "id": "yukicore:void_shard",
+    "count": 9
+  }
+}

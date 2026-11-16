@@ -18,7 +18,33 @@ CATEGORIES = {
     "end": ("Острова Энда", "Где искать руды Юки.", "yukicore:yuki_crystal_ore", 1),
     "forge": ("Ледяная кузня", "Металлы, компоненты и снаряжение.", "yukicore:aurorium_ingot", 2),
     "cores": ("Ядра и Сердце", "Финальная цепочка YukiWorld.", "yukicore:yuki_heart", 3),
+    "altars": ("Алтари Юки", "Мультиструктура в три уровня и ритуалы.", "yukicore:yuki_altar", 4),
+    "stars": ("Система Юки", "Пять планет и их стражи.", "yukicore:stellar_shard", 5),
 }
+
+
+def _grid(n, cells):
+    """n×n слой: cells — {(dx, dz): символ}, остальное — '_' (что угодно)."""
+    h = n // 2
+    return ["".join(cells.get((x, z), "_") for x in range(-h, h + 1)) for z in range(-h, h + 1)]
+
+
+def altar_multiblock(tier):
+    n = 13 if tier == 3 else 7
+    peds = [(3, 0), (-3, 0), (0, 3), (0, -3)] + ([(3, 3), (-3, 3), (3, -3), (-3, -3)] if tier >= 2 else [])
+    diag = [(2, 2), (-2, 2), (2, -2), (-2, -2)]
+    obel = [(6, 0), (-6, 0), (0, 6), (0, -6)] if tier == 3 else []
+    body, top = ("C", "S") if tier >= 2 else ("F", "L")
+    layers = []
+    if obel:
+        layers.append(_grid(n, {o: "L" for o in obel}))
+    layers.append(_grid(n, {**{d: top for d in diag}, **{o: "C" for o in obel}}))
+    layers.append(_grid(n, {**{d: body for d in diag}, **{o: "C" for o in obel}}))
+    base = {**{d: body for d in diag}, **{p: "P" for p in peds}, **{o: "C" for o in obel}, (0, 0): "0"}
+    layers.append(_grid(n, base))
+    return {"mapping": {"0": "yukicore:yuki_altar", "P": "yukicore:yuki_pedestal", "F": "yukicore:frost_block",
+                        "L": "yukicore:yuki_lamp", "C": "yukicore:celestium_block", "S": "yukicore:starlight_block"},
+            "pattern": layers, "symmetrical": True}
 
 # (категория, id, название, иконка, страницы)
 # страница: str -> текст; ("spot", item, text) -> предмет крупно
@@ -107,6 +133,48 @@ ENTRIES = [
 ]
 
 
+ENTRIES += [
+    ("altars", "altar_1", "I · Морозный алтарь", "yukicore:frost_block", [
+        "Алтарь Юки — мультиструктура. В центре — $(l)Алтарь$(), вокруг — $(l)пьедесталы$() и колонны.$(br2)"
+        "ПКМ предметом по алтарю или пьедесталу — положить, пустой рукой — забрать. "
+        "$(l)Морозный жезл$() запускает ритуал.",
+        ("multiblock", 1, "4 пьедестала по сторонам (r=3), 4 колонны по диагонали: 2 морозных блока + лампа Юки."),
+    ]),
+    ("altars", "altar_2", "II · Звёздный алтарь", "yukicore:starlight_block", [
+        ("multiblock", 2, "8 пьедесталов. Колонны: 2 целестиевых блока + блок звёздного света."),
+        "Ритуалы II уровня: печати стражей Авроры, Пиролита и Никты, умножение аурония, калорит из пиролита, "
+        "звезда Незера из пустоты и $(l)книги выше максимума$(): Острота VII, Эффективность VII, Защита VI…",
+    ]),
+    ("altars", "altar_3", "III · Бесконечность", "yukicore:celestium_block", [
+        ("multiblock", 3, "Уровень II + 4 обелиска в 6 блоках: 3 целестиевых блока + лампа Юки."),
+        "Только Алтарь Бесконечности может создать $(l)Печать Тени$(), $(l)Корону Юки$() и "
+        "$(l)Клинок Вечной Зимы$().",
+    ]),
+    ("stars", "system", "Система Юки", "yukicore:stellar_shard", [
+        "Пять планет у далёкой звезды. Добраться можно только на $(l)ракете IV уровня$() Ad Astra.",
+        "$(li)$(#7cc8f0)Юкия$() — лёд, можно дышать. Страж: Ледяной Колосс."
+        "$(li)$(#c7a8ff)Аврора$() — аметист и кальцит. Страж: Королева Метелей."
+        "$(li)$(#f07a1c)Пиролит$() — лава и пепел, 280°. Страж: Пепельный Владыка."
+        "$(li)$(#a070f0)Никта$() — вечная ночь. Страж: Пустотный Змей."
+        "$(li)$(#ffe070)Целестия$() — золотой свет. Здесь прячется Тень Юки.",
+    ]),
+    ("stars", "bosses", "Стражи и печати", "yukicore:sigil_colossus", [
+        "Стража призывает $(l)Печать$(), созданная на Алтаре. Печать работает только на планете стража.",
+        ("spot", "yukicore:sigil_colossus", "Ледяной Колосс: 600 ❤. Линии клыков, удар по земле."),
+        ("spot", "yukicore:sigil_queen", "Королева Метелей: 750 ❤. Заморозка, телепорты, свита."),
+        ("spot", "yukicore:sigil_ash_lord", "Пепельный Владыка: 900 ❤. Огненные новы, ифриты."),
+        ("spot", "yukicore:sigil_wyrm", "Пустотный Змей: 1000 ❤. Снаряды шалкеров, тьма, иссушение."),
+        ("spot", "yukicore:sigil_shadow", "Тень Юки: 1600 ❤. Всё сразу и молнии во второй фазе."),
+        "Когда здоровье стража падает ниже половины, он впадает в $(c)ярость$() — способности вдвое чаще.",
+    ]),
+    ("stars", "crown", "Корона Юки", "yukicore:crown_of_yuki", [
+        ("spot", "yukicore:crown_of_yuki", "Финальная награда. Полёт, сопротивление III, сила III, "
+                                           "регенерация II и все бонусы целестия."),
+        ("spot", "yukicore:eternal_winter_blade", "Клинок Вечной Зимы: неразрушимый, урон 63."),
+    ]),
+]
+
+
 def files():
     """Возвращает {относительный путь: json} для data/ и assets/."""
     out = {"data/yukicore/patchouli_books/chronicle/book.json": BOOK}
@@ -118,7 +186,10 @@ def files():
         for i, (cat, eid, name, icon, pages) in enumerate(ENTRIES):
             pj = []
             for p in pages:
-                if isinstance(p, tuple):
+                if isinstance(p, tuple) and p[0] == "multiblock":
+                    pj.append({"type": "patchouli:multiblock", "name": f"Уровень {p[1]}",
+                               "multiblock": altar_multiblock(p[1]), "enable_visualize": True, "text": p[2]})
+                elif isinstance(p, tuple):
                     pj.append({"type": "patchouli:spotlight", "item": p[1], "text": p[2]})
                 else:
                     pj.append({"type": "patchouli:text", "text": p})

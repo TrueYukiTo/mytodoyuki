@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 3,
+  "center": {
+    "item": "yukicore:stellar_block"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:colossus_heart"
+    },
+    {
+      "item": "yukicore:blizzard_crown"
+    },
+    {
+      "item": "yukicore:ash_core"
+    },
+    {
+      "item": "yukicore:void_scale"
+    },
+    {
+      "item": "yukicore:stellar_shard"
+    },
+    {
+      "item": "yukicore:stellar_shard"
+    },
+    {
+      "item": "yukicore:stellar_shard"
+    },
+    {
+      "item": "yukicore:stellar_shard"
+    }
+  ],
+  "result": {
+    "id": "yukicore:sigil_shadow",
+    "count": 1
+  },
+  "duration": 600
+}

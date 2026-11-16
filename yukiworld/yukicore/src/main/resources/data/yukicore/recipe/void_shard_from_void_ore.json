@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": {
+    "item": "yukicore:void_ore"
+  },
+  "result": {
+    "id": "yukicore:void_shard"
+  },
+  "experience": 3.0,
+  "cookingtime": 200
+}

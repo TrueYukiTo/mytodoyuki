@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ad_astra"
+    }
+  ],
+  "type": "yukicore:nyx",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "yukicore:nyx",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "yukicore:nyx"
+    }
+  }
+}

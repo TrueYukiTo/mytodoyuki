@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "yukicore:permafrost_block"
+    }
+  ],
+  "result": {
+    "id": "yukicore:permafrost_crystal",
+    "count": 9
+  }
+}

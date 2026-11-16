@@ -2,19 +2,19 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "end"
-	group: ""
+	group: "42873FD1AA616C22"
 	icon: {
 		count: 1
 		id: "minecraft:dragon_egg"
 	}
 	id: "21450E439F1E525F"
 	images: [ ]
-	order_index: 9
+	order_index: 15
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: [
-				"1E480D99B08F73B4"
+				"42C40AB7397AB716"
 			]
 			icon: {
 				count: 1

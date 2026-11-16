@@ -1,0 +1,18 @@
+{
+  "name": "Корона Юки",
+  "category": "yukicore:stars",
+  "icon": "yukicore:crown_of_yuki",
+  "sortnum": 15,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:crown_of_yuki",
+      "text": "Финальная награда. Полёт, сопротивление III, сила III, регенерация II и все бонусы целестия."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:eternal_winter_blade",
+      "text": "Клинок Вечной Зимы: неразрушимый, урон 63."
+    }
+  ]
+}

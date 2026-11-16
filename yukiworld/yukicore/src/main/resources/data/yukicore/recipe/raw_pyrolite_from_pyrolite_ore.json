@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": {
+    "item": "yukicore:pyrolite_ore"
+  },
+  "result": {
+    "id": "yukicore:raw_pyrolite"
+  },
+  "experience": 2.0,
+  "cookingtime": 200
+}

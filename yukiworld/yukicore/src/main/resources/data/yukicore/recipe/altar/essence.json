@@ -1,0 +1,26 @@
+{
+  "type": "yukicore:altar",
+  "tier": 1,
+  "center": {
+    "item": "yukicore:yuki_crystal"
+  },
+  "pedestals": [
+    {
+      "item": "minecraft:blue_ice"
+    },
+    {
+      "item": "minecraft:snow_block"
+    },
+    {
+      "item": "minecraft:blue_ice"
+    },
+    {
+      "item": "minecraft:snow_block"
+    }
+  ],
+  "result": {
+    "id": "yukicore:yuki_essence",
+    "count": 2
+  },
+  "duration": 100
+}

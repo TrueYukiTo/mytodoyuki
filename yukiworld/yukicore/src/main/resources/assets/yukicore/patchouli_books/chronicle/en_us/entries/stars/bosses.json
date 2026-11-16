@@ -1,0 +1,41 @@
+{
+  "name": "Стражи и печати",
+  "category": "yukicore:stars",
+  "icon": "yukicore:sigil_colossus",
+  "sortnum": 14,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Стража призывает $(l)Печать$(), созданная на Алтаре. Печать работает только на планете стража."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:sigil_colossus",
+      "text": "Ледяной Колосс: 600 ❤. Линии клыков, удар по земле."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:sigil_queen",
+      "text": "Королева Метелей: 750 ❤. Заморозка, телепорты, свита."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:sigil_ash_lord",
+      "text": "Пепельный Владыка: 900 ❤. Огненные новы, ифриты."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:sigil_wyrm",
+      "text": "Пустотный Змей: 1000 ❤. Снаряды шалкеров, тьма, иссушение."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:sigil_shadow",
+      "text": "Тень Юки: 1600 ❤. Всё сразу и молнии во второй фазе."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Когда здоровье стража падает ниже половины, он впадает в $(c)ярость$() — способности вдвое чаще."
+    }
+  ]
+}

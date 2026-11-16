@@ -1,0 +1,15 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ad_astra"
+    }
+  ],
+  "dimension": "yukicore:pyrolith_orbit",
+  "gravity": 0.0,
+  "oxygen": false,
+  "solar_power": 60,
+  "solar_system": "yukicore:yuki_system",
+  "temperature": -270,
+  "tier": 4
+}

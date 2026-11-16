@@ -21,7 +21,8 @@ public final class InfinityStarHandler {
         Player player = event.getEntity();
         if (player.level().isClientSide || player.tickCount % 20 != 0) return;
 
-        boolean hasStar = player.getInventory().contains(s -> s.is(ModItems.YUKI_INFINITY_STAR.get()));
+        boolean hasStar = player.getInventory().contains(s -> s.is(ModItems.YUKI_INFINITY_STAR.get()))
+                || player.getItemBySlot(net.minecraft.world.entity.EquipmentSlot.HEAD).is(ModItems.CROWN_OF_YUKI.get());
         CompoundTag data = player.getPersistentData();
         boolean granted = data.getBoolean(FLIGHT_TAG);
         boolean survival = !player.isCreative() && !player.isSpectator();

@@ -1,0 +1,58 @@
+{
+  "name": "I · Морозный алтарь",
+  "category": "yukicore:altars",
+  "icon": "yukicore:frost_block",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Алтарь Юки — мультиструктура. В центре — $(l)Алтарь$(), вокруг — $(l)пьедесталы$() и колонны.$(br2)ПКМ предметом по алтарю или пьедесталу — положить, пустой рукой — забрать. $(l)Морозный жезл$() запускает ритуал."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Уровень 1",
+      "multiblock": {
+        "mapping": {
+          "0": "yukicore:yuki_altar",
+          "P": "yukicore:yuki_pedestal",
+          "F": "yukicore:frost_block",
+          "L": "yukicore:yuki_lamp",
+          "C": "yukicore:celestium_block",
+          "S": "yukicore:starlight_block"
+        },
+        "pattern": [
+          [
+            "_______",
+            "_L___L_",
+            "_______",
+            "_______",
+            "_______",
+            "_L___L_",
+            "_______"
+          ],
+          [
+            "_______",
+            "_F___F_",
+            "_______",
+            "_______",
+            "_______",
+            "_F___F_",
+            "_______"
+          ],
+          [
+            "___P___",
+            "_F___F_",
+            "_______",
+            "P__0__P",
+            "_______",
+            "_F___F_",
+            "___P___"
+          ]
+        ],
+        "symmetrical": true
+      },
+      "enable_visualize": true,
+      "text": "4 пьедестала по сторонам (r=3), 4 колонны по диагонали: 2 морозных блока + лампа Юки."
+    }
+  ]
+}

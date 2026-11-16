@@ -2,6 +2,11 @@
   "values": [
     "yukicore:frost_ore",
     "yukicore:yuki_crystal_ore",
-    "yukicore:starlight_ore"
+    "yukicore:starlight_ore",
+    "yukicore:permafrost_ore",
+    "yukicore:aurora_ore",
+    "yukicore:pyrolite_ore",
+    "yukicore:void_ore",
+    "yukicore:stellar_ore"
   ]
 }

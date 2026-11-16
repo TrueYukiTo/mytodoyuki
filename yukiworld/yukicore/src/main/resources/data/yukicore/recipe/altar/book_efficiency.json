@@ -1,0 +1,45 @@
+{
+  "type": "yukicore:altar",
+  "tier": 2,
+  "center": {
+    "item": "minecraft:book"
+  },
+  "pedestals": [
+    {
+      "item": "minecraft:netherite_pickaxe"
+    },
+    {
+      "item": "minecraft:netherite_pickaxe"
+    },
+    {
+      "item": "yukicore:aurorium_ingot"
+    },
+    {
+      "item": "yukicore:aurorium_ingot"
+    },
+    {
+      "item": "yukicore:yuki_essence"
+    },
+    {
+      "item": "yukicore:yuki_essence"
+    },
+    {
+      "item": "minecraft:experience_bottle"
+    },
+    {
+      "item": "minecraft:experience_bottle"
+    }
+  ],
+  "result": {
+    "id": "minecraft:enchanted_book",
+    "count": 1,
+    "components": {
+      "minecraft:stored_enchantments": {
+        "levels": {
+          "minecraft:efficiency": 7
+        }
+      }
+    }
+  },
+  "duration": 200
+}

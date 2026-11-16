@@ -1,0 +1,685 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hunt"
+	group: "42873FD1AA616C22"
+	icon: {
+		count: 1
+		id: "mowziesmobs:ice_crystal"
+	}
+	id: "4DCF2550594D7BB0"
+	images: [ ]
+	order_index: 13
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"7E42022B337DFD7E"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:iron_sword"
+			}
+			id: "2C44D75D04462012"
+			rewards: [
+				{
+					id: "6D9A9AB38A0735DE"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "18B0C18BFAAD270A"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2C44D75D04462012"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "2D23C2A58F75E9A8"
+			rewards: [
+				{
+					id: "1EE97F485160A5F6"
+					type: "xp"
+					xp: 605
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "mowziesmobs:ferrous_wroughtnaut"
+					id: "33B720555730E701"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2D23C2A58F75E9A8"
+			]
+			icon: {
+				count: 1
+				id: "mowziesmobs:wrought_axe"
+			}
+			id: "45E1DBDA0903069D"
+			rewards: [
+				{
+					id: "6C3200C2AD66C12C"
+					type: "xp"
+					xp: 610
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4D37B1A4263C409D"
+					item: {
+						count: 1
+						id: "mowziesmobs:wrought_axe"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"45E1DBDA0903069D"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "1E54D8FED70E848B"
+			rewards: [
+				{
+					id: "54585115B11D7588"
+					type: "xp"
+					xp: 615
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "mowziesmobs:frostmaw"
+					id: "19DFA478A0E99B65"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1E54D8FED70E848B"
+			]
+			icon: {
+				count: 1
+				id: "mowziesmobs:ice_crystal"
+			}
+			id: "703690A36A6A558B"
+			rewards: [
+				{
+					id: "5E2F8962DC8BC65F"
+					type: "xp"
+					xp: 620
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5F81BB0266EB952C"
+					item: {
+						count: 1
+						id: "mowziesmobs:ice_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"703690A36A6A558B"
+			]
+			icon: {
+				count: 1
+				id: "mowziesmobs:earthrend_gauntlet"
+			}
+			id: "247BC68A348F60BD"
+			rewards: [
+				{
+					id: "71AF8A5CEFEDB470"
+					type: "xp"
+					xp: 625
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7CEEBC2BDDF71408"
+					item: {
+						count: 1
+						id: "mowziesmobs:earthrend_gauntlet"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"247BC68A348F60BD"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "78C892598BB48BCC"
+			rewards: [
+				{
+					id: "1B830E82E6BBED68"
+					type: "xp"
+					xp: 630
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "bosses_of_mass_destruction:lich"
+					id: "4DC724B9E7396FEF"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"78C892598BB48BCC"
+			]
+			icon: {
+				count: 1
+				id: "bosses_of_mass_destruction:soul_star"
+			}
+			id: "5C24A2EDD27EF117"
+			rewards: [
+				{
+					id: "7A470A3CE4CE5051"
+					type: "xp"
+					xp: 635
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6763F350614191E3"
+					item: {
+						count: 1
+						id: "bosses_of_mass_destruction:soul_star"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5C24A2EDD27EF117"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "258CDFA4348D8E5B"
+			rewards: [
+				{
+					id: "2043107A3493B6DB"
+					type: "xp"
+					xp: 640
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "bosses_of_mass_destruction:obsidilith"
+					id: "6B2A04B6D5015255"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"258CDFA4348D8E5B"
+			]
+			icon: {
+				count: 1
+				id: "bosses_of_mass_destruction:obsidian_heart"
+			}
+			id: "35B9EF6E423B3865"
+			rewards: [
+				{
+					id: "629F54E0915714FA"
+					type: "xp"
+					xp: 645
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3563F6569613F2A8"
+					item: {
+						count: 1
+						id: "bosses_of_mass_destruction:obsidian_heart"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"35B9EF6E423B3865"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "4F9B643A147094AB"
+			rewards: [
+				{
+					id: "5D317BF59B5972E1"
+					type: "xp"
+					xp: 650
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "bosses_of_mass_destruction:gauntlet"
+					id: "3568401A36C3AA32"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4F9B643A147094AB"
+			]
+			icon: {
+				count: 1
+				id: "bosses_of_mass_destruction:blazing_eye"
+			}
+			id: "56F2502044D9FE3B"
+			rewards: [
+				{
+					id: "6E5839470A199F40"
+					type: "xp"
+					xp: 655
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1DF90EF8F5435F0A"
+					item: {
+						count: 1
+						id: "bosses_of_mass_destruction:blazing_eye"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"56F2502044D9FE3B"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "2B2E1C438BAC35F7"
+			rewards: [
+				{
+					id: "4D7E941E5E74701B"
+					type: "xp"
+					xp: 660
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "bosses_of_mass_destruction:void_blossom"
+					id: "3AEE2CB64AC9F08D"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2B2E1C438BAC35F7"
+			]
+			icon: {
+				count: 1
+				id: "bosses_of_mass_destruction:void_thorn"
+			}
+			id: "160CB3DA5DD141E7"
+			rewards: [
+				{
+					id: "31CE755D74D104EC"
+					type: "xp"
+					xp: 665
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7262CD9877D52EE9"
+					item: {
+						count: 1
+						id: "bosses_of_mass_destruction:void_thorn"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"160CB3DA5DD141E7"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "20C3E675B1A62329"
+			rewards: [
+				{
+					id: "2D3F012E7100EA34"
+					type: "xp"
+					xp: 670
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "aquamirae:captain_cornelia"
+					id: "25D1380E802ABB58"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"20C3E675B1A62329"
+			]
+			icon: {
+				count: 1
+				id: "aquamirae:frozen_key"
+			}
+			id: "6DE0BF509D611702"
+			rewards: [
+				{
+					id: "7E35E87D56C382AE"
+					type: "xp"
+					xp: 675
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2702B66B9704EC07"
+					item: {
+						count: 1
+						id: "aquamirae:frozen_key"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6DE0BF509D611702"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "1F1EC891FBE77FEF"
+			rewards: [
+				{
+					id: "6A7BB59BBECDB03C"
+					type: "xp"
+					xp: 680
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "aquamirae:maze_mother"
+					id: "52D46702AB0500E4"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"1F1EC891FBE77FEF"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "628B1ECA1C2E00BF"
+			rewards: [
+				{
+					id: "2397F4CDB4559985"
+					type: "xp"
+					xp: 685
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "block_factorys_bosses:yeti"
+					id: "676F55A751410E4C"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"628B1ECA1C2E00BF"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "3A021ECE85A44B2A"
+			rewards: [
+				{
+					id: "44159264EF86A77D"
+					type: "xp"
+					xp: 690
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "block_factorys_bosses:kraken"
+					id: "4BE84F9B48EFA853"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3A021ECE85A44B2A"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "1E62D7E75B069DB7"
+			rewards: [
+				{
+					id: "2669D6D88A007D4B"
+					type: "xp"
+					xp: 695
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "block_factorys_bosses:sandworm"
+					id: "70594F173B6CAAB0"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"1E62D7E75B069DB7"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "4CC3EF8575E6A3A6"
+			rewards: [
+				{
+					id: "673FD5A0AAA3C072"
+					type: "xp"
+					xp: 700
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "block_factorys_bosses:infernal_dragon"
+					id: "6C699B3AD9DBFB26"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"4CC3EF8575E6A3A6"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "7B1AFB26C0F553F2"
+			rewards: [
+				{
+					id: "24D4A2D1908125BC"
+					type: "xp"
+					xp: 705
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "block_factorys_bosses:underworld_knight"
+					id: "6384538C74615EA7"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"7B1AFB26C0F553F2"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "19FD717275BE0B34"
+			rewards: [
+				{
+					id: "3EE9912F90D45A5C"
+					type: "xp"
+					xp: 710
+				}
+				{
+					count: 2
+					id: "2A552EDA9068EDCE"
+					item: {
+						count: 1
+						id: "yukicore:star_shard"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					entity: "irons_spellbooks:dead_king"
+					id: "29DA155C2C856998"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 7.5d
+			y: 4.5d
+		}
+	]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 2,
+  "center": {
+    "item": "minecraft:wither_skeleton_skull"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:void_shard"
+    },
+    {
+      "item": "yukicore:void_shard"
+    },
+    {
+      "item": "yukicore:void_shard"
+    },
+    {
+      "item": "yukicore:void_shard"
+    },
+    {
+      "item": "minecraft:soul_sand"
+    },
+    {
+      "item": "minecraft:soul_sand"
+    },
+    {
+      "item": "minecraft:soul_sand"
+    },
+    {
+      "item": "minecraft:soul_sand"
+    }
+  ],
+  "result": {
+    "id": "minecraft:nether_star",
+    "count": 1
+  },
+  "duration": 400
+}

@@ -1,0 +1,319 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "pyrolith"
+	group: "3C966D8069B10DF8"
+	icon: {
+		count: 1
+		id: "yukicore:pyrolite_ingot"
+	}
+	id: "3DE504D2E0EE014D"
+	images: [ ]
+	order_index: 25
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"6B418C61852CA884"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:pyrolite_ingot"
+			}
+			id: "15B6229122283260"
+			rewards: [
+				{
+					id: "545CAD6B4F34FA02"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6DD45E831FF1998D"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"15B6229122283260"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:ender_eye"
+			}
+			id: "63E5DD2D5D947429"
+			rewards: [
+				{
+					id: "775A1FEB7EA49C2A"
+					type: "xp"
+					xp: 1005
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					dimension: "yukicore:pyrolith"
+					id: "6CDBF8A7FFDBE44E"
+					type: "dimension"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"63E5DD2D5D947429"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:blackstone"
+			}
+			id: "30BADF2960223923"
+			rewards: [
+				{
+					id: "6A8B8729DFE38DF5"
+					type: "xp"
+					xp: 1010
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "36B21D1A7932911E"
+					item: {
+						count: 1
+						id: "minecraft:blackstone"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"30BADF2960223923"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:raw_pyrolite"
+			}
+			id: "1FC1C7156ED095C5"
+			rewards: [
+				{
+					id: "646C05081E95F243"
+					type: "xp"
+					xp: 1015
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "1EDF3376512AE267"
+					item: {
+						count: 1
+						id: "yukicore:raw_pyrolite"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1FC1C7156ED095C5"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:pyrolite_ingot"
+			}
+			id: "4C1A84B8566831E1"
+			rewards: [
+				{
+					id: "232EAFDF8DFE415D"
+					type: "xp"
+					xp: 1020
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "39308BB5D0928A98"
+					item: {
+						count: 1
+						id: "yukicore:pyrolite_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4C1A84B8566831E1"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:pyrolite_block"
+			}
+			id: "3BEF0E29F1048D05"
+			rewards: [
+				{
+					id: "5C714686D0025336"
+					type: "xp"
+					xp: 1025
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "4B9E763F66F02484"
+					item: {
+						count: 1
+						id: "yukicore:pyrolite_block"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3BEF0E29F1048D05"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:calorite_ingot"
+			}
+			id: "627AE82C557158B2"
+			rewards: [
+				{
+					id: "5FBCDFD7DBE28184"
+					type: "xp"
+					xp: 1030
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "3651C761626B1058"
+					item: {
+						count: 1
+						id: "ad_astra:calorite_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"627AE82C557158B2"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sigil_ash_lord"
+			}
+			id: "1289A38AE9D85CDE"
+			rewards: [
+				{
+					id: "683050D55963541C"
+					type: "xp"
+					xp: 1035
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3535708819AAB92E"
+					item: {
+						count: 1
+						id: "yukicore:sigil_ash_lord"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1289A38AE9D85CDE"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "15D0E6BF79980692"
+			rewards: [
+				{
+					id: "24673FBDC663CB4B"
+					type: "xp"
+					xp: 1040
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "yukicore:ash_lord"
+					id: "41A8DD23DB546EBA"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"15D0E6BF79980692"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:ash_core"
+			}
+			id: "1FBF8B7802F558C7"
+			rewards: [
+				{
+					id: "23896BA75393CC9D"
+					type: "xp"
+					xp: 1045
+				}
+				{
+					count: 2
+					id: "642F7CC8A537D8A7"
+					item: {
+						count: 1
+						id: "yukicore:star_shard"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 1L
+					id: "22596C93754F3072"
+					item: {
+						count: 1
+						id: "yukicore:ash_core"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+	]
+}

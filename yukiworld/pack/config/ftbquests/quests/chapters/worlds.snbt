@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "worlds"
-	group: ""
+	group: "42873FD1AA616C22"
 	icon: {
 		count: 1
 		id: "minecraft:crying_obsidian"

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "yukicore:pyrolite_ingot"
+    }
+  },
+  "result": {
+    "id": "yukicore:pyrolite_block",
+    "count": 1
+  }
+}

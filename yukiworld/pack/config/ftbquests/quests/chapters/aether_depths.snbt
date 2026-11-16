@@ -1,0 +1,461 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "aether_depths"
+	group: "42873FD1AA616C22"
+	icon: {
+		count: 1
+		id: "aether:gold_dungeon_key"
+	}
+	id: "500FC4AEB0CC85C7"
+	images: [ ]
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"66FB55AC62505D09"
+			]
+			icon: {
+				count: 1
+				id: "aether:ambrosium_shard"
+			}
+			id: "6A4D6A8C353F8326"
+			rewards: [
+				{
+					id: "344A18D5E45FF6B4"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "5494D40CAEFE07A7"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6A4D6A8C353F8326"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "4581EA3EAC38B939"
+			rewards: [
+				{
+					id: "2C02E5B451756C30"
+					type: "xp"
+					xp: 505
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "aether:slider"
+					id: "55B072BE22E5E443"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4581EA3EAC38B939"
+			]
+			icon: {
+				count: 1
+				id: "aether:bronze_dungeon_key"
+			}
+			id: "58A5F36B89638B41"
+			rewards: [
+				{
+					id: "1F030550C4520DE6"
+					type: "xp"
+					xp: 510
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2F6E1752A2A91B36"
+					item: {
+						count: 1
+						id: "aether:bronze_dungeon_key"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"58A5F36B89638B41"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "69B4A66D7D132C6C"
+			rewards: [
+				{
+					id: "26A76E4D45E1FA2F"
+					type: "xp"
+					xp: 515
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "aether:valkyrie_queen"
+					id: "5A39223449184F29"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"69B4A66D7D132C6C"
+			]
+			icon: {
+				count: 1
+				id: "aether:silver_dungeon_key"
+			}
+			id: "73214C79E4D3951D"
+			rewards: [
+				{
+					id: "1F798C36794BB57E"
+					type: "xp"
+					xp: 520
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "798B4A1C294DF389"
+					item: {
+						count: 1
+						id: "aether:silver_dungeon_key"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"73214C79E4D3951D"
+			]
+			icon: {
+				count: 1
+				id: "aether:valkyrie_lance"
+			}
+			id: "6D1E566A6D6FC04B"
+			rewards: [
+				{
+					id: "561AAA6F8F557BED"
+					type: "xp"
+					xp: 525
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "449EEC34A07F06A9"
+					item: {
+						count: 1
+						id: "aether:valkyrie_lance"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6D1E566A6D6FC04B"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "14D7AAF97A3979B9"
+			rewards: [
+				{
+					id: "2EF1651F51233F21"
+					type: "xp"
+					xp: 530
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "aether:sun_spirit"
+					id: "6612E263E9832770"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"14D7AAF97A3979B9"
+			]
+			icon: {
+				count: 1
+				id: "aether:gold_dungeon_key"
+			}
+			id: "6CF5A0C3F0638E0B"
+			rewards: [
+				{
+					id: "2A50F7952F5A120C"
+					type: "xp"
+					xp: 535
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "56AA58496843B641"
+					item: {
+						count: 1
+						id: "aether:gold_dungeon_key"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6CF5A0C3F0638E0B"
+			]
+			icon: {
+				count: 1
+				id: "aether:phoenix_bow"
+			}
+			id: "4168C5A62F960E98"
+			rewards: [
+				{
+					id: "7187444FA4336807"
+					type: "xp"
+					xp: 540
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "69CC4285053D18B4"
+					item: {
+						count: 1
+						id: "aether:phoenix_bow"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4168C5A62F960E98"
+			]
+			icon: {
+				count: 1
+				id: "deep_aether:skyjade"
+			}
+			id: "7DCA59B3146F792B"
+			rewards: [
+				{
+					id: "66A6DA8FFD125894"
+					type: "xp"
+					xp: 545
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "288DCA9D010F99C3"
+					item: {
+						count: 1
+						id: "deep_aether:skyjade"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7DCA59B3146F792B"
+			]
+			icon: {
+				count: 1
+				id: "deep_aether:skyjade_chestplate"
+			}
+			id: "2BF812C223C72CC2"
+			rewards: [
+				{
+					id: "37B4E11782165F76"
+					type: "xp"
+					xp: 550
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "221B6E54A3594E02"
+					item: {
+						count: 1
+						id: "deep_aether:skyjade_chestplate"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2BF812C223C72CC2"
+			]
+			icon: {
+				count: 1
+				id: "deep_aether:stratus_ingot"
+			}
+			id: "36FA64AFDFB68673"
+			rewards: [
+				{
+					id: "2768604C78A9EC71"
+					type: "xp"
+					xp: 555
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "28D632563E06281A"
+					item: {
+						count: 1
+						id: "deep_aether:stratus_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"36FA64AFDFB68673"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "50C3DABE07C0F52A"
+			rewards: [
+				{
+					id: "2EE18359BEBAA934"
+					type: "xp"
+					xp: 560
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "deep_aether:eots_controller"
+					id: "1EC22F74FF8290AE"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"50C3DABE07C0F52A"
+			]
+			icon: {
+				count: 1
+				id: "deep_aether:storm_sword"
+			}
+			id: "45EC3B0D8C8C85ED"
+			rewards: [
+				{
+					id: "5CA6716B9B36BF12"
+					type: "xp"
+					xp: 565
+				}
+				{
+					count: 4
+					id: "1BBA39A5E4DAE112"
+					item: {
+						count: 1
+						id: "aether:enchanted_gravitite"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "15C1AD3F8103DF69"
+					item: {
+						count: 1
+						id: "deep_aether:storm_sword"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"45EC3B0D8C8C85ED"
+			]
+			icon: {
+				count: 1
+				id: "aether:gold_dungeon_key"
+			}
+			id: "2795EFF078F35D3A"
+			rewards: [
+				{
+					id: "28B21B05AF4E16EF"
+					type: "xp"
+					xp: 570
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "61E16907B7D08E5E"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+	]
+}

@@ -2,14 +2,14 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "forge"
-	group: ""
+	group: "42873FD1AA616C22"
 	icon: {
 		count: 1
 		id: "yukicore:aurorium_ingot"
 	}
 	id: "16900BDA3608F337"
 	images: [ ]
-	order_index: 10
+	order_index: 16
 	quest_links: [ ]
 	quests: [
 		{

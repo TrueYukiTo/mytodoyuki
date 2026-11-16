@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "EYE",
+    "QBQ",
+    "PPP"
+  ],
+  "key": {
+    "E": {
+      "item": "yukicore:yuki_essence"
+    },
+    "Y": {
+      "item": "yukicore:yuki_star"
+    },
+    "Q": {
+      "item": "yukicore:cryo_circuit"
+    },
+    "B": {
+      "item": "yukicore:frost_block"
+    },
+    "P": {
+      "item": "yukicore:frost_plate"
+    }
+  },
+  "result": {
+    "id": "yukicore:yuki_altar",
+    "count": 1
+  }
+}

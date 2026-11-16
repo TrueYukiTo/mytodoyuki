@@ -8,6 +8,18 @@
     "yukicore:starlight_block",
     "yukicore:aurorium_block",
     "yukicore:celestium_block",
-    "yukicore:yuki_lamp"
+    "yukicore:yuki_lamp",
+    "yukicore:permafrost_ore",
+    "yukicore:aurora_ore",
+    "yukicore:pyrolite_ore",
+    "yukicore:void_ore",
+    "yukicore:stellar_ore",
+    "yukicore:permafrost_block",
+    "yukicore:aurora_block",
+    "yukicore:pyrolite_block",
+    "yukicore:void_block",
+    "yukicore:stellar_block",
+    "yukicore:yuki_altar",
+    "yukicore:yuki_pedestal"
   ]
 }

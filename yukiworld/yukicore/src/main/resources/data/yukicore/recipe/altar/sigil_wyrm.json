@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 2,
+  "center": {
+    "item": "yukicore:ash_core"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:void_shard"
+    },
+    {
+      "item": "yukicore:void_shard"
+    },
+    {
+      "item": "yukicore:void_shard"
+    },
+    {
+      "item": "yukicore:void_shard"
+    },
+    {
+      "item": "minecraft:echo_shard"
+    },
+    {
+      "item": "minecraft:echo_shard"
+    },
+    {
+      "item": "minecraft:dragon_breath"
+    },
+    {
+      "item": "minecraft:dragon_breath"
+    }
+  ],
+  "result": {
+    "id": "yukicore:sigil_wyrm",
+    "count": 1
+  },
+  "duration": 300
+}

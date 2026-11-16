@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": {
+    "item": "yukicore:permafrost_ore"
+  },
+  "result": {
+    "id": "yukicore:permafrost_crystal"
+  },
+  "experience": 2.0,
+  "cookingtime": 200
+}

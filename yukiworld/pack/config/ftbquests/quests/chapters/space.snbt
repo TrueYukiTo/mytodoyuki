@@ -1,0 +1,684 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "space"
+	group: "3C966D8069B10DF8"
+	icon: {
+		count: 1
+		id: "ad_astra:tier_1_rocket"
+	}
+	id: "585CF5E6E01E5DCF"
+	images: [ ]
+	order_index: 18
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"2B408D1DDD76EE27"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:astrodux"
+			}
+			id: "383DD48078F3BF16"
+			rewards: [
+				{
+					id: "5EAF17C665D255E7"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "17C41D927C7C0A7C"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"383DD48078F3BF16"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:astrodux"
+			}
+			id: "11427AA2DA2322C2"
+			rewards: [
+				{
+					id: "430DA0A14873F822"
+					type: "xp"
+					xp: 605
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1C675F263BFF424A"
+					item: {
+						count: 1
+						id: "ad_astra:astrodux"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"11427AA2DA2322C2"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:steel_ingot"
+			}
+			id: "42CEB4E78F74EE18"
+			rewards: [
+				{
+					id: "17E33A0BD2DCB197"
+					type: "xp"
+					xp: 610
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "34393B028A0597DD"
+					item: {
+						count: 1
+						id: "ad_astra:steel_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"42CEB4E78F74EE18"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:steel_plate"
+			}
+			id: "4C82C264357CF340"
+			rewards: [
+				{
+					id: "5DA75712542D8844"
+					type: "xp"
+					xp: 615
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "434CC4C6235A2F8B"
+					item: {
+						count: 1
+						id: "ad_astra:steel_plate"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4C82C264357CF340"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:iron_plate"
+			}
+			id: "321EA0272E3509D8"
+			rewards: [
+				{
+					id: "1B159BBDAF7E0EFD"
+					type: "xp"
+					xp: 620
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "6745FF52A644D17E"
+					item: {
+						count: 1
+						id: "ad_astra:iron_plate"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"321EA0272E3509D8"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:compressor"
+			}
+			id: "56B3D8B72F17074C"
+			rewards: [
+				{
+					id: "361605D1EDE3A8EF"
+					type: "xp"
+					xp: 625
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "482FF2A79831B3D2"
+					item: {
+						count: 1
+						id: "ad_astra:compressor"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"56B3D8B72F17074C"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:coal_generator"
+			}
+			id: "10C7049E2C849284"
+			rewards: [
+				{
+					id: "64F05A0D8803305B"
+					type: "xp"
+					xp: 630
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2AAF000C0DB03FA2"
+					item: {
+						count: 1
+						id: "ad_astra:coal_generator"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"10C7049E2C849284"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:etrionic_blast_furnace"
+			}
+			id: "547E3D303CA15414"
+			rewards: [
+				{
+					id: "1A1622EBC54BF8B0"
+					type: "xp"
+					xp: 635
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "565EE37EA6BFE60F"
+					item: {
+						count: 1
+						id: "ad_astra:etrionic_blast_furnace"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"547E3D303CA15414"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:nasa_workbench"
+			}
+			id: "21F491F68FD2A37C"
+			rewards: [
+				{
+					id: "1E8C116F969F0642"
+					type: "xp"
+					xp: 640
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "173B3EF47D0851D7"
+					item: {
+						count: 1
+						id: "ad_astra:nasa_workbench"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"21F491F68FD2A37C"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:rocket_nose_cone"
+			}
+			id: "216C65BBAD1B89B2"
+			rewards: [
+				{
+					id: "3F0D807441ED34DC"
+					type: "xp"
+					xp: 645
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "54F0B5FE101E17B7"
+					item: {
+						count: 1
+						id: "ad_astra:rocket_nose_cone"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"216C65BBAD1B89B2"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:rocket_fin"
+			}
+			id: "15F2D55245EF872E"
+			rewards: [
+				{
+					id: "5FB58F5296175760"
+					type: "xp"
+					xp: 650
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "11AE8F7C09C9787A"
+					item: {
+						count: 1
+						id: "ad_astra:rocket_fin"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"15F2D55245EF872E"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:steel_engine"
+			}
+			id: "21B1C0796F9A9A72"
+			rewards: [
+				{
+					id: "15707A5E84C5226F"
+					type: "xp"
+					xp: 655
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4473E9767105D680"
+					item: {
+						count: 1
+						id: "ad_astra:steel_engine"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"21B1C0796F9A9A72"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:steel_tank"
+			}
+			id: "4AA2EA64CA3A669F"
+			rewards: [
+				{
+					id: "3FEBE6BFBDBD8961"
+					type: "xp"
+					xp: 660
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "20FCF9A62C76B48D"
+					item: {
+						count: 1
+						id: "ad_astra:steel_tank"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4AA2EA64CA3A669F"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:tier_1_rocket"
+			}
+			id: "5CEDDE55069DA850"
+			rewards: [
+				{
+					id: "2F90B16BAD193C82"
+					type: "xp"
+					xp: 665
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2F596E2623893808"
+					item: {
+						count: 1
+						id: "ad_astra:tier_1_rocket"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5CEDDE55069DA850"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:launch_pad"
+			}
+			id: "708959D33E78967D"
+			rewards: [
+				{
+					id: "46B14EB26FC47D41"
+					type: "xp"
+					xp: 670
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5CC46BA41A6935FD"
+					item: {
+						count: 1
+						id: "ad_astra:launch_pad"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"708959D33E78967D"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:fuel_refinery"
+			}
+			id: "2632B864FEF4E90B"
+			rewards: [
+				{
+					id: "38EA116B26BD66BC"
+					type: "xp"
+					xp: 675
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2D90EA7549768E8D"
+					item: {
+						count: 1
+						id: "ad_astra:fuel_refinery"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2632B864FEF4E90B"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:fuel_bucket"
+			}
+			id: "78015C3F6DB018AA"
+			rewards: [
+				{
+					id: "7EEF5180349A2BAC"
+					type: "xp"
+					xp: 680
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "79DDA513322AF04D"
+					item: {
+						count: 1
+						id: "ad_astra:fuel_bucket"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"78015C3F6DB018AA"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:oxygen_loader"
+			}
+			id: "53503151A3C440EC"
+			rewards: [
+				{
+					id: "52E9FB5A4C8DFAF8"
+					type: "xp"
+					xp: 685
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "17EC0268C244A71D"
+					item: {
+						count: 1
+						id: "ad_astra:oxygen_loader"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"53503151A3C440EC"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:space_helmet"
+			}
+			id: "68B6577A53064DF4"
+			rewards: [
+				{
+					id: "727CC5B6F8DF7CFA"
+					type: "xp"
+					xp: 690
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6C528E7CAB092F43"
+					item: {
+						count: 1
+						id: "ad_astra:space_helmet"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"68B6577A53064DF4"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:space_suit"
+			}
+			id: "330E13C94DA00A1C"
+			rewards: [
+				{
+					id: "657A77A593181C9A"
+					type: "xp"
+					xp: 695
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1DBC599A7BC91F13"
+					item: {
+						count: 1
+						id: "ad_astra:space_suit"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"330E13C94DA00A1C"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:space_pants"
+			}
+			id: "7DFBC134DFA080DE"
+			rewards: [
+				{
+					id: "1A4D8CE330F7A92A"
+					type: "xp"
+					xp: 700
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4F6171274ECA6143"
+					item: {
+						count: 1
+						id: "ad_astra:space_pants"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"7DFBC134DFA080DE"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:space_boots"
+			}
+			id: "2F44152F2EA23580"
+			rewards: [
+				{
+					id: "29A23683F9B52878"
+					type: "xp"
+					xp: 705
+				}
+				{
+					count: 4
+					id: "48C426CCC31A03E7"
+					item: {
+						count: 1
+						id: "ad_astra:fuel_bucket"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 1L
+					id: "7D7219FC50973457"
+					item: {
+						count: 1
+						id: "ad_astra:space_boots"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 4.5d
+		}
+	]
+}

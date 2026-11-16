@@ -257,3 +257,211 @@ def armor_layer(layer, pal, seed):
                     k = "w"
                 img.putpixel((x, y), hexrgb(pal[k]))
     return img
+
+
+# ================================================================ YukiCore 3.0
+from . import hd  # noqa: E402
+
+PERMAFROST = {"o": 0x0E2A40, "d": 0x2A78B0, "m": 0x7CC8F0, "l": 0xD6F2FF, "w": 0xFFFFFF}
+AURORA = {"o": 0x1A1240, "d": 0x2FA88A, "m": 0x6CF0C0, "l": 0xE0B0FF, "w": 0xFFFFFF}
+PYRO = {"o": 0x2A0A04, "d": 0xA0300C, "m": 0xF07A1C, "l": 0xFFD060, "w": 0xFFF6D0}
+VOIDP = {"o": 0x07020F, "d": 0x2A0E4A, "m": 0x5A2A9A, "l": 0xA070F0, "w": 0xE8D8FF}
+STELLAR = {"o": 0x3A2A08, "d": 0xC09020, "m": 0xFFE070, "l": 0xFFF6C8, "w": 0xFFFFFF}
+ICEBLUE = {"o": 0x0A2440, "d": 0x2C6CB0, "m": 0x78C4F6, "l": 0xD0F0FF, "w": 0xFFFFFF}
+ROYAL = {"o": 0x30204A, "d": 0x8A8AC8, "m": 0xD8E4FF, "l": 0xF4F8FF, "w": 0xFFFFFF}
+TEAR = {"o": 0x4A1440, "d": 0xC04A9A, "m": 0xFF9EDC, "l": 0xFFE0F4, "w": 0xFFFFFF}
+GOLDPINK = {"o": 0x3A1A30, "d": 0xC08A30, "m": 0xFFD060, "l": 0xFFE6F2, "w": 0xFFFFFF}
+
+GEM = """
+................
+................
+.....oooooo.....
+....owwlllmo....
+...owllllmmmo...
+..owllllmmmmdo..
+..olllllmmmmdo..
+...olllmmmmdo...
+....ollmmmdo....
+.....olmmdo.....
+......omdo......
+.......oo.......
+"""
+
+SCALE = """
+................
+.......oo.......
+.....oowwoo.....
+....owwlllmo....
+...owllllmmmo...
+...olllmmmmdo...
+..owllmmmmmmdo..
+..olllmmmmmddo..
+..ollmmmmmmddo..
+...olmmmmmddo...
+...ommmmmdddo...
+....ommmdddo....
+.....oodddo.....
+.......ooo......
+"""
+
+TEAR_ART = """
+.......oo.......
+.......owo......
+......owlo......
+......owlmo.....
+.....owllmo.....
+.....owllmmo....
+....owlllmmmo...
+....owllmmmmo...
+...owlllmmmmdo..
+...owllmmmmmdo..
+...ollmmmmmmdo..
+...ollmmmmmddo..
+....olmmmmddo...
+.....ommmddo....
+......ooooo.....
+"""
+
+CROWN = """
+................
+................
+................
+..o....oo....o..
+.owo..owwo..owo.
+.olo..olmo..olo.
+.olmo.olmo.omdo.
+.ollmoollmoomdo.
+.olllmmmmmmmmdo.
+.owwlwlwlwlwmdo.
+.olmlmdmlmdmmdo.
+.olllmmmmmmmddo.
+.oddddddddddddo.
+..oooooooooooo..
+"""
+
+MEDALLION = """
+................
+.....oooooo.....
+...oowwllllmoo..
+..owwllllllmmdo.
+..owlloooooomdo.
+.owllo.wwww.omdo
+.owlo.wllllw.odo
+.owlo.wlmmlw.odo
+.ollo.wlmmlw.odo
+.ollo.wllllw.odo
+.olmmo.wwww.oddo
+..olmmoooooodddo
+..olmmmmmmmddddo
+...oommmmmddddo.
+.....oooooooo...
+"""
+
+WAND = """
+............oo..
+...........owwo.
+..........owllmo
+..........olmmdo
+...........omdo.
+..........ohoo..
+.........ohHo...
+........ohHo....
+.......ohHo.....
+......ohHo......
+.....ohHo.......
+....ohHo........
+...ohHo.........
+..ohHo..........
+..oHo...........
+...o............
+"""
+
+ORB_HOT = None  # ядро пепла — как orb() с горячей палитрой
+
+
+def hd_textures():
+    """name -> (Image64, handheld) — все предметы YukiCore в HD."""
+    base = item_textures()
+    out = {}
+    for i, (name, (img, handheld)) in enumerate(sorted(base.items())):
+        spark = 3 if any(k in name for k in ("celestium", "star", "starlight", "infinity", "heart", "essence")) else 0
+        out[name] = (hd.hd_item(img, seed=i, sparkles=spark), handheld)
+    new = {
+        "frost_wand": (sprite(WAND, CRYSTAL), True, 2),
+        "permafrost_crystal": (sprite(GEM, PERMAFROST), False, 2),
+        "aurora_shard": (sprite(SHARD, AURORA), False, 3),
+        "raw_pyrolite": (sprite(ART["raw_frost"][0], PYRO), False, 0),
+        "pyrolite_ingot": (sprite(INGOT, PYRO), False, 1),
+        "void_shard": (sprite(SHARD, VOIDP), False, 2),
+        "stellar_shard": (sprite(STAR, STELLAR), False, 4),
+        "colossus_heart": (heart_pal(ICEBLUE), False, 3),
+        "blizzard_crown": (sprite(CROWN, ROYAL), False, 3),
+        "ash_core": (orb(PYRO), False, 2),
+        "void_scale": (sprite(SCALE, VOIDP), False, 2),
+        "yuki_tear": (sprite(TEAR_ART, TEAR), False, 3),
+        "sigil_colossus": (sprite(MEDALLION, ICEBLUE), False, 2),
+        "sigil_queen": (sprite(MEDALLION, ROYAL), False, 2),
+        "sigil_ash_lord": (sprite(MEDALLION, PYRO), False, 2),
+        "sigil_wyrm": (sprite(MEDALLION, VOIDP), False, 2),
+        "sigil_shadow": (sprite(MEDALLION, TEAR), False, 3),
+        "crown_of_yuki": (sprite(CROWN, GOLDPINK), False, 4),
+        "eternal_winter_blade": (rainbow(sprite(BLADE_ART, ICEBLUE), 0.35, 0.55), True, 4),
+    }
+    for i, (name, (img, handheld, spark)) in enumerate(new.items()):
+        out[name] = (hd.hd_item(img, seed=100 + i, sparkles=spark), handheld)
+    return out
+
+
+def heart_pal(pal):
+    art = """
+................
+................
+..oooo....oooo..
+.owwllo..olmmdo.
+owwlllmoolmmmddo
+owlllmmmmmmmmddo
+olllmmmmmmmmmddo
+olllmmmmmmmmdddo
+.ollmmmmmmmmddo.
+..olmmmmmmmddo..
+...olmmmmmddo...
+....olmmmddo....
+.....olmddo.....
+......oddo......
+.......oo.......
+"""
+    return sprite(art, pal)
+
+
+PLANET_STONE = {
+    "permafrost": ((176, 214, 240), 0.12, 6, False),   # спрессованный лёд
+    "aurora": ((150, 104, 210), 0.18, 0, False),        # аметист
+    "pyrolite": ((44, 38, 44), 0.25, 3, False),         # чернокамень
+    "void": ((74, 74, 80), 0.18, 0, True),              # глубинный сланец
+    "stellar": ((226, 222, 214), 0.08, 2, False),       # кальцит
+}
+PLANET_PAL = {"permafrost": PERMAFROST, "aurora": AURORA, "pyrolite": PYRO, "void": VOIDP, "stellar": STELLAR}
+
+
+def hd_blocks():
+    rng = random.Random(4242)
+    t = {}
+    es = (221, 223, 165)
+    t["frost_ore"] = hd.ore(1, hd.stone(1, es, 0.16), RAW, 5)
+    t["yuki_crystal_ore"] = hd.ore(2, hd.stone(2, es, 0.16), CRYSTAL, 4)
+    t["starlight_ore"] = hd.ore(3, hd.stone(3, es, 0.16), STARLIGHT, 3, (6, 10))
+    t["frost_block"] = hd.metal(FROST, 4)
+    t["aurorium_block"] = hd.metal(AURORIUM, 5)
+    t["celestium_block"] = hd.metal(CELESTIUM, 6)
+    t["pyrolite_block"] = hd.metal(PYRO, 7)
+    t["yuki_crystal_block"] = hd.facets(CRYSTAL, 8, SAKURA)
+    t["permafrost_block"] = hd.facets(PERMAFROST, 9)
+    t["aurora_block"] = hd.facets(AURORA, 10, SAKURA)
+    t["starlight_block"] = hd.starfield(STARLIGHT, 11)
+    t["void_block"] = hd.starfield(VOIDP, 12)
+    t["stellar_block"] = hd.facets(STELLAR, 13)
+    t["yuki_lamp"] = hd.lamp(CRYSTAL, SAKURA)
+    for i, (name, (base, var, cracks, streaks)) in enumerate(PLANET_STONE.items()):
+        stone = hd.stone(20 + i, base, var, cracks, streaks)
+        t[f"{name}_ore"] = hd.ore(30 + i, stone, PLANET_PAL[name], 5, (5, 9))
+    return t

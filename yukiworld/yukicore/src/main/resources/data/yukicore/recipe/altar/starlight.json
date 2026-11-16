@@ -1,0 +1,26 @@
+{
+  "type": "yukicore:altar",
+  "tier": 1,
+  "center": {
+    "item": "yukicore:yuki_crystal_block"
+  },
+  "pedestals": [
+    {
+      "item": "minecraft:ender_pearl"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    }
+  ],
+  "result": {
+    "id": "yukicore:starlight_shard",
+    "count": 2
+  },
+  "duration": 160
+}

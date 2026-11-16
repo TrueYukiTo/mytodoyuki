@@ -1,0 +1,309 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "glacio"
+	group: "3C966D8069B10DF8"
+	icon: {
+		count: 1
+		id: "ad_astra:glacio_stone"
+	}
+	id: "48BAB4D3016CC4E0"
+	images: [ ]
+	order_index: 22
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"21E0B5B4E5F134F2"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:ender_eye"
+			}
+			id: "2BCEB30D84D6D5B8"
+			rewards: [
+				{
+					id: "195B9C138130D139"
+					type: "xp"
+					xp: 800
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					dimension: "ad_astra:glacio"
+					id: "431A1566ACF9C372"
+					type: "dimension"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2BCEB30D84D6D5B8"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:glacio_stone"
+			}
+			id: "6C5DD520951ABAD7"
+			rewards: [
+				{
+					id: "73CE23F7C01150DC"
+					type: "xp"
+					xp: 805
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "684F711B006F2B4D"
+					item: {
+						count: 1
+						id: "ad_astra:glacio_stone"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6C5DD520951ABAD7"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:ice_shard"
+			}
+			id: "1AA5E88E159A85EF"
+			rewards: [
+				{
+					id: "49D26E1071364E4C"
+					type: "xp"
+					xp: 810
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "7EC5053B84CB24DF"
+					item: {
+						count: 1
+						id: "ad_astra:ice_shard"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1AA5E88E159A85EF"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "2387BDB339CC9AA5"
+			rewards: [
+				{
+					id: "6D1B8D423AC4602A"
+					type: "xp"
+					xp: 815
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "ad_astra:glacian_ram"
+					id: "692389E76E333E59"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2387BDB339CC9AA5"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:glacian_fur"
+			}
+			id: "51CE083BED383F1C"
+			rewards: [
+				{
+					id: "55DE3576B8A06EF4"
+					type: "xp"
+					xp: 820
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "16BC83EC056C219E"
+					item: {
+						count: 1
+						id: "ad_astra:glacian_fur"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"51CE083BED383F1C"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:etrium_ingot"
+			}
+			id: "1E1BD8C15CF1CCFC"
+			rewards: [
+				{
+					id: "3A4112714A700508"
+					type: "xp"
+					xp: 825
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "6DCAB13C858292B7"
+					item: {
+						count: 1
+						id: "ad_astra:etrium_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1E1BD8C15CF1CCFC"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:etrium_plate"
+			}
+			id: "3222DC735E069D0B"
+			rewards: [
+				{
+					id: "3DFF6ED385EE889E"
+					type: "xp"
+					xp: 830
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "6E24B80B50AE330B"
+					item: {
+						count: 1
+						id: "ad_astra:etrium_plate"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3222DC735E069D0B"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:photovoltaic_etrium_cell"
+			}
+			id: "416439D70286E56C"
+			rewards: [
+				{
+					id: "26F7325FF6AFD4C0"
+					type: "xp"
+					xp: 835
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "64D0E8A38C40A679"
+					item: {
+						count: 1
+						id: "ad_astra:photovoltaic_etrium_cell"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"416439D70286E56C"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:radio"
+			}
+			id: "2FEDA7A375FC7EA8"
+			rewards: [
+				{
+					id: "2747777D82C7B4C6"
+					type: "xp"
+					xp: 840
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4673275499988FAB"
+					item: {
+						count: 1
+						id: "ad_astra:radio"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2FEDA7A375FC7EA8"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:radio"
+			}
+			id: "51481FD673C806CF"
+			rewards: [
+				{
+					id: "5E14E35023D58831"
+					type: "xp"
+					xp: 845
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "5D28E4F6AA3FCE93"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+	]
+}

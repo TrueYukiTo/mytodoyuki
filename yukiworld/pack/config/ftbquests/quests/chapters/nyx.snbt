@@ -1,0 +1,289 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "nyx"
+	group: "3C966D8069B10DF8"
+	icon: {
+		count: 1
+		id: "yukicore:void_shard"
+	}
+	id: "382250E34EF30785"
+	images: [ ]
+	order_index: 26
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"1FBF8B7802F558C7"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:void_shard"
+			}
+			id: "4BDABE631BED55E3"
+			rewards: [
+				{
+					id: "7B6FEC2960BC7753"
+					type: "xp"
+					xp: 1100
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "330BD15541F5C9EA"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4BDABE631BED55E3"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:ender_eye"
+			}
+			id: "66BC49EEE446E7A9"
+			rewards: [
+				{
+					id: "68C1815F328C33BD"
+					type: "xp"
+					xp: 1105
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					dimension: "yukicore:nyx"
+					id: "1560A586ECEC1EA9"
+					type: "dimension"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"66BC49EEE446E7A9"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:sculk"
+			}
+			id: "4F65F5B219C32DB2"
+			rewards: [
+				{
+					id: "1F0ACC622FD0A5B1"
+					type: "xp"
+					xp: 1110
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "37EAE1F32FDE42EF"
+					item: {
+						count: 1
+						id: "minecraft:sculk"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4F65F5B219C32DB2"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:void_shard"
+			}
+			id: "281DF627B004A66C"
+			rewards: [
+				{
+					id: "2C2F325406AA11B4"
+					type: "xp"
+					xp: 1115
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "1F856A4CF9CFFDE3"
+					item: {
+						count: 1
+						id: "yukicore:void_shard"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"281DF627B004A66C"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:void_block"
+			}
+			id: "536C9A0FB52E2B66"
+			rewards: [
+				{
+					id: "69695693C4CB2DA6"
+					type: "xp"
+					xp: 1120
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "1A534CDA998AC9BF"
+					item: {
+						count: 1
+						id: "yukicore:void_block"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"536C9A0FB52E2B66"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:nether_star"
+			}
+			id: "39BF3F417804A5CB"
+			rewards: [
+				{
+					id: "2DFF4C8356821F56"
+					type: "xp"
+					xp: 1125
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2FC57A25ADE7861D"
+					item: {
+						count: 1
+						id: "minecraft:nether_star"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"39BF3F417804A5CB"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sigil_wyrm"
+			}
+			id: "174B4C96733A6B22"
+			rewards: [
+				{
+					id: "1D9FABD6D3FB2C03"
+					type: "xp"
+					xp: 1130
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5C3E3946909F988C"
+					item: {
+						count: 1
+						id: "yukicore:sigil_wyrm"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"174B4C96733A6B22"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "12295E770E9968C2"
+			rewards: [
+				{
+					id: "2B676470DBD17F7E"
+					type: "xp"
+					xp: 1135
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "yukicore:void_wyrm"
+					id: "5D0B5E090D62DBB9"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"12295E770E9968C2"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:void_scale"
+			}
+			id: "270A674E6AF9A13C"
+			rewards: [
+				{
+					id: "2981A76F78440660"
+					type: "xp"
+					xp: 1140
+				}
+				{
+					count: 3
+					id: "1F6C87B986F4DBD8"
+					item: {
+						count: 1
+						id: "yukicore:star_shard"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 1L
+					id: "5FCB9AA0057199DB"
+					item: {
+						count: 1
+						id: "yukicore:void_scale"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+	]
+}

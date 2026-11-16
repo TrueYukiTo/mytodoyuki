@@ -1,0 +1,26 @@
+{
+  "type": "yukicore:altar",
+  "tier": 1,
+  "center": {
+    "item": "yukicore:yuki_star"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:permafrost_crystal"
+    },
+    {
+      "item": "yukicore:permafrost_crystal"
+    },
+    {
+      "item": "yukicore:permafrost_crystal"
+    },
+    {
+      "item": "yukicore:permafrost_crystal"
+    }
+  ],
+  "result": {
+    "id": "yukicore:sigil_colossus",
+    "count": 1
+  },
+  "duration": 200
+}

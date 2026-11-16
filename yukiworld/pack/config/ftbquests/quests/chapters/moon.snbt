@@ -1,0 +1,415 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "moon"
+	group: "3C966D8069B10DF8"
+	icon: {
+		count: 1
+		id: "ad_astra:desh_ingot"
+	}
+	id: "1C126CADA79A4750"
+	images: [ ]
+	order_index: 19
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"2F44152F2EA23580"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:ender_eye"
+			}
+			id: "5A20679FBE7AE44C"
+			rewards: [
+				{
+					id: "7D25E609CC9AA6E0"
+					type: "xp"
+					xp: 650
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					dimension: "ad_astra:moon"
+					id: "20B5708ED419D4BD"
+					type: "dimension"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5A20679FBE7AE44C"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:moon_stone"
+			}
+			id: "629A9B015654D240"
+			rewards: [
+				{
+					id: "429C9DCAD80F759A"
+					type: "xp"
+					xp: 655
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "473F6E6FC43BD7B1"
+					item: {
+						count: 1
+						id: "ad_astra:moon_stone"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"629A9B015654D240"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:cheese"
+			}
+			id: "510047D5A6A151CF"
+			rewards: [
+				{
+					id: "39785EF6B6BFAFDA"
+					type: "xp"
+					xp: 660
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "622BD4274658EDB0"
+					item: {
+						count: 1
+						id: "ad_astra:cheese"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"510047D5A6A151CF"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:raw_desh"
+			}
+			id: "2FA929A623117222"
+			rewards: [
+				{
+					id: "50ABEB54300162B1"
+					type: "xp"
+					xp: 665
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "657B5E96BC73AD25"
+					item: {
+						count: 1
+						id: "ad_astra:raw_desh"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2FA929A623117222"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:desh_ingot"
+			}
+			id: "73E3248B0D0F81E9"
+			rewards: [
+				{
+					id: "732A90EA3CF681D2"
+					type: "xp"
+					xp: 670
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "6D725C53D7E7449A"
+					item: {
+						count: 1
+						id: "ad_astra:desh_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"73E3248B0D0F81E9"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:desh_plate"
+			}
+			id: "320260332757A337"
+			rewards: [
+				{
+					id: "7E7D4D1F7C05CBEB"
+					type: "xp"
+					xp: 675
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "5EC9D7FB85BE9695"
+					item: {
+						count: 1
+						id: "ad_astra:desh_plate"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"320260332757A337"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:oxygen_distributor"
+			}
+			id: "7EEE3478503D9E56"
+			rewards: [
+				{
+					id: "3E6A1D72CA9A13BB"
+					type: "xp"
+					xp: 680
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "57207316FFCA8B70"
+					item: {
+						count: 1
+						id: "ad_astra:oxygen_distributor"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7EEE3478503D9E56"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:solar_panel"
+			}
+			id: "1F15D19E386B2E9A"
+			rewards: [
+				{
+					id: "44A913A63E58AA99"
+					type: "xp"
+					xp: 685
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "58AE15B68F51A7D4"
+					item: {
+						count: 1
+						id: "ad_astra:solar_panel"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1F15D19E386B2E9A"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:ice_shard"
+			}
+			id: "5032AAEED1A6ABF8"
+			rewards: [
+				{
+					id: "12FA91FB330184D0"
+					type: "xp"
+					xp: 690
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "5F77A060A6026626"
+					item: {
+						count: 1
+						id: "ad_astra:ice_shard"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5032AAEED1A6ABF8"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:water_pump"
+			}
+			id: "434FE2F9F642F3DD"
+			rewards: [
+				{
+					id: "5AFE15C9D7F18690"
+					type: "xp"
+					xp: 695
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "29C8A24BD8F6DE32"
+					item: {
+						count: 1
+						id: "ad_astra:water_pump"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"434FE2F9F642F3DD"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:desh_engine"
+			}
+			id: "17F303A0FC5F08E3"
+			rewards: [
+				{
+					id: "283A0C31E962E449"
+					type: "xp"
+					xp: 700
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1F271E1A58EFE2F7"
+					item: {
+						count: 1
+						id: "ad_astra:desh_engine"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"17F303A0FC5F08E3"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:desh_tank"
+			}
+			id: "4DDC86513145D2B4"
+			rewards: [
+				{
+					id: "217D8DA78F5BED9B"
+					type: "xp"
+					xp: 705
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "62D9421FC0170222"
+					item: {
+						count: 1
+						id: "ad_astra:desh_tank"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4DDC86513145D2B4"
+			]
+			icon: {
+				count: 1
+				id: "ad_astra:tier_2_rocket"
+			}
+			id: "519CD6D3707C431C"
+			rewards: [
+				{
+					id: "1896A59193B1C213"
+					type: "xp"
+					xp: 710
+				}
+				{
+					count: 8
+					id: "2377319DAA42CA70"
+					item: {
+						count: 1
+						id: "ad_astra:desh_ingot"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 1L
+					id: "7A78B8C009F526F6"
+					item: {
+						count: 1
+						id: "ad_astra:tier_2_rocket"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+	]
+}

@@ -2,19 +2,19 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "cores"
-	group: ""
+	group: "74BF87A649295B10"
 	icon: {
 		count: 1
 		id: "yukicore:frost_core"
 	}
 	id: "199E276CC8E51C76"
 	images: [ ]
-	order_index: 11
+	order_index: 27
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: [
-				"1E18C025108CC184"
+				"270A674E6AF9A13C"
 			]
 			icon: {
 				count: 1

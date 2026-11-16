@@ -1,0 +1,58 @@
+{
+  "name": "II · Звёздный алтарь",
+  "category": "yukicore:altars",
+  "icon": "yukicore:starlight_block",
+  "sortnum": 11,
+  "pages": [
+    {
+      "type": "patchouli:multiblock",
+      "name": "Уровень 2",
+      "multiblock": {
+        "mapping": {
+          "0": "yukicore:yuki_altar",
+          "P": "yukicore:yuki_pedestal",
+          "F": "yukicore:frost_block",
+          "L": "yukicore:yuki_lamp",
+          "C": "yukicore:celestium_block",
+          "S": "yukicore:starlight_block"
+        },
+        "pattern": [
+          [
+            "_______",
+            "_S___S_",
+            "_______",
+            "_______",
+            "_______",
+            "_S___S_",
+            "_______"
+          ],
+          [
+            "_______",
+            "_C___C_",
+            "_______",
+            "_______",
+            "_______",
+            "_C___C_",
+            "_______"
+          ],
+          [
+            "P__P__P",
+            "_C___C_",
+            "_______",
+            "P__0__P",
+            "_______",
+            "_C___C_",
+            "P__P__P"
+          ]
+        ],
+        "symmetrical": true
+      },
+      "enable_visualize": true,
+      "text": "8 пьедесталов. Колонны: 2 целестиевых блока + блок звёздного света."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Ритуалы II уровня: печати стражей Авроры, Пиролита и Никты, умножение аурония, калорит из пиролита, звезда Незера из пустоты и $(l)книги выше максимума$(): Острота VII, Эффективность VII, Защита VI…"
+    }
+  ]
+}

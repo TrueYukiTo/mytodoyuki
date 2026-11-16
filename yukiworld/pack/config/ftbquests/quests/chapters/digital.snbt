@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "digital"
-	group: ""
+	group: "27C6257DE576252F"
 	icon: {
 		count: 1
 		id: "ae2:controller"

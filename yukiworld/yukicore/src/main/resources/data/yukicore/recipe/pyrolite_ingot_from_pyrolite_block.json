@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "yukicore:pyrolite_block"
+    }
+  ],
+  "result": {
+    "id": "yukicore:pyrolite_ingot",
+    "count": 9
+  }
+}

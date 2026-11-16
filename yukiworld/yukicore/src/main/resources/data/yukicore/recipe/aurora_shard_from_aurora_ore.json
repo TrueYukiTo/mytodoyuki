@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": {
+    "item": "yukicore:aurora_ore"
+  },
+  "result": {
+    "id": "yukicore:aurora_shard"
+  },
+  "experience": 2.5,
+  "cookingtime": 200
+}
