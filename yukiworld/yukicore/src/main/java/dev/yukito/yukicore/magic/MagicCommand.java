@@ -40,6 +40,11 @@ public final class MagicCommand {
                             Magic.get(p).mana = Magic.maxMana(p);
                             Magic.get(p).dirty = true;
                         }))))
+                .then(Commands.literal("planetevent").executes(c -> {
+                    boolean ok = dev.yukito.yukicore.PlanetEvents.trigger(c.getSource().getLevel());
+                    c.getSource().sendSuccess(() -> Component.literal(ok ? "Planet event started" : "Not a Yuki planet"), true);
+                    return ok ? 1 : 0;
+                }))
                 .then(Commands.literal("reset").then(Commands.argument("targets", EntityArgument.players())
                         .executes(c -> each(c, p -> {
                             Magic.get(p).copyFrom(new MagicData());

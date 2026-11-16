@@ -349,6 +349,17 @@ LANG = {
     "block.yukicore.star_reactor.desc": ("Контроллер мультиструктуры 3×3×3. Сжигает осколки, до 10 млн FE/т",
                                          "3×3×3 multiblock controller. Burns shards, up to 10M FE/t"),
     "menu.yukicore.subtitle": ("Легенда о Юки: Вечная зима", "The Legend of Yuki: Eternal Winter"),
+    "event.yukicore.yukia": ("❄ Метель Юкии", "❄ Yukian Blizzard"),
+    "event.yukicore.yukia.desc": ("Холод сковывает — но с неба падают кристаллы Юки", "Freezing cold — but Yuki crystals fall from the sky"),
+    "event.yukicore.aurora": ("✦ Северное сияние", "✦ Aurora Borealis"),
+    "event.yukicore.aurora.desc": ("Сияние лечит, дарит ману и осколки авроры", "The aurora heals, gives mana and aurora shards"),
+    "event.yukicore.pyrolith": ("☄ Метеоритный дождь", "☄ Meteor Shower"),
+    "event.yukicore.pyrolith.desc": ("Уходи из огненных кругов! После ударов остаётся пиролит", "Leave the fiery circles! Impacts leave pyrolite"),
+    "event.yukicore.nyx": ("◉ Пустотный разлом", "◉ Void Rift"),
+    "event.yukicore.nyx.desc": ("Тьма и эндермиты — и осколки пустоты с неба", "Darkness and endermites — and void shards from the sky"),
+    "event.yukicore.celestia": ("★ Звездопад", "★ Starfall"),
+    "event.yukicore.celestia.desc": ("Собирай падающие звёздные осколки", "Collect the falling stellar shards"),
+    "event.yukicore.end": ("Явление на планете закончилось", "The planetary event has ended"),
     "screen.yukicore.grimoire.level": ("Уровень %s / 60  •  Очки: %s", "Level %s / 60  •  Points: %s"),
 }
 
@@ -408,6 +419,17 @@ def recipes():
                                              (I("cryo_circuit"), 1)], "ae2:calculation_processor", 6, 1_000_000, 120), "ae2")
     r["forge/ae2_singularity"] = when(forge([("ae2:matter_ball", 16), (I("stellar_shard"), 1)], "ae2:singularity", 2,
                                             20_000_000, 200), "ae2")
+    # Create 6 убрал рецепты «наследия» — возвращаем их, иначе квесты и Сердце Юки не собрать
+    r["create_legacy/chromatic_compound"] = when({
+        "type": "create:mixing", "heat_requirement": "superheated",
+        "ingredients": [{"item": "create:powdered_obsidian"}] * 3 + [{"item": "minecraft:glowstone_dust"}] * 3
+                       + [{"item": "create:polished_rose_quartz"}],
+        "results": [{"id": "create:chromatic_compound"}]}, "create")
+    r["forge/refined_radiance"] = when(forge([("create:chromatic_compound", 1), (I("yuki_crystal"), 1),
+                                              ("minecraft:glowstone_dust", 4)], "create:refined_radiance", 1,
+                                             2_000_000, 160), "create")
+    r["forge/shadow_steel"] = when(forge([("create:chromatic_compound", 1), ("minecraft:obsidian", 1),
+                                          ("minecraft:ender_pearl", 1)], "create:shadow_steel", 1, 2_000_000, 160), "create")
     r["respec_scroll"] = shapeless(["minecraft:paper", I("frost_essence"), I("flame_essence"), "minecraft:amethyst_shard",
                                     "minecraft:ender_pearl"], I("respec_scroll"))
     return r
@@ -473,3 +495,16 @@ ENTRIES += [
     ("magic", "tree_yuki", "Дерево Юки: 22 навыка", "yukicore:yuki_staff", _tree_pages(_ICE, "#8fd8ff")),
     ("magic", "tree_sintara", "Дерево Синтары: 22 навыка", "yukicore:sintara_staff", _tree_pages(_FIRE, "#ffa040")),
 ]
+
+
+ENTRIES.append(("stars", "planets_v71", "Чудеса планет", "yukicore:aurora_shard", [
+    "У каждой планеты Системы Юки теперь $(l)три биома$(), свои постройки и небо, где видны соседние планеты.",
+    "$(li)$(#8fd8ff)Юкия$() — ледяные равнины, морозный лес, кристальный ледник; иглу и порталы$(li)$(#c7a8ff)Аврора$() — "
+    "аметистовые поля, сияющая долина, шпили; руины тропы и испытательные залы$(li)$(#ff8a2a)Пиролит$() — дельты, "
+    "пепельные пустоши, магмовые поля; бастионы и крепости",
+    "$(li)$(#a070f0)Никта$() — скалк, поля пустоты, теневой лес; $(l)Древний город$() с Хранителем$(li)$(#ffe070)Целестия$() — "
+    "кварцевые террасы, золотые луга, звёздный сад; $(l)города Края$()",
+    "Раз в 3–6 минут на планете случается $(l)явление$(): метель, северное сияние, метеоритный дождь, пустотный "
+    "разлом или звездопад. С неба при этом падают ресурсы планеты — ищи светящиеся предметы.",
+    "В сундуках построек на планетах лежит особый лут: эссенции, кристаллы маны, тома знаний, осколки звезды.",
+]))

@@ -13,11 +13,13 @@
     "fog_color": 13084927,
     "water_color": 4159204,
     "water_fog_color": 329011,
+    "grass_color": 6998176,
+    "foliage_color": 5822640,
     "particle": {
       "options": {
         "type": "minecraft:end_rod"
       },
-      "probability": 0.012
+      "probability": 0.015
     },
     "mood_sound": {
       "block_search_extent": 8,
@@ -72,6 +74,7 @@
     [],
     [],
     [
+      "yukicore:amethyst_patch",
       "minecraft:glow_lichen"
     ],
     []

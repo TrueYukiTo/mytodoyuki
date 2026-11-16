@@ -137,7 +137,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:stellar_shard"
+				id: "minecraft:cherry_sapling"
 			}
 			id: "2DB5B9783825D94C"
 			rewards: [
@@ -147,15 +147,12 @@
 					xp: 2010
 				}
 			]
+			shape: "hexagon"
+			size: 1.35d
 			tasks: [
 				{
-					count: 16L
 					id: "1627F18CA5E69EA6"
-					item: {
-						count: 1
-						id: "yukicore:stellar_shard"
-					}
-					type: "item"
+					type: "checkmark"
 				}
 			]
 			x: 3.5d
@@ -167,7 +164,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:stellar_block"
+				id: "minecraft:purpur_block"
 			}
 			id: "442C5E6B814B095D"
 			rewards: [
@@ -177,15 +174,12 @@
 					xp: 2015
 				}
 			]
+			shape: "hexagon"
+			size: 1.35d
 			tasks: [
 				{
-					count: 4L
 					id: "7EA9400110CFE3C9"
-					item: {
-						count: 1
-						id: "yukicore:stellar_block"
-					}
-					type: "item"
+					type: "checkmark"
 				}
 			]
 			x: 5.25d
@@ -197,7 +191,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:colossus_heart"
+				id: "minecraft:nether_star"
 			}
 			id: "1FDCAF673A10F66C"
 			rewards: [
@@ -207,15 +201,12 @@
 					xp: 2020
 				}
 			]
+			shape: "hexagon"
+			size: 1.35d
 			tasks: [
 				{
-					count: 1L
 					id: "189CBA0C07AE72BA"
-					item: {
-						count: 1
-						id: "yukicore:colossus_heart"
-					}
-					type: "item"
+					type: "checkmark"
 				}
 			]
 			x: 7.0d
@@ -227,7 +218,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:blizzard_crown"
+				id: "yukicore:stellar_shard"
 			}
 			id: "6934102A3FEC2974"
 			rewards: [
@@ -239,11 +230,11 @@
 			]
 			tasks: [
 				{
-					count: 1L
+					count: 16L
 					id: "7C9974903422E287"
 					item: {
 						count: 1
-						id: "yukicore:blizzard_crown"
+						id: "yukicore:stellar_shard"
 					}
 					type: "item"
 				}
@@ -257,7 +248,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:ash_core"
+				id: "yukicore:stellar_block"
 			}
 			id: "6898A0F6D4C29827"
 			rewards: [
@@ -269,11 +260,11 @@
 			]
 			tasks: [
 				{
-					count: 1L
+					count: 4L
 					id: "69A5E96B3C70DBAF"
 					item: {
 						count: 1
-						id: "yukicore:ash_core"
+						id: "yukicore:stellar_block"
 					}
 					type: "item"
 				}
@@ -287,7 +278,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:void_scale"
+				id: "yukicore:colossus_heart"
 			}
 			id: "7EC92D99E297695C"
 			rewards: [
@@ -303,7 +294,7 @@
 					id: "7BBB00FA573E5A66"
 					item: {
 						count: 1
-						id: "yukicore:void_scale"
+						id: "yukicore:colossus_heart"
 					}
 					type: "item"
 				}
@@ -317,7 +308,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:sigil_shadow"
+				id: "yukicore:blizzard_crown"
 			}
 			id: "42A3DDBB2BA38F99"
 			rewards: [
@@ -333,7 +324,7 @@
 					id: "29AFC4B0AA1A9185"
 					item: {
 						count: 1
-						id: "yukicore:sigil_shadow"
+						id: "yukicore:blizzard_crown"
 					}
 					type: "item"
 				}
@@ -347,7 +338,7 @@
 			]
 			icon: {
 				count: 1
-				id: "minecraft:netherite_sword"
+				id: "yukicore:ash_core"
 			}
 			id: "25F565AF86A66DAF"
 			rewards: [
@@ -357,14 +348,15 @@
 					xp: 2045
 				}
 			]
-			shape: "diamond"
-			size: 1.45d
 			tasks: [
 				{
-					entity: "yukicore:shadow_of_yuki"
+					count: 1L
 					id: "66BF3FDB49AC145A"
-					type: "kill"
-					value: 1L
+					item: {
+						count: 1
+						id: "yukicore:ash_core"
+					}
+					type: "item"
 				}
 			]
 			x: 7.0d
@@ -376,7 +368,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:yuki_tear"
+				id: "yukicore:void_scale"
 			}
 			id: "3933936D186189DD"
 			rewards: [
@@ -392,7 +384,7 @@
 					id: "1E76E8BA1357179B"
 					item: {
 						count: 1
-						id: "yukicore:yuki_tear"
+						id: "yukicore:void_scale"
 					}
 					type: "item"
 				}
@@ -406,7 +398,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:crown_of_yuki"
+				id: "yukicore:sigil_shadow"
 			}
 			id: "3D606D051C1A458D"
 			rewards: [
@@ -422,7 +414,7 @@
 					id: "190DA1A2F6B3C394"
 					item: {
 						count: 1
-						id: "yukicore:crown_of_yuki"
+						id: "yukicore:sigil_shadow"
 					}
 					type: "item"
 				}
@@ -436,7 +428,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:eternal_winter_blade"
+				id: "minecraft:netherite_sword"
 			}
 			id: "2A2AA5FC41A3C77B"
 			rewards: [
@@ -446,15 +438,14 @@
 					xp: 2060
 				}
 			]
+			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
-					count: 1L
+					entity: "yukicore:shadow_of_yuki"
 					id: "4F218A00B072A30F"
-					item: {
-						count: 1
-						id: "yukicore:eternal_winter_blade"
-					}
-					type: "item"
+					type: "kill"
+					value: 1L
 				}
 			]
 			x: 1.75d
@@ -466,7 +457,7 @@
 			]
 			icon: {
 				count: 1
-				id: "ae2:creative_energy_cell"
+				id: "yukicore:yuki_tear"
 			}
 			id: "64F2630EBEF3C144"
 			rewards: [
@@ -482,7 +473,7 @@
 					id: "39E987657AFC842A"
 					item: {
 						count: 1
-						id: "ae2:creative_energy_cell"
+						id: "yukicore:yuki_tear"
 					}
 					type: "item"
 				}
@@ -496,7 +487,7 @@
 			]
 			icon: {
 				count: 1
-				id: "powah:energy_cell_creative"
+				id: "yukicore:crown_of_yuki"
 			}
 			id: "6BADCCA7BF05573B"
 			rewards: [
@@ -512,7 +503,7 @@
 					id: "54153D4EB61B009B"
 					item: {
 						count: 1
-						id: "powah:energy_cell_creative"
+						id: "yukicore:crown_of_yuki"
 					}
 					type: "item"
 				}
@@ -526,7 +517,7 @@
 			]
 			icon: {
 				count: 1
-				id: "minecraft:snow_block"
+				id: "yukicore:eternal_winter_blade"
 			}
 			id: "5147444E917BF372"
 			rewards: [
@@ -535,9 +526,99 @@
 					type: "xp"
 					xp: 2075
 				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "55011FD0B51E9DDF"
+					item: {
+						count: 1
+						id: "yukicore:eternal_winter_blade"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 4.042d
+		}
+		{
+			dependencies: [
+				"5147444E917BF372"
+			]
+			icon: {
+				count: 1
+				id: "ae2:creative_energy_cell"
+			}
+			id: "3BE3B9EE90486CF7"
+			rewards: [
+				{
+					id: "35FB75626B83263B"
+					type: "xp"
+					xp: 2080
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6044BF236FF8F9F1"
+					item: {
+						count: 1
+						id: "ae2:creative_energy_cell"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 3.772d
+		}
+		{
+			dependencies: [
+				"3BE3B9EE90486CF7"
+			]
+			icon: {
+				count: 1
+				id: "powah:energy_cell_creative"
+			}
+			id: "588E547C29E88781"
+			rewards: [
+				{
+					id: "4EA268E0875694FA"
+					type: "xp"
+					xp: 2085
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5AAE48AEFFF59F93"
+					item: {
+						count: 1
+						id: "powah:energy_cell_creative"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 3.825d
+		}
+		{
+			dependencies: [
+				"588E547C29E88781"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:snow_block"
+			}
+			id: "47972CC7A57FCFA2"
+			rewards: [
+				{
+					id: "1C2D7B85FE331671"
+					type: "xp"
+					xp: 2090
+				}
 				{
 					count: 3
-					id: "307A76D362D9BFF4"
+					id: "17D09F6E710265FB"
 					item: {
 						count: 1
 						id: "yukicore:gift"
@@ -546,7 +627,7 @@
 				}
 				{
 					count: 64
-					id: "44DB71EDF2290B4B"
+					id: "5C3EA434D8229070"
 					item: {
 						count: 1
 						id: "yukicore:yuki_lamp"
@@ -558,12 +639,12 @@
 			size: 2.0d
 			tasks: [
 				{
-					id: "55011FD0B51E9DDF"
+					id: "5AC11DC6CA9C4833"
 					type: "checkmark"
 				}
 			]
-			x: 1.75d
-			y: 4.042d
+			x: 7.0d
+			y: 4.163d
 		}
 	]
 }

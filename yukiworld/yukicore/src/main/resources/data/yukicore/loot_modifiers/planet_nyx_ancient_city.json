@@ -1,0 +1,16 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/ancient_city"
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "dimension": "yukicore:nyx"
+      }
+    }
+  ],
+  "table": "yukicore:chests/planet_nyx"
+}

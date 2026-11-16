@@ -25,6 +25,11 @@ from yukigen.questbook4 import CHAPTERS4, GROUP as GROUP4, INSERT_AFTER  # noqa:
 from yukigen.questbook5 import CHAPTERS5, GROUP5, INSERT_AFTER5  # noqa: E402
 from yukigen.questbook6 import CHAPTERS6, GROUP6, INSERT_AFTER6  # noqa: E402
 from yukigen.questbook7 import CHAPTERS7, GROUP7, INSERT_AFTER7  # noqa: E402
+from yukigen import guide  # noqa: E402
+from yukigen.guide_text import DIM_GUIDE, ENTITY_GUIDE  # noqa: E402,F401
+
+guide.ENTITY_GUIDE, guide.DIM_GUIDE = ENTITY_GUIDE, DIM_GUIDE
+GUIDE_INDEX = None  # (рецепты, имена) — строится в main из jar-файлов модов
 
 INSERT_AFTER = {**INSERT_AFTER, **INSERT_AFTER5, **INSERT_AFTER6, **INSERT_AFTER7}
 GROUP4 = {**GROUP4, **GROUP5, **GROUP6, **GROUP7}
@@ -32,6 +37,13 @@ for _k, _after in INSERT_AFTER.items():
     _i = [k for k, _ in ORDER].index(_after)
     ORDER.insert(_i + 1, (_k, GROUP4[_k]))
 _BY_KEY = {c[0]: c for c in CH2 + CHAPTERS3 + CHAPTERS4 + CHAPTERS5 + CHAPTERS6 + CHAPTERS7}
+from yukigen.questbook71 import PLANET_EXTRA  # noqa: E402
+
+for _k, _extra in PLANET_EXTRA.items():  # исследование планет — сразу после посадки
+    _c = _BY_KEY[_k]
+    _steps = list(_c[5])
+    _land = next(i for i, st in enumerate(_steps) if isinstance(st[0], tuple) and st[0][0] == "dim")
+    _BY_KEY[_k] = (*_c[:5], _steps[:_land + 1] + _extra + _steps[_land + 1:])
 CHAPTERS = [_BY_KEY[k] for k, _ in ORDER]
 GROUP_OF = dict(ORDER)
 assert len(CHAPTERS) == len(_BY_KEY), set(_BY_KEY) - {k for k, _ in ORDER}
@@ -125,7 +137,15 @@ def item(stack_id, count=1, components=None):
 
 
 def main():
+    global GUIDE_INDEX
     known = set(Path(sys.argv[1]).read_text().split()) if len(sys.argv) > 1 else None
+    if len(sys.argv) > 3:
+        # третий аргумент — папка с jar-файлами модов сборки: из них берутся рецепты для подсказок
+        import glob
+        jars = glob.glob(str(Path(sys.argv[3]) / "*.jar"))
+        jars.append("/root/.gradle/caches/neoformruntime/artifacts/minecraft_1.21.1_client.jar")
+        res = Path(__file__).resolve().parent.parent / "yukicore" / "src" / "main" / "resources"
+        GUIDE_INDEX = guide.build_index(jars, [res])
     entities = None
     if len(sys.argv) > 2:
         entities = {line.split("\t")[0] for line in Path(sys.argv[2]).read_text().splitlines()}
@@ -213,6 +233,15 @@ def main():
             quests.append(quest)
             lang[f"quest.{id_}.title"] = style["color"] + name
             lang[f"quest.{id_}.quest_subtitle"] = style["subtitle"]
+            hint = None
+            if isinstance(task, tuple) and task[0] == "kill":
+                hint = guide.ENTITY_GUIDE.get(task[1])
+            elif isinstance(task, tuple) and task[0] == "dim":
+                hint = guide.DIM_GUIDE.get(task[1])
+            elif isinstance(task, str) and GUIDE_INDEX:
+                hint = guide.explain(task, *GUIDE_INDEX)
+            if hint:
+                desc = (desc + "\n\n" if desc else "") + hint
             if desc:
                 lang[f"quest.{id_}.quest_desc"] = desc.split("\n")
             prev = id_

@@ -129,15 +129,12 @@
 					xp: 1110
 				}
 			]
+			shape: "hexagon"
+			size: 1.35d
 			tasks: [
 				{
-					count: 32L
 					id: "37EAE1F32FDE42EF"
-					item: {
-						count: 1
-						id: "minecraft:sculk"
-					}
-					type: "item"
+					type: "checkmark"
 				}
 			]
 			x: 3.5d
@@ -149,7 +146,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:void_shard"
+				id: "minecraft:echo_shard"
 			}
 			id: "281DF627B004A66C"
 			rewards: [
@@ -159,15 +156,12 @@
 					xp: 1115
 				}
 			]
+			shape: "hexagon"
+			size: 1.35d
 			tasks: [
 				{
-					count: 32L
 					id: "1F856A4CF9CFFDE3"
-					item: {
-						count: 1
-						id: "yukicore:void_shard"
-					}
-					type: "item"
+					type: "checkmark"
 				}
 			]
 			x: 5.25d
@@ -179,7 +173,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:void_block"
+				id: "yukicore:tome_of_winter"
 			}
 			id: "536C9A0FB52E2B66"
 			rewards: [
@@ -191,11 +185,11 @@
 			]
 			tasks: [
 				{
-					count: 4L
+					count: 1L
 					id: "1A534CDA998AC9BF"
 					item: {
 						count: 1
-						id: "yukicore:void_block"
+						id: "yukicore:tome_of_winter"
 					}
 					type: "item"
 				}
@@ -209,7 +203,7 @@
 			]
 			icon: {
 				count: 1
-				id: "minecraft:nether_star"
+				id: "minecraft:ender_eye"
 			}
 			id: "39BF3F417804A5CB"
 			rewards: [
@@ -219,15 +213,12 @@
 					xp: 1125
 				}
 			]
+			shape: "hexagon"
+			size: 1.35d
 			tasks: [
 				{
-					count: 1L
 					id: "2FC57A25ADE7861D"
-					item: {
-						count: 1
-						id: "minecraft:nether_star"
-					}
-					type: "item"
+					type: "checkmark"
 				}
 			]
 			x: 8.75d
@@ -239,7 +230,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:sigil_wyrm"
+				id: "minecraft:sculk"
 			}
 			id: "174B4C96733A6B22"
 			rewards: [
@@ -251,11 +242,11 @@
 			]
 			tasks: [
 				{
-					count: 1L
+					count: 32L
 					id: "5C3E3946909F988C"
 					item: {
 						count: 1
-						id: "yukicore:sigil_wyrm"
+						id: "minecraft:sculk"
 					}
 					type: "item"
 				}
@@ -269,7 +260,7 @@
 			]
 			icon: {
 				count: 1
-				id: "minecraft:netherite_sword"
+				id: "yukicore:void_shard"
 			}
 			id: "12295E770E9968C2"
 			rewards: [
@@ -279,14 +270,15 @@
 					xp: 1135
 				}
 			]
-			shape: "diamond"
-			size: 1.45d
 			tasks: [
 				{
-					entity: "yukicore:void_wyrm"
+					count: 32L
 					id: "5D0B5E090D62DBB9"
-					type: "kill"
-					value: 1L
+					item: {
+						count: 1
+						id: "yukicore:void_shard"
+					}
+					type: "item"
 				}
 			]
 			x: 10.5d
@@ -298,7 +290,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:void_scale"
+				id: "yukicore:void_block"
 			}
 			id: "270A674E6AF9A13C"
 			rewards: [
@@ -307,9 +299,128 @@
 					type: "xp"
 					xp: 1140
 				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "5FCB9AA0057199DB"
+					item: {
+						count: 1
+						id: "yukicore:void_block"
+					}
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: 1.891d
+		}
+		{
+			dependencies: [
+				"270A674E6AF9A13C"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:nether_star"
+			}
+			id: "5029813E8F8EE8BD"
+			rewards: [
+				{
+					id: "41879F8423A0BB8C"
+					type: "xp"
+					xp: 1145
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6518BCE83C76A67E"
+					item: {
+						count: 1
+						id: "minecraft:nether_star"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 1.658d
+		}
+		{
+			dependencies: [
+				"5029813E8F8EE8BD"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sigil_wyrm"
+			}
+			id: "4C6BB7CB30AEC68D"
+			rewards: [
+				{
+					id: "5B4971D5940011B8"
+					type: "xp"
+					xp: 1150
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4076C4249EE5ACA5"
+					item: {
+						count: 1
+						id: "yukicore:sigil_wyrm"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 1.759d
+		}
+		{
+			dependencies: [
+				"4C6BB7CB30AEC68D"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "4863BA8F5A8C2272"
+			rewards: [
+				{
+					id: "7D674B4533F9C6DB"
+					type: "xp"
+					xp: 1155
+				}
+			]
+			shape: "diamond"
+			size: 1.45d
+			tasks: [
+				{
+					entity: "yukicore:void_wyrm"
+					id: "6BF2C57106D4F4F5"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 3.5d
+			y: 2.119d
+		}
+		{
+			dependencies: [
+				"4863BA8F5A8C2272"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:void_scale"
+			}
+			id: "2123089893EE47D1"
+			rewards: [
+				{
+					id: "2F96ADCD8FA32B9E"
+					type: "xp"
+					xp: 1160
+				}
 				{
 					count: 3
-					id: "7A9B25F7D619DA00"
+					id: "6A2F2F93E33B6431"
 					item: {
 						count: 1
 						id: "yukicore:gift"
@@ -318,7 +429,7 @@
 				}
 				{
 					count: 3
-					id: "1F6C87B986F4DBD8"
+					id: "1AC97A7718BC708B"
 					item: {
 						count: 1
 						id: "yukicore:star_shard"
@@ -331,7 +442,7 @@
 			tasks: [
 				{
 					count: 1L
-					id: "5FCB9AA0057199DB"
+					id: "135033A7DEDD518A"
 					item: {
 						count: 1
 						id: "yukicore:void_scale"
@@ -339,8 +450,8 @@
 					type: "item"
 				}
 			]
-			x: 8.75d
-			y: 1.891d
+			x: 1.75d
+			y: 2.464d
 		}
 	]
 }

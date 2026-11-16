@@ -11,6 +11,19 @@
     "yukicore:frost_essence_snow_golem",
     "yukicore:flame_essence_blaze",
     "yukicore:flame_essence_magma_cube",
-    "yukicore:mana_potion_witch"
+    "yukicore:mana_potion_witch",
+    "yukicore:planet_yukia_igloo_chest",
+    "yukicore:planet_yukia_ruined_portal",
+    "yukicore:planet_aurora_trail_ruins_rare",
+    "yukicore:planet_aurora_trail_ruins_common",
+    "yukicore:planet_aurora_reward",
+    "yukicore:planet_aurora_supply",
+    "yukicore:planet_pyrolith_bastion_treasure",
+    "yukicore:planet_pyrolith_bastion_other",
+    "yukicore:planet_pyrolith_nether_bridge",
+    "yukicore:planet_nyx_ancient_city",
+    "yukicore:planet_celestia_end_city_treasure",
+    "yukicore:planet_celestia_reward",
+    "yukicore:planet_celestia_supply"
   ]
 }

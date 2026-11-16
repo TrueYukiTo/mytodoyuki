@@ -13,11 +13,13 @@
     "fog_color": 6953482,
     "water_color": 4159204,
     "water_fog_color": 329011,
+    "grass_color": 6998176,
+    "foliage_color": 5822640,
     "particle": {
       "options": {
         "type": "minecraft:white_ash"
       },
-      "probability": 0.012
+      "probability": 0.015
     },
     "mood_sound": {
       "block_search_extent": 8,
@@ -62,19 +64,21 @@
     [],
     [],
     [],
-    [],
+    [
+      "minecraft:delta",
+      "minecraft:small_basalt_columns",
+      "minecraft:large_basalt_columns"
+    ],
     [],
     [
       "yukicore:ore_pyrolith"
     ],
     [],
     [
+      "minecraft:spring_delta",
       "minecraft:spring_lava"
     ],
-    [
-      "minecraft:small_basalt_columns",
-      "minecraft:large_basalt_columns"
-    ],
+    [],
     []
   ]
 }

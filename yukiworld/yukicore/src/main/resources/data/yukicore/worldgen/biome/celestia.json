@@ -13,11 +13,13 @@
     "fog_color": 16774362,
     "water_color": 4159204,
     "water_fog_color": 329011,
+    "grass_color": 16767082,
+    "foliage_color": 16756952,
     "particle": {
       "options": {
         "type": "minecraft:end_rod"
       },
-      "probability": 0.012
+      "probability": 0.015
     },
     "mood_sound": {
       "block_search_extent": 8,
@@ -64,7 +66,9 @@
       "minecraft:amethyst_geode"
     ],
     [],
-    [],
+    [
+      "yukicore:quartz_spire"
+    ],
     [],
     [
       "yukicore:ore_celestia"

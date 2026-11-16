@@ -266,6 +266,10 @@ def main():
     vru, ven = v6.lang()
     lang.RU.update(vru)
     lang.EN.update(ven)
+    from yukigen import planets2 as _pl2
+    vru, ven = _pl2.lang()
+    lang.RU.update(vru)
+    lang.EN.update(ven)
     vru, ven = v7.lang()
     lang.RU.update(vru)
     lang.EN.update(ven)
@@ -387,6 +391,9 @@ def main():
             "conditions": [{"condition": "neoforge:loot_table_id", "loot_table_id": table}],
             "table": f"{MOD}:bonus/{key}"})
         entries.append(f"{MOD}:{key}")
+    from yukigen import planets2 as _p2
+    _p2_files = _p2.apply(planets.files(ADASTRA_DATA), planets)  # заполняет GLM_ENTRIES
+    entries += _p2.GLM_ENTRIES
     write(DATA / "neoforge" / "loot_modifiers" / "global_loot_modifiers.json", {"replace": False, "entries": entries})
 
     def gift_table(rolls, pool):
@@ -408,7 +415,8 @@ def main():
         ("minecraft:totem_of_undying", 3, 1, 1), (I("frost_magnet"), 3, 1, 1)]))
 
     # ---------------- планеты Системы Юки (Ad Astra)
-    for rel, content in planets.files(ADASTRA_DATA).items():
+    from yukigen import planets2
+    for rel, content in planets2.apply(planets.files(ADASTRA_DATA), planets).items():
         write(ROOT / rel, content)
 
     # ---------------- книга Patchouli

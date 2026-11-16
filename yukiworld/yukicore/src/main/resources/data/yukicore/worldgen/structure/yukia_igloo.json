@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ad_astra"
+    }
+  ],
+  "type": "minecraft:igloo",
+  "biomes": "#yukicore:has_structure/yukia_igloo",
+  "spawn_overrides": {},
+  "step": "surface_structures"
+}

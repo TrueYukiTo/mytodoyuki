@@ -54,6 +54,24 @@
 			x: -1.81d
 			y: 1.71d
 		}
+		{
+			height: 1.1d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 14.5d
+			width: 1.1d
+			x: 12.17d
+			y: 4.05d
+		}
+		{
+			height: 0.86d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 4.7d
+			width: 0.86d
+			x: 11.88d
+			y: 4.39d
+		}
 	]
 	order_index: 31
 	quest_links: [ ]
@@ -119,7 +137,7 @@
 			]
 			icon: {
 				count: 1
-				id: "minecraft:packed_ice"
+				id: "minecraft:snow_block"
 			}
 			id: "2F4BCF108BF5ECAD"
 			rewards: [
@@ -129,15 +147,12 @@
 					xp: 910
 				}
 			]
+			shape: "hexagon"
+			size: 1.35d
 			tasks: [
 				{
-					count: 64L
 					id: "56F8D7ABD6D630BD"
-					item: {
-						count: 1
-						id: "minecraft:packed_ice"
-					}
-					type: "item"
+					type: "checkmark"
 				}
 			]
 			x: 3.5d
@@ -149,7 +164,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:permafrost_ore"
+				id: "yukicore:yuki_crystal_block"
 			}
 			id: "66BE88C684F58D2A"
 			rewards: [
@@ -161,11 +176,11 @@
 			]
 			tasks: [
 				{
-					count: 1L
+					count: 8L
 					id: "6D04386D79AF78CA"
 					item: {
 						count: 1
-						id: "yukicore:permafrost_ore"
+						id: "yukicore:yuki_crystal_block"
 					}
 					type: "item"
 				}
@@ -179,7 +194,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:permafrost_crystal"
+				id: "minecraft:chest"
 			}
 			id: "111FC0C75FD21A1A"
 			rewards: [
@@ -189,15 +204,12 @@
 					xp: 920
 				}
 			]
+			shape: "hexagon"
+			size: 1.35d
 			tasks: [
 				{
-					count: 32L
 					id: "27A5DB7B369E7823"
-					item: {
-						count: 1
-						id: "yukicore:permafrost_crystal"
-					}
-					type: "item"
+					type: "checkmark"
 				}
 			]
 			x: 7.0d
@@ -209,7 +221,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:permafrost_block"
+				id: "yukicore:greater_frost_essence"
 			}
 			id: "20BE3D0F89FBDD6C"
 			rewards: [
@@ -221,11 +233,11 @@
 			]
 			tasks: [
 				{
-					count: 4L
+					count: 1L
 					id: "41EC38A6E7CFD210"
 					item: {
 						count: 1
-						id: "yukicore:permafrost_block"
+						id: "yukicore:greater_frost_essence"
 					}
 					type: "item"
 				}
@@ -239,7 +251,7 @@
 			]
 			icon: {
 				count: 1
-				id: "minecraft:netherite_sword"
+				id: "minecraft:powder_snow_bucket"
 			}
 			id: "1D62982FF229889E"
 			rewards: [
@@ -249,14 +261,12 @@
 					xp: 930
 				}
 			]
-			shape: "diamond"
-			size: 1.45d
+			shape: "hexagon"
+			size: 1.35d
 			tasks: [
 				{
-					entity: "minecraft:stray"
 					id: "210683CA1E136ED2"
-					type: "kill"
-					value: 10L
+					type: "checkmark"
 				}
 			]
 			x: 10.5d
@@ -268,7 +278,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:sigil_colossus"
+				id: "minecraft:packed_ice"
 			}
 			id: "44FF5559F583C818"
 			rewards: [
@@ -280,11 +290,11 @@
 			]
 			tasks: [
 				{
-					count: 1L
+					count: 64L
 					id: "61082A804884D484"
 					item: {
 						count: 1
-						id: "yukicore:sigil_colossus"
+						id: "minecraft:packed_ice"
 					}
 					type: "item"
 				}
@@ -298,7 +308,7 @@
 			]
 			icon: {
 				count: 1
-				id: "minecraft:netherite_sword"
+				id: "yukicore:permafrost_ore"
 			}
 			id: "44EDAFD862BFD00D"
 			rewards: [
@@ -308,14 +318,15 @@
 					xp: 940
 				}
 			]
-			shape: "diamond"
-			size: 1.45d
 			tasks: [
 				{
-					entity: "yukicore:frost_colossus"
+					count: 1L
 					id: "31EB7B6E543C900B"
-					type: "kill"
-					value: 1L
+					item: {
+						count: 1
+						id: "yukicore:permafrost_ore"
+					}
+					type: "item"
 				}
 			]
 			x: 8.75d
@@ -327,7 +338,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:colossus_heart"
+				id: "yukicore:permafrost_crystal"
 			}
 			id: "173948641B55379B"
 			rewards: [
@@ -336,9 +347,157 @@
 					type: "xp"
 					xp: 945
 				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "79EFBDEAD24FC1FA"
+					item: {
+						count: 1
+						id: "yukicore:permafrost_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 1.658d
+		}
+		{
+			dependencies: [
+				"173948641B55379B"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:permafrost_block"
+			}
+			id: "4B7A55FC26BD56A7"
+			rewards: [
+				{
+					id: "6FD34223E5CB5AC2"
+					type: "xp"
+					xp: 950
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "661CE28B9448EC20"
+					item: {
+						count: 1
+						id: "yukicore:permafrost_block"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 1.759d
+		}
+		{
+			dependencies: [
+				"4B7A55FC26BD56A7"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "5982EC23D0FCA31A"
+			rewards: [
+				{
+					id: "755566C11090C8D5"
+					type: "xp"
+					xp: 955
+				}
+			]
+			shape: "diamond"
+			size: 1.45d
+			tasks: [
+				{
+					entity: "minecraft:stray"
+					id: "7965BE72093CF18F"
+					type: "kill"
+					value: 10L
+				}
+			]
+			x: 3.5d
+			y: 2.119d
+		}
+		{
+			dependencies: [
+				"5982EC23D0FCA31A"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sigil_colossus"
+			}
+			id: "55692CC2DFBCB79B"
+			rewards: [
+				{
+					id: "7106DE9FD2FF823C"
+					type: "xp"
+					xp: 960
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "68DC4516E441557C"
+					item: {
+						count: 1
+						id: "yukicore:sigil_colossus"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 2.464d
+		}
+		{
+			dependencies: [
+				"55692CC2DFBCB79B"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "59388DB789BDFF66"
+			rewards: [
+				{
+					id: "1F884D2450C6F60B"
+					type: "xp"
+					xp: 965
+				}
+			]
+			shape: "diamond"
+			size: 1.45d
+			tasks: [
+				{
+					entity: "yukicore:frost_colossus"
+					id: "5CC5F6AAC3CCE6FE"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 0.0d
+			y: 2.534d
+		}
+		{
+			dependencies: [
+				"59388DB789BDFF66"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:colossus_heart"
+			}
+			id: "1A44453C99323C28"
+			rewards: [
+				{
+					id: "22AEFFE9AB0B1540"
+					type: "xp"
+					xp: 970
+				}
 				{
 					count: 3
-					id: "177F2A483E374EE2"
+					id: "54C95987B3705C94"
 					item: {
 						count: 1
 						id: "yukicore:gift"
@@ -347,7 +506,7 @@
 				}
 				{
 					count: 2
-					id: "579257F579119D27"
+					id: "15593A387C575779"
 					item: {
 						count: 1
 						id: "yukicore:star_shard"
@@ -360,7 +519,7 @@
 			tasks: [
 				{
 					count: 1L
-					id: "79EFBDEAD24FC1FA"
+					id: "61241BCBCEBB373A"
 					item: {
 						count: 1
 						id: "yukicore:colossus_heart"
@@ -368,8 +527,8 @@
 					type: "item"
 				}
 			]
-			x: 7.0d
-			y: 1.658d
+			x: 0.0d
+			y: 4.432d
 		}
 	]
 }

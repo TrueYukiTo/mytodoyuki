@@ -60,7 +60,7 @@
 	quests: [
 		{
 			dependencies: [
-				"173948641B55379B"
+				"1A44453C99323C28"
 			]
 			icon: {
 				count: 1
@@ -119,7 +119,7 @@
 			]
 			icon: {
 				count: 1
-				id: "minecraft:amethyst_block"
+				id: "minecraft:moss_block"
 			}
 			id: "34A43C3AF7CBDDC8"
 			rewards: [
@@ -129,15 +129,12 @@
 					xp: 960
 				}
 			]
+			shape: "hexagon"
+			size: 1.35d
 			tasks: [
 				{
-					count: 64L
 					id: "1F00C68AEBB66F47"
-					item: {
-						count: 1
-						id: "minecraft:amethyst_block"
-					}
-					type: "item"
+					type: "checkmark"
 				}
 			]
 			x: 3.5d
@@ -149,7 +146,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:aurora_shard"
+				id: "minecraft:brush"
 			}
 			id: "5199126F71FE49E8"
 			rewards: [
@@ -159,15 +156,12 @@
 					xp: 965
 				}
 			]
+			shape: "hexagon"
+			size: 1.35d
 			tasks: [
 				{
-					count: 32L
 					id: "7E10AD17E107F2C1"
-					item: {
-						count: 1
-						id: "yukicore:aurora_shard"
-					}
-					type: "item"
+					type: "checkmark"
 				}
 			]
 			x: 5.25d
@@ -179,7 +173,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:aurora_block"
+				id: "yukicore:mana_crystal"
 			}
 			id: "3BEA1604D8EC10EE"
 			rewards: [
@@ -191,11 +185,11 @@
 			]
 			tasks: [
 				{
-					count: 4L
+					count: 1L
 					id: "1BF6C4FA2D6034ED"
 					item: {
 						count: 1
-						id: "yukicore:aurora_block"
+						id: "yukicore:mana_crystal"
 					}
 					type: "item"
 				}
@@ -209,7 +203,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:sigil_queen"
+				id: "minecraft:end_rod"
 			}
 			id: "3FCBE48F9525402B"
 			rewards: [
@@ -219,15 +213,12 @@
 					xp: 975
 				}
 			]
+			shape: "hexagon"
+			size: 1.35d
 			tasks: [
 				{
-					count: 1L
 					id: "4F9BE008D1DBC1F9"
-					item: {
-						count: 1
-						id: "yukicore:sigil_queen"
-					}
-					type: "item"
+					type: "checkmark"
 				}
 			]
 			x: 8.75d
@@ -239,7 +230,7 @@
 			]
 			icon: {
 				count: 1
-				id: "minecraft:netherite_sword"
+				id: "minecraft:amethyst_block"
 			}
 			id: "1EA8D177F5BD6FCB"
 			rewards: [
@@ -249,14 +240,15 @@
 					xp: 980
 				}
 			]
-			shape: "diamond"
-			size: 1.45d
 			tasks: [
 				{
-					entity: "yukicore:blizzard_queen"
+					count: 64L
 					id: "745130F166B5FD6D"
-					type: "kill"
-					value: 1L
+					item: {
+						count: 1
+						id: "minecraft:amethyst_block"
+					}
+					type: "item"
 				}
 			]
 			x: 10.5d
@@ -268,7 +260,7 @@
 			]
 			icon: {
 				count: 1
-				id: "yukicore:blizzard_crown"
+				id: "yukicore:aurora_shard"
 			}
 			id: "6B418C61852CA884"
 			rewards: [
@@ -277,9 +269,128 @@
 					type: "xp"
 					xp: 985
 				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "57B359FEC52082B4"
+					item: {
+						count: 1
+						id: "yukicore:aurora_shard"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 2.282d
+		}
+		{
+			dependencies: [
+				"6B418C61852CA884"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:aurora_block"
+			}
+			id: "1E08033361F934A3"
+			rewards: [
+				{
+					id: "6C2CA26E92BE2888"
+					type: "xp"
+					xp: 990
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "2ED61E7639DBEAF2"
+					item: {
+						count: 1
+						id: "yukicore:aurora_block"
+					}
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: 1.891d
+		}
+		{
+			dependencies: [
+				"1E08033361F934A3"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sigil_queen"
+			}
+			id: "47BC587DA18A2BFE"
+			rewards: [
+				{
+					id: "67834817CE6CF454"
+					type: "xp"
+					xp: 995
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "79708EC4EEDC7456"
+					item: {
+						count: 1
+						id: "yukicore:sigil_queen"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 1.658d
+		}
+		{
+			dependencies: [
+				"47BC587DA18A2BFE"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "5A7665A4F672FFB6"
+			rewards: [
+				{
+					id: "1AE1F3BA6320E148"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "diamond"
+			size: 1.45d
+			tasks: [
+				{
+					entity: "yukicore:blizzard_queen"
+					id: "2B0352EB74940DE9"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: 5.25d
+			y: 1.759d
+		}
+		{
+			dependencies: [
+				"5A7665A4F672FFB6"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:blizzard_crown"
+			}
+			id: "7A96D726EFF3FDD1"
+			rewards: [
+				{
+					id: "1276D848D0113457"
+					type: "xp"
+					xp: 1005
+				}
 				{
 					count: 3
-					id: "2FA9260CDC6D1F52"
+					id: "2944CA60EE2738ED"
 					item: {
 						count: 1
 						id: "yukicore:gift"
@@ -288,7 +399,7 @@
 				}
 				{
 					count: 2
-					id: "619930FFFF47FC3D"
+					id: "2AF4641CD47E71BC"
 					item: {
 						count: 1
 						id: "yukicore:star_shard"
@@ -301,7 +412,7 @@
 			tasks: [
 				{
 					count: 1L
-					id: "57B359FEC52082B4"
+					id: "6178919CF2A2280D"
 					item: {
 						count: 1
 						id: "yukicore:blizzard_crown"
@@ -309,8 +420,8 @@
 					type: "item"
 				}
 			]
-			x: 10.5d
-			y: 2.282d
+			x: 3.5d
+			y: 2.119d
 		}
 	]
 }

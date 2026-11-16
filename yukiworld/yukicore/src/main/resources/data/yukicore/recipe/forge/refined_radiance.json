@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "yukicore:frost_forging",
+  "ingredients": [
+    {
+      "item": "create:chromatic_compound",
+      "count": 1
+    },
+    {
+      "item": "yukicore:yuki_crystal",
+      "count": 1
+    },
+    {
+      "item": "minecraft:glowstone_dust",
+      "count": 4
+    }
+  ],
+  "result": {
+    "id": "create:refined_radiance",
+    "count": 1
+  },
+  "energy": 2000000,
+  "time": 160
+}

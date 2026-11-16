@@ -1,0 +1,83 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ad_astra"
+    }
+  ],
+  "has_precipitation": false,
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "effects": {
+    "sky_color": 16763120,
+    "fog_color": 16771322,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "grass_color": 16767082,
+    "foliage_color": 16756952,
+    "particle": {
+      "options": {
+        "type": "minecraft:firework"
+      },
+      "probability": 0.015
+    },
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
+    }
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:vex",
+        "weight": 8,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "creature": [
+      {
+        "type": "minecraft:allay",
+        "weight": 6,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "ambient": [],
+    "axolotls": [],
+    "misc": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [
+      "yukicore:star_spire",
+      "minecraft:glowstone_extra"
+    ],
+    [],
+    [
+      "yukicore:ore_celestia"
+    ],
+    [],
+    [],
+    [
+      "yukicore:amethyst_patch"
+    ],
+    []
+  ]
+}
