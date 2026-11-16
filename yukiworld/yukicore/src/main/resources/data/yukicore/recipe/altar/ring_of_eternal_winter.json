@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 2,
+  "center": {
+    "item": "yukicore:frost_ring"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:archon_heart"
+    },
+    {
+      "item": "yukicore:aurorium_ingot"
+    },
+    {
+      "item": "yukicore:cryosteel_ingot"
+    },
+    {
+      "item": "yukicore:cryosteel_ingot"
+    },
+    {
+      "item": "yukicore:frost_essence"
+    },
+    {
+      "item": "yukicore:frost_essence"
+    },
+    {
+      "item": "yukicore:frost_essence"
+    },
+    {
+      "item": "yukicore:frost_essence"
+    }
+  ],
+  "result": {
+    "id": "yukicore:ring_of_eternal_winter",
+    "count": 1
+  },
+  "duration": 400
+}

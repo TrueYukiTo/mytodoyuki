@@ -1,0 +1,241 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "fire_flight"
+	group: "3C966D8069B10DF8"
+	icon: {
+		count: 1
+		id: "yukicore:sintara_rocket"
+	}
+	id: "56676667C2E56FA3"
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 0.9d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -13.7d
+			width: 0.9d
+			x: -1.47d
+			y: 0.35d
+		}
+		{
+			height: 0.74d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -10.6d
+			width: 0.74d
+			x: -1.64d
+			y: 0.44d
+		}
+	]
+	order_index: 34
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"1FBF8B7802F558C7"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sintara_rocket"
+			}
+			id: "52057F6B48105A49"
+			rewards: [
+				{
+					id: "4CFF6F6AB91DA6AA"
+					type: "xp"
+					xp: 1100
+				}
+			]
+			shape: "hexagon"
+			size: 1.35d
+			tasks: [
+				{
+					id: "6F8B83D555B865D1"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"52057F6B48105A49"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sintara_space_helmet"
+			}
+			id: "191210A67FAC29AE"
+			rewards: [
+				{
+					id: "3F3B8DFD0E77689A"
+					type: "xp"
+					xp: 1105
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "591112B943CBA68B"
+					item: {
+						count: 1
+						id: "yukicore:sintara_space_helmet"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 0.352d
+		}
+		{
+			dependencies: [
+				"191210A67FAC29AE"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sintara_space_suit"
+			}
+			id: "7DD7B478064C6E6A"
+			rewards: [
+				{
+					id: "12D2E9398E1B84D9"
+					type: "xp"
+					xp: 1110
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "248A7D50DBF4FCF1"
+					item: {
+						count: 1
+						id: "yukicore:sintara_space_suit"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 0.438d
+		}
+		{
+			dependencies: [
+				"7DD7B478064C6E6A"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sintara_space_pants"
+			}
+			id: "44A0902BCD23CCCA"
+			rewards: [
+				{
+					id: "29D35E80863638DA"
+					type: "xp"
+					xp: 1115
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3D6F314BE81EE12C"
+					item: {
+						count: 1
+						id: "yukicore:sintara_space_pants"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 0.192d
+		}
+		{
+			dependencies: [
+				"44A0902BCD23CCCA"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sintara_space_boots"
+			}
+			id: "39673B23A3593563"
+			rewards: [
+				{
+					id: "3896FBC4CD633670"
+					type: "xp"
+					xp: 1120
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "174CDD04897F1B38"
+					item: {
+						count: 1
+						id: "yukicore:sintara_space_boots"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -0.199d
+		}
+		{
+			dependencies: [
+				"39673B23A3593563"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sintara_rocket"
+			}
+			id: "4B052FCB808105BC"
+			rewards: [
+				{
+					id: "19FF7D584FC55F9C"
+					type: "xp"
+					xp: 1125
+				}
+				{
+					count: 3
+					id: "42A7F82C7C193226"
+					item: {
+						count: 1
+						id: "yukicore:gift"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "63571B0926236147"
+					item: {
+						count: 1
+						id: "yukicore:mana_crystal"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					count: 1L
+					id: "2ABD55FCAE7D8110"
+					item: {
+						count: 1
+						id: "yukicore:sintara_rocket"
+					}
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: -0.44d
+		}
+	]
+}

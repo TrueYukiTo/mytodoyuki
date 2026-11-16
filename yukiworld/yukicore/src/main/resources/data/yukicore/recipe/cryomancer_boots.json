@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "W W",
+    "E E"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:light_blue_wool"
+    },
+    "E": {
+      "item": "yukicore:frost_essence"
+    }
+  },
+  "result": {
+    "id": "yukicore:cryomancer_boots",
+    "count": 1
+  }
+}

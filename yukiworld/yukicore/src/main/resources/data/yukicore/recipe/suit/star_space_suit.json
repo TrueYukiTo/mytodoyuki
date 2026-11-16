@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ad_astra"
+    }
+  ],
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "yukicore:celestium_upgrade_template"
+  },
+  "base": {
+    "item": "yukicore:sintara_space_suit"
+  },
+  "addition": {
+    "item": "yukicore:stellar_alloy"
+  },
+  "result": {
+    "id": "yukicore:star_space_suit",
+    "count": 1
+  }
+}

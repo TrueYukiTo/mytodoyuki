@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ECE",
+    "G G",
+    "GGG"
+  ],
+  "key": {
+    "E": {
+      "item": "yukicore:frost_essence"
+    },
+    "C": {
+      "item": "minecraft:diamond"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "id": "yukicore:frost_ring",
+    "count": 1
+  }
+}

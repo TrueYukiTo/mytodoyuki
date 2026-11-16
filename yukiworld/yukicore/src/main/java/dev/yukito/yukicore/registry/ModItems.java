@@ -7,6 +7,11 @@ import dev.yukito.yukicore.item.InfinityStarItem;
 import dev.yukito.yukicore.item.SigilItem;
 import dev.yukito.yukicore.item.YukiArmorItem;
 import dev.yukito.yukicore.item.YukiStarItem;
+import dev.yukito.yukicore.magic.School;
+import dev.yukito.yukicore.magic.item.FocusItem;
+import dev.yukito.yukicore.magic.item.MagicConsumableItem;
+import dev.yukito.yukicore.magic.item.MagicGearItem;
+import dev.yukito.yukicore.magic.item.RobeItem;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -128,9 +133,8 @@ public final class ModItems {
     public static final DeferredItem<Item> STELLAR_ALLOY = material("stellar_alloy", Rarity.EPIC, true);
 
     // --- Для Sintara ---
-    public static final DeferredItem<Item> SINTARA_STAFF = ITEMS.register("sintara_staff",
-            () -> new dev.yukito.yukicore.item.SintaraStaffItem(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)
-                    .fireResistant()));
+    public static final DeferredItem<Item> SINTARA_STAFF = ITEMS.register("sintara_staff", () -> new FocusItem(
+            new Item.Properties().stacksTo(1).rarity(Rarity.EPIC).fireResistant(), School.FIRE, 0.25f, true));
     public static final DeferredItem<Item> SINTARA_AMULET = ITEMS.register("sintara_amulet",
             () -> new dev.yukito.yukicore.item.SintaraAmuletItem(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)));
 
@@ -157,6 +161,49 @@ public final class ModItems {
                     .saturationModifier(0.8f).alwaysEdible().usingConvertsTo(Items.GLASS_BOTTLE)
                     .effect(new MobEffectInstance(MobEffects.REGENERATION, 20 * 20, 1), 1f)
                     .effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 20 * 60, 0), 1f).build())));
+
+    // --- 6.0: магия Юки (лёд) и Синтары (пламя) ---
+    public static final DeferredItem<Item> YUKI_GRIMOIRE = ITEMS.register("yuki_grimoire", () -> new FocusItem(
+            new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON), School.ICE, 0f, false));
+    public static final DeferredItem<Item> SINTARA_TOME = ITEMS.register("sintara_tome", () -> new FocusItem(
+            new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON), School.FIRE, 0f, false));
+    public static final DeferredItem<Item> YUKI_STAFF = ITEMS.register("yuki_staff", () -> new FocusItem(
+            new Item.Properties().stacksTo(1).rarity(Rarity.EPIC).fireResistant(), School.ICE, 0.25f, true));
+    public static final DeferredItem<Item> STAFF_OF_ELEMENTS = ITEMS.register("staff_of_elements", () -> new FocusItem(
+            new Item.Properties().stacksTo(1).rarity(Rarity.EPIC).fireResistant(), null, 0.4f, true));
+    public static final DeferredItem<Item> MANA_POTION = consumable("mana_potion", MagicConsumableItem.Kind.MANA_POTION, Rarity.UNCOMMON, 16);
+    public static final DeferredItem<Item> GREATER_MANA_POTION = consumable("greater_mana_potion", MagicConsumableItem.Kind.GREATER_MANA_POTION, Rarity.RARE, 16);
+    public static final DeferredItem<Item> FROST_ESSENCE = consumable("frost_essence", MagicConsumableItem.Kind.FROST_ESSENCE, Rarity.UNCOMMON, 64);
+    public static final DeferredItem<Item> FLAME_ESSENCE = consumable("flame_essence", MagicConsumableItem.Kind.FLAME_ESSENCE, Rarity.UNCOMMON, 64);
+    public static final DeferredItem<Item> MANA_CRYSTAL = consumable("mana_crystal", MagicConsumableItem.Kind.MANA_CRYSTAL, Rarity.EPIC, 16);
+    public static final DeferredItem<Item> RESPEC_SCROLL = consumable("respec_scroll", MagicConsumableItem.Kind.RESPEC, Rarity.RARE, 16);
+    public static final DeferredItem<Item> FROST_RING = ring("frost_ring", School.ICE, 0.1f, Rarity.RARE);
+    public static final DeferredItem<Item> FLAME_RING = ring("flame_ring", School.FIRE, 0.1f, Rarity.RARE);
+    public static final DeferredItem<Item> RING_OF_ETERNAL_WINTER = ring("ring_of_eternal_winter", School.ICE, 0.2f, Rarity.EPIC);
+    public static final DeferredItem<Item> RING_OF_SINTARA = ring("ring_of_sintara", School.FIRE, 0.2f, Rarity.EPIC);
+    public static final DeferredItem<Item> CRYOMANCER_HOOD = robe("cryomancer_hood", ModArmorMaterials.CRYOMANCER, ArmorItem.Type.HELMET, School.ICE);
+    public static final DeferredItem<Item> CRYOMANCER_ROBE = robe("cryomancer_robe", ModArmorMaterials.CRYOMANCER, ArmorItem.Type.CHESTPLATE, School.ICE);
+    public static final DeferredItem<Item> CRYOMANCER_LEGGINGS = robe("cryomancer_leggings", ModArmorMaterials.CRYOMANCER, ArmorItem.Type.LEGGINGS, School.ICE);
+    public static final DeferredItem<Item> CRYOMANCER_BOOTS = robe("cryomancer_boots", ModArmorMaterials.CRYOMANCER, ArmorItem.Type.BOOTS, School.ICE);
+    public static final DeferredItem<Item> PYROMANCER_HOOD = robe("pyromancer_hood", ModArmorMaterials.PYROMANCER, ArmorItem.Type.HELMET, School.FIRE);
+    public static final DeferredItem<Item> PYROMANCER_ROBE = robe("pyromancer_robe", ModArmorMaterials.PYROMANCER, ArmorItem.Type.CHESTPLATE, School.FIRE);
+    public static final DeferredItem<Item> PYROMANCER_LEGGINGS = robe("pyromancer_leggings", ModArmorMaterials.PYROMANCER, ArmorItem.Type.LEGGINGS, School.FIRE);
+    public static final DeferredItem<Item> PYROMANCER_BOOTS = robe("pyromancer_boots", ModArmorMaterials.PYROMANCER, ArmorItem.Type.BOOTS, School.FIRE);
+    public static final DeferredItem<Item> ARCHON_HEART = core("archon_heart", Rarity.EPIC, true);
+    public static final DeferredItem<Item> PHOENIX_FEATHER = core("phoenix_feather", Rarity.EPIC, true);
+    public static final DeferredItem<Item> SIGIL_ARCHON = sigil("sigil_archon", ModEntities.GLACIAL_ARCHON, null);
+    public static final DeferredItem<Item> SIGIL_PHOENIX = sigil("sigil_phoenix", ModEntities.INFERNAL_PHOENIX, null);
+
+    // --- снаряды (только внешний вид, в творческой вкладке скрыты) ---
+    public static final DeferredItem<Item> ORB_FROST = ITEMS.registerSimpleItem("orb_frost");
+    public static final DeferredItem<Item> ORB_FLAME = ITEMS.registerSimpleItem("orb_flame");
+    public static final DeferredItem<Item> ORB_VOID = ITEMS.registerSimpleItem("orb_void");
+    public static final DeferredItem<Item> ORB_STAR = ITEMS.registerSimpleItem("orb_star");
+    public static final DeferredItem<Item> ORB_BOULDER = ITEMS.registerSimpleItem("orb_boulder");
+    public static final DeferredItem<Item> ORB_METEOR = ITEMS.registerSimpleItem("orb_meteor");
+    public static final DeferredItem<Item> ORB_ICICLE = ITEMS.registerSimpleItem("orb_icicle");
+    public static final DeferredItem<Item> ORB_FEATHER = ITEMS.registerSimpleItem("orb_feather");
+    public static final DeferredItem<Item> ORB_BLADE = ITEMS.registerSimpleItem("orb_blade");
 
     // --- Инструменты и броня трёх уровней ---
     public static final DeferredItem<Item> FROST_SWORD = sword("frost", ModTiers.FROST, Rarity.UNCOMMON);
@@ -246,7 +293,21 @@ public final class ModItems {
             java.util.function.Supplier<? extends net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.Mob>> boss,
             String planet) {
         return ITEMS.register(name, () -> new SigilItem(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)
-                .fireResistant(), boss, YukiCore.id(planet)));
+                .fireResistant(), boss, planet == null ? null : YukiCore.id(planet)));
+    }
+
+    private static DeferredItem<Item> consumable(String name, MagicConsumableItem.Kind kind, Rarity rarity, int stack) {
+        return ITEMS.register(name, () -> new MagicConsumableItem(new Item.Properties().stacksTo(stack).rarity(rarity),
+                kind, rarity == Rarity.EPIC));
+    }
+
+    private static DeferredItem<Item> ring(String name, School school, float power, Rarity rarity) {
+        return ITEMS.register(name, () -> new MagicGearItem(new Item.Properties().stacksTo(1).rarity(rarity), school, power));
+    }
+
+    private static DeferredItem<Item> robe(String name, Holder<ArmorMaterial> material, ArmorItem.Type type, School school) {
+        return ITEMS.register(name, () -> new RobeItem(material, type, new Item.Properties().rarity(Rarity.RARE)
+                .durability(type.getDurability(30)), school));
     }
 
     private static Item.Properties toolProps(Rarity rarity) {

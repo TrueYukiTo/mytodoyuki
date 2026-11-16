@@ -2,6 +2,11 @@
   "values": [
     "yukicore:frost_leggings",
     "yukicore:aurorium_leggings",
-    "yukicore:celestium_leggings"
+    "yukicore:celestium_leggings",
+    "yukicore:cryomancer_leggings",
+    "yukicore:pyromancer_leggings",
+    "yukicore:frost_space_pants",
+    "yukicore:sintara_space_pants",
+    "yukicore:star_space_pants"
   ]
 }

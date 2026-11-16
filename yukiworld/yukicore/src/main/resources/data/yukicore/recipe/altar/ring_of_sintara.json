@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 2,
+  "center": {
+    "item": "yukicore:flame_ring"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:phoenix_feather"
+    },
+    {
+      "item": "yukicore:aurorium_ingot"
+    },
+    {
+      "item": "yukicore:cryosteel_ingot"
+    },
+    {
+      "item": "yukicore:cryosteel_ingot"
+    },
+    {
+      "item": "yukicore:flame_essence"
+    },
+    {
+      "item": "yukicore:flame_essence"
+    },
+    {
+      "item": "yukicore:flame_essence"
+    },
+    {
+      "item": "yukicore:flame_essence"
+    }
+  ],
+  "result": {
+    "id": "yukicore:ring_of_sintara",
+    "count": 1
+  },
+  "duration": 400
+}

@@ -12,6 +12,9 @@ from pathlib import Path
 M = "yukicore"
 COND = [{"type": "neoforge:mod_loaded", "modid": "ad_astra"}]
 
+# 6.0: дальние планеты требуют ракет YukiCore (5–7 уровень)
+TIERS = {"yukia": 4, "aurora": 5, "pyrolith": 5, "nyx": 6, "celestia": 7}
+
 PLANETS = {
     # id: русское имя, английское, блок по умолчанию, верх, под верхом, жидкость, эффекты, небо, туман,
     #     частица, гравитация, кислород, температура, солн. энергия, руда, мобы, фичи, ambient
@@ -117,7 +120,7 @@ def files(adastra_data: Path):
         out[f"data/{M}/planets/{pid}.json"] = _cond({
             "dimension": f"{M}:{pid}", "gravity": p["gravity"], "orbit": f"{M}:{pid}_orbit", "oxygen": p["oxygen"],
             "solar_power": p["solar"], "solar_system": f"{M}:yuki_system", "temperature": p["temperature"],
-            "tier": 4})
+            "tier": TIERS[pid]})
         # орбита: без неё Ad Astra считает планету «космосом» и не показывает её в меню ракеты
         out[f"data/{M}/dimension_type/{pid}_orbit.json"] = _cond(copy.deepcopy(orbit_type))
         out[f"data/{M}/dimension/{pid}_orbit.json"] = _cond({
@@ -126,7 +129,7 @@ def files(adastra_data: Path):
                           "biome_source": {"type": "minecraft:fixed", "biome": "ad_astra:orbit"}}})
         out[f"data/{M}/planets/{pid}_orbit.json"] = _cond({
             "dimension": f"{M}:{pid}_orbit", "gravity": 0.0, "oxygen": False, "solar_power": p["solar"] * 2,
-            "solar_system": f"{M}:yuki_system", "temperature": -270, "tier": 4})
+            "solar_system": f"{M}:yuki_system", "temperature": -270, "tier": TIERS[pid]})
         # руда планеты — богатые жилы
         out[f"data/{M}/worldgen/configured_feature/ore_{pid}.json"] = {"type": "minecraft:ore", "config": {
             "size": 7, "discard_chance_on_air_exposure": 0.0,

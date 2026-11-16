@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "yukicore:mana_potion"
+    },
+    {
+      "item": "minecraft:ghast_tear"
+    },
+    {
+      "item": "yukicore:yuki_crystal"
+    },
+    {
+      "item": "minecraft:glowstone_dust"
+    }
+  ],
+  "result": {
+    "id": "yukicore:greater_mana_potion",
+    "count": 1
+  }
+}

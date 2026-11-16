@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 2,
+  "center": {
+    "item": "yukicore:frost_core"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:frost_essence"
+    },
+    {
+      "item": "yukicore:frost_essence"
+    },
+    {
+      "item": "yukicore:frost_essence"
+    },
+    {
+      "item": "yukicore:frost_essence"
+    },
+    {
+      "item": "yukicore:cryosteel_ingot"
+    },
+    {
+      "item": "yukicore:cryosteel_ingot"
+    },
+    {
+      "item": "minecraft:blue_ice"
+    },
+    {
+      "item": "minecraft:blue_ice"
+    }
+  ],
+  "result": {
+    "id": "yukicore:sigil_archon",
+    "count": 1
+  },
+  "duration": 300
+}

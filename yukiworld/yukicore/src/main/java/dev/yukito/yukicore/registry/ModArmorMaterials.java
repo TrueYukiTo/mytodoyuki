@@ -31,6 +31,18 @@ public final class ModArmorMaterials {
     public static final DeferredHolder<ArmorMaterial, ArmorMaterial> YUKI = register("yuki",
             8, 14, 11, 8, 40, 8.0f, 0.4f, SoundEvents.ARMOR_EQUIP_NETHERITE, () -> ModItems.YUKI_TEAR.get());
 
+    // 6.0: мантии магов и скафандры Системы Юки
+    public static final DeferredHolder<ArmorMaterial, ArmorMaterial> CRYOMANCER = register("cryomancer",
+            2, 6, 5, 2, 35, 1.0f, 0f, SoundEvents.ARMOR_EQUIP_LEATHER, () -> ModItems.FROST_ESSENCE.get());
+    public static final DeferredHolder<ArmorMaterial, ArmorMaterial> PYROMANCER = register("pyromancer",
+            2, 6, 5, 2, 35, 1.0f, 0f, SoundEvents.ARMOR_EQUIP_LEATHER, () -> ModItems.FLAME_ESSENCE.get());
+    public static final DeferredHolder<ArmorMaterial, ArmorMaterial> FROST_SUIT = register("frost_suit",
+            3, 8, 6, 3, 15, 2.0f, 0.05f, SoundEvents.ARMOR_EQUIP_IRON, () -> ModItems.CRYOSTEEL_INGOT.get());
+    public static final DeferredHolder<ArmorMaterial, ArmorMaterial> SINTARA_SUIT = register("sintara_suit",
+            4, 9, 7, 4, 20, 3.0f, 0.1f, SoundEvents.ARMOR_EQUIP_NETHERITE, () -> ModItems.PYROLITE_INGOT.get());
+    public static final DeferredHolder<ArmorMaterial, ArmorMaterial> STAR_SUIT = register("star_suit",
+            5, 11, 9, 5, 30, 5.0f, 0.2f, SoundEvents.ARMOR_EQUIP_NETHERITE, () -> ModItems.STELLAR_ALLOY.get());
+
     private static DeferredHolder<ArmorMaterial, ArmorMaterial> register(String name, int boots, int chest, int legs,
             int helmet, int enchant, float toughness, float knockback, Holder<SoundEvent> sound, Supplier<Item> repair) {
         return ARMOR_MATERIALS.register(name, () -> new ArmorMaterial(

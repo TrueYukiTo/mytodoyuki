@@ -6,6 +6,11 @@
     "yukicore:star_shard_elder_guardian",
     "yukicore:gift_stray",
     "yukicore:gift_snow_golem",
-    "yukicore:tangerine_spruce"
+    "yukicore:tangerine_spruce",
+    "yukicore:frost_essence_stray",
+    "yukicore:frost_essence_snow_golem",
+    "yukicore:flame_essence_blaze",
+    "yukicore:flame_essence_magma_cube",
+    "yukicore:mana_potion_witch"
   ]
 }

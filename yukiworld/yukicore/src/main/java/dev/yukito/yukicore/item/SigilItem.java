@@ -31,14 +31,14 @@ public class SigilItem extends CoreItem {
     public SigilItem(Properties properties, Supplier<? extends EntityType<? extends Mob>> boss, ResourceLocation dimension) {
         super(properties, true);
         this.boss = boss;
-        this.dimension = ResourceKey.create(Registries.DIMENSION, dimension);
+        this.dimension = dimension == null ? null : ResourceKey.create(Registries.DIMENSION, dimension);
     }
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack stack = player.getItemInHand(hand);
         if (!(level instanceof ServerLevel server)) return InteractionResultHolder.success(stack);
-        if (!level.dimension().equals(dimension)) {
+        if (dimension != null && !level.dimension().equals(dimension)) {
             player.displayClientMessage(Component.translatable("message.yukicore.sigil.wrong_world",
                     Component.translatable("planet." + dimension.location().getNamespace() + "."
                             + dimension.location().getPath())).withStyle(ChatFormatting.RED), true);
@@ -66,6 +66,10 @@ public class SigilItem extends CoreItem {
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
         super.appendHoverText(stack, context, tooltip, flag);
+        if (dimension == null) {
+            tooltip.add(Component.translatable("tooltip.yukicore.sigil_trial").withStyle(ChatFormatting.DARK_PURPLE));
+            return;
+        }
         tooltip.add(Component.translatable("tooltip.yukicore.sigil", Component.translatable(
                 "planet." + dimension.location().getNamespace() + "." + dimension.location().getPath()))
                 .withStyle(ChatFormatting.DARK_PURPLE));

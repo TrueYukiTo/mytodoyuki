@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 3,
+  "center": {
+    "item": "yukicore:yuki_heart"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:yuki_staff"
+    },
+    {
+      "item": "yukicore:sintara_staff"
+    },
+    {
+      "item": "yukicore:archon_heart"
+    },
+    {
+      "item": "yukicore:phoenix_feather"
+    },
+    {
+      "item": "yukicore:stellar_alloy"
+    },
+    {
+      "item": "yukicore:stellar_alloy"
+    },
+    {
+      "item": "yukicore:mana_crystal"
+    },
+    {
+      "item": "yukicore:mana_crystal"
+    }
+  ],
+  "result": {
+    "id": "yukicore:staff_of_elements",
+    "count": 1
+  },
+  "duration": 600
+}

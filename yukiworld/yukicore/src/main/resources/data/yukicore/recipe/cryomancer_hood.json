@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "WEW",
+    "W W"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:light_blue_wool"
+    },
+    "E": {
+      "item": "yukicore:frost_essence"
+    }
+  },
+  "result": {
+    "id": "yukicore:cryomancer_hood",
+    "count": 1
+  }
+}

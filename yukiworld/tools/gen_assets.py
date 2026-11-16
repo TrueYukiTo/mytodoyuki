@@ -14,7 +14,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from yukigen import art, book, hd, lang, planets, recipes  # noqa: E402
+from yukigen import art, book, hd, lang, models, planets, recipes, v6  # noqa: E402
 from yukigen.art import CRYSTAL, SAKURA, TIERS  # noqa: E402
 from yukigen.pixel import gui_button, gui_handle, logo, nine_slice  # noqa: E402
 
@@ -55,15 +55,9 @@ BOSS_LOOT = {  # босс: [(предмет, min, max)]
     "void_wyrm": [("void_scale", 1, 1), ("star_shard", 2, 3), ("void_shard", 4, 8)],
     "shadow_of_yuki": [("yuki_tear", 1, 1), ("star_shard", 4, 4), ("stellar_shard", 6, 10)],
 }
-# босс: (ванильная текстура, градиент перекраски по яркости)
-BOSS_SKINS = {
-    "frost_colossus": ("textures/entity/iron_golem/iron_golem.png", [0x0A1E3A, 0x2C6CB0, 0x8FD8FF, 0xF2FBFF]),
-    "blizzard_queen": ("textures/entity/skeleton/stray.png", [0x1A1A3A, 0x6A7AC0, 0xD8E4FF, 0xFFFFFF]),
-    "ash_lord": ("textures/entity/blaze.png", [0x120404, 0x6A1404, 0xF07A1C, 0xFFE070]),
-    "void_wyrm": ("textures/entity/phantom.png", [0x05010C, 0x2A0E4A, 0x8A50E0, 0xE8D8FF]),
-    "shadow_of_yuki": ("textures/entity/illager/illusioner.png", [0x0A0510, 0x3A1440, 0xC04A9A, 0xFFE6F4]),
-}
 VANILLA_CLIENT = Path("/root/.gradle/caches/neoformruntime/artifacts/minecraft_1.21.1_client.jar")
+ADASTRA_JAR = Path("/tmp/claude-0/-home-user-mytodoyuki/7717ab37-fa34-58cc-9896-ef064fd55632/scratchpad/jars/adastra-1.21.1-1.16.26-neoforge.jar")
+JAVA_BOSS = Path(__file__).resolve().parent.parent / "yukicore" / "src" / "main" / "java" / "dev" / "yukito" / "yukicore" / "client" / "boss" / "BossLayers.java"
 ADASTRA_DATA = Path("/tmp/claude-0/-home-user-mytodoyuki/7717ab37-fa34-58cc-9896-ef064fd55632/scratchpad/aadata/data/ad_astra")
 
 
@@ -126,6 +120,7 @@ def main():
     items = art.hd_textures()
     items.update(art.hd_textures_v4())
     items.update(art.hd_textures_v5())
+    items.update(v6.item_textures())
     for name, (img, handheld) in items.items():
         write(ASSETS / "textures" / "item" / f"{name}.png", img)
         write(ASSETS / "models" / "item" / f"{name}.json",
@@ -140,7 +135,7 @@ def main():
               {"parent": "minecraft:block/cube_all", "textures": {"all": f"{MOD}:block/{name}"}})
         write(ASSETS / "models" / "item" / f"{name}.json", {"parent": f"{MOD}:block/{name}"})
 
-    for i, (tier, pal) in enumerate(list(TIERS.items()) + [("yuki", art.GOLDPINK)]):
+    for i, (tier, pal) in enumerate(list(TIERS.items()) + [("yuki", art.GOLDPINK)] + list(v6.ARMOR_LAYERS.items())):
         for layer in (1, 2):
             write(ASSETS / "textures" / "models" / "armor" / f"{tier}_layer_{layer}.png",
                   hd.armor_layer_hd(layer, pal, i * 10))
@@ -218,15 +213,28 @@ def main():
     write(q / "sintara_star.png", hd.quest_star(0xB080FF, 0x8FF0D0))
     write(q / "tree.png", hd.quest_tree())
 
-    # скины боссов: перекраска ванильных моделей в HD (×4)
+    # 6.0: 3D-модели боссов — Java-слои + HD-текстуры со светящимся слоем
+    java_src, boss_tex = models.build()
+    JAVA_BOSS.write_text(java_src, encoding="utf-8")
+    for boss, (tex, glow) in boss_tex.items():
+        write(ASSETS / "textures" / "entity" / "boss" / f"{boss}.png", tex)
+        write(ASSETS / "textures" / "entity" / "boss" / f"{boss}_glow.png", glow)
+
+    # 6.0: ракеты (модель Ad Astra 4-го уровня, свои текстуры) и иконки магии
     import zipfile
     from PIL import Image
-    with zipfile.ZipFile(VANILLA_CLIENT) as z:
-        for boss, (path, stops) in BOSS_SKINS.items():
-            with z.open("assets/minecraft/" + path) as f:
-                src = Image.open(f).copy()
-            scale = 2 if src.width >= 128 else 4
-            write(ASSETS / "textures" / "entity" / f"{boss}.png", hd.recolor_entity(src, stops, scale, 0.8))
+    with zipfile.ZipFile(ADASTRA_JAR) as z:
+        with z.open("assets/ad_astra/textures/entity/rocket/tier_4_rocket.png") as f:
+            rocket_src = Image.open(f).convert("RGBA").copy()
+        rocket_model = json.loads(z.read("assets/ad_astra/models/item/tier_4_rocket.json"))
+    for name, stops in v6.ROCKET_STOPS.items():
+        write(ASSETS / "textures" / "entity" / "rocket" / f"{name}.png", v6.rocket_texture(rocket_src, stops))
+        write(ASSETS / "models" / "item" / f"{name}.json", rocket_model)
+    icons = v6.spell_icons()
+    for name, img in icons.items():
+        write(ASSETS / "textures" / "gui" / "spells" / f"{name}.png", img)
+    for name, img in v6.effect_icons(icons).items():
+        write(ASSETS / "textures" / "mob_effect" / f"{name}.png", img)
 
     # ---------------- GUI всей игры
     gui = ROOT / "assets" / "minecraft" / "textures" / "gui" / "sprites" / "widget"
@@ -249,6 +257,9 @@ def main():
     pru, pen = planets.lang()
     lang.RU.update(pru)
     lang.EN.update(pen)
+    vru, ven = v6.lang()
+    lang.RU.update(vru)
+    lang.EN.update(ven)
     write(ASSETS / "lang" / "ru_ru.json", lang.RU)
     write(ASSETS / "lang" / "en_us.json", lang.EN)
     missing_names = [n for n in list(items) + BLOCKS + SPECIAL_BLOCKS
@@ -259,7 +270,8 @@ def main():
     lt = DATA / MOD / "loot_table" / "blocks"
     for b in BLOCKS + SPECIAL_BLOCKS:
         write(lt / f"{b}.json", ore_loot(b, *ORES[b]) if b in ORES else self_loot(b))
-    for boss, drops in BOSS_LOOT.items():
+    for boss, drops in {**BOSS_LOOT, **v6.BOSS_LOOT}.items():
+        drops = drops + v6.BOSS_EXTRA.get(boss, [])
         write(DATA / MOD / "loot_table" / "entities" / f"{boss}.json", {"type": "minecraft:entity", "pools": [
             {"rolls": 1, "bonus_rolls": 0, "entries": [{"type": "minecraft:item", "name": I(item), "functions": [
                 {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": lo, "max": hi}}]}]}
@@ -267,12 +279,13 @@ def main():
 
     # ---------------- рецепты
     rec = recipes.build()
+    rec.update(v6.recipes())
     for name, r in rec.items():
         write(DATA / MOD / "recipe" / f"{name}.json", r)
     for rel, r in recipes.overrides().items():
         write(DATA / rel, r)
     if known is not None:
-        ours = {I(n) for n in list(items) + BLOCKS + SPECIAL_BLOCKS}
+        ours = {I(n) for n in list(items) + BLOCKS + SPECIAL_BLOCKS + v6.ROCKETS}
         bad = sorted(i for i in recipes.ingredient_ids(rec)
                      if not i.startswith("minecraft:") and i not in known and i not in ours)
         assert not bad, f"unknown items in recipes: {bad}"
@@ -295,7 +308,15 @@ def main():
             vals += [I("yuki_blade"), I("eternal_winter_blade")]
         if piece == "helmet":
             vals.append(I("crown_of_yuki"))
+        idx = ["helmet", "chestplate", "leggings", "boots"].index(piece) if piece in ("helmet", "chestplate", "leggings", "boots") else -1
+        if idx >= 0:
+            vals += [I(v6.ROBES[idx]), I(v6.ROBES[4 + idx]), I(v6.SUIT_ITEMS[idx]), I(v6.SUIT_ITEMS[4 + idx]),
+                     I(v6.SUIT_ITEMS[8 + idx])]
         write(tags / "item" / f"{tag}.json", {"values": vals})
+    aa_tags = DATA / "ad_astra" / "tags" / "item"
+    write(aa_tags / "space_suit_items.json", {"replace": False, "values": [I(n) for n in v6.SUIT_ITEMS]})
+    write(aa_tags / "heat_resistant_armor.json", {"replace": False,
+                                                  "values": [I(n) for n in v6.SUIT_ITEMS if not n.startswith("frost")]})
     write(tags / "item" / "beacon_payment_items.json",
           {"values": [I("frost_ingot"), I("aurorium_ingot"), I("celestium_ingot")]})
 
@@ -346,9 +367,10 @@ def main():
                 "conditions": [{"condition": "minecraft:random_chance", "chance": chance}],
                 "entries": [{"type": "minecraft:item", "name": item, "functions": [
                     {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": lo, "max": hi}}]}]}]}
-    for key, table, item, chance in [("gift_stray", "minecraft:entities/stray", I("gift"), 0.05),
+    for key, table, item, chance in ([("gift_stray", "minecraft:entities/stray", I("gift"), 0.05),
                                       ("gift_snow_golem", "minecraft:entities/snow_golem", I("gift"), 0.08),
-                                      ("tangerine_spruce", "minecraft:blocks/spruce_leaves", I("tangerine"), 0.03)]:
+                                      ("tangerine_spruce", "minecraft:blocks/spruce_leaves", I("tangerine"), 0.03)]
+                                     + [(k, t, I(it), c) for k, t, it, c in v6.ESSENCE_DROPS]):
         write(DATA / MOD / "loot_table" / "bonus" / f"{key}.json", chance_table(item, chance))
         write(DATA / MOD / "loot_modifiers" / f"{key}.json", {
             "type": "neoforge:add_table",

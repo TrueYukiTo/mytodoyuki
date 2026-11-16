@@ -17,7 +17,9 @@ public final class ModCreativeTabs {
                     .title(Component.translatable("itemGroup.yukicore"))
                     .icon(() -> new ItemStack(ModItems.YUKI_STAR.get()))
                     .displayItems((params, output) ->
-                            ModItems.ITEMS.getEntries().forEach(e -> output.accept(e.get())))
+                            ModItems.ITEMS.getEntries().stream()
+                                    .filter(e -> !e.getId().getPath().startsWith("orb_"))
+                                    .forEach(e -> output.accept(e.get())))
                     .build());
 
     private ModCreativeTabs() {}

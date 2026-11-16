@@ -91,12 +91,12 @@
 			y: 6.49d
 		}
 	]
-	order_index: 6
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: [
-				"49F1E9209F283F21"
+				"5BE55075CC9F81E3"
 			]
 			icon: {
 				count: 1

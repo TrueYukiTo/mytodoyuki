@@ -3,6 +3,11 @@
     "yukicore:frost_helmet",
     "yukicore:aurorium_helmet",
     "yukicore:celestium_helmet",
-    "yukicore:crown_of_yuki"
+    "yukicore:crown_of_yuki",
+    "yukicore:cryomancer_hood",
+    "yukicore:pyromancer_hood",
+    "yukicore:frost_space_helmet",
+    "yukicore:sintara_space_helmet",
+    "yukicore:star_space_helmet"
   ]
 }

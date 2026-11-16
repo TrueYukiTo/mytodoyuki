@@ -1,0 +1,27 @@
+{
+  "name": "Ракеты Юки",
+  "category": "yukicore:space",
+  "icon": "yukicore:frost_rocket",
+  "sortnum": 30,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Ракеты Ad Astra долетают только до 4-го уровня. Дальше нужны ракеты YukiCore (механический крафтер Create)."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:frost_rocket",
+      "text": "$(l)Морозная ракета$() — 5 уровень: Аврора и Пиролит."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:sintara_rocket",
+      "text": "$(l)Ракета Синтары$() — 6 уровень: Никта."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:star_rocket",
+      "text": "$(l)Звёздная ракета$() — 7 уровень: Целестия."
+    }
+  ]
+}

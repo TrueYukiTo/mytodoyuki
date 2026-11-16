@@ -57,6 +57,27 @@ playeranimator
 occultism
 apotheosis
 evilcraft
+# 6.0: сборка в первую очередь магическая
+goety
+theurgy
+forbidden-arcanus
+mahou-tsukai
+reliquary-reincarnations
+natures-aura
+malum
+hexerei
+relics-mod
+enchanting-infuser
+irons-jewelry
+cataclysm-spellbooks
+discerning-the-eldritch
+ars-additions
+ars-creo
+ars-ocultas
+arsdelight
+magic-vibe-decorations
+lodestonelib
+atlas-api
 
 ## 📦 Хранение
 sophisticated-backpacks
@@ -132,3 +153,4 @@ cf:ftb-ultimine-forge
 cf:the-twilight-forest
 cf:ex-pattern-provider
 cf:just-dire-things
+cf:ars-elemental

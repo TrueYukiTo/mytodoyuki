@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 2,
+  "center": {
+    "item": "minecraft:diamond_block"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:yuki_crystal"
+    },
+    {
+      "item": "yukicore:yuki_crystal"
+    },
+    {
+      "item": "yukicore:yuki_crystal"
+    },
+    {
+      "item": "yukicore:yuki_crystal"
+    },
+    {
+      "item": "yukicore:frost_essence"
+    },
+    {
+      "item": "yukicore:frost_essence"
+    },
+    {
+      "item": "yukicore:flame_essence"
+    },
+    {
+      "item": "yukicore:flame_essence"
+    }
+  ],
+  "result": {
+    "id": "yukicore:mana_crystal",
+    "count": 1
+  },
+  "duration": 300
+}

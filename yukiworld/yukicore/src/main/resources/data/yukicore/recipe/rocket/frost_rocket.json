@@ -1,0 +1,50 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ad_astra"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "ad_astra:rocket_nose_cone"
+    },
+    "P": {
+      "item": "yukicore:cryosteel_block"
+    },
+    "C": {
+      "item": "yukicore:cryo_circuit"
+    },
+    "T": {
+      "item": "ad_astra:tier_4_rocket"
+    },
+    "X": {
+      "item": "yukicore:frost_core"
+    },
+    "F": {
+      "item": "ad_astra:rocket_fin"
+    },
+    "E": {
+      "item": "ad_astra:calorite_engine"
+    }
+  },
+  "pattern": [
+    "   N   ",
+    "  PCP  ",
+    "  PTP  ",
+    " FPXPF ",
+    " F E F "
+  ],
+  "result": {
+    "count": 1,
+    "id": "yukicore:frost_rocket"
+  },
+  "show_notification": true
+}

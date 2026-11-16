@@ -2,6 +2,11 @@
   "values": [
     "yukicore:frost_chestplate",
     "yukicore:aurorium_chestplate",
-    "yukicore:celestium_chestplate"
+    "yukicore:celestium_chestplate",
+    "yukicore:cryomancer_robe",
+    "yukicore:pyromancer_robe",
+    "yukicore:frost_space_suit",
+    "yukicore:sintara_space_suit",
+    "yukicore:star_space_suit"
   ]
 }

@@ -23,6 +23,8 @@ public final class YukiCore {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public YukiCore(IEventBus modBus, ModContainer container) {
+        // боссы с 10 000+ здоровья: поднимаем ванильный потолок атрибута (1024)
+        ((net.minecraft.world.entity.ai.attributes.RangedAttribute) net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH.value()).maxValue = 1_000_000;
         ModArmorMaterials.ARMOR_MATERIALS.register(modBus);
         ModBlocks.BLOCKS.register(modBus);
         ModItems.ITEMS.register(modBus);
@@ -32,6 +34,10 @@ public final class YukiCore {
         dev.yukito.yukicore.registry.ModRecipes.TYPES.register(modBus);
         dev.yukito.yukicore.registry.ModRecipes.SERIALIZERS.register(modBus);
         dev.yukito.yukicore.registry.ModEntities.register(modBus);
+        dev.yukito.yukicore.registry.ModMagic.register(modBus);
+        if (net.neoforged.fml.ModList.get().isLoaded("ad_astra")) {
+            dev.yukito.yukicore.compat.adastra.AdAstraCompat.register(modBus);
+        }
 
         container.registerConfig(ModConfig.Type.CLIENT, Config.CLIENT_SPEC);
         LOGGER.info("YukiCore loaded — welcome to YukiWorld ❄");

@@ -1,0 +1,241 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "frost_flight"
+	group: "3C966D8069B10DF8"
+	icon: {
+		count: 1
+		id: "yukicore:frost_rocket"
+	}
+	id: "784D7AD872EE24B8"
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 0.89d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 13.1d
+			width: 0.89d
+			x: -1.64d
+			y: 0.14d
+		}
+		{
+			height: 1.11d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -18.2d
+			width: 1.11d
+			x: 11.82d
+			y: -0.54d
+		}
+	]
+	order_index: 30
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"173948641B55379B"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_rocket"
+			}
+			id: "287D64FFF475E641"
+			rewards: [
+				{
+					id: "41FD4F6D06FB1EE0"
+					type: "xp"
+					xp: 1100
+				}
+			]
+			shape: "hexagon"
+			size: 1.35d
+			tasks: [
+				{
+					id: "3C2E349FC0BE62C7"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"287D64FFF475E641"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_space_helmet"
+			}
+			id: "6A60E7F4DD70B62B"
+			rewards: [
+				{
+					id: "38629423B7603447"
+					type: "xp"
+					xp: 1105
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3CA6CAF63CC6E47E"
+					item: {
+						count: 1
+						id: "yukicore:frost_space_helmet"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 0.352d
+		}
+		{
+			dependencies: [
+				"6A60E7F4DD70B62B"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_space_suit"
+			}
+			id: "72FA16500C6CD286"
+			rewards: [
+				{
+					id: "27EA8F00B7A04A39"
+					type: "xp"
+					xp: 1110
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "375F4665206C2290"
+					item: {
+						count: 1
+						id: "yukicore:frost_space_suit"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 0.438d
+		}
+		{
+			dependencies: [
+				"72FA16500C6CD286"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_space_pants"
+			}
+			id: "65EC5FFB7717BA58"
+			rewards: [
+				{
+					id: "5D6969BF7325402C"
+					type: "xp"
+					xp: 1115
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "648FAFBDC2BF081E"
+					item: {
+						count: 1
+						id: "yukicore:frost_space_pants"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 0.192d
+		}
+		{
+			dependencies: [
+				"65EC5FFB7717BA58"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_space_boots"
+			}
+			id: "30B503765883F4F3"
+			rewards: [
+				{
+					id: "3ED68B21C471018D"
+					type: "xp"
+					xp: 1120
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "55D70D05197FC998"
+					item: {
+						count: 1
+						id: "yukicore:frost_space_boots"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -0.199d
+		}
+		{
+			dependencies: [
+				"30B503765883F4F3"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_rocket"
+			}
+			id: "2F0B3E6780A4ADA9"
+			rewards: [
+				{
+					id: "2F91A938A3C89C33"
+					type: "xp"
+					xp: 1125
+				}
+				{
+					count: 3
+					id: "55F0B614F4BED089"
+					item: {
+						count: 1
+						id: "yukicore:gift"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "580C231FD9B3D3EA"
+					item: {
+						count: 1
+						id: "yukicore:greater_mana_potion"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					count: 1L
+					id: "558DA3C5093CFAEE"
+					item: {
+						count: 1
+						id: "yukicore:frost_rocket"
+					}
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: -0.44d
+		}
+	]
+}

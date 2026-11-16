@@ -15,6 +15,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
     version = project.neo_version
+    accessTransformers = project.files("src/main/resources/META-INF/accesstransformer.cfg")
 
     runs {
         client {
@@ -40,12 +41,21 @@ repositories {
         url = 'https://maven.blamejared.com'
         content { includeGroup 'mezz.jei' }
     }
+    maven {
+        name = 'Modrinth (Ad Astra API)'
+        url = 'https://api.modrinth.com/maven'
+        content { includeGroup 'maven.modrinth' }
+    }
 }
 
 dependencies {
     // JEI: только API для компиляции — категория рецептов алтаря
     compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
     compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"
+    // Ad Astra: свои ракеты и скафандры (мод есть в сборке; код загружается только если он установлен)
+    compileOnly "maven.modrinth:ad-astra:${adastra_version}"
+    compileOnly "maven.modrinth:common-storage-lib:${csl_version}"
+    compileOnly "maven.modrinth:resourceful-lib:${rlib_version}"
 }
 
 tasks.withType(JavaCompile).configureEach {

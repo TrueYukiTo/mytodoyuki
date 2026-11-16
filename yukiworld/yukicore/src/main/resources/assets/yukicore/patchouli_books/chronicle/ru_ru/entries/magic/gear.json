@@ -1,0 +1,33 @@
+{
+  "name": "Снаряжение мага",
+  "category": "yukicore:magic",
+  "icon": "yukicore:cryomancer_robe",
+  "sortnum": 26,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:yuki_staff",
+      "text": "$(l)Посохи$() в руке усиливают свою школу на 25%. $(l)Посох Двух Стихий$() — обе школы, +40%."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:cryomancer_robe",
+      "text": "$(l)Мантии криоманта и пироманта$(): полный комплект — +25% силы, −20% маны, +40 к запасу и +1 маны/с."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:frost_ring",
+      "text": "$(l)Кольца$() работают из инвентаря: +10%, легендарные — +20%."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:mana_crystal",
+      "text": "$(l)Кристалл маны$(): навсегда +10 к запасу (до 10 раз). Зелья маны восполняют 60 и 220."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:respec_scroll",
+      "text": "$(l)Свиток забвения$() возвращает все очки навыков."
+    }
+  ]
+}

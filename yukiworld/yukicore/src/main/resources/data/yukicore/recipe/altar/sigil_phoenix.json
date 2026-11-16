@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 2,
+  "center": {
+    "item": "yukicore:frost_core"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:flame_essence"
+    },
+    {
+      "item": "yukicore:flame_essence"
+    },
+    {
+      "item": "yukicore:flame_essence"
+    },
+    {
+      "item": "yukicore:flame_essence"
+    },
+    {
+      "item": "yukicore:cryosteel_ingot"
+    },
+    {
+      "item": "yukicore:cryosteel_ingot"
+    },
+    {
+      "item": "minecraft:blaze_rod"
+    },
+    {
+      "item": "minecraft:blaze_rod"
+    }
+  ],
+  "result": {
+    "id": "yukicore:sigil_phoenix",
+    "count": 1
+  },
+  "duration": 300
+}

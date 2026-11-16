@@ -1,0 +1,211 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mastery"
+	group: "74BF87A649295B10"
+	icon: {
+		count: 1
+		id: "yukicore:staff_of_elements"
+	}
+	id: "799BA846BB4CD71A"
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/finale.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 1.03d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -18.5d
+			width: 1.03d
+			x: -1.78d
+			y: 0.54d
+		}
+		{
+			height: 0.87d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: -6.4d
+			width: 0.87d
+			x: 12.26d
+			y: -0.42d
+		}
+	]
+	order_index: 38
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"165E405A3716AD5E"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:staff_of_elements"
+			}
+			id: "202FF580DB664650"
+			rewards: [
+				{
+					id: "183D3D8D9F2BA2A2"
+					type: "xp"
+					xp: 1100
+				}
+			]
+			shape: "hexagon"
+			size: 1.35d
+			tasks: [
+				{
+					id: "7C23D873CE723380"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"202FF580DB664650"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_staff"
+			}
+			id: "330984C6D38E4135"
+			rewards: [
+				{
+					id: "59CC51F4A9150443"
+					type: "xp"
+					xp: 1105
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7EF93974C54FD619"
+					item: {
+						count: 1
+						id: "yukicore:yuki_staff"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 0.352d
+		}
+		{
+			dependencies: [
+				"330984C6D38E4135"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sintara_staff"
+			}
+			id: "4F152E91DA296E94"
+			rewards: [
+				{
+					id: "627DE31F15DEB19F"
+					type: "xp"
+					xp: 1110
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "46DE472D8C0A4EC6"
+					item: {
+						count: 1
+						id: "yukicore:sintara_staff"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 0.438d
+		}
+		{
+			dependencies: [
+				"4F152E91DA296E94"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:mana_crystal"
+			}
+			id: "25B4266B42E69685"
+			rewards: [
+				{
+					id: "3E052DE3FA6C1FD8"
+					type: "xp"
+					xp: 1115
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "2F46192AA2570F86"
+					item: {
+						count: 1
+						id: "yukicore:mana_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 0.192d
+		}
+		{
+			dependencies: [
+				"25B4266B42E69685"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:staff_of_elements"
+			}
+			id: "5BEA60D41E5E99DD"
+			rewards: [
+				{
+					id: "74E950F121D2376A"
+					type: "xp"
+					xp: 1120
+				}
+				{
+					count: 3
+					id: "20D52A70A24F73CE"
+					item: {
+						count: 1
+						id: "yukicore:gift"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "20E2E5065B721736"
+					item: {
+						count: 1
+						id: "yukicore:grand_gift"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					count: 1L
+					id: "26FD05C75DDD4619"
+					item: {
+						count: 1
+						id: "yukicore:staff_of_elements"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -0.199d
+		}
+	]
+}

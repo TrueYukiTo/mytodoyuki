@@ -2,6 +2,11 @@
   "values": [
     "yukicore:frost_boots",
     "yukicore:aurorium_boots",
-    "yukicore:celestium_boots"
+    "yukicore:celestium_boots",
+    "yukicore:cryomancer_boots",
+    "yukicore:pyromancer_boots",
+    "yukicore:frost_space_boots",
+    "yukicore:sintara_space_boots",
+    "yukicore:star_space_boots"
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "name": "Скафандры",
+  "category": "yukicore:space",
+  "icon": "yukicore:frost_space_suit",
+  "sortnum": 31,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:frost_space_suit",
+      "text": "$(l)Морозный скафандр$(): бак кислорода 2 000 мБ, защита от холода. Кузнечный стол: скафандр Ad Astra + морозный шаблон + блок криостали."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:sintara_space_suit",
+      "text": "$(l)Скафандр Синтары$(): 4 000 мБ, жар и холод. Из незеритового скафандра + ауриевый шаблон + блок пиролита."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:star_space_suit",
+      "text": "$(l)Звёздный скафандр$(): 8 000 мБ, всё сразу. Полный комплект: ночное зрение, скорость, нет урона от падения."
+    }
+  ]
+}

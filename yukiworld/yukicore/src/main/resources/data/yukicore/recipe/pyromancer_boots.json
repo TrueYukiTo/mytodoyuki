@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "W W",
+    "E E"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:red_wool"
+    },
+    "E": {
+      "item": "yukicore:flame_essence"
+    }
+  },
+  "result": {
+    "id": "yukicore:pyromancer_boots",
+    "count": 1
+  }
+}

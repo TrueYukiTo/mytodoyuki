@@ -1,0 +1,271 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "star_flight"
+	group: "3C966D8069B10DF8"
+	icon: {
+		count: 1
+		id: "yukicore:star_rocket"
+	}
+	id: "1B87B4FA8EEC766C"
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 1.18d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: 8.2d
+			width: 1.18d
+			x: 12.11d
+			y: -0.54d
+		}
+		{
+			height: 0.82d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -13.8d
+			width: 0.82d
+			x: -1.9d
+			y: -0.04d
+		}
+	]
+	order_index: 36
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"270A674E6AF9A13C"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:star_rocket"
+			}
+			id: "4FF7CA4EC90D9F74"
+			rewards: [
+				{
+					id: "16CA7BC76A5602C7"
+					type: "xp"
+					xp: 1100
+				}
+			]
+			shape: "hexagon"
+			size: 1.35d
+			tasks: [
+				{
+					id: "11A6A6865350A085"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4FF7CA4EC90D9F74"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:stellar_alloy"
+			}
+			id: "6438C37DAA134A9B"
+			rewards: [
+				{
+					id: "3003687495BEE387"
+					type: "xp"
+					xp: 1105
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "772B77D4BBD97139"
+					item: {
+						count: 1
+						id: "yukicore:stellar_alloy"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 0.352d
+		}
+		{
+			dependencies: [
+				"6438C37DAA134A9B"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:star_space_helmet"
+			}
+			id: "1D86409604377F9A"
+			rewards: [
+				{
+					id: "23DA17FE26E1DA86"
+					type: "xp"
+					xp: 1110
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "21740BFAECED36A9"
+					item: {
+						count: 1
+						id: "yukicore:star_space_helmet"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 0.438d
+		}
+		{
+			dependencies: [
+				"1D86409604377F9A"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:star_space_suit"
+			}
+			id: "46FAE6023D361B23"
+			rewards: [
+				{
+					id: "1218438A8DDDDF0F"
+					type: "xp"
+					xp: 1115
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "793D10589EC46B10"
+					item: {
+						count: 1
+						id: "yukicore:star_space_suit"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 0.192d
+		}
+		{
+			dependencies: [
+				"46FAE6023D361B23"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:star_space_pants"
+			}
+			id: "2BCE4410B884F97E"
+			rewards: [
+				{
+					id: "19914E8AB9F443FC"
+					type: "xp"
+					xp: 1120
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2E0622177FB8B382"
+					item: {
+						count: 1
+						id: "yukicore:star_space_pants"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -0.199d
+		}
+		{
+			dependencies: [
+				"2BCE4410B884F97E"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:star_space_boots"
+			}
+			id: "21AE33D54777900F"
+			rewards: [
+				{
+					id: "10A91AF74EAED987"
+					type: "xp"
+					xp: 1125
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "129DF1DAA029E090"
+					item: {
+						count: 1
+						id: "yukicore:star_space_boots"
+					}
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: -0.44d
+		}
+		{
+			dependencies: [
+				"21AE33D54777900F"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:star_rocket"
+			}
+			id: "1B79B80272A91F29"
+			rewards: [
+				{
+					id: "71A4180A71770DD4"
+					type: "xp"
+					xp: 1130
+				}
+				{
+					count: 3
+					id: "416CF3809661EAAB"
+					item: {
+						count: 1
+						id: "yukicore:gift"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "17A53818691121CC"
+					item: {
+						count: 1
+						id: "yukicore:grand_gift"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					count: 1L
+					id: "112EAFB4A0DEE3B9"
+					item: {
+						count: 1
+						id: "yukicore:star_rocket"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: -0.348d
+		}
+	]
+}

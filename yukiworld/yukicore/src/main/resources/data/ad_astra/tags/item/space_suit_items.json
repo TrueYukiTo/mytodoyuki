@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "yukicore:frost_space_helmet",
+    "yukicore:frost_space_suit",
+    "yukicore:frost_space_pants",
+    "yukicore:frost_space_boots",
+    "yukicore:sintara_space_helmet",
+    "yukicore:sintara_space_suit",
+    "yukicore:sintara_space_pants",
+    "yukicore:sintara_space_boots",
+    "yukicore:star_space_helmet",
+    "yukicore:star_space_suit",
+    "yukicore:star_space_pants",
+    "yukicore:star_space_boots"
+  ]
+}

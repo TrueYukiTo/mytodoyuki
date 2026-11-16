@@ -1,0 +1,662 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "arcana"
+	group: "27C6257DE576252F"
+	icon: {
+		count: 1
+		id: "irons_spellbooks:inscription_table"
+	}
+	id: "452EFA4C490DC259"
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 1.07d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: -22.4d
+			width: 1.07d
+			x: -1.61d
+			y: -0.16d
+		}
+		{
+			height: 0.99d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -12.0d
+			width: 0.99d
+			x: -1.71d
+			y: 0.44d
+		}
+		{
+			height: 1.1d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: -2.8d
+			width: 1.1d
+			x: 12.16d
+			y: 2.03d
+		}
+		{
+			height: 1.13d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -5.1d
+			width: 1.13d
+			x: 12.2d
+			y: 1.88d
+		}
+		{
+			height: 1.15d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 13.6d
+			width: 1.15d
+			x: -1.66d
+			y: 4.4d
+		}
+		{
+			height: 1.02d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: 9.3d
+			width: 1.02d
+			x: 11.81d
+			y: 3.61d
+		}
+	]
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"49F1E9209F283F21"
+			]
+			icon: {
+				count: 1
+				id: "irons_spellbooks:inscription_table"
+			}
+			id: "725B594B01C6A9DB"
+			rewards: [
+				{
+					id: "3F0F4C66B171065E"
+					type: "xp"
+					xp: 1100
+				}
+			]
+			shape: "hexagon"
+			size: 1.35d
+			tasks: [
+				{
+					id: "59EA41175360FE10"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"725B594B01C6A9DB"
+			]
+			icon: {
+				count: 1
+				id: "irons_spellbooks:arcane_essence"
+			}
+			id: "44D1F0D30B116711"
+			rewards: [
+				{
+					id: "3A7A76823D541F1C"
+					type: "xp"
+					xp: 1105
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "70203E6BDC44C340"
+					item: {
+						count: 1
+						id: "irons_spellbooks:arcane_essence"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 0.352d
+		}
+		{
+			dependencies: [
+				"44D1F0D30B116711"
+			]
+			icon: {
+				count: 1
+				id: "irons_jewelry:jewelcrafting_station"
+			}
+			id: "707678586F551E85"
+			rewards: [
+				{
+					id: "62DFDC9BCB0CA8C1"
+					type: "xp"
+					xp: 1110
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "27D23C68E159E36A"
+					item: {
+						count: 1
+						id: "irons_jewelry:jewelcrafting_station"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 0.438d
+		}
+		{
+			dependencies: [
+				"707678586F551E85"
+			]
+			icon: {
+				count: 1
+				id: "ars_elemental:fire_focus"
+			}
+			id: "59B8875DEFD16828"
+			rewards: [
+				{
+					id: "2C64A8CC23089ECA"
+					type: "xp"
+					xp: 1115
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "33F5AD9D03DB3292"
+					item: {
+						count: 1
+						id: "ars_elemental:fire_focus"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 0.192d
+		}
+		{
+			dependencies: [
+				"59B8875DEFD16828"
+			]
+			icon: {
+				count: 1
+				id: "ars_elemental:water_focus"
+			}
+			id: "5B85027F87DD1F07"
+			rewards: [
+				{
+					id: "58F30A28DD7DF453"
+					type: "xp"
+					xp: 1120
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2DEBB9158047AD90"
+					item: {
+						count: 1
+						id: "ars_elemental:water_focus"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -0.199d
+		}
+		{
+			dependencies: [
+				"5B85027F87DD1F07"
+			]
+			icon: {
+				count: 1
+				id: "malum:spirit_altar"
+			}
+			id: "4117B61F4676F034"
+			rewards: [
+				{
+					id: "72EF58A4448D99E7"
+					type: "xp"
+					xp: 1125
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "32FB6A8122F1F749"
+					item: {
+						count: 1
+						id: "malum:spirit_altar"
+					}
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: -0.44d
+		}
+		{
+			dependencies: [
+				"4117B61F4676F034"
+			]
+			icon: {
+				count: 1
+				id: "malum:hallowed_gold_ingot"
+			}
+			id: "2017092811D111A7"
+			rewards: [
+				{
+					id: "47AE164F0759E19E"
+					type: "xp"
+					xp: 1130
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "1DBD6849DE52F3DB"
+					item: {
+						count: 1
+						id: "malum:hallowed_gold_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: -0.348d
+		}
+		{
+			dependencies: [
+				"2017092811D111A7"
+			]
+			icon: {
+				count: 1
+				id: "goety:dark_wand"
+			}
+			id: "5E445B0DCB0AAD7D"
+			rewards: [
+				{
+					id: "71F08BDD2DF5B527"
+					type: "xp"
+					xp: 1135
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1FC294D3A2DC7E55"
+					item: {
+						count: 1
+						id: "goety:dark_wand"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 2.282d
+		}
+		{
+			dependencies: [
+				"5E445B0DCB0AAD7D"
+			]
+			icon: {
+				count: 1
+				id: "goety:dark_altar"
+			}
+			id: "7E15886D3AFF6786"
+			rewards: [
+				{
+					id: "7BBF6BD950581102"
+					type: "xp"
+					xp: 1140
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5BC3B8665E030E4E"
+					item: {
+						count: 1
+						id: "goety:dark_altar"
+					}
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: 1.891d
+		}
+		{
+			dependencies: [
+				"7E15886D3AFF6786"
+			]
+			icon: {
+				count: 1
+				id: "theurgy:calcination_oven"
+			}
+			id: "1BA5344EEF4F943B"
+			rewards: [
+				{
+					id: "2B2C8DBF1709FEB2"
+					type: "xp"
+					xp: 1145
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "78BD768BA8633312"
+					item: {
+						count: 1
+						id: "theurgy:calcination_oven"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 1.658d
+		}
+		{
+			dependencies: [
+				"1BA5344EEF4F943B"
+			]
+			icon: {
+				count: 1
+				id: "theurgy:mercury_shard"
+			}
+			id: "10AA083039D37911"
+			rewards: [
+				{
+					id: "4BED85B91C0963BD"
+					type: "xp"
+					xp: 1150
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "170841A597DBAC0D"
+					item: {
+						count: 1
+						id: "theurgy:mercury_shard"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 1.759d
+		}
+		{
+			dependencies: [
+				"10AA083039D37911"
+			]
+			icon: {
+				count: 1
+				id: "naturesaura:nature_altar"
+			}
+			id: "6370293D841D16C9"
+			rewards: [
+				{
+					id: "22775B6C01785BC5"
+					type: "xp"
+					xp: 1155
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2A6BFA7D7B8CC620"
+					item: {
+						count: 1
+						id: "naturesaura:nature_altar"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 2.119d
+		}
+		{
+			dependencies: [
+				"6370293D841D16C9"
+			]
+			icon: {
+				count: 1
+				id: "naturesaura:infused_iron"
+			}
+			id: "1FDE1F8D8240070D"
+			rewards: [
+				{
+					id: "280D337E7D2B9CA1"
+					type: "xp"
+					xp: 1160
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "3D80F38EBD8A27CE"
+					item: {
+						count: 1
+						id: "naturesaura:infused_iron"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 2.464d
+		}
+		{
+			dependencies: [
+				"1FDE1F8D8240070D"
+			]
+			icon: {
+				count: 1
+				id: "forbidden_arcanus:arcane_crystal"
+			}
+			id: "6B1A66918C5BB6BD"
+			rewards: [
+				{
+					id: "5925E9F9C6FD8390"
+					type: "xp"
+					xp: 1165
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "152420C7C4767E85"
+					item: {
+						count: 1
+						id: "forbidden_arcanus:arcane_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.534d
+		}
+		{
+			dependencies: [
+				"6B1A66918C5BB6BD"
+			]
+			icon: {
+				count: 1
+				id: "forbidden_arcanus:hephaestus_forge"
+			}
+			id: "3B68447EEC460901"
+			rewards: [
+				{
+					id: "39EC8213C5D54F80"
+					type: "xp"
+					xp: 1170
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5D346CB84C33E174"
+					item: {
+						count: 1
+						id: "forbidden_arcanus:hephaestus_forge"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.432d
+		}
+		{
+			dependencies: [
+				"3B68447EEC460901"
+			]
+			icon: {
+				count: 1
+				id: "hexerei:mixing_cauldron"
+			}
+			id: "1F64B731F7902795"
+			rewards: [
+				{
+					id: "4A935F1060181027"
+					type: "xp"
+					xp: 1175
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "24B5ACEDB047ED50"
+					item: {
+						count: 1
+						id: "hexerei:mixing_cauldron"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 4.042d
+		}
+		{
+			dependencies: [
+				"1F64B731F7902795"
+			]
+			icon: {
+				count: 1
+				id: "reliquary:mercy_cross"
+			}
+			id: "6AD26D1D1DC85397"
+			rewards: [
+				{
+					id: "15C22D8ADA2D5296"
+					type: "xp"
+					xp: 1180
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4E7607D660B639E3"
+					item: {
+						count: 1
+						id: "reliquary:mercy_cross"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 3.772d
+		}
+		{
+			dependencies: [
+				"6AD26D1D1DC85397"
+			]
+			icon: {
+				count: 1
+				id: "mahoutsukai:attuner"
+			}
+			id: "5C631C9BC2AECE5B"
+			rewards: [
+				{
+					id: "3DDB516FE02D40A9"
+					type: "xp"
+					xp: 1185
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2C4A21266CF29277"
+					item: {
+						count: 1
+						id: "mahoutsukai:attuner"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 3.825d
+		}
+		{
+			dependencies: [
+				"5C631C9BC2AECE5B"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:magic_core"
+			}
+			id: "5BE55075CC9F81E3"
+			rewards: [
+				{
+					id: "45ED1BF8BBC28BDE"
+					type: "xp"
+					xp: 1190
+				}
+				{
+					count: 3
+					id: "1B98AFBAFEC0C2E7"
+					item: {
+						count: 1
+						id: "yukicore:gift"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "590BBBB275C2A3E6"
+					item: {
+						count: 1
+						id: "yukicore:mana_crystal"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "10D2AF352058E1F3"
+					type: "checkmark"
+				}
+			]
+			x: 7.0d
+			y: 4.163d
+		}
+	]
+}

@@ -35,6 +35,11 @@ public final class ArmorSetHandler {
             p.setTicksFrozen(0);
             return;
         }
+        if (starSuit(p)) {
+            // звёздный скафандр Юки: ночное зрение, скорость, без урона от падения
+            give(p, MobEffects.NIGHT_VISION, 0, 260);
+            give(p, MobEffects.MOVEMENT_SPEED, 1, 40);
+        }
         if (fullSet(p, ModItems.CELESTIUM_HELMET.get(), ModItems.CELESTIUM_CHESTPLATE.get(),
                 ModItems.CELESTIUM_LEGGINGS.get(), ModItems.CELESTIUM_BOOTS.get())) {
             give(p, MobEffects.NIGHT_VISION, 0, 260);
@@ -54,6 +59,19 @@ public final class ArmorSetHandler {
             give(p, MobEffects.MOVEMENT_SPEED, 0, 40);
             p.setTicksFrozen(0);
         }
+    }
+
+    @SubscribeEvent
+    public static void onFall(net.neoforged.neoforge.event.entity.living.LivingFallEvent e) {
+        if (e.getEntity() instanceof Player p && starSuit(p)) e.setCanceled(true);
+    }
+
+    private static boolean starSuit(Player p) {
+        for (EquipmentSlot slot : new EquipmentSlot[]{EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET}) {
+            var id = net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(p.getItemBySlot(slot).getItem());
+            if (!id.getNamespace().equals(YukiCore.MOD_ID) || !id.getPath().startsWith("star_space_")) return false;
+        }
+        return true;
     }
 
     private static boolean fullSet(Player p, Item head, Item chest, Item legs, Item feet) {
