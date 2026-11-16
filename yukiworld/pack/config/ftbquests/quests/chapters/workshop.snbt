@@ -8,7 +8,53 @@
 		id: "yukicore:frost_magnet"
 	}
 	id: "3ADA294621AF8547"
-	images: [ ]
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 1.06d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: 3.1d
+			width: 1.06d
+			x: -1.65d
+			y: -0.1d
+		}
+		{
+			height: 0.73d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 4.7d
+			width: 0.73d
+			x: -1.88d
+			y: -0.14d
+		}
+		{
+			height: 0.87d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -1.0d
+			width: 0.87d
+			x: -1.37d
+			y: 1.91d
+		}
+		{
+			height: 1.04d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -19.6d
+			width: 1.04d
+			x: 11.92d
+			y: 2.53d
+		}
+	]
 	order_index: 19
 	quest_links: [ ]
 	quests: [
@@ -29,7 +75,7 @@
 				}
 			]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.35d
 			tasks: [
 				{
 					id: "5BB0F7F42AD2C4AC"
@@ -66,8 +112,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 0.0d
+			x: 1.75d
+			y: 0.352d
 		}
 		{
 			dependencies: [
@@ -96,8 +142,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 3.5d
+			y: 0.438d
 		}
 		{
 			dependencies: [
@@ -126,8 +172,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 0.0d
+			x: 5.25d
+			y: 0.192d
 		}
 		{
 			dependencies: [
@@ -156,8 +202,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 0.0d
+			x: 7.0d
+			y: -0.199d
 		}
 		{
 			dependencies: [
@@ -186,8 +232,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 0.0d
+			x: 8.75d
+			y: -0.44d
 		}
 		{
 			dependencies: [
@@ -216,8 +262,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 0.0d
+			x: 10.5d
+			y: -0.348d
 		}
 		{
 			dependencies: [
@@ -246,8 +292,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 1.5d
+			x: 10.5d
+			y: 2.282d
 		}
 		{
 			dependencies: [
@@ -284,7 +330,7 @@
 				}
 			]
 			shape: "gear"
-			size: 1.5d
+			size: 2.0d
 			tasks: [
 				{
 					count: 1L
@@ -296,8 +342,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 1.5d
+			x: 8.75d
+			y: 1.891d
 		}
 	]
 }

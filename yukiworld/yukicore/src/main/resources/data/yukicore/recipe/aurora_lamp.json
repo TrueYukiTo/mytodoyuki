@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "GAG",
+    "ALA",
+    "GAG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "A": {
+      "item": "yukicore:aurora_shard"
+    },
+    "L": {
+      "item": "yukicore:yuki_lamp"
+    }
+  },
+  "result": {
+    "id": "yukicore:aurora_lamp",
+    "count": 4
+  }
+}

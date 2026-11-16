@@ -16,7 +16,7 @@ import net.neoforged.neoforge.client.gui.ModListScreen;
 /** Главное меню YukiWorld: панорама, градиент, снег, переливающийся логотип. */
 public class YukiTitleScreen extends Screen {
     private static final String LOGO = "YukiWorld";
-    private static final String PACK_VERSION = "4.0.0";
+    private static final String PACK_VERSION = "5.0.0";
 
     private final Snowfall snow = new Snowfall();
     private long openedAt;
@@ -82,6 +82,8 @@ public class YukiTitleScreen extends Screen {
         g.drawString(font, left, 4, height - 20, dim, true);
         g.drawString(font, Component.translatable("menu.yukicore.mods_loaded", ModList.get().size()),
                 4, height - 10, dim, true);
+        g.drawString(font, Component.translatable("menu.yukicore.thanks"), 4, height - 30,
+                YukiTheme.withAlpha(0xE0B0FF, (int) (255 * fade)), true);
 
         if (Config.FESTIVE.get()) renderFestive(g, t, fade);
 

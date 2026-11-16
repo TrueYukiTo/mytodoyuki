@@ -18,5 +18,10 @@ public final class ModRecipes {
     public static final DeferredHolder<RecipeSerializer<?>, AltarRecipe.Serializer> ALTAR_SERIALIZER =
             SERIALIZERS.register("altar", AltarRecipe.Serializer::new);
 
+    public static final DeferredHolder<RecipeType<?>, RecipeType<dev.yukito.yukicore.multiblock.ForgeRecipe>> FORGE_TYPE =
+            TYPES.register("frost_forging", () -> RecipeType.simple(YukiCore.id("frost_forging")));
+    public static final DeferredHolder<RecipeSerializer<?>, dev.yukito.yukicore.multiblock.ForgeRecipe.Serializer> FORGE_SERIALIZER =
+            SERIALIZERS.register("frost_forging", dev.yukito.yukicore.multiblock.ForgeRecipe.Serializer::new);
+
     private ModRecipes() {}
 }

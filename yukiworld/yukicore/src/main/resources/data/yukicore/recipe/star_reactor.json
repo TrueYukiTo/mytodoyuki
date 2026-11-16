@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "yukicore:reactor_casing"
+    },
+    "S": {
+      "item": "yukicore:starlight_block"
+    },
+    "A": {
+      "item": "yukicore:celestium_ingot"
+    },
+    "Q": {
+      "item": "yukicore:cryo_circuit"
+    },
+    "X": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "pattern": [
+    " CSC ",
+    "CAQAC",
+    "SQXQS",
+    "CAQAC",
+    " CSC "
+  ],
+  "result": {
+    "count": 1,
+    "id": "yukicore:star_reactor"
+  },
+  "show_notification": true
+}

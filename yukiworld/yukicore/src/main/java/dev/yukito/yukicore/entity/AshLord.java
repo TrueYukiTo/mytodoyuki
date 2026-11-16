@@ -25,7 +25,7 @@ public class AshLord extends Blaze {
 
     public static AttributeSupplier.Builder createAttributes() {
         return Blaze.createAttributes()
-                .add(Attributes.MAX_HEALTH, 900).add(Attributes.ATTACK_DAMAGE, 16).add(Attributes.ARMOR, 14)
+                .add(Attributes.MAX_HEALTH, 1350).add(Attributes.ATTACK_DAMAGE, 16).add(Attributes.ARMOR, 14)
                 .add(Attributes.FOLLOW_RANGE, 64).add(Attributes.KNOCKBACK_RESISTANCE, 1.0).add(Attributes.SCALE, 2.5);
     }
 

@@ -8,8 +8,54 @@
 		id: "ad_astra:desh_ingot"
 	}
 	id: "1C126CADA79A4750"
-	images: [ ]
-	order_index: 21
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 1.02d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: 19.7d
+			width: 1.02d
+			x: -1.34d
+			y: 0.47d
+		}
+		{
+			height: 1.15d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: 24.8d
+			width: 1.15d
+			x: -1.87d
+			y: -0.24d
+		}
+		{
+			height: 0.94d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -1.1d
+			width: 0.94d
+			x: 12.15d
+			y: 1.56d
+		}
+		{
+			height: 0.94d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: -16.4d
+			width: 0.94d
+			x: 12.02d
+			y: 2.17d
+		}
+	]
+	order_index: 22
 	quest_links: [ ]
 	quests: [
 		{
@@ -29,7 +75,7 @@
 				}
 			]
 			shape: "rsquare"
-			size: 1.5d
+			size: 1.25d
 			tasks: [
 				{
 					dimension: "ad_astra:moon"
@@ -67,8 +113,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 0.0d
+			x: 1.75d
+			y: 0.352d
 		}
 		{
 			dependencies: [
@@ -97,8 +143,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 3.5d
+			y: 0.438d
 		}
 		{
 			dependencies: [
@@ -127,8 +173,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 0.0d
+			x: 5.25d
+			y: 0.192d
 		}
 		{
 			dependencies: [
@@ -157,8 +203,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 0.0d
+			x: 7.0d
+			y: -0.199d
 		}
 		{
 			dependencies: [
@@ -187,8 +233,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 0.0d
+			x: 8.75d
+			y: -0.44d
 		}
 		{
 			dependencies: [
@@ -217,8 +263,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 0.0d
+			x: 10.5d
+			y: -0.348d
 		}
 		{
 			dependencies: [
@@ -247,8 +293,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 1.5d
+			x: 10.5d
+			y: 2.282d
 		}
 		{
 			dependencies: [
@@ -277,8 +323,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 1.5d
+			x: 8.75d
+			y: 1.891d
 		}
 		{
 			dependencies: [
@@ -307,8 +353,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 1.5d
+			x: 7.0d
+			y: 1.658d
 		}
 		{
 			dependencies: [
@@ -337,8 +383,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 1.5d
+			x: 5.25d
+			y: 1.759d
 		}
 		{
 			dependencies: [
@@ -367,8 +413,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 1.5d
+			x: 3.5d
+			y: 2.119d
 		}
 		{
 			dependencies: [
@@ -405,7 +451,7 @@
 				}
 			]
 			shape: "gear"
-			size: 1.5d
+			size: 2.0d
 			tasks: [
 				{
 					count: 1L
@@ -417,8 +463,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 1.5d
+			x: 1.75d
+			y: 2.464d
 		}
 	]
 }

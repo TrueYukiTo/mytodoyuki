@@ -1,0 +1,48 @@
+{
+  "name": "Морозная кузня",
+  "category": "yukicore:industry",
+  "icon": "yukicore:frost_forge",
+  "sortnum": 19,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Мультиструктура 3×3×3. $(l)Контроллер$() — в центре боковой грани, в центре куба — $(l)синий лёд$(), в четырёх верхних углах — $(l)лампы Юки$(), всё остальное — $(l)морозная обшивка$()."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "3×3×3",
+      "multiblock": {
+        "mapping": {
+          "0": "yukicore:frost_forge",
+          "C": "yukicore:frost_casing",
+          "X": "minecraft:blue_ice",
+          "W": "yukicore:yuki_lamp"
+        },
+        "pattern": [
+          [
+            "WCW",
+            "CCC",
+            "WCW"
+          ],
+          [
+            "C0C",
+            "CXC",
+            "CCC"
+          ],
+          [
+            "CCC",
+            "CCC",
+            "CCC"
+          ]
+        ],
+        "symmetrical": false
+      },
+      "enable_visualize": true,
+      "text": "Контроллер можно поставить с любой стороны."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "ПКМ предметом — положить во вход (4 слота), пустой рукой — забрать результат, Shift+ПКМ — состояние. Принимает $(l)FE$() и предметы из труб, отдаёт результат в трубы.$(br2)Плавит $(l)криосталь$() и $(l)звёздный сплав$(), а ещё $(l)удваивает руды$() YukiCore."
+    }
+  ]
+}

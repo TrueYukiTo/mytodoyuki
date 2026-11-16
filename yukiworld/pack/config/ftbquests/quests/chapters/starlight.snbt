@@ -8,7 +8,71 @@
 		id: "eternal_starlight:blue_starlight_crystal_shard"
 	}
 	id: "13C0C541A12B541F"
-	images: [ ]
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 0.77d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -19.6d
+			width: 0.77d
+			x: -1.82d
+			y: -0.49d
+		}
+		{
+			height: 1.07d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -18.4d
+			width: 1.07d
+			x: 12.09d
+			y: -0.08d
+		}
+		{
+			height: 0.81d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 1.2d
+			width: 0.81d
+			x: -1.34d
+			y: 2.19d
+		}
+		{
+			height: 0.7d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 12.6d
+			width: 0.7d
+			x: -1.78d
+			y: 2.58d
+		}
+		{
+			height: 0.93d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 19.0d
+			width: 0.93d
+			x: -1.77d
+			y: 4.74d
+		}
+		{
+			height: 1.08d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 11.0d
+			width: 1.08d
+			x: 11.84d
+			y: 3.91d
+		}
+	]
 	order_index: 13
 	quest_links: [ ]
 	quests: [
@@ -29,7 +93,7 @@
 				}
 			]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.35d
 			tasks: [
 				{
 					id: "4FC7D11DED58663E"
@@ -56,6 +120,7 @@
 				}
 			]
 			shape: "rsquare"
+			size: 1.25d
 			tasks: [
 				{
 					dimension: "eternal_starlight:starlight"
@@ -63,8 +128,8 @@
 					type: "dimension"
 				}
 			]
-			x: 1.5d
-			y: 0.0d
+			x: 1.75d
+			y: 0.352d
 		}
 		{
 			dependencies: [
@@ -93,8 +158,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 3.5d
+			y: 0.438d
 		}
 		{
 			dependencies: [
@@ -123,8 +188,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 0.0d
+			x: 5.25d
+			y: 0.192d
 		}
 		{
 			dependencies: [
@@ -153,8 +218,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 0.0d
+			x: 7.0d
+			y: -0.199d
 		}
 		{
 			dependencies: [
@@ -183,8 +248,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 0.0d
+			x: 8.75d
+			y: -0.44d
 		}
 		{
 			dependencies: [
@@ -213,8 +278,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 0.0d
+			x: 10.5d
+			y: -0.348d
 		}
 		{
 			dependencies: [
@@ -243,8 +308,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 1.5d
+			x: 10.5d
+			y: 2.282d
 		}
 		{
 			dependencies: [
@@ -263,6 +328,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "eternal_starlight:the_gatekeeper"
@@ -271,8 +337,8 @@
 					value: 1L
 				}
 			]
-			x: 7.5d
-			y: 1.5d
+			x: 8.75d
+			y: 1.891d
 		}
 		{
 			dependencies: [
@@ -301,8 +367,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 1.5d
+			x: 7.0d
+			y: 1.658d
 		}
 		{
 			dependencies: [
@@ -321,6 +387,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "eternal_starlight:starlight_golem"
@@ -329,8 +396,8 @@
 					value: 1L
 				}
 			]
-			x: 4.5d
-			y: 1.5d
+			x: 5.25d
+			y: 1.759d
 		}
 		{
 			dependencies: [
@@ -359,8 +426,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 1.5d
+			x: 3.5d
+			y: 2.119d
 		}
 		{
 			dependencies: [
@@ -389,8 +456,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 1.5d
+			x: 1.75d
+			y: 2.464d
 		}
 		{
 			dependencies: [
@@ -409,6 +476,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "eternal_starlight:lunar_monstrosity"
@@ -418,7 +486,7 @@
 				}
 			]
 			x: 0.0d
-			y: 1.5d
+			y: 2.534d
 		}
 		{
 			dependencies: [
@@ -448,7 +516,7 @@
 				}
 			]
 			x: 0.0d
-			y: 3.0d
+			y: 4.432d
 		}
 		{
 			dependencies: [
@@ -485,15 +553,15 @@
 				}
 			]
 			shape: "gear"
-			size: 1.5d
+			size: 2.0d
 			tasks: [
 				{
 					id: "1B9B54F62A9602A2"
 					type: "checkmark"
 				}
 			]
-			x: 1.5d
-			y: 3.0d
+			x: 1.75d
+			y: 4.042d
 		}
 	]
 }

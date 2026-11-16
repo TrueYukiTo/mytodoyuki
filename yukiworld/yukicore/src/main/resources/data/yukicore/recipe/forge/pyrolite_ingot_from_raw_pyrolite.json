@@ -1,0 +1,15 @@
+{
+  "type": "yukicore:frost_forging",
+  "ingredients": [
+    {
+      "item": "yukicore:raw_pyrolite",
+      "count": 1
+    }
+  ],
+  "result": {
+    "id": "yukicore:pyrolite_ingot",
+    "count": 2
+  },
+  "energy": 12000,
+  "time": 100
+}

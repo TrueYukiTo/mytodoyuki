@@ -8,7 +8,71 @@
 		id: "yukicore:yuki_altar"
 	}
 	id: "13FD3FA9829DE130"
-	images: [ ]
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 0.89d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: 3.7d
+			width: 0.89d
+			x: 12.25d
+			y: -0.25d
+		}
+		{
+			height: 0.73d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -10.4d
+			width: 0.73d
+			x: 12.32d
+			y: 0.37d
+		}
+		{
+			height: 1.03d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -16.6d
+			width: 1.03d
+			x: -1.6d
+			y: 2.41d
+		}
+		{
+			height: 1.04d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: 5.6d
+			width: 1.04d
+			x: -1.53d
+			y: 2.43d
+		}
+		{
+			height: 0.91d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: 2.6d
+			width: 0.91d
+			x: 12.07d
+			y: 4.33d
+		}
+		{
+			height: 1.0d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -1.3d
+			width: 1.0d
+			x: 12.08d
+			y: 4.29d
+		}
+	]
 	order_index: 18
 	quest_links: [ ]
 	quests: [
@@ -29,7 +93,7 @@
 				}
 			]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.35d
 			tasks: [
 				{
 					id: "10B4160ACEBAB5C2"
@@ -66,8 +130,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 0.0d
+			x: 1.75d
+			y: 0.352d
 		}
 		{
 			dependencies: [
@@ -96,8 +160,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 3.5d
+			y: 0.438d
 		}
 		{
 			dependencies: [
@@ -126,8 +190,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 0.0d
+			x: 5.25d
+			y: 0.192d
 		}
 		{
 			dependencies: [
@@ -156,8 +220,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 0.0d
+			x: 7.0d
+			y: -0.199d
 		}
 		{
 			dependencies: [
@@ -186,8 +250,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 0.0d
+			x: 8.75d
+			y: -0.44d
 		}
 		{
 			dependencies: [
@@ -216,8 +280,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 0.0d
+			x: 10.5d
+			y: -0.348d
 		}
 		{
 			dependencies: [
@@ -246,8 +310,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 1.5d
+			x: 10.5d
+			y: 2.282d
 		}
 		{
 			dependencies: [
@@ -276,8 +340,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 1.5d
+			x: 8.75d
+			y: 1.891d
 		}
 		{
 			dependencies: [
@@ -306,8 +370,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 1.5d
+			x: 7.0d
+			y: 1.658d
 		}
 		{
 			dependencies: [
@@ -336,8 +400,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 1.5d
+			x: 5.25d
+			y: 1.759d
 		}
 		{
 			dependencies: [
@@ -366,8 +430,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 1.5d
+			x: 3.5d
+			y: 2.119d
 		}
 		{
 			dependencies: [
@@ -396,8 +460,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 1.5d
+			x: 1.75d
+			y: 2.464d
 		}
 		{
 			dependencies: [
@@ -427,7 +491,7 @@
 				}
 			]
 			x: 0.0d
-			y: 1.5d
+			y: 2.534d
 		}
 		{
 			dependencies: [
@@ -455,6 +519,7 @@
 				}
 			]
 			shape: "hexagon"
+			size: 1.35d
 			tasks: [
 				{
 					id: "1BB854785929E642"
@@ -462,7 +527,7 @@
 				}
 			]
 			x: 0.0d
-			y: 3.0d
+			y: 4.432d
 		}
 		{
 			dependencies: [
@@ -490,15 +555,15 @@
 				}
 			]
 			shape: "gear"
-			size: 1.5d
+			size: 2.0d
 			tasks: [
 				{
 					id: "67A57D316B20E235"
 					type: "checkmark"
 				}
 			]
-			x: 1.5d
-			y: 3.0d
+			x: 1.75d
+			y: 4.042d
 		}
 	]
 }

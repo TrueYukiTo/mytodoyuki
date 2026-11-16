@@ -123,6 +123,17 @@ public final class ModItems {
             () -> new dev.yukito.yukicore.item.SnowBootsItem(ModArmorMaterials.FROST,
                     toolProps(Rarity.RARE).durability(ArmorItem.Type.BOOTS.getDurability(40))));
 
+    // --- 5.0: сплавы Морозной кузни ---
+    public static final DeferredItem<Item> CRYOSTEEL_INGOT = material("cryosteel_ingot", Rarity.UNCOMMON, false);
+    public static final DeferredItem<Item> STELLAR_ALLOY = material("stellar_alloy", Rarity.EPIC, true);
+
+    // --- Для Sintara ---
+    public static final DeferredItem<Item> SINTARA_STAFF = ITEMS.register("sintara_staff",
+            () -> new dev.yukito.yukicore.item.SintaraStaffItem(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)
+                    .fireResistant()));
+    public static final DeferredItem<Item> SINTARA_AMULET = ITEMS.register("sintara_amulet",
+            () -> new dev.yukito.yukicore.item.SintaraAmuletItem(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)));
+
     // --- Новый год ---
     public static final DeferredItem<Item> GIFT = ITEMS.register("gift",
             () -> new dev.yukito.yukicore.item.GiftItem(new Item.Properties().rarity(Rarity.UNCOMMON), "gift"));
@@ -202,6 +213,12 @@ public final class ModItems {
         blockItem(ModBlocks.VOID_BLOCK, Rarity.EPIC);
         blockItem(ModBlocks.STELLAR_BLOCK, Rarity.EPIC);
         blockItem(ModBlocks.YUKI_CHRONO, Rarity.EPIC);
+        blockItem(ModBlocks.FROST_CASING, Rarity.UNCOMMON);
+        blockItem(ModBlocks.REACTOR_CASING, Rarity.RARE);
+        blockItem(ModBlocks.CRYOSTEEL_BLOCK, Rarity.UNCOMMON);
+        blockItem(ModBlocks.FROST_FORGE, Rarity.RARE);
+        blockItem(ModBlocks.STAR_REACTOR, Rarity.EPIC);
+        blockItem(ModBlocks.AURORA_LAMP, Rarity.RARE);
         blockItem(ModBlocks.CRYO_GENERATOR, Rarity.RARE);
         blockItem(ModBlocks.FESTIVE_GARLAND, Rarity.COMMON);
         blockItem(ModBlocks.CHRISTMAS_ORNAMENT, Rarity.COMMON);

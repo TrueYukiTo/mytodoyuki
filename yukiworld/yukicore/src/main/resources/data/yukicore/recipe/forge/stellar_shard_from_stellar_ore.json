@@ -1,0 +1,15 @@
+{
+  "type": "yukicore:frost_forging",
+  "ingredients": [
+    {
+      "item": "yukicore:stellar_ore",
+      "count": 1
+    }
+  ],
+  "result": {
+    "id": "yukicore:stellar_shard",
+    "count": 2
+  },
+  "energy": 12000,
+  "time": 100
+}

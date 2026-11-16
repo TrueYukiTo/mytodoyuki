@@ -24,7 +24,7 @@ public class ShadowOfYuki extends Illusioner {
 
     public static AttributeSupplier.Builder createAttributes() {
         return Illusioner.createAttributes()
-                .add(Attributes.MAX_HEALTH, 1600).add(Attributes.ATTACK_DAMAGE, 20).add(Attributes.ARMOR, 18)
+                .add(Attributes.MAX_HEALTH, 2400).add(Attributes.ATTACK_DAMAGE, 20).add(Attributes.ARMOR, 18)
                 .add(Attributes.ARMOR_TOUGHNESS, 8).add(Attributes.MOVEMENT_SPEED, 0.38)
                 .add(Attributes.FOLLOW_RANGE, 64).add(Attributes.KNOCKBACK_RESISTANCE, 1.0).add(Attributes.SCALE, 1.5);
     }

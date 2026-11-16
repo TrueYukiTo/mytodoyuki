@@ -26,7 +26,7 @@ public class VoidWyrm extends Phantom {
 
     public static AttributeSupplier.Builder createAttributes() {
         return Monster.createMonsterAttributes()
-                .add(Attributes.MAX_HEALTH, 1000).add(Attributes.ATTACK_DAMAGE, 18).add(Attributes.ARMOR, 10)
+                .add(Attributes.MAX_HEALTH, 1500).add(Attributes.ATTACK_DAMAGE, 18).add(Attributes.ARMOR, 10)
                 .add(Attributes.FOLLOW_RANGE, 96).add(Attributes.KNOCKBACK_RESISTANCE, 1.0);
     }
 

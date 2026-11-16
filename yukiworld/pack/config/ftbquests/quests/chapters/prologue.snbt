@@ -8,7 +8,71 @@
 		id: "minecraft:snowball"
 	}
 	id: "2DA230897F52CD1A"
-	images: [ ]
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 0.98d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: -13.7d
+			width: 0.98d
+			x: -1.48d
+			y: 0.09d
+		}
+		{
+			height: 0.78d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -14.0d
+			width: 0.78d
+			x: 11.99d
+			y: -0.57d
+		}
+		{
+			height: 0.96d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -22.2d
+			width: 0.96d
+			x: 12.2d
+			y: 1.89d
+		}
+		{
+			height: 0.74d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: 2.6d
+			width: 0.74d
+			x: -1.53d
+			y: 2.22d
+		}
+		{
+			height: 1.13d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -3.8d
+			width: 1.13d
+			x: -1.67d
+			y: 4.14d
+		}
+		{
+			height: 0.71d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -10.3d
+			width: 0.71d
+			x: 12.25d
+			y: 3.6d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -39,7 +103,7 @@
 				}
 			]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.35d
 			tasks: [
 				{
 					id: "7F009CCB458CB746"
@@ -76,8 +140,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 0.0d
+			x: 1.75d
+			y: 0.352d
 		}
 		{
 			dependencies: [
@@ -106,8 +170,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 3.5d
+			y: 0.438d
 		}
 		{
 			dependencies: [
@@ -136,8 +200,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 0.0d
+			x: 5.25d
+			y: 0.192d
 		}
 		{
 			dependencies: [
@@ -166,8 +230,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 0.0d
+			x: 7.0d
+			y: -0.199d
 		}
 		{
 			dependencies: [
@@ -205,8 +269,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 0.0d
+			x: 8.75d
+			y: -0.44d
 		}
 		{
 			dependencies: [
@@ -235,8 +299,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 0.0d
+			x: 10.5d
+			y: -0.348d
 		}
 		{
 			dependencies: [
@@ -265,8 +329,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 1.5d
+			x: 10.5d
+			y: 2.282d
 		}
 		{
 			dependencies: [
@@ -295,8 +359,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 1.5d
+			x: 8.75d
+			y: 1.891d
 		}
 		{
 			dependencies: [
@@ -334,8 +398,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 1.5d
+			x: 7.0d
+			y: 1.658d
 		}
 		{
 			dependencies: [
@@ -364,8 +428,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 1.5d
+			x: 5.25d
+			y: 1.759d
 		}
 		{
 			dependencies: [
@@ -394,8 +458,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 1.5d
+			x: 3.5d
+			y: 2.119d
 		}
 		{
 			dependencies: [
@@ -424,8 +488,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 1.5d
+			x: 1.75d
+			y: 2.464d
 		}
 		{
 			dependencies: [
@@ -455,7 +519,7 @@
 				}
 			]
 			x: 0.0d
-			y: 1.5d
+			y: 2.534d
 		}
 		{
 			dependencies: [
@@ -494,7 +558,7 @@
 				}
 			]
 			x: 0.0d
-			y: 3.0d
+			y: 4.432d
 		}
 		{
 			dependencies: [
@@ -523,8 +587,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 3.0d
+			x: 1.75d
+			y: 4.042d
 		}
 		{
 			dependencies: [
@@ -562,8 +626,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 3.0d
+			x: 3.5d
+			y: 3.772d
 		}
 		{
 			dependencies: [
@@ -592,8 +656,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 3.0d
+			x: 5.25d
+			y: 3.825d
 		}
 		{
 			dependencies: [
@@ -622,8 +686,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 3.0d
+			x: 7.0d
+			y: 4.163d
 		}
 		{
 			dependencies: [
@@ -652,8 +716,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 3.0d
+			x: 8.75d
+			y: 4.528d
 		}
 		{
 			dependencies: [
@@ -690,15 +754,15 @@
 				}
 			]
 			shape: "gear"
-			size: 1.5d
+			size: 2.0d
 			tasks: [
 				{
 					id: "2344F04CFA705432"
 					type: "checkmark"
 				}
 			]
-			x: 9.0d
-			y: 3.0d
+			x: 10.5d
+			y: 4.645d
 		}
 	]
 }

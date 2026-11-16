@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "PIP",
+    "IBI",
+    "PIP"
+  ],
+  "key": {
+    "P": {
+      "item": "yukicore:frost_plate"
+    },
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "B": {
+      "item": "yukicore:frost_block"
+    }
+  },
+  "result": {
+    "id": "yukicore:frost_casing",
+    "count": 4
+  }
+}

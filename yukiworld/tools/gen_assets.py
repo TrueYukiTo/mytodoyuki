@@ -40,7 +40,8 @@ BLOCKS = ["frost_ore", "yuki_crystal_ore", "starlight_ore", "frost_block", "yuki
           "starlight_block", "aurorium_block", "celestium_block", "yuki_lamp",
           "permafrost_ore", "aurora_ore", "pyrolite_ore", "void_ore", "stellar_ore",
           "permafrost_block", "aurora_block", "pyrolite_block", "void_block", "stellar_block"]
-SPECIAL_BLOCKS = ["yuki_altar", "yuki_pedestal", "yuki_chrono", "cryo_generator", "festive_garland",
+V5_BLOCKS = ["frost_casing", "cryosteel_block", "reactor_casing", "frost_forge", "star_reactor", "aurora_lamp"]
+SPECIAL_BLOCKS = V5_BLOCKS + ["yuki_altar", "yuki_pedestal", "yuki_chrono", "cryo_generator", "festive_garland",
                   "christmas_ornament", "yuki_tree", "snow_globe"]
 ORES = {"frost_ore": ("raw_frost", 1, 2), "yuki_crystal_ore": ("yuki_crystal", 1, 3),
         "starlight_ore": ("starlight_shard", 1, 1), "permafrost_ore": ("permafrost_crystal", 1, 3),
@@ -124,6 +125,7 @@ def main():
     # ---------------- предметы
     items = art.hd_textures()
     items.update(art.hd_textures_v4())
+    items.update(art.hd_textures_v5())
     for name, (img, handheld) in items.items():
         write(ASSETS / "textures" / "item" / f"{name}.png", img)
         write(ASSETS / "models" / "item" / f"{name}.json",
@@ -196,6 +198,25 @@ def main():
         item_model = ({"parent": "minecraft:item/generated", "textures": {"layer0": B + name}}
                       if name in ("yuki_tree", "festive_garland") else {"parent": B + name})
         write(ASSETS / "models" / "item" / f"{name}.json", item_model)
+
+    # 5.0: мультиструктуры
+    for name, img in art.hd_blocks_v5().items():
+        write(ASSETS / "textures" / "block" / f"{name}.png", img)
+        write(ASSETS / "models" / "block" / f"{name}.json",
+              {"parent": "minecraft:block/cube_all", "textures": {"all": f"{MOD}:block/{name}"}})
+        write(ASSETS / "blockstates" / f"{name}.json", {"variants": {"": {"model": f"{MOD}:block/{name}"}}})
+        write(ASSETS / "models" / "item" / f"{name}.json", {"parent": f"{MOD}:block/{name}"})
+
+    # 5.0: картинки для книги квестов
+    q = ASSETS / "textures" / "quests"
+    write(q / "banner.png", hd.quest_banner(0x0B1A3A, 0x2A4A80, 0x8FD8FF, 1))
+    write(q / "newyear.png", hd.quest_banner(0x3A0808, 0x0E3A1A, 0xFFD24A, 2, lights=True))
+    write(q / "finale.png", hd.quest_banner(0x2A1406, 0x5A3A9A, 0xFFE070, 3))
+    write(q / "sintara.png", hd.quest_banner(0x120A30, 0x2A1460, 0xB080FF, 4, aurora=True))
+    write(q / "snowflake.png", hd.quest_snowflake())
+    write(q / "star.png", hd.quest_star())
+    write(q / "sintara_star.png", hd.quest_star(0xB080FF, 0x8FF0D0))
+    write(q / "tree.png", hd.quest_tree())
 
     # скины боссов: перекраска ванильных моделей в HD (×4)
     import zipfile

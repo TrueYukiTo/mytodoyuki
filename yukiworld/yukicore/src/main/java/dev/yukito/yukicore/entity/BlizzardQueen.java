@@ -28,7 +28,7 @@ public class BlizzardQueen extends Stray {
 
     public static AttributeSupplier.Builder createAttributes() {
         return Stray.createAttributes()
-                .add(Attributes.MAX_HEALTH, 750).add(Attributes.ATTACK_DAMAGE, 14).add(Attributes.ARMOR, 12)
+                .add(Attributes.MAX_HEALTH, 1100).add(Attributes.ATTACK_DAMAGE, 14).add(Attributes.ARMOR, 12)
                 .add(Attributes.MOVEMENT_SPEED, 0.3).add(Attributes.FOLLOW_RANGE, 48)
                 .add(Attributes.KNOCKBACK_RESISTANCE, 0.8).add(Attributes.SCALE, 1.6);
     }

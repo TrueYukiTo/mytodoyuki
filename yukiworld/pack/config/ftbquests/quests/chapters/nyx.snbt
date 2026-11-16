@@ -8,8 +8,54 @@
 		id: "yukicore:void_shard"
 	}
 	id: "382250E34EF30785"
-	images: [ ]
-	order_index: 28
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 1.13d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: -19.6d
+			width: 1.13d
+			x: 11.94d
+			y: -0.22d
+		}
+		{
+			height: 1.06d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: 15.7d
+			width: 1.06d
+			x: 12.05d
+			y: -0.03d
+		}
+		{
+			height: 0.94d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 4.5d
+			width: 0.94d
+			x: 11.92d
+			y: 2.37d
+		}
+		{
+			height: 1.2d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 5.0d
+			width: 1.2d
+			x: -1.31d
+			y: 1.51d
+		}
+	]
+	order_index: 30
 	quest_links: [ ]
 	quests: [
 		{
@@ -29,7 +75,7 @@
 				}
 			]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.35d
 			tasks: [
 				{
 					id: "330BD15541F5C9EA"
@@ -56,6 +102,7 @@
 				}
 			]
 			shape: "rsquare"
+			size: 1.25d
 			tasks: [
 				{
 					dimension: "yukicore:nyx"
@@ -63,8 +110,8 @@
 					type: "dimension"
 				}
 			]
-			x: 1.5d
-			y: 0.0d
+			x: 1.75d
+			y: 0.352d
 		}
 		{
 			dependencies: [
@@ -93,8 +140,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 3.5d
+			y: 0.438d
 		}
 		{
 			dependencies: [
@@ -123,8 +170,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 0.0d
+			x: 5.25d
+			y: 0.192d
 		}
 		{
 			dependencies: [
@@ -153,8 +200,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 0.0d
+			x: 7.0d
+			y: -0.199d
 		}
 		{
 			dependencies: [
@@ -183,8 +230,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 0.0d
+			x: 8.75d
+			y: -0.44d
 		}
 		{
 			dependencies: [
@@ -213,8 +260,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 0.0d
+			x: 10.5d
+			y: -0.348d
 		}
 		{
 			dependencies: [
@@ -233,6 +280,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "yukicore:void_wyrm"
@@ -241,8 +289,8 @@
 					value: 1L
 				}
 			]
-			x: 9.0d
-			y: 1.5d
+			x: 10.5d
+			y: 2.282d
 		}
 		{
 			dependencies: [
@@ -279,7 +327,7 @@
 				}
 			]
 			shape: "gear"
-			size: 1.5d
+			size: 2.0d
 			tasks: [
 				{
 					count: 1L
@@ -291,8 +339,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 1.5d
+			x: 8.75d
+			y: 1.891d
 		}
 	]
 }

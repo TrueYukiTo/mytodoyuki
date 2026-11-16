@@ -1,0 +1,343 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "sintara"
+	group: "3C966D8069B10DF8"
+	icon: {
+		count: 1
+		id: "yukicore:sintara_staff"
+	}
+	id: "7334E5ECAD9B6C33"
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/sintara.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 0.88d
+			image: "yukicore:textures/quests/sintara_star.png"
+			order: -1
+			rotation: 5.6d
+			width: 0.88d
+			x: 11.91d
+			y: 0.29d
+		}
+		{
+			height: 0.91d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: 5.7d
+			width: 0.91d
+			x: 12.19d
+			y: 0.01d
+		}
+		{
+			height: 0.78d
+			image: "yukicore:textures/quests/sintara_star.png"
+			order: -1
+			rotation: -16.7d
+			width: 0.78d
+			x: 11.95d
+			y: 1.67d
+		}
+		{
+			height: 0.97d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: -23.1d
+			width: 0.97d
+			x: -1.73d
+			y: 2.18d
+		}
+	]
+	order_index: 28
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"6B418C61852CA884"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:aurora_lamp"
+			}
+			id: "7553F4BCC9A33E1B"
+			rewards: [
+				{
+					id: "553C862B9D6623E9"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "hexagon"
+			size: 1.35d
+			tasks: [
+				{
+					id: "4F3BDBE74D1DECF3"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7553F4BCC9A33E1B"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:aurora_shard"
+			}
+			id: "172873F8B210BC5B"
+			rewards: [
+				{
+					id: "4FDA199AC5957C63"
+					type: "xp"
+					xp: 1005
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "19A3EC5A0EF111DC"
+					item: {
+						count: 1
+						id: "yukicore:aurora_shard"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 0.352d
+		}
+		{
+			dependencies: [
+				"172873F8B210BC5B"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:aurora_lamp"
+			}
+			id: "26AC8C285A828375"
+			rewards: [
+				{
+					id: "11C78CAADACCE501"
+					type: "xp"
+					xp: 1010
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "4326F46B4E3E5A62"
+					item: {
+						count: 1
+						id: "yukicore:aurora_lamp"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 0.438d
+		}
+		{
+			dependencies: [
+				"26AC8C285A828375"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sintara_amulet"
+			}
+			id: "32479E41D9391920"
+			rewards: [
+				{
+					id: "40DE8DD3893A7E68"
+					type: "xp"
+					xp: 1015
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "18097EA1D5658130"
+					item: {
+						count: 1
+						id: "yukicore:sintara_amulet"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 0.192d
+		}
+		{
+			dependencies: [
+				"32479E41D9391920"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "7F68FB1354334154"
+			rewards: [
+				{
+					id: "271B1AA0D47618B7"
+					type: "xp"
+					xp: 1020
+				}
+			]
+			shape: "diamond"
+			size: 1.45d
+			tasks: [
+				{
+					entity: "minecraft:phantom"
+					id: "5E747B0F1DD93F99"
+					type: "kill"
+					value: 10L
+				}
+			]
+			x: 7.0d
+			y: -0.199d
+		}
+		{
+			dependencies: [
+				"7F68FB1354334154"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:blizzard_crown"
+			}
+			id: "2E3E667A377A4A55"
+			rewards: [
+				{
+					id: "4B22EAA8C5A2FDA4"
+					type: "xp"
+					xp: 1025
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "49E86758B43C9769"
+					item: {
+						count: 1
+						id: "yukicore:blizzard_crown"
+					}
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: -0.44d
+		}
+		{
+			dependencies: [
+				"2E3E667A377A4A55"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:end_crystal"
+			}
+			id: "4CDB77120F2D810A"
+			rewards: [
+				{
+					id: "25D7A551E966D6B3"
+					type: "xp"
+					xp: 1030
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "6818CF030CB622C9"
+					item: {
+						count: 1
+						id: "minecraft:end_crystal"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: -0.348d
+		}
+		{
+			dependencies: [
+				"4CDB77120F2D810A"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sintara_staff"
+			}
+			id: "75511D36EC4EC544"
+			rewards: [
+				{
+					id: "3130D20217B9D3F1"
+					type: "xp"
+					xp: 1035
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7BFF8D7BD1F6D4F6"
+					item: {
+						count: 1
+						id: "yukicore:sintara_staff"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 2.282d
+		}
+		{
+			dependencies: [
+				"75511D36EC4EC544"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sintara_staff"
+			}
+			id: "6A6EBD85F2733E9E"
+			rewards: [
+				{
+					id: "17727E3B679E9AB9"
+					type: "xp"
+					xp: 1040
+				}
+				{
+					count: 3
+					id: "199A5D0C1CBE9489"
+					item: {
+						count: 1
+						id: "yukicore:gift"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "79201CA2A53DCB92"
+					item: {
+						count: 1
+						id: "yukicore:grand_gift"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "314E806E5F3EA836"
+					type: "checkmark"
+				}
+			]
+			x: 8.75d
+			y: 1.891d
+		}
+	]
+}

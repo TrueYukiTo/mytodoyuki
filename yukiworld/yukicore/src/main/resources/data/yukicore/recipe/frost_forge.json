@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CEC",
+    "QFQ",
+    "CRC"
+  ],
+  "key": {
+    "C": {
+      "item": "yukicore:frost_casing"
+    },
+    "E": {
+      "item": "yukicore:yuki_essence"
+    },
+    "Q": {
+      "item": "yukicore:cryo_circuit"
+    },
+    "F": {
+      "item": "minecraft:blast_furnace"
+    },
+    "R": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "id": "yukicore:frost_forge",
+    "count": 1
+  }
+}

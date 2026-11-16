@@ -401,3 +401,83 @@ def recolor_entity(src: Image.Image, stops, scale=4, glow=None, seed=1) -> Image
                         c = tuple(min(255, int(v * 1.25)) for v in c)
                     op[x * scale + sx, y * scale + sy] = c + (a,)
     return out
+
+
+# ---------------------------------------------------------------- картинки для книги квестов
+def quest_banner(c1, c2, accent, seed, lights=False, aurora=False):
+    W, H = 512, 128
+    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    px = img.load()
+    a, b = hexrgb(c1), hexrgb(c2)
+    for y in range(H):
+        for x in range(W):
+            t = y / H
+            c = [int(a[i] * (1 - t) + b[i] * t) for i in range(3)]
+            if aurora:
+                w = 0.5 + 0.5 * math.sin(x / 40 + y / 25)
+                c = [int(c[0] * (1 - 0.3 * w) + 120 * 0.3 * w), int(c[1] * (1 - 0.4 * w) + 255 * 0.4 * w),
+                     int(c[2] * (1 - 0.3 * w) + 210 * 0.3 * w)]
+            px[x, y] = tuple(c) + (230,)
+    d = ImageDraw.Draw(img)
+    rng = random.Random(seed)
+    for _ in range(70):
+        x, y = rng.randint(4, W - 4), rng.randint(4, H - 4)
+        r = rng.choice((1, 1, 2))
+        d.ellipse([x - r, y - r, x + r, y + r], fill=(255, 255, 255, rng.randint(120, 255)))
+    for cx in (64, W - 64):
+        snowflake(d, cx, H // 2, 34, hexrgb(accent, 160), (255, 255, 255, 230))
+    d.rounded_rectangle([2, 2, W - 3, H - 3], radius=18, outline=hexrgb(accent), width=4)
+    d.rounded_rectangle([10, 10, W - 11, H - 11], radius=12, outline=(255, 255, 255, 120), width=2)
+    if lights:
+        colors = [0xFF4A4A, 0xFFD24A, 0x4AE07A, 0x4AB4FF, 0xFF8FE0]
+        pts = [(x, 10 + 8 * math.sin(x / 22)) for x in range(10, W - 10, 4)]
+        d.line(pts, fill=hexrgb(0x1E4A2A), width=3)
+        for i, x in enumerate(range(24, W - 20, 26)):
+            y = 10 + 8 * math.sin(x / 22)
+            d.ellipse([x - 6, y + 2, x + 6, y + 16], fill=hexrgb(colors[i % 5]), outline=(30, 30, 30, 255))
+    return img
+
+
+def quest_snowflake(color=0xBFEFFF):
+    img = Image.new("RGBA", (128, 128), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    for k in range(6):
+        a = math.pi / 3 * k
+        ex, ey = 64 + 56 * math.cos(a), 64 + 56 * math.sin(a)
+        d.line([64, 64, ex, ey], fill=hexrgb(color), width=7)
+        for frac in (0.45, 0.72):
+            bx, by = 64 + 56 * frac * math.cos(a), 64 + 56 * frac * math.sin(a)
+            for side in (-1, 1):
+                a2 = a + side * math.pi / 4
+                d.line([bx, by, bx + 16 * math.cos(a2), by + 16 * math.sin(a2)], fill=(255, 255, 255, 255), width=4)
+    d.ellipse([54, 54, 74, 74], fill=(255, 255, 255, 255))
+    return img
+
+
+def quest_star(c=0xFFE070, inner=0xFFFFFF):
+    img = Image.new("RGBA", (128, 128), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    pts = []
+    for i in range(10):
+        r = 58 if i % 2 == 0 else 24
+        a = -math.pi / 2 + i * math.pi / 5
+        pts.append((64 + r * math.cos(a), 64 + r * math.sin(a)))
+    d.polygon(pts, fill=hexrgb(c), outline=hexrgb(0x5A3A08))
+    d.ellipse([52, 52, 76, 76], fill=hexrgb(inner))
+    return img
+
+
+def quest_tree():
+    img = Image.new("RGBA", (128, 128), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    d.rectangle([56, 104, 72, 126], fill=hexrgb(0x7A4418))
+    for top, half in [(14, 22), (36, 34), (60, 46), (80, 56)]:
+        d.polygon([(64, top), (64 - half, top + 30), (64 + half, top + 30)], fill=hexrgb(0x2FB04E), outline=hexrgb(0x06240E))
+    rng = random.Random(3)
+    for _ in range(16):
+        x, y = rng.randint(24, 104), rng.randint(30, 106)
+        if img.getpixel((x, y))[3]:
+            d.ellipse([x - 4, y - 4, x + 4, y + 4], fill=hexrgb(rng.choice([0xFF4A4A, 0xFFD24A, 0x4AB4FF, 0xFF8FE0])))
+    star = quest_star().resize((40, 40))
+    img.paste(star, (44, 0), star)
+    return img

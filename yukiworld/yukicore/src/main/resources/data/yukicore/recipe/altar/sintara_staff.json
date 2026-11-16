@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 2,
+  "center": {
+    "item": "yukicore:aurora_block"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:blizzard_crown"
+    },
+    {
+      "item": "yukicore:aurora_shard"
+    },
+    {
+      "item": "yukicore:aurora_shard"
+    },
+    {
+      "item": "yukicore:celestium_ingot"
+    },
+    {
+      "item": "yukicore:celestium_ingot"
+    },
+    {
+      "item": "yukicore:yuki_essence"
+    },
+    {
+      "item": "yukicore:yuki_essence"
+    },
+    {
+      "item": "minecraft:end_crystal"
+    }
+  ],
+  "result": {
+    "id": "yukicore:sintara_staff",
+    "count": 1
+  },
+  "duration": 400
+}

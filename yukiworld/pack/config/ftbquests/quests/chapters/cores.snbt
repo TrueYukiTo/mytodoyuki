@@ -8,8 +8,54 @@
 		id: "yukicore:frost_core"
 	}
 	id: "199E276CC8E51C76"
-	images: [ ]
-	order_index: 29
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 0.91d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 6.3d
+			width: 0.91d
+			x: -1.7d
+			y: 0.53d
+		}
+		{
+			height: 1.15d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: 16.5d
+			width: 1.15d
+			x: -1.74d
+			y: -0.27d
+		}
+		{
+			height: 1.02d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: -24.5d
+			width: 1.02d
+			x: 12.31d
+			y: 2.37d
+		}
+		{
+			height: 0.84d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: 9.6d
+			width: 0.84d
+			x: 12.13d
+			y: 2.12d
+		}
+	]
+	order_index: 31
 	quest_links: [ ]
 	quests: [
 		{
@@ -29,7 +75,7 @@
 				}
 			]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.35d
 			tasks: [
 				{
 					id: "1707519EF87BF770"
@@ -66,8 +112,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 0.0d
+			x: 1.75d
+			y: 0.352d
 		}
 		{
 			dependencies: [
@@ -96,8 +142,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 3.5d
+			y: 0.438d
 		}
 		{
 			dependencies: [
@@ -126,8 +172,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 0.0d
+			x: 5.25d
+			y: 0.192d
 		}
 		{
 			dependencies: [
@@ -156,8 +202,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 0.0d
+			x: 7.0d
+			y: -0.199d
 		}
 		{
 			dependencies: [
@@ -195,8 +241,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 0.0d
+			x: 8.75d
+			y: -0.44d
 		}
 		{
 			dependencies: [
@@ -225,8 +271,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 0.0d
+			x: 10.5d
+			y: -0.348d
 		}
 		{
 			dependencies: [
@@ -264,8 +310,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 1.5d
+			x: 10.5d
+			y: 2.282d
 		}
 		{
 			dependencies: [
@@ -294,8 +340,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 1.5d
+			x: 8.75d
+			y: 1.891d
 		}
 		{
 			dependencies: [
@@ -333,8 +379,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 1.5d
+			x: 7.0d
+			y: 1.658d
 		}
 		{
 			dependencies: [
@@ -363,8 +409,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 1.5d
+			x: 5.25d
+			y: 1.759d
 		}
 		{
 			dependencies: [
@@ -401,7 +447,7 @@
 				}
 			]
 			shape: "gear"
-			size: 1.5d
+			size: 2.0d
 			tasks: [
 				{
 					count: 1L
@@ -413,8 +459,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 1.5d
+			x: 3.5d
+			y: 2.119d
 		}
 	]
 }

@@ -1,0 +1,15 @@
+{
+  "type": "yukicore:frost_forging",
+  "ingredients": [
+    {
+      "item": "yukicore:yuki_crystal_ore",
+      "count": 1
+    }
+  ],
+  "result": {
+    "id": "yukicore:yuki_crystal",
+    "count": 3
+  },
+  "energy": 12000,
+  "time": 100
+}

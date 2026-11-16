@@ -754,3 +754,82 @@ def hd_blocks_v4():
     t["snow_globe"] = img
     t["snow_globe_base"] = hd.metal(RED, 42, emblem=False)
     return t
+
+
+# ================================================================ YukiCore 5.0
+CRYOSTEEL = {"o": 0x101828, "d": 0x3A4E6A, "m": 0x7C98BC, "l": 0xC8DCF0, "w": 0xFFFFFF}
+ALLOY = {"o": 0x2A0A3A, "d": 0x8A3AB0, "m": 0xE070D0, "l": 0xFFC8F0, "w": 0xFFFFFF}
+SINTARA = {"o": 0x1A0A3A, "d": 0x6A3AC8, "m": 0xB080FF, "l": 0x8FF0D0, "w": 0xFFFFFF}
+
+STAFF = """
+...........oooo.
+..........owllmo
+..........olwlmo
+.........owlmmdo
+..........oddoo.
+.........ohoo...
+........ohHo....
+.......ohHo.....
+......ohHo......
+.....ohHo.......
+....ohHo........
+...ohHo.........
+..ohHo..........
+..oHo...........
+...o............
+"""
+
+AMULET = """
+.....oooooo.....
+....o......o....
+...o........o...
+...o........o...
+....o......o....
+.....o....o.....
+......oooo......
+.....owwlmo.....
+....owllmmdo....
+....olllmmdo....
+....ollmmmdo....
+.....olmmdo.....
+......oddo......
+.......oo.......
+"""
+
+
+def hd_textures_v5():
+    new = {
+        "cryosteel_ingot": (sprite(INGOT, CRYOSTEEL), False, 1),
+        "stellar_alloy": (rainbow(sprite(INGOT, ALLOY), 0.45, 0.8), False, 5),
+        "sintara_staff": (sprite(STAFF, SINTARA), True, 5),
+        "sintara_amulet": (sprite(AMULET, SINTARA), False, 4),
+    }
+    return {n: (hd.hd_item(img, seed=500 + i, sparkles=sp), hh) for i, (n, (img, hh, sp)) in enumerate(new.items())}
+
+
+def hd_blocks_v5():
+    from PIL import ImageDraw as _D
+    t = {}
+    t["frost_casing"] = hd.metal(CRYOSTEEL, 50, emblem=False)
+    d = _D.Draw(t["frost_casing"])
+    for k in range(4):
+        d.line([12 + k * 12, 12, 12 + k * 12, 51], fill=hexrgb(CRYOSTEEL["d"]), width=2)
+    t["cryosteel_block"] = hd.metal(CRYOSTEEL, 51)
+    t["reactor_casing"] = hd.metal(VOIDP, 52, emblem=False)
+    d = _D.Draw(t["reactor_casing"])
+    d.rectangle([14, 14, 49, 49], outline=hexrgb(STARLIGHT["l"]), width=2)
+    d.line([14, 14, 49, 49], fill=hexrgb(STARLIGHT["m"]), width=2)
+    d.line([49, 14, 14, 49], fill=hexrgb(STARLIGHT["m"]), width=2)
+    # контроллеры: лицевая панель
+    t["frost_forge"] = hd.metal(CRYOSTEEL, 53, emblem=False)
+    d = _D.Draw(t["frost_forge"])
+    d.rectangle([14, 18, 49, 47], fill=hexrgb(0x1A0A04), outline=hexrgb(CRYOSTEEL["o"]), width=2)
+    for i, c in enumerate([0xFF8A1C, 0xFFD060, 0x8FD8FF]):
+        d.rectangle([18 + i * 10, 34, 25 + i * 10, 44], fill=hexrgb(c))
+    d.rectangle([18, 22, 45, 28], fill=hexrgb(0x8FD8FF))
+    t["star_reactor"] = hd.starfield(STARLIGHT, 54)
+    d = _D.Draw(t["star_reactor"])
+    d.ellipse([16, 16, 47, 47], outline=hexrgb(CELESTIUM["m"]), width=3)
+    d.ellipse([26, 26, 37, 37], fill=hexrgb(0xFFFFFF))
+    t["aurora_lamp"] = hd.lamp(SINTARA, AURORA)
+    return t

@@ -1,0 +1,27 @@
+{
+  "type": "yukicore:frost_forging",
+  "ingredients": [
+    {
+      "item": "yukicore:celestium_ingot",
+      "count": 1
+    },
+    {
+      "item": "yukicore:stellar_shard",
+      "count": 2
+    },
+    {
+      "item": "yukicore:void_shard",
+      "count": 1
+    },
+    {
+      "item": "yukicore:starlight_shard",
+      "count": 2
+    }
+  ],
+  "result": {
+    "id": "yukicore:stellar_alloy",
+    "count": 1
+  },
+  "energy": 4000000,
+  "time": 600
+}

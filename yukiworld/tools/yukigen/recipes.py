@@ -165,7 +165,7 @@ def build():
 
     # ---------------------------------------------------------------- ядра (механический крафтер Create)
     r["frost_core"] = mech([" BCB ", "BMQMB", "CQSQC", "BMQMB", " BCB "], {
-        "B": I("frost_block"), "C": I("yuki_crystal_block"), "M": I("frost_mechanism"), "Q": I("cryo_circuit"),
+        "B": I("cryosteel_block"), "C": I("yuki_crystal_block"), "M": I("frost_mechanism"), "Q": I("cryo_circuit"),
         "S": I("yuki_star")}, I("frost_core"))
 
     r["tech_core"] = when(mech(
@@ -243,7 +243,7 @@ def build():
          "   SAS   ",
          "    X    "], {
             "X": I("celestium_block"), "S": I("star_shard"), "A": "mekanism:pellet_antimatter",
-            "Z": I("yuki_essence"), "L": I("starlight_block"), "U": "justdirethings:time_crystal",
+            "Z": I("stellar_alloy"), "L": I("starlight_block"), "U": "justdirethings:time_crystal",
             "T": I("tech_core"), "M": I("magic_core"), "N": I("nature_core"), "D": I("dimension_core"),
             "H": I("colossus_heart"), "Q": I("blizzard_crown"), "P": I("ash_core"), "V": I("void_scale"),
             "Y": I("yuki_star")}, I("yuki_heart")),
@@ -260,7 +260,7 @@ def build():
          " H  Q  H ",
          "R   X   R"], {
             "R": "create:refined_radiance", "H": "create:shadow_steel", "X": I("celestium_block"),
-            "Q": "ae2:singularity", "W": "mekanism:pellet_polonium", "S": I("star_shard"),
+            "Q": "ae2:singularity", "W": I("stellar_alloy"), "S": I("star_shard"),
             "P": "mysticalagriculture:awakened_supremium_block", "E": I("starlight_block"),
             "Y": I("yuki_heart")}, I("unstable_infinity_star")),
         "ae2", "mekanism", "mysticalagriculture")
@@ -297,6 +297,7 @@ def build():
     # ---------------------------------------------------------------- 3.0: планеты, алтарь, ритуалы
     r.update(build_v3())
     r.update(build_v4())
+    r.update(build_v5())
 
     # ---------------------------------------------------------------- книга-летопись
     r["chronicle"] = when(shapeless(["minecraft:book", "minecraft:snowball"], "patchouli:guide_book",
@@ -354,7 +355,7 @@ def build_v3():
     # мультиструктура
     r["yuki_altar"] = shaped(["EYE", "QBQ", "PPP"], {
         "E": I("yuki_essence"), "Y": I("yuki_star"), "Q": I("cryo_circuit"), "B": I("frost_block"),
-        "P": I("frost_plate")}, I("yuki_altar"))
+        "P": I("cryosteel_ingot")}, I("yuki_altar"))
     r["yuki_pedestal"] = shaped(["CEC", " B ", "PPP"], {
         "C": I("yuki_crystal"), "E": I("yuki_essence"), "B": I("frost_block"), "P": I("frost_plate")},
         I("yuki_pedestal"), 2)
@@ -517,3 +518,63 @@ def overrides():
         mod, path = key.split(":")
         out[f"{mod}/recipe/{path}.json"] = when(rec, mod)
     return out
+
+
+# ================================================================ 5.0
+def forge(ings, result, count, energy, time):
+    return {"type": "yukicore:frost_forging",
+            "ingredients": [({"tag": i[1:]} if i.startswith("#") else {"item": i}) | {"count": n} for i, n in ings],
+            "result": {"id": result, "count": count}, "energy": energy, "time": time}
+
+
+def build_v5():
+    r = {}
+    # Морозная кузня
+    r["forge/cryosteel_ingot"] = forge([(I("frost_ingot"), 2), ("minecraft:iron_ingot", 2),
+                                        ("minecraft:packed_ice", 1)], I("cryosteel_ingot"), 2, 40_000, 200)
+    r["forge/stellar_alloy"] = forge([(I("celestium_ingot"), 1), (I("stellar_shard"), 2), (I("void_shard"), 1),
+                                      (I("starlight_shard"), 2)], I("stellar_alloy"), 1, 4_000_000, 600)
+    r["forge/frost_plate"] = forge([(I("frost_ingot"), 1)], I("frost_plate"), 2, 5_000, 60)
+    for src, out, n in [("raw_frost", "frost_ingot", 2), ("yuki_crystal_ore", "yuki_crystal", 3),
+                        ("starlight_ore", "starlight_shard", 2), ("permafrost_ore", "permafrost_crystal", 3),
+                        ("aurora_ore", "aurora_shard", 3), ("raw_pyrolite", "pyrolite_ingot", 2),
+                        ("void_ore", "void_shard", 2), ("stellar_ore", "stellar_shard", 2)]:
+        r[f"forge/{out}_from_{src}"] = forge([(I(src), 1)], I(out), n, 12_000, 100)
+    # блоки и контроллеры
+    r["cryosteel_block"] = shaped(["XXX", "XXX", "XXX"], {"X": I("cryosteel_ingot")}, I("cryosteel_block"),
+                                  category="building")
+    r["cryosteel_ingot_from_cryosteel_block"] = shapeless([I("cryosteel_block")], I("cryosteel_ingot"), 9)
+    r["frost_casing"] = shaped(["PIP", "IBI", "PIP"], {"P": I("frost_plate"), "I": "minecraft:iron_block",
+                                                       "B": I("frost_block")}, I("frost_casing"), 4, "building")
+    r["frost_forge"] = shaped(["CEC", "QFQ", "CRC"], {"C": I("frost_casing"), "E": I("yuki_essence"),
+                                                      "Q": I("cryo_circuit"), "F": "minecraft:blast_furnace",
+                                                      "R": "minecraft:redstone_block"}, I("frost_forge"))
+    r["reactor_casing"] = shaped(["PAP", "AXA", "PAP"], {"P": I("cryosteel_ingot"), "A": I("aurorium_ingot"),
+                                                         "X": "minecraft:crying_obsidian"}, I("reactor_casing"), 4,
+                                 "building")
+    r["star_reactor"] = mech([" CSC ", "CAQAC", "SQXQS", "CAQAC", " CSC "], {
+        "C": I("reactor_casing"), "S": I("starlight_block"), "A": I("celestium_ingot"), "Q": I("cryo_circuit"),
+        "X": "minecraft:nether_star"}, I("star_reactor"))
+    r["aurora_lamp"] = shaped(["GAG", "ALA", "GAG"], {"G": "minecraft:glass", "A": I("aurora_shard"),
+                                                      "L": I("yuki_lamp")}, I("aurora_lamp"), 4, "building")
+    # для Sintara
+    r["altar/sintara_amulet"] = altar(1, I("yuki_star"), [I("yuki_essence"), I("yuki_essence"),
+                                                          I("cryosteel_ingot"), I("cryosteel_ingot")],
+                                      I("sintara_amulet"), 1, 200)
+    r["altar/sintara_staff"] = altar(2, I("aurora_block"), [I("blizzard_crown"), I("aurora_shard"), I("aurora_shard"),
+                                                            I("celestium_ingot"), I("celestium_ingot"),
+                                                            I("yuki_essence"), I("yuki_essence"),
+                                                            "minecraft:end_crystal"], I("sintara_staff"), 1, 400)
+    return r
+
+
+OVERRIDES["create:crafting/kinetics/mechanical_crafter"] = {
+    "type": "minecraft:crafting_shaped", "category": "misc",
+    "key": {"B": {"item": "create:electron_tube"}, "C": {"item": "create:brass_casing"},
+            "R": {"item": "minecraft:crafting_table"}},
+    "pattern": ["B", "C", "R"], "result": {"count": 2, "id": "create:mechanical_crafter"}}
+OVERRIDES["mekanism:antiprotonic_nucleosynthesizer"] = {
+    "type": "minecraft:crafting_shaped", "category": "misc",
+    "key": {"#": {"item": "mekanism:alloy_atomic"}, "A": {"tag": "c:pellets/antimatter"},
+            "C": {"tag": "c:circuits/ultimate"}, "X": {"item": I("cryosteel_block")}},
+    "pattern": ["#C#", "AXA", "#C#"], "result": {"count": 1, "id": "mekanism:antiprotonic_nucleosynthesizer"}}

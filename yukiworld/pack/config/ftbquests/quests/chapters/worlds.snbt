@@ -8,7 +8,89 @@
 		id: "minecraft:crying_obsidian"
 	}
 	id: "6332B8E2B6469A71"
-	images: [ ]
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 0.72d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 21.8d
+			width: 0.72d
+			x: -1.32d
+			y: -0.0d
+		}
+		{
+			height: 0.94d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -22.5d
+			width: 0.94d
+			x: -1.81d
+			y: -0.43d
+		}
+		{
+			height: 0.88d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 11.7d
+			width: 0.88d
+			x: 12.06d
+			y: 2.02d
+		}
+		{
+			height: 1.17d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 11.6d
+			width: 1.17d
+			x: 12.01d
+			y: 2.56d
+		}
+		{
+			height: 0.89d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -21.6d
+			width: 0.89d
+			x: 11.91d
+			y: 4.73d
+		}
+		{
+			height: 1.18d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 18.1d
+			width: 1.18d
+			x: 12.12d
+			y: 3.73d
+		}
+		{
+			height: 0.97d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: 3.0d
+			width: 0.97d
+			x: 11.93d
+			y: 6.68d
+		}
+		{
+			height: 0.71d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -23.8d
+			width: 0.71d
+			x: 12.39d
+			y: 6.78d
+		}
+	]
 	order_index: 9
 	quest_links: [ ]
 	quests: [
@@ -29,7 +111,7 @@
 				}
 			]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.35d
 			tasks: [
 				{
 					id: "2108D1D58C56B376"
@@ -56,6 +138,7 @@
 				}
 			]
 			shape: "rsquare"
+			size: 1.25d
 			tasks: [
 				{
 					dimension: "minecraft:the_nether"
@@ -63,8 +146,8 @@
 					type: "dimension"
 				}
 			]
-			x: 1.5d
-			y: 0.0d
+			x: 1.75d
+			y: 0.352d
 		}
 		{
 			dependencies: [
@@ -93,8 +176,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 3.5d
+			y: 0.438d
 		}
 		{
 			dependencies: [
@@ -123,8 +206,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 0.0d
+			x: 5.25d
+			y: 0.192d
 		}
 		{
 			dependencies: [
@@ -153,8 +236,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 0.0d
+			x: 7.0d
+			y: -0.199d
 		}
 		{
 			dependencies: [
@@ -173,6 +256,7 @@
 				}
 			]
 			shape: "rsquare"
+			size: 1.25d
 			tasks: [
 				{
 					dimension: "twilightforest:twilight_forest"
@@ -180,8 +264,8 @@
 					type: "dimension"
 				}
 			]
-			x: 7.5d
-			y: 0.0d
+			x: 8.75d
+			y: -0.44d
 		}
 		{
 			dependencies: [
@@ -210,8 +294,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 0.0d
+			x: 10.5d
+			y: -0.348d
 		}
 		{
 			dependencies: [
@@ -240,8 +324,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 1.5d
+			x: 10.5d
+			y: 2.282d
 		}
 		{
 			dependencies: [
@@ -270,8 +354,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 1.5d
+			x: 8.75d
+			y: 1.891d
 		}
 		{
 			dependencies: [
@@ -300,8 +384,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 1.5d
+			x: 7.0d
+			y: 1.658d
 		}
 		{
 			dependencies: [
@@ -330,8 +414,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 1.5d
+			x: 5.25d
+			y: 1.759d
 		}
 		{
 			dependencies: [
@@ -360,8 +444,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 1.5d
+			x: 3.5d
+			y: 2.119d
 		}
 		{
 			dependencies: [
@@ -380,6 +464,7 @@
 				}
 			]
 			shape: "rsquare"
+			size: 1.25d
 			tasks: [
 				{
 					dimension: "aether:the_aether"
@@ -387,8 +472,8 @@
 					type: "dimension"
 				}
 			]
-			x: 1.5d
-			y: 1.5d
+			x: 1.75d
+			y: 2.464d
 		}
 		{
 			dependencies: [
@@ -418,7 +503,7 @@
 				}
 			]
 			x: 0.0d
-			y: 1.5d
+			y: 2.534d
 		}
 		{
 			dependencies: [
@@ -448,7 +533,7 @@
 				}
 			]
 			x: 0.0d
-			y: 3.0d
+			y: 4.432d
 		}
 		{
 			dependencies: [
@@ -477,8 +562,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 3.0d
+			x: 1.75d
+			y: 4.042d
 		}
 		{
 			dependencies: [
@@ -497,6 +582,7 @@
 				}
 			]
 			shape: "rsquare"
+			size: 1.25d
 			tasks: [
 				{
 					dimension: "the_bumblezone:the_bumblezone"
@@ -504,8 +590,8 @@
 					type: "dimension"
 				}
 			]
-			x: 3.0d
-			y: 3.0d
+			x: 3.5d
+			y: 3.772d
 		}
 		{
 			dependencies: [
@@ -534,8 +620,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 3.0d
+			x: 5.25d
+			y: 3.825d
 		}
 		{
 			dependencies: [
@@ -564,8 +650,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 3.0d
+			x: 7.0d
+			y: 4.163d
 		}
 		{
 			dependencies: [
@@ -594,8 +680,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 3.0d
+			x: 8.75d
+			y: 4.528d
 		}
 		{
 			dependencies: [
@@ -624,8 +710,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 3.0d
+			x: 10.5d
+			y: 4.645d
 		}
 		{
 			dependencies: [
@@ -654,8 +740,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 4.5d
+			x: 10.5d
+			y: 6.356d
 		}
 		{
 			dependencies: [
@@ -692,7 +778,7 @@
 				}
 			]
 			shape: "gear"
-			size: 1.5d
+			size: 2.0d
 			tasks: [
 				{
 					count: 3L
@@ -704,8 +790,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 4.5d
+			x: 8.75d
+			y: 6.685d
 		}
 	]
 }

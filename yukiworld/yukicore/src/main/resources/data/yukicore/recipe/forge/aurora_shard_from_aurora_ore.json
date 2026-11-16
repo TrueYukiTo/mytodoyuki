@@ -1,0 +1,15 @@
+{
+  "type": "yukicore:frost_forging",
+  "ingredients": [
+    {
+      "item": "yukicore:aurora_ore",
+      "count": 1
+    }
+  ],
+  "result": {
+    "id": "yukicore:aurora_shard",
+    "count": 3
+  },
+  "energy": 12000,
+  "time": 100
+}

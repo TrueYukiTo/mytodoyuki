@@ -119,10 +119,18 @@
 		"Незер, Сумеречный лес, Aether, Бамблзона"
 	]
 	"chapter.6332B8E2B6469A71.title": "🌌 Глава VIII: Пороги миров"
+	"chapter.70EC6919047782F1.chapter_subtitle": [
+		"Морозная кузня и Звёздный реактор"
+	]
+	"chapter.70EC6919047782F1.title": "🏭 Индустрия Юки"
 	"chapter.732EC8FC793CF10A.chapter_subtitle": [
 		"Красная планета"
 	]
 	"chapter.732EC8FC793CF10A.title": "🔴 Марс"
+	"chapter.7334E5ECAD9B6C33.chapter_subtitle": [
+		"Глава для друга — Sintara"
+	]
+	"chapter.7334E5ECAD9B6C33.title": "💜 Сияние Синтары"
 	"chapter.77F4937C2B91828C.chapter_subtitle": [
 		"Планета вечной зимы"
 	]
@@ -134,1201 +142,1699 @@
 	"quest.107783C125D514BB.quest_desc": [
 		"Последовательная сборка: развёртыватели и пресс."
 	]
-	"quest.107783C125D514BB.title": "Точный механизм"
+	"quest.107783C125D514BB.quest_subtitle": "❄ Задание"
+	"quest.107783C125D514BB.title": "&fТочный механизм"
 	"quest.10863BEE9386B9C2.quest_desc": [
 		"Для мела и ритуалов."
 	]
-	"quest.10863BEE9386B9C2.title": "Серебро"
+	"quest.10863BEE9386B9C2.quest_subtitle": "❄ Задание"
+	"quest.10863BEE9386B9C2.title": "&fСеребро"
 	"quest.1093257125EB4D33.quest_desc": [
 		"Огненное болото."
 	]
-	"quest.1093257125EB4D33.title": "Гидра"
-	"quest.10C7049E2C849284.title": "Угольный генератор"
+	"quest.1093257125EB4D33.quest_subtitle": "⚔ Босс"
+	"quest.1093257125EB4D33.title": "&cГидра"
+	"quest.10C7049E2C849284.quest_subtitle": "❄ Задание"
+	"quest.10C7049E2C849284.title": "&fУгольный генератор"
 	"quest.10EBC3BC7ADB1285.quest_desc": [
 		"Креативный куб Mekanism."
 	]
-	"quest.10EBC3BC7ADB1285.title": "Бесконечная энергия"
-	"quest.10F573C4B6EAA546.title": "Истинный кварц"
-	"quest.111FC0C75FD21A1A.title": "Кристаллы мерзлоты"
+	"quest.10EBC3BC7ADB1285.quest_subtitle": "❄ Задание"
+	"quest.10EBC3BC7ADB1285.title": "&fБесконечная энергия"
+	"quest.10F573C4B6EAA546.quest_subtitle": "❄ Задание"
+	"quest.10F573C4B6EAA546.title": "&fИстинный кварц"
+	"quest.111FC0C75FD21A1A.quest_subtitle": "❄ Задание"
+	"quest.111FC0C75FD21A1A.title": "&fКристаллы мерзлоты"
 	"quest.11427AA2DA2322C2.quest_desc": [
 		"Книга Ad Astra."
 	]
-	"quest.11427AA2DA2322C2.title": "Астродукс"
-	"quest.1154A1292B9F18E9.title": "Алтарь наполнения"
+	"quest.11427AA2DA2322C2.quest_subtitle": "❄ Задание"
+	"quest.11427AA2DA2322C2.title": "&fАстродукс"
+	"quest.1154A1292B9F18E9.quest_subtitle": "❄ Задание"
+	"quest.1154A1292B9F18E9.title": "&fАлтарь наполнения"
 	"quest.11564C5A9D686BFA.quest_desc": [
 		"&6Классика!&r Увеличивает здоровье на 5 минут."
 	]
-	"quest.11564C5A9D686BFA.title": "Оливье"
+	"quest.11564C5A9D686BFA.quest_subtitle": "❄ Задание"
+	"quest.11564C5A9D686BFA.title": "&fОливье"
 	"quest.117EEEFF3F28B443.quest_desc": [
 		"ExtendedAE."
 	]
-	"quest.117EEEFF3F28B443.title": "Расширенный поставщик"
+	"quest.117EEEFF3F28B443.quest_subtitle": "❄ Задание"
+	"quest.117EEEFF3F28B443.title": "&fРасширенный поставщик"
 	"quest.1190DAD668B869BB.quest_desc": [
 		"Механический крафтер 5×5. Требует звезду Незера."
 	]
-	"quest.1190DAD668B869BB.title": "Звезда Юки"
-	"quest.11B19F6F6E51C236.title": "Острум"
+	"quest.1190DAD668B869BB.quest_subtitle": "❄ Задание"
+	"quest.1190DAD668B869BB.title": "&fЗвезда Юки"
+	"quest.11B19F6F6E51C236.quest_subtitle": "❄ Задание"
+	"quest.11B19F6F6E51C236.title": "&fОструм"
 	"quest.12006C5A0D1B8153.quest_desc": [
 		"Нужны для Магического ядра."
 	]
-	"quest.12006C5A0D1B8153.title": "Блоки источника"
+	"quest.12006C5A0D1B8153.quest_subtitle": "❄ Задание"
+	"quest.12006C5A0D1B8153.title": "&fБлоки источника"
 	"quest.12295E770E9968C2.quest_desc": [
-		"1000 ❤. Летает, стреляет снарядами шалкеров, тьма."
+		"1500 ❤. Летает, стреляет снарядами шалкеров, тьма."
 	]
-	"quest.12295E770E9968C2.title": "⚔ Пустотный Змей"
+	"quest.12295E770E9968C2.quest_subtitle": "⚔ Босс"
+	"quest.12295E770E9968C2.title": "&c⚔ Пустотный Змей"
 	"quest.123A2CD21FF12BBD.quest_desc": [
 		"Колонны уровня II: 2 целестиевых блока…"
 	]
-	"quest.123A2CD21FF12BBD.title": "Целестиевые колонны"
+	"quest.123A2CD21FF12BBD.quest_subtitle": "❄ Задание"
+	"quest.123A2CD21FF12BBD.title": "&fЦелестиевые колонны"
 	"quest.1267940FEDD2F2D3.quest_desc": [
 		"Камень крепче дерева — и это только начало."
 	]
-	"quest.1267940FEDD2F2D3.title": "Каменная кирка"
-	"quest.1289A38AE9D85CDE.title": "Печать Владыки"
+	"quest.1267940FEDD2F2D3.quest_subtitle": "❄ Задание"
+	"quest.1267940FEDD2F2D3.title": "&fКаменная кирка"
+	"quest.1289A38AE9D85CDE.quest_subtitle": "❄ Задание"
+	"quest.1289A38AE9D85CDE.title": "&fПечать Владыки"
 	"quest.131514AB63F7C004.quest_desc": [
 		"&b«Есть мир, где ночь не кончается. Его кристаллы светятся тем же светом, что и мои. Там я впервые увидела звёзды.»"
 	]
-	"quest.131514AB63F7C004.title": "Письмо Юки: звёзды"
+	"quest.131514AB63F7C004.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.131514AB63F7C004.title": "&bПисьмо Юки: звёзды"
 	"quest.133C3B37861B7C20.quest_desc": [
 		"Refined Storage."
 	]
-	"quest.133C3B37861B7C20.title": "Контроллер RS"
-	"quest.1352492E3AEBCAD7.title": "Марсианские алмазы"
+	"quest.133C3B37861B7C20.quest_subtitle": "❄ Задание"
+	"quest.133C3B37861B7C20.title": "&fКонтроллер RS"
+	"quest.1352492E3AEBCAD7.quest_subtitle": "❄ Задание"
+	"quest.1352492E3AEBCAD7.title": "&fМарсианские алмазы"
 	"quest.13E2760997CBC6D5.quest_desc": [
 		"Призови и победи африта."
 	]
-	"quest.13E2760997CBC6D5.title": "Эссенция африта"
+	"quest.13E2760997CBC6D5.quest_subtitle": "❄ Задание"
+	"quest.13E2760997CBC6D5.title": "&fЭссенция африта"
 	"quest.13FA9C71440A9595.quest_desc": [
 		"Брось жемчуг Края в улей."
 	]
-	"quest.13FA9C71440A9595.title": "Бамблзона"
-	"quest.14063BCCA093EA3B.title": "Забытый меч"
+	"quest.13FA9C71440A9595.quest_subtitle": "🌍 Новый мир"
+	"quest.13FA9C71440A9595.title": "&aБамблзона"
+	"quest.14063BCCA093EA3B.quest_subtitle": "❄ Задание"
+	"quest.14063BCCA093EA3B.title": "&fЗабытый меч"
 	"quest.14571F94BA5E8C0E.quest_desc": [
 		"Storage Drawers: порядок на базе — порядок в голове."
 	]
-	"quest.14571F94BA5E8C0E.title": "Ящики"
-	"quest.14ACCB1F4C8EFD6F.title": "Чудовищный рог"
+	"quest.14571F94BA5E8C0E.quest_subtitle": "❄ Задание"
+	"quest.14571F94BA5E8C0E.title": "&fЯщики"
+	"quest.14ACCB1F4C8EFD6F.quest_subtitle": "❄ Задание"
+	"quest.14ACCB1F4C8EFD6F.title": "&fЧудовищный рог"
 	"quest.14D2998A08EBFCB9.quest_desc": [
 		"Рамка из светокамня + ведро воды."
 	]
-	"quest.14D2998A08EBFCB9.title": "Aether"
+	"quest.14D2998A08EBFCB9.quest_subtitle": "🌍 Новый мир"
+	"quest.14D2998A08EBFCB9.title": "&aAether"
 	"quest.14D7AAF97A3979B9.quest_desc": [
 		"Золотое подземелье."
 	]
-	"quest.14D7AAF97A3979B9.title": "Дух солнца"
+	"quest.14D7AAF97A3979B9.quest_subtitle": "⚔ Босс"
+	"quest.14D7AAF97A3979B9.title": "&cДух солнца"
 	"quest.150A7E82207DB949.quest_desc": [
 		"Create: хроматическое соединение в бездне."
 	]
-	"quest.150A7E82207DB949.title": "Теневая сталь"
+	"quest.150A7E82207DB949.quest_subtitle": "❄ Задание"
+	"quest.150A7E82207DB949.title": "&fТеневая сталь"
 	"quest.15312755AE0EB421.quest_desc": [
 		"Iron's Spells 'n Spellbooks."
 	]
-	"quest.15312755AE0EB421.title": "Тайная эссенция"
+	"quest.15312755AE0EB421.quest_subtitle": "❄ Задание"
+	"quest.15312755AE0EB421.title": "&fТайная эссенция"
 	"quest.15343A311DDF7656.quest_desc": [
 		"Смешивание — путь к латуни и Ауронию."
 	]
-	"quest.15343A311DDF7656.title": "Механический миксер"
+	"quest.15343A311DDF7656.quest_subtitle": "❄ Задание"
+	"quest.15343A311DDF7656.title": "&fМеханический миксер"
 	"quest.15B6229122283260.quest_desc": [
 		"&b«Пиролит — противоположность мне. Огонь, пепел и Пепельный Владыка, что сторожит мой третий осколок. Возьми огнестойкость.»"
 	]
-	"quest.15B6229122283260.title": "Письмо Юки: Пиролит"
+	"quest.15B6229122283260.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.15B6229122283260.title": "&bПисьмо Юки: Пиролит"
 	"quest.15C10E764F08E536.quest_desc": [
 		"Нужны для Технологического ядра."
 	]
-	"quest.15C10E764F08E536.title": "Продвинутые компоненты"
+	"quest.15C10E764F08E536.quest_subtitle": "❄ Задание"
+	"quest.15C10E764F08E536.title": "&fПродвинутые компоненты"
 	"quest.15D0E6BF79980692.quest_desc": [
-		"900 ❤. Огненные новы, свита ифритов."
+		"1350 ❤. Огненные новы, свита ифритов."
 	]
-	"quest.15D0E6BF79980692.title": "⚔ Пепельный Владыка"
-	"quest.15E2AE14E00B3F8F.title": "Осколки процветания"
-	"quest.15F2D55245EF872E.title": "Стабилизаторы"
+	"quest.15D0E6BF79980692.quest_subtitle": "⚔ Босс"
+	"quest.15D0E6BF79980692.title": "&c⚔ Пепельный Владыка"
+	"quest.15E2AE14E00B3F8F.quest_subtitle": "❄ Задание"
+	"quest.15E2AE14E00B3F8F.title": "&fОсколки процветания"
+	"quest.15F2D55245EF872E.quest_subtitle": "❄ Задание"
+	"quest.15F2D55245EF872E.title": "&fСтабилизаторы"
 	"quest.15FA4D84A8760347.quest_desc": [
 		"Твои первые заклинания."
 	]
-	"quest.15FA4D84A8760347.title": "Книга новичка"
-	"quest.160CB3DA5DD141E7.title": "Шип пустоты"
+	"quest.15FA4D84A8760347.quest_subtitle": "❄ Задание"
+	"quest.15FA4D84A8760347.title": "&fКнига новичка"
+	"quest.160CB3DA5DD141E7.quest_subtitle": "❄ Задание"
+	"quest.160CB3DA5DD141E7.title": "&fШип пустоты"
 	"quest.16337693948BE01E.quest_desc": [
 		"ПКМ жезлом по алтарю начинает ритуал."
 	]
-	"quest.16337693948BE01E.title": "Морозный жезл"
+	"quest.16337693948BE01E.quest_subtitle": "❄ Задание"
+	"quest.16337693948BE01E.title": "&fМорозный жезл"
 	"quest.16376C856DC14888.quest_desc": [
 		"Пирамида в пустыне."
 	]
-	"quest.16376C856DC14888.title": "Древний Останец"
+	"quest.16376C856DC14888.quest_subtitle": "⚔ Босс"
+	"quest.16376C856DC14888.title": "&cДревний Останец"
 	"quest.165E405A3716AD5E.quest_desc": [
 		"&3«Границы миров снова крепки.»&r"
 	]
-	"quest.165E405A3716AD5E.title": "🌌 Ядро измерений"
+	"quest.165E405A3716AD5E.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.165E405A3716AD5E.title": "&6&l🌌 Ядро измерений"
 	"quest.16B84D8498F2B6CB.quest_desc": [
 		"Из него строят врата в другие миры."
 	]
-	"quest.16B84D8498F2B6CB.title": "Обсидиан"
-	"quest.16C96DA0267CDF30.title": "Незеритовый скафандр"
-	"quest.16CBB4265B835C19.title": "Нитро-конденсаторы"
+	"quest.16B84D8498F2B6CB.quest_subtitle": "❄ Задание"
+	"quest.16B84D8498F2B6CB.title": "&fОбсидиан"
+	"quest.16C96DA0267CDF30.quest_subtitle": "❄ Задание"
+	"quest.16C96DA0267CDF30.title": "&fНезеритовый скафандр"
+	"quest.16CBB4265B835C19.quest_subtitle": "❄ Задание"
+	"quest.16CBB4265B835C19.title": "&fНитро-конденсаторы"
 	"quest.16D1AF8867CD8ED3.quest_desc": [
 		"Комплект: спешка II, сила, огнестойкость."
 	]
-	"quest.16D1AF8867CD8ED3.title": "Ауриевый нагрудник"
+	"quest.16D1AF8867CD8ED3.quest_subtitle": "❄ Задание"
+	"quest.16D1AF8867CD8ED3.title": "&fАуриевый нагрудник"
 	"quest.16D2E6F6A7B80E53.quest_desc": [
 		"Powah: заряжай кристаллы."
 	]
-	"quest.16D2E6F6A7B80E53.title": "Заряжающая сфера"
+	"quest.16D2E6F6A7B80E53.quest_subtitle": "❄ Задание"
+	"quest.16D2E6F6A7B80E53.title": "&fЗаряжающая сфера"
 	"quest.16DBA9D132918489.quest_desc": [
 		"Сверху каждой колонны — лампа Юки. &aУровень I готов!"
 	]
-	"quest.16DBA9D132918489.title": "Венцы колонн"
+	"quest.16DBA9D132918489.quest_subtitle": "❄ Задание"
+	"quest.16DBA9D132918489.title": "&fВенцы колонн"
 	"quest.16E26B18892B9DF5.quest_desc": [
 		"Центр структуры."
 	]
-	"quest.16E26B18892B9DF5.title": "Алтарь Юки"
+	"quest.16E26B18892B9DF5.quest_subtitle": "❄ Задание"
+	"quest.16E26B18892B9DF5.title": "&fАлтарь Юки"
+	"quest.172873F8B210BC5B.quest_desc": [
+		"&d«Они звенят, если поднести их к уху.»"
+	]
+	"quest.172873F8B210BC5B.quest_subtitle": "❄ Задание"
+	"quest.172873F8B210BC5B.title": "&fОсколки сияния"
 	"quest.173948641B55379B.quest_desc": [
 		"&b«Он снова свободен. Спасибо.»"
 	]
-	"quest.173948641B55379B.title": "Сердце Колосса"
-	"quest.174B4C96733A6B22.title": "Печать Змея"
-	"quest.17F303A0FC5F08E3.title": "Двигатель из деша"
+	"quest.173948641B55379B.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.173948641B55379B.title": "&6&lСердце Колосса"
+	"quest.174B4C96733A6B22.quest_subtitle": "❄ Задание"
+	"quest.174B4C96733A6B22.title": "&fПечать Змея"
+	"quest.17F303A0FC5F08E3.quest_subtitle": "❄ Задание"
+	"quest.17F303A0FC5F08E3.title": "&fДвигатель из деша"
 	"quest.183DEACAA2A479AF.quest_desc": [
 		"Нужны для каждого целестиевого слитка."
 	]
-	"quest.183DEACAA2A479AF.title": "Нитро-кристаллы"
-	"quest.18603130C9DAC443.title": "Синие кристаллы"
-	"quest.187E942CF64CD15E.title": "Рыцарский металл"
+	"quest.183DEACAA2A479AF.quest_subtitle": "❄ Задание"
+	"quest.183DEACAA2A479AF.title": "&fНитро-кристаллы"
+	"quest.18603130C9DAC443.quest_subtitle": "❄ Задание"
+	"quest.18603130C9DAC443.title": "&fСиние кристаллы"
+	"quest.187E942CF64CD15E.quest_subtitle": "❄ Задание"
+	"quest.187E942CF64CD15E.title": "&fРыцарский металл"
 	"quest.188C2F322C1F3B18.quest_desc": [
 		"Четыре Иссушителя для Ядра измерений."
 	]
-	"quest.188C2F322C1F3B18.title": "Звёзды Незера"
+	"quest.188C2F322C1F3B18.quest_subtitle": "❄ Задание"
+	"quest.188C2F322C1F3B18.title": "&fЗвёзды Незера"
 	"quest.189549891E2C068F.quest_desc": [
 		"Create: хроматическое соединение под светом."
 	]
-	"quest.189549891E2C068F.title": "Очищенное сияние"
+	"quest.189549891E2C068F.quest_subtitle": "❄ Задание"
+	"quest.189549891E2C068F.title": "&fОчищенное сияние"
 	"quest.18980301AADBB198.quest_desc": [
 		"Нужен для Технологического ядра."
 	]
-	"quest.18980301AADBB198.title": "Сплав затмения"
+	"quest.18980301AADBB198.quest_subtitle": "❄ Задание"
+	"quest.18980301AADBB198.title": "&fСплав затмения"
 	"quest.18AB42D842D93109.quest_desc": [
 		"Ведёт к крепостям боссов."
 	]
-	"quest.18AB42D842D93109.title": "Ищущее око"
-	"quest.18B8EB11860A4254.title": "Шаблон целестия"
+	"quest.18AB42D842D93109.quest_subtitle": "❄ Задание"
+	"quest.18AB42D842D93109.title": "&fИщущее око"
+	"quest.18B8EB11860A4254.quest_subtitle": "❄ Задание"
+	"quest.18B8EB11860A4254.title": "&fШаблон целестия"
 	"quest.18C74DA26909A7B5.quest_desc": [
 		"&bСамое редкое яблоко мира.&r Ищи в сундуках — нужно 4 для Ядра природы."
 	]
-	"quest.18C74DA26909A7B5.title": "Зачарованные золотые яблоки"
-	"quest.18ED6EA4693EAE11.title": "Зачарованный гравитит"
+	"quest.18C74DA26909A7B5.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.18C74DA26909A7B5.title": "&6&lЗачарованные золотые яблоки"
+	"quest.18ED6EA4693EAE11.quest_subtitle": "❄ Задание"
+	"quest.18ED6EA4693EAE11.title": "&fЗачарованный гравитит"
 	"quest.1903D11D8C2310EF.quest_desc": [
 		"Без мандаринов какой Новый год? Растут в еловой листве."
 	]
-	"quest.1903D11D8C2310EF.title": "Мандарины"
-	"quest.19880E4068756090.title": "Полоний"
+	"quest.1903D11D8C2310EF.quest_subtitle": "❄ Задание"
+	"quest.1903D11D8C2310EF.title": "&fМандарины"
+	"quest.19880E4068756090.quest_subtitle": "❄ Задание"
+	"quest.19880E4068756090.title": "&fПолоний"
+	"quest.19B1B0CE0EFF284D.quest_desc": [
+		"Корпус кузни: 21 блок обшивки + запас."
+	]
+	"quest.19B1B0CE0EFF284D.quest_subtitle": "❄ Задание"
+	"quest.19B1B0CE0EFF284D.title": "&fМорозная обшивка"
 	"quest.19E10E8763C69D17.quest_desc": [
 		"Кровь гидры и слезы ур-гаста."
 	]
-	"quest.19E10E8763C69D17.title": "Огненные слитки"
+	"quest.19E10E8763C69D17.quest_subtitle": "❄ Задание"
+	"quest.19E10E8763C69D17.title": "&fОгненные слитки"
 	"quest.19FD717275BE0B34.quest_desc": [
 		"Iron's Spells."
 	]
-	"quest.19FD717275BE0B34.title": "Мёртвый король"
+	"quest.19FD717275BE0B34.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.19FD717275BE0B34.title": "&6&lМёртвый король"
 	"quest.1A7F6CF8718E1654.quest_desc": [
 		"Основа зачаровывающего аппарата."
 	]
-	"quest.1A7F6CF8718E1654.title": "Тайное ядро"
-	"quest.1AA0801D966B505E.title": "Зачарованная книга"
-	"quest.1AA5E88E159A85EF.title": "Ледяные осколки"
+	"quest.1A7F6CF8718E1654.quest_subtitle": "❄ Задание"
+	"quest.1A7F6CF8718E1654.title": "&fТайное ядро"
+	"quest.1AA0801D966B505E.quest_subtitle": "❄ Задание"
+	"quest.1AA0801D966B505E.title": "&fЗачарованная книга"
+	"quest.1AA5E88E159A85EF.quest_subtitle": "❄ Задание"
+	"quest.1AA5E88E159A85EF.title": "&fЛедяные осколки"
 	"quest.1AD661131447886E.quest_desc": [
 		"Ставятся в 3 блоках от алтаря по сторонам света."
 	]
-	"quest.1AD661131447886E.title": "Четыре пьедестала"
-	"quest.1B3714B3A787833C.title": "Легендарные чернила"
+	"quest.1AD661131447886E.quest_subtitle": "❄ Задание"
+	"quest.1AD661131447886E.title": "&fЧетыре пьедестала"
+	"quest.1B36ACB1E5B76A63.quest_desc": [
+		"Нужны для Морозного ядра и антипротонного синтезатора."
+	]
+	"quest.1B36ACB1E5B76A63.quest_subtitle": "❄ Задание"
+	"quest.1B36ACB1E5B76A63.title": "&fБлоки криостали"
+	"quest.1B3714B3A787833C.quest_subtitle": "❄ Задание"
+	"quest.1B3714B3A787833C.title": "&fЛегендарные чернила"
 	"quest.1B4A1E16E0B59F63.quest_desc": [
 		"ПКМ по подарку — открыть. Подарки падают и со зимних бродяг и снежных големов."
 	]
-	"quest.1B4A1E16E0B59F63.title": "Первый подарок"
+	"quest.1B4A1E16E0B59F63.quest_subtitle": "❄ Задание"
+	"quest.1B4A1E16E0B59F63.title": "&fПервый подарок"
 	"quest.1B63420261608365.quest_desc": [
 		"&b«В Сумеречном лесу правит Снежная Королева — моя дальняя сестра. Чтобы она пропустила тебя, докажи силу: пройди всех хранителей леса по порядку.»"
 	]
-	"quest.1B63420261608365.title": "Письмо Юки: сумерки"
-	"quest.1B7B7C3BF13F519F.title": "Ритуал яблок"
+	"quest.1B63420261608365.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.1B63420261608365.title": "&bПисьмо Юки: сумерки"
+	"quest.1B7B7C3BF13F519F.quest_subtitle": "❄ Задание"
+	"quest.1B7B7C3BF13F519F.title": "&fРитуал яблок"
 	"quest.1B972A952E5039B5.quest_desc": [
 		"Ты овладел Ars Nouveau."
 	]
-	"quest.1B972A952E5039B5.title": "Книга архимага"
-	"quest.1BE905E12B75FE88.title": "Трофей Ур-Гаста"
+	"quest.1B972A952E5039B5.quest_subtitle": "❄ Задание"
+	"quest.1B972A952E5039B5.title": "&fКнига архимага"
+	"quest.1BE905E12B75FE88.quest_subtitle": "❄ Задание"
+	"quest.1BE905E12B75FE88.title": "&fТрофей Ур-Гаста"
 	"quest.1CAC4E87196E0AC4.quest_desc": [
 		"49 механических крафтеров."
 	]
-	"quest.1CAC4E87196E0AC4.title": "Поле 7×7"
-	"quest.1CF287061495A705.title": "Шаблон аурония"
+	"quest.1CAC4E87196E0AC4.quest_subtitle": "❄ Задание"
+	"quest.1CAC4E87196E0AC4.title": "&fПоле 7×7"
+	"quest.1CF287061495A705.quest_subtitle": "❄ Задание"
+	"quest.1CF287061495A705.title": "&fШаблон аурония"
 	"quest.1D4C356A3DB0DA94.quest_desc": [
 		"Поезда помогут возить ресурсы с далёких шахт."
 	]
-	"quest.1D4C356A3DB0DA94.title": "Рельсы"
-	"quest.1D62982FF229889E.title": "Ледяные бродяги"
-	"quest.1D88BA940F4F2A5C.title": "Термоядерный реактор"
-	"quest.1DC8A733A864D34A.title": "Морозные блоки"
+	"quest.1D4C356A3DB0DA94.quest_subtitle": "❄ Задание"
+	"quest.1D4C356A3DB0DA94.title": "&fРельсы"
+	"quest.1D62982FF229889E.quest_subtitle": "⚔ Босс"
+	"quest.1D62982FF229889E.title": "&cЛедяные бродяги"
+	"quest.1D88BA940F4F2A5C.quest_subtitle": "❄ Задание"
+	"quest.1D88BA940F4F2A5C.title": "&fТермоядерный реактор"
+	"quest.1DC8A733A864D34A.quest_subtitle": "❄ Задание"
+	"quest.1DC8A733A864D34A.title": "&fМорозные блоки"
 	"quest.1E18C025108CC184.quest_desc": [
 		"Полный целестиевый комплект — ночное зрение, сила, скорость, регенерация и многое другое."
 	]
-	"quest.1E18C025108CC184.title": "Целестиевый нагрудник"
-	"quest.1E1BD8C15CF1CCFC.title": "Этрий"
+	"quest.1E18C025108CC184.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.1E18C025108CC184.title": "&6&lЦелестиевый нагрудник"
+	"quest.1E1BD8C15CF1CCFC.quest_subtitle": "❄ Задание"
+	"quest.1E1BD8C15CF1CCFC.title": "&fЭтрий"
 	"quest.1E480D99B08F73B4.quest_desc": [
 		"Артефакт из сундуков и мимиков."
 	]
-	"quest.1E480D99B08F73B4.title": "Вечная говядина"
+	"quest.1E480D99B08F73B4.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.1E480D99B08F73B4.title": "&6&lВечная говядина"
 	"quest.1E53077DA18C8185.quest_desc": [
 		"Победи Нагу."
 	]
-	"quest.1E53077DA18C8185.title": "Чешуя наги"
+	"quest.1E53077DA18C8185.quest_subtitle": "❄ Задание"
+	"quest.1E53077DA18C8185.title": "&fЧешуя наги"
 	"quest.1E54D8FED70E848B.quest_desc": [
 		"&bЛедяное чудовище. Почти родня."
 	]
-	"quest.1E54D8FED70E848B.title": "Морозная пасть"
-	"quest.1E62D7E75B069DB7.title": "Сирок, Песчаный червь"
-	"quest.1E9D26C8AFE4ADDF.title": "Империум"
+	"quest.1E54D8FED70E848B.quest_subtitle": "⚔ Босс"
+	"quest.1E54D8FED70E848B.title": "&cМорозная пасть"
+	"quest.1E62D7E75B069DB7.quest_subtitle": "⚔ Босс"
+	"quest.1E62D7E75B069DB7.title": "&cСирок, Песчаный червь"
+	"quest.1E9D26C8AFE4ADDF.quest_subtitle": "❄ Задание"
+	"quest.1E9D26C8AFE4ADDF.title": "&fИмпериум"
 	"quest.1EA8D177F5BD6FCB.quest_desc": [
-		"750 ❤. Заморозка вокруг, телепорты, кольца клыков, свита."
+		"1100 ❤. Заморозка вокруг, телепорты, кольца клыков, свита."
 	]
-	"quest.1EA8D177F5BD6FCB.title": "⚔ Королева Метелей"
-	"quest.1EE1A4470BB01F8F.title": "Эфирсент"
+	"quest.1EA8D177F5BD6FCB.quest_subtitle": "⚔ Босс"
+	"quest.1EA8D177F5BD6FCB.title": "&c⚔ Королева Метелей"
+	"quest.1EE1A4470BB01F8F.quest_subtitle": "❄ Задание"
+	"quest.1EE1A4470BB01F8F.title": "&fЭфирсент"
 	"quest.1F0C47574B0D520E.quest_desc": [
 		"Выпадает из драконов Iron's Spells и Энд-дракона."
 	]
-	"quest.1F0C47574B0D520E.title": "Драконья кожа"
-	"quest.1F15D19E386B2E9A.title": "Солнечные панели"
-	"quest.1F1EC891FBE77FEF.title": "Мать лабиринта"
+	"quest.1F0C47574B0D520E.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.1F0C47574B0D520E.title": "&6&lДраконья кожа"
+	"quest.1F15D19E386B2E9A.quest_subtitle": "❄ Задание"
+	"quest.1F15D19E386B2E9A.title": "&fСолнечные панели"
+	"quest.1F1EC891FBE77FEF.quest_subtitle": "⚔ Босс"
+	"quest.1F1EC891FBE77FEF.title": "&cМать лабиринта"
 	"quest.1F5A309A83B4B5E9.quest_desc": [
 		"Найди крепость."
 	]
-	"quest.1F5A309A83B4B5E9.title": "Глаза Края"
+	"quest.1F5A309A83B4B5E9.quest_subtitle": "❄ Задание"
+	"quest.1F5A309A83B4B5E9.title": "&fГлаза Края"
 	"quest.1F5E3EDA241CD2E5.quest_desc": [
 		"Схемы растут вместе с тобой."
 	]
-	"quest.1F5E3EDA241CD2E5.title": "Базовая схема"
+	"quest.1F5E3EDA241CD2E5.quest_subtitle": "❄ Задание"
+	"quest.1F5E3EDA241CD2E5.title": "&fБазовая схема"
 	"quest.1F7632EC66669F36.quest_desc": [
 		"Нужен для Магического ядра."
 	]
-	"quest.1F7632EC66669F36.title": "Настроенный камень духа"
+	"quest.1F7632EC66669F36.quest_subtitle": "❄ Задание"
+	"quest.1F7632EC66669F36.title": "&fНастроенный камень духа"
 	"quest.1F8FE072E2283D2C.quest_desc": [
 		"Нужно минимум &e8&r: 4 для Технологического ядра и 4 для Нестабильной звезды."
 	]
-	"quest.1F8FE072E2283D2C.title": "Сингулярности"
-	"quest.1F9CCAB9993478F7.title": "Яблоки бессмертия"
+	"quest.1F8FE072E2283D2C.quest_subtitle": "❄ Задание"
+	"quest.1F8FE072E2283D2C.title": "&fСингулярности"
+	"quest.1F9CCAB9993478F7.quest_subtitle": "❄ Задание"
+	"quest.1F9CCAB9993478F7.title": "&fЯблоки бессмертия"
 	"quest.1FA55C546DCF8E0D.quest_desc": [
 		"Светится и создаёт настроение."
 	]
-	"quest.1FA55C546DCF8E0D.title": "Новогодняя ёлочка"
-	"quest.1FBF8B7802F558C7.title": "Пепельное ядро"
-	"quest.1FC1C7156ED095C5.title": "Пиролит"
+	"quest.1FA55C546DCF8E0D.quest_subtitle": "❄ Задание"
+	"quest.1FA55C546DCF8E0D.title": "&fНовогодняя ёлочка"
+	"quest.1FBF8B7802F558C7.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.1FBF8B7802F558C7.title": "&6&lПепельное ядро"
+	"quest.1FC1C7156ED095C5.quest_subtitle": "❄ Задание"
+	"quest.1FC1C7156ED095C5.title": "&fПиролит"
 	"quest.1FDCAF673A10F66C.quest_desc": [
 		"Печать Тени требует трофеи всех стражей — победи их снова."
 	]
-	"quest.1FDCAF673A10F66C.title": "Второе Сердце Колосса"
+	"quest.1FDCAF673A10F66C.quest_subtitle": "❄ Задание"
+	"quest.1FDCAF673A10F66C.title": "&fВторое Сердце Колосса"
 	"quest.1FE8C03F9FB910B5.quest_desc": [
 		"Даёт энергию от льда вокруг: до 240 FE/т с синим льдом со всех сторон. Сам отдаёт энергию соседям."
 	]
-	"quest.1FE8C03F9FB910B5.title": "Криогенератор"
-	"quest.204A7DDA0AB97FF6.title": "Пылающие кристаллы"
-	"quest.2059D3D6A2879FC9.title": "Томаты"
-	"quest.20633CF00D7AAE14.title": "Занит"
+	"quest.1FE8C03F9FB910B5.quest_subtitle": "❄ Задание"
+	"quest.1FE8C03F9FB910B5.title": "&fКриогенератор"
+	"quest.204A7DDA0AB97FF6.quest_subtitle": "❄ Задание"
+	"quest.204A7DDA0AB97FF6.title": "&fПылающие кристаллы"
+	"quest.2059D3D6A2879FC9.quest_subtitle": "❄ Задание"
+	"quest.2059D3D6A2879FC9.title": "&fТоматы"
+	"quest.20633CF00D7AAE14.quest_subtitle": "❄ Задание"
+	"quest.20633CF00D7AAE14.title": "&fЗанит"
 	"quest.206BEDB1FBC40C51.quest_desc": [
 		"Фабрика Иссушителя."
 	]
-	"quest.206BEDB1FBC40C51.title": "Предвестник"
-	"quest.20BE3D0F89FBDD6C.title": "Блоки мерзлоты"
+	"quest.206BEDB1FBC40C51.quest_subtitle": "⚔ Босс"
+	"quest.206BEDB1FBC40C51.title": "&cПредвестник"
+	"quest.20BE3D0F89FBDD6C.quest_subtitle": "❄ Задание"
+	"quest.20BE3D0F89FBDD6C.title": "&fБлоки мерзлоты"
 	"quest.20C3E675B1A62329.quest_desc": [
 		"Aquamirae: ледяное море."
 	]
-	"quest.20C3E675B1A62329.title": "Призрак капитана Корнелии"
+	"quest.20C3E675B1A62329.quest_subtitle": "⚔ Босс"
+	"quest.20C3E675B1A62329.title": "&cПризрак капитана Корнелии"
 	"quest.20E48F6AE25D7616.quest_desc": [
 		"Прочный металл для машин и брони."
 	]
-	"quest.20E48F6AE25D7616.title": "Сталь"
+	"quest.20E48F6AE25D7616.quest_subtitle": "❄ Задание"
+	"quest.20E48F6AE25D7616.title": "&fСталь"
 	"quest.21419546DB149638.quest_desc": [
 		"Основа машин Mekanism."
 	]
-	"quest.21419546DB149638.title": "Стальной корпус"
-	"quest.216C65BBAD1B89B2.title": "Обтекатель"
-	"quest.21B1C0796F9A9A72.title": "Стальной двигатель"
+	"quest.21419546DB149638.quest_subtitle": "❄ Задание"
+	"quest.21419546DB149638.title": "&fСтальной корпус"
+	"quest.216C65BBAD1B89B2.quest_subtitle": "❄ Задание"
+	"quest.216C65BBAD1B89B2.title": "&fОбтекатель"
+	"quest.21B1C0796F9A9A72.quest_subtitle": "❄ Задание"
+	"quest.21B1C0796F9A9A72.title": "&fСтальной двигатель"
 	"quest.21DA2134DAD7D57D.quest_desc": [
 		"&6«Разум машин вернулся ко мне.»&r"
 	]
-	"quest.21DA2134DAD7D57D.title": "⚙ Технологическое ядро"
+	"quest.21DA2134DAD7D57D.quest_subtitle": "❄ Задание"
+	"quest.21DA2134DAD7D57D.title": "&f⚙ Технологическое ядро"
 	"quest.21DF1AF08036042C.quest_desc": [
 		"&b«Снег пошёл… но я чувствую чужой холод. Тень жива, Хранитель. Она бежала на Целестию.»"
 	]
-	"quest.21DF1AF08036042C.title": "Звезда горит"
-	"quest.21E0B5B4E5F134F2.title": "Реактивный костюм"
+	"quest.21DF1AF08036042C.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.21DF1AF08036042C.title": "&6&lЗвезда горит"
+	"quest.21E0B5B4E5F134F2.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.21E0B5B4E5F134F2.title": "&6&lРеактивный костюм"
 	"quest.21F491F68FD2A37C.quest_desc": [
 		"Здесь собираются ракеты."
 	]
-	"quest.21F491F68FD2A37C.title": "Верстак NASA"
+	"quest.21F491F68FD2A37C.quest_subtitle": "❄ Задание"
+	"quest.21F491F68FD2A37C.title": "&fВерстак NASA"
 	"quest.2322D2DF19F2B1E0.quest_desc": [
 		"Знание — тоже сила."
 	]
-	"quest.2322D2DF19F2B1E0.title": "Чародейский стол"
-	"quest.2387BDB339CC9AA5.title": "Ледяной баран"
+	"quest.2322D2DF19F2B1E0.quest_subtitle": "❄ Задание"
+	"quest.2322D2DF19F2B1E0.title": "&fЧародейский стол"
+	"quest.2387BDB339CC9AA5.quest_subtitle": "⚔ Босс"
+	"quest.2387BDB339CC9AA5.title": "&cЛедяной баран"
 	"quest.23F23145F5D6D221.quest_desc": [
 		"Металл Mekanism."
 	]
-	"quest.23F23145F5D6D221.title": "Осмий"
+	"quest.23F23145F5D6D221.quest_subtitle": "❄ Задание"
+	"quest.23F23145F5D6D221.title": "&fОсмий"
 	"quest.23F6EC8169B39510.quest_desc": [
 		"Собери доменную печь."
 	]
-	"quest.23F6EC8169B39510.title": "Доменные кирпичи"
-	"quest.247BC68A348F60BD.title": "Перчатка землеломки"
+	"quest.23F6EC8169B39510.quest_subtitle": "❄ Задание"
+	"quest.23F6EC8169B39510.title": "&fДоменные кирпичи"
+	"quest.247BC68A348F60BD.quest_subtitle": "❄ Задание"
+	"quest.247BC68A348F60BD.title": "&fПерчатка землеломки"
 	"quest.247F61D735667A98.quest_desc": [
 		"Магический кристалл Ars Nouveau."
 	]
-	"quest.247F61D735667A98.title": "Самоцветы источника"
+	"quest.247F61D735667A98.quest_subtitle": "❄ Задание"
+	"quest.247F61D735667A98.title": "&fСамоцветы источника"
+	"quest.248770373C624730.quest_subtitle": "❄ Задание"
+	"quest.248770373C624730.title": "&fЯдро реактора"
 	"quest.24EC9D02D8518E23.quest_desc": [
 		"Farmer's Delight: настоящая еда даёт сытость надолго."
 	]
-	"quest.24EC9D02D8518E23.title": "Кастрюля"
+	"quest.24EC9D02D8518E23.quest_subtitle": "❄ Задание"
+	"quest.24EC9D02D8518E23.title": "&fКастрюля"
 	"quest.24F1100D636554FD.quest_desc": [
 		"Виден только под действием дурмана."
 	]
-	"quest.24F1100D636554FD.title": "Иной камень"
+	"quest.24F1100D636554FD.quest_subtitle": "❄ Задание"
+	"quest.24F1100D636554FD.title": "&fИной камень"
 	"quest.2521F99D9EC2CCB1.quest_desc": [
 		"&b«Когда моё Сердце разбилось, границы между мирами истончились. Пройди их все — и собери память каждого мира в Ядро измерений.»"
 	]
-	"quest.2521F99D9EC2CCB1.title": "Письмо Юки: границы"
-	"quest.25657F439C9CDB13.title": "Меркурианский камень"
+	"quest.2521F99D9EC2CCB1.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.2521F99D9EC2CCB1.title": "&bПисьмо Юки: границы"
+	"quest.25657F439C9CDB13.quest_subtitle": "❄ Задание"
+	"quest.25657F439C9CDB13.title": "&fМеркурианский камень"
 	"quest.258CDFA4348D8E5B.quest_desc": [
 		"Обелиск в Энде."
 	]
-	"quest.258CDFA4348D8E5B.title": "Обсидилит"
-	"quest.259C6EF138E5F1E4.title": "Незеритовые брюки"
+	"quest.258CDFA4348D8E5B.quest_subtitle": "⚔ Босс"
+	"quest.258CDFA4348D8E5B.title": "&cОбсидилит"
+	"quest.259C6EF138E5F1E4.quest_subtitle": "❄ Задание"
+	"quest.259C6EF138E5F1E4.title": "&fНезеритовые брюки"
 	"quest.25CD5EE3FC9BAFF7.quest_desc": [
 		"Тёмная башня."
 	]
-	"quest.25CD5EE3FC9BAFF7.title": "Ур-Гаст"
+	"quest.25CD5EE3FC9BAFF7.quest_subtitle": "⚔ Босс"
+	"quest.25CD5EE3FC9BAFF7.title": "&cУр-Гаст"
 	"quest.25F565AF86A66DAF.quest_desc": [
-		"1600 ❤. Телепорты, кольца и линии клыков, вексы, во второй фазе — молнии."
+		"2400 ❤. Телепорты, кольца и линии клыков, вексы, во второй фазе — молнии."
 	]
-	"quest.25F565AF86A66DAF.title": "⚔ ТЕНЬ ЮКИ"
+	"quest.25F565AF86A66DAF.quest_subtitle": "⚔ Босс"
+	"quest.25F565AF86A66DAF.title": "&c⚔ ТЕНЬ ЮКИ"
 	"quest.260DE24120F5F86F.quest_desc": [
 		"Топливо для доменной печи."
 	]
-	"quest.260DE24120F5F86F.title": "Кокс"
+	"quest.260DE24120F5F86F.quest_subtitle": "❄ Задание"
+	"quest.260DE24120F5F86F.title": "&fКокс"
 	"quest.261DE5951929FBFF.quest_desc": [
 		"&b«Металлы мои ты выковал. Но истинная сила рождается в ритуале. Построй мне алтарь — и я научу тебя призывать.»&r"
 		""
 		"Схемы всех уровней — в Летописи Юки, раздел «Алтари»."
 	]
-	"quest.261DE5951929FBFF.title": "Письмо Юки: алтарь"
+	"quest.261DE5951929FBFF.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.261DE5951929FBFF.title": "&bПисьмо Юки: алтарь"
 	"quest.2621EEB84D72A07E.quest_desc": [
 		"&b«Огонь и лёд — две стороны одного мира», — шепчет Юки."
 	]
-	"quest.2621EEB84D72A07E.title": "Очаг"
+	"quest.2621EEB84D72A07E.quest_subtitle": "❄ Задание"
+	"quest.2621EEB84D72A07E.title": "&fОчаг"
 	"quest.2632B864FEF4E90B.quest_desc": [
 		"Нефть → ракетное топливо."
 	]
-	"quest.2632B864FEF4E90B.title": "Топливный завод"
+	"quest.2632B864FEF4E90B.quest_subtitle": "❄ Задание"
+	"quest.2632B864FEF4E90B.title": "&fТопливный завод"
 	"quest.263F41A9B07455B0.quest_desc": [
 		"81 механический крафтер."
 	]
-	"quest.263F41A9B07455B0.title": "Поле 9×9"
-	"quest.2688B7A49B07B5A5.title": "Пьедесталы"
+	"quest.263F41A9B07455B0.quest_subtitle": "❄ Задание"
+	"quest.263F41A9B07455B0.title": "&fПоле 9×9"
+	"quest.2688B7A49B07B5A5.quest_subtitle": "❄ Задание"
+	"quest.2688B7A49B07B5A5.title": "&fПьедесталы"
 	"quest.26A774012DC6641E.quest_desc": [
 		"Waystones: телепортация между камнями на поверхности."
 	]
-	"quest.26A774012DC6641E.title": "Путевой камень"
+	"quest.26A774012DC6641E.quest_subtitle": "❄ Задание"
+	"quest.26A774012DC6641E.title": "&fПутевой камень"
+	"quest.26AC8C285A828375.quest_desc": [
+		"&d«Расставь их на Авроре — пусть небо вспомнит свет.»"
+	]
+	"quest.26AC8C285A828375.quest_subtitle": "❄ Задание"
+	"quest.26AC8C285A828375.title": "&fЛампы сияния"
 	"quest.26B9123E2F78A229.quest_desc": [
 		"&b«Я чувствую их все... Хранитель, ты собрал мой свет.»"
 	]
-	"quest.26B9123E2F78A229.title": "Все осколки"
+	"quest.26B9123E2F78A229.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.26B9123E2F78A229.title": "&6&lВсе осколки"
 	"quest.26BA44942AB38EAE.quest_desc": [
 		"Теперь можно идти дальше."
 	]
-	"quest.26BA44942AB38EAE.title": "Алмазная броня"
+	"quest.26BA44942AB38EAE.quest_subtitle": "❄ Задание"
+	"quest.26BA44942AB38EAE.title": "&fАлмазная броня"
 	"quest.26DE3D71E7A860CC.quest_desc": [
 		"Самый опасный босс этого мира."
 	]
-	"quest.26DE3D71E7A860CC.title": "Лунное чудовище"
+	"quest.26DE3D71E7A860CC.quest_subtitle": "⚔ Босс"
+	"quest.26DE3D71E7A860CC.title": "&cЛунное чудовище"
 	"quest.26F2FEF4540B5AFA.quest_desc": [
 		"Кузня в Незере."
 	]
-	"quest.26F2FEF4540B5AFA.title": "Незеритовое чудовище"
-	"quest.26FA2E75C7CD473E.title": "Забытый металл"
+	"quest.26F2FEF4540B5AFA.quest_subtitle": "⚔ Босс"
+	"quest.26F2FEF4540B5AFA.title": "&cНезеритовое чудовище"
+	"quest.26FA2E75C7CD473E.quest_subtitle": "❄ Задание"
+	"quest.26FA2E75C7CD473E.title": "&fЗабытый металл"
 	"quest.270A674E6AF9A13C.quest_desc": [
 		"&b«Четыре осколка у тебя. Возвращайся на Землю — пора собирать Ядра и Сердце.»"
 	]
-	"quest.270A674E6AF9A13C.title": "Чешуя Пустоты"
+	"quest.270A674E6AF9A13C.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.270A674E6AF9A13C.title": "&6&lЧешуя Пустоты"
 	"quest.2728714A8E9D8703.quest_desc": [
 		"Кислотный дождь разъедает обычный скафандр!"
 	]
-	"quest.2728714A8E9D8703.title": "Венера"
+	"quest.2728714A8E9D8703.quest_subtitle": "🌍 Новый мир"
+	"quest.2728714A8E9D8703.title": "&aВенера"
 	"quest.27411D26D3F75FBE.quest_desc": [
 		"Снежные пещеры."
 	]
-	"quest.27411D26D3F75FBE.title": "Альфа-йети"
-	"quest.2746AED6484836E4.title": "Ракета III"
+	"quest.27411D26D3F75FBE.quest_subtitle": "⚔ Босс"
+	"quest.27411D26D3F75FBE.title": "&cАльфа-йети"
+	"quest.2746AED6484836E4.quest_subtitle": "❄ Задание"
+	"quest.2746AED6484836E4.title": "&fРакета III"
 	"quest.2795EFF078F35D3A.quest_desc": [
 		"&b«Ключи вернулись. Теперь — звёздный свет.»"
 	]
-	"quest.2795EFF078F35D3A.title": "Чистое небо"
+	"quest.2795EFF078F35D3A.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.2795EFF078F35D3A.title": "&6&lЧистое небо"
 	"quest.279A0255EC54DFE6.quest_desc": [
 		"Лазурный храм."
 	]
-	"quest.279A0255EC54DFE6.title": "Сцилла"
+	"quest.279A0255EC54DFE6.quest_subtitle": "⚔ Босс"
+	"quest.279A0255EC54DFE6.title": "&cСцилла"
 	"quest.27AB9E1237039030.quest_desc": [
 		"Испытательные камеры."
 	]
-	"quest.27AB9E1237039030.title": "Тяжёлые ядра"
+	"quest.27AB9E1237039030.quest_subtitle": "❄ Задание"
+	"quest.27AB9E1237039030.title": "&fТяжёлые ядра"
 	"quest.28025B6A6EF4C3D0.quest_desc": [
 		"Положи кристалл Юки на алтарь, голубой лёд и снег — на пьедесталы, и коснись алтаря жезлом."
 	]
-	"quest.28025B6A6EF4C3D0.title": "Первый ритуал"
-	"quest.281DF627B004A66C.title": "Осколки пустоты"
-	"quest.2832735F0A40D5E9.title": "Блоки рыцарского металла"
+	"quest.28025B6A6EF4C3D0.quest_subtitle": "❄ Задание"
+	"quest.28025B6A6EF4C3D0.title": "&fПервый ритуал"
+	"quest.281DF627B004A66C.quest_subtitle": "❄ Задание"
+	"quest.281DF627B004A66C.title": "&fОсколки пустоты"
+	"quest.2832735F0A40D5E9.quest_subtitle": "❄ Задание"
+	"quest.2832735F0A40D5E9.title": "&fБлоки рыцарского металла"
 	"quest.284CEE77D954CB4B.quest_desc": [
 		"Покажет крепости боссов."
 	]
-	"quest.284CEE77D954CB4B.title": "Волшебная карта"
+	"quest.284CEE77D954CB4B.quest_subtitle": "❄ Задание"
+	"quest.284CEE77D954CB4B.title": "&fВолшебная карта"
 	"quest.287406EA5418E003.quest_desc": [
 		"Ночи стали опаснее с тех пор, как ушла зима."
 	]
-	"quest.287406EA5418E003.title": "Щит"
+	"quest.287406EA5418E003.quest_subtitle": "❄ Задание"
+	"quest.287406EA5418E003.title": "&fЩит"
+	"quest.287EC5CD23C3C9B4.quest_subtitle": "❄ Задание"
+	"quest.287EC5CD23C3C9B4.title": "&fЦелестиевые венцы"
 	"quest.28AA007C32F378FF.quest_desc": [
 		"Камера наполнения Ars Nouveau, 3000 источника."
 	]
-	"quest.28AA007C32F378FF.title": "Эссенция Юки"
-	"quest.2937A9A0040F821F.title": "Древние обломки"
-	"quest.2944FF07103E7887.title": "Слитки морозной стали"
+	"quest.28AA007C32F378FF.quest_subtitle": "❄ Задание"
+	"quest.28AA007C32F378FF.title": "&fЭссенция Юки"
+	"quest.2937A9A0040F821F.quest_subtitle": "❄ Задание"
+	"quest.2937A9A0040F821F.title": "&fДревние обломки"
+	"quest.2944FF07103E7887.quest_subtitle": "❄ Задание"
+	"quest.2944FF07103E7887.title": "&fСлитки морозной стали"
 	"quest.299998FD53C20DE9.quest_desc": [
 		"Им зажигается портал из каменных кирпичей."
 	]
-	"quest.299998FD53C20DE9.title": "Катализатор"
+	"quest.299998FD53C20DE9.quest_subtitle": "❄ Задание"
+	"quest.299998FD53C20DE9.title": "&fКатализатор"
 	"quest.29B90DC5DF55589E.quest_desc": [
 		"Mekanism SPS производит антиматерию."
 	]
-	"quest.29B90DC5DF55589E.title": "Сверхкритический сепаратор"
+	"quest.29B90DC5DF55589E.quest_subtitle": "❄ Задание"
+	"quest.29B90DC5DF55589E.title": "&fСверхкритический сепаратор"
 	"quest.2A2AA5FC41A3C77B.quest_desc": [
 		"Неразрушимый, урон 63."
 	]
-	"quest.2A2AA5FC41A3C77B.title": "Клинок Вечной Зимы"
+	"quest.2A2AA5FC41A3C77B.quest_subtitle": "❄ Задание"
+	"quest.2A2AA5FC41A3C77B.title": "&fКлинок Вечной Зимы"
 	"quest.2A74012BBD800C15.quest_desc": [
 		"Industrial Foregoing."
 	]
-	"quest.2A74012BBD800C15.title": "Простая рама"
-	"quest.2B0FECC60501473F.title": "Морозный меч"
+	"quest.2A74012BBD800C15.quest_subtitle": "❄ Задание"
+	"quest.2A74012BBD800C15.title": "&fПростая рама"
+	"quest.2B0FECC60501473F.quest_subtitle": "❄ Задание"
+	"quest.2B0FECC60501473F.title": "&fМорозный меч"
 	"quest.2B1E46FE6DA5B55D.quest_desc": [
 		"&b«Да, это он. Морозная сталь хранит эхо моей силы. Спасибо, Хранитель. Теперь — к лесу, где вечно сумерки.»"
 	]
-	"quest.2B1E46FE6DA5B55D.title": "Холод глубин"
-	"quest.2B2E1C438BAC35F7.title": "Цветок пустоты"
+	"quest.2B1E46FE6DA5B55D.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.2B1E46FE6DA5B55D.title": "&6&lХолод глубин"
+	"quest.2B2E1C438BAC35F7.quest_subtitle": "⚔ Босс"
+	"quest.2B2E1C438BAC35F7.title": "&cЦветок пустоты"
+	"quest.2B2E63FE532E39CA.quest_desc": [
+		"&b«Мои металлы капризны, но машины терпеливы. Построй кузню, что плавит холод, и реактор, что горит светом звёзд.»&r"
+		""
+		"Схемы — в Летописи Юки, раздел «Индустрия»."
+	]
+	"quest.2B2E63FE532E39CA.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.2B2E63FE532E39CA.title": "&bПисьмо Юки: индустрия"
 	"quest.2B408D1DDD76EE27.quest_desc": [
 		"&b«Стражи моих осколков живут на далёких планетах. Печать призовёт стража — но только в его мире. Тебе нужна ракета, Хранитель.»"
 	]
-	"quest.2B408D1DDD76EE27.title": "Печати"
-	"quest.2B47A4A93EEBEB01.title": "Нормализатор гравитации"
-	"quest.2B4ADFB975CE37CD.title": "Морозные яблоки"
+	"quest.2B408D1DDD76EE27.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.2B408D1DDD76EE27.title": "&6&lПечати"
+	"quest.2B47A4A93EEBEB01.quest_subtitle": "❄ Задание"
+	"quest.2B47A4A93EEBEB01.title": "&fНормализатор гравитации"
+	"quest.2B4ADFB975CE37CD.quest_subtitle": "❄ Задание"
+	"quest.2B4ADFB975CE37CD.title": "&fМорозные яблоки"
 	"quest.2B56F053249599F3.quest_desc": [
 		"Детали для тяжёлых машин."
 	]
-	"quest.2B56F053249599F3.title": "Стальные компоненты"
+	"quest.2B56F053249599F3.quest_subtitle": "❄ Задание"
+	"quest.2B56F053249599F3.title": "&fСтальные компоненты"
 	"quest.2BCEB30D84D6D5B8.quest_desc": [
 		"Первая чужая звезда."
 	]
-	"quest.2BCEB30D84D6D5B8.title": "Глацио"
-	"quest.2BF812C223C72CC2.title": "Нефритовая броня"
-	"quest.2C284FDCB2E5CB0E.title": "Вычислительные процессоры"
+	"quest.2BCEB30D84D6D5B8.quest_subtitle": "🌍 Новый мир"
+	"quest.2BCEB30D84D6D5B8.title": "&aГлацио"
+	"quest.2BF812C223C72CC2.quest_subtitle": "❄ Задание"
+	"quest.2BF812C223C72CC2.title": "&fНефритовая броня"
+	"quest.2C284FDCB2E5CB0E.quest_subtitle": "❄ Задание"
+	"quest.2C284FDCB2E5CB0E.title": "&fВычислительные процессоры"
+	"quest.2C33B85CEAC1BE3D.quest_subtitle": "❄ Задание"
+	"quest.2C33B85CEAC1BE3D.title": "&fОбшивка реактора"
 	"quest.2C44D75D04462012.quest_desc": [
 		"&b«Тень посеяла в мире чудовищ. Каждое хранит крупицу украденного света. Охоться, Хранитель.»"
 	]
-	"quest.2C44D75D04462012.title": "Письмо Юки: охота"
-	"quest.2CC3913543E55344.title": "Адская кузня"
+	"quest.2C44D75D04462012.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.2C44D75D04462012.title": "&bПисьмо Юки: охота"
+	"quest.2CC3913543E55344.quest_subtitle": "❄ Задание"
+	"quest.2CC3913543E55344.title": "&fАдская кузня"
 	"quest.2D23C2A58F75E9A8.quest_desc": [
 		"Mowzie's Mobs: пещеры."
 	]
-	"quest.2D23C2A58F75E9A8.title": "Железный Вротнаут"
+	"quest.2D23C2A58F75E9A8.quest_subtitle": "⚔ Босс"
+	"quest.2D23C2A58F75E9A8.title": "&cЖелезный Вротнаут"
 	"quest.2D2ADA336D821D06.quest_desc": [
 		"Портал из звёздных кристаллов (см. книгу мода)."
 	]
-	"quest.2D2ADA336D821D06.title": "Вечный звёздный свет"
+	"quest.2D2ADA336D821D06.quest_subtitle": "🌍 Новый мир"
+	"quest.2D2ADA336D821D06.title": "&aВечный звёздный свет"
 	"quest.2D3781A4137D644B.quest_desc": [
 		"&bЯ чувствую холод...&r Морозная руда — частая на внешних островах."
 	]
-	"quest.2D3781A4137D644B.title": "Морозная руда"
-	"quest.2D5FE29459E2D061.title": "Марсианский раптор"
-	"quest.2D6F14B0D01584AF.title": "Незерит"
-	"quest.2DB5B9783825D94C.title": "Звёздные осколки"
+	"quest.2D3781A4137D644B.quest_subtitle": "❄ Задание"
+	"quest.2D3781A4137D644B.title": "&fМорозная руда"
+	"quest.2D5FE29459E2D061.quest_subtitle": "⚔ Босс"
+	"quest.2D5FE29459E2D061.title": "&cМарсианский раптор"
+	"quest.2D6F14B0D01584AF.quest_subtitle": "❄ Задание"
+	"quest.2D6F14B0D01584AF.title": "&fНезерит"
+	"quest.2DB5B9783825D94C.quest_subtitle": "❄ Задание"
+	"quest.2DB5B9783825D94C.title": "&fЗвёздные осколки"
 	"quest.2DCC2BE551F7F958.quest_desc": [
 		"ПКМ — включить. Притягивает предметы и опыт в радиусе 8."
 	]
-	"quest.2DCC2BE551F7F958.title": "Морозный магнит"
+	"quest.2DCC2BE551F7F958.quest_subtitle": "❄ Задание"
+	"quest.2DCC2BE551F7F958.title": "&fМорозный магнит"
 	"quest.2DD8348AC8D47167.quest_desc": [
 		"&b«Не вся магия светла. Демоны Occultism и тёмные камни EvilCraft тоже хранят частицы моей силы. Будь осторожен, Хранитель.»"
 	]
-	"quest.2DD8348AC8D47167.title": "Письмо Юки: тени"
-	"quest.2DE37EC08A379E9B.title": "Эссенция манипуляции"
+	"quest.2DD8348AC8D47167.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.2DD8348AC8D47167.title": "&bПисьмо Юки: тени"
+	"quest.2DE37EC08A379E9B.quest_subtitle": "❄ Задание"
+	"quest.2DE37EC08A379E9B.title": "&fЭссенция манипуляции"
+	"quest.2E3E667A377A4A55.quest_desc": [
+		"&d«Королева Метелей была и моей подругой…»"
+	]
+	"quest.2E3E667A377A4A55.quest_subtitle": "❄ Задание"
+	"quest.2E3E667A377A4A55.title": "&fКорона подруги"
 	"quest.2E61F11423772DFD.quest_desc": [
 		"IE: собери коксовую печь 3×3×3."
 	]
-	"quest.2E61F11423772DFD.title": "Коксовые кирпичи"
+	"quest.2E61F11423772DFD.quest_subtitle": "❄ Задание"
+	"quest.2E61F11423772DFD.title": "&fКоксовые кирпичи"
 	"quest.2E80C8483DDFB80B.quest_desc": [
 		"&b«Под корнями мира есть ещё один мир. Когда-то туда стекала талая вода моего снега. Спустись — там до сих пор спит холод, который мне нужен.»"
 	]
-	"quest.2E80C8483DDFB80B.title": "Письмо Юки: глубина"
+	"quest.2E80C8483DDFB80B.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.2E80C8483DDFB80B.title": "&bПисьмо Юки: глубина"
 	"quest.2EB22A37F263FB0C.quest_desc": [
 		"Укрась базу огоньками."
 	]
-	"quest.2EB22A37F263FB0C.title": "Гирлянды"
+	"quest.2EB22A37F263FB0C.quest_subtitle": "❄ Задание"
+	"quest.2EB22A37F263FB0C.title": "&fГирлянды"
 	"quest.2EB77BFC96CEA371.quest_desc": [
 		"Железо понадобится для всего: инструментов, машин, брони."
 	]
-	"quest.2EB77BFC96CEA371.title": "Железо"
+	"quest.2EB77BFC96CEA371.quest_subtitle": "❄ Задание"
+	"quest.2EB77BFC96CEA371.title": "&fЖелезо"
 	"quest.2EBAE20304D45121.quest_desc": [
 		"Копает 3×3. С Shift — один блок."
 	]
-	"quest.2EBAE20304D45121.title": "Ауриевый молот"
+	"quest.2EBAE20304D45121.quest_subtitle": "❄ Задание"
+	"quest.2EBAE20304D45121.title": "&fАуриевый молот"
 	"quest.2F44152F2EA23580.quest_desc": [
 		"&bГотов к старту."
 	]
-	"quest.2F44152F2EA23580.title": "Скафандр: ботинки"
+	"quest.2F44152F2EA23580.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.2F44152F2EA23580.title": "&6&lСкафандр: ботинки"
 	"quest.2F4BCF108BF5ECAD.quest_desc": [
 		"Вся планета — из льда."
 	]
-	"quest.2F4BCF108BF5ECAD.title": "Плотный лёд"
-	"quest.2F966F3261AD9D7A.title": "Божественная жемчужина"
-	"quest.2FA929A623117222.title": "Деш"
+	"quest.2F4BCF108BF5ECAD.quest_subtitle": "❄ Задание"
+	"quest.2F4BCF108BF5ECAD.title": "&fПлотный лёд"
+	"quest.2F966F3261AD9D7A.quest_subtitle": "❄ Задание"
+	"quest.2F966F3261AD9D7A.title": "&fБожественная жемчужина"
+	"quest.2FA929A623117222.quest_subtitle": "❄ Задание"
+	"quest.2FA929A623117222.title": "&fДеш"
 	"quest.2FEDA7A375FC7EA8.quest_desc": [
 		"&b…слышишь? Это мой голос, из Системы Юки."
 	]
-	"quest.2FEDA7A375FC7EA8.title": "Радио"
-	"quest.30610AA52098BBE2.title": "Терциум"
+	"quest.2FEDA7A375FC7EA8.quest_subtitle": "❄ Задание"
+	"quest.2FEDA7A375FC7EA8.title": "&fРадио"
+	"quest.30610AA52098BBE2.quest_subtitle": "❄ Задание"
+	"quest.30610AA52098BBE2.title": "&fТерциум"
 	"quest.30B70EA4AB2B4379.quest_desc": [
 		"Шагни в огненный мир."
 	]
-	"quest.30B70EA4AB2B4379.title": "Незер"
-	"quest.30BADF2960223923.title": "Чёрный камень"
-	"quest.30D6E295E923E37C.title": "Трофей Наги"
-	"quest.31564F1840A02A02.title": "Верховная рама"
-	"quest.3194FB931D7FDA74.title": "Слитки калорита"
+	"quest.30B70EA4AB2B4379.quest_subtitle": "🌍 Новый мир"
+	"quest.30B70EA4AB2B4379.title": "&aНезер"
+	"quest.30BADF2960223923.quest_subtitle": "❄ Задание"
+	"quest.30BADF2960223923.title": "&fЧёрный камень"
+	"quest.30D6E295E923E37C.quest_subtitle": "❄ Задание"
+	"quest.30D6E295E923E37C.title": "&fТрофей Наги"
+	"quest.31564F1840A02A02.quest_subtitle": "❄ Задание"
+	"quest.31564F1840A02A02.title": "&fВерховная рама"
+	"quest.3194FB931D7FDA74.quest_subtitle": "❄ Задание"
+	"quest.3194FB931D7FDA74.title": "&fСлитки калорита"
 	"quest.31DE97CCF56CFC0E.quest_desc": [
 		"Малые шестерни передают вращение."
 	]
-	"quest.31DE97CCF56CFC0E.title": "Шестерни"
-	"quest.320260332757A337.title": "Пластины деша"
-	"quest.321EA0272E3509D8.title": "Железные пластины"
-	"quest.3222DC735E069D0B.title": "Пластины этрия"
-	"quest.3257AAB7293F3400.title": "Трофей Снежной Королевы"
+	"quest.31DE97CCF56CFC0E.quest_subtitle": "❄ Задание"
+	"quest.31DE97CCF56CFC0E.title": "&fШестерни"
+	"quest.320260332757A337.quest_subtitle": "❄ Задание"
+	"quest.320260332757A337.title": "&fПластины деша"
+	"quest.321EA0272E3509D8.quest_subtitle": "❄ Задание"
+	"quest.321EA0272E3509D8.title": "&fЖелезные пластины"
+	"quest.3222DC735E069D0B.quest_subtitle": "❄ Задание"
+	"quest.3222DC735E069D0B.title": "&fПластины этрия"
+	"quest.323C82AD4A2BE745.quest_desc": [
+		"Контроллер — в центр боковой грани. Shift+ПКМ покажет, собрана ли структура."
+	]
+	"quest.323C82AD4A2BE745.quest_subtitle": "❄ Задание"
+	"quest.323C82AD4A2BE745.title": "&fМорозная кузня"
+	"quest.32479E41D9391920.quest_desc": [
+		"Алтарь I. &d«Носи его — и я всегда буду рядом.»"
+	]
+	"quest.32479E41D9391920.quest_subtitle": "❄ Задание"
+	"quest.32479E41D9391920.title": "&fАмулет Синтары"
+	"quest.3257AAB7293F3400.quest_subtitle": "❄ Задание"
+	"quest.3257AAB7293F3400.title": "&fТрофей Снежной Королевы"
 	"quest.32630379247D6530.quest_desc": [
 		"&a«Сады снова цветут.»&r"
 	]
-	"quest.32630379247D6530.title": "🌾 Ядро природы"
+	"quest.32630379247D6530.quest_subtitle": "❄ Задание"
+	"quest.32630379247D6530.title": "&f🌾 Ядро природы"
 	"quest.32A4E02CAFD4FC1B.quest_desc": [
 		"Пусть база светится как зимний вечер."
 	]
-	"quest.32A4E02CAFD4FC1B.title": "Лампы Юки"
-	"quest.32A4EFFC4CBB2F71.title": "Стальной лист"
+	"quest.32A4E02CAFD4FC1B.quest_subtitle": "❄ Задание"
+	"quest.32A4E02CAFD4FC1B.title": "&fЛампы Юки"
+	"quest.32A4EFFC4CBB2F71.quest_subtitle": "❄ Задание"
+	"quest.32A4EFFC4CBB2F71.title": "&fСтальной лист"
 	"quest.32BBBDF18106242E.quest_desc": [
 		"&bЗдесь рождается Эссенция Юки&r: кристалл Юки + голубой лёд, снег и эссенция воды."
 	]
-	"quest.32BBBDF18106242E.title": "Камера наполнения"
-	"quest.330E13C94DA00A1C.title": "Скафандр: куртка"
+	"quest.32BBBDF18106242E.quest_subtitle": "❄ Задание"
+	"quest.32BBBDF18106242E.title": "&fКамера наполнения"
+	"quest.330E13C94DA00A1C.quest_subtitle": "❄ Задание"
+	"quest.330E13C94DA00A1C.title": "&fСкафандр: куртка"
 	"quest.33108CD2A383ADBB.quest_desc": [
 		"Нужны для сложных механизмов."
 	]
-	"quest.33108CD2A383ADBB.title": "Электронные лампы"
-	"quest.33B53E8D31B304E2.title": "Точные механизмы"
+	"quest.33108CD2A383ADBB.quest_subtitle": "❄ Задание"
+	"quest.33108CD2A383ADBB.title": "&fЭлектронные лампы"
+	"quest.33B53E8D31B304E2.quest_subtitle": "❄ Задание"
+	"quest.33B53E8D31B304E2.title": "&fТочные механизмы"
 	"quest.33DA92F7DFC5D6F2.quest_desc": [
 		"Понадобятся 8 штук для Технологического ядра."
 	]
-	"quest.33DA92F7DFC5D6F2.title": "Абсолютная схема"
+	"quest.33DA92F7DFC5D6F2.quest_subtitle": "❄ Задание"
+	"quest.33DA92F7DFC5D6F2.title": "&fАбсолютная схема"
 	"quest.341B2C4D0BACCD57.quest_desc": [
 		"Меняют скорость вращения."
 	]
-	"quest.341B2C4D0BACCD57.title": "Большие шестерни"
+	"quest.341B2C4D0BACCD57.quest_subtitle": "❄ Задание"
+	"quest.341B2C4D0BACCD57.title": "&fБольшие шестерни"
 	"quest.3473A46804B9BB58.quest_desc": [
 		"Лабиринт под болотом."
 	]
-	"quest.3473A46804B9BB58.title": "Минотавр"
-	"quest.34A43C3AF7CBDDC8.title": "Аметистовая земля"
+	"quest.3473A46804B9BB58.quest_subtitle": "⚔ Босс"
+	"quest.3473A46804B9BB58.title": "&cМинотавр"
+	"quest.34A43C3AF7CBDDC8.quest_subtitle": "❄ Задание"
+	"quest.34A43C3AF7CBDDC8.title": "&fАметистовая земля"
 	"quest.356FB03215E87E20.quest_desc": [
 		"Им ты однажды выкуешь Морозные пластины."
 	]
-	"quest.356FB03215E87E20.title": "Механический пресс"
+	"quest.356FB03215E87E20.quest_subtitle": "❄ Задание"
+	"quest.356FB03215E87E20.title": "&fМеханический пресс"
 	"quest.35AEF07E0C91F50C.quest_desc": [
 		"Согревает: снимает заморозку и даёт регенерацию."
 	]
-	"quest.35AEF07E0C91F50C.title": "Горячий шоколад"
-	"quest.35B9EF6E423B3865.title": "Обсидиановое сердце"
+	"quest.35AEF07E0C91F50C.quest_subtitle": "❄ Задание"
+	"quest.35AEF07E0C91F50C.title": "&fГорячий шоколад"
+	"quest.35B9EF6E423B3865.quest_subtitle": "❄ Задание"
+	"quest.35B9EF6E423B3865.title": "&fОбсидиановое сердце"
 	"quest.362022EE40D396DF.quest_desc": [
 		"&b«Звезда горит — и Тень почувствовала это. Она бежала на Целестию, мою родную звезду. Это последняя битва, Хранитель. После неё зима вернётся навсегда.»"
 	]
-	"quest.362022EE40D396DF.title": "Письмо Юки: Тень"
+	"quest.362022EE40D396DF.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.362022EE40D396DF.title": "&bПисьмо Юки: Тень"
 	"quest.3684060946D88D64.quest_desc": [
 		"1000 мБ антиматерии стабилизируют звезду."
 	]
-	"quest.3684060946D88D64.title": "Антипротонный нуклеосинтезатор"
-	"quest.36FA64AFDFB68673.title": "Стратус"
+	"quest.3684060946D88D64.quest_subtitle": "❄ Задание"
+	"quest.3684060946D88D64.title": "&fАнтипротонный нуклеосинтезатор"
+	"quest.36FA64AFDFB68673.quest_subtitle": "❄ Задание"
+	"quest.36FA64AFDFB68673.title": "&fСтратус"
 	"quest.37CC5C42DECF8B33.quest_desc": [
 		"&b«Он больше не причинит вреда. Шлюз открыт — лети к дальним островам.»"
 	]
-	"quest.37CC5C42DECF8B33.title": "Падение дракона"
+	"quest.37CC5C42DECF8B33.quest_subtitle": "⚔ Босс"
+	"quest.37CC5C42DECF8B33.title": "&cПадение дракона"
 	"quest.3810445A5E9CED6A.quest_desc": [
 		"Хранение энергии."
 	]
-	"quest.3810445A5E9CED6A.title": "Конденсатор LV"
+	"quest.3810445A5E9CED6A.quest_subtitle": "❄ Задание"
+	"quest.3810445A5E9CED6A.title": "&fКонденсатор LV"
 	"quest.383DD48078F3BF16.quest_desc": [
 		"&b«Мой свет унесли к далёкой звезде — в Систему Юки. Туда не дойти пешком. Построй ракету.»"
 	]
-	"quest.383DD48078F3BF16.title": "Письмо Юки: звёзды зовут"
+	"quest.383DD48078F3BF16.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.383DD48078F3BF16.title": "&bПисьмо Юки: звёзды зовут"
 	"quest.387DFDDF46445F66.quest_desc": [
 		"Productive Bees."
 	]
-	"quest.387DFDDF46445F66.title": "Продвинутый улей"
+	"quest.387DFDDF46445F66.quest_subtitle": "❄ Задание"
+	"quest.387DFDDF46445F66.title": "&fПродвинутый улей"
 	"quest.38A4A619285CDAE8.quest_desc": [
 		"Дыхание дракона на столе зачарования."
 	]
-	"quest.38A4A619285CDAE8.title": "Наполненное дыхание"
+	"quest.38A4A619285CDAE8.quest_subtitle": "❄ Задание"
+	"quest.38A4A619285CDAE8.title": "&fНаполненное дыхание"
 	"quest.38AFD27E0221BFA4.quest_desc": [
 		"Разбирай самоцветы Apotheosis."
 	]
-	"quest.38AFD27E0221BFA4.title": "Пыль самоцветов"
+	"quest.38AFD27E0221BFA4.quest_subtitle": "❄ Задание"
+	"quest.38AFD27E0221BFA4.title": "&fПыль самоцветов"
 	"quest.38F448B9922C2B95.quest_desc": [
 		"Удвоение руды."
 	]
-	"quest.38F448B9922C2B95.title": "Обогатитель"
-	"quest.392290870566DA2F.title": "Одухотворённые кристаллы"
+	"quest.38F448B9922C2B95.quest_subtitle": "❄ Задание"
+	"quest.38F448B9922C2B95.title": "&fОбогатитель"
+	"quest.392290870566DA2F.quest_subtitle": "❄ Задание"
+	"quest.392290870566DA2F.title": "&fОдухотворённые кристаллы"
 	"quest.3933936D186189DD.quest_desc": [
 		"&d«Ты освободил меня, Хранитель.»"
 	]
-	"quest.3933936D186189DD.title": "Слеза Юки"
+	"quest.3933936D186189DD.quest_subtitle": "❄ Задание"
+	"quest.3933936D186189DD.title": "&fСлеза Юки"
 	"quest.3976C00C0B4CB53E.quest_desc": [
 		"Промывка, плавка и копчение потоком воздуха."
 	]
-	"quest.3976C00C0B4CB53E.title": "Вентилятор"
-	"quest.399F3CD717C93213.title": "Витерит"
+	"quest.3976C00C0B4CB53E.quest_subtitle": "❄ Задание"
+	"quest.3976C00C0B4CB53E.title": "&fВентилятор"
+	"quest.399F3CD717C93213.quest_subtitle": "❄ Задание"
+	"quest.399F3CD717C93213.title": "&fВитерит"
 	"quest.39A9DDDF8425D9AE.quest_desc": [
 		"Первый источник энергии вращения."
 	]
-	"quest.39A9DDDF8425D9AE.title": "Водяное колесо"
+	"quest.39A9DDDF8425D9AE.quest_subtitle": "❄ Задание"
+	"quest.39A9DDDF8425D9AE.title": "&fВодяное колесо"
 	"quest.39BF3F417804A5CB.quest_desc": [
 		"Алтарь II: череп иссушителя + пустота + песок душ = звезда Незера."
 	]
-	"quest.39BF3F417804A5CB.title": "Звезда из пустоты"
-	"quest.39D965849994CD88.title": "Стойкие лепестки"
-	"quest.3A021ECE85A44B2A.title": "Нераксис, Кракен"
+	"quest.39BF3F417804A5CB.quest_subtitle": "❄ Задание"
+	"quest.39BF3F417804A5CB.title": "&fЗвезда из пустоты"
+	"quest.39D965849994CD88.quest_subtitle": "❄ Задание"
+	"quest.39D965849994CD88.title": "&fСтойкие лепестки"
+	"quest.3A021ECE85A44B2A.quest_subtitle": "⚔ Босс"
+	"quest.3A021ECE85A44B2A.title": "&cНераксис, Кракен"
 	"quest.3A66A8A6C8205F5C.quest_desc": [
 		"Пресс + чаша = уплотнение."
 	]
-	"quest.3A66A8A6C8205F5C.title": "Чаша"
-	"quest.3AA80CBE43CEE67E.title": "Зарядник"
-	"quest.3B2B748C9F357A5F.title": "Ниотические кристаллы"
+	"quest.3A66A8A6C8205F5C.quest_subtitle": "❄ Задание"
+	"quest.3A66A8A6C8205F5C.title": "&fЧаша"
+	"quest.3AA80CBE43CEE67E.quest_subtitle": "❄ Задание"
+	"quest.3AA80CBE43CEE67E.title": "&fЗарядник"
+	"quest.3B2B748C9F357A5F.quest_subtitle": "❄ Задание"
+	"quest.3B2B748C9F357A5F.title": "&fНиотические кристаллы"
 	"quest.3B611515F015220B.quest_desc": [
 		"Часть рецепта Эссенции Юки."
 	]
-	"quest.3B611515F015220B.title": "Эссенция воды"
-	"quest.3B7CE89DC7D5ECD5.title": "Баки из острума"
+	"quest.3B611515F015220B.quest_subtitle": "❄ Задание"
+	"quest.3B611515F015220B.title": "&fЭссенция воды"
+	"quest.3B7CE89DC7D5ECD5.quest_subtitle": "❄ Задание"
+	"quest.3B7CE89DC7D5ECD5.title": "&fБаки из острума"
 	"quest.3B9FCD145B603184.quest_desc": [
 		"&b«Целестий — металл звёзд. Чтобы его создать, нужно двадцать пять миллионов единиц энергии в одном кристалле. Построй электростанцию, достойную бога.»"
 	]
-	"quest.3B9FCD145B603184.title": "Письмо Юки: энергия"
-	"quest.3BEA1604D8EC10EE.title": "Блоки авроры"
-	"quest.3BEF0E29F1048D05.title": "Блоки пиролита"
+	"quest.3B9FCD145B603184.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.3B9FCD145B603184.title": "&bПисьмо Юки: энергия"
+	"quest.3BEA1604D8EC10EE.quest_subtitle": "❄ Задание"
+	"quest.3BEA1604D8EC10EE.title": "&fБлоки авроры"
+	"quest.3BEF0E29F1048D05.quest_subtitle": "❄ Задание"
+	"quest.3BEF0E29F1048D05.title": "&fБлоки пиролита"
 	"quest.3C145613E38AD8BB.quest_desc": [
 		"Сожжённая арена."
 	]
-	"quest.3C145613E38AD8BB.title": "Игнис"
-	"quest.3C17F6AC26A23ED3.title": "Шлем призрака"
-	"quest.3C5F3F90F28FDBAE.title": "Амарамбер"
-	"quest.3C745394B12DE41D.title": "Книга ученика"
+	"quest.3C145613E38AD8BB.quest_subtitle": "⚔ Босс"
+	"quest.3C145613E38AD8BB.title": "&cИгнис"
+	"quest.3C17F6AC26A23ED3.quest_subtitle": "❄ Задание"
+	"quest.3C17F6AC26A23ED3.title": "&fШлем призрака"
+	"quest.3C5F3F90F28FDBAE.quest_subtitle": "❄ Задание"
+	"quest.3C5F3F90F28FDBAE.title": "&fАмарамбер"
+	"quest.3C745394B12DE41D.quest_subtitle": "❄ Задание"
+	"quest.3C745394B12DE41D.title": "&fКнига ученика"
 	"quest.3C7F00CAB3F26E7C.quest_desc": [
 		"Собери снежного голема: два снежных блока и тыква."
 	]
-	"quest.3C7F00CAB3F26E7C.title": "Снеговик"
-	"quest.3CD354715FA97B48.title": "Мех альфа-йети"
+	"quest.3C7F00CAB3F26E7C.quest_subtitle": "❄ Задание"
+	"quest.3C7F00CAB3F26E7C.title": "&fСнеговик"
+	"quest.3CD354715FA97B48.quest_subtitle": "❄ Задание"
+	"quest.3CD354715FA97B48.title": "&fМех альфа-йети"
 	"quest.3D606D051C1A458D.quest_desc": [
 		"Алтарь III. Все бонусы целестия, сопротивление III, полёт — навсегда."
 	]
-	"quest.3D606D051C1A458D.title": "👑 Корона Юки"
+	"quest.3D606D051C1A458D.quest_subtitle": "❄ Задание"
+	"quest.3D606D051C1A458D.title": "&f👑 Корона Юки"
 	"quest.3DFCDA2A565CF001.quest_desc": [
 		"Крепость рыцарей-призраков."
 	]
-	"quest.3DFCDA2A565CF001.title": "Рыцари-призраки"
+	"quest.3DFCDA2A565CF001.quest_subtitle": "⚔ Босс"
+	"quest.3DFCDA2A565CF001.title": "&cРыцари-призраки"
 	"quest.3E17D59119D72538.quest_desc": [
 		"&b«На Авроре небо поёт. Моя подруга, Королева Метелей, правила ею… пока Тень не украла её сердце.»"
 	]
-	"quest.3E17D59119D72538.title": "Письмо Юки: Аврора"
+	"quest.3E17D59119D72538.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.3E17D59119D72538.title": "&bПисьмо Юки: Аврора"
 	"quest.3E48E67C37262292.quest_desc": [
 		"Башня Лича."
 	]
-	"quest.3E48E67C37262292.title": "Сумеречный Лич"
-	"quest.3E86E35F0EAD68B9.title": "Морозный слиток"
-	"quest.3EA584E950942931.title": "ME-привод"
-	"quest.3F329A0FC5E1A077.title": "Жемчуг Края"
+	"quest.3E48E67C37262292.quest_subtitle": "⚔ Босс"
+	"quest.3E48E67C37262292.title": "&cСумеречный Лич"
+	"quest.3E86E35F0EAD68B9.quest_subtitle": "❄ Задание"
+	"quest.3E86E35F0EAD68B9.title": "&fМорозный слиток"
+	"quest.3EA584E950942931.quest_subtitle": "❄ Задание"
+	"quest.3EA584E950942931.title": "&fME-привод"
+	"quest.3F329A0FC5E1A077.quest_subtitle": "❄ Задание"
+	"quest.3F329A0FC5E1A077.title": "&fЖемчуг Края"
 	"quest.3F930E26E9DE5C2F.quest_desc": [
 		"Последовательная сборка Create, 3 круга."
 	]
-	"quest.3F930E26E9DE5C2F.title": "Морозные механизмы"
+	"quest.3F930E26E9DE5C2F.quest_subtitle": "❄ Задание"
+	"quest.3F930E26E9DE5C2F.title": "&fМорозные механизмы"
 	"quest.3FCBE48F9525402B.quest_desc": [
 		"Алтарь II: Сердце Колосса + авроры, эссенции, целестий."
 	]
-	"quest.3FCBE48F9525402B.title": "Печать Королевы"
+	"quest.3FCBE48F9525402B.quest_subtitle": "❄ Задание"
+	"quest.3FCBE48F9525402B.title": "&fПечать Королевы"
 	"quest.401A5FCF5DE6195A.quest_desc": [
 		"Нужен для Технологического ядра."
 	]
-	"quest.401A5FCF5DE6195A.title": "Параллельный процессор"
+	"quest.401A5FCF5DE6195A.quest_subtitle": "❄ Задание"
+	"quest.401A5FCF5DE6195A.title": "&fПараллельный процессор"
 	"quest.406E502F2F552028.quest_desc": [
 		"Без кислорода!"
 	]
-	"quest.406E502F2F552028.title": "Аврора"
+	"quest.406E502F2F552028.quest_subtitle": "🌍 Новый мир"
+	"quest.406E502F2F552028.title": "&aАврора"
 	"quest.408C12E70DF3A88D.quest_desc": [
 		"Металл Подземья."
 	]
-	"quest.408C12E70DF3A88D.title": "Клоггрум"
+	"quest.408C12E70DF3A88D.quest_subtitle": "❄ Задание"
+	"quest.408C12E70DF3A88D.title": "&fКлоггрум"
 	"quest.40CFC196AB943EB7.quest_desc": [
 		"Всего понадобится &e14&r. Это только начало."
 	]
-	"quest.40CFC196AB943EB7.title": "Осколки звезды"
-	"quest.40D1AE4C1F3A887D.title": "Незеритовый шлем"
-	"quest.40D7FE7D9F55EF38.title": "Игнитиум"
+	"quest.40CFC196AB943EB7.quest_subtitle": "❄ Задание"
+	"quest.40CFC196AB943EB7.title": "&fОсколки звезды"
+	"quest.40D1AE4C1F3A887D.quest_subtitle": "❄ Задание"
+	"quest.40D1AE4C1F3A887D.title": "&fНезеритовый шлем"
+	"quest.40D7FE7D9F55EF38.quest_subtitle": "❄ Задание"
+	"quest.40D7FE7D9F55EF38.title": "&fИгнитиум"
 	"quest.40FC3CFB2F7D64F0.quest_desc": [
 		"Ищи в катакомбах Забытого стража."
 	]
-	"quest.40FC3CFB2F7D64F0.title": "Шаблон Забытых"
+	"quest.40FC3CFB2F7D64F0.quest_subtitle": "❄ Задание"
+	"quest.40FC3CFB2F7D64F0.title": "&fШаблон Забытых"
 	"quest.41035FED7FA9E41C.quest_desc": [
 		"Миксер Create с &cперегревом&r: горелка + пламенный торт."
 	]
-	"quest.41035FED7FA9E41C.title": "Ауроний"
-	"quest.416439D70286E56C.title": "Фотоэлементы"
-	"quest.4168C5A62F960E98.title": "Лук феникса"
+	"quest.41035FED7FA9E41C.quest_subtitle": "❄ Задание"
+	"quest.41035FED7FA9E41C.title": "&fАуроний"
+	"quest.416439D70286E56C.quest_subtitle": "❄ Задание"
+	"quest.416439D70286E56C.title": "&fФотоэлементы"
+	"quest.4168C5A62F960E98.quest_subtitle": "❄ Задание"
+	"quest.4168C5A62F960E98.title": "&fЛук феникса"
 	"quest.41DF14B9C0FB3880.quest_desc": [
 		"Золотая планета у самого сердца системы."
 	]
-	"quest.41DF14B9C0FB3880.title": "Целестия"
+	"quest.41DF14B9C0FB3880.quest_subtitle": "🌍 Новый мир"
+	"quest.41DF14B9C0FB3880.title": "&aЦелестия"
 	"quest.4208FA9CE5DD2FA1.quest_desc": [
 		"Портал: бассейн воды, окружённый цветами, и брось алмаз."
 	]
-	"quest.4208FA9CE5DD2FA1.title": "Сумеречный лес"
+	"quest.4208FA9CE5DD2FA1.quest_subtitle": "🌍 Новый мир"
+	"quest.4208FA9CE5DD2FA1.title": "&aСумеречный лес"
 	"quest.420B19397E49B335.quest_desc": [
 		"Just Dire Things."
 	]
-	"quest.420B19397E49B335.title": "Феррикор"
+	"quest.420B19397E49B335.quest_subtitle": "❄ Задание"
+	"quest.420B19397E49B335.title": "&fФеррикор"
 	"quest.42A3DDBB2BA38F99.quest_desc": [
 		"Только Алтарь Бесконечности (уровень III)."
 	]
-	"quest.42A3DDBB2BA38F99.title": "Печать Тени"
+	"quest.42A3DDBB2BA38F99.quest_subtitle": "❄ Задание"
+	"quest.42A3DDBB2BA38F99.title": "&fПечать Тени"
 	"quest.42C40AB7397AB716.quest_desc": [
 		"&b«Ты сильнее всех чудовищ этого мира. Пора в Энд — за моими осколками.»"
 	]
-	"quest.42C40AB7397AB716.title": "Последний катаклизм"
-	"quest.42CEB4E78F74EE18.title": "Космическая сталь"
-	"quest.430188CA423F5698.title": "Алтарь пробуждения"
-	"quest.434FE2F9F642F3DD.title": "Водяной насос"
+	"quest.42C40AB7397AB716.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.42C40AB7397AB716.title": "&6&lПоследний катаклизм"
+	"quest.42CEB4E78F74EE18.quest_subtitle": "❄ Задание"
+	"quest.42CEB4E78F74EE18.title": "&fКосмическая сталь"
+	"quest.430188CA423F5698.quest_subtitle": "❄ Задание"
+	"quest.430188CA423F5698.title": "&fАлтарь пробуждения"
+	"quest.434FE2F9F642F3DD.quest_subtitle": "❄ Задание"
+	"quest.434FE2F9F642F3DD.title": "&fВодяной насос"
 	"quest.43C22EB7D1CB6EB0.quest_desc": [
 		"Без огня и инструментов не выжить. Начни с дерева."
 	]
-	"quest.43C22EB7D1CB6EB0.title": "Первое тепло"
+	"quest.43C22EB7D1CB6EB0.quest_subtitle": "❄ Задание"
+	"quest.43C22EB7D1CB6EB0.title": "&fПервое тепло"
 	"quest.44141CE008F85370.quest_desc": [
 		"Кристалл, опасный для существ Подземья."
 	]
-	"quest.44141CE008F85370.title": "Утериум"
+	"quest.44141CE008F85370.quest_subtitle": "❄ Задание"
+	"quest.44141CE008F85370.title": "&fУтериум"
 	"quest.441FE4937393DD9C.quest_desc": [
 		"Медь + цинк в нагретой чаше."
 	]
-	"quest.441FE4937393DD9C.title": "Латунь"
-	"quest.442C5E6B814B095D.title": "Звёздные блоки"
-	"quest.4434B88C7E8ABB5E.title": "Двигатель из калорита"
+	"quest.441FE4937393DD9C.quest_subtitle": "❄ Задание"
+	"quest.441FE4937393DD9C.title": "&fЛатунь"
+	"quest.442C5E6B814B095D.quest_subtitle": "❄ Задание"
+	"quest.442C5E6B814B095D.title": "&fЗвёздные блоки"
+	"quest.4434B88C7E8ABB5E.quest_subtitle": "❄ Задание"
+	"quest.4434B88C7E8ABB5E.title": "&fДвигатель из калорита"
 	"quest.44569CB3C5573BB9.quest_desc": [
 		"Им собираются мультиблоки IE."
 	]
-	"quest.44569CB3C5573BB9.title": "Молот инженера"
+	"quest.44569CB3C5573BB9.quest_subtitle": "❄ Задание"
+	"quest.44569CB3C5573BB9.title": "&fМолот инженера"
 	"quest.44EDAFD862BFD00D.quest_desc": [
-		"Используй печать на Юкии. 600 ❤, клыки, удар по земле, свита бродяг во второй фазе."
+		"Используй печать на Юкии. 900 ❤, клыки, удар по земле, свита бродяг во второй фазе."
 	]
-	"quest.44EDAFD862BFD00D.title": "⚔ Ледяной Колосс"
+	"quest.44EDAFD862BFD00D.quest_subtitle": "⚔ Босс"
+	"quest.44EDAFD862BFD00D.title": "&c⚔ Ледяной Колосс"
 	"quest.44FF5559F583C818.quest_desc": [
 		"Алтарь I: Звезда Юки + 4 кристалла мерзлоты."
 	]
-	"quest.44FF5559F583C818.title": "Печать Колосса"
+	"quest.44FF5559F583C818.quest_subtitle": "❄ Задание"
+	"quest.44FF5559F583C818.title": "&fПечать Колосса"
 	"quest.4555799497BEE96D.quest_desc": [
 		"Нагрев и перегрев для миксера."
 	]
-	"quest.4555799497BEE96D.title": "Горелка ифрита"
+	"quest.4555799497BEE96D.quest_subtitle": "❄ Задание"
+	"quest.4555799497BEE96D.title": "&fГорелка ифрита"
 	"quest.4581EA3EAC38B939.quest_desc": [
 		"Бронзовое подземелье."
 	]
-	"quest.4581EA3EAC38B939.title": "Слайдер"
-	"quest.459B1A9A6AA2BA29.title": "Калорит"
-	"quest.45E1DBDA0903069D.title": "Топор Вротнаута"
-	"quest.45EC3B0D8C8C85ED.title": "Меч бури"
-	"quest.45F20B4AED75E180.title": "Инженерные процессоры"
-	"quest.4681E58DCBCC1619.title": "Пластины калорита"
+	"quest.4581EA3EAC38B939.quest_subtitle": "⚔ Босс"
+	"quest.4581EA3EAC38B939.title": "&cСлайдер"
+	"quest.459B1A9A6AA2BA29.quest_subtitle": "❄ Задание"
+	"quest.459B1A9A6AA2BA29.title": "&fКалорит"
+	"quest.45E1DBDA0903069D.quest_subtitle": "❄ Задание"
+	"quest.45E1DBDA0903069D.title": "&fТопор Вротнаута"
+	"quest.45EC3B0D8C8C85ED.quest_subtitle": "❄ Задание"
+	"quest.45EC3B0D8C8C85ED.title": "&fМеч бури"
+	"quest.45F20B4AED75E180.quest_subtitle": "❄ Задание"
+	"quest.45F20B4AED75E180.title": "&fИнженерные процессоры"
+	"quest.4681E58DCBCC1619.quest_subtitle": "❄ Задание"
+	"quest.4681E58DCBCC1619.title": "&fПластины калорита"
 	"quest.4698DD6015FCBC77.quest_desc": [
 		"Mystical Agriculture: ресурсы растут сами."
 	]
-	"quest.4698DD6015FCBC77.title": "Семена инфериума"
+	"quest.4698DD6015FCBC77.quest_subtitle": "❄ Задание"
+	"quest.4698DD6015FCBC77.title": "&fСемена инфериума"
 	"quest.46D1F98C871CC4EB.quest_desc": [
 		"Нужен для Ядра природы."
 	]
-	"quest.46D1F98C871CC4EB.title": "Пробуждённый супремиум"
+	"quest.46D1F98C871CC4EB.quest_subtitle": "❄ Задание"
+	"quest.46D1F98C871CC4EB.title": "&fПробуждённый супремиум"
 	"quest.46D444BB6B964CE4.quest_desc": [
 		"Неразрушимый меч с уроном 43."
 	]
-	"quest.46D444BB6B964CE4.title": "Клинок Юки"
-	"quest.46DA5AE6FCEDD692.title": "Логические процессоры"
+	"quest.46D444BB6B964CE4.quest_subtitle": "❄ Задание"
+	"quest.46D444BB6B964CE4.title": "&fКлинок Юки"
+	"quest.46DA5AE6FCEDD692.quest_subtitle": "❄ Задание"
+	"quest.46DA5AE6FCEDD692.title": "&fЛогические процессоры"
 	"quest.471DCD6AF29D04A1.quest_desc": [
 		"Огромный источник энергии."
 	]
-	"quest.471DCD6AF29D04A1.title": "Нитро-реактор"
-	"quest.4769DC9E95D80996.title": "Древний металл"
+	"quest.471DCD6AF29D04A1.quest_subtitle": "❄ Задание"
+	"quest.471DCD6AF29D04A1.title": "&fНитро-реактор"
+	"quest.4769DC9E95D80996.quest_subtitle": "❄ Задание"
+	"quest.4769DC9E95D80996.title": "&fДревний металл"
 	"quest.479ABE5CDDAF95F5.quest_desc": [
 		"Нужно для Технологического ядра."
 	]
-	"quest.479ABE5CDDAF95F5.title": "Ядро конструкции"
-	"quest.47A8ACDB3473636C.title": "Селестигем"
-	"quest.47D6DCC581EB062B.title": "Умножение аурония"
-	"quest.495CD387AB305BA5.title": "Криоморозильник"
+	"quest.479ABE5CDDAF95F5.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.479ABE5CDDAF95F5.title": "&6&lЯдро конструкции"
+	"quest.47A8ACDB3473636C.quest_subtitle": "❄ Задание"
+	"quest.47A8ACDB3473636C.title": "&fСелестигем"
+	"quest.47D6DCC581EB062B.quest_subtitle": "❄ Задание"
+	"quest.47D6DCC581EB062B.title": "&fУмножение аурония"
+	"quest.495CD387AB305BA5.quest_subtitle": "❄ Задание"
+	"quest.495CD387AB305BA5.title": "&fКриоморозильник"
 	"quest.49A4403A193C5C3D.quest_desc": [
 		"Понадобятся для Нестабильной звезды. Это долго — начинай сейчас."
 	]
-	"quest.49A4403A193C5C3D.title": "Блоки пробуждённого супремиума"
+	"quest.49A4403A193C5C3D.quest_subtitle": "❄ Задание"
+	"quest.49A4403A193C5C3D.title": "&fБлоки пробуждённого супремиума"
 	"quest.49F1E9209F283F21.quest_desc": [
 		"&b«Иссушитель проглотил частицу моего света. Когда будешь готов — забери её. Но сначала тебе нужны силы природы.»"
 	]
-	"quest.49F1E9209F283F21.title": "Тёмная запись Летописи"
-	"quest.4AA2EA64CA3A669F.title": "Топливные баки"
-	"quest.4AE6BAFF4A6C1C80.title": "Маточное молочко"
+	"quest.49F1E9209F283F21.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.49F1E9209F283F21.title": "&6&lТёмная запись Летописи"
+	"quest.4AA2EA64CA3A669F.quest_subtitle": "❄ Задание"
+	"quest.4AA2EA64CA3A669F.title": "&fТопливные баки"
+	"quest.4AE6BAFF4A6C1C80.quest_subtitle": "❄ Задание"
+	"quest.4AE6BAFF4A6C1C80.title": "&fМаточное молочко"
 	"quest.4B0013364029B76F.quest_desc": [
 		"Самый быстрый инструмент YukiWorld."
 	]
-	"quest.4B0013364029B76F.title": "Целестиевая кирка"
-	"quest.4BB6358CC8DA1DD5.title": "Красные кристаллы"
+	"quest.4B0013364029B76F.quest_subtitle": "❄ Задание"
+	"quest.4B0013364029B76F.title": "&fЦелестиевая кирка"
+	"quest.4BA737058D8C0DDC.quest_desc": [
+		"2 морозных слитка + 2 железа + плотный лёд, 40 000 FE."
+	]
+	"quest.4BA737058D8C0DDC.quest_subtitle": "❄ Задание"
+	"quest.4BA737058D8C0DDC.title": "&fКриосталь"
+	"quest.4BB6358CC8DA1DD5.quest_subtitle": "❄ Задание"
+	"quest.4BB6358CC8DA1DD5.title": "&fКрасные кристаллы"
 	"quest.4BDABE631BED55E3.quest_desc": [
 		"&b«На Никте нет солнца. Там живёт Пустотный Змей — первое создание Тени. Не смотри ему в глаза.»"
 	]
-	"quest.4BDABE631BED55E3.title": "Письмо Юки: Никта"
-	"quest.4C19983E08C875A1.title": "Марсианский камень"
-	"quest.4C1A84B8566831E1.title": "Слитки пиролита"
-	"quest.4C26A92706278E70.title": "Трофей Гидры"
-	"quest.4C82C264357CF340.title": "Стальные пластины"
-	"quest.4C89938DECC66BFF.title": "Пузырьки опыта"
+	"quest.4BDABE631BED55E3.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.4BDABE631BED55E3.title": "&bПисьмо Юки: Никта"
+	"quest.4C19983E08C875A1.quest_subtitle": "❄ Задание"
+	"quest.4C19983E08C875A1.title": "&fМарсианский камень"
+	"quest.4C1A84B8566831E1.quest_subtitle": "❄ Задание"
+	"quest.4C1A84B8566831E1.title": "&fСлитки пиролита"
+	"quest.4C26A92706278E70.quest_subtitle": "❄ Задание"
+	"quest.4C26A92706278E70.title": "&fТрофей Гидры"
+	"quest.4C82C264357CF340.quest_subtitle": "❄ Задание"
+	"quest.4C82C264357CF340.title": "&fСтальные пластины"
+	"quest.4C89938DECC66BFF.quest_subtitle": "❄ Задание"
+	"quest.4C89938DECC66BFF.title": "&fПузырьки опыта"
 	"quest.4CA19838F7E722CF.quest_desc": [
 		"Sophisticated Backpacks: места станет намного больше."
 	]
-	"quest.4CA19838F7E722CF.title": "Рюкзак"
-	"quest.4CC3EF8575E6A3A6.title": "Ашлорд, Адский дракон"
+	"quest.4CA19838F7E722CF.quest_subtitle": "❄ Задание"
+	"quest.4CA19838F7E722CF.title": "&fРюкзак"
+	"quest.4CC3EF8575E6A3A6.quest_subtitle": "⚔ Босс"
+	"quest.4CC3EF8575E6A3A6.title": "&cАшлорд, Адский дракон"
 	"quest.4CDA5C7772B9B9BD.quest_desc": [
 		"Автоматическая добыча."
 	]
-	"quest.4CDA5C7772B9B9BD.title": "Механический бур"
-	"quest.4DDC86513145D2B4.title": "Баки из деша"
+	"quest.4CDA5C7772B9B9BD.quest_subtitle": "❄ Задание"
+	"quest.4CDA5C7772B9B9BD.title": "&fМеханический бур"
+	"quest.4CDB77120F2D810A.quest_subtitle": "❄ Задание"
+	"quest.4CDB77120F2D810A.title": "&fКристаллы Края"
+	"quest.4DDC86513145D2B4.quest_subtitle": "❄ Задание"
+	"quest.4DDC86513145D2B4.title": "&fБаки из деша"
 	"quest.4E7C67390A0001F5.quest_desc": [
 		"Высекатель AE2."
 	]
-	"quest.4E7C67390A0001F5.title": "Криосхемы"
-	"quest.4F65F5B219C32DB2.title": "Скалк"
-	"quest.4F9B643A147094AB.title": "Незерская перчатка"
+	"quest.4E7C67390A0001F5.quest_subtitle": "❄ Задание"
+	"quest.4E7C67390A0001F5.title": "&fКриосхемы"
+	"quest.4F44E71E2E4A471C.quest_desc": [
+		"В самый центр куба — синий лёд."
+	]
+	"quest.4F44E71E2E4A471C.quest_subtitle": "❄ Задание"
+	"quest.4F44E71E2E4A471C.title": "&fСердце кузни"
+	"quest.4F65F5B219C32DB2.quest_subtitle": "❄ Задание"
+	"quest.4F65F5B219C32DB2.title": "&fСкалк"
+	"quest.4F9B643A147094AB.quest_subtitle": "⚔ Босс"
+	"quest.4F9B643A147094AB.title": "&cНезерская перчатка"
 	"quest.4FA483E740BFF250.quest_desc": [
 		"&b«Мои металлы рождаются только в машинах разных миров. Пресс Create, высекатель AE2, камера Ars Nouveau, миксер с перегревом и стержни Powah — пусть все они поработают на меня.»"
 	]
-	"quest.4FA483E740BFF250.title": "Письмо Юки: кузня"
+	"quest.4FA483E740BFF250.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.4FA483E740BFF250.title": "&bПисьмо Юки: кузня"
 	"quest.502E7700D41E7EBD.quest_desc": [
 		"Вписывай заклинания в книги."
 	]
-	"quest.502E7700D41E7EBD.title": "Стол начертания"
-	"quest.5032AAEED1A6ABF8.title": "Лёд Луны"
+	"quest.502E7700D41E7EBD.quest_subtitle": "❄ Задание"
+	"quest.502E7700D41E7EBD.title": "&fСтол начертания"
+	"quest.5032AAEED1A6ABF8.quest_subtitle": "❄ Задание"
+	"quest.5032AAEED1A6ABF8.title": "&fЛёд Луны"
 	"quest.5032AC8E09C3563E.quest_desc": [
 		"Крафтер 9×9. Звезда дрожит — её нужно стабилизировать."
 	]
-	"quest.5032AC8E09C3563E.title": "Нестабильная звезда"
+	"quest.5032AC8E09C3563E.quest_subtitle": "❄ Задание"
+	"quest.5032AC8E09C3563E.title": "&fНестабильная звезда"
 	"quest.50C3DABE07C0F52A.quest_desc": [
 		"Повелитель грозовых облаков."
 	]
-	"quest.50C3DABE07C0F52A.title": "Око бури"
-	"quest.50F2C0DBF35ED8D5.title": "Эссенция инфериума"
+	"quest.50C3DABE07C0F52A.quest_subtitle": "⚔ Босс"
+	"quest.50C3DABE07C0F52A.title": "&cОко бури"
+	"quest.50F2C0DBF35ED8D5.quest_subtitle": "❄ Задание"
+	"quest.50F2C0DBF35ED8D5.title": "&fЭссенция инфериума"
 	"quest.510047D5A6A151CF.quest_desc": [
 		"Говорят, Луна из сыра. Это правда."
 	]
-	"quest.510047D5A6A151CF.title": "Лунный сыр"
+	"quest.510047D5A6A151CF.quest_subtitle": "❄ Задание"
+	"quest.510047D5A6A151CF.title": "&fЛунный сыр"
 	"quest.5147444E917BF372.quest_desc": [
 		"&b«Спасибо, Хранитель. Тень ушла, Сердце бьётся, звезда горит. Каждый год, когда в твоём мире пойдёт первый снег — знай, это я говорю тебе спасибо.»&r"
 		""
 		"&7— конец Легенды о Юки —"
 	]
-	"quest.5147444E917BF372.title": "Эпилог: Вечная зима"
+	"quest.5147444E917BF372.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.5147444E917BF372.title": "&6&lЭпилог: Вечная зима"
 	"quest.51481FD673C806CF.quest_desc": [
 		"&b«Пять планет. Пять стражей. Я жду.»"
 	]
-	"quest.51481FD673C806CF.title": "Сигнал"
-	"quest.5199126F71FE49E8.title": "Осколки авроры"
+	"quest.51481FD673C806CF.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.51481FD673C806CF.title": "&6&lСигнал"
+	"quest.5199126F71FE49E8.quest_subtitle": "❄ Задание"
+	"quest.5199126F71FE49E8.title": "&fОсколки авроры"
 	"quest.519CD6D3707C431C.quest_desc": [
 		"Теперь можно на Марс."
 	]
-	"quest.519CD6D3707C431C.title": "Ракета II"
-	"quest.51BAE74007A06215.title": "Большой меч из стали голема"
-	"quest.51CE083BED383F1C.title": "Мех ледяного барана"
+	"quest.519CD6D3707C431C.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.519CD6D3707C431C.title": "&6&lРакета II"
+	"quest.51BAE74007A06215.quest_subtitle": "❄ Задание"
+	"quest.51BAE74007A06215.title": "&fБольшой меч из стали голема"
+	"quest.51CE083BED383F1C.quest_subtitle": "❄ Задание"
+	"quest.51CE083BED383F1C.title": "&fМех ледяного барана"
 	"quest.521F54239380DFDD.quest_desc": [
 		"Пройди испытания королевы."
 	]
-	"quest.521F54239380DFDD.title": "Эссенция пчёл"
+	"quest.521F54239380DFDD.quest_subtitle": "❄ Задание"
+	"quest.521F54239380DFDD.title": "&fЭссенция пчёл"
 	"quest.527DE0FC2954985E.quest_desc": [
 		"Он станет основой Клинка Юки."
 	]
-	"quest.527DE0FC2954985E.title": "Целестиевый меч"
+	"quest.527DE0FC2954985E.quest_subtitle": "❄ Задание"
+	"quest.527DE0FC2954985E.title": "&fЦелестиевый меч"
 	"quest.52D155D89DA66E97.quest_desc": [
 		"Алтарь II. Радиус 16."
 	]
-	"quest.52D155D89DA66E97.title": "Небесный магнит"
-	"quest.52DF697BA5293791.title": "Сфера пророчества"
-	"quest.5315F0B11A4764F9.title": "Незеритовые ботинки"
-	"quest.532E15C9E404F13E.title": "Целестиевые блоки"
-	"quest.53503151A3C440EC.title": "Кислородная заправка"
-	"quest.536C9A0FB52E2B66.title": "Блоки пустоты"
+	"quest.52D155D89DA66E97.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.52D155D89DA66E97.title": "&6&lНебесный магнит"
+	"quest.52DF697BA5293791.quest_subtitle": "❄ Задание"
+	"quest.52DF697BA5293791.title": "&fСфера пророчества"
+	"quest.5315F0B11A4764F9.quest_subtitle": "❄ Задание"
+	"quest.5315F0B11A4764F9.title": "&fНезеритовые ботинки"
+	"quest.532E15C9E404F13E.quest_subtitle": "❄ Задание"
+	"quest.532E15C9E404F13E.title": "&fЦелестиевые блоки"
+	"quest.53503151A3C440EC.quest_subtitle": "❄ Задание"
+	"quest.53503151A3C440EC.title": "&fКислородная заправка"
+	"quest.536C9A0FB52E2B66.quest_subtitle": "❄ Задание"
+	"quest.536C9A0FB52E2B66.title": "&fБлоки пустоты"
 	"quest.5380C6D2314BCDF6.quest_desc": [
 		"Ходьба по рыхлому снегу, скорость на льду, мост изо льда на воде."
 	]
-	"quest.5380C6D2314BCDF6.title": "Снежные ботинки"
+	"quest.5380C6D2314BCDF6.quest_subtitle": "❄ Задание"
+	"quest.5380C6D2314BCDF6.title": "&fСнежные ботинки"
 	"quest.5391B6706A39263C.quest_desc": [
 		"Шагни в портал."
 	]
-	"quest.5391B6706A39263C.title": "Подземье"
+	"quest.5391B6706A39263C.quest_subtitle": "🌍 Новый мир"
+	"quest.5391B6706A39263C.title": "&aПодземье"
 	"quest.53B5F6E01F63A376.quest_desc": [
 		"Самая редкая руда. Плавится только в доменной печи."
 	]
-	"quest.53B5F6E01F63A376.title": "Звёздный свет"
-	"quest.53DC1B3811F9A011.title": "Яйцо бездны"
-	"quest.545392FCA255A17C.title": "Меч из морозной стали"
-	"quest.547E3D303CA15414.title": "Этрионная доменная печь"
-	"quest.54DF1F6858121221.title": "Кирка из клоггрума"
+	"quest.53B5F6E01F63A376.quest_subtitle": "❄ Задание"
+	"quest.53B5F6E01F63A376.title": "&fЗвёздный свет"
+	"quest.53DC1B3811F9A011.quest_subtitle": "❄ Задание"
+	"quest.53DC1B3811F9A011.title": "&fЯйцо бездны"
+	"quest.545392FCA255A17C.quest_subtitle": "❄ Задание"
+	"quest.545392FCA255A17C.title": "&fМеч из морозной стали"
+	"quest.547E3D303CA15414.quest_subtitle": "❄ Задание"
+	"quest.547E3D303CA15414.title": "&fЭтрионная доменная печь"
+	"quest.54DF1F6858121221.quest_subtitle": "❄ Задание"
+	"quest.54DF1F6858121221.title": "&fКирка из клоггрума"
 	"quest.55AD376EA5B78E28.quest_desc": [
 		"Нужна для Магического ядра."
 	]
-	"quest.55AD376EA5B78E28.title": "Эссенция пепла"
+	"quest.55AD376EA5B78E28.quest_subtitle": "❄ Задание"
+	"quest.55AD376EA5B78E28.title": "&fЭссенция пепла"
 	"quest.55B20846BB7241AF.quest_desc": [
 		"&b«Сестра... прости. Она была под чарами Тени.»"
 	]
-	"quest.55B20846BB7241AF.title": "Снежная Королева"
-	"quest.55CAA81395B7A832.title": "Слитки клоггрума"
+	"quest.55B20846BB7241AF.quest_subtitle": "⚔ Босс"
+	"quest.55B20846BB7241AF.title": "&cСнежная Королева"
+	"quest.55CAA81395B7A832.quest_subtitle": "❄ Задание"
+	"quest.55CAA81395B7A832.title": "&fСлитки клоггрума"
 	"quest.55DE91A3A8A85987.quest_desc": [
 		"Осторожно с радиацией!"
 	]
-	"quest.55DE91A3A8A85987.title": "Реактор деления"
+	"quest.55DE91A3A8A85987.quest_subtitle": "❄ Задание"
+	"quest.55DE91A3A8A85987.title": "&fРеактор деления"
 	"quest.56524DE68E642D5F.quest_desc": [
 		"&bВот оно — устройство, которое однажды соберёт моё Сердце.&r"
 		"Собери поле 5×5. Позже понадобится 9×9."
 	]
-	"quest.56524DE68E642D5F.title": "Механический крафтер"
-	"quest.56B3D8B72F17074C.title": "Компрессор"
-	"quest.56F2502044D9FE3B.title": "Пылающий глаз"
+	"quest.56524DE68E642D5F.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.56524DE68E642D5F.title": "&6&lМеханический крафтер"
+	"quest.56B3D8B72F17074C.quest_subtitle": "❄ Задание"
+	"quest.56B3D8B72F17074C.title": "&fКомпрессор"
+	"quest.56F2502044D9FE3B.quest_subtitle": "❄ Задание"
+	"quest.56F2502044D9FE3B.title": "&fПылающий глаз"
 	"quest.57130CB96C61DBFB.quest_desc": [
 		"Покатайся по пустыне."
 	]
-	"quest.57130CB96C61DBFB.title": "Марсоход"
+	"quest.57130CB96C61DBFB.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.57130CB96C61DBFB.title": "&6&lМарсоход"
 	"quest.577BA09A768779D1.quest_desc": [
 		"Замёрзшая цитадель."
 	]
-	"quest.577BA09A768779D1.title": "Маледиктус"
+	"quest.577BA09A768779D1.quest_subtitle": "⚔ Босс"
+	"quest.577BA09A768779D1.title": "&cМаледиктус"
 	"quest.579515FF21A103B6.quest_desc": [
 		"Основа последовательной сборки."
 	]
-	"quest.579515FF21A103B6.title": "Развёртыватель"
-	"quest.57C8294C7D337365.title": "Кристаллы времени"
+	"quest.579515FF21A103B6.quest_subtitle": "❄ Задание"
+	"quest.579515FF21A103B6.title": "&fРазвёртыватель"
+	"quest.57C8294C7D337365.quest_subtitle": "❄ Задание"
+	"quest.57C8294C7D337365.title": "&fКристаллы времени"
 	"quest.580624432B58D13E.quest_desc": [
 		"И ещё один — в океанских монументах."
 	]
-	"quest.580624432B58D13E.title": "Древний страж"
+	"quest.580624432B58D13E.quest_subtitle": "⚔ Босс"
+	"quest.580624432B58D13E.title": "&cДревний страж"
 	"quest.581EDDADF5EC7168.quest_desc": [
 		"Механический крафтер 5×5. Нужно 4 — по одному на Ядро."
 	]
-	"quest.581EDDADF5EC7168.title": "Морозные ядра"
+	"quest.581EDDADF5EC7168.quest_subtitle": "❄ Задание"
+	"quest.581EDDADF5EC7168.title": "&fМорозные ядра"
 	"quest.582DAA7E600C7630.quest_desc": [
 		"Apotheosis: зачарование сильнее ванильного."
 	]
-	"quest.582DAA7E600C7630.title": "Адские полки"
-	"quest.585866DA183FAE14.title": "Морозный шлем"
+	"quest.582DAA7E600C7630.quest_subtitle": "❄ Задание"
+	"quest.582DAA7E600C7630.title": "&fАдские полки"
+	"quest.585866DA183FAE14.quest_subtitle": "❄ Задание"
+	"quest.585866DA183FAE14.title": "&fМорозный шлем"
 	"quest.58586966F2F51156.quest_desc": [
 		"Поглощение урона."
 	]
-	"quest.58586966F2F51156.title": "Пряники"
-	"quest.58A5F36B89638B41.title": "Бронзовый ключ"
+	"quest.58586966F2F51156.quest_subtitle": "❄ Задание"
+	"quest.58586966F2F51156.title": "&fПряники"
+	"quest.58A5F36B89638B41.quest_subtitle": "❄ Задание"
+	"quest.58A5F36B89638B41.title": "&fБронзовый ключ"
 	"quest.58D8E6E688F3E262.quest_desc": [
 		"4 колонны по диагонали (±2, ±2): 2 морозных блока."
 	]
-	"quest.58D8E6E688F3E262.title": "Морозные колонны"
-	"quest.593F69577F89AAC7.title": "Атомные сплавы"
+	"quest.58D8E6E688F3E262.quest_subtitle": "❄ Задание"
+	"quest.58D8E6E688F3E262.title": "&fМорозные колонны"
+	"quest.593F69577F89AAC7.quest_subtitle": "❄ Задание"
+	"quest.593F69577F89AAC7.title": "&fАтомные сплавы"
 	"quest.597844408810A3BF.quest_desc": [
 		"Древние города глубин."
 	]
-	"quest.597844408810A3BF.title": "Осколки эха"
+	"quest.597844408810A3BF.quest_subtitle": "❄ Задание"
+	"quest.597844408810A3BF.title": "&fОсколки эха"
 	"quest.59C2B4CDED85D60C.quest_desc": [
 		"&bЧувствуешь? Это мой холод."
 	]
-	"quest.59C2B4CDED85D60C.title": "Морозная сталь"
+	"quest.59C2B4CDED85D60C.quest_subtitle": "❄ Задание"
+	"quest.59C2B4CDED85D60C.title": "&fМорозная сталь"
 	"quest.5A20679FBE7AE44C.quest_desc": [
 		"&b«Маленький шаг для Хранителя…»"
 	]
-	"quest.5A20679FBE7AE44C.title": "Посадка на Луну"
+	"quest.5A20679FBE7AE44C.quest_subtitle": "🌍 Новый мир"
+	"quest.5A20679FBE7AE44C.title": "&aПосадка на Луну"
 	"quest.5A4A2DF6799D5566.quest_desc": [
 		"Ускоритель времени (как в ATM): машины и растения вокруг работают в 4 раза быстрее."
 	]
-	"quest.5A4A2DF6799D5566.title": "Часы Юки"
+	"quest.5A4A2DF6799D5566.quest_subtitle": "❄ Задание"
+	"quest.5A4A2DF6799D5566.title": "&fЧасы Юки"
 	"quest.5A9E3C9BD056878F.quest_desc": [
 		"Основа всех ранних машин Create."
 	]
-	"quest.5A9E3C9BD056878F.title": "Андезитовый сплав"
-	"quest.5AA0925D512ABC14.title": "Ауриевая кирка"
+	"quest.5A9E3C9BD056878F.quest_subtitle": "❄ Задание"
+	"quest.5A9E3C9BD056878F.title": "&fАндезитовый сплав"
+	"quest.5AA0925D512ABC14.quest_subtitle": "❄ Задание"
+	"quest.5AA0925D512ABC14.title": "&fАуриевая кирка"
 	"quest.5ADAB3EEAE343A0C.quest_desc": [
 		"&b«Спасибо, Хранитель. Чувствуешь? Стало чуть холоднее. Это я улыбаюсь.»"
 	]
-	"quest.5ADAB3EEAE343A0C.title": "С Новым годом!"
+	"quest.5ADAB3EEAE343A0C.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.5ADAB3EEAE343A0C.title": "&6&lС Новым годом!"
 	"quest.5B4E05B3C716193D.quest_desc": [
 		"Голодный Хранитель далеко не уйдёт."
 	]
-	"quest.5B4E05B3C716193D.title": "Сытный ужин"
+	"quest.5B4E05B3C716193D.quest_subtitle": "❄ Задание"
+	"quest.5B4E05B3C716193D.title": "&fСытный ужин"
 	"quest.5B6B3BB569FC11C9.quest_desc": [
 		"Она понадобится, чтобы добыть руды Энда."
 	]
-	"quest.5B6B3BB569FC11C9.title": "Алмазная кирка"
-	"quest.5BA68FBA608AB523.title": "Курсиум"
-	"quest.5BCFDCDA963745B7.title": "Супремиум"
+	"quest.5B6B3BB569FC11C9.quest_subtitle": "❄ Задание"
+	"quest.5B6B3BB569FC11C9.title": "&fАлмазная кирка"
+	"quest.5BA68FBA608AB523.quest_subtitle": "❄ Задание"
+	"quest.5BA68FBA608AB523.title": "&fКурсиум"
+	"quest.5BCFDCDA963745B7.quest_subtitle": "❄ Задание"
+	"quest.5BCFDCDA963745B7.title": "&fСупремиум"
 	"quest.5BE94FA97EE7D521.quest_desc": [
 		"&b«Мой свет хранит память обо всём. Машины AE2 умеют запоминать материю — а их высекатель напечатает Криосхемы, которые выдержат холод Энда.»"
 	]
-	"quest.5BE94FA97EE7D521.title": "Письмо Юки: память"
+	"quest.5BE94FA97EE7D521.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.5BE94FA97EE7D521.title": "&bПисьмо Юки: память"
 	"quest.5C0F39BBA4C92698.quest_desc": [
 		"Двор Наги."
 	]
-	"quest.5C0F39BBA4C92698.title": "Нага"
+	"quest.5C0F39BBA4C92698.quest_subtitle": "⚔ Босс"
+	"quest.5C0F39BBA4C92698.title": "&cНага"
 	"quest.5C23435689011345.quest_desc": [
 		"Warden тоже хранит осколок."
 	]
-	"quest.5C23435689011345.title": "Хранитель глубин"
-	"quest.5C24A2EDD27EF117.title": "Звезда души"
+	"quest.5C23435689011345.quest_subtitle": "⚔ Босс"
+	"quest.5C23435689011345.title": "&cХранитель глубин"
+	"quest.5C24A2EDD27EF117.quest_subtitle": "❄ Задание"
+	"quest.5C24A2EDD27EF117.title": "&fЗвезда души"
 	"quest.5C8F6257098275AB.quest_desc": [
 		"С них падают подарки."
 	]
-	"quest.5C8F6257098275AB.title": "Зимние бродяги"
+	"quest.5C8F6257098275AB.quest_subtitle": "⚔ Босс"
+	"quest.5C8F6257098275AB.title": "&cЗимние бродяги"
 	"quest.5CC9B6CBD1B48A8F.quest_desc": [
 		"Башня тьмы."
 	]
-	"quest.5CC9B6CBD1B48A8F.title": "Карминит"
+	"quest.5CC9B6CBD1B48A8F.quest_subtitle": "❄ Задание"
+	"quest.5CC9B6CBD1B48A8F.title": "&fКарминит"
 	"quest.5CD3AAB2AC502B29.quest_desc": [
 		"&b«Сила — это хорошо, а удобство — ещё лучше. Вот мои маленькие изобретения.»"
 	]
-	"quest.5CD3AAB2AC502B29.title": "Письмо Юки: мастерская"
+	"quest.5CD3AAB2AC502B29.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.5CD3AAB2AC502B29.title": "&bПисьмо Юки: мастерская"
 	"quest.5CEDDE55069DA850.quest_desc": [
 		"&aТвой первый корабль!"
 	]
-	"quest.5CEDDE55069DA850.title": "Ракета I"
-	"quest.5CFAA74AD68B8DFE.title": "Сферы улучшения"
-	"quest.5D43846CD072EDFD.title": "Двигатель из острума"
-	"quest.5D7100F19C67B7D4.title": "Перчатка стража"
+	"quest.5CEDDE55069DA850.quest_subtitle": "❄ Задание"
+	"quest.5CEDDE55069DA850.title": "&fРакета I"
+	"quest.5CFAA74AD68B8DFE.quest_subtitle": "❄ Задание"
+	"quest.5CFAA74AD68B8DFE.title": "&fСферы улучшения"
+	"quest.5D43846CD072EDFD.quest_subtitle": "❄ Задание"
+	"quest.5D43846CD072EDFD.title": "&fДвигатель из острума"
+	"quest.5D7100F19C67B7D4.quest_subtitle": "❄ Задание"
+	"quest.5D7100F19C67B7D4.title": "&fПерчатка стража"
 	"quest.5D771BC1799315FC.quest_desc": [
 		"Настоящая мощь Create."
 	]
-	"quest.5D771BC1799315FC.title": "Паровой двигатель"
-	"quest.5D7C94E9272844CF.title": "Ячейки 64k"
+	"quest.5D771BC1799315FC.quest_subtitle": "❄ Задание"
+	"quest.5D771BC1799315FC.title": "&fПаровой двигатель"
+	"quest.5D7C94E9272844CF.quest_subtitle": "❄ Задание"
+	"quest.5D7C94E9272844CF.title": "&fЯчейки 64k"
 	"quest.5DC5EFD09E742A75.quest_desc": [
 		"&b«Самые древние чудовища спят в забытых храмах. Их сила — последняя проверка перед звёздами.»"
 	]
-	"quest.5DC5EFD09E742A75.title": "Письмо Юки: катаклизм"
+	"quest.5DC5EFD09E742A75.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.5DC5EFD09E742A75.title": "&bПисьмо Юки: катаклизм"
 	"quest.5DD7EE14F63BB31B.quest_desc": [
 		"&b«В старые времена гномы-механики строили машины из шестерёнок и вала. Только их механический крафтер может собрать вещи размером больше верстака. Научись этому.»"
 	]
-	"quest.5DD7EE14F63BB31B.title": "Письмо Юки: механизмы"
+	"quest.5DD7EE14F63BB31B.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.5DD7EE14F63BB31B.title": "&bПисьмо Юки: механизмы"
 	"quest.5DE99AB927DA89E1.quest_desc": [
 		"Четыре обелиска в 6 блоках от алтаря: 3 целестия + лампа."
 	]
-	"quest.5DE99AB927DA89E1.title": "Обелиски"
+	"quest.5DE99AB927DA89E1.quest_subtitle": "❄ Задание"
+	"quest.5DE99AB927DA89E1.title": "&fОбелиски"
+	"quest.5DFEF27ADEB7E379.quest_desc": [
+		"Кузне нужна энергия: криогенераторы или любые FE-генераторы."
+	]
+	"quest.5DFEF27ADEB7E379.quest_subtitle": "❄ Задание"
+	"quest.5DFEF27ADEB7E379.title": "&fПитание кузни"
 	"quest.5E98BFBD6C83C698.quest_desc": [
 		"&b«Теперь — главное. Четыре Ядра: разум машин, шёпот магии, дыхание жизни и память миров. Каждое собирается на механическом крафтере 7×7 вокруг Морозного ядра.»"
 	]
-	"quest.5E98BFBD6C83C698.title": "Письмо Юки: ядра"
+	"quest.5E98BFBD6C83C698.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.5E98BFBD6C83C698.title": "&bПисьмо Юки: ядра"
 	"quest.5EDFC0B1DBCEC9E3.quest_desc": [
 		"Сети IE передают энергию."
 	]
-	"quest.5EDFC0B1DBCEC9E3.title": "Медный провод"
+	"quest.5EDFC0B1DBCEC9E3.quest_subtitle": "❄ Задание"
+	"quest.5EDFC0B1DBCEC9E3.title": "&fМедный провод"
 	"quest.5F11191CD5211F13.quest_desc": [
 		"Oritech."
 	]
-	"quest.5F11191CD5211F13.title": "Перезаряженные кристаллы"
+	"quest.5F11191CD5211F13.quest_subtitle": "❄ Задание"
+	"quest.5F11191CD5211F13.title": "&fПерезаряженные кристаллы"
 	"quest.5F5287AC76B838E8.quest_desc": [
 		"Нужно 4 на каждое Ядро — 16 всего!"
 	]
-	"quest.5F5287AC76B838E8.title": "Ауриевые блоки"
+	"quest.5F5287AC76B838E8.quest_subtitle": "❄ Задание"
+	"quest.5F5287AC76B838E8.title": "&fАуриевые блоки"
 	"quest.5FDB32FF3C25FC4B.quest_desc": [
 		"Затонувший город."
 	]
-	"quest.5FDB32FF3C25FC4B.title": "Левиафан"
-	"quest.5FEEBBE7CD91F387.title": "Пламязолото"
+	"quest.5FDB32FF3C25FC4B.quest_subtitle": "⚔ Босс"
+	"quest.5FDB32FF3C25FC4B.title": "&cЛевиафан"
+	"quest.5FEEBBE7CD91F387.quest_subtitle": "❄ Задание"
+	"quest.5FEEBBE7CD91F387.title": "&fПламязолото"
 	"quest.6057A4A26F053470.quest_desc": [
 		"Нужны для Сердца YukiWorld."
 	]
-	"quest.6057A4A26F053470.title": "Кристаллы времени"
+	"quest.6057A4A26F053470.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.6057A4A26F053470.title": "&6&lКристаллы времени"
 	"quest.6170EAC330F84970.quest_desc": [
 		"Управляй вращением точно."
 	]
-	"quest.6170EAC330F84970.title": "Регулятор скорости"
+	"quest.6170EAC330F84970.quest_subtitle": "❄ Задание"
+	"quest.6170EAC330F84970.title": "&fРегулятор скорости"
 	"quest.61820C5AB0D57A62.quest_desc": [
 		"&5«Я снова слышу шёпот заклинаний.»&r"
 	]
-	"quest.61820C5AB0D57A62.title": "✨ Магическое ядро"
-	"quest.62446C63F2D25F42.title": "Центрифуга"
+	"quest.61820C5AB0D57A62.quest_subtitle": "❄ Задание"
+	"quest.61820C5AB0D57A62.title": "&f✨ Магическое ядро"
+	"quest.62446C63F2D25F42.quest_subtitle": "❄ Задание"
+	"quest.62446C63F2D25F42.title": "&fЦентрифуга"
 	"quest.624DA7FF1CDA6DA5.quest_desc": [
 		"Каждый игровой день открывай окошко — внутри подарок. Каждое 7-е окошко — большой подарок!"
 	]
-	"quest.624DA7FF1CDA6DA5.title": "Адвент-календарь"
-	"quest.6251FCD4B1BD8122.title": "Блоки маточного молочка"
+	"quest.624DA7FF1CDA6DA5.quest_subtitle": "❄ Задание"
+	"quest.624DA7FF1CDA6DA5.title": "&fАдвент-календарь"
+	"quest.6251FCD4B1BD8122.quest_subtitle": "❄ Задание"
+	"quest.6251FCD4B1BD8122.title": "&fБлоки маточного молочка"
 	"quest.627AE82C557158B2.quest_desc": [
 		"Алтарь II умеет превращать пиролит в калорит."
 	]
-	"quest.627AE82C557158B2.title": "Калорит из пиролита"
+	"quest.627AE82C557158B2.quest_subtitle": "❄ Задание"
+	"quest.627AE82C557158B2.title": "&fКалорит из пиролита"
 	"quest.628B1ECA1C2E00BF.quest_desc": [
 		"Bosses'Rise."
 	]
-	"quest.628B1ECA1C2E00BF.title": "Скор, Йети"
-	"quest.629A9B015654D240.title": "Лунный камень"
+	"quest.628B1ECA1C2E00BF.quest_subtitle": "⚔ Босс"
+	"quest.628B1ECA1C2E00BF.title": "&cСкор, Йети"
+	"quest.629A9B015654D240.quest_subtitle": "❄ Задание"
+	"quest.629A9B015654D240.title": "&fЛунный камень"
 	"quest.62C9F6A082D12078.quest_desc": [
 		"Нужны для целестия."
 	]
-	"quest.62C9F6A082D12078.title": "Кристаллы Края"
-	"quest.62D40FEDCC84C9F0.title": "Звёздный голем"
-	"quest.6328051303C87F7D.title": "Слитки острума"
+	"quest.62C9F6A082D12078.quest_subtitle": "❄ Задание"
+	"quest.62C9F6A082D12078.title": "&fКристаллы Края"
+	"quest.62D40FEDCC84C9F0.quest_subtitle": "⚔ Босс"
+	"quest.62D40FEDCC84C9F0.title": "&cЗвёздный голем"
+	"quest.6328051303C87F7D.quest_subtitle": "❄ Задание"
+	"quest.6328051303C87F7D.title": "&fСлитки острума"
+	"quest.6372CB9D8334380E.quest_desc": [
+		"Четыре лампы Юки — в верхние углы."
+	]
+	"quest.6372CB9D8334380E.quest_subtitle": "❄ Задание"
+	"quest.6372CB9D8334380E.title": "&fВенцы кузни"
 	"quest.63E5DD2D5D947429.quest_desc": [
 		"Жара 280°. Нужен незеритовый скафандр или реактивный костюм."
 	]
-	"quest.63E5DD2D5D947429.title": "Пиролит"
-	"quest.640E6DB3DB2AF490.title": "Пруденциум"
-	"quest.64375BB4F173CCB1.title": "Регалиум"
-	"quest.645596F0E484522F.title": "Морозная кирка"
+	"quest.63E5DD2D5D947429.quest_subtitle": "🌍 Новый мир"
+	"quest.63E5DD2D5D947429.title": "&aПиролит"
+	"quest.640E6DB3DB2AF490.quest_subtitle": "❄ Задание"
+	"quest.640E6DB3DB2AF490.title": "&fПруденциум"
+	"quest.64375BB4F173CCB1.quest_subtitle": "❄ Задание"
+	"quest.64375BB4F173CCB1.title": "&fРегалиум"
+	"quest.645596F0E484522F.quest_subtitle": "❄ Задание"
+	"quest.645596F0E484522F.title": "&fМорозная кирка"
 	"quest.646A874E4DB7DBC9.quest_desc": [
 		"&b«Шестерни — лишь начало. Чтобы выдержать холод Энда, нужна сталь, а чтобы понять материю — Mekanism. Не бойся больших машин.»"
 	]
-	"quest.646A874E4DB7DBC9.title": "Письмо Юки: сталь"
+	"quest.646A874E4DB7DBC9.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.646A874E4DB7DBC9.title": "&bПисьмо Юки: сталь"
 	"quest.64A877D4E6AFFA4D.quest_desc": [
 		"Древний голем руин."
 	]
-	"quest.64A877D4E6AFFA4D.title": "Забытый страж"
+	"quest.64A877D4E6AFFA4D.quest_subtitle": "⚔ Босс"
+	"quest.64A877D4E6AFFA4D.title": "&cЗабытый страж"
 	"quest.64F2630EBEF3C144.quest_desc": [
 		"Креативная ячейка AE2 — звезда не тратится."
 	]
-	"quest.64F2630EBEF3C144.title": "Бесконечная сеть"
+	"quest.64F2630EBEF3C144.quest_subtitle": "❄ Задание"
+	"quest.64F2630EBEF3C144.title": "&fБесконечная сеть"
 	"quest.6516B3FBF1469BD3.quest_desc": [
 		"Автокрафт!"
 	]
-	"quest.6516B3FBF1469BD3.title": "Молекулярный сборщик"
-	"quest.654AA7FC239B398B.title": "Утериевая броня"
+	"quest.6516B3FBF1469BD3.quest_subtitle": "❄ Задание"
+	"quest.6516B3FBF1469BD3.title": "&fМолекулярный сборщик"
+	"quest.654AA7FC239B398B.quest_subtitle": "❄ Задание"
+	"quest.654AA7FC239B398B.title": "&fУтериевая броня"
 	"quest.6560D2430BC25D72.quest_desc": [
 		"Заряжающий стержень Powah, 25 млн FE."
 	]
-	"quest.6560D2430BC25D72.title": "Целестий"
+	"quest.6560D2430BC25D72.quest_subtitle": "❄ Задание"
+	"quest.6560D2430BC25D72.title": "&fЦелестий"
 	"quest.65648CC8514B5C20.quest_desc": [
 		"Руины в Энде."
 	]
-	"quest.65648CC8514B5C20.title": "Страж Энда"
+	"quest.65648CC8514B5C20.quest_subtitle": "⚔ Босс"
+	"quest.65648CC8514B5C20.title": "&cСтраж Энда"
 	"quest.65BAA6269A349C4D.quest_desc": [
 		"Плод демонического сна откроет Иной мир."
 	]
-	"quest.65BAA6269A349C4D.title": "Семена дурмана"
-	"quest.661547B5CC141D0C.title": "Ядро пустоты"
-	"quest.662C02C5E226E70D.title": "Пластины острума"
+	"quest.65BAA6269A349C4D.quest_subtitle": "❄ Задание"
+	"quest.65BAA6269A349C4D.title": "&fСемена дурмана"
+	"quest.661547B5CC141D0C.quest_subtitle": "❄ Задание"
+	"quest.661547B5CC141D0C.title": "&fЯдро пустоты"
+	"quest.662C02C5E226E70D.quest_subtitle": "❄ Задание"
+	"quest.662C02C5E226E70D.title": "&fПластины острума"
 	"quest.663A789EE5784BFC.quest_desc": [
 		"&b«Хранитель, люди забыли зиму, но не забыли Новый год. Пока горят ёлки, во мне живёт надежда. Устроим праздник — он даст нам силы!»"
 	]
-	"quest.663A789EE5784BFC.title": "Письмо Юки: праздник"
+	"quest.663A789EE5784BFC.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.663A789EE5784BFC.title": "&bПисьмо Юки: праздник"
 	"quest.6667B2BBB2A54799.quest_desc": [
 		"&oТы просыпаешься на холодной траве. Снега нет — но ты слышишь его тихий шорох.&r"
 		""
@@ -1336,269 +1842,412 @@
 		""
 		"«Я дам тебе Летопись — в ней вся история. Иди по моим следам, и мы вернём зиму вместе.»"
 	]
-	"quest.6667B2BBB2A54799.title": "Голос в снегу"
+	"quest.6667B2BBB2A54799.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.6667B2BBB2A54799.title": "&bГолос в снегу"
 	"quest.669DAD52966A5D33.quest_desc": [
 		"&b«Это мои слёзы. Береги их.»"
 	]
-	"quest.669DAD52966A5D33.title": "Кристаллы Юки"
+	"quest.669DAD52966A5D33.quest_subtitle": "❄ Задание"
+	"quest.669DAD52966A5D33.title": "&fКристаллы Юки"
 	"quest.66BC49EEE446E7A9.quest_desc": [
 		"-180°. Тьма."
 	]
-	"quest.66BC49EEE446E7A9.title": "Никта"
+	"quest.66BC49EEE446E7A9.quest_subtitle": "🌍 Новый мир"
+	"quest.66BC49EEE446E7A9.title": "&aНикта"
 	"quest.66BE88C684F58D2A.quest_desc": [
 		"Шёлковым касанием."
 	]
-	"quest.66BE88C684F58D2A.title": "Руда вечной мерзлоты"
-	"quest.66DCE3498654D955.title": "Снежный шар"
+	"quest.66BE88C684F58D2A.quest_subtitle": "❄ Задание"
+	"quest.66BE88C684F58D2A.title": "&fРуда вечной мерзлоты"
+	"quest.66DCE3498654D955.quest_subtitle": "❄ Задание"
+	"quest.66DCE3498654D955.title": "&fСнежный шар"
 	"quest.66FB55AC62505D09.quest_desc": [
 		"&b«Лес свободен. Теперь поднимись в небо — к Aether.»"
 	]
-	"quest.66FB55AC62505D09.title": "Сумерки рассеялись"
-	"quest.672428E1F501481B.title": "Стержни ифрита"
-	"quest.68029CF7D1880D84.title": "Продвинутая рама"
-	"quest.6824B25707E49685.title": "Морские полки"
+	"quest.66FB55AC62505D09.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.66FB55AC62505D09.title": "&6&lСумерки рассеялись"
+	"quest.672428E1F501481B.quest_subtitle": "❄ Задание"
+	"quest.672428E1F501481B.title": "&fСтержни ифрита"
+	"quest.68029CF7D1880D84.quest_subtitle": "❄ Задание"
+	"quest.68029CF7D1880D84.title": "&fПродвинутая рама"
+	"quest.6824B25707E49685.quest_subtitle": "❄ Задание"
+	"quest.6824B25707E49685.title": "&fМорские полки"
 	"quest.689279AEE4455B31.quest_desc": [
 		"Пятнадцать полок — и чары станут сильнее."
 	]
-	"quest.689279AEE4455B31.title": "Библиотека"
-	"quest.6898A0F6D4C29827.title": "Второе Пепельное ядро"
-	"quest.68B6577A53064DF4.title": "Скафандр: шлем"
-	"quest.68BB3D51DCD29A6F.title": "Энд"
-	"quest.6934102A3FEC2974.title": "Вторая Корона Метели"
-	"quest.6968A9E45ABC0ED7.title": "Газовые генераторы"
+	"quest.689279AEE4455B31.quest_subtitle": "❄ Задание"
+	"quest.689279AEE4455B31.title": "&fБиблиотека"
+	"quest.6898A0F6D4C29827.quest_subtitle": "❄ Задание"
+	"quest.6898A0F6D4C29827.title": "&fВторое Пепельное ядро"
+	"quest.68B6577A53064DF4.quest_subtitle": "❄ Задание"
+	"quest.68B6577A53064DF4.title": "&fСкафандр: шлем"
+	"quest.68BB3D51DCD29A6F.quest_subtitle": "🌍 Новый мир"
+	"quest.68BB3D51DCD29A6F.title": "&aЭнд"
+	"quest.6934102A3FEC2974.quest_subtitle": "❄ Задание"
+	"quest.6934102A3FEC2974.title": "&fВторая Корона Метели"
+	"quest.6968A9E45ABC0ED7.quest_subtitle": "❄ Задание"
+	"quest.6968A9E45ABC0ED7.title": "&fГазовые генераторы"
 	"quest.69B4A66D7D132C6C.quest_desc": [
 		"Серебряное подземелье."
 	]
-	"quest.69B4A66D7D132C6C.title": "Королева валькирий"
-	"quest.6A0A431958C2F00E.title": "Скипетр жизни"
-	"quest.6A33332C4D632F71.title": "Зачаровывающий аппарат"
+	"quest.69B4A66D7D132C6C.quest_subtitle": "⚔ Босс"
+	"quest.69B4A66D7D132C6C.title": "&cКоролева валькирий"
+	"quest.6A0A431958C2F00E.quest_subtitle": "❄ Задание"
+	"quest.6A0A431958C2F00E.title": "&fСкипетр жизни"
+	"quest.6A33332C4D632F71.quest_subtitle": "❄ Задание"
+	"quest.6A33332C4D632F71.title": "&fЗачаровывающий аппарат"
 	"quest.6A4D6A8C353F8326.quest_desc": [
 		"&b«Облака помнят мой снег. Но в небесных подземельях засели те, кто охраняет украденные ключи.»"
 	]
-	"quest.6A4D6A8C353F8326.title": "Письмо Юки: небо"
+	"quest.6A4D6A8C353F8326.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.6A4D6A8C353F8326.title": "&bПисьмо Юки: небо"
+	"quest.6A6EBD85F2733E9E.quest_desc": [
+		"&d«Посмотри на небо Авроры. Оно снова поёт. Спасибо!»&r"
+		""
+		"&6♥ Sintara — спасибо, что ты с нами!"
+	]
+	"quest.6A6EBD85F2733E9E.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.6A6EBD85F2733E9E.title": "&6&lСияние вернулось"
 	"quest.6AD0AB309DA675A2.quest_desc": [
 		"&d«Оно бьётся... Хранитель, ты вернул мне Сердце.»&r"
 	]
-	"quest.6AD0AB309DA675A2.title": "❤ Сердце YukiWorld"
+	"quest.6AD0AB309DA675A2.quest_subtitle": "❄ Задание"
+	"quest.6AD0AB309DA675A2.title": "&f❤ Сердце YukiWorld"
 	"quest.6B418C61852CA884.quest_desc": [
 		"&b«Покойся, подруга.»"
 	]
-	"quest.6B418C61852CA884.title": "Корона Метели"
+	"quest.6B418C61852CA884.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.6B418C61852CA884.title": "&6&lКорона Метели"
 	"quest.6B74CBCC1A93549E.quest_desc": [
 		"Победи вызывателей в особняках и рейдах."
 	]
-	"quest.6B74CBCC1A93549E.title": "Тотем бессмертия"
-	"quest.6B82391B6FE208C6.title": "Ёлочные игрушки"
-	"quest.6B95DBDEE44B0B9D.title": "Синий лёд для генератора"
-	"quest.6BADCCA7BF05573B.title": "Бесконечный Powah"
-	"quest.6C5DD520951ABAD7.title": "Камень Глацио"
+	"quest.6B74CBCC1A93549E.quest_subtitle": "❄ Задание"
+	"quest.6B74CBCC1A93549E.title": "&fТотем бессмертия"
+	"quest.6B82391B6FE208C6.quest_subtitle": "❄ Задание"
+	"quest.6B82391B6FE208C6.title": "&fЁлочные игрушки"
+	"quest.6B95DBDEE44B0B9D.quest_subtitle": "❄ Задание"
+	"quest.6B95DBDEE44B0B9D.title": "&fСиний лёд для генератора"
+	"quest.6BADCCA7BF05573B.quest_subtitle": "❄ Задание"
+	"quest.6BADCCA7BF05573B.title": "&fБесконечный Powah"
+	"quest.6C5DD520951ABAD7.quest_subtitle": "❄ Задание"
+	"quest.6C5DD520951ABAD7.title": "&fКамень Глацио"
 	"quest.6C7A0F65AB76E55E.quest_desc": [
 		"&bИменно в нём рождаются Криосхемы."
 	]
-	"quest.6C7A0F65AB76E55E.title": "Высекатель"
+	"quest.6C7A0F65AB76E55E.quest_subtitle": "❄ Задание"
+	"quest.6C7A0F65AB76E55E.title": "&fВысекатель"
+	"quest.6C8E90AF61CA3170.quest_desc": [
+		"Топливо: от кристаллов Юки (400 FE/т) до звёздных осколков (10 000 FE/т)."
+	]
+	"quest.6C8E90AF61CA3170.quest_subtitle": "❄ Задание"
+	"quest.6C8E90AF61CA3170.title": "&fЗвёздный реактор"
 	"quest.6CBF93A2E50AB8A4.quest_desc": [
 		"Победи Вилдена-химеру. Нужно 4 дани для ядра!"
 	]
-	"quest.6CBF93A2E50AB8A4.title": "Дань Вилдена"
+	"quest.6CBF93A2E50AB8A4.quest_subtitle": "❄ Задание"
+	"quest.6CBF93A2E50AB8A4.title": "&fДань Вилдена"
 	"quest.6CC0838C3D3C1521.quest_desc": [
 		"EvilCraft: тёмная руда глубин."
 	]
-	"quest.6CC0838C3D3C1521.title": "Тёмные камни"
-	"quest.6CF5A0C3F0638E0B.title": "Золотой ключ"
+	"quest.6CC0838C3D3C1521.quest_subtitle": "❄ Задание"
+	"quest.6CC0838C3D3C1521.title": "&fТёмные камни"
+	"quest.6CF5A0C3F0638E0B.quest_subtitle": "❄ Задание"
+	"quest.6CF5A0C3F0638E0B.title": "&fЗолотой ключ"
 	"quest.6D0C43B5829C58D3.quest_desc": [
 		"Хранилище магической энергии."
 	]
-	"quest.6D0C43B5829C58D3.title": "Сосуды источника"
-	"quest.6D1E566A6D6FC04B.title": "Копьё валькирии"
+	"quest.6D0C43B5829C58D3.quest_subtitle": "❄ Задание"
+	"quest.6D0C43B5829C58D3.title": "&fСосуды источника"
+	"quest.6D1E566A6D6FC04B.quest_subtitle": "❄ Задание"
+	"quest.6D1E566A6D6FC04B.title": "&fКопьё валькирии"
 	"quest.6D4E4D30D24AF92F.quest_desc": [
 		"Полный комплект: скорость и иммунитет к холоду."
 	]
-	"quest.6D4E4D30D24AF92F.title": "Морозные ботинки"
+	"quest.6D4E4D30D24AF92F.quest_subtitle": "❄ Задание"
+	"quest.6D4E4D30D24AF92F.title": "&fМорозные ботинки"
 	"quest.6D58F526B8535594.quest_desc": [
 		"&b«Снег... Ты слышишь? Снова идёт снег.»&r"
 		""
 		"&dЗима вернулась. Ты прошёл YukiWorld.&r"
 		"Звезда даёт полёт, а в креативных рецептах не тратится."
 	]
-	"quest.6D58F526B8535594.title": "⭐ Бесконечная звезда Юки"
-	"quest.6DCCD6DBFDACD90D.title": "Блоки мёда"
-	"quest.6DE0BF509D611702.title": "Замёрзший ключ"
+	"quest.6D58F526B8535594.quest_subtitle": "❄ Задание"
+	"quest.6D58F526B8535594.title": "&f⭐ Бесконечная звезда Юки"
+	"quest.6DCCD6DBFDACD90D.quest_subtitle": "❄ Задание"
+	"quest.6DCCD6DBFDACD90D.title": "&fБлоки мёда"
+	"quest.6DE0BF509D611702.quest_subtitle": "❄ Задание"
+	"quest.6DE0BF509D611702.title": "&fЗамёрзший ключ"
 	"quest.6E59797B34CAB80C.quest_desc": [
 		"Редкий металл глубин."
 	]
-	"quest.6E59797B34CAB80C.title": "Мифрил"
+	"quest.6E59797B34CAB80C.quest_subtitle": "❄ Задание"
+	"quest.6E59797B34CAB80C.title": "&fМифрил"
 	"quest.6E8D8D87E3D8F23D.quest_desc": [
 		"Кузнечный стол: алмаз → мороз."
 	]
-	"quest.6E8D8D87E3D8F23D.title": "Шаблон мороза"
+	"quest.6E8D8D87E3D8F23D.quest_subtitle": "❄ Задание"
+	"quest.6E8D8D87E3D8F23D.title": "&fШаблон мороза"
 	"quest.6EA6BC3900B1C24F.quest_desc": [
 		"Топливо для печи и факелов."
 	]
-	"quest.6EA6BC3900B1C24F.title": "Уголь"
-	"quest.6EB34EEA5BF6A04B.title": "Панцири шалкеров"
-	"quest.6ECAEFBE44358310.title": "Продвинутая схема"
+	"quest.6EA6BC3900B1C24F.quest_subtitle": "❄ Задание"
+	"quest.6EA6BC3900B1C24F.title": "&fУголь"
+	"quest.6EB34EEA5BF6A04B.quest_subtitle": "❄ Задание"
+	"quest.6EB34EEA5BF6A04B.title": "&fПанцири шалкеров"
+	"quest.6ECAEFBE44358310.quest_subtitle": "❄ Задание"
+	"quest.6ECAEFBE44358310.title": "&fПродвинутая схема"
 	"quest.6EE69BCB5F806924.quest_desc": [
 		"Они понадобятся, чтобы призвать Иссушителя."
 	]
-	"quest.6EE69BCB5F806924.title": "Черепа скелетов-иссушителей"
+	"quest.6EE69BCB5F806924.quest_subtitle": "❄ Задание"
+	"quest.6EE69BCB5F806924.title": "&fЧерепа скелетов-иссушителей"
 	"quest.6EFDC129A5E655C8.quest_desc": [
 		"Компонент Аурония."
 	]
-	"quest.6EFDC129A5E655C8.title": "Очищенный обсидиан"
+	"quest.6EFDC129A5E655C8.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.6EFDC129A5E655C8.title": "&6&lОчищенный обсидиан"
 	"quest.6F739AED61475125.quest_desc": [
 		"&b«Юкия — мой дом. Здесь всегда идёт снег. Мой первый осколок охраняет Ледяной Колосс — голем, которого Тень заставила забыть, кому он служил.»"
 	]
-	"quest.6F739AED61475125.title": "Письмо Юки: Юкия"
-	"quest.6FF955A1C63FD341.title": "Глубинный камень"
-	"quest.700ACC5353176D54.title": "Элитная схема"
-	"quest.703690A36A6A558B.title": "Ледяной кристалл"
+	"quest.6F739AED61475125.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.6F739AED61475125.title": "&bПисьмо Юки: Юкия"
+	"quest.6FF955A1C63FD341.quest_subtitle": "❄ Задание"
+	"quest.6FF955A1C63FD341.title": "&fГлубинный камень"
+	"quest.700ACC5353176D54.quest_subtitle": "❄ Задание"
+	"quest.700ACC5353176D54.title": "&fЭлитная схема"
+	"quest.703690A36A6A558B.quest_subtitle": "❄ Задание"
+	"quest.703690A36A6A558B.title": "&fЛедяной кристалл"
 	"quest.706DE86F278B1CB1.quest_desc": [
 		"&b«Зима — это не смерть, а сон природы. Пока меня нет, сады увядают. Вырасти их заново — и природа вернёт мне свою силу.»"
 	]
-	"quest.706DE86F278B1CB1.title": "Письмо Юки: жизнь"
-	"quest.708959D33E78967D.title": "Стартовая площадка"
+	"quest.706DE86F278B1CB1.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.706DE86F278B1CB1.title": "&bПисьмо Юки: жизнь"
+	"quest.708959D33E78967D.quest_subtitle": "❄ Задание"
+	"quest.708959D33E78967D.title": "&fСтартовая площадка"
 	"quest.70B1940EDDBA0D57.quest_desc": [
 		"4 гранулы для Сердца."
 	]
-	"quest.70B1940EDDBA0D57.title": "Антиматерия"
+	"quest.70B1940EDDBA0D57.quest_subtitle": "❄ Задание"
+	"quest.70B1940EDDBA0D57.title": "&fАнтиматерия"
 	"quest.70DF7976EDB97CD2.quest_desc": [
 		"Из него выпадают 1–2 &dОсколка звезды&r."
 	]
-	"quest.70DF7976EDB97CD2.title": "Иссушитель"
-	"quest.70E347B80E252513.title": "Заряжающие стержни"
+	"quest.70DF7976EDB97CD2.quest_subtitle": "⚔ Босс"
+	"quest.70DF7976EDB97CD2.title": "&cИссушитель"
+	"quest.70E347B80E252513.quest_subtitle": "❄ Задание"
+	"quest.70E347B80E252513.title": "&fЗаряжающие стержни"
 	"quest.71745FAB0349C23B.quest_desc": [
 		"…и блок звёздного света сверху. &eУровень II готов!"
 	]
-	"quest.71745FAB0349C23B.title": "Звёздные венцы"
-	"quest.71785E3E5C43DCEB.title": "Баки из калорита"
+	"quest.71745FAB0349C23B.quest_subtitle": "❄ Задание"
+	"quest.71745FAB0349C23B.title": "&fЗвёздные венцы"
+	"quest.71785E3E5C43DCEB.quest_subtitle": "❄ Задание"
+	"quest.71785E3E5C43DCEB.title": "&fБаки из калорита"
+	"quest.71E01DAD697309A9.quest_desc": [
+		"4 000 000 FE на слиток. Нужен для Сердца и Звезды."
+	]
+	"quest.71E01DAD697309A9.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.71E01DAD697309A9.title": "&6&lЗвёздный сплав"
 	"quest.722A08E8FB00CE36.quest_desc": [
 		"Защити себя — путь будет долгим."
 	]
-	"quest.722A08E8FB00CE36.title": "Железная броня"
+	"quest.722A08E8FB00CE36.quest_subtitle": "❄ Задание"
+	"quest.722A08E8FB00CE36.title": "&fЖелезная броня"
 	"quest.7255B6F809A55E24.quest_desc": [
 		"&b«Моя сила — это магия. Машины умеют её хранить, но не умеют чувствовать. Научись слушать Источник — и ты сможешь создать мою Эссенцию.»"
 	]
-	"quest.7255B6F809A55E24.title": "Письмо Юки: магия"
-	"quest.72A2F8B39E8EF57F.title": "Морозный нагрудник"
-	"quest.73214C79E4D3951D.title": "Серебряный ключ"
+	"quest.7255B6F809A55E24.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.7255B6F809A55E24.title": "&bПисьмо Юки: магия"
+	"quest.72A2F8B39E8EF57F.quest_subtitle": "❄ Задание"
+	"quest.72A2F8B39E8EF57F.title": "&fМорозный нагрудник"
+	"quest.73214C79E4D3951D.quest_subtitle": "❄ Задание"
+	"quest.73214C79E4D3951D.title": "&fСеребряный ключ"
 	"quest.734C4CB35F8F1EF0.quest_desc": [
 		"Высокое напряжение."
 	]
-	"quest.734C4CB35F8F1EF0.title": "Конденсатор HV"
-	"quest.738780E3FFD63833.title": "Звёздный свет"
+	"quest.734C4CB35F8F1EF0.quest_subtitle": "❄ Задание"
+	"quest.734C4CB35F8F1EF0.title": "&fКонденсатор HV"
+	"quest.738780E3FFD63833.quest_subtitle": "❄ Задание"
+	"quest.738780E3FFD63833.title": "&fЗвёздный свет"
 	"quest.73932F4242E1CC30.quest_desc": [
 		"&dУровень III собран.&r Только он может призвать Тень Юки и выковать Корону."
 	]
-	"quest.73932F4242E1CC30.title": "Алтарь Бесконечности"
-	"quest.739DFD3E1E115858.title": "Драконья кожа"
+	"quest.73932F4242E1CC30.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.73932F4242E1CC30.title": "&bАлтарь Бесконечности"
+	"quest.739DFD3E1E115858.quest_subtitle": "❄ Задание"
+	"quest.739DFD3E1E115858.title": "&fДраконья кожа"
 	"quest.73A2C5D8C3620017.quest_desc": [
 		"Ближайшая к Солнцу."
 	]
-	"quest.73A2C5D8C3620017.title": "Меркурий"
-	"quest.73E3248B0D0F81E9.title": "Слитки деша"
-	"quest.745C80E0B710F45B.title": "Сталь голема"
-	"quest.754676B0785CD949.title": "Поставщик шаблонов"
+	"quest.73A2C5D8C3620017.quest_subtitle": "🌍 Новый мир"
+	"quest.73A2C5D8C3620017.title": "&aМеркурий"
+	"quest.73E3248B0D0F81E9.quest_subtitle": "❄ Задание"
+	"quest.73E3248B0D0F81E9.title": "&fСлитки деша"
+	"quest.745C80E0B710F45B.quest_subtitle": "❄ Задание"
+	"quest.745C80E0B710F45B.title": "&fСталь голема"
+	"quest.754676B0785CD949.quest_subtitle": "❄ Задание"
+	"quest.754676B0785CD949.title": "&fПоставщик шаблонов"
+	"quest.75511D36EC4EC544.quest_desc": [
+		"Алтарь II. Луч северного сияния и исцеляющее Сияние для друзей."
+		"&d«Он твой, Хранитель. Береги друзей.»"
+	]
+	"quest.75511D36EC4EC544.quest_subtitle": "❄ Задание"
+	"quest.75511D36EC4EC544.title": "&fПосох Синтары"
+	"quest.7553F4BCC9A33E1B.quest_desc": [
+		"&d«Привет, Хранитель! Я — Синтара, хранительница северного сияния и лучшая подруга Юки.»&r"
+		""
+		"&d«Пока Тень крала свет Юки, я прятала его в небесных огнях. Помоги мне вернуть сияние на Аврору — и я подарю тебе свой посох.»&r"
+		""
+		"&6♥ Эта глава посвящена другу — Sintara."
+	]
+	"quest.7553F4BCC9A33E1B.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.7553F4BCC9A33E1B.title": "&bПисьмо Синтары"
 	"quest.75780AE2F5FBEDBF.quest_desc": [
 		"Цифровая сеть хранения."
 	]
-	"quest.75780AE2F5FBEDBF.title": "ME-контроллер"
-	"quest.7586ECA3E68AF649.title": "Блоки кристаллов"
-	"quest.7609EDD99B4BFC3D.title": "Амброзий"
+	"quest.75780AE2F5FBEDBF.quest_subtitle": "❄ Задание"
+	"quest.75780AE2F5FBEDBF.title": "&fME-контроллер"
+	"quest.7586ECA3E68AF649.quest_subtitle": "❄ Задание"
+	"quest.7586ECA3E68AF649.title": "&fБлоки кристаллов"
+	"quest.7609EDD99B4BFC3D.quest_subtitle": "❄ Задание"
+	"quest.7609EDD99B4BFC3D.title": "&fАмброзий"
 	"quest.762AC85D3AF27180.quest_desc": [
 		"Кузнечный стол: шаблон целестия + ауриевый молот."
 	]
-	"quest.762AC85D3AF27180.title": "Целестиевый молот"
-	"quest.763A306128A38671.title": "Марс"
-	"quest.7684305439AF2525.title": "Плита"
+	"quest.762AC85D3AF27180.quest_subtitle": "❄ Задание"
+	"quest.762AC85D3AF27180.title": "&fЦелестиевый молот"
+	"quest.763A306128A38671.quest_subtitle": "🌍 Новый мир"
+	"quest.763A306128A38671.title": "&aМарс"
+	"quest.7684305439AF2525.quest_subtitle": "❄ Задание"
+	"quest.7684305439AF2525.title": "&fПлита"
 	"quest.76AC66B0296A2734.quest_desc": [
 		"&b«Ты справился, Хранитель. Но чтобы дойти до Энда, тебе понадобятся машины, магия и знания всех миров. Начни с шестерёнок — у Create есть то, что однажды соберёт моё Сердце.»"
 	]
-	"quest.76AC66B0296A2734.title": "Первая запись Летописи"
-	"quest.770593FD2E294B2D.title": "Медовые лакомства"
+	"quest.76AC66B0296A2734.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.76AC66B0296A2734.title": "&6&lПервая запись Летописи"
+	"quest.770593FD2E294B2D.quest_subtitle": "❄ Задание"
+	"quest.770593FD2E294B2D.title": "&fМедовые лакомства"
 	"quest.7762726572191DD3.quest_desc": [
 		"Система Юки, ракета IV. Здесь можно дышать."
 	]
-	"quest.7762726572191DD3.title": "Посадка на Юкию"
+	"quest.7762726572191DD3.quest_subtitle": "🌍 Новый мир"
+	"quest.7762726572191DD3.title": "&aПосадка на Юкию"
 	"quest.77A39FD9FDE90EE9.quest_desc": [
 		"Добавь 4 пьедестала по диагонали (±3, ±3)."
 	]
-	"quest.77A39FD9FDE90EE9.title": "Восемь пьедесталов"
-	"quest.78015C3F6DB018AA.title": "Ракетное топливо"
+	"quest.77A39FD9FDE90EE9.quest_subtitle": "❄ Задание"
+	"quest.77A39FD9FDE90EE9.title": "&fВосемь пьедесталов"
+	"quest.78015C3F6DB018AA.quest_subtitle": "❄ Задание"
+	"quest.78015C3F6DB018AA.title": "&fРакетное топливо"
 	"quest.78083069CB9915D4.quest_desc": [
 		"Страж Пещер Звёздного света."
 	]
-	"quest.78083069CB9915D4.title": "Привратник"
-	"quest.78475418C9070798.title": "Глубинное серебро"
+	"quest.78083069CB9915D4.quest_subtitle": "⚔ Босс"
+	"quest.78083069CB9915D4.title": "&cПривратник"
+	"quest.78475418C9070798.quest_subtitle": "❄ Задание"
+	"quest.78475418C9070798.title": "&fГлубинное серебро"
 	"quest.78C892598BB48BCC.quest_desc": [
 		"Bosses of Mass Destruction."
 	]
-	"quest.78C892598BB48BCC.title": "Ночной Лич"
+	"quest.78C892598BB48BCC.quest_subtitle": "⚔ Босс"
+	"quest.78C892598BB48BCC.title": "&cНочной Лич"
 	"quest.79B7919BBDF76867.quest_desc": [
 		"Сожми материю до сингулярности."
 	]
-	"quest.79B7919BBDF76867.title": "Конденсатор материи"
+	"quest.79B7919BBDF76867.quest_subtitle": "❄ Задание"
+	"quest.79B7919BBDF76867.title": "&fКонденсатор материи"
 	"quest.7ADC0C715B406F23.quest_desc": [
 		"Всё великое начинается с простого верстака."
 	]
-	"quest.7ADC0C715B406F23.title": "Верстак"
+	"quest.7ADC0C715B406F23.quest_subtitle": "❄ Задание"
+	"quest.7ADC0C715B406F23.title": "&fВерстак"
 	"quest.7AE372A93522CC3D.quest_desc": [
 		"Нужно для Ядра измерений и Apotheosis."
 	]
-	"quest.7AE372A93522CC3D.title": "Дыхание дракона"
-	"quest.7B1AFB26C0F553F2.title": "Хельвар, Рыцарь Подземья"
+	"quest.7AE372A93522CC3D.quest_subtitle": "❄ Задание"
+	"quest.7AE372A93522CC3D.title": "&fДыхание дракона"
+	"quest.7B1AFB26C0F553F2.quest_subtitle": "⚔ Босс"
+	"quest.7B1AFB26C0F553F2.title": "&cХельвар, Рыцарь Подземья"
 	"quest.7B1C8EF9782C3473.quest_desc": [
 		"Сердце раннего Mekanism."
 	]
-	"quest.7B1C8EF9782C3473.title": "Металлургический инфузор"
+	"quest.7B1C8EF9782C3473.quest_subtitle": "❄ Задание"
+	"quest.7B1C8EF9782C3473.title": "&fМеталлургический инфузор"
 	"quest.7B333CA06817DB65.quest_desc": [
 		"Механический пресс Create."
 	]
-	"quest.7B333CA06817DB65.title": "Морозные пластины"
+	"quest.7B333CA06817DB65.quest_subtitle": "❄ Задание"
+	"quest.7B333CA06817DB65.title": "&fМорозные пластины"
+	"quest.7BC818E4532400CD.quest_desc": [
+		"Кузня удваивает все руды YukiCore."
+	]
+	"quest.7BC818E4532400CD.quest_subtitle": "❄ Задание"
+	"quest.7BC818E4532400CD.title": "&fУдвоение руды"
 	"quest.7C0FDD98B9BF31D7.quest_desc": [
 		"Ритуалы II уровня зачаровывают книги выше максимума: Острота VII, Эффективность VII, Защита VI…"
 	]
-	"quest.7C0FDD98B9BF31D7.title": "Книги Юки"
+	"quest.7C0FDD98B9BF31D7.quest_subtitle": "❄ Задание"
+	"quest.7C0FDD98B9BF31D7.title": "&fКниги Юки"
 	"quest.7C137E047996F4A4.quest_desc": [
 		"&bЭтот корабль долетит до других звёзд. До моих звёзд."
 	]
-	"quest.7C137E047996F4A4.title": "Ракета IV"
+	"quest.7C137E047996F4A4.quest_subtitle": "❄ Задание"
+	"quest.7C137E047996F4A4.title": "&fРакета IV"
 	"quest.7C41033B0D1D721F.quest_desc": [
 		"&b«Все четыре Ядра со мной, и трофеи стражей тоже. Осталось соединить их в Сердце — на крафтере девять на девять, с антиматерией Mekanism и кристаллами времени.»"
 	]
-	"quest.7C41033B0D1D721F.title": "Письмо Юки: сердце"
+	"quest.7C41033B0D1D721F.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.7C41033B0D1D721F.title": "&bПисьмо Юки: сердце"
 	"quest.7CA32FCEA9980343.quest_desc": [
 		"&b«Вот мы и здесь, Хранитель. За порталом — дракон, который разбил моё Сердце. А за ним, на дальних островах, лежат мои осколки.»&r"
 		""
 		"&eРуды YukiCore встречаются ТОЛЬКО на внешних островах Энда!"
 	]
-	"quest.7CA32FCEA9980343.title": "Письмо Юки: Энд"
-	"quest.7D4C10F2CED1100C.title": "Кровяной инфузор"
+	"quest.7CA32FCEA9980343.quest_subtitle": "📜 Письмо и сюжет"
+	"quest.7CA32FCEA9980343.title": "&bПисьмо Юки: Энд"
+	"quest.7D4C10F2CED1100C.quest_subtitle": "❄ Задание"
+	"quest.7D4C10F2CED1100C.title": "&fКровяной инфузор"
 	"quest.7DCA59B3146F792B.quest_desc": [
 		"Deep Aether: новые глубины неба."
 	]
-	"quest.7DCA59B3146F792B.title": "Небесный нефрит"
-	"quest.7DFBC134DFA080DE.title": "Скафандр: брюки"
+	"quest.7DCA59B3146F792B.quest_subtitle": "❄ Задание"
+	"quest.7DCA59B3146F792B.title": "&fНебесный нефрит"
+	"quest.7DFBC134DFA080DE.quest_subtitle": "❄ Задание"
+	"quest.7DFBC134DFA080DE.title": "&fСкафандр: брюки"
 	"quest.7E42022B337DFD7E.quest_desc": [
 		"&b«Сфера показала мне будущее: ты летишь к звёздам. К моим звёздам.»"
 	]
-	"quest.7E42022B337DFD7E.title": "Пророчество"
-	"quest.7E568C4491C92D08.title": "Плодородная почва"
+	"quest.7E42022B337DFD7E.quest_subtitle": "⭐ Финал главы · подарки"
+	"quest.7E42022B337DFD7E.title": "&6&lПророчество"
+	"quest.7E568C4491C92D08.quest_subtitle": "❄ Задание"
+	"quest.7E568C4491C92D08.title": "&fПлодородная почва"
 	"quest.7E8D09236BF1E471.quest_desc": [
 		"Удваивают руду."
 	]
-	"quest.7E8D09236BF1E471.title": "Дробильные колёса"
-	"quest.7E924C80D00E2341.title": "Морозные поножи"
-	"quest.7EC92D99E297695C.title": "Вторая Чешуя Пустоты"
+	"quest.7E8D09236BF1E471.quest_subtitle": "❄ Задание"
+	"quest.7E8D09236BF1E471.title": "&fДробильные колёса"
+	"quest.7E924C80D00E2341.quest_subtitle": "❄ Задание"
+	"quest.7E924C80D00E2341.title": "&fМорозные поножи"
+	"quest.7EC92D99E297695C.quest_subtitle": "❄ Задание"
+	"quest.7EC92D99E297695C.title": "&fВторая Чешуя Пустоты"
 	"quest.7EEE3478503D9E56.quest_desc": [
 		"Построй базу с воздухом."
 	]
-	"quest.7EEE3478503D9E56.title": "Кислородный распределитель"
+	"quest.7EEE3478503D9E56.quest_subtitle": "❄ Задание"
+	"quest.7EEE3478503D9E56.title": "&fКислородный распределитель"
 	"quest.7F2931F88AC572C2.quest_desc": [
 		"&b«Алмаз — это лёд, который научился не таять»&r."
 	]
-	"quest.7F2931F88AC572C2.title": "Алмазы"
+	"quest.7F2931F88AC572C2.quest_subtitle": "❄ Задание"
+	"quest.7F2931F88AC572C2.title": "&fАлмазы"
 	"quest.7F4DE63B77B96759.quest_desc": [
 		"Скорость и спешка на целую минуту."
 	]
-	"quest.7F4DE63B77B96759.title": "Леденцы"
+	"quest.7F4DE63B77B96759.quest_subtitle": "❄ Задание"
+	"quest.7F4DE63B77B96759.title": "&fЛеденцы"
+	"quest.7F68FB1354334154.quest_desc": [
+		"&d«Фантомы пугают сияние. Прогони их.»"
+	]
+	"quest.7F68FB1354334154.quest_subtitle": "⚔ Босс"
+	"quest.7F68FB1354334154.title": "&cНочные тени"
 }

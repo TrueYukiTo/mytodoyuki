@@ -8,7 +8,71 @@
 		id: "undergarden:catalyst"
 	}
 	id: "435224063D08F45B"
-	images: [ ]
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 0.73d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: 12.1d
+			width: 0.73d
+			x: -1.73d
+			y: -0.31d
+		}
+		{
+			height: 1.12d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -17.1d
+			width: 1.12d
+			x: -1.75d
+			y: 0.37d
+		}
+		{
+			height: 1.03d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -13.6d
+			width: 1.03d
+			x: -1.78d
+			y: 2.41d
+		}
+		{
+			height: 0.72d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: -23.8d
+			width: 0.72d
+			x: 12.35d
+			y: 1.89d
+		}
+		{
+			height: 0.82d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 9.3d
+			width: 0.82d
+			x: -1.5d
+			y: 3.82d
+		}
+		{
+			height: 0.9d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -12.9d
+			width: 0.9d
+			x: 11.97d
+			y: 4.53d
+		}
+	]
 	order_index: 10
 	quest_links: [ ]
 	quests: [
@@ -29,7 +93,7 @@
 				}
 			]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.35d
 			tasks: [
 				{
 					id: "7E5A155A610B4A17"
@@ -66,8 +130,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 0.0d
+			x: 1.75d
+			y: 0.352d
 		}
 		{
 			dependencies: [
@@ -86,6 +150,7 @@
 				}
 			]
 			shape: "rsquare"
+			size: 1.25d
 			tasks: [
 				{
 					dimension: "undergarden:undergarden"
@@ -93,8 +158,8 @@
 					type: "dimension"
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 3.5d
+			y: 0.438d
 		}
 		{
 			dependencies: [
@@ -123,8 +188,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 0.0d
+			x: 5.25d
+			y: 0.192d
 		}
 		{
 			dependencies: [
@@ -153,8 +218,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 0.0d
+			x: 7.0d
+			y: -0.199d
 		}
 		{
 			dependencies: [
@@ -183,8 +248,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 0.0d
+			x: 8.75d
+			y: -0.44d
 		}
 		{
 			dependencies: [
@@ -213,8 +278,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 0.0d
+			x: 10.5d
+			y: -0.348d
 		}
 		{
 			dependencies: [
@@ -243,8 +308,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 1.5d
+			x: 10.5d
+			y: 2.282d
 		}
 		{
 			dependencies: [
@@ -273,8 +338,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 1.5d
+			x: 8.75d
+			y: 1.891d
 		}
 		{
 			dependencies: [
@@ -303,8 +368,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 1.5d
+			x: 7.0d
+			y: 1.658d
 		}
 		{
 			dependencies: [
@@ -333,8 +398,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 1.5d
+			x: 5.25d
+			y: 1.759d
 		}
 		{
 			dependencies: [
@@ -363,8 +428,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 1.5d
+			x: 3.5d
+			y: 2.119d
 		}
 		{
 			dependencies: [
@@ -393,8 +458,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 1.5d
+			x: 1.75d
+			y: 2.464d
 		}
 		{
 			dependencies: [
@@ -424,7 +489,7 @@
 				}
 			]
 			x: 0.0d
-			y: 1.5d
+			y: 2.534d
 		}
 		{
 			dependencies: [
@@ -443,6 +508,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "undergarden:forgotten_guardian"
@@ -452,7 +518,7 @@
 				}
 			]
 			x: 0.0d
-			y: 3.0d
+			y: 4.432d
 		}
 		{
 			dependencies: [
@@ -481,8 +547,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 3.0d
+			x: 1.75d
+			y: 4.042d
 		}
 		{
 			dependencies: [
@@ -520,8 +586,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 3.0d
+			x: 3.5d
+			y: 3.772d
 		}
 		{
 			dependencies: [
@@ -558,15 +624,15 @@
 				}
 			]
 			shape: "gear"
-			size: 1.5d
+			size: 2.0d
 			tasks: [
 				{
 					id: "49D13B5B7EEAFB94"
 					type: "checkmark"
 				}
 			]
-			x: 4.5d
-			y: 3.0d
+			x: 5.25d
+			y: 3.825d
 		}
 	]
 }

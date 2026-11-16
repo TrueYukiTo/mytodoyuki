@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "yukicore:cryosteel_block"
+    }
+  ],
+  "result": {
+    "id": "yukicore:cryosteel_ingot",
+    "count": 9
+  }
+}

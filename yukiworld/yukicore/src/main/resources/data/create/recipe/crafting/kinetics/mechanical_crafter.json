@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "create:electron_tube"
+    },
+    "C": {
+      "item": "create:brass_casing"
+    },
+    "R": {
+      "item": "minecraft:crafting_table"
+    }
+  },
+  "pattern": [
+    "B",
+    "C",
+    "R"
+  ],
+  "result": {
+    "count": 2,
+    "id": "create:mechanical_crafter"
+  }
+}

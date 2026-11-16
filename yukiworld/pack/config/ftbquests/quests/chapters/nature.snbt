@@ -8,7 +8,89 @@
 		id: "mysticalagriculture:inferium_essence"
 	}
 	id: "17798F391A1F346C"
-	images: [ ]
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 0.98d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -9.2d
+			width: 0.98d
+			x: 12.2d
+			y: -0.16d
+		}
+		{
+			height: 0.94d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 2.4d
+			width: 0.94d
+			x: 11.89d
+			y: 0.15d
+		}
+		{
+			height: 0.82d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 12.8d
+			width: 0.82d
+			x: -1.84d
+			y: 2.54d
+		}
+		{
+			height: 1.19d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: -24.6d
+			width: 1.19d
+			x: -1.34d
+			y: 1.78d
+		}
+		{
+			height: 0.91d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: -3.1d
+			width: 0.91d
+			x: 12.01d
+			y: 4.75d
+		}
+		{
+			height: 1.18d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -12.3d
+			width: 1.18d
+			x: 11.87d
+			y: 4.43d
+		}
+		{
+			height: 1.18d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 17.2d
+			width: 1.18d
+			x: -1.42d
+			y: 6.25d
+		}
+		{
+			height: 0.95d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 23.4d
+			width: 0.95d
+			x: 11.94d
+			y: 6.49d
+		}
+	]
 	order_index: 6
 	quest_links: [ ]
 	quests: [
@@ -29,7 +111,7 @@
 				}
 			]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.35d
 			tasks: [
 				{
 					id: "1D2960CBAFF7EC2F"
@@ -66,8 +148,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 0.0d
+			x: 1.75d
+			y: 0.352d
 		}
 		{
 			dependencies: [
@@ -96,8 +178,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 3.5d
+			y: 0.438d
 		}
 		{
 			dependencies: [
@@ -126,8 +208,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 0.0d
+			x: 5.25d
+			y: 0.192d
 		}
 		{
 			dependencies: [
@@ -156,8 +238,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 0.0d
+			x: 7.0d
+			y: -0.199d
 		}
 		{
 			dependencies: [
@@ -186,8 +268,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 0.0d
+			x: 8.75d
+			y: -0.44d
 		}
 		{
 			dependencies: [
@@ -216,8 +298,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 0.0d
+			x: 10.5d
+			y: -0.348d
 		}
 		{
 			dependencies: [
@@ -246,8 +328,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 1.5d
+			x: 10.5d
+			y: 2.282d
 		}
 		{
 			dependencies: [
@@ -276,8 +358,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 1.5d
+			x: 8.75d
+			y: 1.891d
 		}
 		{
 			dependencies: [
@@ -306,8 +388,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 1.5d
+			x: 7.0d
+			y: 1.658d
 		}
 		{
 			dependencies: [
@@ -336,8 +418,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 1.5d
+			x: 5.25d
+			y: 1.759d
 		}
 		{
 			dependencies: [
@@ -366,8 +448,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 1.5d
+			x: 3.5d
+			y: 2.119d
 		}
 		{
 			dependencies: [
@@ -396,8 +478,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 1.5d
+			x: 1.75d
+			y: 2.464d
 		}
 		{
 			dependencies: [
@@ -427,7 +509,7 @@
 				}
 			]
 			x: 0.0d
-			y: 1.5d
+			y: 2.534d
 		}
 		{
 			dependencies: [
@@ -457,7 +539,7 @@
 				}
 			]
 			x: 0.0d
-			y: 3.0d
+			y: 4.432d
 		}
 		{
 			dependencies: [
@@ -486,8 +568,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 3.0d
+			x: 1.75d
+			y: 4.042d
 		}
 		{
 			dependencies: [
@@ -516,8 +598,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 3.0d
+			x: 3.5d
+			y: 3.772d
 		}
 		{
 			dependencies: [
@@ -546,8 +628,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 3.0d
+			x: 5.25d
+			y: 3.825d
 		}
 		{
 			dependencies: [
@@ -576,8 +658,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 3.0d
+			x: 7.0d
+			y: 4.163d
 		}
 		{
 			dependencies: [
@@ -606,8 +688,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 3.0d
+			x: 8.75d
+			y: 4.528d
 		}
 		{
 			dependencies: [
@@ -636,8 +718,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 3.0d
+			x: 10.5d
+			y: 4.645d
 		}
 		{
 			dependencies: [
@@ -665,7 +747,7 @@
 				}
 			]
 			shape: "gear"
-			size: 1.5d
+			size: 2.0d
 			tasks: [
 				{
 					count: 4L
@@ -677,8 +759,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 4.5d
+			x: 10.5d
+			y: 6.356d
 		}
 	]
 }

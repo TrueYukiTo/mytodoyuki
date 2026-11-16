@@ -8,7 +8,71 @@
 		id: "cataclysm:ignitium_ingot"
 	}
 	id: "612DF78D4B3DB549"
-	images: [ ]
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 0.89d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -17.3d
+			width: 0.89d
+			x: 12.29d
+			y: -0.44d
+		}
+		{
+			height: 1.08d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: 22.4d
+			width: 1.08d
+			x: -1.89d
+			y: -0.26d
+		}
+		{
+			height: 1.05d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -15.4d
+			width: 1.05d
+			x: 11.89d
+			y: 2.6d
+		}
+		{
+			height: 0.76d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -5.7d
+			width: 0.76d
+			x: 12.11d
+			y: 2.4d
+		}
+		{
+			height: 0.81d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: 22.0d
+			width: 0.81d
+			x: 12.01d
+			y: 4.5d
+		}
+		{
+			height: 1.0d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -12.1d
+			width: 1.0d
+			x: 12.31d
+			y: 4.53d
+		}
+	]
 	order_index: 15
 	quest_links: [ ]
 	quests: [
@@ -29,7 +93,7 @@
 				}
 			]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.35d
 			tasks: [
 				{
 					id: "5ECF31466569E51E"
@@ -56,6 +120,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "cataclysm:ender_guardian"
@@ -64,8 +129,8 @@
 					value: 1L
 				}
 			]
-			x: 1.5d
-			y: 0.0d
+			x: 1.75d
+			y: 0.352d
 		}
 		{
 			dependencies: [
@@ -94,8 +159,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 3.5d
+			y: 0.438d
 		}
 		{
 			dependencies: [
@@ -114,6 +179,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "cataclysm:netherite_monstrosity"
@@ -122,8 +188,8 @@
 					value: 1L
 				}
 			]
-			x: 4.5d
-			y: 0.0d
+			x: 5.25d
+			y: 0.192d
 		}
 		{
 			dependencies: [
@@ -152,8 +218,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 0.0d
+			x: 7.0d
+			y: -0.199d
 		}
 		{
 			dependencies: [
@@ -172,6 +238,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "cataclysm:ignis"
@@ -180,8 +247,8 @@
 					value: 1L
 				}
 			]
-			x: 7.5d
-			y: 0.0d
+			x: 8.75d
+			y: -0.44d
 		}
 		{
 			dependencies: [
@@ -210,8 +277,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 0.0d
+			x: 10.5d
+			y: -0.348d
 		}
 		{
 			dependencies: [
@@ -230,6 +297,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "cataclysm:the_harbinger"
@@ -238,8 +306,8 @@
 					value: 1L
 				}
 			]
-			x: 9.0d
-			y: 1.5d
+			x: 10.5d
+			y: 2.282d
 		}
 		{
 			dependencies: [
@@ -268,8 +336,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 1.5d
+			x: 8.75d
+			y: 1.891d
 		}
 		{
 			dependencies: [
@@ -288,6 +356,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "cataclysm:the_leviathan"
@@ -296,8 +365,8 @@
 					value: 1L
 				}
 			]
-			x: 6.0d
-			y: 1.5d
+			x: 7.0d
+			y: 1.658d
 		}
 		{
 			dependencies: [
@@ -326,8 +395,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 1.5d
+			x: 5.25d
+			y: 1.759d
 		}
 		{
 			dependencies: [
@@ -346,6 +415,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "cataclysm:ancient_remnant"
@@ -354,8 +424,8 @@
 					value: 1L
 				}
 			]
-			x: 3.0d
-			y: 1.5d
+			x: 3.5d
+			y: 2.119d
 		}
 		{
 			dependencies: [
@@ -384,8 +454,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 1.5d
+			x: 1.75d
+			y: 2.464d
 		}
 		{
 			dependencies: [
@@ -404,6 +474,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "cataclysm:maledictus"
@@ -413,7 +484,7 @@
 				}
 			]
 			x: 0.0d
-			y: 1.5d
+			y: 2.534d
 		}
 		{
 			dependencies: [
@@ -443,7 +514,7 @@
 				}
 			]
 			x: 0.0d
-			y: 3.0d
+			y: 4.432d
 		}
 		{
 			dependencies: [
@@ -462,6 +533,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "cataclysm:scylla"
@@ -470,8 +542,8 @@
 					value: 1L
 				}
 			]
-			x: 1.5d
-			y: 3.0d
+			x: 1.75d
+			y: 4.042d
 		}
 		{
 			dependencies: [
@@ -500,8 +572,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 3.0d
+			x: 3.5d
+			y: 3.772d
 		}
 		{
 			dependencies: [
@@ -530,8 +602,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 3.0d
+			x: 5.25d
+			y: 3.825d
 		}
 		{
 			dependencies: [
@@ -568,15 +640,15 @@
 				}
 			]
 			shape: "gear"
-			size: 1.5d
+			size: 2.0d
 			tasks: [
 				{
 					id: "6969E8C49896A8D5"
 					type: "checkmark"
 				}
 			]
-			x: 6.0d
-			y: 3.0d
+			x: 7.0d
+			y: 4.163d
 		}
 	]
 }

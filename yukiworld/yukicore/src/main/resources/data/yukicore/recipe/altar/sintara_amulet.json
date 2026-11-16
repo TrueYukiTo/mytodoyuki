@@ -1,0 +1,26 @@
+{
+  "type": "yukicore:altar",
+  "tier": 1,
+  "center": {
+    "item": "yukicore:yuki_star"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:yuki_essence"
+    },
+    {
+      "item": "yukicore:yuki_essence"
+    },
+    {
+      "item": "yukicore:cryosteel_ingot"
+    },
+    {
+      "item": "yukicore:cryosteel_ingot"
+    }
+  ],
+  "result": {
+    "id": "yukicore:sintara_amulet",
+    "count": 1
+  },
+  "duration": 200
+}

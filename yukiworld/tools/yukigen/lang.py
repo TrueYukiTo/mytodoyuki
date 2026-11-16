@@ -301,3 +301,42 @@ V4 = {
 for _k, (_ru, _en) in V4.items():
     RU[_k] = _ru
     EN[_k] = _en
+
+
+# ================================================================ YukiCore 5.0
+V5 = {
+    "item.yukicore.cryosteel_ingot": ("Криосталь", "Cryosteel Ingot"),
+    "item.yukicore.cryosteel_ingot.desc": ("Морозная кузня", "Frost Forge"),
+    "item.yukicore.stellar_alloy": ("Звёздный сплав", "Stellar Alloy"),
+    "item.yukicore.stellar_alloy.desc": ("Морозная кузня, 4 000 000 FE", "Frost Forge, 4,000,000 FE"),
+    "item.yukicore.sintara_staff": ("Посох Синтары", "Sintara's Staff"),
+    "item.yukicore.sintara_staff.desc": ("ПКМ: луч северного сияния — 24 урона всем на 24 блока",
+                                         "Right-click: aurora beam — 24 damage to everything in 24 blocks"),
+    "item.yukicore.sintara_staff.desc2": ("Shift+ПКМ: Сияние — лечит и усиливает союзников, подсвечивает врагов",
+                                          "Sneak: Radiance — heals and empowers allies, reveals enemies"),
+    "item.yukicore.sintara_amulet": ("Амулет Синтары", "Sintara's Amulet"),
+    "item.yukicore.sintara_amulet.desc": ("В инвентаре: удача II, ночное зрение, враги подсвечены",
+                                          "In inventory: luck II, night vision, enemies glow"),
+    "tooltip.yukicore.for_sintara": ("♥ Подарок для Sintara", "♥ A gift for Sintara"),
+    "block.yukicore.frost_casing": ("Морозная обшивка", "Frost Casing"),
+    "block.yukicore.reactor_casing": ("Обшивка реактора", "Reactor Casing"),
+    "block.yukicore.cryosteel_block": ("Блок криостали", "Block of Cryosteel"),
+    "block.yukicore.frost_forge": ("Морозная кузня", "Frost Forge"),
+    "block.yukicore.frost_forge.desc": ("Контроллер мультиструктуры 3×3×3. Сплавы за FE, работает с трубами",
+                                        "3×3×3 multiblock controller. Alloys with FE, pipe-friendly"),
+    "block.yukicore.star_reactor": ("Звёздный реактор", "Star Reactor"),
+    "block.yukicore.star_reactor.desc": ("Контроллер мультиструктуры 3×3×3. Сжигает осколки, до 10 000 FE/т",
+                                         "3×3×3 multiblock controller. Burns shards, up to 10,000 FE/t"),
+    "block.yukicore.aurora_lamp": ("Лампа сияния", "Aurora Lamp"),
+    "message.yukicore.forge.status": ("Кузня: структура %s · энергия %s FE · рецепт: %s · прогресс %s",
+                                      "Forge: structure %s · energy %s FE · recipe: %s · progress %s"),
+    "message.yukicore.reactor.status": ("Реактор: структура %s · энергия %s FE · выработка %s FE/т · топливо %s",
+                                        "Reactor: structure %s · energy %s FE · output %s FE/t · fuel %s"),
+    "jei.yukicore.forge": ("Морозная кузня", "Frost Forge"),
+    "jei.yukicore.forge.energy": ("%s FE · %s с", "%s FE · %s s"),
+    "menu.yukicore.thanks": ("♥ Особая благодарность: Sintara", "♥ Special thanks: Sintara"),
+    "menu.yukicore.subtitle": ("Легенда о Юки: Сияние Синтары", "The Legend of Yuki: Sintara's Radiance"),
+}
+for _k, (_ru, _en) in V5.items():
+    RU[_k] = _ru
+    EN[_k] = _en

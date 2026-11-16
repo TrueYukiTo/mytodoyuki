@@ -8,7 +8,71 @@
 		id: "yukicore:yuki_tree"
 	}
 	id: "50F460122CE9ADA9"
-	images: [ ]
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/newyear.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 1.16d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: 19.6d
+			width: 1.16d
+			x: 11.86d
+			y: -0.26d
+		}
+		{
+			height: 1.19d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: 14.3d
+			width: 1.19d
+			x: -1.89d
+			y: -0.27d
+		}
+		{
+			height: 0.72d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -18.0d
+			width: 0.72d
+			x: -1.76d
+			y: 2.49d
+		}
+		{
+			height: 1.07d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -22.1d
+			width: 1.07d
+			x: 11.93d
+			y: 2.34d
+		}
+		{
+			height: 0.91d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -1.5d
+			width: 0.91d
+			x: -1.59d
+			y: 4.77d
+		}
+		{
+			height: 0.85d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 8.4d
+			width: 0.85d
+			x: 11.95d
+			y: 3.79d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -38,7 +102,7 @@
 				}
 			]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.35d
 			tasks: [
 				{
 					id: "6F1B603B0E3A9C9A"
@@ -75,8 +139,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 0.0d
+			x: 1.75d
+			y: 0.352d
 		}
 		{
 			dependencies: [
@@ -114,8 +178,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 3.5d
+			y: 0.438d
 		}
 		{
 			dependencies: [
@@ -144,8 +208,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 0.0d
+			x: 5.25d
+			y: 0.192d
 		}
 		{
 			dependencies: [
@@ -174,8 +238,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 0.0d
+			x: 7.0d
+			y: -0.199d
 		}
 		{
 			dependencies: [
@@ -204,8 +268,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 0.0d
+			x: 8.75d
+			y: -0.44d
 		}
 		{
 			dependencies: [
@@ -234,8 +298,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 0.0d
+			x: 10.5d
+			y: -0.348d
 		}
 		{
 			dependencies: [
@@ -264,8 +328,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 1.5d
+			x: 10.5d
+			y: 2.282d
 		}
 		{
 			dependencies: [
@@ -294,8 +358,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 1.5d
+			x: 8.75d
+			y: 1.891d
 		}
 		{
 			dependencies: [
@@ -324,8 +388,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 1.5d
+			x: 7.0d
+			y: 1.658d
 		}
 		{
 			dependencies: [
@@ -354,8 +418,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 1.5d
+			x: 5.25d
+			y: 1.759d
 		}
 		{
 			dependencies: [
@@ -384,8 +448,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 1.5d
+			x: 3.5d
+			y: 2.119d
 		}
 		{
 			dependencies: [
@@ -414,8 +478,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 1.5d
+			x: 1.75d
+			y: 2.464d
 		}
 		{
 			dependencies: [
@@ -434,6 +498,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "minecraft:stray"
@@ -443,7 +508,7 @@
 				}
 			]
 			x: 0.0d
-			y: 1.5d
+			y: 2.534d
 		}
 		{
 			dependencies: [
@@ -480,7 +545,7 @@
 				}
 			]
 			shape: "gear"
-			size: 1.5d
+			size: 2.0d
 			tasks: [
 				{
 					id: "3E797C9F47CA47B2"
@@ -488,7 +553,7 @@
 				}
 			]
 			x: 0.0d
-			y: 3.0d
+			y: 4.432d
 		}
 	]
 }

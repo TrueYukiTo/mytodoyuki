@@ -8,7 +8,71 @@
 		id: "minecraft:dragon_egg"
 	}
 	id: "21450E439F1E525F"
-	images: [ ]
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 0.79d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -18.8d
+			width: 0.79d
+			x: -1.71d
+			y: -0.17d
+		}
+		{
+			height: 0.79d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -19.7d
+			width: 0.79d
+			x: -1.42d
+			y: 0.11d
+		}
+		{
+			height: 0.96d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 7.8d
+			width: 0.96d
+			x: 12.12d
+			y: 2.14d
+		}
+		{
+			height: 1.2d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 12.2d
+			width: 1.2d
+			x: -1.76d
+			y: 1.67d
+		}
+		{
+			height: 0.94d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 21.3d
+			width: 0.94d
+			x: -1.5d
+			y: 4.35d
+		}
+		{
+			height: 1.18d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -12.6d
+			width: 1.18d
+			x: -1.34d
+			y: 4.78d
+		}
+	]
 	order_index: 16
 	quest_links: [ ]
 	quests: [
@@ -29,7 +93,7 @@
 				}
 			]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.35d
 			tasks: [
 				{
 					id: "47DC0D15B097A36D"
@@ -66,8 +130,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 0.0d
+			x: 1.75d
+			y: 0.352d
 		}
 		{
 			dependencies: [
@@ -96,8 +160,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 3.5d
+			y: 0.438d
 		}
 		{
 			dependencies: [
@@ -116,6 +180,7 @@
 				}
 			]
 			shape: "rsquare"
+			size: 1.25d
 			tasks: [
 				{
 					dimension: "minecraft:the_end"
@@ -123,8 +188,8 @@
 					type: "dimension"
 				}
 			]
-			x: 4.5d
-			y: 0.0d
+			x: 5.25d
+			y: 0.192d
 		}
 		{
 			dependencies: [
@@ -152,6 +217,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "minecraft:ender_dragon"
@@ -160,8 +226,8 @@
 					value: 1L
 				}
 			]
-			x: 6.0d
-			y: 0.0d
+			x: 7.0d
+			y: -0.199d
 		}
 		{
 			dependencies: [
@@ -190,8 +256,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 0.0d
+			x: 8.75d
+			y: -0.44d
 		}
 		{
 			dependencies: [
@@ -220,8 +286,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 0.0d
+			x: 10.5d
+			y: -0.348d
 		}
 		{
 			dependencies: [
@@ -250,8 +316,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 1.5d
+			x: 10.5d
+			y: 2.282d
 		}
 		{
 			dependencies: [
@@ -280,8 +346,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 1.5d
+			x: 8.75d
+			y: 1.891d
 		}
 		{
 			dependencies: [
@@ -310,8 +376,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 1.5d
+			x: 7.0d
+			y: 1.658d
 		}
 		{
 			dependencies: [
@@ -340,8 +406,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 1.5d
+			x: 5.25d
+			y: 1.759d
 		}
 		{
 			dependencies: [
@@ -370,8 +436,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 1.5d
+			x: 3.5d
+			y: 2.119d
 		}
 		{
 			dependencies: [
@@ -400,8 +466,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 1.5d
+			x: 1.75d
+			y: 2.464d
 		}
 		{
 			dependencies: [
@@ -431,7 +497,7 @@
 				}
 			]
 			x: 0.0d
-			y: 1.5d
+			y: 2.534d
 		}
 		{
 			dependencies: [
@@ -461,7 +527,7 @@
 				}
 			]
 			x: 0.0d
-			y: 3.0d
+			y: 4.432d
 		}
 		{
 			dependencies: [
@@ -480,6 +546,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "minecraft:wither"
@@ -488,8 +555,8 @@
 					value: 1L
 				}
 			]
-			x: 1.5d
-			y: 3.0d
+			x: 1.75d
+			y: 4.042d
 		}
 		{
 			dependencies: [
@@ -508,6 +575,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "minecraft:warden"
@@ -516,8 +584,8 @@
 					value: 1L
 				}
 			]
-			x: 3.0d
-			y: 3.0d
+			x: 3.5d
+			y: 3.772d
 		}
 		{
 			dependencies: [
@@ -536,6 +604,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "minecraft:elder_guardian"
@@ -544,8 +613,8 @@
 					value: 1L
 				}
 			]
-			x: 4.5d
-			y: 3.0d
+			x: 5.25d
+			y: 3.825d
 		}
 		{
 			dependencies: [
@@ -574,8 +643,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 3.0d
+			x: 7.0d
+			y: 4.163d
 		}
 		{
 			dependencies: [
@@ -612,7 +681,7 @@
 				}
 			]
 			shape: "gear"
-			size: 1.5d
+			size: 2.0d
 			tasks: [
 				{
 					count: 14L
@@ -624,8 +693,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 3.0d
+			x: 8.75d
+			y: 4.528d
 		}
 	]
 }

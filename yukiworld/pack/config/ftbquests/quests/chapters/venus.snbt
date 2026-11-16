@@ -8,8 +8,54 @@
 		id: "ad_astra:calorite_ingot"
 	}
 	id: "1A7402B58BAC031B"
-	images: [ ]
-	order_index: 23
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 1.12d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -24.9d
+			width: 1.12d
+			x: 12.39d
+			y: 0.51d
+		}
+		{
+			height: 0.73d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -14.7d
+			width: 0.73d
+			x: -1.4d
+			y: 0.31d
+		}
+		{
+			height: 0.79d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 4.1d
+			width: 0.79d
+			x: -1.6d
+			y: 1.94d
+		}
+		{
+			height: 0.91d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 11.9d
+			width: 0.91d
+			x: -1.74d
+			y: 2.62d
+		}
+	]
+	order_index: 24
 	quest_links: [ ]
 	quests: [
 		{
@@ -29,7 +75,7 @@
 				}
 			]
 			shape: "rsquare"
-			size: 1.5d
+			size: 1.25d
 			tasks: [
 				{
 					dimension: "ad_astra:venus"
@@ -67,8 +113,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 0.0d
+			x: 1.75d
+			y: 0.352d
 		}
 		{
 			dependencies: [
@@ -97,8 +143,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 3.5d
+			y: 0.438d
 		}
 		{
 			dependencies: [
@@ -127,8 +173,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 0.0d
+			x: 5.25d
+			y: 0.192d
 		}
 		{
 			dependencies: [
@@ -157,8 +203,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 0.0d
+			x: 7.0d
+			y: -0.199d
 		}
 		{
 			dependencies: [
@@ -187,8 +233,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 0.0d
+			x: 8.75d
+			y: -0.44d
 		}
 		{
 			dependencies: [
@@ -217,8 +263,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 0.0d
+			x: 10.5d
+			y: -0.348d
 		}
 		{
 			dependencies: [
@@ -247,8 +293,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 1.5d
+			x: 10.5d
+			y: 2.282d
 		}
 		{
 			dependencies: [
@@ -267,6 +313,7 @@
 				}
 			]
 			shape: "rsquare"
+			size: 1.25d
 			tasks: [
 				{
 					dimension: "ad_astra:mercury"
@@ -274,8 +321,8 @@
 					type: "dimension"
 				}
 			]
-			x: 7.5d
-			y: 1.5d
+			x: 8.75d
+			y: 1.891d
 		}
 		{
 			dependencies: [
@@ -304,8 +351,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 1.5d
+			x: 7.0d
+			y: 1.658d
 		}
 		{
 			dependencies: [
@@ -334,8 +381,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 1.5d
+			x: 5.25d
+			y: 1.759d
 		}
 		{
 			dependencies: [
@@ -364,8 +411,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 1.5d
+			x: 3.5d
+			y: 2.119d
 		}
 		{
 			dependencies: [
@@ -394,8 +441,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 1.5d
+			x: 1.75d
+			y: 2.464d
 		}
 		{
 			dependencies: [
@@ -432,7 +479,7 @@
 				}
 			]
 			shape: "gear"
-			size: 1.5d
+			size: 2.0d
 			tasks: [
 				{
 					count: 1L
@@ -445,7 +492,7 @@
 				}
 			]
 			x: 0.0d
-			y: 1.5d
+			y: 2.534d
 		}
 	]
 }

@@ -26,7 +26,7 @@ public class FrostColossus extends IronGolem {
 
     public static AttributeSupplier.Builder createAttributes() {
         return IronGolem.createAttributes()
-                .add(Attributes.MAX_HEALTH, 600).add(Attributes.ATTACK_DAMAGE, 22).add(Attributes.ARMOR, 14)
+                .add(Attributes.MAX_HEALTH, 900).add(Attributes.ATTACK_DAMAGE, 22).add(Attributes.ARMOR, 14)
                 .add(Attributes.MOVEMENT_SPEED, 0.27).add(Attributes.FOLLOW_RANGE, 48)
                 .add(Attributes.KNOCKBACK_RESISTANCE, 1.0).add(Attributes.SCALE, 2.0);
     }

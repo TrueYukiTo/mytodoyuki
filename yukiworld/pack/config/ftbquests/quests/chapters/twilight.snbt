@@ -8,7 +8,71 @@
 		id: "twilightforest:naga_scale"
 	}
 	id: "1C8B7A7274AA7089"
-	images: [ ]
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 1.08d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -12.4d
+			width: 1.08d
+			x: 11.99d
+			y: 0.35d
+		}
+		{
+			height: 1.17d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: -17.2d
+			width: 1.17d
+			x: 11.97d
+			y: 0.41d
+		}
+		{
+			height: 0.98d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -2.0d
+			width: 0.98d
+			x: 11.97d
+			y: 1.64d
+		}
+		{
+			height: 1.03d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: 8.8d
+			width: 1.03d
+			x: 12.18d
+			y: 1.98d
+		}
+		{
+			height: 0.86d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -18.3d
+			width: 0.86d
+			x: -1.88d
+			y: 4.57d
+		}
+		{
+			height: 1.11d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -5.3d
+			width: 1.11d
+			x: 12.09d
+			y: 4.04d
+		}
+	]
 	order_index: 11
 	quest_links: [ ]
 	quests: [
@@ -29,7 +93,7 @@
 				}
 			]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.35d
 			tasks: [
 				{
 					id: "1EDE15436078B725"
@@ -66,8 +130,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 0.0d
+			x: 1.75d
+			y: 0.352d
 		}
 		{
 			dependencies: [
@@ -86,6 +150,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "twilightforest:naga"
@@ -94,8 +159,8 @@
 					value: 1L
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 3.5d
+			y: 0.438d
 		}
 		{
 			dependencies: [
@@ -124,8 +189,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 0.0d
+			x: 5.25d
+			y: 0.192d
 		}
 		{
 			dependencies: [
@@ -144,6 +209,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "twilightforest:lich"
@@ -152,8 +218,8 @@
 					value: 1L
 				}
 			]
-			x: 6.0d
-			y: 0.0d
+			x: 7.0d
+			y: -0.199d
 		}
 		{
 			dependencies: [
@@ -182,8 +248,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 0.0d
+			x: 8.75d
+			y: -0.44d
 		}
 		{
 			dependencies: [
@@ -202,6 +268,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "twilightforest:minoshroom"
@@ -210,8 +277,8 @@
 					value: 1L
 				}
 			]
-			x: 9.0d
-			y: 0.0d
+			x: 10.5d
+			y: -0.348d
 		}
 		{
 			dependencies: [
@@ -230,6 +297,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "twilightforest:hydra"
@@ -238,8 +306,8 @@
 					value: 1L
 				}
 			]
-			x: 9.0d
-			y: 1.5d
+			x: 10.5d
+			y: 2.282d
 		}
 		{
 			dependencies: [
@@ -268,8 +336,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 1.5d
+			x: 8.75d
+			y: 1.891d
 		}
 		{
 			dependencies: [
@@ -288,6 +356,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "twilightforest:knight_phantom"
@@ -296,8 +365,8 @@
 					value: 1L
 				}
 			]
-			x: 6.0d
-			y: 1.5d
+			x: 7.0d
+			y: 1.658d
 		}
 		{
 			dependencies: [
@@ -326,8 +395,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 1.5d
+			x: 5.25d
+			y: 1.759d
 		}
 		{
 			dependencies: [
@@ -346,6 +415,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "twilightforest:ur_ghast"
@@ -354,8 +424,8 @@
 					value: 1L
 				}
 			]
-			x: 3.0d
-			y: 1.5d
+			x: 3.5d
+			y: 2.119d
 		}
 		{
 			dependencies: [
@@ -384,8 +454,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 1.5d
+			x: 1.75d
+			y: 2.464d
 		}
 		{
 			dependencies: [
@@ -404,6 +474,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "twilightforest:alpha_yeti"
@@ -413,7 +484,7 @@
 				}
 			]
 			x: 0.0d
-			y: 1.5d
+			y: 2.534d
 		}
 		{
 			dependencies: [
@@ -443,7 +514,7 @@
 				}
 			]
 			x: 0.0d
-			y: 3.0d
+			y: 4.432d
 		}
 		{
 			dependencies: [
@@ -462,6 +533,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "twilightforest:snow_queen"
@@ -470,8 +542,8 @@
 					value: 1L
 				}
 			]
-			x: 1.5d
-			y: 3.0d
+			x: 1.75d
+			y: 4.042d
 		}
 		{
 			dependencies: [
@@ -509,8 +581,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 3.0d
+			x: 3.5d
+			y: 3.772d
 		}
 		{
 			dependencies: [
@@ -538,15 +610,15 @@
 				}
 			]
 			shape: "gear"
-			size: 1.5d
+			size: 2.0d
 			tasks: [
 				{
 					id: "2FD737793BF13252"
 					type: "checkmark"
 				}
 			]
-			x: 4.5d
-			y: 3.0d
+			x: 5.25d
+			y: 3.825d
 		}
 	]
 }

@@ -11,6 +11,7 @@
 Запуск:  python3 yukiworld/tools/gen_quests.py [items.txt для проверки ID]
 """
 import hashlib
+import math
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -21,10 +22,14 @@ from yukigen.questbook3 import CHAPTERS3, GROUPS, ORDER  # noqa: E402
 
 from yukigen.questbook4 import CHAPTERS4, GROUP as GROUP4, INSERT_AFTER  # noqa: E402
 
+from yukigen.questbook5 import CHAPTERS5, GROUP5, INSERT_AFTER5  # noqa: E402
+
+INSERT_AFTER = {**INSERT_AFTER, **INSERT_AFTER5}
+GROUP4 = {**GROUP4, **GROUP5}
 for _k, _after in INSERT_AFTER.items():
     _i = [k for k, _ in ORDER].index(_after)
     ORDER.insert(_i + 1, (_k, GROUP4[_k]))
-_BY_KEY = {c[0]: c for c in CH2 + CHAPTERS3 + CHAPTERS4}
+_BY_KEY = {c[0]: c for c in CH2 + CHAPTERS3 + CHAPTERS4 + CHAPTERS5}
 CHAPTERS = [_BY_KEY[k] for k, _ in ORDER]
 GROUP_OF = dict(ORDER)
 assert len(CHAPTERS) == len(_BY_KEY), set(_BY_KEY) - {k for k, _ in ORDER}
@@ -72,6 +77,41 @@ def snbt(v, ind=0) -> str:
             lines.append(f"{pad1}{key}: {snbt(v[k], ind + 1)}")
         return "{\n" + "\n".join(lines) + "\n" + pad + "}"
     raise TypeError(type(v))
+
+
+# Оформление квестов по типу
+STYLE = {
+    "story": {"shape": "hexagon", "size": 1.35, "color": "&b", "subtitle": "📜 Письмо и сюжет"},
+    "boss": {"shape": "diamond", "size": 1.45, "color": "&c", "subtitle": "⚔ Босс"},
+    "world": {"shape": "rsquare", "size": 1.25, "color": "&a", "subtitle": "🌍 Новый мир"},
+    "final": {"shape": "gear", "size": 2.0, "color": "&6&l", "subtitle": "⭐ Финал главы · подарки"},
+    "item": {"shape": "", "size": 1.0, "color": "&f", "subtitle": "❄ Задание"},
+}
+CHAPTER_ART = {  # глава -> баннер (по акту / особые)
+    "sintara": "sintara", "newyear": "newyear", "celestia": "finale", "finale": "finale",
+}
+
+
+def chapter_images(key, count, icon):
+    """Баннер над главой и снежинки/звёзды в промежутках между рядами."""
+    import random as _r
+    rows = (count + PER_ROW - 1) // PER_ROW
+    art = CHAPTER_ART.get(key, "banner")
+    width = (PER_ROW - 1) * 1.75
+    imgs = [{"x": round(width / 2, 2), "y": -2.6, "width": 9.0, "height": 2.25, "rotation": 0.0,
+             "image": f"yukicore:textures/quests/{art}.png", "order": -1}]
+    rng = _r.Random(key)
+    deco = ["snowflake", "snowflake", "star", "tree"] if key != "sintara" else ["star", "sintara_star"]
+    for row in range(rows):
+        for _ in range(2):
+            side = rng.choice((-1, 1))
+            x = (-1.6 if side < 0 else width + 1.6) + rng.uniform(-0.3, 0.3)
+            y = row * 2.1 + rng.uniform(-0.6, 0.6)
+            sz = rng.uniform(0.7, 1.2)
+            imgs.append({"x": round(x, 2), "y": round(y, 2), "width": round(sz, 2), "height": round(sz, 2),
+                         "rotation": round(rng.uniform(-25, 25), 1),
+                         "image": f"yukicore:textures/quests/{rng.choice(deco)}.png", "order": -1})
+    return imgs
 
 
 def item(stack_id, count=1, components=None):
@@ -154,17 +194,22 @@ def main():
                 check(reward[0])
                 rewards.append({"id": qid(qkey + "/item"), "type": "item", "item": stack, "count": reward[1]})
 
+            last = n == len(steps) - 1
+            kind = ("final" if last else "story" if shape == "hexagon" else "boss" if shape == "diamond"
+                    else "world" if shape == "rsquare" else "item")
             row, col = divmod(n, PER_ROW)
             x = col if row % 2 == 0 else PER_ROW - 1 - col  # змейка
-            quest = {"id": id_, "x": float(x * 1.5), "y": float(row * 1.5), "tasks": [t], "rewards": rewards,
-                     "dependencies": [prev] if prev else [], "icon": item(q_icon)}
-            last = n == len(steps) - 1
-            if shape or last:
-                quest["shape"] = "gear" if last else shape
-            if last or n == 0:
-                quest["size"] = 1.5
+            wave = 0.45 * math.sin(x * 0.9 + row * 1.3)          # мягкая волна вместо ровной сетки
+            quest = {"id": id_, "x": round(x * 1.75, 3), "y": round(row * 2.1 + wave, 3), "tasks": [t],
+                     "rewards": rewards, "dependencies": [prev] if prev else [], "icon": item(q_icon)}
+            style = STYLE[kind]
+            if style["shape"]:
+                quest["shape"] = style["shape"]
+            if style["size"] != 1.0:
+                quest["size"] = style["size"]
             quests.append(quest)
-            lang[f"quest.{id_}.title"] = name
+            lang[f"quest.{id_}.title"] = style["color"] + name
+            lang[f"quest.{id_}.quest_subtitle"] = style["subtitle"]
             if desc:
                 lang[f"quest.{id_}.quest_desc"] = desc.split("\n")
             prev = id_
@@ -172,7 +217,7 @@ def main():
 
         chapter = {"id": cid, "filename": key, "group": qid("group/" + GROUP_OF[key]), "order_index": order, "icon": item(icon),
                    "default_quest_shape": "", "default_hide_dependency_lines": False,
-                   "quest_links": [], "images": [], "quests": quests}
+                   "quest_links": [], "images": chapter_images(key, len(steps), icon), "quests": quests}
         (OUT / "chapters" / f"{key}.snbt").write_text(snbt(chapter) + "\n", encoding="utf-8")
 
     data = {"version": 13, "default_reward_team": False, "default_consume_items": False,

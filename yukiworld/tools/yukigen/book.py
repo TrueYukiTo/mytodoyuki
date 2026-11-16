@@ -22,7 +22,18 @@ CATEGORIES = {
     "stars": ("Система Юки", "Пять планет и их стражи.", "yukicore:stellar_shard", 5),
     "workshop": ("Мастерская", "Полезные изобретения Юки.", "yukicore:frost_magnet", 6),
     "newyear": ("Новый год", "Праздник, подарки и угощения.", "yukicore:yuki_tree", 7),
+    "industry": ("Индустрия Юки", "Морозная кузня и Звёздный реактор.", "yukicore:frost_forge", 8),
+    "sintara": ("Синтара", "Хранительница северного сияния.", "yukicore:sintara_staff", 9),
 }
+
+
+def cube_multiblock(controller, casing, core, crown):
+    """Куб 3×3×3: контроллер в центре передней грани (z=-1), ядро в центре, венцы в верхних углах."""
+    top = ["WCW", "CCC", "WCW"]
+    mid = ["C0C", "CXC", "CCC"]
+    bot = ["CCC", "CCC", "CCC"]
+    return {"mapping": {"0": controller, "C": casing, "X": core, "W": crown},
+            "pattern": [top, mid, bot], "symmetrical": False}
 
 
 def _grid(n, cells):
@@ -162,11 +173,11 @@ ENTRIES += [
     ]),
     ("stars", "bosses", "Стражи и печати", "yukicore:sigil_colossus", [
         "Стража призывает $(l)Печать$(), созданная на Алтаре. Печать работает только на планете стража.",
-        ("spot", "yukicore:sigil_colossus", "Ледяной Колосс: 600 ❤. Линии клыков, удар по земле."),
-        ("spot", "yukicore:sigil_queen", "Королева Метелей: 750 ❤. Заморозка, телепорты, свита."),
-        ("spot", "yukicore:sigil_ash_lord", "Пепельный Владыка: 900 ❤. Огненные новы, ифриты."),
-        ("spot", "yukicore:sigil_wyrm", "Пустотный Змей: 1000 ❤. Снаряды шалкеров, тьма, иссушение."),
-        ("spot", "yukicore:sigil_shadow", "Тень Юки: 1600 ❤. Всё сразу и молнии во второй фазе."),
+        ("spot", "yukicore:sigil_colossus", "Ледяной Колосс: 900 ❤. Линии клыков, удар по земле."),
+        ("spot", "yukicore:sigil_queen", "Королева Метелей: 1100 ❤. Заморозка, телепорты, свита."),
+        ("spot", "yukicore:sigil_ash_lord", "Пепельный Владыка: 1350 ❤. Огненные новы, ифриты."),
+        ("spot", "yukicore:sigil_wyrm", "Пустотный Змей: 1500 ❤. Снаряды шалкеров, тьма, иссушение."),
+        ("spot", "yukicore:sigil_shadow", "Тень Юки: 2400 ❤. Всё сразу и молнии во второй фазе."),
         "Когда здоровье стража падает ниже половины, он впадает в $(c)ярость$() — способности вдвое чаще.",
     ]),
     ("stars", "crown", "Корона Юки", "yukicore:crown_of_yuki", [
@@ -200,6 +211,31 @@ ENTRIES += [
     ]),
 ]
 
+ENTRIES += [
+    ("industry", "frost_forge", "Морозная кузня", "yukicore:frost_forge", [
+        "Мультиструктура 3×3×3. $(l)Контроллер$() — в центре боковой грани, в центре куба — $(l)синий лёд$(), "
+        "в четырёх верхних углах — $(l)лампы Юки$(), всё остальное — $(l)морозная обшивка$().",
+        ("multiblock_cube", "yukicore:frost_forge", "yukicore:frost_casing", "minecraft:blue_ice", "yukicore:yuki_lamp",
+         "Контроллер можно поставить с любой стороны."),
+        "ПКМ предметом — положить во вход (4 слота), пустой рукой — забрать результат, Shift+ПКМ — состояние. "
+        "Принимает $(l)FE$() и предметы из труб, отдаёт результат в трубы.$(br2)Плавит $(l)криосталь$() и "
+        "$(l)звёздный сплав$(), а ещё $(l)удваивает руды$() YukiCore.",
+    ]),
+    ("industry", "star_reactor", "Звёздный реактор", "yukicore:star_reactor", [
+        ("multiblock_cube", "yukicore:star_reactor", "yukicore:reactor_casing", "yukicore:starlight_block",
+         "yukicore:celestium_block", "Ядро — блок звёздного света, углы — целестий, остальное — обшивка реактора."),
+        "Топливо (ПКМ или трубы): кристалл Юки — 400 FE/т, звёздный свет — 2 500, пиролит — 3 000, "
+        "пустота — 5 000, звёздный осколок — $(l)10 000 FE/т$(). Энергию отдаёт во все стороны.",
+    ]),
+    ("sintara", "sintara", "Синтара", "yukicore:sintara_staff", [
+        "$(o)Когда Юки была маленькой, по ночам к ней прилетала подруга — $(l)Синтара$(), хранительница "
+        "северного сияния.$()$(br2)Пока Тень крала свет Юки, Синтара прятала его в небесных огнях.",
+        ("spot", "yukicore:sintara_amulet", "$(l)Амулет Синтары$(): удача, ночное зрение, враги подсвечены."),
+        ("spot", "yukicore:sintara_staff", "$(l)Посох Синтары$(): луч сияния и исцеляющее Сияние для друзей."),
+        "$(l)♥ Эта глава посвящена другу — Sintara.$()",
+    ]),
+]
+
 
 def files():
     """Возвращает {относительный путь: json} для data/ и assets/."""
@@ -212,7 +248,11 @@ def files():
         for i, (cat, eid, name, icon, pages) in enumerate(ENTRIES):
             pj = []
             for p in pages:
-                if isinstance(p, tuple) and p[0] == "multiblock":
+                if isinstance(p, tuple) and p[0] == "multiblock_cube":
+                    pj.append({"type": "patchouli:multiblock", "name": "3×3×3",
+                               "multiblock": cube_multiblock(p[1], p[2], p[3], p[4]),
+                               "enable_visualize": True, "text": p[5]})
+                elif isinstance(p, tuple) and p[0] == "multiblock":
                     pj.append({"type": "patchouli:multiblock", "name": f"Уровень {p[1]}",
                                "multiblock": altar_multiblock(p[1]), "enable_visualize": True, "text": p[2]})
                 elif isinstance(p, tuple):

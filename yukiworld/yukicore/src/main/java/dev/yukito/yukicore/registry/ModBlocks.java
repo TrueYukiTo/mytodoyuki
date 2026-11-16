@@ -4,6 +4,7 @@ import dev.yukito.yukicore.YukiCore;
 import dev.yukito.yukicore.altar.ItemHolderBlock;
 import dev.yukito.yukicore.machine.DecorBlock;
 import dev.yukito.yukicore.machine.MachineBlock;
+import dev.yukito.yukicore.multiblock.ControllerBlock;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -69,6 +70,20 @@ public final class ModBlocks {
             () -> MachineBlock.chrono(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).lightLevel(s -> 9)));
     public static final DeferredBlock<Block> CRYO_GENERATOR = BLOCKS.register("cryo_generator",
             () -> MachineBlock.generator(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).lightLevel(s -> 5)));
+
+    // --- Мультиструктуры 5.0 ---
+    public static final DeferredBlock<Block> FROST_CASING = BLOCKS.register("frost_casing",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).strength(6f, 1200f)));
+    public static final DeferredBlock<Block> REACTOR_CASING = BLOCKS.register("reactor_casing",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERITE_BLOCK).lightLevel(s -> 4)));
+    public static final DeferredBlock<Block> CRYOSTEEL_BLOCK = BLOCKS.register("cryosteel_block",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERITE_BLOCK)));
+    public static final DeferredBlock<Block> FROST_FORGE = BLOCKS.register("frost_forge",
+            () -> ControllerBlock.forge(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).strength(6f, 1200f).lightLevel(s -> 8)));
+    public static final DeferredBlock<Block> STAR_REACTOR = BLOCKS.register("star_reactor",
+            () -> ControllerBlock.reactor(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERITE_BLOCK).lightLevel(s -> 12)));
+    public static final DeferredBlock<Block> AURORA_LAMP = BLOCKS.register("aurora_lamp",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SEA_LANTERN).lightLevel(s -> 15)));
 
     // --- Новогодние украшения ---
     public static final DeferredBlock<Block> FESTIVE_GARLAND = BLOCKS.register("festive_garland",

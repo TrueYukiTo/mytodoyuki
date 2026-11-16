@@ -27,6 +27,7 @@ public class YukiJeiPlugin implements IModPlugin {
     @Override
     public void registerCategories(IRecipeCategoryRegistration r) {
         r.addRecipeCategories(new AltarCategory(r.getJeiHelpers().getGuiHelper()));
+        r.addRecipeCategories(new ForgeCategory(r.getJeiHelpers().getGuiHelper()));
     }
 
     @Override
@@ -35,11 +36,14 @@ public class YukiJeiPlugin implements IModPlugin {
         List<AltarRecipe> recipes = Minecraft.getInstance().level.getRecipeManager()
                 .getAllRecipesFor(ModRecipes.ALTAR_TYPE.get()).stream().map(RecipeHolder::value).toList();
         r.addRecipes(AltarCategory.TYPE, recipes);
+        r.addRecipes(ForgeCategory.TYPE, Minecraft.getInstance().level.getRecipeManager()
+                .getAllRecipesFor(ModRecipes.FORGE_TYPE.get()).stream().map(RecipeHolder::value).toList());
     }
 
     @Override
     public void registerRecipeCatalysts(IRecipeCatalystRegistration r) {
         r.addRecipeCatalyst(new ItemStack(ModBlocks.YUKI_ALTAR.get()), AltarCategory.TYPE);
         r.addRecipeCatalyst(new ItemStack(ModBlocks.YUKI_PEDESTAL.get()), AltarCategory.TYPE);
+        r.addRecipeCatalyst(new ItemStack(ModBlocks.FROST_FORGE.get()), ForgeCategory.TYPE);
     }
 }

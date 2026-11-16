@@ -1,0 +1,499 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "industry"
+	group: "42873FD1AA616C22"
+	icon: {
+		count: 1
+		id: "yukicore:frost_forge"
+	}
+	id: "70EC6919047782F1"
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 0.79d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -19.4d
+			width: 0.79d
+			x: -1.8d
+			y: -0.08d
+		}
+		{
+			height: 0.72d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 4.7d
+			width: 0.72d
+			x: 12.07d
+			y: -0.27d
+		}
+		{
+			height: 0.99d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: 23.1d
+			width: 0.99d
+			x: -1.35d
+			y: 2.27d
+		}
+		{
+			height: 1.15d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: -22.6d
+			width: 1.15d
+			x: 11.93d
+			y: 2.48d
+		}
+	]
+	order_index: 20
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"52D155D89DA66E97"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_forge"
+			}
+			id: "2B2E63FE532E39CA"
+			rewards: [
+				{
+					id: "2790A845CAF39566"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "hexagon"
+			size: 1.35d
+			tasks: [
+				{
+					id: "2DBA80767300F515"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2B2E63FE532E39CA"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_casing"
+			}
+			id: "19B1B0CE0EFF284D"
+			rewards: [
+				{
+					id: "2F3B8647799AD246"
+					type: "xp"
+					xp: 1005
+				}
+			]
+			tasks: [
+				{
+					count: 22L
+					id: "1B8837E994C1D647"
+					item: {
+						count: 1
+						id: "yukicore:frost_casing"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 0.352d
+		}
+		{
+			dependencies: [
+				"19B1B0CE0EFF284D"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:blue_ice"
+			}
+			id: "4F44E71E2E4A471C"
+			rewards: [
+				{
+					id: "7EB14DBE1042F845"
+					type: "xp"
+					xp: 1010
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1F3B69B882380D04"
+					item: {
+						count: 1
+						id: "minecraft:blue_ice"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 0.438d
+		}
+		{
+			dependencies: [
+				"4F44E71E2E4A471C"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_lamp"
+			}
+			id: "6372CB9D8334380E"
+			rewards: [
+				{
+					id: "52D232B7793B87B6"
+					type: "xp"
+					xp: 1015
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "5729CD0FA894DAD8"
+					item: {
+						count: 1
+						id: "yukicore:yuki_lamp"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 0.192d
+		}
+		{
+			dependencies: [
+				"6372CB9D8334380E"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_forge"
+			}
+			id: "323C82AD4A2BE745"
+			rewards: [
+				{
+					id: "1041BFB0CCBBF739"
+					type: "xp"
+					xp: 1020
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "20FA45A646D57DA7"
+					item: {
+						count: 1
+						id: "yukicore:frost_forge"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -0.199d
+		}
+		{
+			dependencies: [
+				"323C82AD4A2BE745"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:cryo_generator"
+			}
+			id: "5DFEF27ADEB7E379"
+			rewards: [
+				{
+					id: "4C9AC9A6D4B2F247"
+					type: "xp"
+					xp: 1025
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "6050E0A7698FF026"
+					item: {
+						count: 1
+						id: "yukicore:cryo_generator"
+					}
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: -0.44d
+		}
+		{
+			dependencies: [
+				"5DFEF27ADEB7E379"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:cryosteel_ingot"
+			}
+			id: "4BA737058D8C0DDC"
+			rewards: [
+				{
+					id: "6C0DE4ED80E024F4"
+					type: "xp"
+					xp: 1030
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "605DAAB6D13DCC2C"
+					item: {
+						count: 1
+						id: "yukicore:cryosteel_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: -0.348d
+		}
+		{
+			dependencies: [
+				"4BA737058D8C0DDC"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:cryosteel_block"
+			}
+			id: "1B36ACB1E5B76A63"
+			rewards: [
+				{
+					id: "6960825ED60B6FB7"
+					type: "xp"
+					xp: 1035
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "2F5B47CFC998DAB9"
+					item: {
+						count: 1
+						id: "yukicore:cryosteel_block"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 2.282d
+		}
+		{
+			dependencies: [
+				"1B36ACB1E5B76A63"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_ingot"
+			}
+			id: "7BC818E4532400CD"
+			rewards: [
+				{
+					id: "65CF30F9FF189068"
+					type: "xp"
+					xp: 1040
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "1540B6D79DA52EFA"
+					item: {
+						count: 1
+						id: "yukicore:frost_ingot"
+					}
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: 1.891d
+		}
+		{
+			dependencies: [
+				"7BC818E4532400CD"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:reactor_casing"
+			}
+			id: "2C33B85CEAC1BE3D"
+			rewards: [
+				{
+					id: "12E9BF861682FC6A"
+					type: "xp"
+					xp: 1045
+				}
+			]
+			tasks: [
+				{
+					count: 22L
+					id: "48F04AEFC3442FE6"
+					item: {
+						count: 1
+						id: "yukicore:reactor_casing"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 1.658d
+		}
+		{
+			dependencies: [
+				"2C33B85CEAC1BE3D"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:starlight_block"
+			}
+			id: "248770373C624730"
+			rewards: [
+				{
+					id: "727864AAE8A377FA"
+					type: "xp"
+					xp: 1050
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4245F71C33EC143C"
+					item: {
+						count: 1
+						id: "yukicore:starlight_block"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 1.759d
+		}
+		{
+			dependencies: [
+				"248770373C624730"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:celestium_block"
+			}
+			id: "287EC5CD23C3C9B4"
+			rewards: [
+				{
+					id: "69A468EF602A2B2D"
+					type: "xp"
+					xp: 1055
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "78A68CA33CEC27D9"
+					item: {
+						count: 1
+						id: "yukicore:celestium_block"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 2.119d
+		}
+		{
+			dependencies: [
+				"287EC5CD23C3C9B4"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:star_reactor"
+			}
+			id: "6C8E90AF61CA3170"
+			rewards: [
+				{
+					id: "5DA9E8D7E882BAE8"
+					type: "xp"
+					xp: 1060
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2026E6258545BAA0"
+					item: {
+						count: 1
+						id: "yukicore:star_reactor"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 2.464d
+		}
+		{
+			dependencies: [
+				"6C8E90AF61CA3170"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:stellar_alloy"
+			}
+			id: "71E01DAD697309A9"
+			rewards: [
+				{
+					id: "1417ACF7AD4F6726"
+					type: "xp"
+					xp: 1065
+				}
+				{
+					count: 3
+					id: "1821B318AB7E02EB"
+					item: {
+						count: 1
+						id: "yukicore:gift"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "68877889426D8580"
+					item: {
+						count: 1
+						id: "yukicore:stellar_alloy"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					count: 4L
+					id: "19529B8EEEC2825C"
+					item: {
+						count: 1
+						id: "yukicore:stellar_alloy"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.534d
+		}
+	]
+}

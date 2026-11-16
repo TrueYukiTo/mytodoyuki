@@ -1,0 +1,26 @@
+{
+  "name": "Синтара",
+  "category": "yukicore:sintara",
+  "icon": "yukicore:sintara_staff",
+  "sortnum": 21,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)Когда Юки была маленькой, по ночам к ней прилетала подруга — $(l)Синтара$(), хранительница северного сияния.$()$(br2)Пока Тень крала свет Юки, Синтара прятала его в небесных огнях."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:sintara_amulet",
+      "text": "$(l)Амулет Синтары$(): удача, ночное зрение, враги подсвечены."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:sintara_staff",
+      "text": "$(l)Посох Синтары$(): луч сияния и исцеляющее Сияние для друзей."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)♥ Эта глава посвящена другу — Sintara.$()"
+    }
+  ]
+}

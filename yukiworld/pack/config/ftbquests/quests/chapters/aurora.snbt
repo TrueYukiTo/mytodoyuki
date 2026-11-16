@@ -8,8 +8,54 @@
 		id: "yukicore:aurora_shard"
 	}
 	id: "605148D1FD72951A"
-	images: [ ]
-	order_index: 26
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/banner.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 1.19d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -3.5d
+			width: 1.19d
+			x: 11.98d
+			y: 0.4d
+		}
+		{
+			height: 0.92d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -7.9d
+			width: 0.92d
+			x: -1.62d
+			y: 0.03d
+		}
+		{
+			height: 0.91d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: 16.7d
+			width: 0.91d
+			x: -1.44d
+			y: 1.7d
+		}
+		{
+			height: 0.78d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: -7.4d
+			width: 0.78d
+			x: 12.02d
+			y: 2.38d
+		}
+	]
+	order_index: 27
 	quest_links: [ ]
 	quests: [
 		{
@@ -29,7 +75,7 @@
 				}
 			]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.35d
 			tasks: [
 				{
 					id: "32DF2F3A72A5A403"
@@ -56,6 +102,7 @@
 				}
 			]
 			shape: "rsquare"
+			size: 1.25d
 			tasks: [
 				{
 					dimension: "yukicore:aurora"
@@ -63,8 +110,8 @@
 					type: "dimension"
 				}
 			]
-			x: 1.5d
-			y: 0.0d
+			x: 1.75d
+			y: 0.352d
 		}
 		{
 			dependencies: [
@@ -93,8 +140,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 3.5d
+			y: 0.438d
 		}
 		{
 			dependencies: [
@@ -123,8 +170,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 0.0d
+			x: 5.25d
+			y: 0.192d
 		}
 		{
 			dependencies: [
@@ -153,8 +200,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 0.0d
+			x: 7.0d
+			y: -0.199d
 		}
 		{
 			dependencies: [
@@ -183,8 +230,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 0.0d
+			x: 8.75d
+			y: -0.44d
 		}
 		{
 			dependencies: [
@@ -203,6 +250,7 @@
 				}
 			]
 			shape: "diamond"
+			size: 1.45d
 			tasks: [
 				{
 					entity: "yukicore:blizzard_queen"
@@ -211,8 +259,8 @@
 					value: 1L
 				}
 			]
-			x: 9.0d
-			y: 0.0d
+			x: 10.5d
+			y: -0.348d
 		}
 		{
 			dependencies: [
@@ -249,7 +297,7 @@
 				}
 			]
 			shape: "gear"
-			size: 1.5d
+			size: 2.0d
 			tasks: [
 				{
 					count: 1L
@@ -261,8 +309,8 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 1.5d
+			x: 10.5d
+			y: 2.282d
 		}
 	]
 }
