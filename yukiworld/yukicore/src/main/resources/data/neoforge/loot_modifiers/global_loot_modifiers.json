@@ -3,6 +3,9 @@
   "entries": [
     "yukicore:star_shard_wither",
     "yukicore:star_shard_warden",
-    "yukicore:star_shard_elder_guardian"
+    "yukicore:star_shard_elder_guardian",
+    "yukicore:gift_stray",
+    "yukicore:gift_snow_golem",
+    "yukicore:tangerine_spruce"
   ]
 }

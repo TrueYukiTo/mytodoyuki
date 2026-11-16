@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "powah"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "powah:crystal_nitro"
+    },
+    "c": {
+      "item": "powah:capacitor_basic_large"
+    },
+    "p": {
+      "item": "yukicore:yuki_essence"
+    }
+  },
+  "pattern": [
+    "pbp",
+    "bcb",
+    "pbp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "powah:capacitor_nitro"
+  }
+}

@@ -1,0 +1,494 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "newyear"
+	group: "27C6257DE576252F"
+	icon: {
+		count: 1
+		id: "yukicore:yuki_tree"
+	}
+	id: "50F460122CE9ADA9"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"76AC66B0296A2734"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:gift"
+			}
+			id: "663A789EE5784BFC"
+			rewards: [
+				{
+					id: "1A753ADE6F3ECA30"
+					type: "xp"
+					xp: 120
+				}
+				{
+					count: 1
+					id: "6126BE4CD5F851BB"
+					item: {
+						count: 1
+						id: "yukicore:advent_calendar"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6F1B603B0E3A9C9A"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"663A789EE5784BFC"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:advent_calendar"
+			}
+			id: "624DA7FF1CDA6DA5"
+			rewards: [
+				{
+					id: "553A0DC3D7A3224C"
+					type: "xp"
+					xp: 125
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5261B0002987BED5"
+					item: {
+						count: 1
+						id: "yukicore:advent_calendar"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"624DA7FF1CDA6DA5"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:gift"
+			}
+			id: "1B4A1E16E0B59F63"
+			rewards: [
+				{
+					id: "1967FECE80285CE3"
+					type: "xp"
+					xp: 130
+				}
+				{
+					count: 2
+					id: "745E59B0866BBF9C"
+					item: {
+						count: 1
+						id: "yukicore:gift"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7FEFFC93DBF6D64C"
+					item: {
+						count: 1
+						id: "yukicore:gift"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1B4A1E16E0B59F63"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:tangerine"
+			}
+			id: "1903D11D8C2310EF"
+			rewards: [
+				{
+					id: "276D5C1C553027B6"
+					type: "xp"
+					xp: 135
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "350CC70F37CC92B0"
+					item: {
+						count: 1
+						id: "yukicore:tangerine"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1903D11D8C2310EF"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:candy_cane"
+			}
+			id: "7F4DE63B77B96759"
+			rewards: [
+				{
+					id: "21FAA12A48D2B188"
+					type: "xp"
+					xp: 140
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "3713DD516AAD3EF3"
+					item: {
+						count: 1
+						id: "yukicore:candy_cane"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7F4DE63B77B96759"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:gingerbread"
+			}
+			id: "58586966F2F51156"
+			rewards: [
+				{
+					id: "33A32ABF1C8EC82D"
+					type: "xp"
+					xp: 145
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "664887CFFF9E3D62"
+					item: {
+						count: 1
+						id: "yukicore:gingerbread"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"58586966F2F51156"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:hot_cocoa"
+			}
+			id: "35AEF07E0C91F50C"
+			rewards: [
+				{
+					id: "5AFD0224091F2086"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "60DA09BA2BF3E568"
+					item: {
+						count: 1
+						id: "yukicore:hot_cocoa"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"35AEF07E0C91F50C"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:olivier"
+			}
+			id: "11564C5A9D686BFA"
+			rewards: [
+				{
+					id: "6B05CACF77FE12E4"
+					type: "xp"
+					xp: 155
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "70B0D8DEEF7FE8FD"
+					item: {
+						count: 1
+						id: "yukicore:olivier"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"11564C5A9D686BFA"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:festive_garland"
+			}
+			id: "2EB22A37F263FB0C"
+			rewards: [
+				{
+					id: "2053EE454076F086"
+					type: "xp"
+					xp: 160
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "3FCB6B9712C9C4AE"
+					item: {
+						count: 1
+						id: "yukicore:festive_garland"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2EB22A37F263FB0C"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:christmas_ornament"
+			}
+			id: "6B82391B6FE208C6"
+			rewards: [
+				{
+					id: "3F4FD35E61E087B3"
+					type: "xp"
+					xp: 165
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "28BFD545E218B675"
+					item: {
+						count: 1
+						id: "yukicore:christmas_ornament"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6B82391B6FE208C6"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_tree"
+			}
+			id: "1FA55C546DCF8E0D"
+			rewards: [
+				{
+					id: "7290C834D8D91108"
+					type: "xp"
+					xp: 170
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "60FEE2A2E278715E"
+					item: {
+						count: 1
+						id: "yukicore:yuki_tree"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1FA55C546DCF8E0D"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:snow_globe"
+			}
+			id: "66DCE3498654D955"
+			rewards: [
+				{
+					id: "6BC5FF4264E44885"
+					type: "xp"
+					xp: 175
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "72B9497E3CD1A19D"
+					item: {
+						count: 1
+						id: "yukicore:snow_globe"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"66DCE3498654D955"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:carved_pumpkin"
+			}
+			id: "3C7F00CAB3F26E7C"
+			rewards: [
+				{
+					id: "13E10D7328E167B9"
+					type: "xp"
+					xp: 180
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2842FB71F486A7EA"
+					item: {
+						count: 1
+						id: "minecraft:carved_pumpkin"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3C7F00CAB3F26E7C"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:netherite_sword"
+			}
+			id: "5C8F6257098275AB"
+			rewards: [
+				{
+					id: "40EEFBB3AF1971C0"
+					type: "xp"
+					xp: 185
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					entity: "minecraft:stray"
+					id: "68549CB96909850A"
+					type: "kill"
+					value: 5L
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5C8F6257098275AB"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_tree"
+			}
+			id: "5ADAB3EEAE343A0C"
+			rewards: [
+				{
+					id: "20B7BA2EC5D31A1C"
+					type: "xp"
+					xp: 190
+				}
+				{
+					count: 3
+					id: "7BAF7D73D9ED4D5E"
+					item: {
+						count: 1
+						id: "yukicore:gift"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "2510354BA855F45A"
+					item: {
+						count: 1
+						id: "yukicore:grand_gift"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "3E797C9F47CA47B2"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+	]
+}

@@ -28,3 +28,107 @@ type = "required"
 versionRange = "[1.21.1,1.21.2)"
 ordering = "NONE"
 side = "BOTH"
+
+# YukiCore перекрывает часть рецептов этого мода (крафты в стиле ATM) — грузимся после него
+[[dependencies.${mod_id}]]
+modId = "mekanism"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+# YukiCore перекрывает часть рецептов этого мода (крафты в стиле ATM) — грузимся после него
+[[dependencies.${mod_id}]]
+modId = "ae2"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+# YukiCore перекрывает часть рецептов этого мода (крафты в стиле ATM) — грузимся после него
+[[dependencies.${mod_id}]]
+modId = "ad_astra"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+# YukiCore перекрывает часть рецептов этого мода (крафты в стиле ATM) — грузимся после него
+[[dependencies.${mod_id}]]
+modId = "sophisticatedbackpacks"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+# YukiCore перекрывает часть рецептов этого мода (крафты в стиле ATM) — грузимся после него
+[[dependencies.${mod_id}]]
+modId = "powah"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+# YukiCore перекрывает часть рецептов этого мода (крафты в стиле ATM) — грузимся после него
+[[dependencies.${mod_id}]]
+modId = "create"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+# YukiCore перекрывает часть рецептов этого мода (крафты в стиле ATM) — грузимся после него
+[[dependencies.${mod_id}]]
+modId = "mysticalagriculture"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+# YukiCore перекрывает часть рецептов этого мода (крафты в стиле ATM) — грузимся после него
+[[dependencies.${mod_id}]]
+modId = "industrialforegoing"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+# YukiCore перекрывает часть рецептов этого мода (крафты в стиле ATM) — грузимся после него
+[[dependencies.${mod_id}]]
+modId = "refinedstorage"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+# YukiCore перекрывает часть рецептов этого мода (крафты в стиле ATM) — грузимся после него
+[[dependencies.${mod_id}]]
+modId = "justdirethings"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+# YukiCore перекрывает часть рецептов этого мода (крафты в стиле ATM) — грузимся после него
+[[dependencies.${mod_id}]]
+modId = "ftbquests"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+# YukiCore перекрывает часть рецептов этого мода (крафты в стиле ATM) — грузимся после него
+[[dependencies.${mod_id}]]
+modId = "patchouli"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"
+
+# YukiCore перекрывает часть рецептов этого мода (крафты в стиле ATM) — грузимся после него
+[[dependencies.${mod_id}]]
+modId = "jei"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "BOTH"

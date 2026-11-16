@@ -28,6 +28,7 @@ public final class YukiCore {
         ModItems.ITEMS.register(modBus);
         ModCreativeTabs.TABS.register(modBus);
         dev.yukito.yukicore.registry.ModBlockEntities.BLOCK_ENTITIES.register(modBus);
+        modBus.addListener(dev.yukito.yukicore.registry.ModBlockEntities::capabilities);
         dev.yukito.yukicore.registry.ModRecipes.TYPES.register(modBus);
         dev.yukito.yukicore.registry.ModRecipes.SERIALIZERS.register(modBus);
         dev.yukito.yukicore.registry.ModEntities.register(modBus);

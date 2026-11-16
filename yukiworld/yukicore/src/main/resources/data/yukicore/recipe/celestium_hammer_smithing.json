@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "yukicore:celestium_upgrade_template"
+  },
+  "base": {
+    "item": "yukicore:aurorium_hammer"
+  },
+  "addition": {
+    "item": "yukicore:celestium_block"
+  },
+  "result": {
+    "id": "yukicore:celestium_hammer",
+    "count": 1
+  }
+}

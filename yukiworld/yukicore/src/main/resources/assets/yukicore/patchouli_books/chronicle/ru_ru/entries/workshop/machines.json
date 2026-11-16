@@ -1,0 +1,18 @@
+{
+  "name": "Машины",
+  "category": "yukicore:workshop",
+  "icon": "yukicore:yuki_chrono",
+  "sortnum": 17,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:cryo_generator",
+      "text": "$(l)Криогенератор$(): энергия от льда на 6 сторонах. Снег 5, лёд 10, плотный 20, синий 40 FE/т за сторону. Сам отдаёт FE соседям."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:yuki_chrono",
+      "text": "$(l)Часы Юки$(): машины и растения в кубе 3×3×3 работают в 4 раза быстрее. Сигнал редстоуна выключает часы."
+    }
+  ]
+}

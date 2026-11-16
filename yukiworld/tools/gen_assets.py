@@ -40,7 +40,8 @@ BLOCKS = ["frost_ore", "yuki_crystal_ore", "starlight_ore", "frost_block", "yuki
           "starlight_block", "aurorium_block", "celestium_block", "yuki_lamp",
           "permafrost_ore", "aurora_ore", "pyrolite_ore", "void_ore", "stellar_ore",
           "permafrost_block", "aurora_block", "pyrolite_block", "void_block", "stellar_block"]
-SPECIAL_BLOCKS = ["yuki_altar", "yuki_pedestal"]
+SPECIAL_BLOCKS = ["yuki_altar", "yuki_pedestal", "yuki_chrono", "cryo_generator", "festive_garland",
+                  "christmas_ornament", "yuki_tree", "snow_globe"]
 ORES = {"frost_ore": ("raw_frost", 1, 2), "yuki_crystal_ore": ("yuki_crystal", 1, 3),
         "starlight_ore": ("starlight_shard", 1, 1), "permafrost_ore": ("permafrost_crystal", 1, 3),
         "aurora_ore": ("aurora_shard", 1, 2), "pyrolite_ore": ("raw_pyrolite", 1, 2),
@@ -122,6 +123,7 @@ def main():
 
     # ---------------- предметы
     items = art.hd_textures()
+    items.update(art.hd_textures_v4())
     for name, (img, handheld) in items.items():
         write(ASSETS / "textures" / "item" / f"{name}.png", img)
         write(ASSETS / "models" / "item" / f"{name}.json",
@@ -161,6 +163,39 @@ def main():
                            cube([2, 11, 2], [14, 14, 14])]})
         write(ASSETS / "blockstates" / f"{name}.json", {"variants": {"": {"model": f"{MOD}:block/{name}"}}})
         write(ASSETS / "models" / "item" / f"{name}.json", {"parent": f"{MOD}:block/{name}"})
+
+    # 4.0: машины и новогодние украшения
+    v4 = art.hd_blocks_v4()
+    for name, img in v4.items():
+        write(ASSETS / "textures" / "block" / f"{name}.png", img)
+    B = f"{MOD}:block/"
+    v4models = {
+        "yuki_chrono": {"parent": "minecraft:block/cube_all", "textures": {"all": B + "yuki_chrono"}},
+        "cryo_generator": {"parent": "minecraft:block/cube_all", "textures": {"all": B + "cryo_generator"}},
+        "festive_garland": {"parent": "minecraft:block/carpet", "render_type": "minecraft:cutout",
+                            "textures": {"wool": B + "festive_garland", "particle": B + "festive_garland"}},
+        "christmas_ornament": {"parent": "minecraft:block/block", "textures": {"all": B + "christmas_ornament",
+                                                                               "particle": B + "christmas_ornament"},
+                               "elements": [{"from": [4, 2, 4], "to": [12, 10, 12], "faces": {
+                                   d: {"texture": "#all"} for d in ("north", "south", "east", "west", "up", "down")}},
+                                   {"from": [7, 10, 7], "to": [9, 12, 9], "faces": {
+                                       d: {"texture": "#all", "uv": [0, 7, 2, 9]}
+                                       for d in ("north", "south", "east", "west", "up")}}]},
+        "yuki_tree": {"parent": "minecraft:block/cross", "render_type": "minecraft:cutout",
+                      "textures": {"cross": B + "yuki_tree"}},
+        "snow_globe": {"parent": "minecraft:block/block", "render_type": "minecraft:translucent",
+                       "textures": {"glass": B + "snow_globe", "base": B + "snow_globe_base", "particle": B + "snow_globe"},
+                       "elements": [{"from": [3, 0, 3], "to": [13, 2, 13], "faces": {
+                           d: {"texture": "#base"} for d in ("north", "south", "east", "west", "up", "down")}},
+                           {"from": [4, 2, 4], "to": [12, 11, 12], "faces": {
+                               d: {"texture": "#glass"} for d in ("north", "south", "east", "west", "up")}}]},
+    }
+    for name, model in v4models.items():
+        write(ASSETS / "models" / "block" / f"{name}.json", model)
+        write(ASSETS / "blockstates" / f"{name}.json", {"variants": {"": {"model": f"{MOD}:block/{name}"}}})
+        item_model = ({"parent": "minecraft:item/generated", "textures": {"layer0": B + name}}
+                      if name in ("yuki_tree", "festive_garland") else {"parent": B + name})
+        write(ASSETS / "models" / "item" / f"{name}.json", item_model)
 
     # скины боссов: перекраска ванильных моделей в HD (×4)
     import zipfile
@@ -213,6 +248,8 @@ def main():
     rec = recipes.build()
     for name, r in rec.items():
         write(DATA / MOD / "recipe" / f"{name}.json", r)
+    for rel, r in recipes.overrides().items():
+        write(DATA / rel, r)
     if known is not None:
         ours = {I(n) for n in list(items) + BLOCKS + SPECIAL_BLOCKS}
         bad = sorted(i for i in recipes.ingredient_ids(rec)
@@ -282,7 +319,40 @@ def main():
             "conditions": [{"condition": "neoforge:loot_table_id", "loot_table_id": table}],
             "table": f"{MOD}:bonus/star_shard_{boss}"})
         entries.append(f"{MOD}:star_shard_{boss}")
+    # 4.0: подарки и мандарины
+    def chance_table(item, chance, lo=1, hi=1):
+        return {"type": "minecraft:generic", "pools": [{"rolls": 1, "bonus_rolls": 0,
+                "conditions": [{"condition": "minecraft:random_chance", "chance": chance}],
+                "entries": [{"type": "minecraft:item", "name": item, "functions": [
+                    {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": lo, "max": hi}}]}]}]}
+    for key, table, item, chance in [("gift_stray", "minecraft:entities/stray", I("gift"), 0.05),
+                                      ("gift_snow_golem", "minecraft:entities/snow_golem", I("gift"), 0.08),
+                                      ("tangerine_spruce", "minecraft:blocks/spruce_leaves", I("tangerine"), 0.03)]:
+        write(DATA / MOD / "loot_table" / "bonus" / f"{key}.json", chance_table(item, chance))
+        write(DATA / MOD / "loot_modifiers" / f"{key}.json", {
+            "type": "neoforge:add_table",
+            "conditions": [{"condition": "neoforge:loot_table_id", "loot_table_id": table}],
+            "table": f"{MOD}:bonus/{key}"})
+        entries.append(f"{MOD}:{key}")
     write(DATA / "neoforge" / "loot_modifiers" / "global_loot_modifiers.json", {"replace": False, "entries": entries})
+
+    def gift_table(rolls, pool):
+        return {"type": "minecraft:gift", "pools": [{"rolls": rolls, "bonus_rolls": 0, "entries": [
+            {"type": "minecraft:item", "name": it, "weight": w, "functions": [
+                {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": a, "max": b}}]}
+            for it, w, a, b in pool]}]}
+    write(DATA / MOD / "loot_table" / "gameplay" / "gift.json", gift_table(3, [
+        (I("tangerine"), 30, 3, 8), (I("candy_cane"), 25, 2, 5), (I("gingerbread"), 20, 2, 4),
+        (I("hot_cocoa"), 12, 1, 2), ("minecraft:iron_ingot", 20, 4, 12), ("minecraft:gold_ingot", 12, 3, 8),
+        ("minecraft:diamond", 6, 1, 3), ("minecraft:emerald", 8, 2, 6), ("minecraft:experience_bottle", 10, 4, 12),
+        (I("festive_garland"), 10, 4, 8), (I("christmas_ornament"), 8, 2, 4), (I("yuki_crystal"), 4, 1, 3),
+        ("minecraft:golden_apple", 3, 1, 1)]))
+    write(DATA / MOD / "loot_table" / "gameplay" / "grand_gift.json", gift_table(5, [
+        ("minecraft:diamond", 20, 3, 8), ("minecraft:netherite_scrap", 8, 1, 2), ("minecraft:emerald_block", 10, 1, 3),
+        (I("frost_ingot"), 12, 2, 6), (I("yuki_crystal"), 12, 3, 8), (I("yuki_essence"), 8, 1, 3),
+        (I("starlight_shard"), 4, 1, 2), (I("star_shard"), 2, 1, 1), ("minecraft:enchanted_golden_apple", 2, 1, 1),
+        (I("olivier"), 15, 1, 3), (I("yuki_tree"), 10, 1, 1), (I("snow_globe"), 10, 1, 1),
+        ("minecraft:totem_of_undying", 3, 1, 1), (I("frost_magnet"), 3, 1, 1)]))
 
     # ---------------- планеты Системы Юки (Ad Astra)
     for rel, content in planets.files(ADASTRA_DATA).items():

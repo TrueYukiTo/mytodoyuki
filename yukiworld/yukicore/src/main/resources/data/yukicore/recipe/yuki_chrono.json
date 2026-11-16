@@ -1,0 +1,44 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "justdirethings"
+    }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "yukicore:celestium_ingot"
+    },
+    "C": {
+      "item": "yukicore:cryo_circuit"
+    },
+    "Q": {
+      "item": "yukicore:frost_mechanism"
+    },
+    "K": {
+      "item": "justdirethings:time_crystal"
+    },
+    "X": {
+      "item": "minecraft:clock"
+    }
+  },
+  "pattern": [
+    " TCT ",
+    "TQKQT",
+    "CKXKC",
+    "TQKQT",
+    " TCT "
+  ],
+  "result": {
+    "count": 1,
+    "id": "yukicore:yuki_chrono"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ad_astra"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "ad_astra:calorite_plates"
+    },
+    "E": {
+      "item": "ad_astra:ostrum_engine"
+    },
+    "F": {
+      "item": "yukicore:frost_mechanism"
+    }
+  },
+  "pattern": [
+    "###",
+    "#E#",
+    " F "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ad_astra:calorite_engine"
+  }
+}

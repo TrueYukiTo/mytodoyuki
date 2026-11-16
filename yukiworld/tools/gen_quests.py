@@ -19,7 +19,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from yukigen.questbook import CHAPTERS as CH2  # noqa: E402
 from yukigen.questbook3 import CHAPTERS3, GROUPS, ORDER  # noqa: E402
 
-_BY_KEY = {c[0]: c for c in CH2 + CHAPTERS3}
+from yukigen.questbook4 import CHAPTERS4, GROUP as GROUP4, INSERT_AFTER  # noqa: E402
+
+for _k, _after in INSERT_AFTER.items():
+    _i = [k for k, _ in ORDER].index(_after)
+    ORDER.insert(_i + 1, (_k, GROUP4[_k]))
+_BY_KEY = {c[0]: c for c in CH2 + CHAPTERS3 + CHAPTERS4}
 CHAPTERS = [_BY_KEY[k] for k, _ in ORDER]
 GROUP_OF = dict(ORDER)
 assert len(CHAPTERS) == len(_BY_KEY), set(_BY_KEY) - {k for k, _ in ORDER}
@@ -141,6 +146,9 @@ def main():
             check(q_icon)
 
             rewards = [{"id": qid(qkey + "/xp"), "type": "xp", "xp": base_xp + n * 5}]
+            if n == len(steps) - 1:  # финал главы — новогодние подарки
+                rewards.append({"id": qid(qkey + "/gifts"), "type": "item",
+                                "item": item("yukicore:gift"), "count": 3})
             if reward:
                 stack = item(reward[0], 1, reward[2] if len(reward) > 2 else None)
                 check(reward[0])

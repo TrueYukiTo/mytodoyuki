@@ -9,12 +9,12 @@
 	}
 	id: "585CF5E6E01E5DCF"
 	images: [ ]
-	order_index: 18
+	order_index: 20
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: [
-				"2B408D1DDD76EE27"
+				"52D155D89DA66E97"
 			]
 			icon: {
 				count: 1
@@ -653,6 +653,15 @@
 					id: "29A23683F9B52878"
 					type: "xp"
 					xp: 705
+				}
+				{
+					count: 3
+					id: "5E1065C5C1D47C0D"
+					item: {
+						count: 1
+						id: "yukicore:gift"
+					}
+					type: "item"
 				}
 				{
 					count: 4

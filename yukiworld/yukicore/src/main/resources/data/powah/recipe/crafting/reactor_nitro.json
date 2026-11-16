@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "powah"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "l": {
+      "item": "powah:capacitor_nitro"
+    },
+    "r": {
+      "item": "powah:reactor_spirited"
+    },
+    "u": {
+      "item": "yukicore:frost_ingot"
+    }
+  },
+  "pattern": [
+    "rlr",
+    "lul",
+    "rlr"
+  ],
+  "result": {
+    "count": 4,
+    "id": "powah:reactor_nitro"
+  }
+}

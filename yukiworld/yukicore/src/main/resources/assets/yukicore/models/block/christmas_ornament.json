@@ -1,0 +1,100 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "all": "yukicore:block/christmas_ornament",
+    "particle": "yukicore:block/christmas_ornament"
+  },
+  "elements": [
+    {
+      "from": [
+        4,
+        2,
+        4
+      ],
+      "to": [
+        12,
+        10,
+        12
+      ],
+      "faces": {
+        "north": {
+          "texture": "#all"
+        },
+        "south": {
+          "texture": "#all"
+        },
+        "east": {
+          "texture": "#all"
+        },
+        "west": {
+          "texture": "#all"
+        },
+        "up": {
+          "texture": "#all"
+        },
+        "down": {
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "from": [
+        7,
+        10,
+        7
+      ],
+      "to": [
+        9,
+        12,
+        9
+      ],
+      "faces": {
+        "north": {
+          "texture": "#all",
+          "uv": [
+            0,
+            7,
+            2,
+            9
+          ]
+        },
+        "south": {
+          "texture": "#all",
+          "uv": [
+            0,
+            7,
+            2,
+            9
+          ]
+        },
+        "east": {
+          "texture": "#all",
+          "uv": [
+            0,
+            7,
+            2,
+            9
+          ]
+        },
+        "west": {
+          "texture": "#all",
+          "uv": [
+            0,
+            7,
+            2,
+            9
+          ]
+        },
+        "up": {
+          "texture": "#all",
+          "uv": [
+            0,
+            7,
+            2,
+            9
+          ]
+        }
+      }
+    }
+  ]
+}

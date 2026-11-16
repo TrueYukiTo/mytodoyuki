@@ -107,6 +107,46 @@ public final class ModItems {
                     .component(DataComponents.UNBREAKABLE, new Unbreakable(true))
                     .attributes(SwordItem.createAttributes(ModTiers.YUKI, 50, -1.8f))));
 
+    // --- Полезные вещи ---
+    public static final DeferredItem<Item> FROST_MAGNET = ITEMS.register("frost_magnet",
+            () -> new dev.yukito.yukicore.item.FrostMagnetItem(new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 8));
+    public static final DeferredItem<Item> CELESTIAL_MAGNET = ITEMS.register("celestial_magnet",
+            () -> new dev.yukito.yukicore.item.FrostMagnetItem(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)
+                    .fireResistant(), 16));
+    public static final DeferredItem<Item> AURORIUM_HAMMER = ITEMS.register("aurorium_hammer",
+            () -> new dev.yukito.yukicore.item.HammerItem(ModTiers.AURORIUM, toolProps(Rarity.RARE)
+                    .attributes(DiggerItem.createAttributes(ModTiers.AURORIUM, 6.0f, -3.2f))));
+    public static final DeferredItem<Item> CELESTIUM_HAMMER = ITEMS.register("celestium_hammer",
+            () -> new dev.yukito.yukicore.item.HammerItem(ModTiers.CELESTIUM, toolProps(Rarity.EPIC)
+                    .attributes(DiggerItem.createAttributes(ModTiers.CELESTIUM, 7.0f, -3.0f))));
+    public static final DeferredItem<Item> SNOW_BOOTS = ITEMS.register("snow_boots",
+            () -> new dev.yukito.yukicore.item.SnowBootsItem(ModArmorMaterials.FROST,
+                    toolProps(Rarity.RARE).durability(ArmorItem.Type.BOOTS.getDurability(40))));
+
+    // --- Новый год ---
+    public static final DeferredItem<Item> GIFT = ITEMS.register("gift",
+            () -> new dev.yukito.yukicore.item.GiftItem(new Item.Properties().rarity(Rarity.UNCOMMON), "gift"));
+    public static final DeferredItem<Item> GRAND_GIFT = ITEMS.register("grand_gift",
+            () -> new dev.yukito.yukicore.item.GiftItem(new Item.Properties().rarity(Rarity.EPIC), "grand_gift"));
+    public static final DeferredItem<Item> ADVENT_CALENDAR = ITEMS.register("advent_calendar",
+            () -> new dev.yukito.yukicore.item.AdventCalendarItem(new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
+    public static final DeferredItem<Item> TANGERINE = food("tangerine", 4, 0.6f, Rarity.COMMON,
+            new MobEffectInstance(MobEffects.REGENERATION, 20 * 5, 0));
+    public static final DeferredItem<Item> CANDY_CANE = food("candy_cane", 3, 0.4f, Rarity.UNCOMMON,
+            new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 20 * 60, 1), new MobEffectInstance(MobEffects.DIG_SPEED, 20 * 60, 1));
+    public static final DeferredItem<Item> GINGERBREAD = food("gingerbread", 7, 1.0f, Rarity.UNCOMMON,
+            new MobEffectInstance(MobEffects.ABSORPTION, 20 * 90, 1));
+    public static final DeferredItem<Item> OLIVIER = ITEMS.register("olivier", () -> new Item(new Item.Properties()
+            .stacksTo(16).rarity(Rarity.UNCOMMON).food(new FoodProperties.Builder().nutrition(12).saturationModifier(1.2f)
+                    .usingConvertsTo(Items.BOWL)
+                    .effect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 20 * 300, 1), 1f)
+                    .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20 * 120, 0), 1f).build())));
+    public static final DeferredItem<Item> HOT_COCOA = ITEMS.register("hot_cocoa", () -> new dev.yukito.yukicore.item.DrinkItem(
+            new Item.Properties().stacksTo(16).rarity(Rarity.UNCOMMON).food(new FoodProperties.Builder().nutrition(5)
+                    .saturationModifier(0.8f).alwaysEdible().usingConvertsTo(Items.GLASS_BOTTLE)
+                    .effect(new MobEffectInstance(MobEffects.REGENERATION, 20 * 20, 1), 1f)
+                    .effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 20 * 60, 0), 1f).build())));
+
     // --- Инструменты и броня трёх уровней ---
     public static final DeferredItem<Item> FROST_SWORD = sword("frost", ModTiers.FROST, Rarity.UNCOMMON);
     public static final DeferredItem<Item> FROST_PICKAXE = pickaxe("frost", ModTiers.FROST, Rarity.UNCOMMON);
@@ -161,6 +201,20 @@ public final class ModItems {
         blockItem(ModBlocks.PYROLITE_BLOCK, Rarity.RARE);
         blockItem(ModBlocks.VOID_BLOCK, Rarity.EPIC);
         blockItem(ModBlocks.STELLAR_BLOCK, Rarity.EPIC);
+        blockItem(ModBlocks.YUKI_CHRONO, Rarity.EPIC);
+        blockItem(ModBlocks.CRYO_GENERATOR, Rarity.RARE);
+        blockItem(ModBlocks.FESTIVE_GARLAND, Rarity.COMMON);
+        blockItem(ModBlocks.CHRISTMAS_ORNAMENT, Rarity.COMMON);
+        blockItem(ModBlocks.YUKI_TREE, Rarity.UNCOMMON);
+        blockItem(ModBlocks.SNOW_GLOBE, Rarity.UNCOMMON);
+    }
+
+    private static DeferredItem<Item> food(String name, int nutrition, float sat, Rarity rarity, MobEffectInstance... effects) {
+        return ITEMS.register(name, () -> {
+            FoodProperties.Builder b = new FoodProperties.Builder().nutrition(nutrition).saturationModifier(sat).alwaysEdible();
+            for (MobEffectInstance e : effects) b.effect(new MobEffectInstance(e), 1f);
+            return new Item(new Item.Properties().rarity(rarity).food(b.build()));
+        });
     }
 
     private static DeferredItem<Item> material(String name, Rarity rarity, boolean foil) {
@@ -215,7 +269,7 @@ public final class ModItems {
 
     private static void blockItem(DeferredBlock<? extends Block> block, Rarity rarity) {
         ITEMS.register(block.getId().getPath(),
-                () -> new BlockItem(block.get(), new Item.Properties().rarity(rarity)));
+                () -> new dev.yukito.yukicore.item.DescBlockItem(block.get(), new Item.Properties().rarity(rarity)));
     }
 
     private ModItems() {}

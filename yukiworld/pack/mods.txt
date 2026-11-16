@@ -15,6 +15,19 @@ spark
 iris
 sodium-extra
 reeses-sodium-options
+noisium
+clumps
+get-it-together-drops
+fastfurnace
+fastworkbench
+ai-improvements
+alternate-current
+structure-layout-optimizer
+moreculling
+badoptimizations
+fast-paintings
+servercore
+netherportalfix
 
 ## ⚙️ Технологии
 mekanism

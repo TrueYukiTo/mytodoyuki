@@ -1,0 +1,38 @@
+{
+  "type": "yukicore:altar",
+  "tier": 2,
+  "center": {
+    "item": "yukicore:frost_magnet"
+  },
+  "pedestals": [
+    {
+      "item": "yukicore:celestium_ingot"
+    },
+    {
+      "item": "yukicore:celestium_ingot"
+    },
+    {
+      "item": "yukicore:celestium_ingot"
+    },
+    {
+      "item": "yukicore:celestium_ingot"
+    },
+    {
+      "item": "yukicore:starlight_shard"
+    },
+    {
+      "item": "yukicore:starlight_shard"
+    },
+    {
+      "item": "minecraft:ender_eye"
+    },
+    {
+      "item": "minecraft:ender_eye"
+    }
+  ],
+  "result": {
+    "id": "yukicore:celestial_magnet",
+    "count": 1
+  },
+  "duration": 200
+}

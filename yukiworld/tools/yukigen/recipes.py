@@ -296,6 +296,7 @@ def build():
 
     # ---------------------------------------------------------------- 3.0: планеты, алтарь, ритуалы
     r.update(build_v3())
+    r.update(build_v4())
 
     # ---------------------------------------------------------------- книга-летопись
     r["chronicle"] = when(shapeless(["minecraft:book", "minecraft:snowball"], "patchouli:guide_book",
@@ -405,3 +406,114 @@ def build_v3():
     for k, v in a.items():
         r["altar/" + k] = v
     return r
+
+
+# ================================================================ 4.0
+def build_v4():
+    r = {}
+    r["frost_magnet"] = shaped(["F F", "F F", "RYB"], {"F": I("frost_ingot"), "R": "minecraft:redstone_block",
+                                                       "Y": I("yuki_crystal"), "B": "minecraft:lapis_block"},
+                               I("frost_magnet"), category="equipment")
+    r["aurorium_hammer"] = shaped(["AAA", "ABA", " S "], {"A": I("aurorium_ingot"), "B": I("aurorium_block"),
+                                                          "S": "minecraft:blaze_rod"}, I("aurorium_hammer"),
+                                  category="equipment")
+    r["celestium_hammer_smithing"] = smithing(I("celestium_upgrade_template"), I("aurorium_hammer"),
+                                              I("celestium_block"), I("celestium_hammer"))
+    r["snow_boots"] = shaped(["W W", "F F"], {"W": "minecraft:white_wool", "F": I("frost_ingot")}, I("snow_boots"),
+                             category="equipment")
+    r["cryo_generator"] = shaped(["PIP", "ICI", "PRP"], {"P": I("frost_plate"), "I": "minecraft:packed_ice",
+                                                         "C": I("yuki_crystal_block"), "R": "minecraft:redstone_block"},
+                                 I("cryo_generator"))
+    r["yuki_chrono"] = when(mech([" TCT ", "TQKQT", "CKXKC", "TQKQT", " TCT "], {
+        "T": I("celestium_ingot"), "C": I("cryo_circuit"), "Q": I("frost_mechanism"),
+        "K": "justdirethings:time_crystal", "X": "minecraft:clock"}, I("yuki_chrono")), "justdirethings")
+    r["advent_calendar"] = shaped(["PPP", "PGP", "PRP"], {"P": "minecraft:paper", "G": "minecraft:gold_block",
+                                                          "R": "minecraft:red_dye"}, I("advent_calendar"))
+    r["candy_cane"] = shapeless(["minecraft:sugar", "minecraft:sugar", "minecraft:red_dye", "minecraft:snowball"],
+                                I("candy_cane"), 2)
+    r["gingerbread"] = shapeless(["minecraft:wheat", "minecraft:wheat", "minecraft:sugar", "minecraft:honey_bottle"],
+                                 I("gingerbread"), 3)
+    r["olivier"] = shapeless(["minecraft:bowl", "minecraft:baked_potato", "minecraft:carrot", "minecraft:egg",
+                              "minecraft:cooked_porkchop"], I("olivier"))
+    r["hot_cocoa"] = shapeless(["minecraft:glass_bottle", "minecraft:cocoa_beans", "minecraft:sugar",
+                                "minecraft:milk_bucket"], I("hot_cocoa"))
+    r["festive_garland"] = shaped(["GRG", "SSS"], {"G": "minecraft:glowstone_dust", "R": "minecraft:red_dye",
+                                                   "S": "minecraft:string"}, I("festive_garland"), 8, "building")
+    r["christmas_ornament"] = shaped([" N ", "GRG", " G "], {"N": "minecraft:gold_nugget", "G": "minecraft:glass",
+                                                             "R": "minecraft:red_dye"}, I("christmas_ornament"), 4,
+                                     "building")
+    r["yuki_tree"] = shaped([" Y ", "LGL", "LTL"], {"Y": I("yuki_crystal"), "L": "minecraft:spruce_leaves",
+                                                    "G": "minecraft:glowstone_dust", "T": "minecraft:spruce_log"},
+                            I("yuki_tree"), category="building")
+    r["snow_globe"] = shaped([" G ", "GTG", "RRR"], {"G": "minecraft:glass", "T": "minecraft:spruce_sapling",
+                                                     "R": "minecraft:red_wool"}, I("snow_globe"), category="building")
+    r["altar/celestial_magnet"] = altar(2, I("frost_magnet"), [I("celestium_ingot")] * 4 + [I("starlight_shard")] * 2
+                                        + ["minecraft:ender_eye"] * 2, I("celestial_magnet"), 1, 200)
+    r["altar/grand_gift"] = altar(1, I("gift"), [I("yuki_crystal_block"), "minecraft:diamond_block",
+                                                 "minecraft:emerald_block", "minecraft:gold_block"],
+                                  I("grand_gift"), 1, 120)
+    return r
+
+
+# ATM-стиль: топовые предметы других модов требуют материалы YukiCore.
+# Файл с тем же путём перекрывает рецепт мода (YukiCore грузится позже по алфавиту).
+OVERRIDES = {
+    "mekanism:control_circuit/ultimate": {
+        "type": "minecraft:crafting_shaped", "category": "misc",
+        "key": {"A": {"tag": "mekanism:alloys/atomic"}, "C": {"tag": "c:circuits/elite"}, "F": {"item": I("frost_plate")}},
+        "pattern": ["ACA", "FFF"], "result": {"count": 1, "id": "mekanism:ultimate_control_circuit"}},
+    "mekanism:energy_cube/ultimate": {
+        "type": "mekanism:mek_data", "category": "misc",
+        "key": {"A": {"tag": "mekanism:alloys/atomic"}, "E": {"item": "mekanism:energy_tablet"},
+                "I": {"item": I("aurorium_ingot")}, "P": {"item": "mekanism:elite_energy_cube"}},
+        "pattern": ["AEA", "IPI", "AEA"], "result": {"count": 1, "id": "mekanism:ultimate_energy_cube"}},
+    "mekanism:induction/cell/ultimate": {
+        "type": "mekanism:mek_data", "category": "misc",
+        "key": {"#": {"item": "mekanism:ultimate_energy_cube"}, "E": {"item": I("cryo_circuit")},
+                "P": {"item": "mekanism:elite_induction_cell"}},
+        "pattern": ["EPE", "P#P", "EPE"], "result": {"count": 1, "id": "mekanism:ultimate_induction_cell"}},
+    "mekanism:tier_installer/ultimate": {
+        "type": "minecraft:crafting_shaped", "category": "misc",
+        "key": {"A": {"tag": "mekanism:alloys/atomic"}, "C": {"tag": "c:circuits/ultimate"},
+                "I": {"tag": "c:gems/diamond"}, "P": {"item": I("frost_plate")}},
+        "pattern": ["ACA", "IPI", "ACA"], "result": {"count": 1, "id": "mekanism:ultimate_tier_installer"}},
+    "powah:crafting/capacitor_nitro": {
+        "type": "minecraft:crafting_shaped", "category": "misc",
+        "key": {"b": {"item": "powah:crystal_nitro"}, "c": {"item": "powah:capacitor_basic_large"},
+                "p": {"item": I("yuki_essence")}},
+        "pattern": ["pbp", "bcb", "pbp"], "result": {"count": 1, "id": "powah:capacitor_nitro"}},
+    "powah:crafting/energy_cell_nitro": {
+        "type": "minecraft:crafting_shaped", "category": "misc",
+        "key": {"b": {"item": "powah:crystal_nitro"}, "c": {"item": "powah:energy_cell_spirited"},
+                "d": {"item": I("frost_block")}, "n": {"item": "powah:capacitor_nitro"}},
+        "pattern": ["bnb", "cdc", "bnb"], "result": {"count": 1, "id": "powah:energy_cell_nitro"}},
+    "powah:crafting/reactor_nitro": {
+        "type": "minecraft:crafting_shaped", "category": "misc",
+        "key": {"l": {"item": "powah:capacitor_nitro"}, "r": {"item": "powah:reactor_spirited"},
+                "u": {"item": I("frost_ingot")}},
+        "pattern": ["rlr", "lul", "rlr"], "result": {"count": 4, "id": "powah:reactor_nitro"}},
+    "ae2:network/cells/item_storage_components_cell_256k_part": {
+        "type": "minecraft:crafting_shaped", "category": "misc",
+        "key": {"a": {"tag": "c:dusts/sky_stone"}, "b": {"item": "ae2:calculation_processor"},
+                "c": {"item": "ae2:cell_component_64k"}, "d": {"item": I("cryo_circuit")}},
+        "pattern": ["aba", "cdc", "aca"], "result": {"count": 1, "id": "ae2:cell_component_256k"}},
+    "ad_astra:calorite_engine": {
+        "type": "minecraft:crafting_shaped", "category": "misc",
+        "key": {"#": {"tag": "ad_astra:calorite_plates"}, "E": {"item": "ad_astra:ostrum_engine"},
+                "F": {"item": I("frost_mechanism")}},
+        "pattern": ["###", "#E#", " F "], "result": {"count": 1, "id": "ad_astra:calorite_engine"}},
+    "sophisticatedbackpacks:netherite_backpack": {
+        "type": "sophisticatedbackpacks:smithing_backpack_upgrade",
+        "addition": {"item": I("aurorium_ingot")}, "base": {"item": "sophisticatedbackpacks:diamond_backpack"},
+        "result": {"count": 1, "id": "sophisticatedbackpacks:netherite_backpack"},
+        "template": {"item": "minecraft:netherite_upgrade_smithing_template"}},
+}
+
+
+def overrides():
+    """{путь файла относительно data/: json}"""
+    out = {}
+    for key, rec in OVERRIDES.items():
+        mod, path = key.split(":")
+        out[f"{mod}/recipe/{path}.json"] = when(rec, mod)
+    return out

@@ -671,6 +671,15 @@
 					xp: 150
 				}
 				{
+					count: 3
+					id: "2F83C237EDE1A415"
+					item: {
+						count: 1
+						id: "yukicore:gift"
+					}
+					type: "item"
+				}
+				{
 					count: 16
 					id: "28EA4117B7264055"
 					item: {

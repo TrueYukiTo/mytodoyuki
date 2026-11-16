@@ -465,3 +465,292 @@ def hd_blocks():
         stone = hd.stone(20 + i, base, var, cracks, streaks)
         t[f"{name}_ore"] = hd.ore(30 + i, stone, PLANET_PAL[name], 5, (5, 9))
     return t
+
+
+# ================================================================ YukiCore 4.0 — Новый год
+RED = {"o": 0x3A0808, "d": 0xA01818, "m": 0xE83A3A, "l": 0xFF9A8A, "w": 0xFFFFFF}
+GREEN = {"o": 0x06240E, "d": 0x16702E, "m": 0x2FB04E, "l": 0x9AF0A8, "w": 0xF0FFF2}
+GOLD = {"o": 0x3A2606, "d": 0xB07A10, "m": 0xF2C030, "l": 0xFFE68A, "w": 0xFFFFFF}
+ORANGE = {"o": 0x3A1A02, "d": 0xC05A08, "m": 0xFF8A1C, "l": 0xFFC27A, "w": 0xFFF4E0}
+BROWN = {"o": 0x2A1406, "d": 0x7A4418, "m": 0xB8722E, "l": 0xE8B070, "w": 0xFFFFFF}
+COCOA = {"o": 0x24120A, "d": 0x5A2E18, "m": 0x8A4E2A, "l": 0xF4F0EA, "w": 0xFFFFFF}
+
+MAGNET = """
+................
+..oooo....oooo..
+..owwo....owwo..
+..ommo....ommo..
+..olmo....olmo..
+..olmo....olmo..
+..olmo....olmo..
+..olmo....olmo..
+..olmmo..ommdo..
+..ollmmooommdo..
+...olmmmmmmdo...
+....ollmmmdo....
+.....oooooo.....
+"""
+
+HAMMER = """
+................
+...oooooooooo...
+..owwwllllmmmo..
+..owllllmmmmdo..
+..olllmmmmmddo..
+..oddddhhdddddo.
+...oooohHoooo...
+......ohHo......
+......ohHo......
+......ohHo......
+......ohHo......
+......ohHo......
+......ohHo......
+......oHHo......
+.......oo.......
+"""
+
+SNOWBOOTS = """
+................
+................
+................
+................
+...wwww..wwww...
+...owwo..owwo...
+...olmo..omdo...
+...olmo..omdo...
+...olmo..omdo...
+..oolmo..ommdoo.
+.owllmo..ommmddo
+.owwwwo..owwwwwo
+.oooooo..oooooo.
+"""
+
+GIFT = """
+................
+.....oo..oo.....
+....owwoowwo....
+.....owwwwo.....
+..oooooyyoooooo.
+..omlmmmyymmmdo.
+..olmmmmyymmmdo.
+..oyyyyyyyyyyyo.
+..oyyyyyyyyyyyo.
+..ommmmmyymmmdo.
+..olmmmmyymmmdo.
+..olmmmmyymmmdo.
+..ommmmmyymmddo.
+..oddddmyyddddo.
+..ooooooooooooo.
+"""
+
+CALENDAR = """
+................
+..oooooooooooo..
+..odddddddddddo.
+..odwdwdwdwdwdo.
+..oooooooooooo..
+..owllowllowllo.
+..olmmolmmolmmo.
+..oooooooooooo..
+..owllowllowllo.
+..olmmolmmolmmo.
+..oooooooooooo..
+..owllowllowllo.
+..olmmolmmolmmo.
+..oooooooooooo..
+"""
+
+TANGERINE = """
+................
+........gg......
+.......gGgg.....
+.....oooGooo....
+....owwlllmmo...
+...owwllllmmdo..
+...owllllmmmdo..
+...olllllmmmdo..
+...ollllmmmmdo..
+...olllmmmmddo..
+....olmmmmddo...
+.....oommddo....
+.......ooo......
+"""
+
+CANDY = """
+................
+.....oooooo.....
+....owwrrwwo....
+...owrrwwrrwo...
+...orwo..owrro..
+...oo.....owwo..
+..........orro..
+..........owwo..
+..........orro..
+..........owwo..
+..........orro..
+..........owwo..
+..........orro..
+..........oooo..
+"""
+
+GINGER = """
+................
+......oooo......
+.....ommmmo.....
+.....owmwmo.....
+.....ommmmo.....
+..oooomwwmoooo..
+..ommmmmmmmmmo..
+..oooommrmmooo..
+.....ommmmo.....
+.....ommrmo.....
+....ommoommo....
+....omo..omo....
+....oo....oo....
+"""
+
+OLIVIER = """
+................
+................
+....oyygyryo....
+...oyrgyyygyo...
+..oyygyrygyyyo..
+..oooooooooooo..
+..owllllllllmo..
+..olllllllmmdo..
+...ollllmmmdo...
+....oommmddo....
+......oooo......
+"""
+
+COCOA_ART = """
+................
+.....w..w.......
+......w..w......
+.....w..w.......
+...oooooooooo...
+...occccccccc...
+...olmmmmmmmoooo
+...olmmmmmmmo..o
+...olmmmmmmmo..o
+...olmmmmmmmoooo
+...olmmmmmmdo...
+....ommmmmdo....
+.....oooooo.....
+"""
+
+
+def _sprite_extra(art, pal, extra):
+    return sprite(art, {**pal, **extra})
+
+
+def hd_textures_v4():
+    yellow = {"y": GOLD["m"]}
+    leaf = {"g": GREEN["d"], "G": GREEN["m"]}
+    new = {
+        "frost_magnet": (sprite(MAGNET, ICEBLUE), False, 2),
+        "celestial_magnet": (sprite(MAGNET, CELESTIUM), False, 4),
+        "aurorium_hammer": (sprite(HAMMER, AURORIUM), True, 2),
+        "celestium_hammer": (sprite(HAMMER, CELESTIUM), True, 4),
+        "snow_boots": (sprite(SNOWBOOTS, RED), False, 1),
+        "gift": (_sprite_extra(GIFT, RED, yellow), False, 2),
+        "grand_gift": (_sprite_extra(GIFT, VOIDP, yellow), False, 5),
+        "advent_calendar": (sprite(CALENDAR, RED), False, 2),
+        "tangerine": (_sprite_extra(TANGERINE, ORANGE, leaf), False, 0),
+        "candy_cane": (_sprite_extra(CANDY, {"o": 0x3A0808, "w": 0xFFFFFF}, {"r": RED["m"]}), False, 0),
+        "gingerbread": (_sprite_extra(GINGER, BROWN, {"r": RED["m"]}), False, 0),
+        "olivier": (_sprite_extra(OLIVIER, {"o": 0x2A2A3A, "w": 0xFFFFFF, "l": 0xE8EEF8, "m": 0xC8D2E8, "d": 0x8A94B0},
+                                   {"y": 0xF2E08A, "g": GREEN["m"], "r": RED["m"]}), False, 0),
+        "hot_cocoa": (_sprite_extra(COCOA_ART, {"o": 0x3A0808, "l": RED["l"], "m": RED["m"], "d": RED["d"],
+                                                "w": 0xFFFFFF}, {"c": COCOA["m"]}), False, 0),
+    }
+    return {name: (hd.hd_item(img, seed=300 + i, sparkles=spark), handheld)
+            for i, (name, (img, handheld, spark)) in enumerate(new.items())}
+
+
+def hd_blocks_v4():
+    import math as _m
+    from PIL import ImageDraw as _D
+    S = 64
+    t = {}
+    # Часы Юки: целестиевый корпус + циферблат
+    img = hd.metal(CELESTIUM, 40, emblem=False)
+    d = _D.Draw(img)
+    d.ellipse([12, 12, 51, 51], fill=hexrgb(0xF4F8FF), outline=hexrgb(CELESTIUM["o"]), width=2)
+    for k in range(12):
+        a = k * _m.pi / 6
+        r1, r2 = (14, 18) if k % 3 else (11, 18)
+        d.line([32 + r1 * _m.cos(a), 32 + r1 * _m.sin(a), 32 + r2 * _m.cos(a), 32 + r2 * _m.sin(a)],
+               fill=hexrgb(CRYSTAL["d"]), width=2 if k % 3 == 0 else 1)
+    d.line([32, 32, 32, 18], fill=hexrgb(0x203050), width=2)
+    d.line([32, 32, 42, 36], fill=hexrgb(SAKURA["d"]), width=2)
+    d.ellipse([29, 29, 35, 35], fill=hexrgb(SAKURA["m"]))
+    t["yuki_chrono"] = img
+    # Криогенератор: стальной корпус, решётки, ледяное ядро
+    img = hd.metal(RAW, 41, emblem=False)
+    d = _D.Draw(img)
+    d.rectangle([16, 16, 47, 47], fill=hexrgb(0x0A1A30), outline=hexrgb(CRYSTAL["o"]), width=2)
+    rng = random.Random(7)
+    hd.crystal(d, 32, 32, 12, CRYSTAL, rng, angle=_m.pi / 2)
+    for y in (6, 52):
+        for x in range(14, 50, 6):
+            d.rectangle([x, y, x + 3, y + 5], fill=hexrgb(0x1A2A40))
+    t["cryo_generator"] = img
+    # Гирлянда (вид сверху, прозрачный фон)
+    img = Image.new("RGBA", (S, S), (0, 0, 0, 0))
+    d = _D.Draw(img)
+    colors = [0xFF4A4A, 0xFFD24A, 0x4AE07A, 0x4AB4FF, 0xFF8FE0]
+    for row, y0 in enumerate((14, 46)):
+        pts = [(x, y0 + 5 * _m.sin(x / 9 + row)) for x in range(0, S + 1, 2)]
+        d.line(pts, fill=hexrgb(0x1E4A2A), width=2)
+        for i, x in enumerate(range(4, S, 12)):
+            y = y0 + 5 * _m.sin(x / 9 + row)
+            c = colors[(i + row * 2) % len(colors)]
+            d.ellipse([x - 4, y - 1, x + 4, y + 8], fill=hexrgb(c), outline=hexrgb(0x202020))
+            d.ellipse([x - 2, y + 1, x, y + 3], fill=hexrgb(0xFFFFFF))
+    t["festive_garland"] = img
+    # Ёлочная игрушка: красный шар с бликом и золотым поясом
+    img = Image.new("RGBA", (S, S), hexrgb(RED["d"]))
+    px = img.load()
+    for y in range(S):
+        for x in range(S):
+            dist = _m.hypot(x - 22, y - 22) / 60
+            k = max(0.45, 1.25 - dist)
+            px[x, y] = tuple(min(255, int(c * k)) for c in hexrgb(RED["m"])[:3]) + (255,)
+    d = _D.Draw(img)
+    d.rectangle([0, 28, S - 1, 35], fill=hexrgb(GOLD["m"]))
+    d.line([0, 28, S - 1, 28], fill=hexrgb(GOLD["l"]))
+    for x in range(4, S, 10):
+        d.ellipse([x - 2, 30, x + 2, 33], fill=hexrgb(0xFFFFFF))
+    d.ellipse([12, 8, 22, 18], fill=hexrgb(0xFFFFFF, 200))
+    t["christmas_ornament"] = img
+    # Ёлочка (крест-модель, прозрачный фон)
+    img = Image.new("RGBA", (S, S), (0, 0, 0, 0))
+    d = _D.Draw(img)
+    d.rectangle([28, 52, 35, 63], fill=hexrgb(BROWN["d"]))
+    for i, (top, half) in enumerate([(6, 10), (18, 16), (30, 22), (40, 28)]):
+        d.polygon([(32, top), (32 - half, top + 16), (32 + half, top + 16)], fill=hexrgb(GREEN["d"] if i % 2 else GREEN["m"]),
+                  outline=hexrgb(GREEN["o"]))
+    rng = random.Random(11)
+    for _ in range(14):
+        x, y = rng.randint(14, 50), rng.randint(16, 54)
+        if img.getpixel((x, y))[3] > 0:
+            c = colors[rng.randint(0, len(colors) - 1)]
+            d.ellipse([x - 2, y - 2, x + 2, y + 2], fill=hexrgb(c), outline=hexrgb(0xFFFFFF))
+    d.polygon([(32, 0), (35, 6), (41, 6), (36, 10), (38, 16), (32, 12), (26, 16), (28, 10), (23, 6), (29, 6)],
+              fill=hexrgb(GOLD["m"]), outline=hexrgb(GOLD["o"]))
+    t["yuki_tree"] = img
+    # Снежный шар: голубое стекло + основание
+    img = Image.new("RGBA", (S, S), (190, 230, 255, 90))
+    d = _D.Draw(img)
+    d.rectangle([0, 0, S - 1, S - 1], outline=(255, 255, 255, 200), width=2)
+    d.polygon([(32, 18), (20, 46), (44, 46)], fill=hexrgb(GREEN["m"]))
+    d.rectangle([30, 46, 34, 52], fill=hexrgb(BROWN["d"]))
+    rng = random.Random(5)
+    for _ in range(30):
+        x, y = rng.randint(4, 60), rng.randint(4, 60)
+        d.point((x, y), fill=(255, 255, 255, 255))
+    d.ellipse([8, 6, 18, 14], fill=(255, 255, 255, 160))
+    t["snow_globe"] = img
+    t["snow_globe_base"] = hd.metal(RED, 42, emblem=False)
+    return t

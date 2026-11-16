@@ -1,0 +1,23 @@
+{
+  "name": "Инструменты",
+  "category": "yukicore:workshop",
+  "icon": "yukicore:frost_magnet",
+  "sortnum": 16,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:frost_magnet",
+      "text": "$(l)Морозный магнит$(): ПКМ — вкл/выкл, притягивает предметы и опыт в радиусе 8. $(l)Небесный магнит$() (Алтарь II) — радиус 16."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:celestium_hammer",
+      "text": "$(l)Молоты$() копают 3×3 перпендикулярно грани. С Shift — один блок."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:snow_boots",
+      "text": "$(l)Снежные ботинки$(): рыхлый снег, скорость на льду, ледяной мост."
+    }
+  ]
+}

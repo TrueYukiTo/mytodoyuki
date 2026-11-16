@@ -9,7 +9,7 @@
 	}
 	id: "77F4937C2B91828C"
 	images: [ ]
-	order_index: 23
+	order_index: 25
 	quest_links: [ ]
 	quests: [
 		{
@@ -286,6 +286,15 @@
 					id: "15694D69F4B97B9C"
 					type: "xp"
 					xp: 945
+				}
+				{
+					count: 3
+					id: "177F2A483E374EE2"
+					item: {
+						count: 1
+						id: "yukicore:gift"
+					}
+					type: "item"
 				}
 				{
 					count: 2

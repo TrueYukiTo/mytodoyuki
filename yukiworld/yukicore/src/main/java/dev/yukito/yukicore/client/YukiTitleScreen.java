@@ -16,7 +16,7 @@ import net.neoforged.neoforge.client.gui.ModListScreen;
 /** Главное меню YukiWorld: панорама, градиент, снег, переливающийся логотип. */
 public class YukiTitleScreen extends Screen {
     private static final String LOGO = "YukiWorld";
-    private static final String PACK_VERSION = "3.0.0";
+    private static final String PACK_VERSION = "4.0.0";
 
     private final Snowfall snow = new Snowfall();
     private long openedAt;
@@ -83,6 +83,8 @@ public class YukiTitleScreen extends Screen {
         g.drawString(font, Component.translatable("menu.yukicore.mods_loaded", ModList.get().size()),
                 4, height - 10, dim, true);
 
+        if (Config.FESTIVE.get()) renderFestive(g, t, fade);
+
         String copy = "Copyright Mojang AB. Do not distribute!";
         g.drawString(font, copy, width - font.width(copy) - 4, height - 10, dim, true);
     }
@@ -111,6 +113,34 @@ public class YukiTitleScreen extends Screen {
         int sw = font.width(sub);
         g.drawString(font, sub, width / 2 - sw / 2, (int) (ly + 8 * scale + 6),
                 YukiTheme.withAlpha(0xF4FAFF, (int) (200 * fade)), true);
+    }
+
+    /** Новогодняя гирлянда вдоль верха экрана и мигающее поздравление. */
+    private void renderFestive(GuiGraphics g, float t, float fade) {
+        int[] colors = {0xFF5A5A, 0xFFD24A, 0x5AE07A, 0x5AB4FF, 0xFF8FE0};
+        int step = 18;
+        int prevX = 0, prevY = 6;
+        for (int x = 4, i = 0; x < width; x += step, i++) {
+            int y = 6 + (int) (Mth.sin(i * 0.9f) * 3) + 6;
+            g.fill(Math.min(prevX, x), Math.min(prevY, y), Math.max(prevX, x), Math.max(prevY, y) + 1,
+                    YukiTheme.withAlpha(0x2A5A3A, (int) (220 * fade)));
+            float blink = (Mth.sin(t * 3f + i * 1.7f) + 1f) / 2f;
+            int c = colors[i % colors.length];
+            int a = (int) ((120 + 135 * blink) * fade);
+            g.fill(x - 2, y + 1, x + 2, y + 6, YukiTheme.withAlpha(c, a));
+            g.fill(x - 1, y + 6, x + 1, y + 7, YukiTheme.withAlpha(c, a / 2));
+            g.fill(x - 1, y, x + 1, y + 1, YukiTheme.withAlpha(0x3A3A3A, (int) (255 * fade)));
+            prevX = x;
+            prevY = y;
+        }
+        Component hny = Component.translatable("menu.yukicore.new_year");
+        float pulse = 1f + Mth.sin(t * 4f) * 0.06f;
+        g.pose().pushPose();
+        g.pose().translate(width / 2f + 150, height / 2f - 96, 0);
+        g.pose().mulPose(com.mojang.math.Axis.ZP.rotationDegrees(-14));
+        g.pose().scale(pulse, pulse, 1);
+        g.drawCenteredString(font, hny, 0, 0, YukiTheme.withAlpha(0xFFE070, (int) (255 * fade)));
+        g.pose().popPose();
     }
 
     @Override

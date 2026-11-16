@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "F F",
+    "F F",
+    "RYB"
+  ],
+  "key": {
+    "F": {
+      "item": "yukicore:frost_ingot"
+    },
+    "R": {
+      "item": "minecraft:redstone_block"
+    },
+    "Y": {
+      "item": "yukicore:yuki_crystal"
+    },
+    "B": {
+      "item": "minecraft:lapis_block"
+    }
+  },
+  "result": {
+    "id": "yukicore:frost_magnet",
+    "count": 1
+  }
+}

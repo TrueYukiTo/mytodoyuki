@@ -11,6 +11,10 @@ public final class Config {
     public static final ModConfigSpec.BooleanValue HUD_SHOW_BIOME;
     public static final ModConfigSpec.BooleanValue SMART_FPS;
     public static final ModConfigSpec.IntValue UNFOCUSED_FPS;
+    public static final ModConfigSpec.BooleanValue DYNAMIC_RENDER_DISTANCE;
+    public static final ModConfigSpec.IntValue TARGET_FPS;
+    public static final ModConfigSpec.IntValue MIN_RENDER_DISTANCE;
+    public static final ModConfigSpec.BooleanValue FESTIVE;
 
     static {
         ModConfigSpec.Builder b = new ModConfigSpec.Builder();
@@ -31,6 +35,15 @@ public final class Config {
                 .define("smartFps", true);
         UNFOCUSED_FPS = b.comment("FPS limit used while the window is not focused")
                 .defineInRange("unfocusedFps", 10, 1, 60);
+        DYNAMIC_RENDER_DISTANCE = b.comment("Automatically lower render distance when FPS drops below the target",
+                        "and raise it back (up to your own setting) when there is headroom")
+                .define("dynamicRenderDistance", true);
+        TARGET_FPS = b.comment("FPS the dynamic render distance tries to keep").defineInRange("targetFps", 50, 20, 240);
+        MIN_RENDER_DISTANCE = b.comment("Never go below this render distance").defineInRange("minRenderDistance", 6, 2, 32);
+        b.pop();
+
+        b.push("festive");
+        FESTIVE = b.comment("New Year decorations in the main menu (garland, greeting)").define("festiveMenu", true);
         b.pop();
 
         CLIENT_SPEC = b.build();

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " Y ",
+    "LGL",
+    "LTL"
+  ],
+  "key": {
+    "Y": {
+      "item": "yukicore:yuki_crystal"
+    },
+    "L": {
+      "item": "minecraft:spruce_leaves"
+    },
+    "G": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "T": {
+      "item": "minecraft:spruce_log"
+    }
+  },
+  "result": {
+    "id": "yukicore:yuki_tree",
+    "count": 1
+  }
+}

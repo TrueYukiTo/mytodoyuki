@@ -2,6 +2,8 @@ package dev.yukito.yukicore.registry;
 
 import dev.yukito.yukicore.YukiCore;
 import dev.yukito.yukicore.altar.ItemHolderBlock;
+import dev.yukito.yukicore.machine.DecorBlock;
+import dev.yukito.yukicore.machine.MachineBlock;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -61,6 +63,26 @@ public final class ModBlocks {
     public static final DeferredBlock<Block> PYROLITE_BLOCK = storage("pyrolite_block", 8);
     public static final DeferredBlock<Block> VOID_BLOCK = storage("void_block", 2);
     public static final DeferredBlock<Block> STELLAR_BLOCK = storage("stellar_block", 15);
+
+    // --- Машины ---
+    public static final DeferredBlock<Block> YUKI_CHRONO = BLOCKS.register("yuki_chrono",
+            () -> MachineBlock.chrono(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).lightLevel(s -> 9)));
+    public static final DeferredBlock<Block> CRYO_GENERATOR = BLOCKS.register("cryo_generator",
+            () -> MachineBlock.generator(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).lightLevel(s -> 5)));
+
+    // --- Новогодние украшения ---
+    public static final DeferredBlock<Block> FESTIVE_GARLAND = BLOCKS.register("festive_garland",
+            () -> new DecorBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CARPET).lightLevel(s -> 12)
+                    .noOcclusion(), Block.box(0, 0, 0, 16, 1, 16)));
+    public static final DeferredBlock<Block> CHRISTMAS_ORNAMENT = BLOCKS.register("christmas_ornament",
+            () -> new DecorBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).lightLevel(s -> 9)
+                    .noOcclusion(), Block.box(4, 2, 4, 12, 10, 12)));
+    public static final DeferredBlock<Block> YUKI_TREE = BLOCKS.register("yuki_tree",
+            () -> new DecorBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SPRUCE_LEAVES).lightLevel(s -> 10)
+                    .noOcclusion().noCollission(), Block.box(2, 0, 2, 14, 16, 14)));
+    public static final DeferredBlock<Block> SNOW_GLOBE = BLOCKS.register("snow_globe",
+            () -> new DecorBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).lightLevel(s -> 6)
+                    .noOcclusion(), Block.box(3, 0, 3, 13, 11, 13)));
 
     private static DeferredBlock<Block> planetOre(String name, Block base, int light) {
         return BLOCKS.register(name, () -> new DropExperienceBlock(UniformInt.of(6, 12),

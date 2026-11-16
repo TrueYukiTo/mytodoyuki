@@ -20,6 +20,12 @@
     "yukicore:void_block",
     "yukicore:stellar_block",
     "yukicore:yuki_altar",
-    "yukicore:yuki_pedestal"
+    "yukicore:yuki_pedestal",
+    "yukicore:yuki_chrono",
+    "yukicore:cryo_generator",
+    "yukicore:festive_garland",
+    "yukicore:christmas_ornament",
+    "yukicore:yuki_tree",
+    "yukicore:snow_globe"
   ]
 }

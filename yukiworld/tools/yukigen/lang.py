@@ -250,3 +250,54 @@ for _k, (_ru, _en) in V3.items():
     EN[_k] = _en
 RU["item.yukicore.yuki_blade.desc"] = "Неразрушимый, урон 43"
 EN["item.yukicore.yuki_blade.desc"] = "Unbreakable, 43 damage"
+
+
+# ================================================================ YukiCore 4.0
+V4 = {
+    "item.yukicore.frost_magnet": ("Морозный магнит", "Frost Magnet"),
+    "item.yukicore.celestial_magnet": ("Небесный магнит", "Celestial Magnet"),
+    "tooltip.yukicore.magnet": ("ПКМ — вкл/выкл. Притягивает предметы и опыт в радиусе %s", "Right-click to toggle. Pulls items and XP within %s blocks"),
+    "message.yukicore.magnet.on": ("Магнит включён", "Magnet on"),
+    "message.yukicore.magnet.off": ("Магнит выключен", "Magnet off"),
+    "item.yukicore.aurorium_hammer": ("Ауриевый молот", "Aurorium Hammer"),
+    "item.yukicore.celestium_hammer": ("Целестиевый молот", "Celestium Hammer"),
+    "tooltip.yukicore.hammer": ("Копает 3×3. С Shift — один блок", "Mines 3×3. Sneak for a single block"),
+    "item.yukicore.snow_boots": ("Снежные ботинки", "Snow Boots"),
+    "tooltip.yukicore.set.snow_boots": ("Ходьба по рыхлому снегу, скорость на снегу и льду, замораживают воду",
+                                        "Walk on powder snow, speed on snow and ice, freeze water"),
+    "item.yukicore.gift": ("Новогодний подарок", "New Year Gift"),
+    "item.yukicore.gift.desc": ("ПКМ — открыть!", "Right-click to open!"),
+    "item.yukicore.grand_gift": ("Большой подарок Юки", "Yuki's Grand Gift"),
+    "item.yukicore.grand_gift.desc": ("ПКМ — открыть! Внутри что-то ценное", "Right-click to open! Something valuable inside"),
+    "item.yukicore.advent_calendar": ("Адвент-календарь Юки", "Yuki's Advent Calendar"),
+    "item.yukicore.advent_calendar.desc": ("Раз в игровой день — подарок. Каждый 7-й — большой",
+                                           "One gift per in-game day, a grand one every 7th"),
+    "tooltip.yukicore.calendar": ("Открыто окошек: %s", "Windows opened: %s"),
+    "message.yukicore.calendar.wait": ("Следующее окошко откроется завтра", "The next window opens tomorrow"),
+    "message.yukicore.calendar.open": ("Окошко №%s открыто!", "Window #%s opened!"),
+    "item.yukicore.tangerine": ("Мандарин", "Tangerine"),
+    "item.yukicore.candy_cane": ("Новогодний леденец", "Candy Cane"),
+    "item.yukicore.gingerbread": ("Пряничный человечек", "Gingerbread Man"),
+    "item.yukicore.olivier": ("Салат оливье", "Olivier Salad"),
+    "item.yukicore.hot_cocoa": ("Горячий шоколад", "Hot Cocoa"),
+    "block.yukicore.yuki_chrono": ("Часы Юки", "Yuki's Clock"),
+    "block.yukicore.yuki_chrono.desc": ("Ускоряет машины и растения в кубе 3×3×3 в 4 раза. Редстоун — выкл.",
+                                        "Speeds up machines and crops in a 3×3×3 cube ×4. Redstone turns it off"),
+    "block.yukicore.cryo_generator.desc": ("FE от льда вокруг: снег 5, лёд 10, плотный 20, синий 40 за сторону",
+                                           "FE from adjacent ice: snow 5, ice 10, packed 20, blue 40 per side"),
+    "block.yukicore.cryo_generator": ("Криогенератор", "Cryo Generator"),
+    "block.yukicore.festive_garland": ("Ёлочная гирлянда", "Festive Garland"),
+    "block.yukicore.christmas_ornament": ("Ёлочная игрушка", "Christmas Ornament"),
+    "block.yukicore.yuki_tree": ("Новогодняя ёлочка", "New Year Tree"),
+    "block.yukicore.snow_globe": ("Снежный шар", "Snow Globe"),
+    "menu.yukicore.new_year": ("С Новым годом!", "Happy New Year!"),
+    "menu.yukicore.subtitle": ("Легенда о Юки: Новогодняя сказка", "The Legend of Yuki: A New Year Tale"),
+    "yukicore.configuration.dynamicRenderDistance": ("Адаптивная дальность прорисовки", "Dynamic render distance"),
+    "yukicore.configuration.targetFps": ("Целевой FPS", "Target FPS"),
+    "yukicore.configuration.minRenderDistance": ("Минимальная дальность", "Minimum render distance"),
+    "yukicore.configuration.festive": ("Праздник", "Festive"),
+    "yukicore.configuration.festiveMenu": ("Новогоднее меню", "New Year menu"),
+}
+for _k, (_ru, _en) in V4.items():
+    RU[_k] = _ru
+    EN[_k] = _en

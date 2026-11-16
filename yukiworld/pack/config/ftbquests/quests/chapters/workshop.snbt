@@ -1,0 +1,303 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "workshop"
+	group: "42873FD1AA616C22"
+	icon: {
+		count: 1
+		id: "yukicore:frost_magnet"
+	}
+	id: "3ADA294621AF8547"
+	images: [ ]
+	order_index: 19
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"2B408D1DDD76EE27"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_magnet"
+			}
+			id: "5CD3AAB2AC502B29"
+			rewards: [
+				{
+					id: "28938D66D3CEE9B4"
+					type: "xp"
+					xp: 950
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "5BB0F7F42AD2C4AC"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5CD3AAB2AC502B29"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_magnet"
+			}
+			id: "2DCC2BE551F7F958"
+			rewards: [
+				{
+					id: "36CEBB854DDC845D"
+					type: "xp"
+					xp: 955
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "27DD5E241CFA51D6"
+					item: {
+						count: 1
+						id: "yukicore:frost_magnet"
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2DCC2BE551F7F958"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:snow_boots"
+			}
+			id: "5380C6D2314BCDF6"
+			rewards: [
+				{
+					id: "79BB130859784E53"
+					type: "xp"
+					xp: 960
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1833D9B73E96DE79"
+					item: {
+						count: 1
+						id: "yukicore:snow_boots"
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5380C6D2314BCDF6"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:cryo_generator"
+			}
+			id: "1FE8C03F9FB910B5"
+			rewards: [
+				{
+					id: "20EC58C0BD97429F"
+					type: "xp"
+					xp: 965
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "141A3384E82CB058"
+					item: {
+						count: 1
+						id: "yukicore:cryo_generator"
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1FE8C03F9FB910B5"
+			]
+			icon: {
+				count: 1
+				id: "minecraft:blue_ice"
+			}
+			id: "6B95DBDEE44B0B9D"
+			rewards: [
+				{
+					id: "37500B2ACC16C738"
+					type: "xp"
+					xp: 970
+				}
+			]
+			tasks: [
+				{
+					count: 6L
+					id: "34C617AE6A9FBE1F"
+					item: {
+						count: 1
+						id: "minecraft:blue_ice"
+					}
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6B95DBDEE44B0B9D"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:aurorium_hammer"
+			}
+			id: "2EBAE20304D45121"
+			rewards: [
+				{
+					id: "1FE57DE106862CC7"
+					type: "xp"
+					xp: 975
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "319C71776AAC9519"
+					item: {
+						count: 1
+						id: "yukicore:aurorium_hammer"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2EBAE20304D45121"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_chrono"
+			}
+			id: "5A4A2DF6799D5566"
+			rewards: [
+				{
+					id: "5AAEEBA4F836B0B7"
+					type: "xp"
+					xp: 980
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "23A7004E4CE47246"
+					item: {
+						count: 1
+						id: "yukicore:yuki_chrono"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5A4A2DF6799D5566"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:celestium_hammer"
+			}
+			id: "762AC85D3AF27180"
+			rewards: [
+				{
+					id: "57449D179A32C63D"
+					type: "xp"
+					xp: 985
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "308D393500FEB981"
+					item: {
+						count: 1
+						id: "yukicore:celestium_hammer"
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"762AC85D3AF27180"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:celestial_magnet"
+			}
+			id: "52D155D89DA66E97"
+			rewards: [
+				{
+					id: "1FCA257C47F656E4"
+					type: "xp"
+					xp: 990
+				}
+				{
+					count: 3
+					id: "57A036F36CD15910"
+					item: {
+						count: 1
+						id: "yukicore:gift"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "64E1BC5C53AFA801"
+					item: {
+						count: 1
+						id: "yukicore:grand_gift"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 1L
+					id: "176E0849F6FFACD5"
+					item: {
+						count: 1
+						id: "yukicore:celestial_magnet"
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+	]
+}
