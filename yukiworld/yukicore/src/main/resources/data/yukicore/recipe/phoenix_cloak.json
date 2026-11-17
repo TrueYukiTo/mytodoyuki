@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "P P",
+    "LPL",
+    "LLL"
+  ],
+  "key": {
+    "P": {
+      "item": "yukicore:phoenix_feather"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "id": "yukicore:phoenix_cloak",
+    "count": 1
+  }
+}

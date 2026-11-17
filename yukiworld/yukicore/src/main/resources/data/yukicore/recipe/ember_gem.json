@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " F ",
+    "FDF",
+    " F "
+  ],
+  "key": {
+    "F": {
+      "item": "yukicore:flame_essence"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "id": "yukicore:ember_gem",
+    "count": 1
+  }
+}

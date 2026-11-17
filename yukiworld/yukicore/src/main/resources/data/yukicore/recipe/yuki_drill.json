@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "APA",
+    " S "
+  ],
+  "key": {
+    "A": {
+      "item": "yukicore:aurorium_ingot"
+    },
+    "P": {
+      "item": "minecraft:diamond_pickaxe"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "yukicore:yuki_drill",
+    "count": 1
+  }
+}

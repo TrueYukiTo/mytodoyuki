@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AXA",
+    "A A"
+  ],
+  "key": {
+    "A": {
+      "item": "yukicore:aurorium_ingot"
+    },
+    "X": {
+      "item": "yukicore:greater_flame_essence"
+    }
+  },
+  "result": {
+    "id": "yukicore:fire_demon_boots",
+    "count": 1
+  }
+}

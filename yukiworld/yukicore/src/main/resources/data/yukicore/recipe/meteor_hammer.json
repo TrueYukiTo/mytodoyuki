@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PMP",
+    " B ",
+    " B "
+  ],
+  "key": {
+    "P": {
+      "item": "yukicore:pyrolite_ingot"
+    },
+    "M": {
+      "item": "minecraft:magma_block"
+    },
+    "B": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "id": "yukicore:meteor_hammer",
+    "count": 1
+  }
+}

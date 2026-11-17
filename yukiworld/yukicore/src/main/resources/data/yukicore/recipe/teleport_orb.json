@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " E ",
+    "EVE",
+    " E "
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "V": {
+      "item": "yukicore:void_shard"
+    }
+  },
+  "result": {
+    "id": "yukicore:teleport_orb",
+    "count": 1
+  }
+}

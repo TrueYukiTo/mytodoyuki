@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "minecraft:saddle"
+    },
+    {
+      "item": "yukicore:flame_essence"
+    },
+    {
+      "item": "yukicore:pyrolite_ingot"
+    },
+    {
+      "item": "yukicore:aurorium_ingot"
+    }
+  ],
+  "result": {
+    "id": "yukicore:flame_steed_whistle",
+    "count": 1
+  }
+}

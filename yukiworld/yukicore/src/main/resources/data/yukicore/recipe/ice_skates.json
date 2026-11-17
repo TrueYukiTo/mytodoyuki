@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IBI",
+    "S S"
+  ],
+  "key": {
+    "I": {
+      "item": "yukicore:frost_ingot"
+    },
+    "B": {
+      "item": "minecraft:leather_boots"
+    },
+    "S": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "id": "yukicore:ice_skates",
+    "count": 1
+  }
+}

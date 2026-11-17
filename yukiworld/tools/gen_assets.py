@@ -14,7 +14,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from yukigen import art, book, hd, lang, models, planets, recipes, v6, v7, v72, v73  # noqa: E402
+from yukigen import art, book, hd, lang, models, planets, recipes, v6, v7, v72, v73, v74  # noqa: E402
 from yukigen.art import CRYSTAL, SAKURA, TIERS  # noqa: E402
 from yukigen.pixel import gui_button, gui_handle, logo, nine_slice  # noqa: E402
 
@@ -42,7 +42,7 @@ BLOCKS = ["frost_ore", "yuki_crystal_ore", "starlight_ore", "frost_block", "yuki
           "permafrost_block", "aurora_block", "pyrolite_block", "void_block", "stellar_block"]
 V5_BLOCKS = ["frost_casing", "cryosteel_block", "reactor_casing", "frost_forge", "star_reactor", "aurora_lamp"]
 SPECIAL_BLOCKS = V5_BLOCKS + ["yuki_altar", "yuki_pedestal", "yuki_chrono", "cryo_generator", "festive_garland",
-                  "christmas_ornament", "yuki_tree", "snow_globe", "slot_machine"]
+                  "christmas_ornament", "yuki_tree", "snow_globe", "slot_machine", "elemental_anvil"]
 ORES = {"frost_ore": ("raw_frost", 1, 2), "yuki_crystal_ore": ("yuki_crystal", 1, 3),
         "starlight_ore": ("starlight_shard", 1, 1), "permafrost_ore": ("permafrost_crystal", 1, 3),
         "aurora_ore": ("aurora_shard", 1, 2), "pyrolite_ore": ("raw_pyrolite", 1, 2),
@@ -123,11 +123,14 @@ def main():
     items.update(v6.item_textures())
     items.update(v7.item_textures())
     items.update(v72.item_textures())
+    items.update(v74.item_textures())
     for name, (img, handheld) in items.items():
         write(ASSETS / "textures" / "item" / f"{name}.png", img)
         write(ASSETS / "models" / "item" / f"{name}.json",
               {"parent": "minecraft:item/handheld" if handheld else "minecraft:item/generated",
                "textures": {"layer0": f"{MOD}:item/{name}"}})
+    for name, model in v74.bow_models().items():
+        write(ASSETS / "models" / "item" / f"{name}.json", model)
 
     # ---------------- блоки
     for name, img in art.hd_blocks().items():
@@ -250,6 +253,15 @@ def main():
         write(ASSETS / "textures" / "gui" / "spells" / f"{name}.png", img)
     for name, img in v7.effect_icons(icons).items():
         write(ASSETS / "textures" / "mob_effect" / f"{name}.png", img)
+    for name, img in v74.effect_icons(items).items():
+        write(ASSETS / "textures" / "mob_effect" / f"{name}.png", img)
+    for name, img in v74.anvil_textures().items():
+        write(ASSETS / "textures" / "block" / f"{name}.png", img)
+    write(ASSETS / "models" / "block" / "elemental_anvil.json", v74.anvil_model())
+    write(ASSETS / "blockstates" / "elemental_anvil.json", {"variants": {"": {"model": f"{MOD}:block/elemental_anvil"}}})
+    write(ASSETS / "models" / "item" / "elemental_anvil.json", {"parent": f"{MOD}:block/elemental_anvil"})
+    for name, img in v74.armor3d_textures(ASSETS / "textures" / "models" / "armor3d").items():
+        write(ASSETS / "textures" / "models" / "armor3d" / f"{name}.png", img)
 
     # ---------------- GUI всей игры
     gui = ROOT / "assets" / "minecraft" / "textures" / "gui" / "sprites" / "widget"
@@ -288,6 +300,9 @@ def main():
     vru, ven = v73.lang()
     lang.RU.update(vru)
     lang.EN.update(ven)
+    vru, ven = v74.lang()
+    lang.RU.update(vru)
+    lang.EN.update(ven)
     write(ASSETS / "lang" / "ru_ru.json", lang.RU)
     write(ASSETS / "lang" / "en_us.json", lang.EN)
     missing_names = [n for n in list(items) + BLOCKS + SPECIAL_BLOCKS
@@ -299,7 +314,7 @@ def main():
     for b in BLOCKS + SPECIAL_BLOCKS:
         write(lt / f"{b}.json", ore_loot(b, *ORES[b]) if b in ORES else self_loot(b))
     for boss, drops in {**BOSS_LOOT, **v6.BOSS_LOOT}.items():
-        drops = drops + v6.BOSS_EXTRA.get(boss, []) + v7.BOSS_EXTRA.get(boss, []) + v72.BOSS_EXTRA.get(boss, [])
+        drops = drops + v6.BOSS_EXTRA.get(boss, []) + v7.BOSS_EXTRA.get(boss, []) + v72.BOSS_EXTRA.get(boss, []) + v74.BOSS_EXTRA.get(boss, [])
         write(DATA / MOD / "loot_table" / "entities" / f"{boss}.json", {"type": "minecraft:entity", "pools": [
             {"rolls": 1, "bonus_rolls": 0, "entries": [{"type": "minecraft:item", "name": I(item), "functions": [
                 {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": lo, "max": hi}}]}]}
@@ -310,6 +325,7 @@ def main():
     rec.update(v6.recipes())
     rec.update(v7.recipes())
     rec.update(v72.recipes())
+    rec.update(v74.recipes())
     for (ns, name), table in v73.LOOT_FIXES.items():
         write(DATA / ns / "loot_table" / f"{name}.json", table)
     for name, table in v72.LOOT.items():

@@ -1,0 +1,6 @@
+{
+  "parent": "yukicore:item/yuki_bow",
+  "textures": {
+    "layer0": "yukicore:item/yuki_bow_pulling_0"
+  }
+}

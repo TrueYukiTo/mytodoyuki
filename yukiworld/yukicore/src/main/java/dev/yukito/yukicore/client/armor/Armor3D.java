@@ -35,6 +35,8 @@ public final class Armor3D {
             "cryomancer", ArmorLayers::cryomancer, "pyromancer", ArmorLayers::pyromancer,
             "yuki_regalia", ArmorLayers::yukiRegalia, "sintara_regalia", ArmorLayers::sintaraRegalia,
             "eternal", ArmorLayers::eternal);
+    /** 7.4: новые комплекты используют геометрию существующих, но свои текстуры. */
+    private static final Map<String, String> GEOMETRY = Map.of("frost_queen", "yuki_regalia", "fire_demon", "eternal");
     private static final Map<String, ArmorModel3D> MODELS = new HashMap<>();
     private static final EquipmentSlot[] SLOTS = {EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET};
 
@@ -49,7 +51,10 @@ public final class Armor3D {
     }
 
     public static ArmorModel3D model(String set) {
-        return MODELS.computeIfAbsent(set, s -> new ArmorModel3D(Minecraft.getInstance().getEntityModels().bakeLayer(loc(s)), s));
+        return MODELS.computeIfAbsent(set, s -> {
+            String geo = GEOMETRY.getOrDefault(s, s);
+            return new ArmorModel3D(Minecraft.getInstance().getEntityModels().bakeLayer(loc(geo)), geo);
+        });
     }
 
     public static void extensions(RegisterClientExtensionsEvent e) {

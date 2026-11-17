@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " IS",
+    "C S",
+    " IS"
+  ],
+  "key": {
+    "I": {
+      "item": "yukicore:frost_ingot"
+    },
+    "C": {
+      "item": "yukicore:yuki_crystal"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "id": "yukicore:yuki_bow",
+    "count": 1
+  }
+}

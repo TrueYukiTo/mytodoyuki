@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "yukicore:aurorium_ingot"
+    },
+    {
+      "item": "yukicore:aurorium_ingot"
+    },
+    {
+      "item": "yukicore:frost_essence"
+    },
+    {
+      "item": "yukicore:flame_essence"
+    },
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "id": "yukicore:twin_blades",
+    "count": 1
+  }
+}

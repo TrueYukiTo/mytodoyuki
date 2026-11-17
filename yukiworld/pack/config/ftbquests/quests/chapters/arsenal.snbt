@@ -1,0 +1,841 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "arsenal"
+	group: "3C966D8069B10DF8"
+	icon: {
+		count: 1
+		id: "yukicore:sintara_scythe"
+	}
+	id: "69FCBBC11D7BFBB7"
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/sintara.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 1.16d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: -9.0d
+			width: 1.16d
+			x: 12.09d
+			y: 0.56d
+		}
+		{
+			height: 1.09d
+			image: "yukicore:textures/quests/star.png"
+			order: -1
+			rotation: -20.4d
+			width: 1.09d
+			x: -1.38d
+			y: -0.1d
+		}
+		{
+			height: 0.78d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 20.8d
+			width: 0.78d
+			x: -1.32d
+			y: 1.53d
+		}
+		{
+			height: 1.0d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -15.1d
+			width: 1.0d
+			x: -1.44d
+			y: 2.4d
+		}
+		{
+			height: 0.82d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: 15.9d
+			width: 0.82d
+			x: -1.53d
+			y: 4.26d
+		}
+		{
+			height: 0.97d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: -5.3d
+			width: 0.97d
+			x: -1.88d
+			y: 4.56d
+		}
+		{
+			height: 0.98d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: 15.4d
+			width: 0.98d
+			x: 12.01d
+			y: 5.91d
+		}
+		{
+			height: 1.02d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -20.9d
+			width: 1.02d
+			x: 12.19d
+			y: 6.03d
+		}
+	]
+	order_index: 35
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"1FB8C3DC6345E60B"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sintara_scythe"
+			}
+			id: "729700B29F930923"
+			rewards: [
+				{
+					id: "2F1A82AC19F0888F"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 4
+					id: "258632D018A58533"
+					item: {
+						count: 1
+						id: "yukicore:flame_essence"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2B59B649282AE98C"
+					item: {
+						count: 1
+						id: "yukicore:sintara_scythe"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"729700B29F930923"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:twin_blades"
+			}
+			id: "42EF7DE578E391D7"
+			rewards: [
+				{
+					id: "4AA9819EEE9F940B"
+					type: "xp"
+					xp: 1005
+				}
+				{
+					count: 4
+					id: "28BCCE07ADEED254"
+					item: {
+						count: 1
+						id: "yukicore:frost_essence"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "22A29F8D3EC33016"
+					item: {
+						count: 1
+						id: "yukicore:twin_blades"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 0.352d
+		}
+		{
+			dependencies: [
+				"42EF7DE578E391D7"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:meteor_hammer"
+			}
+			id: "5476DA6D42292316"
+			rewards: [
+				{
+					id: "54B9BE7656411879"
+					type: "xp"
+					xp: 1010
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1CB590FC72EFD1C1"
+					item: {
+						count: 1
+						id: "yukicore:meteor_hammer"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 0.438d
+		}
+		{
+			dependencies: [
+				"5476DA6D42292316"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:battle_fan"
+			}
+			id: "1BDF9590322CF752"
+			rewards: [
+				{
+					id: "1AAB53E13DEE5C12"
+					type: "xp"
+					xp: 1015
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "13C05209B5574621"
+					item: {
+						count: 1
+						id: "yukicore:battle_fan"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 0.192d
+		}
+		{
+			dependencies: [
+				"1BDF9590322CF752"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_bow"
+			}
+			id: "5C00C9BF24F714A0"
+			rewards: [
+				{
+					id: "7CA4BD1D2CBEE1BB"
+					type: "xp"
+					xp: 1020
+				}
+				{
+					count: 1
+					id: "4F9AECC9C66A6E5A"
+					item: {
+						count: 1
+						id: "yukicore:frost_gem"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "655BC177CFBA4D3A"
+					item: {
+						count: 1
+						id: "yukicore:yuki_bow"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -0.199d
+		}
+		{
+			dependencies: [
+				"5C00C9BF24F714A0"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:cloud_ring"
+			}
+			id: "44D182ECFAC7D58A"
+			rewards: [
+				{
+					id: "31881EB1C6476C2D"
+					type: "xp"
+					xp: 1025
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2F332C40B1CE7BDC"
+					item: {
+						count: 1
+						id: "yukicore:cloud_ring"
+					}
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: -0.44d
+		}
+		{
+			dependencies: [
+				"44D182ECFAC7D58A"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:dash_boots"
+			}
+			id: "207BADB71E0D5EC8"
+			rewards: [
+				{
+					id: "7DCE93FA43070766"
+					type: "xp"
+					xp: 1030
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6A12D3ED5A943884"
+					item: {
+						count: 1
+						id: "yukicore:dash_boots"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: -0.348d
+		}
+		{
+			dependencies: [
+				"207BADB71E0D5EC8"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:ice_skates"
+			}
+			id: "512DD378DFDA2D0C"
+			rewards: [
+				{
+					id: "7F4358AC23BB2783"
+					type: "xp"
+					xp: 1035
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5EFDF3275F3EE2FA"
+					item: {
+						count: 1
+						id: "yukicore:ice_skates"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 2.282d
+		}
+		{
+			dependencies: [
+				"512DD378DFDA2D0C"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:phoenix_cloak"
+			}
+			id: "117C662D72C13C8A"
+			rewards: [
+				{
+					id: "1C4495EF4364725E"
+					type: "xp"
+					xp: 1040
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7E793E93121DBF09"
+					item: {
+						count: 1
+						id: "yukicore:phoenix_cloak"
+					}
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: 1.891d
+		}
+		{
+			dependencies: [
+				"117C662D72C13C8A"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:miner_ring"
+			}
+			id: "545D65B3E05D3E07"
+			rewards: [
+				{
+					id: "2EFA3EEF24781BD0"
+					type: "xp"
+					xp: 1045
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5B5B6BC9A46BBA92"
+					item: {
+						count: 1
+						id: "yukicore:miner_ring"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 1.658d
+		}
+		{
+			dependencies: [
+				"545D65B3E05D3E07"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:second_chance_amulet"
+			}
+			id: "148C05967F5DE192"
+			rewards: [
+				{
+					id: "2A41667B97C61471"
+					type: "xp"
+					xp: 1050
+				}
+				{
+					count: 1
+					id: "5186ECBDC25FB3A5"
+					item: {
+						count: 1
+						id: "yukicore:grand_gift"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5076CCBC11EE14B9"
+					item: {
+						count: 1
+						id: "yukicore:second_chance_amulet"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 1.759d
+		}
+		{
+			dependencies: [
+				"148C05967F5DE192"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:yuki_drill"
+			}
+			id: "3FD46CEAF6DBDC0C"
+			rewards: [
+				{
+					id: "25BCF0012066ED0C"
+					type: "xp"
+					xp: 1055
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3C1F960B403D5592"
+					item: {
+						count: 1
+						id: "yukicore:yuki_drill"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 2.119d
+		}
+		{
+			dependencies: [
+				"3FD46CEAF6DBDC0C"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:builder_wand"
+			}
+			id: "2DB0DA560C8F8027"
+			rewards: [
+				{
+					id: "683FEB92C00C2E61"
+					type: "xp"
+					xp: 1060
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4DCA4F8E56A6C28E"
+					item: {
+						count: 1
+						id: "yukicore:builder_wand"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 2.464d
+		}
+		{
+			dependencies: [
+				"2DB0DA560C8F8027"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:teleport_orb"
+			}
+			id: "6F7DF4A8C963AB17"
+			rewards: [
+				{
+					id: "362AE41064F98590"
+					type: "xp"
+					xp: 1065
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "54AF834642753D13"
+					item: {
+						count: 1
+						id: "yukicore:teleport_orb"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.534d
+		}
+		{
+			dependencies: [
+				"6F7DF4A8C963AB17"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sintara_backpack"
+			}
+			id: "5C45D22A1FA440CB"
+			rewards: [
+				{
+					id: "1CB4F76C6EEE8171"
+					type: "xp"
+					xp: 1070
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2F70C6A145D8DA6A"
+					item: {
+						count: 1
+						id: "yukicore:sintara_backpack"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.432d
+		}
+		{
+			dependencies: [
+				"5C45D22A1FA440CB"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_bomb"
+			}
+			id: "20C997A0BFE3426D"
+			rewards: [
+				{
+					id: "6B745F0C3951C238"
+					type: "xp"
+					xp: 1075
+				}
+				{
+					count: 4
+					id: "6C0C839667992B8D"
+					item: {
+						count: 1
+						id: "yukicore:fire_bomb"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "2AB88344BA4CA8AE"
+					item: {
+						count: 1
+						id: "yukicore:frost_bomb"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 4.042d
+		}
+		{
+			dependencies: [
+				"20C997A0BFE3426D"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:ice_skin_potion"
+			}
+			id: "6DD611AA7D1898C2"
+			rewards: [
+				{
+					id: "7185C9AC77CAB603"
+					type: "xp"
+					xp: 1080
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "13CED6EA6AFEA2C9"
+					item: {
+						count: 1
+						id: "yukicore:ice_skin_potion"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 3.772d
+		}
+		{
+			dependencies: [
+				"6DD611AA7D1898C2"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:recall_scroll"
+			}
+			id: "5F475C35D08ECD63"
+			rewards: [
+				{
+					id: "76E175224428F0A2"
+					type: "xp"
+					xp: 1085
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "74D15D7325A7DADF"
+					item: {
+						count: 1
+						id: "yukicore:recall_scroll"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 3.825d
+		}
+		{
+			dependencies: [
+				"5F475C35D08ECD63"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_steed_whistle"
+			}
+			id: "5306982AAB1AACAE"
+			rewards: [
+				{
+					id: "107D9920B3911E6E"
+					type: "xp"
+					xp: 1090
+				}
+				{
+					count: 1
+					id: "52A1869F80C8E838"
+					item: {
+						count: 1
+						id: "yukicore:flame_steed_whistle"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "719DA14D2B9E9F9C"
+					item: {
+						count: 1
+						id: "yukicore:frost_steed_whistle"
+					}
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 4.163d
+		}
+		{
+			dependencies: [
+				"5306982AAB1AACAE"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:elemental_anvil"
+			}
+			id: "3A81D21928192867"
+			rewards: [
+				{
+					id: "76A407DD301B4F8D"
+					type: "xp"
+					xp: 1095
+				}
+				{
+					count: 1
+					id: "651636351706D759"
+					item: {
+						count: 1
+						id: "yukicore:storm_gem"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6DD9C2708EFDF1A4"
+					item: {
+						count: 1
+						id: "yukicore:elemental_anvil"
+					}
+					type: "item"
+				}
+			]
+			x: 8.75d
+			y: 4.528d
+		}
+		{
+			dependencies: [
+				"3A81D21928192867"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:frost_queen_chestplate"
+			}
+			id: "3184BF09F03A11E1"
+			rewards: [
+				{
+					id: "5121C5D08413A487"
+					type: "xp"
+					xp: 1100
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7A22C6770E682FC8"
+					item: {
+						count: 1
+						id: "yukicore:frost_queen_chestplate"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 4.645d
+		}
+		{
+			dependencies: [
+				"3184BF09F03A11E1"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:fire_demon_chestplate"
+			}
+			id: "27E057955D40A258"
+			rewards: [
+				{
+					id: "588E62E1A0FEB100"
+					type: "xp"
+					xp: 1105
+				}
+				{
+					count: 3
+					id: "620A062132AFED54"
+					item: {
+						count: 1
+						id: "yukicore:gift"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "107776535754C0DE"
+					item: {
+						count: 1
+						id: "yukicore:lucky_seven"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					count: 1L
+					id: "76E4054AF1F18635"
+					item: {
+						count: 1
+						id: "yukicore:fire_demon_chestplate"
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 6.356d
+		}
+	]
+}

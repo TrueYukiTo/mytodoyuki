@@ -1,0 +1,42 @@
+{
+  "name": "Снаряжение и инструменты",
+  "category": "yukicore:sintara",
+  "icon": "yukicore:cloud_ring",
+  "sortnum": 38,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Кольца, амулет и плащ работают, просто $(l)лёжа в инвентаре$(). Ботинки и коньки надеваются."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:cloud_ring",
+      "text": "$(l)Кольцо облаков$() — двойной прыжок."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:second_chance_amulet",
+      "text": "$(l)Амулет второго шанса$() спасает от смерти раз в 10 минут."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:dash_boots",
+      "text": "$(l)Ботинки рывка$(): дважды нажми W, A, S или D."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:yuki_drill",
+      "text": "$(l)Бур Юки$(): 3×3 и переплавка руды. Shift — один блок."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:sintara_backpack",
+      "text": "$(l)Рюкзак Синтары$(): 54 слота, Shift+ПКМ переплавляет руду внутри на угле."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:teleport_orb",
+      "text": "$(l)Сфера телепорта$(): своя точка или телепорт к другу."
+    }
+  ]
+}

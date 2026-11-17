@@ -46,7 +46,11 @@ public class MagicProjectile extends ThrowableItemProjectile {
         METEOR(Element.FIRE, () -> ModItems.ORB_METEOR.get(), 1.8f, true),
         ICICLE(Element.ICE, () -> ModItems.ORB_ICICLE.get(), 0.9f, true),
         FEATHER(Element.FIRE, () -> ModItems.ORB_FEATHER.get(), 0.6f, false),
-        BLADE(Element.STAR, () -> ModItems.ORB_BLADE.get(), 1.2f, true);
+        BLADE(Element.STAR, () -> ModItems.ORB_BLADE.get(), 1.2f, true),
+        // 7.4: бросаемые бомбы
+        FROST_BOMB(Element.ICE, () -> dev.yukito.yukicore.gear.GearItems.FROST_BOMB.get(), 0.6f, true),
+        FIRE_BOMB(Element.FIRE, () -> dev.yukito.yukicore.gear.GearItems.FIRE_BOMB.get(), 0.6f, true),
+        SNARE_BOMB(Element.ICE, () -> dev.yukito.yukicore.gear.GearItems.SNARE_BOMB.get(), 0.6f, true);
 
         final Element element;
         final Supplier<Item> item;

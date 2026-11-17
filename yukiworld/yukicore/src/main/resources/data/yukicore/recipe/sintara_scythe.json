@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPF",
+    " B ",
+    "B  "
+  ],
+  "key": {
+    "P": {
+      "item": "yukicore:pyrolite_ingot"
+    },
+    "F": {
+      "item": "yukicore:flame_essence"
+    },
+    "B": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "id": "yukicore:sintara_scythe",
+    "count": 1
+  }
+}

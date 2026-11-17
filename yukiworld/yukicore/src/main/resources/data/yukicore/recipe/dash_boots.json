@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "F F",
+    "IBI"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:feather"
+    },
+    "I": {
+      "item": "yukicore:frost_ingot"
+    },
+    "B": {
+      "item": "minecraft:leather_boots"
+    }
+  },
+  "result": {
+    "id": "yukicore:dash_boots",
+    "count": 1
+  }
+}

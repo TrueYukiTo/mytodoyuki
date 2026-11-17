@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FAF",
+    " N ",
+    "III"
+  ],
+  "key": {
+    "F": {
+      "item": "yukicore:frost_essence"
+    },
+    "A": {
+      "item": "yukicore:flame_essence"
+    },
+    "N": {
+      "item": "minecraft:anvil"
+    },
+    "I": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result": {
+    "id": "yukicore:elemental_anvil",
+    "count": 1
+  }
+}

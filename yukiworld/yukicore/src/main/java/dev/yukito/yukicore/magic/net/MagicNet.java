@@ -111,6 +111,17 @@ public final class MagicNet {
         }
     }
 
+    /** 7.4: способность снаряжения (0 — двойной прыжок, 1 — рывок). */
+    public record Ability(int id) implements CustomPacketPayload {
+        public static final Type<Ability> TYPE = new Type<>(YukiCore.id("ability"));
+        public static final StreamCodec<ByteBuf, Ability> CODEC = ByteBufCodecs.VAR_INT.map(Ability::new, Ability::id);
+
+        @Override
+        public Type<Ability> type() {
+            return TYPE;
+        }
+    }
+
     /** Клиентский приёмник ответов казино. */
     public static java.util.function.Consumer<CasinoRes> casinoHandler = r -> {
     };
@@ -138,6 +149,9 @@ public final class MagicNet {
             if (res != null) {
                 PacketDistributor.sendToPlayer(sp, new CasinoRes(p.game(), java.util.Arrays.stream(res).boxed().toList()));
             }
+        });
+        r.playToServer(Ability.TYPE, Ability.CODEC, (p, ctx) -> {
+            if (ctx.player() instanceof ServerPlayer sp) dev.yukito.yukicore.gear.GearEvents.ability(sp, p.id());
         });
         r.playToClient(CasinoRes.TYPE, CasinoRes.CODEC, (p, ctx) -> casinoHandler.accept(p));
         r.playToClient(Shake.TYPE, Shake.CODEC, (p, ctx) -> shakeHandler.accept(p.strength(), p.ticks()));

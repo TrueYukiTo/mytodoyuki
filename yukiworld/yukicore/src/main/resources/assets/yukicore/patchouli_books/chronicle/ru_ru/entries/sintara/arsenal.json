@@ -1,0 +1,37 @@
+{
+  "name": "Арсенал стихий",
+  "category": "yukicore:sintara",
+  "icon": "yukicore:sintara_scythe",
+  "sortnum": 37,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)7.4:$() новое оружие, снаряжение и инструменты. Всё крафтится в верстаке, а камни стихий вставляются на $(l)Наковальне стихий$()."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:sintara_scythe",
+      "text": "$(l)Коса Синтары$() поджигает всех вокруг цели, каждый 5-й удар — огненная волна."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:twin_blades",
+      "text": "$(l)Клинки «Лёд и Пламя»$(): удары чередуют стихии, каждый 3-й — взрыв пара."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:meteor_hammer",
+      "text": "$(l)Молот-метеор$(): удар в падении — метеор. Shift+ПКМ — прыжок с ударом о землю."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:yuki_bow",
+      "text": "$(l)Ледяной лук$(): стрелы замораживают и разлетаются на осколки."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "yukicore:battle_fan",
+      "text": "$(l)Боевой веер$(): порыв ветра, а в руке — парение."
+    }
+  ]
+}
