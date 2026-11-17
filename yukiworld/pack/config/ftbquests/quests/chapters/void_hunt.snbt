@@ -1,0 +1,211 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "void_hunt"
+	group: "3C966D8069B10DF8"
+	icon: {
+		count: 1
+		id: "yukicore:void_night_trophy"
+	}
+	id: "445ABAF48F947B76"
+	images: [
+		{
+			height: 2.25d
+			image: "yukicore:textures/quests/sintara.png"
+			order: -1
+			rotation: 0.0d
+			width: 9.0d
+			x: 5.25d
+			y: -2.6d
+		}
+		{
+			height: 0.96d
+			image: "yukicore:textures/quests/tree.png"
+			order: -1
+			rotation: 13.0d
+			width: 0.96d
+			x: 12.38d
+			y: 0.08d
+		}
+		{
+			height: 1.01d
+			image: "yukicore:textures/quests/snowflake.png"
+			order: -1
+			rotation: -0.3d
+			width: 1.01d
+			x: 12.08d
+			y: -0.09d
+		}
+	]
+	order_index: 36
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"27E057955D40A258"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:sintara_board"
+			}
+			id: "71D7701627BDC49C"
+			rewards: [
+				{
+					id: "79531BCB6A1D5070"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					count: 20
+					id: "119F8F8785015312"
+					item: {
+						count: 1
+						id: "yukicore:sintara_chip"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4C94B922DE83EB58"
+					item: {
+						count: 1
+						id: "yukicore:sintara_board"
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"71D7701627BDC49C"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:champion_shard"
+			}
+			id: "25D9742547383BDE"
+			rewards: [
+				{
+					id: "2AF89ED525A04735"
+					type: "xp"
+					xp: 1005
+				}
+				{
+					count: 1
+					id: "283EE6CBE7FE8514"
+					item: {
+						count: 1
+						id: "yukicore:fortune_box"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "20A71D16A0A57DE2"
+					item: {
+						count: 1
+						id: "yukicore:champion_shard"
+					}
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 0.352d
+		}
+		{
+			dependencies: [
+				"25D9742547383BDE"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:champion_shard"
+			}
+			id: "73B7E5D268F2EFF1"
+			rewards: [
+				{
+					id: "3055B7C34D5C330A"
+					type: "xp"
+					xp: 1010
+				}
+				{
+					count: 1
+					id: "5D1DF06B1CA945AF"
+					item: {
+						count: 1
+						id: "yukicore:storm_gem"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 10L
+					id: "2522FEC44E874E89"
+					item: {
+						count: 1
+						id: "yukicore:champion_shard"
+					}
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 0.438d
+		}
+		{
+			dependencies: [
+				"73B7E5D268F2EFF1"
+			]
+			icon: {
+				count: 1
+				id: "yukicore:void_night_trophy"
+			}
+			id: "18BA20E10AE33364"
+			rewards: [
+				{
+					id: "111DCBB12440874D"
+					type: "xp"
+					xp: 1015
+				}
+				{
+					count: 3
+					id: "750C4E10B9466694"
+					item: {
+						count: 1
+						id: "yukicore:gift"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "6A0907B832F07314"
+					item: {
+						count: 1
+						id: "yukicore:grand_gift"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					count: 1L
+					id: "2EEF3A88E73459CD"
+					item: {
+						count: 1
+						id: "yukicore:void_night_trophy"
+					}
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 0.192d
+		}
+	]
+}

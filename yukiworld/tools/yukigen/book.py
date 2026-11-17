@@ -251,6 +251,8 @@ from . import v72 as _v72  # noqa: E402
 ENTRIES.extend(_v72.ENTRIES)
 from . import v74 as _v74  # noqa: E402
 ENTRIES.extend(_v74.ENTRIES)
+from . import v75 as _v75  # noqa: E402
+ENTRIES.extend(_v75.ENTRIES)
 
 
 def files():

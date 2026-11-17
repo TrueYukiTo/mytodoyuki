@@ -27,18 +27,19 @@ from yukigen.questbook6 import CHAPTERS6, GROUP6, INSERT_AFTER6  # noqa: E402
 from yukigen.questbook7 import CHAPTERS7, GROUP7, INSERT_AFTER7  # noqa: E402
 from yukigen.questbook72 import CHAPTERS72, GROUP72, INSERT_AFTER72  # noqa: E402
 from yukigen.questbook74 import CHAPTERS74, GROUP74, INSERT_AFTER74  # noqa: E402
+from yukigen.questbook75 import CHAPTERS75, GROUP75, INSERT_AFTER75  # noqa: E402
 from yukigen import guide  # noqa: E402
 from yukigen.guide_text import DIM_GUIDE, ENTITY_GUIDE  # noqa: E402,F401
 
 guide.ENTITY_GUIDE, guide.DIM_GUIDE = ENTITY_GUIDE, DIM_GUIDE
 GUIDE_INDEX = None  # (рецепты, имена) — строится в main из jar-файлов модов
 
-INSERT_AFTER = {**INSERT_AFTER, **INSERT_AFTER5, **INSERT_AFTER6, **INSERT_AFTER7, **INSERT_AFTER72, **INSERT_AFTER74}
-GROUP4 = {**GROUP4, **GROUP5, **GROUP6, **GROUP7, **GROUP72, **GROUP74}
+INSERT_AFTER = {**INSERT_AFTER, **INSERT_AFTER5, **INSERT_AFTER6, **INSERT_AFTER7, **INSERT_AFTER72, **INSERT_AFTER74, **INSERT_AFTER75}
+GROUP4 = {**GROUP4, **GROUP5, **GROUP6, **GROUP7, **GROUP72, **GROUP74, **GROUP75}
 for _k, _after in INSERT_AFTER.items():
     _i = [k for k, _ in ORDER].index(_after)
     ORDER.insert(_i + 1, (_k, GROUP4[_k]))
-_BY_KEY = {c[0]: c for c in CH2 + CHAPTERS3 + CHAPTERS4 + CHAPTERS5 + CHAPTERS6 + CHAPTERS7 + CHAPTERS72 + CHAPTERS74}
+_BY_KEY = {c[0]: c for c in CH2 + CHAPTERS3 + CHAPTERS4 + CHAPTERS5 + CHAPTERS6 + CHAPTERS7 + CHAPTERS72 + CHAPTERS74 + CHAPTERS75}
 from yukigen.questbook71 import PLANET_EXTRA  # noqa: E402
 
 for _k, _extra in PLANET_EXTRA.items():  # исследование планет — сразу после посадки
@@ -105,7 +106,7 @@ STYLE = {
 }
 CHAPTER_ART = {  # глава -> баннер (по акту / особые)
     "sintara": "sintara", "newyear": "newyear", "celestia": "finale", "finale": "finale",
-    "elements": "sintara", "trials": "sintara", "mastery": "finale", "eternal": "finale", "archmage": "finale", "casino": "sintara", "arsenal": "sintara",
+    "elements": "sintara", "trials": "sintara", "mastery": "finale", "eternal": "finale", "archmage": "finale", "casino": "sintara", "arsenal": "sintara", "void_hunt": "sintara",
 }
 
 

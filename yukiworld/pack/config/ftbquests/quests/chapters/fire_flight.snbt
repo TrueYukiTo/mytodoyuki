@@ -37,12 +37,12 @@
 			y: 0.44d
 		}
 	]
-	order_index: 36
+	order_index: 37
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: [
-				"27E057955D40A258"
+				"18BA20E10AE33364"
 			]
 			icon: {
 				count: 1

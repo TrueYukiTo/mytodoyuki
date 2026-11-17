@@ -25,7 +25,8 @@ public final class YukiCore {
     public YukiCore(IEventBus modBus, ModContainer container) {
         // боссы с 10 000+ здоровья: поднимаем ванильный потолок атрибута (1024)
         ((net.minecraft.world.entity.ai.attributes.RangedAttribute) net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH.value()).maxValue = 1_000_000;
-        dev.yukito.yukicore.gear.GearItems.init(); // 7.4: регистрация в общих реестрах до их подключения
+        dev.yukito.yukicore.gear.GearItems.init();
+        dev.yukito.yukicore.world.WorldItems.init(); // 7.4: регистрация в общих реестрах до их подключения
         ModArmorMaterials.ARMOR_MATERIALS.register(modBus);
         ModBlocks.BLOCKS.register(modBus);
         ModItems.ITEMS.register(modBus);

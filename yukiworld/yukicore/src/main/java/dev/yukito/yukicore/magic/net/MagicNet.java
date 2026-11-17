@@ -122,6 +122,33 @@ public final class MagicNet {
         }
     }
 
+    /** 7.5: доска Синтары — действие (0 обновить, 1 забрать, 2 сменить, 3 купить) и ответ-состояние. */
+    public record BoardReq(net.minecraft.core.BlockPos pos, int action, int arg) implements CustomPacketPayload {
+        public static final Type<BoardReq> TYPE = new Type<>(YukiCore.id("board_req"));
+        public static final StreamCodec<ByteBuf, BoardReq> CODEC = StreamCodec.composite(
+                net.minecraft.core.BlockPos.STREAM_CODEC, BoardReq::pos, ByteBufCodecs.VAR_INT, BoardReq::action,
+                ByteBufCodecs.VAR_INT, BoardReq::arg, BoardReq::new);
+
+        @Override
+        public Type<BoardReq> type() {
+            return TYPE;
+        }
+    }
+
+    public record BoardRes(java.util.List<Integer> data) implements CustomPacketPayload {
+        public static final Type<BoardRes> TYPE = new Type<>(YukiCore.id("board_res"));
+        public static final StreamCodec<ByteBuf, BoardRes> CODEC = ByteBufCodecs.VAR_INT.apply(ByteBufCodecs.list(64))
+                .map(BoardRes::new, BoardRes::data);
+
+        @Override
+        public Type<BoardRes> type() {
+            return TYPE;
+        }
+    }
+
+    public static java.util.function.Consumer<BoardRes> boardHandler = r -> {
+    };
+
     /** Клиентский приёмник ответов казино. */
     public static java.util.function.Consumer<CasinoRes> casinoHandler = r -> {
     };
@@ -153,6 +180,12 @@ public final class MagicNet {
         r.playToServer(Ability.TYPE, Ability.CODEC, (p, ctx) -> {
             if (ctx.player() instanceof ServerPlayer sp) dev.yukito.yukicore.gear.GearEvents.ability(sp, p.id());
         });
+        r.playToServer(BoardReq.TYPE, BoardReq.CODEC, (p, ctx) -> {
+            if (!(ctx.player() instanceof ServerPlayer sp)) return;
+            int[] res = dev.yukito.yukicore.world.Contracts.handle(sp, p.pos(), p.action(), p.arg());
+            if (res != null) PacketDistributor.sendToPlayer(sp, new BoardRes(java.util.Arrays.stream(res).boxed().toList()));
+        });
+        r.playToClient(BoardRes.TYPE, BoardRes.CODEC, (p, ctx) -> boardHandler.accept(p));
         r.playToClient(CasinoRes.TYPE, CasinoRes.CODEC, (p, ctx) -> casinoHandler.accept(p));
         r.playToClient(Shake.TYPE, Shake.CODEC, (p, ctx) -> shakeHandler.accept(p.strength(), p.ticks()));
         r.playToClient(Sync.TYPE, Sync.CODEC, MagicNet::onSync);

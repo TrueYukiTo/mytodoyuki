@@ -34,6 +34,7 @@
     "yukicore:yuki_tree",
     "yukicore:snow_globe",
     "yukicore:slot_machine",
-    "yukicore:elemental_anvil"
+    "yukicore:elemental_anvil",
+    "yukicore:sintara_board"
   ]
 }

@@ -74,6 +74,7 @@ public final class SpellCaster {
         d.cooldownUntil[s.ordinal()] = now + Magic.cooldown(p, s);
         d.dirty = true;
         Magic.addXp(p, s.school, Math.max(3, cost / 2));
+        dev.yukito.yukicore.world.Contracts.onCast(p);
         p.swing(InteractionHand.MAIN_HAND, true);
         return true;
     }

@@ -45,6 +45,17 @@ public final class MagicCommand {
                     c.getSource().sendSuccess(() -> Component.literal(ok ? "Planet event started" : "Not a Yuki planet"), true);
                     return ok ? 1 : 0;
                 }))
+                .then(Commands.literal("invasion").executes(c -> {
+                    dev.yukito.yukicore.world.Invasions.start(c.getSource().getServer().overworld());
+                    c.getSource().sendSuccess(() -> Component.literal("Void Night started"), true);
+                    return 1;
+                }))
+                .then(Commands.literal("elite").then(Commands.argument("affixes", IntegerArgumentType.integer(1, 4))
+                        .executes(c -> {
+                            dev.yukito.yukicore.world.Elites.spawnTest(c.getSource().getPlayerOrException(),
+                                    IntegerArgumentType.getInteger(c, "affixes"));
+                            return 1;
+                        })))
                 .then(Commands.literal("reset").then(Commands.argument("targets", EntityArgument.players())
                         .executes(c -> each(c, p -> {
                             Magic.get(p).copyFrom(new MagicData());
