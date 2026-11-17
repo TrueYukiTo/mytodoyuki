@@ -14,7 +14,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from yukigen import art, book, hd, lang, models, planets, recipes, v6, v7, v72  # noqa: E402
+from yukigen import art, book, hd, lang, models, planets, recipes, v6, v7, v72, v73  # noqa: E402
 from yukigen.art import CRYSTAL, SAKURA, TIERS  # noqa: E402
 from yukigen.pixel import gui_button, gui_handle, logo, nine_slice  # noqa: E402
 
@@ -245,6 +245,7 @@ def main():
     write(ASSETS / "blockstates" / "slot_machine.json", v72.blockstate())
     write(ASSETS / "models" / "item" / "slot_machine.json", {"parent": f"{MOD}:block/slot_machine"})
     icons = v7.skill_icons()
+    icons.update(v73.skill_icons())
     for name, img in icons.items():
         write(ASSETS / "textures" / "gui" / "spells" / f"{name}.png", img)
     for name, img in v7.effect_icons(icons).items():
@@ -284,6 +285,9 @@ def main():
     vru, ven = v72.lang()
     lang.RU.update(vru)
     lang.EN.update(ven)
+    vru, ven = v73.lang()
+    lang.RU.update(vru)
+    lang.EN.update(ven)
     write(ASSETS / "lang" / "ru_ru.json", lang.RU)
     write(ASSETS / "lang" / "en_us.json", lang.EN)
     missing_names = [n for n in list(items) + BLOCKS + SPECIAL_BLOCKS
@@ -306,6 +310,8 @@ def main():
     rec.update(v6.recipes())
     rec.update(v7.recipes())
     rec.update(v72.recipes())
+    for (ns, name), table in v73.LOOT_FIXES.items():
+        write(DATA / ns / "loot_table" / f"{name}.json", table)
     for name, table in v72.LOOT.items():
         write(DATA / MOD / "loot_table" / "gameplay" / f"{name}.json", table)
     for name, r in rec.items():

@@ -2,7 +2,7 @@
   "name": "Чудеса планет",
   "category": "yukicore:stars",
   "icon": "yukicore:aurora_shard",
-  "sortnum": 34,
+  "sortnum": 35,
   "pages": [
     {
       "type": "patchouli:text",

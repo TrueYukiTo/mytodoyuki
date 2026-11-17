@@ -25,7 +25,7 @@ import java.util.List;
  * Навык открывается только после предков. ЛКМ — изучить/улучшить, ПКМ — в активную ячейку, клик по ячейке — выбрать её.
  */
 public class GrimoireScreen extends Screen {
-    private static final int W = 444, H = 286, NODE = 26;
+    private static final int W = 444, H = 306, NODE = 26;
     private static School tab = School.ICE;
     private int x0, y0;
 
@@ -45,7 +45,7 @@ public class GrimoireScreen extends Screen {
     }
 
     private int[] pos(Skill s) {
-        return new int[]{x0 + 18 + s.column * 47, y0 + 74 + s.row * 50};
+        return new int[]{x0 + 18 + s.column * 47, y0 + 74 + s.row * 42};
     }
 
     private int[] slotPos(int i) {
@@ -174,6 +174,10 @@ public class GrimoireScreen extends Screen {
         out.addAll(font.split(Component.translatable("spell.yukicore." + s.id() + ".desc").withStyle(ChatFormatting.GRAY), 230));
         out.add(Component.translatable("screen.yukicore.grimoire.rank", r, Skill.MAX_RANK).withStyle(ChatFormatting.YELLOW).getVisualOrderText());
         Player pl = Minecraft.getInstance().player;
+        if (pl != null && !s.passive()) {
+            out.add(Component.translatable("screen.yukicore.grimoire.power", String.format("%.0f", Magic.power(pl, s) * 100),
+                    String.format("%.0f", Magic.growth(d.level(s.school)) * 100)).withStyle(ChatFormatting.LIGHT_PURPLE).getVisualOrderText());
+        }
         if (!s.passive() && pl != null) {
             out.add(Component.translatable("screen.yukicore.grimoire.cost", Magic.cost(pl, s),
                     String.format("%.1f", Magic.cooldown(pl, s) / 20f)).withStyle(ChatFormatting.BLUE).getVisualOrderText());

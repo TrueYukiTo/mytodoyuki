@@ -21,7 +21,7 @@ import org.lwjgl.glfw.GLFW;
 public final class ClientMagic {
     public static final String CATEGORY = "key.categories.yukicore";
     public static final KeyMapping CAST = new KeyMapping("key.yukicore.cast", InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_R, CATEGORY);
-    public static final KeyMapping NEXT = new KeyMapping("key.yukicore.next_spell", InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_Z, CATEGORY);
+    public static final KeyMapping NEXT = new KeyMapping("key.yukicore.cycle_spell", InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_UNKNOWN, CATEGORY);
     public static final KeyMapping GRIMOIRE = new KeyMapping("key.yukicore.grimoire", InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_K, CATEGORY);
 
     private static float shake;
@@ -46,10 +46,18 @@ public final class ClientMagic {
         if (shakeTicks > 0) shakeTicks--;
         Minecraft mc = Minecraft.getInstance();
         if (mc.player == null || mc.screen != null) return;
-        while (CAST.consumeClick()) PacketDistributor.sendToServer(new MagicNet.Cast(-1));
-        while (NEXT.consumeClick()) {
+        // 7.3: Shift+R — следующее заклинание (своей клавиши по умолчанию нет: Z, Y и прочие заняты другими модами)
+        while (CAST.consumeClick()) {
+            if (net.minecraft.client.gui.screens.Screen.hasShiftDown()) cycle(mc, 1);
+            else PacketDistributor.sendToServer(new MagicNet.Cast(-1));
+        }
+        while (NEXT.consumeClick()) cycle(mc, net.minecraft.client.gui.screens.Screen.hasShiftDown() ? -1 : 1);
+        while (GRIMOIRE.consumeClick()) openGrimoire();
+    }
+
+    private static void cycle(Minecraft mc, int dir) {
+        {
             MagicData d = Magic.get(mc.player);
-            int dir = mc.player.isShiftKeyDown() ? -1 : 1;
             int slot = d.activeSlot;
             for (int i = 0; i < MagicData.SLOTS; i++) {
                 slot = Math.floorMod(slot + dir, MagicData.SLOTS);
@@ -63,7 +71,6 @@ public final class ClientMagic {
                         .withStyle(s.school == School.ICE ? ChatFormatting.AQUA : ChatFormatting.GOLD), true);
             }
         }
-        while (GRIMOIRE.consumeClick()) openGrimoire();
     }
 
     public static void camera(ViewportEvent.ComputeCameraAngles e) {

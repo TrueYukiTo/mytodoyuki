@@ -36,10 +36,14 @@ jobs:
       - name: Build YukiWorld modpack
         run: bash yukiworld/pack/scripts/build-pack.sh
 
+      - name: Build server pack
+        run: python3 yukiworld/pack/scripts/build-server.py
+
       - uses: actions/upload-artifact@v4
         with:
           name: YukiWorld
           path: |
             yukiworld/yukicore/build/libs/*.jar
             yukiworld/pack/build/*.mrpack
+            yukiworld/pack/build/YukiWorld-Server-*.zip
             yukiworld/pack/build/mods-report.txt

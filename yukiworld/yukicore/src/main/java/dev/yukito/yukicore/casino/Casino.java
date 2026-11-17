@@ -1,7 +1,6 @@
 package dev.yukito.yukicore.casino;
 
 import dev.yukito.yukicore.YukiCore;
-import dev.yukito.yukicore.registry.ModBlocks;
 import dev.yukito.yukicore.registry.ModItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
@@ -21,9 +20,6 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
 
 /**
  * Казино Синтары — только на игровые фишки. Огненный автомат (3 барабана, возврат ~95%, джекпот 777),
@@ -37,8 +33,6 @@ public final class Casino {
     private static final int[] WEIGHT = {30, 24, 18, 12, 8, 5};
     private static final int[] TRIPLE = {5, 8, 12, 25, 50, 200};
     private static final int[] DOUBLE = {0, 1, 1, 2, 3, 10};
-    public static final int[] BETS = {1, 5, 10};
-    private static final Map<UUID, Long> NEXT_SPIN = new HashMap<>();
 
     public static int chips(ServerPlayer p) {
         int n = 0;
@@ -78,32 +72,12 @@ public final class Casino {
         return 0;
     }
 
-    /** Прокрутка на сервере. Возвращает {a, b, c, выигрыш} или null, если ставка невозможна. */
-    public static int[] spin(ServerPlayer p, BlockPos pos, int bet) {
-        if (p.distanceToSqr(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5) > 64
-                || !p.level().getBlockState(pos).is(ModBlocks.SLOT_MACHINE.get())) return null;
-        boolean ok = false;
-        for (int b : BETS) ok |= b == bet;
-        long now = p.level().getGameTime();
-        if (!ok || NEXT_SPIN.getOrDefault(p.getUUID(), 0L) > now) return null;
-        if (chips(p) < bet && !p.getAbilities().instabuild) {
-            p.displayClientMessage(Component.translatable("casino.yukicore.no_chips").withStyle(ChatFormatting.RED), true);
-            return null;
-        }
-        NEXT_SPIN.put(p.getUUID(), now + 40);
-        if (!p.getAbilities().instabuild) take(p, bet);
-        RandomSource r = p.getRandom();
-        int a = roll(r), b = roll(r), c = roll(r);
-        int win = multiplier(a, b, c) * bet;
-        ServerLevel lvl = p.serverLevel();
-        lvl.playSound(null, pos, SoundEvents.NOTE_BLOCK_CHIME.value(), SoundSource.BLOCKS, 1f, 1.2f);
-        // выигрыш выдаётся, когда барабаны остановятся
-        final int fa = a, fb = b, fc = c, fw = win;
-        dev.yukito.yukicore.magic.Scheduler.later(lvl, 38, () -> payout(p, pos, fa, fb, fc, fw, bet));
-        return new int[]{a, b, c, win};
+    /** Три барабана. */
+    public static int[] rollReels(RandomSource r) {
+        return new int[]{roll(r), roll(r), roll(r)};
     }
 
-    private static void payout(ServerPlayer p, BlockPos pos, int a, int b, int c, int win, int bet) {
+    static void payout(ServerPlayer p, BlockPos pos, int a, int b, int c, int win, int bet) {
         ServerLevel lvl = p.serverLevel();
         if (win <= 0) {
             lvl.playSound(null, pos, SoundEvents.FIRE_EXTINGUISH, SoundSource.BLOCKS, 0.5f, 1.4f);

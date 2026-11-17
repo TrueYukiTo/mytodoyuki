@@ -86,32 +86,33 @@ public final class MagicNet {
         }
     }
 
-    /** Казино: прокрутить автомат на позиции pos со ставкой bet. */
-    public record Spin(net.minecraft.core.BlockPos pos, int bet) implements CustomPacketPayload {
-        public static final Type<Spin> TYPE = new Type<>(YukiCore.id("spin"));
-        public static final StreamCodec<ByteBuf, Spin> CODEC = StreamCodec.composite(
-                net.minecraft.core.BlockPos.STREAM_CODEC, Spin::pos, ByteBufCodecs.VAR_INT, Spin::bet, Spin::new);
+    /** Казино: действие в игре game (см. CasinoGames) на автомате pos. */
+    public record CasinoReq(net.minecraft.core.BlockPos pos, int game, int action, int bet) implements CustomPacketPayload {
+        public static final Type<CasinoReq> TYPE = new Type<>(YukiCore.id("casino_req"));
+        public static final StreamCodec<ByteBuf, CasinoReq> CODEC = StreamCodec.composite(
+                net.minecraft.core.BlockPos.STREAM_CODEC, CasinoReq::pos, ByteBufCodecs.VAR_INT, CasinoReq::game,
+                ByteBufCodecs.VAR_INT, CasinoReq::action, ByteBufCodecs.VAR_INT, CasinoReq::bet, CasinoReq::new);
 
         @Override
-        public Type<Spin> type() {
+        public Type<CasinoReq> type() {
             return TYPE;
         }
     }
 
-    public record SpinResult(int a, int b, int c, int win) implements CustomPacketPayload {
-        public static final Type<SpinResult> TYPE = new Type<>(YukiCore.id("spin_result"));
-        public static final StreamCodec<ByteBuf, SpinResult> CODEC = StreamCodec.composite(
-                ByteBufCodecs.VAR_INT, SpinResult::a, ByteBufCodecs.VAR_INT, SpinResult::b, ByteBufCodecs.VAR_INT, SpinResult::c,
-                ByteBufCodecs.VAR_INT, SpinResult::win, SpinResult::new);
+    public record CasinoRes(int game, java.util.List<Integer> data) implements CustomPacketPayload {
+        public static final Type<CasinoRes> TYPE = new Type<>(YukiCore.id("casino_res"));
+        public static final StreamCodec<ByteBuf, CasinoRes> CODEC = StreamCodec.composite(
+                ByteBufCodecs.VAR_INT, CasinoRes::game, ByteBufCodecs.VAR_INT.apply(ByteBufCodecs.list(64)), CasinoRes::data,
+                CasinoRes::new);
 
         @Override
-        public Type<SpinResult> type() {
+        public Type<CasinoRes> type() {
             return TYPE;
         }
     }
 
-    /** Клиентский приёмник результата прокрутки. */
-    public static java.util.function.Consumer<SpinResult> spinHandler = r -> {
+    /** Клиентский приёмник ответов казино. */
+    public static java.util.function.Consumer<CasinoRes> casinoHandler = r -> {
     };
 
     /** Клиентский приёмник тряски (ставится клиентом, на сервере пустой). */
@@ -131,12 +132,14 @@ public final class MagicNet {
         r.playToServer(Upgrade.TYPE, Upgrade.CODEC, (p, ctx) -> {
             if (ctx.player() instanceof ServerPlayer sp) Magic.upgrade(sp, p.index());
         });
-        r.playToServer(Spin.TYPE, Spin.CODEC, (p, ctx) -> {
+        r.playToServer(CasinoReq.TYPE, CasinoReq.CODEC, (p, ctx) -> {
             if (!(ctx.player() instanceof ServerPlayer sp)) return;
-            int[] res = dev.yukito.yukicore.casino.Casino.spin(sp, p.pos(), p.bet());
-            if (res != null) PacketDistributor.sendToPlayer(sp, new SpinResult(res[0], res[1], res[2], res[3]));
+            int[] res = dev.yukito.yukicore.casino.CasinoGames.handle(sp, p.pos(), p.game(), p.action(), p.bet());
+            if (res != null) {
+                PacketDistributor.sendToPlayer(sp, new CasinoRes(p.game(), java.util.Arrays.stream(res).boxed().toList()));
+            }
         });
-        r.playToClient(SpinResult.TYPE, SpinResult.CODEC, (p, ctx) -> spinHandler.accept(p));
+        r.playToClient(CasinoRes.TYPE, CasinoRes.CODEC, (p, ctx) -> casinoHandler.accept(p));
         r.playToClient(Shake.TYPE, Shake.CODEC, (p, ctx) -> shakeHandler.accept(p.strength(), p.ticks()));
         r.playToClient(Sync.TYPE, Sync.CODEC, MagicNet::onSync);
         r.playToClient(Mana.TYPE, Mana.CODEC, (p, ctx) -> {

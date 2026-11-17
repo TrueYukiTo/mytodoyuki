@@ -437,14 +437,14 @@ ENTRIES = [
         "$(l)Лёд Юки$() — контроль: замедление, заморозка, щиты, метель.$(br)$(l)Пламя Синтары$() — разрушение: "
         "огненные шары, рывки, метеоры и возрождение из пепла.",
         "Каждая школа качается отдельно: творишь заклинания и побеждаешь врагов — растёт $(l)уровень$() (до 60) "
-        "и копятся $(l)очки навыков$(). В каждой ветке — дерево из 22 навыков.",
+        "и копятся $(l)очки навыков$(). В каждой ветке — дерево из 30 навыков.",
         ("spot", "yukicore:yuki_grimoire", "$(l)Гримуар Юки$() — открывает ледяную школу. Держи в инвентаре."),
         ("spot", "yukicore:sintara_tome", "$(l)Фолиант Синтары$() — открывает огненную школу."),
     ]),
     ("magic", "controls", "Управление", "minecraft:writable_book", [
         "$(li)$(l)K$() или Shift+ПКМ фокусом — Гримуар стихий (дерево навыков)$(li)$(l)ЛКМ$() по узлу — изучить или "
-        "улучшить$(li)$(l)ПКМ$() по узлу — выбрать$(li)$(l)R$() — сотворить выбранное$(li)$(l)Z$() — следующее "
-        "заклинание (Shift+Z — предыдущее)",
+        "улучшить$(li)$(l)ПКМ$() по узлу — выбрать$(li)$(l)R$() — сотворить выбранное$(li)$(l)Shift+R$() — следующее "
+        "заклинание",
         "Внизу экрана, слева от хотбара, — $(l)мана$() и выбранное заклинание с перезарядкой. Клавиши можно "
         "сменить в настройках управления.",
     ]),
@@ -649,8 +649,8 @@ LANG = {
     "screen.yukicore.grimoire.level": ("Уровень %s  •  Очки: %s", "Level %s  •  Points: %s"),
     "screen.yukicore.grimoire.footer": ("Мана %s/%s  •  Кристаллы %s/10  •  Испытания: ❄ %s  ✹ %s",
                                         "Mana %s/%s  •  Crystals %s/10  •  Trials: ❄ %s  ✹ %s"),
-    "screen.yukicore.grimoire.hint": ("ЛКМ — изучить/улучшить  •  ПКМ — выбрать  •  R — сотворить  •  Z — следующее",
-                                      "LMB — learn/upgrade  •  RMB — select  •  R — cast  •  Z — next"),
+    "screen.yukicore.grimoire.hint": ("ЛКМ — изучить/улучшить  •  ПКМ — выбрать  •  R — сотворить  •  Shift+R — следующее",
+                                      "LMB — learn/upgrade  •  RMB — select  •  R — cast  •  Shift+R — next"),
     "screen.yukicore.grimoire.rank": ("Ранг %s/%s", "Rank %s/%s"),
     "screen.yukicore.grimoire.cost": ("Мана: %s  •  Перезарядка: %s с", "Mana: %s  •  Cooldown: %s s"),
     "screen.yukicore.grimoire.need_level": ("Нужен уровень школы %s", "Requires school level %s"),
@@ -662,7 +662,7 @@ LANG = {
     "screen.yukicore.grimoire.click_select": ("ПКМ — выбрать для клавиши R", "RMB — select for the R key"),
     "key.categories.yukicore": ("YukiWorld: магия", "YukiWorld: Magic"),
     "key.yukicore.cast": ("Сотворить заклинание", "Cast spell"),
-    "key.yukicore.next_spell": ("Следующее заклинание", "Next spell"),
+    "key.yukicore.cycle_spell": ("Следующее заклинание (или Shift+R)", "Next spell (or Shift+R)"),
     "key.yukicore.grimoire": ("Гримуар стихий", "Grimoire of Elements"),
     "menu.yukicore.subtitle": ("Легенда о Юки: Две стихии", "The Legend of Yuki: Two Elements"),
 }

@@ -23,7 +23,7 @@ import java.util.UUID;
 import static dev.yukito.yukicore.magic.Element.FIRE;
 import static dev.yukito.yukicore.magic.Element.ICE;
 
-/** Все 32 активных заклинания дерева: 16 ледяных (Юки) и 16 огненных (Синтара). */
+/** Все 44 активных заклинания дерева: 22 ледяных (Юки) и 22 огненных (Синтара). */
 final class Spells {
     private Spells() {}
 
@@ -539,11 +539,127 @@ final class Spells {
                 Fx.shake(lvl, pos, 32, 2f, 20);
                 Fx.sound(lvl, pos, SoundEvents.ENDER_DRAGON_GROWL, 2f, 1.2f);
             }
+            // ================================================================ 7.3: Путь стужи
+            case ICE_LANCE -> {
+                MagicProjectile.create(lvl, p, Kind.ICICLE, eye.add(look.scale(0.8)), 70 * pw, r >= 3 ? 2.5f : 0).power(r)
+                        .size(1.5f + 0.1f * r).life(40).launch(look.scale(3.2));
+                Fx.burst(lvl, eye.add(look), ParticleTypes.SNOWFLAKE, 20, 0.3, 0.05);
+                Fx.sound(lvl, pos, SoundEvents.TRIDENT_THROW.value(), 1.2f, 1.5f);
+            }
+            case FROST_TRAP -> trap(p, lvl, Fx.target(p, 24), r, pw, true);
+            case HAILSTORM -> rain(p, lvl, Fx.target(p, 32), r, pw, true);
+            case ARCTIC_GALE -> gale(p, lvl, r, pw, true);
+            case FROST_COMET -> comet(p, lvl, Fx.target(p, 48), r, pw, true);
+            // ================================================================ 7.3: Путь жара
+            case FLAME_LANCE -> {
+                MagicProjectile.create(lvl, p, Kind.FLAME, eye.add(look.scale(0.8)), 70 * pw, r >= 3 ? 2.5f : 0).power(r)
+                        .size(1.4f + 0.1f * r).life(40).launch(look.scale(3.2));
+                Fx.burst(lvl, eye.add(look), ParticleTypes.FLAME, 20, 0.3, 0.05);
+                Fx.sound(lvl, pos, SoundEvents.BLAZE_SHOOT, 1.2f, 0.8f);
+            }
+            case FIRE_MINE -> trap(p, lvl, Fx.target(p, 24), r, pw, false);
+            case ASH_RAIN -> rain(p, lvl, Fx.target(p, 32), r, pw, false);
+            case HEAT_WAVE -> gale(p, lvl, r, pw, false);
+            case SOLAR_FLARE -> comet(p, lvl, Fx.target(p, 48), r, pw, false);
             default -> {
                 return false;
             }
         }
         return true;
+    }
+
+    /** Ледяная ловушка / огненная мина: руна на земле, через секунду — взрыв. */
+    private static void trap(ServerPlayer p, ServerLevel lvl, Vec3 at, int r, float pw, boolean ice) {
+        var part = ice ? ParticleTypes.SNOWFLAKE : ParticleTypes.FLAME;
+        double rad = 4 + 0.5 * r;
+        for (int t = 0; t < 20; t += 4) Scheduler.later(lvl, t + 1, () -> {
+            Fx.ring(lvl, at, rad, part);
+            Fx.ring(lvl, at, rad * 0.5, ice ? ParticleTypes.END_ROD : ParticleTypes.SMALL_FLAME);
+        });
+        Scheduler.later(lvl, 22, () -> {
+            Fx.area(p, at, rad, 55 * pw, ice ? ICE : FIRE, e -> {
+                if (ice) e.addEffect(new MobEffectInstance(ModMagic.FROZEN, 50 + 10 * r, 0));
+                else e.igniteForSeconds(4 + r);
+                e.push(0, 0.9, 0);
+                e.hurtMarked = true;
+            });
+            for (int i = 0; i < 10; i++) {
+                double a = i * Math.PI / 5;
+                Fx.block(lvl, Fx.ground(lvl, at.add(Math.cos(a) * rad * 0.6, 0, Math.sin(a) * rad * 0.6)), ice ? BLUE : MAGMA,
+                        0.7f, 1.8f + lvl.random.nextFloat(), 0.7f, 3, 26, (float) Math.sin(a) * 0.4f, (float) -Math.cos(a) * 0.4f);
+            }
+            Fx.burst(lvl, at.add(0, 1, 0), ice ? ParticleTypes.ITEM_SNOWBALL : ParticleTypes.LAVA, 60, rad / 2, 0.1);
+            Fx.shake(lvl, at, 14, 1f, 10);
+            Fx.sound(lvl, at, ice ? SoundEvents.GLASS_BREAK : SoundEvents.GENERIC_EXPLODE.value(), 1.6f, ice ? 0.7f : 1.2f);
+        });
+        Fx.sound(lvl, at, SoundEvents.AMETHYST_BLOCK_CHIME, 1f, ice ? 1.6f : 0.6f);
+    }
+
+    /** Град / пепельный дождь: снаряды падают с неба по области 3 секунды. */
+    private static void rain(ServerPlayer p, ServerLevel lvl, Vec3 at, int r, float pw, boolean ice) {
+        int n = 26 + 4 * r;
+        for (int i = 0; i < n; i++) {
+            Scheduler.later(lvl, i * 2 + 1, () -> {
+                Vec3 spot = Fx.ground(lvl, at.add(rnd(lvl, 8), 0, rnd(lvl, 8)));
+                MagicProjectile.create(lvl, p, ice ? Kind.ICICLE : Kind.METEOR, spot.add(rnd(lvl, 1), 18, rnd(lvl, 1)),
+                        22 * pw, ice ? 1.5f : 2f).size(ice ? 0.9f : 1.0f).launch(new Vec3(0, -1.4, 0));
+            });
+        }
+        for (int t = 0; t < n * 2; t += 8) Scheduler.later(lvl, t + 1, () -> {
+            Fx.ring(lvl, at, 8, ice ? ParticleTypes.SNOWFLAKE : ParticleTypes.ASH);
+            Fx.shake(lvl, at, 20, 0.5f, 8);
+        });
+        Fx.sound(lvl, at, ice ? SoundEvents.POWDER_SNOW_STEP : SoundEvents.FIRECHARGE_USE, 2f, 0.5f);
+    }
+
+    /** Арктический шквал / тепловая волна: конус перед магом — урон и отбрасывание. */
+    private static void gale(ServerPlayer p, ServerLevel lvl, int r, float pw, boolean ice) {
+        Vec3 from = p.getEyePosition().add(0, -0.3, 0), dir = p.getLookAngle();
+        double len = 12 + r;
+        for (int t = 0; t < 10; t += 2) Scheduler.later(lvl, t + 1, () -> {
+            for (double d = 1; d < len; d += 0.8) {
+                lvl.sendParticles(ice ? ParticleTypes.SNOWFLAKE : ParticleTypes.FLAME, from.x + dir.x * d, from.y + dir.y * d,
+                        from.z + dir.z * d, 4, d * 0.12, d * 0.08, d * 0.12, 0.05);
+            }
+        });
+        for (LivingEntity e : Fx.enemies(p, from, len)) {
+            Vec3 to = e.getBoundingBox().getCenter().subtract(from);
+            if (to.length() > len || to.normalize().dot(dir) < 0.7) continue;
+            if (Fx.hit(p, e, 35 * pw, ice ? ICE : FIRE)) {
+                Fx.push(from, e, 2.2, 0.5);
+                if (ice) e.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 80, 2));
+                else e.igniteForSeconds(4 + r);
+            }
+        }
+        Fx.shake(lvl, from, 10, 0.8f, 8);
+        Fx.sound(lvl, from, ice ? SoundEvents.ELYTRA_FLYING : SoundEvents.BLAZE_SHOOT, 1.5f, ice ? 1.6f : 0.5f);
+    }
+
+    /** Ледяная комета / солнечная вспышка: огромная глыба падает с неба через 1,5 секунды. */
+    private static void comet(ServerPlayer p, ServerLevel lvl, Vec3 at, int r, float pw, boolean ice) {
+        double rad = 9 + r * 0.5;
+        Fx.fallingBlock(lvl, at, ice ? BLUE : MAGMA, 5f + 0.4f * r, 30, 46);
+        for (int t = 0; t < 30; t += 3) Scheduler.later(lvl, t + 1, () -> {
+            Fx.ring(lvl, at, rad, ice ? ParticleTypes.SNOWFLAKE : ParticleTypes.FLAME);
+            Fx.column(lvl, at, 24, 0.6, ice ? ParticleTypes.END_ROD : ParticleTypes.LAVA, 10);
+        });
+        Scheduler.later(lvl, 31, () -> {
+            Fx.area(p, at, rad, 420 * pw, ice ? ICE : FIRE, e -> {
+                if (ice) e.addEffect(new MobEffectInstance(ModMagic.FROZEN, 100, 0));
+                else e.igniteForSeconds(10);
+                Fx.push(at, e, 2.0, 1.0);
+            });
+            for (int i = 0; i < 18; i++) {
+                double a = i * Math.PI / 9;
+                Fx.block(lvl, Fx.ground(lvl, at.add(Math.cos(a) * rad * 0.7, 0, Math.sin(a) * rad * 0.7)), ice ? PACKED : LAVA,
+                        1.2f, 2.5f + lvl.random.nextFloat() * 2, 1.2f, 3, 50, (float) Math.sin(a) * 0.5f, (float) -Math.cos(a) * 0.5f);
+            }
+            Fx.burst(lvl, at.add(0, 1, 0), ParticleTypes.EXPLOSION_EMITTER, 3, 3, 0);
+            Fx.burst(lvl, at.add(0, 2, 0), ice ? ParticleTypes.SNOWFLAKE : ParticleTypes.FLAME, 300, rad / 2, 0.3);
+            Fx.shake(lvl, at, 48, 2.5f, 25);
+            Fx.sound(lvl, at, SoundEvents.GENERIC_EXPLODE.value(), 3f, ice ? 0.8f : 0.5f);
+        });
+        Fx.sound(lvl, at, ice ? SoundEvents.ELDER_GUARDIAN_CURSE : SoundEvents.WITHER_SPAWN, 1.5f, 1.5f);
     }
 
     private static void cone(ServerPlayer p, Vec3 from, Vec3 dir, double len, double cos, float dmg) {

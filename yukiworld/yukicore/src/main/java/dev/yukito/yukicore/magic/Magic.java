@@ -97,12 +97,23 @@ public final class Magic {
         MagicData d = get(p);
         int rank = Math.max(1, d.rank(s));
         Skill pw = s.school == School.ICE ? Skill.PERMAFROST : Skill.SINTARA_HEAT;
+        Skill mastery = s.school == School.ICE ? Skill.CRYO_MASTERY : Skill.PYRO_MASTERY;
         float base = 1f + 0.3f * (rank - 1);
-        return base * (1f + 0.1f * d.rank(pw) + 0.02f * d.level(s.school) + heldFocus(p, s.school) + gear(p, s.school));
+        return growth(d.level(s.school)) * base * (1f + 0.1f * d.rank(pw) + 0.06f * d.rank(mastery) + 0.02f * d.level(s.school)
+                + heldFocus(p, s.school) + gear(p, s.school));
+    }
+
+    /**
+     * 7.3: сила растёт с уровнем школы — на 1-м уровне заклинания бьют как каменный меч (~20%),
+     * на 30-м примерно вполовину, на 60-м — в полную силу.
+     */
+    public static float growth(int level) {
+        return 0.2f + 0.8f * (float) Math.pow(Math.max(0, level) / (double) MagicData.MAX_LEVEL, 1.3);
     }
 
     public static int cost(Player p, Skill s) {
-        float c = s.cost(get(p).rank(s)) * Math.max(0.3f, 1f - robes(p, s.school)[1]);
+        Skill flow = s.school == School.ICE ? Skill.FROZEN_FLOW : Skill.KINDLING;
+        float c = s.cost(get(p).rank(s)) * Math.max(0.3f, 1f - robes(p, s.school)[1] - 0.04f * get(p).rank(flow));
         if ((s.school == School.ICE && p.hasEffect(ModMagic.AVATAR_ICE)) || (s.school == School.FIRE && p.hasEffect(ModMagic.AVATAR_FIRE))) {
             c *= 0.25f;
         }
@@ -181,6 +192,22 @@ public final class Magic {
         p.serverLevel().playSound(null, p.blockPosition(), SoundEvents.ENCHANTMENT_TABLE_USE, SoundSource.PLAYERS, 1f, 1.3f);
         p.serverLevel().sendParticles(s.school == School.ICE ? ParticleTypes.SNOWFLAKE : ParticleTypes.FLAME,
                 p.getX(), p.getY() + 1, p.getZ(), 30, 0.5, 0.8, 0.5, 0.05);
+    }
+
+    /** 7.3: очков стало меньше — если игрок потратил больше, чем есть, дерево школы сбрасывается и очки возвращаются. */
+    public static void rebuildIfOverspent(ServerPlayer p) {
+        MagicData d = get(p);
+        for (School s : School.values()) {
+            if (d.points(s) >= 0) continue;
+            for (Skill k : Skill.values()) if (k.school == s) d.ranks[k.ordinal()] = 0;
+            for (int i = 0; i < MagicData.SLOTS; i++) {
+                Skill k = Skill.byId(d.slots[i]);
+                if (k != null && k.school == s) d.slots[i] = -1;
+            }
+            d.dirty = true;
+            p.sendSystemMessage(Component.translatable("magic.yukicore.rebuilt." + s.id, d.points(s))
+                    .withStyle(s == School.ICE ? ChatFormatting.AQUA : ChatFormatting.GOLD));
+        }
     }
 
     /** Свиток забвения: снять все навыки — очки вернутся сами. */

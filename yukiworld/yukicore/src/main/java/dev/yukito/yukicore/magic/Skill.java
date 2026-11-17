@@ -8,8 +8,8 @@ import static dev.yukito.yukicore.magic.School.FIRE;
 import static dev.yukito.yukicore.magic.School.ICE;
 
 /**
- * Дерево навыков магии: по 22 навыка у Юки (лёд) и Синтары (пламя).
- * Колонка — ступень дерева (0..8), ряд — 0..2. Навык открывается, только когда изучены все его предки.
+ * Дерево навыков магии: по 30 навыков у Юки (лёд) и Синтары (пламя).
+ * Колонка — ступень дерева (0..8), ряд — 0..3. Навык открывается, только когда изучены все его предки.
  */
 public enum Skill {
     // ============================================================ ❄ ЮКИ
@@ -35,6 +35,15 @@ public enum Skill {
     POLAR_STORM(ICE, ACTIVE, 7, 1, 120, 1200, "AVALANCHE"),
     ABSOLUTE_ZERO(ICE, ULTIMATE, 8, 0, 200, 2400, "POLAR_STORM", "ICE_GOLEM"),
     YUKI_AVATAR(ICE, ULTIMATE, 8, 2, 250, 6000, "ABSOLUTE_ZERO", "ETERNAL_COLD"),
+    // 7.3 — четвёртый ряд: «Путь стужи»
+    CHILL_AURA(ICE, PASSIVE, 1, 3, 0, 0, "COLD_MIND"),
+    ICE_LANCE(ICE, ACTIVE, 2, 3, 30, 90, "CHILL_AURA"),
+    FROST_TRAP(ICE, ACTIVE, 3, 3, 35, 200, "ICE_LANCE"),
+    FROZEN_FLOW(ICE, PASSIVE, 4, 3, 0, 0, "FROST_TRAP"),
+    HAILSTORM(ICE, ACTIVE, 5, 3, 75, 500, "FROZEN_FLOW"),
+    ARCTIC_GALE(ICE, ACTIVE, 6, 3, 60, 300, "HAILSTORM"),
+    CRYO_MASTERY(ICE, PASSIVE, 7, 3, 0, 0, "ARCTIC_GALE"),
+    FROST_COMET(ICE, ACTIVE, 8, 3, 160, 1600, "CRYO_MASTERY", "POLAR_STORM"),
 
     // ============================================================ ✹ СИНТАРА
     EMBER_BOLT(FIRE, ACTIVE, 0, 1, 8, 8),
@@ -58,14 +67,23 @@ public enum Skill {
     PHOENIX_SOUL(FIRE, PASSIVE, 6, 2, 0, 0, "COMBUSTION"),
     SUN_STRIKE(FIRE, ACTIVE, 7, 1, 130, 1200, "METEOR_SHOWER"),
     SUPERNOVA(FIRE, ULTIMATE, 8, 0, 220, 2400, "SUN_STRIKE", "FIRE_SPIRITS"),
-    SINTARA_AVATAR(FIRE, ULTIMATE, 8, 2, 250, 6000, "SUPERNOVA", "PHOENIX_SOUL");
+    SINTARA_AVATAR(FIRE, ULTIMATE, 8, 2, 250, 6000, "SUPERNOVA", "PHOENIX_SOUL"),
+    // 7.3 — четвёртый ряд: «Путь жара»
+    HEAT_AURA(FIRE, PASSIVE, 1, 3, 0, 0, "BURNING_WILL"),
+    FLAME_LANCE(FIRE, ACTIVE, 2, 3, 30, 90, "HEAT_AURA"),
+    FIRE_MINE(FIRE, ACTIVE, 3, 3, 35, 200, "FLAME_LANCE"),
+    KINDLING(FIRE, PASSIVE, 4, 3, 0, 0, "FIRE_MINE"),
+    ASH_RAIN(FIRE, ACTIVE, 5, 3, 75, 500, "KINDLING"),
+    HEAT_WAVE(FIRE, ACTIVE, 6, 3, 60, 300, "ASH_RAIN"),
+    PYRO_MASTERY(FIRE, PASSIVE, 7, 3, 0, 0, "HEAT_WAVE"),
+    SOLAR_FLARE(FIRE, ACTIVE, 8, 3, 160, 1600, "PYRO_MASTERY", "SUN_STRIKE");
 
     public enum Kind { ACTIVE, PASSIVE, ULTIMATE }
 
     public static final int MAX_RANK = 5;
     public static final int COLUMNS = 9;
     /** Требуемый уровень школы для 1-го ранга по ступеням дерева. */
-    private static final int[] LEVEL = {1, 3, 7, 12, 18, 24, 30, 36, 42};
+    private static final int[] LEVEL = {1, 4, 9, 15, 21, 27, 33, 39, 45};
 
     public final School school;
     public final Kind kind;
@@ -100,7 +118,7 @@ public enum Skill {
     /** Аватар — второй ультимейт, ему нужен 50-й уровень. */
     public int requiredLevel(int rank) {
         int base = this == YUKI_AVATAR || this == SINTARA_AVATAR ? 50 : LEVEL[column];
-        return base + rank * 3;
+        return Math.min(MagicData.MAX_LEVEL, base + rank * 3);
     }
 
     public int upgradeCost(int currentRank) {

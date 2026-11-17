@@ -33,11 +33,11 @@ public class MagicData implements INBTSerializable<CompoundTag> {
     }
 
     public static int xpToNext(int level) {
-        return 40 + 15 * level + 2 * level * level;
+        return 60 + 25 * level + 3 * level * level;
     }
 
     public static int earnedPoints(int level) {
-        return level + level / 5;
+        return level + level / 10;
     }
 
     public int rank(Skill s) {

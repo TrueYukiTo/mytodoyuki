@@ -93,6 +93,22 @@ public final class MagicEvents {
                 Fx.ring(lvl, p.position(), 9, ParticleTypes.FLAME);
             }
         }
+        // 7.3: Аура холода / Аура жара
+        if (p.tickCount % 20 == 0) {
+            int chill = d.rank(Skill.CHILL_AURA), heat = d.rank(Skill.HEAT_AURA);
+            if (chill > 0) {
+                for (LivingEntity x : Fx.enemies(p, p.position(), 3 + chill)) {
+                    x.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 30, chill >= 4 ? 1 : 0));
+                    lvl.sendParticles(ParticleTypes.SNOWFLAKE, x.getX(), x.getY() + 1, x.getZ(), 4, 0.3, 0.4, 0.3, 0.01);
+                }
+            }
+            if (heat > 0 && p.tickCount % 40 == 0) {
+                for (LivingEntity x : Fx.enemies(p, p.position(), 3 + heat)) {
+                    Fx.hit(p, x, 2 * heat * Magic.power(p, Skill.HEAT_AURA), Element.FIRE);
+                    x.igniteForSeconds(2);
+                }
+            }
+        }
         // Внутренний огонь: +4 ❤ за ранг
         if (p.tickCount % 40 == 0) {
             AttributeInstance hp = p.getAttribute(Attributes.MAX_HEALTH);
@@ -119,7 +135,10 @@ public final class MagicEvents {
 
     @SubscribeEvent
     public static void onLogin(PlayerEvent.PlayerLoggedInEvent e) {
-        if (e.getEntity() instanceof ServerPlayer p) Magic.sync(p);
+        if (e.getEntity() instanceof ServerPlayer p) {
+            Magic.rebuildIfOverspent(p);
+            Magic.sync(p);
+        }
     }
 
     @SubscribeEvent

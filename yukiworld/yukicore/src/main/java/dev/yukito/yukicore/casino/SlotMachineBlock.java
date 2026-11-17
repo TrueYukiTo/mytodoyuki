@@ -48,7 +48,7 @@ public class SlotMachineBlock extends HorizontalDirectionalBlock {
 
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hit) {
-        if (level.isClientSide) dev.yukito.yukicore.client.casino.SlotScreen.open(pos);
+        if (level.isClientSide) dev.yukito.yukicore.client.casino.CasinoScreen.open(pos);
         return InteractionResult.sidedSuccess(level.isClientSide);
     }
 }
